@@ -10,6 +10,12 @@ export interface FormSummary {
   keyFields: string[];
   supportedNomineeCount: number;
   personLabel?: string | null;
+  /** Which stream it belongs to: "VCC", "US tax", "NFT", "Other". */
+  group?: string;
+  /** Distinct fields (text + tick boxes), how many must be filled, and the pages anything is written on. */
+  fieldCount?: number;
+  requiredFieldCount?: number;
+  writtenPageCount?: number;
 }
 
 export interface FormMappingItem {

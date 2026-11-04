@@ -1,10 +1,10 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { isSignatureFile, uploadSignature } from "@/api/signature-api";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { createBatch, deleteBatch, startBatch } from "@/api/batches-api";
 import { uploadDocuments } from "@/api/cases-api";
-import { fetchForms } from "@/api/forms-api";
+import { useForms } from "@/api/queries";
 import BatchFormChooser from "@/components/batches/BatchFormChooser";
 import BatchMatchTable from "@/components/batches/BatchMatchTable";
 import Button from "@/components/ui/Button";
@@ -24,7 +24,9 @@ const isSheetFile = (chosenFile: File) => /\.(xlsx|xls|csv)$/i.test(chosenFile.n
 
 export default function NewBatchPage() {
   const router = useRouter();
-  const [forms, setForms] = useState<FormSummary[]>([]);
+  // Nothing ticked to start with: the user ticks, or the Excel picks its form.
+  const { data: loadedForms, error: formsError } = useForms();
+  const forms: FormSummary[] = loadedForms || [];
   const [formIds, setFormIds] = useState<string[]>([]);
   const [batch, setBatch] = useState<BatchStatus | null>(null);
   const [documentFiles, setDocumentFiles] = useState<File[]>([]);
@@ -34,11 +36,6 @@ export default function NewBatchPage() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [workMessage, setWorkMessage] = useState<string | null>(null);
   const [infoMessage, setInfoMessage] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetchForms().then(setForms) // nothing ticked to start with: the user ticks, or the Excel picks its form
-      .catch((error: Error) => setErrorMessage(error.message));
-  }, []);
 
   // Documents go to each client's first form only; its other forms share them once they are read.
   const documentClients = useMemo(() => batch?.clients.filter((client) => !client.documentsFromCaseId) || [], [batch]);
@@ -162,14 +159,14 @@ export default function NewBatchPage() {
   const formCount = batch?.forms.length ?? formIds.length;
   const isWorking = Boolean(workMessage);
   return (
-    <PageContainer title="New batch" description="One Excel row = one client = one filled form per ticked form. Each client's documents come from their own folder."
+    <PageContainer title="New batch" description="One Excel row per client. Tick the forms, then drop the folder."
       actions={<>
         {workMessage ? <span className="text-xs text-muted">{workMessage}</span> : null}
-        <Button variant="primary" disabled={!batch || isWorking} onClick={handleStart}>
+        <Button variant="primary" disabled={!batch || isWorking} onClick={handleStart} title={!batch ? "Tick a form and drop the client folder first" : undefined}>
           {batch ? `Start filling ${clientCount} client${clientCount === 1 ? "" : "s"}${formCount > 1 ? ` × ${formCount} forms` : ""} →` : "Start filling →"}
         </Button>
       </>}>
-      <div className="grid h-full gap-5 lg:grid-cols-[22rem_minmax(0,1fr)]">
+      <div className="grid h-full gap-3 md:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[22rem_minmax(0,1fr)]">
         <div className="min-w-0 space-y-5 overflow-y-auto overflow-x-hidden">
           <section>
             <StepHeading number={1} title={formIds.length > 1 ? `Forms (${formIds.length})` : "Form"} isDone={formIds.length > 0} />
@@ -184,7 +181,7 @@ export default function NewBatchPage() {
               onFilesChosen={handleDocumentsChosen} />
           </section>
           {infoMessage ? <Notice tone="success">{infoMessage}</Notice> : null}
-          {errorMessage ? <Notice tone="error">{errorMessage}</Notice> : null}
+          {errorMessage || formsError ? <Notice tone="error">{errorMessage || formsError?.message}</Notice> : null}
           {batch?.warnings.map((warning) => <Notice key={warning}>{warning}</Notice>)}
         </div>
         <BatchMatchTable batch={batch} clients={documentClients} folderMatch={folderMatch} isDisabled={isWorking}

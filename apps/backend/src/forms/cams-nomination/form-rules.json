@@ -1,9 +1,10 @@
 {
   "_about": "Form-level rules: how the form is recognised, which tab it saves to, and how its ID-type tick box works. Required fields are in required-fields.json (editable from the app).",
   "formId": "cams-nomination",
-  "label": "Nomination_Form - cams",
-  "shortLabel": "Nomination_Form - cams",
-  "purpose": "Add or change nominees on mutual fund folios (individual unitholders)",
+  "group": "NFT",
+  "label": "CAMS Mutual Fund – Nomination",
+  "shortLabel": "CAMS nomination",
+  "purpose": "Add or change nominees on MF folios",
   "blankFileName": "Nomination_Form - cams.pdf",
   "keyFields": [
     "Name of the Fund",

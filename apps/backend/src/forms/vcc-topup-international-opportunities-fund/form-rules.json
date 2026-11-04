@@ -1,9 +1,10 @@
 {
   "_about": "Form-level rules. One person (the subscriber) - KYC gives the name, the Excel the top-up details.",
   "formId": "vcc-topup-international-opportunities-fund",
-  "label": "360 ONE International Opportunities Fund - Additional Subscription (top-up)",
+  "group": "VCC",
+  "label": "International Opportunities Fund – Top-up",
   "shortLabel": "IOF top-up",
-  "purpose": "Top up an existing investment in 360 ONE International Opportunities Fund: name from KYC, amount and dates from Excel",
+  "purpose": "Add money to an existing investment",
   "blankFileName": "360 ONE International Opportunities Fund - Additional Subscription.pdf",
   "keyFields": [
     "Subscriber name",

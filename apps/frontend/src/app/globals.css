@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* collapsed:… styles apply while the sidebar is folded. <html data-sidebar> is "collapsed" or "open" once the user
+   chose, else "auto": then it folds by itself on narrow (or zoomed-in) screens, so the work area keeps its room. */
+@custom-variant collapsed {
+  &:where([data-sidebar="collapsed"] *) { @slot; }
+  @media (width < 80rem) { &:where([data-sidebar="auto"] *) { @slot; } }
+}
+
 /* 360 ONE look: near-black ink, warm off-white canvas, orange accent; one font everywhere (Hanken Grotesk). */
 @theme {
   --font-sans: var(--font-hanken-grotesk), ui-sans-serif, system-ui, "Segoe UI", sans-serif;
@@ -24,3 +31,31 @@ body {
 h1, h2, h3 {
   letter-spacing: -0.01em;
 }
+
+/* Focus only for keyboard users; one quiet ring everywhere. In the base layer, so a utility such as
+   outline-none on a search box (whose frame already shows focus) still wins. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 1px;
+  }
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: none; }
+}
+.rise-in { animation: rise-in 160ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Scroll areas keep room for their scrollbar, so content never jumps sideways when a list grows past the fold. */
+.overflow-auto, .overflow-y-auto { scrollbar-gutter: stable; }
+* { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--color-ink) 22%, transparent) transparent; }
+
+/* Numbers never change width as they update. */
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+::selection { background: var(--color-brand-100); }

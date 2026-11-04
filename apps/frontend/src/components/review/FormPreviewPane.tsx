@@ -119,7 +119,7 @@ export default function FormPreviewPane({ caseId, selectedField, previewValue, p
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex h-11 items-center gap-2 whitespace-nowrap border-b border-line bg-white px-3 text-xs text-muted">
+      <div className="flex h-11 items-center gap-1.5 overflow-hidden whitespace-nowrap border-b border-line bg-white px-2 text-xs text-muted xl:gap-2 xl:px-3">
         {headerActions}
         <div className="flex items-center gap-1">
           <button type="button" aria-label="Previous page" disabled={requestedPageNumber <= 1} onClick={() => setBrowsedPageNumber(requestedPageNumber - 1)} className={pageButtonClasses}>‹</button>
@@ -131,14 +131,14 @@ export default function FormPreviewPane({ caseId, selectedField, previewValue, p
           <button type="button" title={`Back to the selected field on page ${fieldPageNumber}`} onClick={() => setBrowsedPageNumber(null)}
             className="rounded-full bg-brand-50 px-2.5 py-1 font-medium text-brand-700 hover:bg-brand-100">↩ Field</button>
         ) : null}
-        <span className="hidden shrink-0 rounded-full bg-canvas px-2 py-0.5 xl:inline" title={fieldCountOnRequestedPage ? "Click a value on the page to edit it" : "Nothing to fill on this page"}>
+        <span className="hidden shrink-0 rounded-full bg-canvas px-2 py-0.5 2xl:inline" title={fieldCountOnRequestedPage ? "Click a value on the page to edit it" : "Nothing to fill on this page"}>
           {fieldCountOnRequestedPage ? `${fieldCountOnRequestedPage} field${fieldCountOnRequestedPage === 1 ? "" : "s"}` : "No fields"}
         </span>
         <div className="ml-auto flex items-center gap-2">
           {zoomState.zoom > 1 ? (
             <button type="button" onClick={resetZoom} className="rounded-full border border-line px-2.5 py-1 text-ink hover:bg-canvas">{Math.round(zoomState.zoom * 100)}% · Reset</button>
           ) : null}
-          <SegmentedControl activeKey={previewMode} onChange={choosePreviewMode} options={[{ key: "focus", label: "Focus" }, { key: "page", label: "Whole page" }]} />
+          <SegmentedControl activeKey={previewMode} onChange={choosePreviewMode} options={[{ key: "focus", label: "Focus" }, { key: "page", label: "Page" }]} />
         </div>
       </div>
       <div ref={viewport} title="Pinch or Ctrl + scroll to zoom" className="relative min-h-0 flex-1 overflow-hidden bg-canvas">

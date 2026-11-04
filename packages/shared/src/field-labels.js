@@ -1,5 +1,11 @@
 // Plain-language label for every form field key, shared by the review screen and the Google Sheet headings.
 export const FIELD_LABELS = {
+  // VCC forms (redemption, top-ups, W-9)
+  topup_amount_usd: "Top-up amount (USD)", redemption_amount_usd: "Redemption amount (USD)", us_address: "US address",
+  us_city_state_zip: "US city, state and ZIP", ssn: "SSN", funds_wired_date: "Date funds wired", application_date: "Application date",
+  initial_sales_charge: "Initial sales charge (%)", contact_person: "Contact person", contact_email: "Contact email",
+  sub_fund_name: "Sub-fund", shares_to_redeem: "Shares to redeem", redemption_type: "Full or partial",
+  registered_names: "Registered name(s)", registered_address: "Registered address", series: "Series", isin: "ISIN",
   name: "Name", share_pct: "Share %", relationship: "Relationship", relationship_option: "Relationship",
   relationship_other: "Relationship (if Others)", address: "Address", city: "City", state: "State", pincode: "Pincode",
   country: "Country", state_country: "State & Country", mobile: "Mobile", email: "Email", dob: "Date of birth",
@@ -89,12 +95,17 @@ for (const rowNumber of [1, 2, 3]) {
 }
 
 /** "name_n2" -> "Name"; unknown keys fall back to their words. */
+const ACRONYMS = new Set(["us", "usd", "ssn", "zip", "pan", "dob", "id", "isin", "iban", "swift", "aba", "chip", "uid", "kyc", "tin", "pep", "dp", "crn", "ifsc", "nri", "oci", "pio", "fatca", "crs", "gst", "vcc"]);
+
 export function formatFieldLabel(fieldKey) {
   const baseKey = fieldKey.replace(/_n\d+$/, "");
   // "subscriber_name_p16": the same value printed again on page 16.
   const pageCopy = /^(.*)_p(\d+)$/.exec(baseKey);
   if (pageCopy && FIELD_LABELS[pageCopy[1]]) return `${FIELD_LABELS[pageCopy[1]]} (p.${pageCopy[2]})`;
-  const label = FIELD_LABELS[baseKey] || baseKey.replace(/_/g, " ");
+  if (FIELD_LABELS[baseKey]) return FIELD_LABELS[baseKey].charAt(0).toUpperCase() + FIELD_LABELS[baseKey].slice(1);
+  // No hand-written label: "us_city_state_zip" -> "US city, state, ZIP" style - known short forms stay upper case.
+  const words = baseKey.split("_").map((word) => (ACRONYMS.has(word) ? word.toUpperCase() : word));
+  const label = words.join(" ");
   return label.charAt(0).toUpperCase() + label.slice(1);
 }
 

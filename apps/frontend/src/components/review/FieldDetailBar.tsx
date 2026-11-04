@@ -14,7 +14,7 @@ interface FieldDetailBarProps {
 
 /** Everything about the selected field in one line: where it came from, its rule, what it was, and actions. */
 export default function FieldDetailBar({ session, caseField, sectionLabel, onViewSource, onAddDocument }: FieldDetailBarProps) {
-  if (!caseField) return <div className="border-t border-line bg-canvas px-4 py-2 text-xs text-muted">Select a field.</div>;
+  if (!caseField) return <div className="flex h-14 shrink-0 items-center border-t border-line bg-canvas px-3 text-xs text-muted">Select a field to see where its value comes from.</div>;
   const isEdited = session.editedValues.has(caseField.field);
   const nomineeNumber = getNomineeNumber(caseField.field);
   const originalValue = caseField.isTickbox ? caseField.option_chosen : caseField.value;
@@ -27,7 +27,8 @@ export default function FieldDetailBar({ session, caseField, sectionLabel, onVie
   const linkClasses = "text-brand-600 hover:underline";
 
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line bg-canvas px-4 py-2 text-xs">
+    // Fixed height (two lines): picking another field never moves the fields above.
+    <div className="flex h-14 shrink-0 flex-wrap content-center items-center gap-x-4 gap-y-0.5 overflow-hidden border-t border-line bg-canvas px-3 text-xs">
       <span className="font-semibold text-ink">{sectionLabel} · {formatFieldLabel(caseField.field)}{nomineeNumber ? ` · Nominee ${nomineeNumber}` : ""}</span>
       {sourceText ? (caseField.source_doc
         ? <button type="button" className={linkClasses} onClick={() => onViewSource(caseField)}>{sourceText} · view document</button>

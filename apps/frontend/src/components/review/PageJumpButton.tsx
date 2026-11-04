@@ -22,7 +22,7 @@ export default function PageJumpButton({ pageNumber, pageCount, fillPages, onJum
   return (
     <div className="relative">
       <button type="button" onClick={() => setIsOpen((current) => !current)} title="Go to a page"
-        className="w-[5.5rem] rounded-full px-1 py-0.5 text-center tabular-nums text-ink hover:bg-canvas">Page {pageNumber} / {pageCount} ▾</button>
+        className="rounded-full px-1.5 py-0.5 text-center tabular-nums text-ink transition-colors hover:bg-canvas xl:w-[5.5rem]"><span className="hidden xl:inline">Page </span>{pageNumber} / {pageCount} ▾</button>
       {isOpen ? (
         <div className="absolute left-0 top-8 z-30 w-80 rounded-xl border border-line bg-white p-3 text-xs shadow-lg">
           <form className="flex gap-2" onSubmit={(event) => { event.preventDefault(); jump(Number(typedPage)); }}>

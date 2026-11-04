@@ -14,9 +14,15 @@ interface DocumentDropZoneProps {
 export default function DocumentDropZone({ onFilesChosen, isDisabled = false }: DocumentDropZoneProps) {
   return (
     <FileDropZone allowedExtensions={DOCUMENT_EXTENSIONS} isMultiple isFolderAllowed maximumFileCount={MAXIMUM_FILES_PER_UPLOAD} isDisabled={isDisabled}
-      title="Drop documents or folders here" buttonLabel="Choose files" onFilesChosen={onFilesChosen}
-      hint={<>Aadhaar (front and back), PAN, passport, driving licence · PDF, JPG or PNG · up to 15 files, 15MB each.<br />
-        The client&apos;s Excel (.xlsx / .csv) can go in too - it fills everything documents can&apos;t show.<br />
-        Mixed people are fine - files are grouped by the name on them. A folder per person (or named &quot;Nominee 2&quot;) helps.</>} />
+      title="Drop ID documents or a folder" buttonLabel="Choose files" onFilesChosen={onFilesChosen}
+      hint={<>
+        <span className="flex flex-wrap justify-center gap-1">
+          {["Aadhaar", "PAN", "Passport", "Driving licence", "Client Excel"].map((kind) => (
+            <span key={kind} className="rounded bg-canvas px-1.5 py-px ring-1 ring-line/70">{kind}</span>
+          ))}
+        </span>
+        <span className="mt-1.5 block">PDF, JPG, PNG, XLSX · up to 15 files · 15 MB each</span>
+        <span className="block">Several people? Files are sorted by the name on them.</span>
+      </>} />
   );
 }

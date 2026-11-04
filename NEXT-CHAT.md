@@ -71,6 +71,22 @@ form files are read at start.
 
 Forms with the same layout (one per fund) can be generated from one script: `tools/form-building/make_topups.py`.
 
+## Frontend notes (UI pass, 2026-11-04)
+
+- Layout: left sidebar (`components/layouts/AppSidebar.tsx`). It folds by itself below 1280px; `[` toggles it.
+  Its state lives on `<html data-sidebar>` and is set before first paint in `app/layout.tsx`. Use the `collapsed:`
+  Tailwind variant for folded styles.
+- Data: read lists through `api/queries.ts` (`useForms`, `useCases`, `useCase`, …). They share an in-memory cache
+  (`api/query-cache.ts`), so pages don't refetch on every visit. Any POST/PUT/DELETE marks the cache stale.
+- Connection: `api/connection-state.ts` + `ConnectionStatus` show a floating notice when the server is down and
+  refetch on reconnect.
+- Form groups (VCC / US tax / NFT) come from `group` in each `form-rules.json`; names and colours are in
+  `config/form-groups.ts`.
+- Keys: C new case, B new batch, F add form, / search, J/K or arrows move, Enter opens. Enter only acts on a row
+  the user moved to.
+- No layout shift: keep fixed heights on bars that change content (e.g. `FieldDetailBar`), and check new pages at
+  1024px wide (= 150% zoom).
+
 ## Progress
 
 | # | Form | Form id | Status |

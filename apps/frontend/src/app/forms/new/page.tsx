@@ -84,7 +84,7 @@ export default function NewFormPage() {
           <FileDropZone allowedExtensions={[".pdf"]} title={filledFile ? filledFile.name : "2. Filled sample (PDF, recommended)"} isDisabled={isWorking}
             hint="The same form filled for any one client. Read once to find the boxes - never saved." onFilesChosen={([chosenFile]) => setFilledFile(chosenFile ?? null)} />
           <div className="flex items-center gap-3 md:col-span-2">
-            <Button variant="primary" disabled={!blankFile || isWorking} onClick={handleFindBoxes}>{isWorking ? "Finding the boxes…" : "Find the boxes →"}</Button>
+            <Button variant="primary" disabled={!blankFile || isWorking} onClick={handleFindBoxes} title={!blankFile ? "Choose the blank form PDF first" : undefined}>{isWorking ? "Finding the boxes…" : "Find the boxes →"}</Button>
             {errorMessage ? <span className="text-sm text-red-700">{errorMessage}</span> : null}
           </div>
         </div>

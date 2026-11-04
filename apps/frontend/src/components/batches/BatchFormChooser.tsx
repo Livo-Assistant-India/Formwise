@@ -1,4 +1,5 @@
 import { getBatchTemplateUrl, getCombinedBatchTemplateUrl } from "@/api/forms-api";
+import { FORM_GROUP_ORDER, getFormGroup } from "@/config/form-groups";
 import type { FormSummary } from "@/types/forms";
 
 interface BatchFormChooserProps {
@@ -19,15 +20,24 @@ export default function BatchFormChooser({ forms, chosenFormIds, isDisabled, onC
   const templateUrl = chosenFormIds.length > 1 ? getCombinedBatchTemplateUrl(chosenFormIds) : chosenFormIds[0] ? getBatchTemplateUrl(chosenFormIds[0]) : null;
   return (
     <div>
-      <div className="space-y-1.5" role="group" aria-label="Forms">
-        {forms.map((form) => {
-          const isChosen = chosenFormIds.includes(form.formId);
+      <div className="overflow-hidden rounded-lg border border-line bg-white" role="group" aria-label="Forms">
+        {FORM_GROUP_ORDER.map((groupName) => {
+          const groupForms = forms.filter((form) => getFormGroup(form) === groupName);
+          if (!groupForms.length) return null;
           return (
-            <button key={form.formId} type="button" role="checkbox" aria-checked={isChosen} disabled={isDisabled} onClick={() => toggleForm(form.formId)}
-              className={`flex w-full items-center gap-2.5 rounded-lg border px-3 py-2 text-left text-xs transition disabled:opacity-60 ${isChosen ? "border-ink bg-white" : "border-line bg-white/60 text-muted hover:border-ink/40"}`}>
-              <span className={`grid h-3.5 w-3.5 shrink-0 place-items-center rounded border text-[9px] leading-none ${isChosen ? "border-ink bg-ink text-white" : "border-line"}`}>{isChosen ? "✓" : ""}</span>
-              <span className="min-w-0 flex-1 truncate font-medium text-ink" title={form.label}>{form.label}</span>
-            </button>
+            <div key={groupName}>
+              <div className="border-b border-line bg-canvas/60 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted">{groupName}</div>
+              {groupForms.map((form) => {
+                const isChosen = chosenFormIds.includes(form.formId);
+                return (
+                  <button key={form.formId} type="button" role="checkbox" aria-checked={isChosen} disabled={isDisabled} onClick={() => toggleForm(form.formId)}
+                    className={`flex w-full items-center gap-2.5 border-b border-line/60 px-2.5 py-1.5 text-left text-xs transition-colors duration-100 last:border-b-0 disabled:opacity-60 ${isChosen ? "bg-brand-50/60" : "hover:bg-canvas"}`}>
+                    <span className={`grid h-3.5 w-3.5 shrink-0 place-items-center rounded border text-[9px] leading-none transition-colors ${isChosen ? "border-brand-500 bg-brand-500 text-white" : "border-ink/25 bg-white"}`}>{isChosen ? "✓" : ""}</span>
+                    <span className={`min-w-0 flex-1 truncate ${isChosen ? "font-medium text-ink" : "text-ink/80"}`} title={form.purpose}>{form.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           );
         })}
       </div>

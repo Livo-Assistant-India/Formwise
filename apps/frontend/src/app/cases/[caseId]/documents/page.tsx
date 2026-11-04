@@ -130,30 +130,31 @@ export default function CaseDocumentsPage() {
 
   return (
     <PageContainer title="Upload documents"
-      description={isOnePersonForm ? `Drop the ${personLabel.toLowerCase()}'s KYC documents (Aadhaar, PAN, passport, licence). Name, address, date of birth and PAN are read from them.`
-        : "Drop everything you have for each nominee. Each file is read and grouped with the person whose name is on it."}
+      description={isOnePersonForm ? `Add the ${personLabel.toLowerCase()}'s ID documents. Name, address, date of birth and PAN are read from them.`
+        : "Add every nominee's ID documents. Each file is sorted to the person named on it."}
       actions={<>
         <CaseStepper currentStep="documents" caseId={caseId} />
         {isAnyDocumentProcessing ? <span className="text-xs text-muted">Reading documents…</span> : null}
-        <Button variant="primary" disabled={!hasReadDocument || isAnyDocumentProcessing || isFilling} onClick={handleContinue}>
+        <Button variant="primary" disabled={!hasReadDocument || isAnyDocumentProcessing || isFilling} onClick={handleContinue}
+          title={!hasReadDocument ? "Add at least one ID document first" : isAnyDocumentProcessing ? "Wait until every document is read" : undefined}>
           {isFilling ? "Filling the form…" : "Continue to review →"}
         </Button>
       </>}>
-      <div className="grid h-full gap-5 lg:grid-cols-[minmax(320px,1fr)_minmax(0,2fr)]">
-        <div className="space-y-4">
+      <div className="grid h-full gap-3 md:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[minmax(320px,1fr)_minmax(0,2fr)]">
+        <div className="space-y-3">
           <DocumentDropZone onFilesChosen={handleFilesChosen} />
-          <div className="flex items-center gap-2 rounded-xl border border-line bg-white px-4 py-2.5 text-sm">
+          <div className="flex items-center gap-2 rounded-xl border border-line bg-white px-3 py-2 text-[13px]">
             <span className="min-w-0 flex-1 truncate text-muted" title={sheetImport?.fileName}>{sheetImport
               ? <>Excel: <b className="text-ink">{sheetImport.fileName}</b> · row {sheetImport.rowNumber}{sheetImport.clientReference ? ` · ${sheetImport.clientReference}` : ""}</>
-              : "Excel (bank, amount, contact…): not added yet"}</span>
-            <Button size="small" onClick={() => { setSheetFileToImport(null); setIsSheetImportOpen(true); }}>{sheetImport ? "Change" : "Fill from Excel"}</Button>
+              : <>Client Excel <span className="text-muted/70">· not added</span></>}</span>
+            <Button size="small" onClick={() => { setSheetFileToImport(null); setIsSheetImportOpen(true); }}>{sheetImport ? "Change" : "Add Excel"}</Button>
             {sheetImport ? <Button size="small" variant="ghost" disabled={isRemovingSheet} onClick={handleRemoveSheet}>{isRemovingSheet ? "Removing…" : "Remove"}</Button> : null}
           </div>
           {loadError ? <Notice tone="error">{loadError}</Notice> : null}
           {uploadMessages.length ? <Notice tone="error">{uploadMessages.map((message) => <div key={message}>{message}</div>)}</Notice> : null}
         </div>
         <section className="flex min-h-0 flex-col rounded-xl border border-line bg-white">
-          <h2 className="border-b border-line px-4 py-2.5 text-sm font-semibold">Documents by person <span className="font-normal text-muted">({caseDocuments.length})</span>
+          <h2 className="border-b border-line px-3 py-2 text-[13px] font-semibold">Documents by person <span className="font-normal tabular-nums text-muted">{caseDocuments.length}</span>
             {placedDocuments.length ? <span className="float-right text-xs font-normal text-muted">Drag a document onto another person to move it</span> : null}</h2>
           <div className="min-h-0 flex-1 space-y-2 overflow-auto p-3">
             {!caseDocuments.length ? <StatusState title="No documents yet" message={isOnePersonForm ? `Drop the ${personLabel.toLowerCase()}'s Aadhaar, PAN, passport or licence on the left.` : "Drop each nominee's Aadhaar, PAN, passport or licence on the left. They are grouped by the name on them."} /> : null}

@@ -34,10 +34,21 @@ export async function fetchFormRules(formId) {
   return { ...formRules, requiredFields: await fetchRequiredFields(formId), nomineeFieldKeys: await fetchNomineeFieldKeys(formId) };
 }
 
+/** How big a form is, for the forms list: distinct fields (text + tick boxes), how many are required, and the
+ * pages anything is written on. */
+async function fetchFormSize(formId) {
+  const positions = await fetchFieldPositions(formId);
+  const { formConfiguration } = getFormDefinition(formId);
+  const fieldKeys = new Set(positions.fields.map((field) => field.key));
+  for (const tickbox of formConfiguration.tickboxes) fieldKeys.add(tickbox.key);
+  const writtenPages = new Set([...positions.fields.map((field) => field.page), ...formConfiguration.tickboxes.map((tickbox) => tickbox.page)].filter(Boolean));
+  return { fieldCount: fieldKeys.size, requiredFieldCount: (await fetchRequiredFields(formId)).length, writtenPageCount: writtenPages.size };
+}
+
 export async function listForms() {
   return Promise.all(listFormIds().map(async (formId) => {
-    const { label, shortLabel, purpose, blankFileName, keyFields, supportedNomineeCount, personLabel = null } = await readFormJson(formId, "form-rules.json");
-    return { formId, label, shortLabel, purpose, blankFileName, keyFields, supportedNomineeCount, personLabel };
+    const { label, shortLabel, purpose, blankFileName, keyFields, supportedNomineeCount, personLabel = null, group = "Other" } = await readFormJson(formId, "form-rules.json");
+    return { formId, label, shortLabel, purpose, blankFileName, keyFields, supportedNomineeCount, personLabel, group, ...(await fetchFormSize(formId)) };
   }));
 }
 

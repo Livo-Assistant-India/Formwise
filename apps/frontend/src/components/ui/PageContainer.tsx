@@ -13,15 +13,15 @@ export default function PageContainer({ title, description, actions, children }:
   return (
     <div className="flex h-full flex-col">
       {title || actions ? (
-        <div className="flex flex-wrap items-center gap-4 border-b border-line bg-white px-6 py-3">
+        <div className="flex flex-wrap items-center gap-4 border-b border-line bg-white px-5 py-2.5">
           <div className="min-w-0">
-            {title ? <h1 className="text-lg font-semibold tracking-tight">{title}</h1> : null}
-            {description ? <p className="text-xs text-muted">{description}</p> : null}
+            {title ? <h1 className="text-[15px] font-semibold tracking-tight">{title}</h1> : null}
+            {description ? <p className="text-[11px] text-muted">{description}</p> : null}
           </div>
           {actions ? <div className="ml-auto flex flex-wrap items-center gap-3">{actions}</div> : null}
         </div>
       ) : null}
-      <div className="min-h-0 flex-1 overflow-auto px-6 py-5">{children}</div>
+      <div className="min-h-0 flex-1 overflow-auto px-5 py-4">{children}</div>
     </div>
   );
 }

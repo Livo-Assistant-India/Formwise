@@ -1,9 +1,10 @@
 {
   "_about": "Form-level rules. One person (the beneficial owner) - KYC documents fill it; the Excel can override.",
   "formId": "w8ben",
-  "label": "Form W-8BEN (US tax status, individuals)",
+  "group": "US tax",
+  "label": "W-8BEN – Individual",
   "shortLabel": "W-8BEN",
-  "purpose": "US tax certificate of foreign status - filled from the client's KYC documents",
+  "purpose": "Tax form for non-US individuals",
   "blankFileName": "Form W-8BEN.pdf",
   "keyFields": [
     "Name",

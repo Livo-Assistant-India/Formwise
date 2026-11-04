@@ -1,9 +1,10 @@
 {
   "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the subscriber) - their KYC documents fill the identity fields, the Excel fills the rest.",
   "formId": "global-bond-fund-subscription",
-  "label": "360 ONE Global Bond Fund - Series II - Subscription",
-  "shortLabel": "Global Bond Fund subscription",
-  "purpose": "Subscribe to 360 ONE Global Bond Fund - Series II (non-U.S. persons): KYC from documents, bank and amount from Excel",
+  "group": "VCC",
+  "label": "Global Bond Fund II – Subscription",
+  "shortLabel": "GBF subscription",
+  "purpose": "New investment · non-US investors",
   "blankFileName": "360 ONE Global Bond Fund - Series II.pdf",
   "keyFields": [
     "Subscription amount",

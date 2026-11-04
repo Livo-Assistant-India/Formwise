@@ -1,24 +1,14 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
-import { fetchCase } from "@/api/cases-api";
-import type { CaseSummary } from "@/types/cases";
+import { useCallback, useEffect } from "react";
+import { useCase } from "@/api/queries";
 
 const POLL_INTERVAL_MILLISECONDS = 1200;
 
-/** The case and its documents, re-fetched every ~1s while any document is still being read. */
+/** The case and its documents (cached, so going back to a case shows it at once), re-fetched every ~1s while any
+ * document is still being read. */
 export function useCaseSummary(caseId: string) {
-  const [caseSummary, setCaseSummary] = useState<CaseSummary | null>(null);
-  const [loadError, setLoadError] = useState<string | null>(null);
-
-  const reloadCase = useCallback(async () => {
-    try {
-      setCaseSummary(await fetchCase(caseId));
-    } catch (error) {
-      setLoadError((error as Error).message);
-    }
-  }, [caseId]);
-
-  useEffect(() => { reloadCase(); }, [reloadCase]);
+  const { data: caseSummary, error, refresh } = useCase(caseId);
+  const reloadCase = useCallback(async () => { await refresh(); }, [refresh]);
 
   const isAnyDocumentProcessing = Boolean(caseSummary?.documents.some((caseDocument) => caseDocument.status === "processing"));
   useEffect(() => {
@@ -27,5 +17,5 @@ export function useCaseSummary(caseId: string) {
     return () => clearInterval(pollTimer);
   }, [isAnyDocumentProcessing, reloadCase]);
 
-  return { caseSummary, loadError, reloadCase, isAnyDocumentProcessing };
+  return { caseSummary: caseSummary ?? null, loadError: error?.message ?? null, reloadCase, isAnyDocumentProcessing };
 }

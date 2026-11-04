@@ -1,9 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { fetchBatch } from "@/api/batches-api";
+import { useBatch } from "@/api/queries";
 import { STAGE_DETAILS } from "@/components/batches/BatchClientCard";
-import type { BatchClient, BatchStatus } from "@/types/batches";
+import type { BatchClient } from "@/types/batches";
 
 /** Where a client's form opens: its review once filled, else its documents (still being read or filled). */
 function getClientHref(client: BatchClient) {
@@ -15,8 +14,7 @@ function getClientHref(client: BatchClient) {
  * client with its status, and one tab per form of this client. */
 export default function BatchClientSwitcher({ batchId, caseId }: { batchId: string; caseId: string }) {
   const router = useRouter();
-  const [batchStatus, setBatchStatus] = useState<BatchStatus | null>(null);
-  useEffect(() => { fetchBatch(batchId).then(setBatchStatus).catch(() => setBatchStatus(null)); }, [batchId, caseId]);
+  const batchStatus = useBatch(batchId).data; // cached: moving to the next client shows the list at once
   if (!batchStatus) return <div className="h-10 border-b border-line bg-white" />;
 
   const currentClient = batchStatus.clients.find((client) => client.caseId === caseId);

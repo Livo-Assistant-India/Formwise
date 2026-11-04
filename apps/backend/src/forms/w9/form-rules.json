@@ -1,19 +1,53 @@
 {
   "_about": "Form-level rules. One person (the U.S. person). Name from KYC documents, the rest from the Excel.",
   "formId": "w9",
-  "label": "Form W-9 (US taxpayer ID, U.S. persons)",
+  "group": "US tax",
+  "label": "W-9",
   "shortLabel": "W-9",
-  "purpose": "US taxpayer identification for U.S. persons investing in a VCC fund",
+  "purpose": "Tax form for US persons",
   "blankFileName": "Form W-9.pdf",
-  "keyFields": ["Name", "Address", "SSN"],
+  "keyFields": [
+    "Name",
+    "Address",
+    "SSN"
+  ],
   "sheetTabName": "W-9",
-  "detectionPhrases": ["W-9", "Request for Taxpayer"],
+  "detectionPhrases": [
+    "W-9",
+    "Request for Taxpayer"
+  ],
   "supportedNomineeCount": 1,
   "personLabel": "U.S. person",
-  "identityType": { "scope": "shared", "tickboxField": null, "numberField": null, "optionByIdentityKind": {}, "numberFieldByIdentityKind": {} },
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
   "reviewSections": [
-    { "key": "identity", "label": "Lines 1, 5, 6 · Name and address", "fields": ["subscriber_name", "us_address", "us_city_state_zip"] },
-    { "key": "tin", "label": "Part I · Social security number", "fields": ["ssn"] },
-    { "key": "certification", "label": "Part II · Certification", "fields": ["form_date"] }
+    {
+      "key": "identity",
+      "label": "Lines 1, 5, 6 · Name and address",
+      "fields": [
+        "subscriber_name",
+        "us_address",
+        "us_city_state_zip"
+      ]
+    },
+    {
+      "key": "tin",
+      "label": "Part I · Social security number",
+      "fields": [
+        "ssn"
+      ]
+    },
+    {
+      "key": "certification",
+      "label": "Part II · Certification",
+      "fields": [
+        "form_date"
+      ]
+    }
   ]
 }

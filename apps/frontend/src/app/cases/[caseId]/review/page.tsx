@@ -12,6 +12,7 @@ import BatchClientSwitcher from "@/components/batches/BatchClientSwitcher";
 import SignatureCard from "@/components/review/SignatureCard";
 import SectionFields from "@/components/review/SectionFields";
 import RequiredFieldsDrawer from "@/components/review/RequiredFieldsDrawer";
+import ReviewPageSkeleton, { REVIEW_GRID_CLASSES } from "@/components/review/ReviewPageSkeleton";
 import SectionRail from "@/components/review/SectionRail";
 import SheetImportDialog from "@/components/review/SheetImportDialog";
 import SourceDocumentDialog from "@/components/review/SourceDocumentDialog";
@@ -19,7 +20,6 @@ import ExcelRowDialog from "@/components/review/ExcelRowDialog";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import SegmentedControl from "@/components/ui/SegmentedControl";
-import Skeleton, { FieldSkeletonGrid } from "@/components/ui/Skeleton";
 import StatusState from "@/components/ui/StatusState";
 import { useReviewSession } from "@/hooks/useReviewSession";
 import type { CaseField } from "@/types/cases";
@@ -29,7 +29,7 @@ import { buildReviewSections, listProblemFieldKeys } from "@/utils/review-sectio
 
 const REQUIRED_REASON = "Required - empty";
 
-const PREVIEW_PANE_OPTIONS = [{ key: "form" as const, label: "Filled form" }, { key: "mapping" as const, label: "Field mapping" }];
+const PREVIEW_PANE_OPTIONS = [{ key: "form" as const, label: "Form" }, { key: "mapping" as const, label: "Mapping" }];
 
 export default function CaseReviewPage() {
   const { caseId } = useParams<{ caseId: string }>();
@@ -116,9 +116,9 @@ export default function CaseReviewPage() {
   if (!activeSection) return <StatusState title="No fields to review" message="This form has no fields set up yet - check Form setup." />;
   return (
     <div className="flex h-full flex-col">
-      <div className="grid min-h-0 flex-1 grid-cols-[17rem_minmax(0,0.95fr)_minmax(0,1.15fr)]">
+      <div className={`grid min-h-0 flex-1 ${REVIEW_GRID_CLASSES}`}>
         <aside className="flex min-h-0 flex-col border-r border-line bg-white">
-          <div className="border-b border-line px-4 py-3">
+          <div className="border-b border-line px-3 py-2.5">
             <div className="flex gap-3">
               {session.caseSummary?.batchId ? <Link href={`/batches/${session.caseSummary.batchId}`} className="text-[11px] text-muted hover:text-ink">← Batch</Link> : null}
               <Link href={`/cases/${caseId}/documents`} className="text-[11px] text-muted hover:text-ink">{session.caseSummary?.batchId ? "Documents" : "← Documents"}</Link>
@@ -144,17 +144,18 @@ export default function CaseReviewPage() {
           </div>
         </aside>
         <section className="flex min-h-0 flex-col border-r border-line bg-white">
-          <div className="flex h-12 shrink-0 items-center gap-2 whitespace-nowrap border-b border-line px-4">
-            <h2 className="min-w-0 truncate text-sm font-semibold" title={activeSection.label}>{activeSection.label}</h2>
-            <span className="shrink-0 text-xs tabular-nums text-muted">{activeSectionIndex + 1} / {sections.length}</span>
+          <div className="flex h-11 shrink-0 items-center gap-2 whitespace-nowrap border-b border-line px-3">
+            <h2 className="min-w-0 truncate text-[13px] font-semibold" title={activeSection.label}>{activeSection.label}</h2>
+            <span className="hidden shrink-0 text-xs tabular-nums text-muted xl:inline">{activeSectionIndex + 1} / {sections.length}</span>
             <div className="ml-auto flex shrink-0 gap-1.5">
               <button type="button" onClick={() => setIsRequiredDrawerOpen(true)}
-                className="inline-flex h-8 shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-line bg-white px-3 text-xs font-medium hover:border-ink">
-                Required fields
+                title="Every required field, in one list"
+                className="inline-flex h-7 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-line bg-white pl-2.5 pr-1 text-xs font-medium transition-colors hover:border-ink/40 hover:bg-canvas">
+                Required
                 <Badge tone={problemFieldKeys.size ? "danger" : "success"}>{problemFieldKeys.size ? `${problemFieldKeys.size} left` : "✓ all done"}</Badge>
               </button>
-              <Button size="small" disabled={activeSectionIndex === 0} onClick={() => openSection(activeSectionIndex - 1)} aria-label="Previous section">←<span className="hidden 2xl:inline">Previous</span></Button>
-              <Button size="small" disabled={activeSectionIndex === sections.length - 1} onClick={() => openSection(activeSectionIndex + 1)} aria-label="Next section"><span className="hidden 2xl:inline">Next</span>→</Button>
+              <Button size="small" disabled={activeSectionIndex === 0} onClick={() => openSection(activeSectionIndex - 1)} aria-label="Previous section" title="Previous section" className="!h-7 !w-7 !px-0">←</Button>
+              <Button size="small" disabled={activeSectionIndex === sections.length - 1} onClick={() => openSection(activeSectionIndex + 1)} aria-label="Next section" title="Next section" className="!h-7 !w-7 !px-0">→</Button>
             </div>
           </div>
           <div className="min-h-0 flex-1 overflow-auto p-4">
@@ -173,7 +174,7 @@ export default function CaseReviewPage() {
               ? <FormPreviewPane key={previewVersion} pageRequest={pageRequest} caseId={caseId} pageCount={fieldsView.pageCount} selectedField={selectedField} previewValue={selectedField ? getEffectiveValue(selectedField, editedValues) ?? "" : ""}
                   allFields={shownFields} onSelectField={goToField}
                   headerActions={<SegmentedControl options={PREVIEW_PANE_OPTIONS} activeKey={previewPane} onChange={setPreviewPane} />} />
-              : <div className="flex h-full flex-col"><div className="border-b border-line bg-white px-3 py-1.5"><SegmentedControl options={PREVIEW_PANE_OPTIONS} activeKey={previewPane} onChange={setPreviewPane} /></div><div className="min-h-0 flex-1"><FieldMappingPane formId={fieldsView.formId} onSelectField={(fieldKey) => {
+              : <div className="flex h-full flex-col"><div className="flex h-11 items-center border-b border-line bg-white px-3"><SegmentedControl options={PREVIEW_PANE_OPTIONS} activeKey={previewPane} onChange={setPreviewPane} /></div><div className="min-h-0 flex-1"><FieldMappingPane formId={fieldsView.formId} onSelectField={(fieldKey) => {
                 const matchingField = shownFields.find((caseField) => caseField.field === `${fieldKey}_n1` || caseField.field === fieldKey);
                 if (matchingField) { goToField(matchingField.field); setPreviewPane("form"); }
               }} /></div></div>}
@@ -186,20 +187,6 @@ export default function CaseReviewPage() {
       <SheetImportDialog caseId={caseId} formId={fieldsView.formId} batchId={session.caseSummary?.batchId} isOpen={isSheetImportOpen} onClose={() => setIsSheetImportOpen(false)} onImported={() => session.reloadFields(true)} />
       <RequiredFieldsDrawer session={session} sections={sections} isOpen={isRequiredDrawerOpen} onClose={() => setIsRequiredDrawerOpen(false)} onJumpToField={goToField} onChooseTick={handleChooseTick} />
       <BlockedFieldsDialog blockedFields={blockedFields} getSectionLabel={getSectionLabel} onClose={() => setBlockedFields([])} onJumpToField={(fieldKey) => { setBlockedFields([]); goToField(fieldKey); }} />
-    </div>
-  );
-}
-
-/** Same three columns as the loaded page, so nothing jumps when the fields arrive. */
-function ReviewPageSkeleton() {
-  return (
-    <div className="grid h-full grid-cols-[17rem_minmax(0,0.95fr)_minmax(0,1.15fr)]" role="status" aria-label="Filling the form">
-      <div className="space-y-3 border-r border-line bg-white p-4">
-        <Skeleton className="h-4 w-32" /><Skeleton className="h-1.5 w-full" />
-        {Array.from({ length: 6 }, (_unused, index) => <Skeleton key={index} className="h-8 w-full" />)}
-      </div>
-      <div className="space-y-5 border-r border-line bg-white p-4"><Skeleton className="h-5 w-40" /><FieldSkeletonGrid /></div>
-      <div className="p-4"><Skeleton className="mx-auto aspect-[0.707] h-full bg-white" /><span className="sr-only">Filling the form…</span></div>
     </div>
   );
 }
