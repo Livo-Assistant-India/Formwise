@@ -1,6 +1,6 @@
 // One spreadsheet row -> the values a case gets, plus a report of everything that needed attention.
 // Privacy rules applied here, before anything is stored: a full Aadhaar number is cut to its last 4 digits,
-// and PAN values are split out (they are kept in memory only, never in the case store on disk).
+// and PAN values are split out into the identity-number store (identity-number-store-service.js).
 import { validatorFor } from "@prefill/shared";
 import { normalizeDateText } from "./cell-value-helpers.js";
 import { normalizeHeadingText } from "./column-matching-helpers.js";

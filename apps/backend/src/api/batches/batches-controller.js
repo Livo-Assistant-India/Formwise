@@ -5,7 +5,7 @@ import { buildZipFile } from "../../helpers/zip-writer-helpers.js";
 import { getFormDefinition } from "../../forms/form-registry.js";
 import { getBatch, listBatches, updateBatch, deleteBatch } from "../../services/storage/batch-store-service.js";
 import { getCase, deleteCase, getRegeneratedPdfPath } from "../../services/storage/case-store-service.js";
-import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-memory-service.js";
+import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-store-service.js";
 import { SheetFileError } from "../../services/batch/read-sheet-file-service.js";
 import { createBatchFromSheet } from "../../services/batch/create-batch-service.js";
 import { importSheetIntoBatch } from "../../services/batch/import-case-sheet-service.js";

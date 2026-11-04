@@ -1,0 +1,569 @@
+{
+ "formId": "vcc-redemption",
+ "pageCount": 3,
+ "configuration": {
+  "id": "vcc-redemption",
+  "title": "360 ONE Alternatives VCC - Redemption Request",
+  "signatureBoxes": [
+   {
+    "page": 3,
+    "x": 72,
+    "y": 596,
+    "w": 190,
+    "h": 32,
+    "signer": "subscriber",
+    "label": "Shareholder's signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "redemption_type",
+    "page": 2,
+    "w": 8.6,
+    "h": 9.96,
+    "options": [
+     "Full (100%)",
+     "Partial"
+    ],
+    "boxesByOption": {
+     "Full (100%)": [
+      {
+       "x": 196.9,
+       "y": 297.8
+      }
+     ],
+     "Partial": [
+      {
+       "x": 196.9,
+       "y": 325.5
+      }
+     ]
+    }
+   }
+  ],
+  "labels": [],
+  "blankFileName": "360 ONE Alternatives VCC - Common Redemption Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Common Redemption Form (top-left origin, y = text baseline), measured from its labels and table cells.",
+  "formId": "vcc-redemption",
+  "title": "360 ONE Alternatives VCC - Redemption Request",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 122,
+    "y": 584,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 90
+   },
+   {
+    "key": "sub_fund_name",
+    "nominee": null,
+    "page": 2,
+    "x": 74,
+    "y": 134.5,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 440
+   },
+   {
+    "key": "shares_to_redeem",
+    "nominee": null,
+    "page": 2,
+    "x": 196,
+    "y": 362,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxWidth": 320,
+    "maxY": 410
+   },
+   {
+    "key": "redemption_amount_usd",
+    "nominee": null,
+    "page": 2,
+    "x": 196,
+    "y": 430,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 320
+   },
+   {
+    "key": "registered_names",
+    "nominee": null,
+    "page": 2,
+    "x": 232,
+    "y": 660,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxWidth": 288,
+    "maxY": 696
+   },
+   {
+    "key": "registered_address",
+    "nominee": null,
+    "page": 2,
+    "x": 232,
+    "y": 714,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxWidth": 288,
+    "maxY": 750
+   },
+   {
+    "key": "bank_name",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 97.7,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "bank_address",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 112,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxWidth": 288,
+    "maxY": 139
+   },
+   {
+    "key": "account_name",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 152.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 166.9,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "iban",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 181.2,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "swift_code",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 208.6,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "intermediary_bank_name",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 250.7,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "correspondent_swift_code",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 264.6,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "chip_uid",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 278.9,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "aba_code",
+    "nominee": null,
+    "page": 3,
+    "x": 232,
+    "y": 292.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 3,
+    "x": 132,
+    "y": 644.3,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "mailing_address",
+    "nominee": null,
+    "page": 3,
+    "x": 148,
+    "y": 697.8,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxWidth": 370,
+    "maxY": 760
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "sub_fund_name": "typed",
+  "redemption_type": "tick",
+  "shares_to_redeem": "typed",
+  "redemption_amount_usd": "typed",
+  "registered_names": "copy.subscriber_name",
+  "registered_address": "copy.mailing_address",
+  "bank_name": "typed",
+  "bank_address": "typed",
+  "account_name": "copy.subscriber_name",
+  "account_number": "typed",
+  "iban": "typed",
+  "swift_code": "typed",
+  "intermediary_bank_name": "typed",
+  "correspondent_swift_code": "typed",
+  "chip_uid": "typed",
+  "aba_code": "typed",
+  "subscriber_name": "document.name|upper",
+  "mailing_address": "document.address|withoutCareOf|upper"
+ },
+ "formRules": {
+  "formId": "vcc-redemption",
+  "group": "VCC",
+  "label": "VCC – Redemption",
+  "shortLabel": "Redemption",
+  "purpose": "Sell shares in any VCC sub-fund",
+  "blankFileName": "360 ONE Alternatives VCC - Common Redemption Form.pdf",
+  "keyFields": [
+   "Sub-fund",
+   "Shares / amount to redeem",
+   "Bank account"
+  ],
+  "sheetTabName": "VCC Redemption",
+  "detectionPhrases": [
+   "360 ONE Alternatives VCC",
+   "REDEMPTION REQUEST FORM"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Shareholder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "p1",
+    "label": "Page 1 · Date",
+    "fields": [
+     "form_date"
+    ]
+   },
+   {
+    "key": "p2",
+    "label": "Page 2 · Redemption",
+    "fields": [
+     "sub_fund_name",
+     "redemption_type",
+     "shares_to_redeem",
+     "redemption_amount_usd",
+     "registered_names",
+     "registered_address"
+    ]
+   },
+   {
+    "key": "bank",
+    "label": "Page 3 · Beneficiary bank",
+    "fields": [
+     "bank_name",
+     "bank_address",
+     "account_name",
+     "account_number",
+     "iban",
+     "swift_code"
+    ]
+   },
+   {
+    "key": "correspondent",
+    "label": "Page 3 · Correspondent bank",
+    "fields": [
+     "intermediary_bank_name",
+     "correspondent_swift_code",
+     "chip_uid",
+     "aba_code"
+    ]
+   },
+   {
+    "key": "signed",
+    "label": "Page 3 · Shareholder",
+    "fields": [
+     "subscriber_name",
+     "mailing_address"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "sub_fund_name",
+   "redemption_type",
+   "shares_to_redeem",
+   "bank_name",
+   "account_name",
+   "account_number",
+   "swift_code",
+   "subscriber_name",
+   "mailing_address"
+  ],
+  "nomineeFieldKeys": []
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     122,
+     576.35,
+     79.49,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "sub_fund_name",
+   "page": 2,
+   "lines": [
+    [
+     74,
+     126.85,
+     103.55,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "shares_to_redeem",
+   "page": 2,
+   "lines": [
+    [
+     196,
+     354.35,
+     114.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "redemption_amount_usd",
+   "page": 2,
+   "lines": [
+    [
+     196,
+     422.35,
+     138.56,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "registered_names",
+   "page": 2,
+   "lines": [
+    [
+     232,
+     652.35,
+     111.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "registered_address",
+   "page": 2,
+   "lines": [
+    [
+     232,
+     706.35,
+     116.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "bank_name",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     90.05,
+     86.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "bank_address",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     104.35,
+     95.54,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "account_name",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     145.15,
+     98.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     159.25,
+     105.96,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "iban",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     173.55,
+     56.03,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "swift_code",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     200.95,
+     81.26,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "intermediary_bank_name",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     243.05,
+     141.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "correspondent_swift_code",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     256.95,
+     143.79,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "chip_uid",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     271.25,
+     72.53,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "aba_code",
+   "page": 3,
+   "lines": [
+    [
+     232,
+     285.15,
+     78.54,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name",
+   "page": 3,
+   "lines": [
+    [
+     132,
+     636.65,
+     108.17,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address",
+   "page": 3,
+   "lines": [
+    [
+     148,
+     690.15,
+     104.54,
+     9
+    ]
+   ]
+  }
+ ]
+}

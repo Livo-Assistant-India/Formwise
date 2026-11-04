@@ -13,7 +13,7 @@ import { getFilledPdfPath, getFillResultsPath } from "../storage/case-store-serv
 import { fetchCorrectedValues } from "../storage/decision-log-service.js";
 import { buildNomineeProfile, IDENTITY_KIND_PRIORITY } from "../profile/build-nominee-profile-service.js";
 import { rereadMissingIdentityDocuments } from "../documents/read-identity-document-service.js";
-import { getTypedPanValues } from "../documents/identity-number-memory-service.js";
+import { getTypedPanValues } from "../documents/identity-number-store-service.js";
 import { createFieldValueReader } from "./field-value-reader.js";
 
 export function formatTodayDate() {

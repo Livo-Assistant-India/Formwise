@@ -6,7 +6,7 @@ import { groupCaseDocuments } from "../../services/documents/group-documents-ser
 import { importSheetIntoCase } from "../../services/batch/import-case-sheet-service.js";
 import { SheetFileError } from "../../services/batch/read-sheet-file-service.js";
 import { updateCase } from "../../services/storage/case-store-service.js";
-import { storeTypedPanValues } from "../../services/documents/identity-number-memory-service.js";
+import { storeTypedPanValues } from "../../services/documents/identity-number-store-service.js";
 import { fillCase } from "../../services/fill/fill-case-service.js";
 
 export async function handleImportCaseSheet(request, response) {
@@ -41,7 +41,7 @@ export async function handleRemoveCaseSheet(request, response) {
 }
 
 // GET /api/cases/:caseId/sheet-row - this client's Excel row as it was imported, for the "Excel" preview on review.
-// Only the row's own values are kept (never the file); PAN values live in memory only and are left out here.
+// Only the row's own values are kept (never the file); PAN values go to the identity-number store (identity-number-store-service.js) and are left out here.
 export async function handleGetCaseSheetRow(request, response) {
   const { sheetImport, typedValues } = request.caseEntry;
   if (!sheetImport) throw new ApiError(404, ERROR_CODES.NOT_FOUND, "No Excel was imported for this case");

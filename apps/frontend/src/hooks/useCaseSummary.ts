@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect } from "react";
 import { useCase } from "@/api/queries";
+import { invalidateQueries } from "@/api/query-cache";
 
 const POLL_INTERVAL_MILLISECONDS = 1200;
 
@@ -9,6 +10,10 @@ const POLL_INTERVAL_MILLISECONDS = 1200;
 export function useCaseSummary(caseId: string) {
   const { data: caseSummary, error, refresh } = useCase(caseId);
   const reloadCase = useCallback(async () => { await refresh(); }, [refresh]);
+
+  // Once a document gives the client's name, lists showing this case (Home, the sidebar) refresh too.
+  const clientName = caseSummary?.clientName;
+  useEffect(() => { if (clientName) invalidateQueries("cases"); }, [clientName]);
 
   const isAnyDocumentProcessing = Boolean(caseSummary?.documents.some((caseDocument) => caseDocument.status === "processing"));
   useEffect(() => {

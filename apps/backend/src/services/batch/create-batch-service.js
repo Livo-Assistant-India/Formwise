@@ -1,12 +1,12 @@
 // Turns one uploaded Excel into a batch: every client row becomes one ordinary case per chosen form, holding that
-// row's values (PAN kept in memory only, like everywhere else). With several forms, values one form names
+// row's values (PAN kept in the identity-number store, like everywhere else). With several forms, values one form names
 // differently are translated across (see cross-form-values-helpers.js), and the client's documents are uploaded
 // once - to the first form's case - and shared with the other forms' cases after they are read.
 import { getFormDefinition } from "../../forms/form-registry.js";
 import { fetchFormRules } from "../forms/form-files-service.js";
 import { createCase, updateCase } from "../storage/case-store-service.js";
 import { createBatch } from "../storage/batch-store-service.js";
-import { storeTypedPanValues } from "../documents/identity-number-memory-service.js";
+import { storeTypedPanValues } from "../documents/identity-number-store-service.js";
 import { SheetFileError } from "./read-sheet-file-service.js";
 import { readFormSheet } from "./read-form-sheet-service.js";
 import { buildRowValues } from "./sheet-row-values-service.js";

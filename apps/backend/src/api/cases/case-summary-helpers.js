@@ -2,7 +2,7 @@
 // saved file path, and never a full ID number except the reviewer's own PAN view (PAN is shown in full by
 // request; Aadhaar never is).
 import { DOC_TYPE_LABELS } from "../../services/documents/classify-document-service.js";
-import { getIdentityRecord } from "../../services/documents/identity-number-memory-service.js";
+import { getIdentityRecord } from "../../services/documents/identity-number-store-service.js";
 
 /** Labels only (no values) of what was read from one document. */
 function listReadFieldLabels(caseDocument) {
@@ -18,6 +18,23 @@ function listReadFieldLabels(caseDocument) {
   return readLabels;
 }
 
+const ID_NUMBER_LABELS = { pan: "PAN", passport: "Passport no.", driving_licence: "Licence no." };
+
+/** The values read from one document, to check on the documents screen. Aadhaar: last 4 digits only, never more.
+ * PAN / passport / licence numbers are shown in full (identity-number-store-service keeps them on this machine). */
+function listReadValues(caseDocument) {
+  const identityRecord = getIdentityRecord(caseDocument.id) || {};
+  const idNumber = identityRecord.panNumber || identityRecord.passportNumber || identityRecord.dlNumber || caseDocument.panMaskedNumber || null;
+  const readValues = [
+    ["Name", caseDocument.foundName || caseDocument.holderName || identityRecord.name],
+    ["Date of birth", caseDocument.foundDob || caseDocument.holderDob || identityRecord.dob],
+    ["Address", caseDocument.foundAddress || identityRecord.address],
+    ["Aadhaar", caseDocument.foundLast4 ? `XXXX XXXX ${caseDocument.foundLast4}` : null],
+    [ID_NUMBER_LABELS[caseDocument.docType] || "ID no.", idNumber],
+  ];
+  return readValues.filter(([, value]) => value).map(([label, value]) => ({ label, value: String(value) }));
+}
+
 export function toDocumentSummary(caseDocument) {
   const identityRecord = getIdentityRecord(caseDocument.id);
   return {
@@ -29,6 +46,7 @@ export function toDocumentSummary(caseDocument) {
     personName: caseDocument.foundName || caseDocument.holderName || identityRecord?.name || null,
     folderName: caseDocument.folderName || null,
     readFieldLabels: listReadFieldLabels(caseDocument),
+    readValues: listReadValues(caseDocument),
   };
 }
 

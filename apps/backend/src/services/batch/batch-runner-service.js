@@ -9,7 +9,7 @@ import { existsSync } from "node:fs";
 import { copyFile, mkdir } from "node:fs/promises";
 import { listBatches } from "../storage/batch-store-service.js";
 import { getCase, listCases, updateCase, updateCaseDocument, addCaseDocument, getDocumentPath, getCaseUploadDirectory } from "../storage/case-store-service.js";
-import { getIdentityRecord, storeIdentityRecord } from "../documents/identity-number-memory-service.js";
+import { getIdentityRecord, storeIdentityRecord } from "../documents/identity-number-store-service.js";
 import { processUploadedDocument, DOCUMENT_STATUSES } from "../documents/process-document-service.js";
 import { fillCase } from "../fill/fill-case-service.js";
 

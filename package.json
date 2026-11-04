@@ -9,6 +9,7 @@
     "demo": "pnpm --parallel --filter @prefill/backend --filter @prefill/frontend demo",
     "dev:backend": "pnpm --filter @prefill/backend dev",
     "dev:frontend": "pnpm --filter @prefill/frontend dev",
-    "build": "pnpm --filter @prefill/frontend build"
+    "build": "pnpm --filter @prefill/frontend build",
+    "check-forms": "pnpm --filter @prefill/backend check-forms --"
   }
 }

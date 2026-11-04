@@ -1,6 +1,6 @@
 // The per-field value lookup used by one fill run: where each mapped field's value comes from (today's date,
 // the nominee's document profile, or the case's typed values) and, when there is none, the plain reason why.
-import { getTypedPanValues } from "../documents/identity-number-memory-service.js";
+import { getTypedPanValues } from "../documents/identity-number-store-service.js";
 import { splitFieldSource, applyValueTransforms, SHEET_SAFE_TRANSFORMS } from "./field-value-transforms.js";
 
 const IDENTITY_KIND_WORDS = { pan: "PAN card", aadhaarLast4: "Aadhaar", passport: "passport", dl: "driving licence" };

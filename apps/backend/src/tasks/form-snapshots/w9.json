@@ -1,0 +1,237 @@
+{
+ "formId": "w9",
+ "pageCount": 6,
+ "configuration": {
+  "id": "w9",
+  "title": "Form W-9",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 124,
+    "y": 577,
+    "w": 250,
+    "h": 20,
+    "signer": "subscriber",
+    "label": "U.S. person's signature"
+   }
+  ],
+  "tickboxes": [],
+  "labels": [],
+  "blankFileName": "Form W-9.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank IRS Form W-9 (Rev. March 2024): positions from the form's own fill-in boxes (top-left origin, y = baseline).",
+  "formId": "w9",
+  "title": "Form W-9",
+  "fields": [
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 1,
+    "x": 61,
+    "y": 128.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 510
+   },
+   {
+    "key": "us_address",
+    "nominee": null,
+    "page": 1,
+    "x": 61,
+    "y": 296.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 322
+   },
+   {
+    "key": "us_city_state_zip",
+    "nominee": null,
+    "page": 1,
+    "x": 61,
+    "y": 320.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 322
+   },
+   {
+    "key": "ssn",
+    "nominee": null,
+    "page": 1,
+    "x": 417.6,
+    "y": 389,
+    "fontSize": 12,
+    "type": "text",
+    "maxWidth": 158,
+    "combs": [
+     [
+      417.6,
+      43.2,
+      3
+     ],
+     [
+      475.2,
+      28.8,
+      2
+     ],
+     [
+      518.4,
+      57.6,
+      4
+     ]
+    ]
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 405,
+    "y": 594,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 170
+   }
+  ]
+ },
+ "fieldSources": {
+  "subscriber_name": "document.name|upper",
+  "us_address": "typed",
+  "us_city_state_zip": "typed",
+  "ssn": "typed",
+  "form_date": "today|monthFirst"
+ },
+ "formRules": {
+  "formId": "w9",
+  "group": "US tax",
+  "label": "W-9",
+  "shortLabel": "W-9",
+  "purpose": "Tax form for US persons",
+  "blankFileName": "Form W-9.pdf",
+  "keyFields": [
+   "Name",
+   "Address",
+   "SSN"
+  ],
+  "sheetTabName": "W-9",
+  "detectionPhrases": [
+   "W-9",
+   "Request for Taxpayer"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "U.S. person",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "identity",
+    "label": "Lines 1, 5, 6 · Name and address",
+    "fields": [
+     "subscriber_name",
+     "us_address",
+     "us_city_state_zip"
+    ]
+   },
+   {
+    "key": "tin",
+    "label": "Part I · Social security number",
+    "fields": [
+     "ssn"
+    ]
+   },
+   {
+    "key": "certification",
+    "label": "Part II · Certification",
+    "fields": [
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "subscriber_name",
+   "us_address",
+   "us_city_state_zip",
+   "ssn"
+  ],
+  "nomineeFieldKeys": []
+ },
+ "drawnSpots": [
+  {
+   "field": "subscriber_name",
+   "page": 1,
+   "lines": [
+    [
+     61,
+     120,
+     120.19,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "us_address",
+   "page": 1,
+   "lines": [
+    [
+     61,
+     288,
+     95.04,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "us_city_state_zip",
+   "page": 1,
+   "lines": [
+    [
+     61,
+     312,
+     120.05,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "ssn",
+   "page": 1,
+   "lines": [
+    [
+     417.6,
+     378.8,
+     43.2,
+     12
+    ],
+    [
+     475.2,
+     378.8,
+     28.8,
+     12
+    ],
+    [
+     518.4,
+     378.8,
+     57.6,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     405,
+     585.5,
+     88.32,
+     10
+    ]
+   ]
+  }
+ ]
+}

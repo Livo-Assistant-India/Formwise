@@ -1,75 +1,65 @@
-// Every form the app can fill. Adding a form = a new folder next to this file (form-configuration.js,
-// field-positions.json, field-sources.json, form-rules.json, required-fields.json) plus one entry here - or, for a
-// form made on the "Add a form" screen, a folder with form-configuration.json instead, found on its own.
+// Every form the app can fill, found by itself: a form is a folder forms/<stream>/<form-id>/ holding five data files
+// (form-configuration.json, field-positions.json, field-sources.json, form-rules.json, required-fields.json).
+// Adding a form = adding its folder; no code changes. Streams: vcc, us-tax, nft, gift-city, added (made on the
+// "Add a form" screen). A form's tick-box logic is named in its configuration ("tickboxRule"); almost every form
+// uses "usual" (the answer comes from the Excel or the reviewer). See NEXT-CHAT.md for how to build a form.
 import path from "node:path";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { BLANK_FORMS_DIRECTORY, FORMS_DIRECTORY } from "../config/paths-config.js";
-import { CRN_BROKING_DEMAT_FORM_CONFIGURATION } from "./crn-broking-demat/form-configuration.js";
-import { CAMS_NOMINATION_FORM_CONFIGURATION } from "./cams-nomination/form-configuration.js";
-import { GLOBAL_BOND_FUND_SUBSCRIPTION_FORM_CONFIGURATION } from "./global-bond-fund-subscription/form-configuration.js";
-import { W8BEN_FORM_CONFIGURATION } from "./w8ben/form-configuration.js";
-import { W9_FORM_CONFIGURATION } from "./w9/form-configuration.js";
-import { VCC_TOPUP_GLOBAL_BOND_FUND_FORM_CONFIGURATION } from "./vcc-topup-global-bond-fund/form-configuration.js";
-import { VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2_FORM_CONFIGURATION } from "./vcc-topup-global-investment-fund-2/form-configuration.js";
-import { VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND_FORM_CONFIGURATION } from "./vcc-topup-international-opportunities-fund/form-configuration.js";
-import { VCC_REDEMPTION_FORM_CONFIGURATION } from "./vcc-redemption/form-configuration.js";
 import { applyCrnBrokingDematTickboxes, applyCamsNominationTickboxes, applyOptionTickboxes } from "../services/forms/tickbox-rules-service.js";
 
-export const FORM_IDS = {
-  CRN_BROKING_DEMAT: "crn-broking-demat", CAMS_NOMINATION: "cams-nomination",
-  GLOBAL_BOND_FUND_SUBSCRIPTION: "global-bond-fund-subscription", W8BEN: "w8ben",
-  VCC_REDEMPTION: "vcc-redemption", W9: "w9",
-  VCC_TOPUP_GLOBAL_BOND_FUND: "vcc-topup-global-bond-fund",
-  VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2: "vcc-topup-global-investment-fund-2",
-  VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND: "vcc-topup-international-opportunities-fund",
-};
-const applyUsualAnswerTickboxes = (pages, formConfiguration, tickboxContext) => applyOptionTickboxes(pages, formConfiguration, { overrides: tickboxContext.overrides });
+export const FORM_STREAMS = { VCC: "vcc", US_TAX: "us-tax", NFT: "nft", GIFT_CITY: "gift-city", ADDED: "added" };
+const CONFIGURATION_FILE_NAME = "form-configuration.json";
+const NEVER_MATCHES = /(?!)/;
 
-const FORM_DEFINITIONS = {
-  [FORM_IDS.CRN_BROKING_DEMAT]: {
-    formConfiguration: CRN_BROKING_DEMAT_FORM_CONFIGURATION,
-    applyTickboxes: (pages, formConfiguration, tickboxContext) => applyCrnBrokingDematTickboxes(pages, formConfiguration, {
-      anyNomineeAadhaarLast4: tickboxContext.anyNomineeAadhaarLast4, idType: tickboxContext.idTypes[1], overrides: tickboxContext.overrides,
-    }),
-  },
-  [FORM_IDS.GLOBAL_BOND_FUND_SUBSCRIPTION]: { formConfiguration: GLOBAL_BOND_FUND_SUBSCRIPTION_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.W8BEN]: { formConfiguration: W8BEN_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.VCC_TOPUP_GLOBAL_BOND_FUND]: { formConfiguration: VCC_TOPUP_GLOBAL_BOND_FUND_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2]: { formConfiguration: VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND]: { formConfiguration: VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.W9]: { formConfiguration: W9_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.VCC_REDEMPTION]: { formConfiguration: VCC_REDEMPTION_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
-  [FORM_IDS.CAMS_NOMINATION]: {
-    formConfiguration: CAMS_NOMINATION_FORM_CONFIGURATION,
-    applyTickboxes: (pages, formConfiguration, tickboxContext) => applyCamsNominationTickboxes(pages, formConfiguration, {
-      idTypes: tickboxContext.idTypes, overrides: tickboxContext.overrides,
-    }),
-  },
+/** How a form's tick boxes are decided. Named in form-configuration.json; add a rule here only for truly special forms. */
+const TICKBOX_RULES = {
+  usual: (pages, formConfiguration, tickboxContext) => applyOptionTickboxes(pages, formConfiguration, { overrides: tickboxContext.overrides }),
+  "crn-broking-demat": (pages, formConfiguration, tickboxContext) => applyCrnBrokingDematTickboxes(pages, formConfiguration, {
+    anyNomineeAadhaarLast4: tickboxContext.anyNomineeAadhaarLast4, idType: tickboxContext.idTypes[1], overrides: tickboxContext.overrides,
+  }),
+  "cams-nomination": (pages, formConfiguration, tickboxContext) => applyCamsNominationTickboxes(pages, formConfiguration, {
+    idTypes: tickboxContext.idTypes, overrides: tickboxContext.overrides,
+  }),
 };
 
-/** A form made on the "Add a form" screen: its configuration is JSON (no code), its ticks use the usual-answer rule. */
-function readGeneratedFormDefinition(formId) {
-  const configurationPath = path.join(FORMS_DIRECTORY, formId, "form-configuration.json");
+/** Printed-label finders are stored as pattern text in JSON; turn them back into regular expressions. */
+const toPattern = (patternText) => (patternText ? new RegExp(patternText) : undefined);
+
+function readFormDefinition(formDirectory) {
+  const configurationPath = path.join(formDirectory, CONFIGURATION_FILE_NAME);
   if (!existsSync(configurationPath)) return null;
-  const { blankFileName, ...configuration } = JSON.parse(readFileSync(configurationPath, "utf-8"));
+  const { _about: _ignoredAbout, blankFileName, nomineeHeaderRe, labels = [], tickboxRule = "usual", ...configuration } = JSON.parse(readFileSync(configurationPath, "utf-8"));
+  if (!TICKBOX_RULES[tickboxRule]) throw new Error(`${configurationPath}: unknown tickboxRule "${tickboxRule}"`);
   return {
-    formConfiguration: { ...configuration, blankFormPath: path.join(BLANK_FORMS_DIRECTORY, blankFileName), nomineeHeaderRe: /(?!)/, labels: [] },
-    applyTickboxes: applyUsualAnswerTickboxes,
+    directory: formDirectory,
+    formConfiguration: {
+      ...configuration,
+      signatureBoxes: configuration.signatureBoxes || [],
+      tickboxes: configuration.tickboxes || [],
+      blankFormPath: path.join(BLANK_FORMS_DIRECTORY, blankFileName),
+      nomineeHeaderRe: nomineeHeaderRe ? new RegExp(nomineeHeaderRe) : NEVER_MATCHES,
+      labels: labels.map((label) => ({ ...label, re: toPattern(label.re), cont: toPattern(label.cont) })),
+    },
+    applyTickboxes: TICKBOX_RULES[tickboxRule],
   };
 }
 
-/** Adds (or reloads) a generated form so it is usable at once, without a restart. */
-export function registerGeneratedForm(formId) {
-  const definition = readGeneratedFormDefinition(formId);
-  if (!definition) throw new Error(`no generated form "${formId}"`);
-  FORM_DEFINITIONS[formId] = definition;
+const FORM_DEFINITIONS = {};
+const listSubfolders = (directory) => (existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name) : []);
+for (const stream of listSubfolders(FORMS_DIRECTORY)) {
+  for (const formId of listSubfolders(path.join(FORMS_DIRECTORY, stream))) {
+    if (FORM_DEFINITIONS[formId]) throw new Error(`form id "${formId}" is used twice (in ${stream} and elsewhere) - ids must be unique`);
+    const definition = readFormDefinition(path.join(FORMS_DIRECTORY, stream, formId));
+    if (definition) FORM_DEFINITIONS[formId] = definition;
+  }
 }
 
-for (const directoryEntry of readdirSync(FORMS_DIRECTORY, { withFileTypes: true })) {
-  if (directoryEntry.isDirectory() && !FORM_DEFINITIONS[directoryEntry.name]) {
-    const definition = readGeneratedFormDefinition(directoryEntry.name);
-    if (definition) FORM_DEFINITIONS[directoryEntry.name] = definition;
-  }
+/** Adds (or reloads) a form made on the "Add a form" screen, so it is usable at once without a restart. */
+export function registerGeneratedForm(formId) {
+  const definition = readFormDefinition(path.join(FORMS_DIRECTORY, FORM_STREAMS.ADDED, formId));
+  if (!definition) throw new Error(`no generated form "${formId}"`);
+  FORM_DEFINITIONS[formId] = definition;
 }
 
 export function listFormIds() {
@@ -80,5 +70,5 @@ export function listFormIds() {
 export function getFormDefinition(formId) {
   const definition = FORM_DEFINITIONS[formId];
   if (!definition) return null;
-  return { formId, directory: path.join(FORMS_DIRECTORY, formId), ...definition };
+  return { formId, ...definition };
 }

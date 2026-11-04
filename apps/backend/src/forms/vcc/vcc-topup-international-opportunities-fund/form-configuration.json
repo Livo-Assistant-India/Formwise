@@ -1,0 +1,30 @@
+{
+  "_about": "360 ONE International Opportunities Fund - Additional Subscription (top-up) form, 4 pages. Written by make_topups.py: positions are measured from the blank's underscore lines and series tick boxes.",
+  "id": "vcc-topup-international-opportunities-fund",
+  "title": "360 ONE International Opportunities Fund - Additional Subscription",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 384,
+      "y": 289,
+      "w": 178,
+      "h": 16,
+      "signer": "subscriber",
+      "label": "Investor signature"
+    },
+    {
+      "page": 3,
+      "x": 175,
+      "y": 196,
+      "w": 175,
+      "h": 19,
+      "signer": "subscriber",
+      "label": "Subscriber signature"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "360 ONE International Opportunities Fund - Additional Subscription.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

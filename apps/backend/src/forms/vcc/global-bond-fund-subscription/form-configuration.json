@@ -1,0 +1,1281 @@
+{
+  "_about": "360 ONE Global Bond Fund - Series II subscription form (65 pages). The blank was made from the client's own filled sample by removing its flattened value layer, so every position here is where their sample wrote it. Tick boxes are the blank's own ☐ glyphs (x, y = glyph baseline, top-left origin; w/h = glyph box). No label lookup: field positions are fixed (field-positions.json). Every tick box is its own question with NO assumed answer: the answer comes from the client's Excel row or the reviewer; an unanswered one stays empty and is listed to fix. Annex 7 (pages 62-63): each question is answered on its own row. Part II is answered only by a non-individual applicant. Pages 32-36: FATCA / CRS self-certification for an ENTITY investor - each box is its own optional tick (\"Ticked\" or left empty). An individual's form (the client's sample) leaves all of them empty. Pages 34-35: CRS classification. These boxes are DRAWN squares (not ☐ characters), found from the page's own drawing instructions: x = left edge, y = top edge + 0.85 x size, so the tick sits inside the square. Pages 58-59: Singapore tax questionnaire, Part 3 - a beneficial owner that is NOT an individual.",
+  "id": "global-bond-fund-subscription",
+  "title": "360 ONE Global Bond Fund - Series II - Subscription",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 330,
+      "y": 610,
+      "w": 185,
+      "h": 31,
+      "signer": "subscriber",
+      "label": "Subscriber's signature"
+    },
+    {
+      "page": 16,
+      "x": 110,
+      "y": 610,
+      "w": 130,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Signed by the subscriber"
+    },
+    {
+      "page": 17,
+      "x": 74,
+      "y": 692,
+      "w": 130,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Bank instruction signed"
+    },
+    {
+      "page": 28,
+      "x": 175,
+      "y": 578,
+      "w": 180,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Tax self-certification"
+    },
+    {
+      "page": 37,
+      "x": 168,
+      "y": 181,
+      "w": 55,
+      "h": 20,
+      "signer": "entity",
+      "label": "Entity authorised signatory 1"
+    },
+    {
+      "page": 37,
+      "x": 424,
+      "y": 181,
+      "w": 65,
+      "h": 20,
+      "signer": "entity",
+      "label": "Entity authorised signatory 2"
+    },
+    {
+      "page": 41,
+      "x": 165,
+      "y": 309,
+      "w": 190,
+      "h": 26,
+      "signer": "controlling_person",
+      "label": "Controlling person"
+    },
+    {
+      "page": 54,
+      "x": 104,
+      "y": 646,
+      "w": 140,
+      "h": 30,
+      "signer": "subscriber",
+      "label": "Accredited investor consent"
+    },
+    {
+      "page": 64,
+      "x": 62,
+      "y": 400,
+      "w": 210,
+      "h": 62,
+      "signer": "subscriber",
+      "label": "Tax offences questionnaire"
+    },
+    {
+      "page": 65,
+      "x": 56,
+      "y": 680,
+      "w": 180,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "PEP self-certification"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "series",
+      "page": 2,
+      "w": 8.87,
+      "h": 9.96,
+      "options": [
+        "Series A",
+        "Series B"
+      ],
+      "boxesByOption": {
+        "Series A": [
+          {
+            "x": 275.81,
+            "y": 437.33
+          }
+        ],
+        "Series B": [
+          {
+            "x": 275.81,
+            "y": 455.57
+          }
+        ]
+      }
+    },
+    {
+      "key": "us_tax_status",
+      "page": 27,
+      "w": 8.58,
+      "h": 9.96,
+      "options": [
+        "U.S. citizen or resident",
+        "Born in the U.S., citizenship given up",
+        "Not a U.S. citizen or resident"
+      ],
+      "boxesByOption": {
+        "U.S. citizen or resident": [
+          {
+            "x": 108.02,
+            "y": 551.83
+          }
+        ],
+        "Born in the U.S., citizenship given up": [
+          {
+            "x": 108.02,
+            "y": 616.27
+          }
+        ],
+        "Not a U.S. citizen or resident": [
+          {
+            "x": 108.02,
+            "y": 648.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "beneficial_owner",
+      "page": 57,
+      "w": 8.16,
+      "h": 9.48,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 82.34,
+            "y": 346.13
+          }
+        ],
+        "No": [
+          {
+            "x": 82.34,
+            "y": 362.93
+          }
+        ]
+      }
+    },
+    {
+      "key": "singapore_tax_status",
+      "page": 57,
+      "w": 7.75,
+      "h": 9,
+      "options": [
+        "Not tax resident in Singapore and not a citizen",
+        "Tax resident in Singapore and/or a citizen"
+      ],
+      "boxesByOption": {
+        "Not tax resident in Singapore and not a citizen": [
+          {
+            "x": 54.02,
+            "y": 600.79
+          }
+        ],
+        "Tax resident in Singapore and/or a citizen": [
+          {
+            "x": 54.02,
+            "y": 672.94
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1a",
+      "page": 62,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 548.71
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 548.71
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1b",
+      "page": 62,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 586.15
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 586.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1c",
+      "page": 62,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 612.46
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 612.46
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1d",
+      "page": 62,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 649.9
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 649.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1e",
+      "page": 62,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 711.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 711.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1f",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 120.26
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 120.26
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1g",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 169.82
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 169.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2a",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 244.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 244.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2b",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 282.17
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 282.17
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2c",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 319.49
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 319.49
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2d",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 356.93
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 356.93
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2e",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 406.61
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 406.61
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_3",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 492.79
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 492.79
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_part2",
+      "page": 63,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 657.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 657.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_specified_us_person",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 144.62
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_us_person_not_specified",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 180.14
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_singapore_or_iga",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 336.65
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_registered_deemed_compliant",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 349.97
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_participating",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 363.29
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_sponsored",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 460.87
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_trustee_documented_trust",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 544.39
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_certified_deemed_compliant",
+      "page": 32,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 601.87
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_non_participating",
+      "page": 33,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 120.86
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_exempt_beneficial_owner",
+      "page": 33,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.02,
+            "y": 172.58
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nffe",
+      "page": 33,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.02,
+            "y": 211.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_passive_nffe",
+      "page": 33,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.02,
+            "y": 350.69
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_crs",
+      "page": 35,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 424.61
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_regularly_traded",
+      "page": 35,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 126.02,
+            "y": 469.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_governmental",
+      "page": 35,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 125.9,
+            "y": 574.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_other",
+      "page": 35,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 125.9,
+            "y": 603.79
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_passive_nfe_crs",
+      "page": 36,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.02,
+            "y": 82.44
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_entity_is_fi",
+      "page": 34,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 109.1,
+            "y": 404.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_reporting_fi",
+      "page": 34,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 452.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_non_reporting_fi",
+      "page": 34,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 478.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_fi_non_participating_jurisdiction",
+      "page": 35,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 122.25
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_non_reporting_fi_type",
+      "page": 34,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Governmental Entity",
+        "International Organization",
+        "Central Bank",
+        "Broad Participation Retirement Fund",
+        "Narrow Participation Retirement Fund",
+        "Pension Fund of a Governmental Entity / Intl. Org. / Central Bank",
+        "Exempt Collective Investment Vehicle",
+        "Trust whose trustee reports all required information",
+        "Qualified Credit Card Issuer",
+        "Other Entity defined under domestic law"
+      ],
+      "boxesByOption": {
+        "Governmental Entity": [
+          {
+            "x": 163.1,
+            "y": 518.3
+          }
+        ],
+        "International Organization": [
+          {
+            "x": 163.1,
+            "y": 531.62
+          }
+        ],
+        "Central Bank": [
+          {
+            "x": 163.1,
+            "y": 544.94
+          }
+        ],
+        "Broad Participation Retirement Fund": [
+          {
+            "x": 163.1,
+            "y": 558.26
+          }
+        ],
+        "Narrow Participation Retirement Fund": [
+          {
+            "x": 163.1,
+            "y": 571.58
+          }
+        ],
+        "Pension Fund of a Governmental Entity / Intl. Org. / Central Bank": [
+          {
+            "x": 163.1,
+            "y": 584.78
+          }
+        ],
+        "Exempt Collective Investment Vehicle": [
+          {
+            "x": 163.1,
+            "y": 611.18
+          }
+        ],
+        "Trust whose trustee reports all required information": [
+          {
+            "x": 163.1,
+            "y": 624.38
+          }
+        ],
+        "Qualified Credit Card Issuer": [
+          {
+            "x": 163.1,
+            "y": 650.79
+          }
+        ],
+        "Other Entity defined under domestic law": [
+          {
+            "x": 163.1,
+            "y": 663.89
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_npj_fi_type",
+      "page": 35,
+      "w": 9.96,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "(a) Investment Entity managed by another FI",
+        "(b) Other Investment Entity",
+        "(c) Other Financial Institution"
+      ],
+      "boxesByOption": {
+        "(a) Investment Entity managed by another FI": [
+          {
+            "x": 181.1,
+            "y": 160.77
+          }
+        ],
+        "(b) Other Investment Entity": [
+          {
+            "x": 181.1,
+            "y": 372
+          }
+        ],
+        "(c) Other Financial Institution": [
+          {
+            "x": 181.1,
+            "y": 385.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "controlling_person_us_status",
+      "page": 39,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "U.S. citizen or resident",
+        "Born in the U.S., citizenship given up",
+        "Not a U.S. citizen or resident"
+      ],
+      "boxesByOption": {
+        "U.S. citizen or resident": [
+          {
+            "x": 108.02,
+            "y": 140.18
+          }
+        ],
+        "Born in the U.S., citizenship given up": [
+          {
+            "x": 108.02,
+            "y": 204.62
+          }
+        ],
+        "Not a U.S. citizen or resident": [
+          {
+            "x": 108.02,
+            "y": 237.14
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_category",
+      "page": 58,
+      "w": 7.75,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "(a) Not tax resident in Singapore",
+        "(b) Approved person - Section 13O / 13OA",
+        "(c) Approved person - Section 13U",
+        "(d) Approved trust - Section 13D",
+        "(e) Designated person",
+        "(f) None of these"
+      ],
+      "boxesByOption": {
+        "(a) Not tax resident in Singapore": [
+          {
+            "x": 54.02,
+            "y": 139.34
+          }
+        ],
+        "(b) Approved person - Section 13O / 13OA": [
+          {
+            "x": 54.02,
+            "y": 302.33
+          }
+        ],
+        "(c) Approved person - Section 13U": [
+          {
+            "x": 54.02,
+            "y": 351.77
+          }
+        ],
+        "(d) Approved trust - Section 13D": [
+          {
+            "x": 54.02,
+            "y": 401.09
+          }
+        ],
+        "(e) Designated person": [
+          {
+            "x": 54.02,
+            "y": 450.55
+          }
+        ],
+        "(f) None of these": [
+          {
+            "x": 54.02,
+            "y": 476.59
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q1_tax_resident",
+      "page": 58,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 577.51
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 577.51
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q2",
+      "page": 58,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 690.7
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 690.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q3",
+      "page": 59,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 168.5
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 168.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q4",
+      "page": 59,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 281.69
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 281.69
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q5",
+      "page": 59,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 356.21
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 356.21
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 65,
+      "w": 6.02,
+      "h": 9.96,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 54.02,
+            "y": 465.07
+          }
+        ],
+        "No": [
+          {
+            "x": 54.02,
+            "y": 489.31
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE Global Bond Fund - Series II.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

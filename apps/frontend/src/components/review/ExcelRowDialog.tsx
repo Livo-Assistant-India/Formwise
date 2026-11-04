@@ -54,7 +54,7 @@ export default function ExcelRowDialog({ caseId, caseField, onClose }: ExcelRowD
               </tbody>
             </table>
           </div>
-          <p className="mt-2 text-xs text-muted">PAN columns are not shown: PAN numbers are kept in memory only, never stored.</p>
+          <p className="mt-2 text-xs text-muted">PAN columns are not shown here; the PAN fills its field on the review screen.</p>
         </>
       ) : !errorMessage ? <p className="text-sm text-muted">Loading…</p> : null}
     </Dialog>

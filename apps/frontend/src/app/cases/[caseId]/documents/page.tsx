@@ -2,10 +2,12 @@
 import { useParams, useRouter } from "next/navigation";
 import { isSignatureFile, uploadSignature } from "@/api/signature-api";
 import { useEffect, useState } from "react";
-import { assignDocument, fillCase, removeCaseSheet, removeDocument, swapNominees, uploadDocuments } from "@/api/cases-api";
+import { assignDocument, fillCase, getDocumentViewUrl, removeCaseSheet, removeDocument, swapNominees, uploadDocuments } from "@/api/cases-api";
 import { fetchFormRules } from "@/api/forms-api";
 import CaseStepper from "@/components/cases/CaseStepper";
 import DocumentCard from "@/components/cases/DocumentCard";
+import DocumentPreviewDialog from "@/components/cases/DocumentPreviewDialog";
+import DocumentReadinessCard from "@/components/cases/DocumentReadinessCard";
 import DocumentDropZone from "@/components/cases/DocumentDropZone";
 import NomineeDocumentGroup, { listPersonNames } from "@/components/cases/NomineeDocumentGroup";
 import Button from "@/components/ui/Button";
@@ -32,6 +34,7 @@ export default function CaseDocumentsPage() {
   const [isSheetImportOpen, setIsSheetImportOpen] = useState(false);
   const [sheetFileToImport, setSheetFileToImport] = useState<File | null>(null);
   const [isRemovingSheet, setIsRemovingSheet] = useState(false);
+  const [previewDocumentId, setPreviewDocumentId] = useState<string | null>(null);
   const sheetImport = caseSummary?.sheetImport ?? null;
 
   async function handleRemoveSheet() {
@@ -123,7 +126,7 @@ export default function CaseDocumentsPage() {
     .filter((secondNominee) => namesByNominee[firstNominee - 1].some((firstName) => namesByNominee[secondNominee - 1].some((secondName) => isSamePersonName(firstName, secondName))))
     .map((secondNominee) => ({ firstNominee, secondNominee, personName: namesByNominee[firstNominee - 1][0] })));
   const renderCard = (caseDocument: CaseDocument) => (
-    <DocumentCard key={caseDocument.id} caseDocument={caseDocument} nomineeCount={maximumNomineeCount}
+    <DocumentCard key={caseDocument.id} caseDocument={caseDocument} nomineeCount={maximumNomineeCount} viewUrl={getDocumentViewUrl(caseId, caseDocument.id)} onPreview={() => setPreviewDocumentId(caseDocument.id)}
       onAssign={async (nomineeNumber) => { await assignDocument(caseId, caseDocument.id, nomineeNumber); await reloadCase(); }}
       onRemove={async () => { await removeDocument(caseId, caseDocument.id); await reloadCase(); }} />
   );
@@ -143,19 +146,14 @@ export default function CaseDocumentsPage() {
       <div className="grid h-full gap-3 md:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[minmax(320px,1fr)_minmax(0,2fr)]">
         <div className="space-y-3">
           <DocumentDropZone onFilesChosen={handleFilesChosen} />
-          <div className="flex items-center gap-2 rounded-xl border border-line bg-white px-3 py-2 text-[13px]">
-            <span className="min-w-0 flex-1 truncate text-muted" title={sheetImport?.fileName}>{sheetImport
-              ? <>Excel: <b className="text-ink">{sheetImport.fileName}</b> · row {sheetImport.rowNumber}{sheetImport.clientReference ? ` · ${sheetImport.clientReference}` : ""}</>
-              : <>Client Excel <span className="text-muted/70">· not added</span></>}</span>
-            <Button size="small" onClick={() => { setSheetFileToImport(null); setIsSheetImportOpen(true); }}>{sheetImport ? "Change" : "Add Excel"}</Button>
-            {sheetImport ? <Button size="small" variant="ghost" disabled={isRemovingSheet} onClick={handleRemoveSheet}>{isRemovingSheet ? "Removing…" : "Remove"}</Button> : null}
-          </div>
+          <DocumentReadinessCard caseDocuments={caseDocuments} sheetImport={sheetImport} isRemovingSheet={isRemovingSheet}
+            onAddExcel={() => { setSheetFileToImport(null); setIsSheetImportOpen(true); }} onRemoveExcel={handleRemoveSheet} />
           {loadError ? <Notice tone="error">{loadError}</Notice> : null}
           {uploadMessages.length ? <Notice tone="error">{uploadMessages.map((message) => <div key={message}>{message}</div>)}</Notice> : null}
         </div>
         <section className="flex min-h-0 flex-col rounded-xl border border-line bg-white">
           <h2 className="border-b border-line px-3 py-2 text-[13px] font-semibold">Documents by person <span className="font-normal tabular-nums text-muted">{caseDocuments.length}</span>
-            {placedDocuments.length ? <span className="float-right text-xs font-normal text-muted">Drag a document onto another person to move it</span> : null}</h2>
+            {placedDocuments.length && !isOnePersonForm ? <span className="float-right text-xs font-normal text-muted">Drag a document onto another person to move it</span> : null}</h2>
           <div className="min-h-0 flex-1 space-y-2 overflow-auto p-3">
             {!caseDocuments.length ? <StatusState title="No documents yet" message={isOnePersonForm ? `Drop the ${personLabel.toLowerCase()}'s Aadhaar, PAN, passport or licence on the left.` : "Drop each nominee's Aadhaar, PAN, passport or licence on the left. They are grouped by the name on them."} /> : null}
             {readingDocuments.length ? (
@@ -180,6 +178,8 @@ export default function CaseDocumentsPage() {
           </div>
         </section>
       </div>
+      <DocumentPreviewDialog caseId={caseId} caseDocument={caseDocuments.find((caseDocument) => caseDocument.id === previewDocumentId) || null}
+        onClose={() => setPreviewDocumentId(null)} />
       {formId ? (
         <SheetImportDialog caseId={caseId} formId={formId} isOpen={isSheetImportOpen} initialFile={sheetFileToImport}
           onClose={() => { setIsSheetImportOpen(false); setSheetFileToImport(null); }}

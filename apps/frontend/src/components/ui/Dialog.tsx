@@ -21,7 +21,7 @@ export default function Dialog({ title, isOpen, onClose, children, width = "medi
   if (!isOpen) return null;
   return (
     <div className="fixed inset-0 z-50 grid place-items-center bg-ink/40 p-4" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-      <div className={`max-h-[90vh] w-full overflow-auto rounded-xl bg-white shadow-xl ${width === "large" ? "max-w-3xl" : "max-w-md"}`}>
+      <div className={`rise-in max-h-[90vh] w-full overflow-auto rounded-xl bg-white shadow-xl ${width === "large" ? "max-w-3xl" : "max-w-md"}`}>
         <div className="flex items-center justify-between border-b border-line px-5 py-3">
           <h2 className="text-sm font-semibold">{title}</h2>
           <button type="button" aria-label="Close" onClick={onClose} className="rounded p-1 text-xl leading-none text-muted hover:bg-canvas">×</button>

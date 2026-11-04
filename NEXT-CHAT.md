@@ -1,7 +1,8 @@
 # NEXT-CHAT — read this first
 
 Handoff for a new chat. It says what the project is, the rules, how a form is added, and what is next.
-Update the **Progress** table and **Next up** at the end of every chat.
+Update the **Progress** table and **Next up** at the end of every chat, and tick the boxes in
+`FORMS-CHECKLIST.md` (one row per form, six checks each).
 
 ## The project
 
@@ -30,10 +31,12 @@ form files are read at start.
   - If the sheet says "check" or is unclear, do the same: decide nothing on your own.
 - Privacy:
   - Aadhaar: last 4 digits only.
-  - PAN: memory only, never written to disk.
+  - PAN / passport / licence numbers: shown and filled in full (it's 360 ONE's internal tool and reviewers must
+    check them). Kept on this machine in `data/identity-numbers.json` (gitignored), never sent to the Google Sheet,
+    cleared when a case is saved or deleted. Changed by the user on 2026-11-04.
   - Never commit client data. `data/` and `output/` are gitignored.
 - Do not commit or push unless asked. Never add Co-Authored-By or any attribution.
-- Files stay under 200 lines. Follow `NAMING-CONVENTIONS.md`.
+- Code files: aim for 400 lines, never over 600. JSON mapping files have no limit. Follow `NAMING-CONVENTIONS.md`.
 - No cloud OCR or AI services.
 - Don't delete anything outside the project.
 - Write code with the Edit/Write tools, not long inline shell scripts.
@@ -41,35 +44,40 @@ form files are read at start.
   - No long paragraphs in the UI.
   - Make things easier for their team, never harder.
 
-## How a form is added (the pattern used for forms 1–5)
+## How a form is added
 
-1. Copy the blank PDF into `data/Blank Forms/`.
-   - If it has built-in fill boxes (IRS forms), first remove the widgets with PyMuPDF and save the copy.
-     See how `Form W-9.pdf` was made: `page.delete_widget`, then use each widget's rect as the position.
-2. Measure: `python -I tools/form-building/measure.py "<pdf>" 1,2,3 --draw`.
-   - It prints every text line (x, top, baseline) and every drawn line or box. Top-left origin, points.
-   - For underscore blanks and ☐ boxes, read the character positions (rawdict). `make_topups.py` shows how.
-3. Make `apps/backend/src/forms/<form-id>/` with five files. Copy the closest existing form:
-   - `form-configuration.js`: blank path, `signatureBoxes`, `tickboxes` (`options` + `boxesByOption`).
-   - `field-positions.json`:
-     - `x`, `y` = text baseline; `maxWidth`.
-     - `type: "multiline"` with `maxY` for boxes that hold several lines.
-     - `combs: [[x, width, boxCount], …]` for one-character-per-box fields (W-9 SSN).
-   - `field-sources.json`: where each value comes from. The `_about` there explains `document.X|transform`,
-     `typed`, `default.X`, `copy.X`, `today` and `tick`.
-   - `form-rules.json`: label, detection phrases, review sections.
-   - `required-fields.json`.
-4. Register it in `apps/backend/src/forms/form-registry.js` (import, `FORM_IDS`, `FORM_DEFINITIONS`).
-5. Test it:
-   - Restart the backend.
-   - `node tools/form-building/try_form.mjs <form-id> values.json out.pdf`. The values JSON maps field
-     keys to test values, plus `client_reference`.
-   - Render the result: `pdftoppm -r 80 -png out.pdf x`, or crop it with PyMuPDF.
-   - Look at every filled spot.
-   - Delete the test case afterwards with `DELETE /api/cases/<id>`.
-6. Update the Progress table below.
+Every form is **data only**: a folder `apps/backend/src/forms/<stream>/<form-id>/` with five JSON files. The app finds
+it by itself (no registry edit, no code). Streams: `vcc`, `us-tax`, `nft`, `gift-city`, `added` (made on the
+"Add a form" screen). Form ids must be unique across all streams.
 
-Forms with the same layout (one per fund) can be generated from one script: `tools/form-building/make_topups.py`.
+| File | What it holds |
+|------|---------------|
+| `form-configuration.json` | `blankFileName`, `signatureBoxes`, `tickboxes` (`options` + `boxesByOption`), `tickboxRule` (`usual` for almost every form) |
+| `field-positions.json` | `x`, `y` = text baseline, top-left origin, PDF points; `maxWidth`; `type: "multiline"` + `maxY`; `combs` for one-character boxes; `alsoAt` to print the same value elsewhere |
+| `field-sources.json` | where each value comes from (`document.X`, `typed`, `default.X`, `copy.X`, `today`, `tick`) |
+| `form-rules.json` | `group`, `label`, `shortLabel`, `purpose`, detection phrases, review sections |
+| `required-fields.json` | fields that must be filled before saving |
+
+Steps:
+1. Copy the blank PDF into `data/Blank Forms/`. If it has built-in fill boxes (IRS forms), remove the widgets with
+   PyMuPDF first and use each widget's rect as the position (see how `Form W-9.pdf` was made).
+2. Measure: `python -I tools/form-building/measure.py "<pdf>" 1,2,3 --draw` (every text line and drawn box).
+3. Make the folder. For a family of near-identical forms, write or extend a generator instead of hand-copying:
+   - `tools/form-building/make_topups.py`: VCC top-ups.
+   - `tools/form-building/make_gif2_subscription.mjs`: a subscription from the GBF one, with a page map (pages
+     matched by text) and re-measured positions where a page moved. Copy it per fund.
+   Change the generator, not its output: re-running it overwrites the folder.
+4. `pnpm check-forms`: every form must say `ok` (blank exists, every spot inside a real page, every field has a
+   source, required fields and review sections point at real fields).
+5. Test it: restart the backend, `node tools/form-building/try_form.mjs <form-id> values.json out.pdf`, render
+   every page with fields and look; then make a case in the app (documents + Excel) and check Review + the PDF.
+   Delete test cases afterwards.
+6. `pnpm check-forms --compare` must show only the changes you meant; then `pnpm check-forms --snapshot` to
+   record the new golden files (`apps/backend/src/tasks/form-snapshots/`, committed).
+7. Tick the boxes in `FORMS-CHECKLIST.md`, then stop and let the user test.
+
+Only a truly special form needs code: a new `tickboxRule` in `forms/form-registry.js` (today only the two NFT
+nomination forms have one).
 
 ## Frontend notes (UI pass, 2026-11-04)
 
@@ -99,10 +107,10 @@ Forms with the same layout (one per fund) can be generated from one script: `too
 | 3 | GBF Series II Additional Subscription (top-up) | `vcc-topup-global-bond-fund` | Done, verified |
 | 4 | Global Investment Fund 2 Additional Subscription | `vcc-topup-global-investment-fund-2` | Done, verified |
 | 5 | International Opportunities Fund Additional Subscription | `vcc-topup-international-opportunities-fund` | Done, verified |
+| 6 | Global Investment Fund 2 Subscription Agreement (Non-US), 63 pages | `global-investment-fund-2-subscription` | Built + test-filled; waiting for the user's test |
 
 **Still to do, VCC** (files in `C:\zzz\demo\VCC`):
 - Subscription Agreement (Non-US):
-  - Global Investment Fund 2 (63 pages)
   - Growth Strategy Fund (65 pages)
   - International Opportunities Fund (65 pages)
   - Check that the existing Global Bond Fund form matches their new 63-page file dated 04.07.25.
@@ -124,12 +132,17 @@ Forms with the same layout (one per fund) can be generated from one script: `too
 
 ## Next up
 
-1. Subscription Agreement (Non-US) for Global Investment Fund 2. Compare it page by page with the GBF one
-   (`forms/global-bond-fund-subscription`): the sheet's field pages are 16, 26, 27, 50, 59–62, but each fund's
-   pages can shift.
-2. Then Growth Strategy Fund and International Opportunities Fund the same way.
+Work one form at a time: build it fully, then STOP so the user can test it. Only move on once they say it works.
+
+1. Growth Strategy Fund, then International Opportunities Fund subscriptions, the same way as GIF 2:
+   `tools/form-building/make_gif2_subscription.mjs` makes a form from the GBF one with a page map (pages matched by
+   text) plus positions re-measured where a page's layout moved. Copy it per fund.
 
 ## Open questions for 360 ONE (don't decide these yourself)
+
+- GIF 2 subscription: built from the GBF form's sources, because `VCC & Gift City Form Details.xlsx` was not
+  on disk. Check every source against the sheet's GIF 2 tab when the user shares it again. Page 50 (Opt-In
+  Confirmation, different from GBF's page 54) fills Client Name and Name from the subscriber name, and Date = today.
 
 - Redemption: "Name(s) in which the shares are registered" and its "Address" say **check** in the sheet. They
   are copied from the print name and mailing address for now.

@@ -2,7 +2,7 @@
 // person uploaded" (varies) and "the form's fixed boxes" (never changes). Forms map their field keys to
 // profile keys (PROFILE_KEY_FOR_FIELD); documents only ever feed this profile. Adding a new document type
 // means teaching it to fill these keys - no form needs to change.
-import { getIdentityRecord } from "../documents/identity-number-memory-service.js";
+import { getIdentityRecord } from "../documents/identity-number-store-service.js";
 import { validateName, validateDob, validatePan } from "@prefill/shared";
 
 const STATES = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana",

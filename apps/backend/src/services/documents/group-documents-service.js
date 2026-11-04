@@ -15,7 +15,7 @@
 //   4. Upload order, into the free slots.
 import { isSamePersonName } from "@prefill/shared";
 import { getCase, updateCaseDocument } from "../storage/case-store-service.js";
-import { getIdentityRecord } from "./identity-number-memory-service.js";
+import { getIdentityRecord } from "./identity-number-store-service.js";
 import { fetchFormRules } from "../forms/form-files-service.js";
 
 const MAXIMUM_NOMINEE_NUMBER = 3;

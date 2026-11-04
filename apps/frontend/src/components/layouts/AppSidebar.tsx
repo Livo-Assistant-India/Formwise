@@ -74,7 +74,7 @@ export default function AppSidebar() {
         <ConnectionStatus />
         <div className="flex items-start gap-2 rounded-md px-2 py-1.5 text-[11px] leading-snug text-white/50 collapsed:hidden">
           <Icon name="shield" className="mt-px h-3.5 w-3.5 shrink-0 text-emerald-400" />
-          <span>Read on this machine. Aadhaar last 4 only. PAN never saved.</span>
+          <span>Read and kept on this machine only. Aadhaar last 4 digits only.</span>
         </div>
         <button type="button" onClick={toggleSidebar} title="Collapse or expand  ["
           className="flex h-8 w-full items-center gap-2.5 rounded-md px-2 text-[12px] text-white/50 transition-colors hover:bg-white/5 hover:text-white collapsed:justify-center">

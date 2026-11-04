@@ -98,16 +98,19 @@ DismissedJob, dismissJob
 
 ---
 
-## 2. File length — hard limit
+## 2. File length — limits
 
-> **No source file shall exceed 200 lines of code.**
+> **No source code file shall exceed 600 lines. Aim for 400 or fewer.**
 
 Counting rules:
-- Imports, exports, type definitions, blank lines, and comments all count toward the 200-line limit.
-- 200 lines is the **hard ceiling**, not a target. Most files should be 50–150 lines.
-- The only exception is auto-generated or configuration files (e.g., `package.json`, `tsconfig.json`, `tailwind.config.js`, migration data files).
+- Imports, exports, type definitions, blank lines, and comments all count.
+- 600 lines is the **hard ceiling**, not a target. Most files should be 100–400 lines.
+- **Data files have no line limit.** Form mappings (`field-positions.json`, `field-sources.json`,
+  `form-configuration.json`, `tickboxes.json`, …) hold one entry per field and grow with the form; a 900-line
+  mapping for a 63-page form is fine. Keep them as data (no logic), so every form is changed the same way.
+- Also exempt: auto-generated or tool configuration files (e.g., `package.json`, `tsconfig.json`, lock files).
 
-When a file approaches 180 lines, it must be split. Common splits:
+When a code file approaches 500 lines, plan the split before adding more. Common splits:
 
 | Source file getting too long | How to split |
 |---|---|
@@ -116,8 +119,9 @@ When a file approaches 180 lines, it must be split. Common splits:
 | React page with several sub-sections | Extract each section into its own component file. |
 | Service with multiple distinct operations | Split by operation: `score-resume-service.js`, `extract-resume-text-service.js`, etc. |
 | Type file declaring many unrelated types | Group related types into separate files. |
+| Form logic growing inside a form folder | Move it into data (JSON) or a shared service; a form folder should hold data, not code. |
 
-A file that does one thing in 50 lines is always better than a file that does ten things in 500 lines.
+A file that does one thing in 150 lines is always better than a file that does ten things in 600.
 
 ---
 
@@ -862,7 +866,7 @@ Subject line: 72 characters or fewer, present tense, no trailing period. Optiona
 | Duration variable without a unit suffix | Causes real bugs |
 | `I` prefix on TypeScript interface | C# baggage, not idiomatic TS |
 | `any` in TypeScript | Defeats the type system |
-| File over 200 lines | Must be split |
+| Code file over 600 lines | Must be split (data/JSON mapping files are exempt) |
 | Import from `pages/seeker/` into `pages/employer/` (or vice versa) | Audience boundary violation |
 | Employer query function without `companyId` parameter or `ForCompany` in name | Multi-tenant safety violation |
 
@@ -899,7 +903,7 @@ When someone new (human or AI) writes code in this repo, they must:
 1. Read sections 0, 1, 2, 3 fully.
 2. Skim the rest.
 3. When unsure about a name, default to the longer, more readable option.
-4. When a file approaches 180 lines, plan the split before adding more.
+4. When a code file approaches 500 lines, plan the split before adding more (JSON mapping files are exempt).
 5. When touching multi-tenant data, double-check the `companyId` filter.
 6. If a convention isn't covered here, propose an addition in the same pull request.
 

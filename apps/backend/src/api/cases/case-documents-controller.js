@@ -5,7 +5,7 @@ import { existsSync } from "node:fs";
 import { sendData, ApiError, ERROR_CODES } from "../../helpers/api-response-helpers.js";
 import { addCaseDocument, updateCaseDocument, updateCase, removeCaseDocument, getDocumentPath } from "../../services/storage/case-store-service.js";
 import { processUploadedDocument, DOCUMENT_STATUSES } from "../../services/documents/process-document-service.js";
-import { deleteIdentityRecord, getTypedPanValues, storeTypedPanValues } from "../../services/documents/identity-number-memory-service.js";
+import { deleteIdentityRecord, getTypedPanValues, storeTypedPanValues } from "../../services/documents/identity-number-store-service.js";
 import { groupCaseDocuments } from "../../services/documents/group-documents-service.js";
 import { renderPage } from "../../services/pdf/render-page-service.js";
 

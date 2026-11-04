@@ -1,11 +1,11 @@
-// ID numbers (PAN / passport / driving licence) live only in memory (identity-number-memory-service.js). A
+// ID numbers (PAN / passport / driving licence) live only in memory (identity-number-store-service.js). A
 // server restart empties that memory while the uploaded document may still be on disk; this re-reads such a
 // document on demand so the number comes back - still never written anywhere but memory.
 import { existsSync } from "node:fs";
 import { readScanTextInBackground } from "../ocr/scan-ocr-pool-service.js";
 import { extractPanFields } from "./pan-extract-service.js";
 import { extractPassportFields, extractDlFields } from "./passport-and-licence-extract-service.js";
-import { storeIdentityRecord, getIdentityRecord } from "./identity-number-memory-service.js";
+import { storeIdentityRecord, getIdentityRecord } from "./identity-number-store-service.js";
 import { getDocumentPath } from "../storage/case-store-service.js";
 import { pickBestReading } from "../ocr/text-layout-helpers.js";
 

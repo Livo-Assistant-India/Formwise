@@ -1,0 +1,391 @@
+{
+ "formId": "vcc-topup-global-investment-fund-2",
+ "pageCount": 4,
+ "configuration": {
+  "id": "vcc-topup-global-investment-fund-2",
+  "title": "360 ONE Global Investment Fund 2 - Additional Subscription",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 384,
+    "y": 289,
+    "w": 178,
+    "h": 16,
+    "signer": "subscriber",
+    "label": "Investor signature"
+   },
+   {
+    "page": 3,
+    "x": 175,
+    "y": 196,
+    "w": 175,
+    "h": 19,
+    "signer": "subscriber",
+    "label": "Subscriber signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "series",
+    "page": 1,
+    "w": 9,
+    "h": 9.96,
+    "options": [
+     "Series A",
+     "Series B",
+     "Series C",
+     "Series D",
+     "Series E"
+    ],
+    "boxesByOption": {
+     "Series A": [
+      {
+       "x": 297,
+       "y": 375.4
+      }
+     ],
+     "Series B": [
+      {
+       "x": 297,
+       "y": 400.4
+      }
+     ],
+     "Series C": [
+      {
+       "x": 297,
+       "y": 427.7
+      }
+     ],
+     "Series D": [
+      {
+       "x": 297,
+       "y": 455.1
+      }
+     ],
+     "Series E": [
+      {
+       "x": 297,
+       "y": 482.5
+      }
+     ]
+    }
+   }
+  ],
+  "labels": [],
+  "blankFileName": "360 ONE Global Investment Fund 2 - Additional Subscription.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank 360 ONE Global Investment Fund 2 Additional Subscription Form (top-left origin, y = baseline), measured from its underscore lines.",
+  "formId": "vcc-topup-global-investment-fund-2",
+  "title": "360 ONE Global Investment Fund 2 - Additional Subscription",
+  "fields": [
+   {
+    "key": "initial_sales_charge",
+    "nominee": null,
+    "page": 1,
+    "x": 386,
+    "y": 237.5,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 20
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 113,
+    "y": 679.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 74
+   },
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 2,
+    "x": 183,
+    "y": 537,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 330
+   },
+   {
+    "key": "topup_amount_usd",
+    "nominee": null,
+    "page": 2,
+    "x": 266,
+    "y": 590.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 248
+   },
+   {
+    "key": "application_date",
+    "nominee": null,
+    "page": 2,
+    "x": 300,
+    "y": 644.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 216
+   },
+   {
+    "key": "funds_wired_date",
+    "nominee": null,
+    "page": 2,
+    "x": 172,
+    "y": 685,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 100
+   },
+   {
+    "key": "contact_person",
+    "nominee": null,
+    "page": 3,
+    "x": 219,
+    "y": 80.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 216
+   },
+   {
+    "key": "contact_email",
+    "nominee": null,
+    "page": 3,
+    "x": 214,
+    "y": 107.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 222
+   },
+   {
+    "key": "subscriber_name_p3",
+    "nominee": null,
+    "page": 3,
+    "x": 178,
+    "y": 240,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 168
+   },
+   {
+    "key": "subscriber_name_p4",
+    "nominee": null,
+    "page": 4,
+    "x": 88,
+    "y": 593.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 430
+   }
+  ]
+ },
+ "fieldSources": {
+  "initial_sales_charge": "typed",
+  "form_date": "today",
+  "subscriber_name": "document.name|upper",
+  "topup_amount_usd": "typed",
+  "application_date": "typed",
+  "funds_wired_date": "typed",
+  "contact_person": "typed",
+  "contact_email": "typed",
+  "subscriber_name_p3": "copy.subscriber_name",
+  "subscriber_name_p4": "copy.subscriber_name",
+  "series": "tick"
+ },
+ "formRules": {
+  "formId": "vcc-topup-global-investment-fund-2",
+  "group": "VCC",
+  "label": "Global Investment Fund 2 – Top-up",
+  "shortLabel": "GIF 2 top-up",
+  "purpose": "Add money to an existing investment",
+  "blankFileName": "360 ONE Global Investment Fund 2 - Additional Subscription.pdf",
+  "keyFields": [
+   "Subscriber name",
+   "Top-up amount",
+   "Series"
+  ],
+  "sheetTabName": "GIF 2 top-up",
+  "detectionPhrases": [
+   "Additional Subscription Form for Sub-Fund",
+   "Global Investment Fund 2"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Subscriber",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "p1",
+    "label": "Page 1 · Investment",
+    "fields": [
+     "initial_sales_charge",
+     "series",
+     "form_date"
+    ]
+   },
+   {
+    "key": "p2",
+    "label": "Page 2 · Subscription details",
+    "fields": [
+     "subscriber_name",
+     "topup_amount_usd",
+     "application_date",
+     "funds_wired_date"
+    ]
+   },
+   {
+    "key": "p3",
+    "label": "Page 3 · Contact and signatory",
+    "fields": [
+     "contact_person",
+     "contact_email",
+     "subscriber_name_p3"
+    ]
+   },
+   {
+    "key": "p4",
+    "label": "Page 4 · Payment instructions",
+    "fields": [
+     "subscriber_name_p4"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "subscriber_name",
+   "series",
+   "topup_amount_usd",
+   "application_date"
+  ],
+  "nomineeFieldKeys": []
+ },
+ "drawnSpots": [
+  {
+   "field": "initial_sales_charge",
+   "page": 1,
+   "lines": [
+    [
+     386,
+     232.4,
+     78.7,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     113,
+     672.4,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name",
+   "page": 2,
+   "lines": [
+    [
+     183,
+     528.5,
+     120.19,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "topup_amount_usd",
+   "page": 2,
+   "lines": [
+    [
+     266,
+     582,
+     128.96,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "application_date",
+   "page": 2,
+   "lines": [
+    [
+     300,
+     636,
+     116.17,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "funds_wired_date",
+   "page": 2,
+   "lines": [
+    [
+     172,
+     678.2,
+     97.82,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "contact_person",
+   "page": 3,
+   "lines": [
+    [
+     219,
+     72,
+     111.72,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "contact_email",
+   "page": 3,
+   "lines": [
+    [
+     214,
+     99,
+     105.04,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p3",
+   "page": 3,
+   "lines": [
+    [
+     178,
+     231.5,
+     136.87,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p4",
+   "page": 4,
+   "lines": [
+    [
+     88,
+     584.7,
+     136.87,
+     10
+    ]
+   ]
+  }
+ ]
+}

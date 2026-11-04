@@ -1,9 +1,9 @@
 // "Fill from Excel" for one case: read the file, match its columns to this form, pick the client's row, store the
-// row as the case's sheet values (PAN in memory only), refill, and report everything the reviewer should know.
+// row as the case's sheet values (PAN in the identity-number store), refill, and report everything the reviewer should know.
 import { readFile } from "node:fs/promises";
 import { updateCase, getFillResultsPath } from "../storage/case-store-service.js";
 import { fetchCorrectedValues } from "../storage/decision-log-service.js";
-import { storeTypedPanValues } from "../documents/identity-number-memory-service.js";
+import { storeTypedPanValues } from "../documents/identity-number-store-service.js";
 import { fillCase } from "../fill/fill-case-service.js";
 import { SheetFileError } from "./read-sheet-file-service.js";
 import { readFormSheet } from "./read-form-sheet-service.js";

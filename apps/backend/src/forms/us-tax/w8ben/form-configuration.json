@@ -1,0 +1,31 @@
+{
+  "_about": "IRS Form W-8BEN (Rev. October 2021). The blank is the IRS form with its fill-in boxes removed, so values are drawn like every other form; positions come from those boxes (field-positions.json).",
+  "id": "w8ben",
+  "title": "Form W-8BEN",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 112,
+      "y": 690,
+      "w": 200,
+      "h": 28,
+      "signer": "subscriber",
+      "label": "Beneficial owner's signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "certify_capacity",
+      "page": 1,
+      "w": 8,
+      "h": 8,
+      "x": 110,
+      "y": 692.8,
+      "isAlwaysTicked": true
+    }
+  ],
+  "blankFileName": "Form W-8BEN.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

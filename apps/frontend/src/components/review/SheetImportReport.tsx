@@ -56,7 +56,7 @@ export default function SheetImportReport({ importResult }: { importResult: Shee
       {aadhaarCutToLast4.length || panFieldsKeptInMemory.length ? (
         <ReportGroup tone="info" title="Privacy">
           {aadhaarCutToLast4.length ? <li>Full Aadhaar number cut to the last 4 digits: {aadhaarCutToLast4.map(describeField).join(", ")}.</li> : null}
-          {panFieldsKeptInMemory.length ? <li>PAN kept in memory only, never saved to disk: {panFieldsKeptInMemory.map(describeField).join(", ")}.</li> : null}
+          {panFieldsKeptInMemory.length ? <li>PAN read from the Excel (kept on this machine, not sent to the sheet): {panFieldsKeptInMemory.map(describeField).join(", ")}.</li> : null}
         </ReportGroup>
       ) : null}
       {unknownHeadings.length || duplicateFields.length || cellWarnings.length ? (

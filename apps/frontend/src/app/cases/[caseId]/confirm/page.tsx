@@ -57,7 +57,7 @@ export default function CaseConfirmPage() {
   const fieldEntries = Object.entries(fieldValues);
   return (
     <PageContainer title="Save to Google Sheet"
-      description="One tab per form, one row per case. Aadhaar last 4 digits only; PAN never sent. Saving deletes the uploaded scans from this machine."
+      description="One tab per form, one row per case. Aadhaar last 4 digits only; PAN is not sent to the sheet. Saving deletes the uploaded scans and stored ID numbers from this machine."
       actions={<>
         <CaseStepper currentStep="confirm" caseId={caseId} />
         {!confirmResult ? <>
@@ -82,7 +82,7 @@ export default function CaseConfirmPage() {
           {fieldEntries.map(([fieldKey, fieldValue]) => (
             <div key={fieldKey} className="min-w-0 bg-white px-4 py-2">
               <div className="truncate text-[11px] text-muted">{columnLabels[fieldKey] || formatFieldLabel(fieldKey)}</div>
-              {isNeverStored(fieldKey, fieldValue) ? <div className="text-xs text-muted">PAN - not stored</div> : <div className="truncate text-sm" title={fieldValue}>{fieldValue}</div>}
+              <div className="truncate text-sm" title={fieldValue}>{fieldValue}{isNeverStored(fieldKey, fieldValue) ? <span className="ml-1.5 text-[11px] text-muted">· not sent to the sheet</span> : null}</div>
             </div>
           ))}
         </Card>

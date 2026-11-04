@@ -1,0 +1,55 @@
+{
+  "_about": "360 ONE Global Bond Fund - Series II - Additional Subscription (top-up) form, 4 pages. Written by make_topups.py: positions are measured from the blank's underscore lines and series tick boxes.",
+  "id": "vcc-topup-global-bond-fund",
+  "title": "360 ONE Global Bond Fund - Series II - Additional Subscription",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 384,
+      "y": 289,
+      "w": 178,
+      "h": 16,
+      "signer": "subscriber",
+      "label": "Investor signature"
+    },
+    {
+      "page": 3,
+      "x": 175,
+      "y": 196,
+      "w": 175,
+      "h": 19,
+      "signer": "subscriber",
+      "label": "Subscriber signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "series",
+      "page": 1,
+      "w": 7.0,
+      "h": 11.3,
+      "options": [
+        "Series A (ISIN SGXZ51510022)",
+        "Series B (ISIN SGXZ73357493)"
+      ],
+      "boxesByOption": {
+        "Series A (ISIN SGXZ51510022)": [
+          {
+            "x": 499.7,
+            "y": 373.9
+          }
+        ],
+        "Series B (ISIN SGXZ73357493)": [
+          {
+            "x": 499.5,
+            "y": 401.7
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Additional Subscription.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

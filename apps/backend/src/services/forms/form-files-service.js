@@ -8,8 +8,11 @@ import { getFormDefinition, listFormIds } from "../../forms/form-registry.js";
 
 const fileCache = new Map();
 
+/** A form's own folder (forms/<stream>/<form-id>), or the forms root for shared files (formId ""). */
+const getFormFilePath = (formId, filename) => path.join(formId ? getFormDefinition(formId).directory : FORMS_DIRECTORY, filename);
+
 async function readFormJson(formId, filename) {
-  const filePath = path.join(FORMS_DIRECTORY, formId, filename);
+  const filePath = getFormFilePath(formId, filename);
   if (!fileCache.has(filePath)) fileCache.set(filePath, JSON.parse(await readFile(filePath, "utf-8")));
   return structuredClone(fileCache.get(filePath));
 }
@@ -53,7 +56,7 @@ export async function listForms() {
 }
 
 export async function saveRequiredFields(formId, requiredFields) {
-  const filePath = path.join(FORMS_DIRECTORY, formId, "required-fields.json");
+  const filePath = getFormFilePath(formId, "required-fields.json");
   const current = await readFormJson(formId, "required-fields.json");
   const updated = { ...current, requiredFields: [...new Set(requiredFields)] };
   const temporaryPath = `${filePath}.${crypto.randomUUID()}.tmp`;

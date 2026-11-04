@@ -4,7 +4,7 @@ import { readScanTextInBackground } from "../ocr/scan-ocr-pool-service.js";
 import { classifyDocument, AADHAAR_DOC_TYPES, UNSUPPORTED_DOC_MESSAGE } from "./classify-document-service.js";
 import { maskPan } from "./pan-extract-service.js";
 import { buildIdentityRecord } from "./read-identity-document-service.js";
-import { storeIdentityRecord } from "./identity-number-memory-service.js";
+import { storeIdentityRecord } from "./identity-number-store-service.js";
 import { groupCaseDocuments } from "./group-documents-service.js";
 import { updateCaseDocument } from "../storage/case-store-service.js";
 
@@ -60,7 +60,7 @@ async function readOneDocument(caseId, documentId, filePath) {
   try {
     const { fields, rawText, linesByPass, hasQrCode } = await readScanTextInBackground(filePath);
     const documentType = classifyDocument({ fields, rawText });
-    const identityRecord = buildIdentityRecord(documentType, linesByPass); // PAN / passport / DL -> memory only
+    const identityRecord = buildIdentityRecord(documentType, linesByPass); // PAN / passport / DL -> the identity-number store
     if (identityRecord) storeIdentityRecord(documentId, identityRecord);
     const panRecord = documentType === "pan" ? identityRecord : null;
     await updateCaseDocument(caseId, documentId, {

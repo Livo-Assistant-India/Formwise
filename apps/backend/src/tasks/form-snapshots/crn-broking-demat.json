@@ -1,0 +1,1485 @@
+{
+ "formId": "crn-broking-demat",
+ "pageCount": 4,
+ "configuration": {
+  "id": "crn-broking-demat",
+  "title": "CRN Broking & Demat — Nomination",
+  "tickboxes": [
+   {
+    "key": "wish_to_nominate",
+    "page": 1,
+    "x": 27.77,
+    "y": 139.22,
+    "w": 7.25,
+    "h": 12,
+    "perNominee": false,
+    "note": "single checkbox (□ glyph on the blank form); the filled sample shows a vector checkmark drawn over it. Confirmed visually by rendering and cropping the region - the mark is NOT a text character, so pdfjs-dist's text diff cannot see it."
+   },
+   {
+    "key": "nominee_id_type",
+    "page": 1,
+    "perNominee": false,
+    "w": 7.25,
+    "h": 12,
+    "options": [
+     "PAN",
+     "Passport",
+     "Driving License",
+     "Aadhaar (last 4)"
+    ],
+    "y": 508.85,
+    "optionX": {
+     "PAN": 42.15,
+     "Passport": 71.61,
+     "Driving License": 114.77,
+     "Aadhaar (last 4)": 179.5
+    },
+    "note": "vector-checkmark mechanism, confirmed visually (rendered and cropped the full row on the filled sample): a checkmark sits over 'Aadhaar (last 4)', not over any other option."
+   },
+   {
+    "key": "guardian_id_type",
+    "page": 1,
+    "perNominee": false,
+    "w": 7.25,
+    "h": 12,
+    "options": [
+     "PAN",
+     "Passport",
+     "Driving License",
+     "Aadhaar (last 4)"
+    ],
+    "y": 792.28,
+    "optionX": {
+     "PAN": 42.16,
+     "Passport": 71.62,
+     "Driving License": 114.77,
+     "Aadhaar (last 4)": 179.5
+    },
+    "note": "same mechanism as nominee_id_type; which option is actually marked in the sample was never visually confirmed (unlike nominee_id_type and wish_to_nominate), and the fill step has no stated rule for it (task step 2 only covers wish_to_nominate and the nominee ID-type), so it is left unticked and reported as skipped, not guessed."
+   }
+  ],
+  "signatureBoxes": [],
+  "labels": [
+   {
+    "key": "broking_code",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "dp_id",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "client_id",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "crn",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "name",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "share_pct",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "relationship",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "address",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "mobile",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "email",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "id_aadhaar_last4",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "dob",
+    "re": {},
+    "perNominee": true,
+    "page": 1
+   },
+   {
+    "key": "guardian_name",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "guardian_address",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "guardian_mobile",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "guardian_email",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "guardian_pan",
+    "re": {},
+    "perNominee": false,
+    "page": 1
+   },
+   {
+    "key": "applicant_name",
+    "re": {},
+    "perNominee": false,
+    "page": 2,
+    "yTol": 20
+   }
+  ],
+  "blankFileName": "Modification in Nomination in CRN Broking Demat.pdf",
+  "nomineeHeaderRe": "/^(1st|2nd|3rd) Nominee$/"
+ },
+ "positions": {
+  "_about": "Where each text field is written on the blank form: page, x/y baseline in PDF points (top-left origin), font size. Tick boxes live in form-configuration.js.",
+  "formId": "crn-broking-demat",
+  "title": "CRN Broking & Demat — Nomination",
+  "fields": [
+   {
+    "key": "broking_code",
+    "nominee": null,
+    "page": 1,
+    "x": 175.85,
+    "y": 116.6,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "dp_id",
+    "nominee": null,
+    "page": 1,
+    "x": 279.27,
+    "y": 117.04,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "client_id",
+    "nominee": null,
+    "page": 1,
+    "x": 391.85,
+    "y": 118.79,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "crn",
+    "nominee": null,
+    "page": 1,
+    "x": 495.27,
+    "y": 117.31,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "name",
+    "nominee": 1,
+    "page": 1,
+    "x": 253.09,
+    "y": 244.73,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "name",
+    "nominee": 2,
+    "page": 1,
+    "x": 384.44,
+    "y": 243.58,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "name",
+    "nominee": 3,
+    "page": 1,
+    "x": 515.79,
+    "y": 244.16,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "share_pct",
+    "nominee": 1,
+    "page": 1,
+    "x": 280.15,
+    "y": 271.68,
+    "fontSize": 12,
+    "type": "text"
+   },
+   {
+    "key": "share_pct",
+    "nominee": 2,
+    "page": 1,
+    "x": 391.85,
+    "y": 271.51,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "share_pct",
+    "nominee": 3,
+    "page": 1,
+    "x": 503.55,
+    "y": 271.6,
+    "fontSize": 12,
+    "type": "text"
+   },
+   {
+    "key": "relationship",
+    "nominee": 1,
+    "page": 1,
+    "x": 267.49,
+    "y": 299.88,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "relationship",
+    "nominee": 2,
+    "page": 1,
+    "x": 376.58,
+    "y": 297.69,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "relationship",
+    "nominee": 3,
+    "page": 1,
+    "x": 485.67,
+    "y": 298.78,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "address",
+    "nominee": 1,
+    "page": 1,
+    "x": 249.6,
+    "y": 316.56,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxY": 366
+   },
+   {
+    "key": "address",
+    "nominee": 2,
+    "page": 1,
+    "x": 370.47,
+    "y": 315.25,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxY": 366
+   },
+   {
+    "key": "address",
+    "nominee": 3,
+    "page": 1,
+    "x": 491.34,
+    "y": 315.9,
+    "fontSize": 9,
+    "type": "multiline",
+    "maxY": 366
+   },
+   {
+    "key": "mobile",
+    "nominee": 1,
+    "page": 1,
+    "x": 256.15,
+    "y": 442.4,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "mobile",
+    "nominee": 2,
+    "page": 1,
+    "x": 367.85,
+    "y": 442.84,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "mobile",
+    "nominee": 3,
+    "page": 1,
+    "x": 479.55,
+    "y": 442.62,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "email",
+    "nominee": 1,
+    "page": 1,
+    "x": 252.22,
+    "y": 459.85,
+    "fontSize": 10,
+    "type": "multiline"
+   },
+   {
+    "key": "email",
+    "nominee": 2,
+    "page": 1,
+    "x": 355.64,
+    "y": 462.64,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "email",
+    "nominee": 3,
+    "page": 1,
+    "x": 459.06,
+    "y": 461.25,
+    "fontSize": 10,
+    "type": "multiline"
+   },
+   {
+    "key": "id_number",
+    "nominee": 1,
+    "page": 1,
+    "x": 269.24,
+    "y": 494.76,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "id_number",
+    "nominee": 2,
+    "page": 1,
+    "x": 384.87,
+    "y": 491.71,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "id_number",
+    "nominee": 3,
+    "page": 1,
+    "x": 500.5,
+    "y": 493.24,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "dob",
+    "nominee": 1,
+    "page": 1,
+    "x": 264,
+    "y": 556.19,
+    "fontSize": 12,
+    "type": "text"
+   },
+   {
+    "key": "dob",
+    "nominee": 2,
+    "page": 1,
+    "x": 374.84,
+    "y": 554.01,
+    "fontSize": 12,
+    "type": "text"
+   },
+   {
+    "key": "dob",
+    "nominee": 3,
+    "page": 1,
+    "x": 485.68,
+    "y": 555.1,
+    "fontSize": 12,
+    "type": "text"
+   },
+   {
+    "key": "guardian_name",
+    "nominee": null,
+    "page": 1,
+    "x": 264.44,
+    "y": 582.47,
+    "fontSize": 10,
+    "type": "text"
+   },
+   {
+    "key": "guardian_address",
+    "nominee": null,
+    "page": 1,
+    "x": 246.55,
+    "y": 603.42,
+    "fontSize": 10,
+    "type": "multiline",
+    "maxY": 654
+   },
+   {
+    "key": "guardian_mobile",
+    "nominee": null,
+    "page": 1,
+    "x": 257.02,
+    "y": 729.26,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "guardian_email",
+    "nominee": null,
+    "page": 1,
+    "x": 245.67,
+    "y": 749.77,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "guardian_pan",
+    "nominee": null,
+    "page": 1,
+    "x": 262.25,
+    "y": 780.85,
+    "fontSize": 9,
+    "type": "text"
+   },
+   {
+    "key": "applicant_name",
+    "nominee": null,
+    "page": 2,
+    "x": 155.35,
+    "y": 173.33,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "city",
+    "nominee": 1,
+    "page": 1,
+    "x": 250,
+    "y": 374.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "state",
+    "nominee": 1,
+    "page": 1,
+    "x": 250,
+    "y": 390.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "pincode",
+    "nominee": 1,
+    "page": 1,
+    "x": 250,
+    "y": 406.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "country",
+    "nominee": 1,
+    "page": 1,
+    "x": 250,
+    "y": 422.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "city",
+    "nominee": 2,
+    "page": 1,
+    "x": 362,
+    "y": 374.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "state",
+    "nominee": 2,
+    "page": 1,
+    "x": 362,
+    "y": 390.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "pincode",
+    "nominee": 2,
+    "page": 1,
+    "x": 362,
+    "y": 406.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "country",
+    "nominee": 2,
+    "page": 1,
+    "x": 362,
+    "y": 422.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "city",
+    "nominee": 3,
+    "page": 1,
+    "x": 472,
+    "y": 374.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "state",
+    "nominee": 3,
+    "page": 1,
+    "x": 472,
+    "y": 390.9,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "pincode",
+    "nominee": 3,
+    "page": 1,
+    "x": 472,
+    "y": 406.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "country",
+    "nominee": 3,
+    "page": 1,
+    "x": 472,
+    "y": 422.8,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "guardian_city",
+    "nominee": null,
+    "page": 1,
+    "x": 250,
+    "y": 662.5,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "guardian_state",
+    "nominee": null,
+    "page": 1,
+    "x": 250,
+    "y": 678.4,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "guardian_pincode",
+    "nominee": null,
+    "page": 1,
+    "x": 250,
+    "y": 694.4,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "guardian_country",
+    "nominee": null,
+    "page": 1,
+    "x": 250,
+    "y": 710.3,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 62,
+    "y": 119.5,
+    "fontSize": 10,
+    "type": "text",
+    "note": "measured from the blank form text layer"
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 2,
+    "x": 155.35,
+    "y": 224.3,
+    "fontSize": 11,
+    "type": "text"
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 2,
+    "x": 155.35,
+    "y": 278.3,
+    "fontSize": 11,
+    "type": "text"
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "broking_code": "typed",
+  "dp_id": "typed",
+  "client_id": "typed",
+  "crn": "typed",
+  "applicant_name": "typed",
+  "wish_to_nominate": "tick",
+  "nominee_id_type": "tick",
+  "name": "document.name",
+  "share_pct": "typed",
+  "relationship": "typed",
+  "address": "document.street",
+  "city": "document.city",
+  "state": "document.state",
+  "pincode": "document.pincode",
+  "country": "document.country",
+  "mobile": "typed",
+  "email": "typed",
+  "id_number": "document.idNumber",
+  "dob": "document.dob",
+  "guardian_name": "typed",
+  "guardian_address": "typed",
+  "guardian_city": "typed",
+  "guardian_state": "typed",
+  "guardian_pincode": "typed",
+  "guardian_country": "typed",
+  "guardian_mobile": "typed",
+  "guardian_email": "typed",
+  "guardian_pan": "typed",
+  "guardian_id_type": "tick",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed"
+ },
+ "formRules": {
+  "formId": "crn-broking-demat",
+  "group": "NFT",
+  "label": "Broking & Demat – Nomination",
+  "shortLabel": "Demat nomination",
+  "purpose": "Add or change nominees on a demat account",
+  "blankFileName": "Modification in Nomination in CRN Broking Demat.pdf",
+  "keyFields": [
+   "Broking Code",
+   "DP ID",
+   "Client ID",
+   "CRN"
+  ],
+  "sheetTabName": "CRN Broking & Demat",
+  "detectionPhrases": [
+   "FORM FOR NOMINATION",
+   "Broking Code"
+  ],
+  "supportedNomineeCount": 3,
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": "nominee_id_type",
+   "numberField": "id_number",
+   "optionByIdentityKind": {
+    "pan": "PAN",
+    "passport": "Passport",
+    "dl": "Driving License",
+    "aadhaarLast4": "Aadhaar (last 4)"
+   },
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Account & form",
+    "fields": [
+     "form_date",
+     "broking_code",
+     "dp_id",
+     "client_id",
+     "crn",
+     "applicant_name",
+     "second_holder_name",
+     "third_holder_name",
+     "wish_to_nominate",
+     "nominee_id_type"
+    ]
+   },
+   {
+    "key": "nominee-identity",
+    "label": "Nominee details",
+    "fields": [
+     "name",
+     "share_pct",
+     "relationship",
+     "dob",
+     "id_number"
+    ]
+   },
+   {
+    "key": "nominee-address",
+    "label": "Nominee address",
+    "fields": [
+     "address",
+     "city",
+     "state",
+     "pincode",
+     "country"
+    ]
+   },
+   {
+    "key": "nominee-contact",
+    "label": "Nominee contact",
+    "fields": [
+     "mobile",
+     "email"
+    ]
+   },
+   {
+    "key": "guardian",
+    "label": "Guardian (minor nominee)",
+    "fields": [
+     "guardian_name",
+     "guardian_id_type",
+     "guardian_pan",
+     "guardian_address",
+     "guardian_city",
+     "guardian_state",
+     "guardian_pincode",
+     "guardian_country",
+     "guardian_mobile",
+     "guardian_email"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "dp_id",
+   "client_id",
+   "wish_to_nominate",
+   "nominee_id_type",
+   "name",
+   "share_pct",
+   "address",
+   "city",
+   "state",
+   "pincode",
+   "country",
+   "mobile",
+   "email",
+   "id_number"
+  ],
+  "nomineeFieldKeys": [
+   "name",
+   "share_pct",
+   "relationship",
+   "address",
+   "mobile",
+   "email",
+   "id_number",
+   "dob",
+   "city",
+   "state",
+   "pincode",
+   "country"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "broking_code",
+   "page": 1,
+   "lines": [
+    [
+     175.85,
+     107.25,
+     113.72,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "dp_id",
+   "page": 1,
+   "lines": [
+    [
+     279.27,
+     107.69,
+     74.59,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "client_id",
+   "page": 1,
+   "lines": [
+    [
+     391.85,
+     109.44,
+     88.03,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "crn",
+   "page": 1,
+   "lines": [
+    [
+     495.27,
+     108.81,
+     57.49,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "name_n1",
+   "page": 1,
+   "lines": [
+    [
+     253.09,
+     236.23,
+     68.36,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "name_n2",
+   "page": 1,
+   "lines": [
+    [
+     384.44,
+     234.23,
+     75.2,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "name_n3",
+   "page": 1,
+   "lines": [
+    [
+     515.79,
+     235.66,
+     68.36,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "share_pct_n1",
+   "page": 1,
+   "lines": [
+    [
+     280.15,
+     261.48,
+     104.71,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "share_pct_n2",
+   "page": 1,
+   "lines": [
+    [
+     391.85,
+     262.16,
+     95.99,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "share_pct_n3",
+   "page": 1,
+   "lines": [
+    [
+     503.55,
+     261.4,
+     104.71,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "relationship_n1",
+   "page": 1,
+   "lines": [
+    [
+     267.49,
+     290.53,
+     103.93,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "relationship_n2",
+   "page": 1,
+   "lines": [
+    [
+     376.58,
+     288.34,
+     103.93,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "relationship_n3",
+   "page": 1,
+   "lines": [
+    [
+     485.67,
+     289.43,
+     103.93,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "address_n1",
+   "page": 1,
+   "lines": [
+    [
+     249.6,
+     308.91,
+     71.03,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "address_n2",
+   "page": 1,
+   "lines": [
+    [
+     370.47,
+     307.6,
+     71.03,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "address_n3",
+   "page": 1,
+   "lines": [
+    [
+     491.34,
+     308.25,
+     71.03,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "mobile_n1",
+   "page": 1,
+   "lines": [
+    [
+     256.15,
+     433.9,
+     72.8,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "mobile_n2",
+   "page": 1,
+   "lines": [
+    [
+     367.85,
+     434.34,
+     72.8,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "mobile_n3",
+   "page": 1,
+   "lines": [
+    [
+     479.55,
+     434.12,
+     72.8,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "email_n1",
+   "page": 1,
+   "lines": [
+    [
+     252.22,
+     451.35,
+     67.24,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "email_n2",
+   "page": 1,
+   "lines": [
+    [
+     355.64,
+     453.29,
+     73.96,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "email_n3",
+   "page": 1,
+   "lines": [
+    [
+     459.06,
+     452.75,
+     67.24,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "id_number_n1",
+   "page": 1,
+   "lines": [
+    [
+     269.24,
+     486.26,
+     90.49,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "id_number_n2",
+   "page": 1,
+   "lines": [
+    [
+     384.87,
+     483.21,
+     90.49,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "id_number_n3",
+   "page": 1,
+   "lines": [
+    [
+     500.5,
+     484.74,
+     90.49,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "dob_n1",
+   "page": 1,
+   "lines": [
+    [
+     264,
+     545.99,
+     72.04,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "dob_n2",
+   "page": 1,
+   "lines": [
+    [
+     374.84,
+     543.81,
+     72.04,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "dob_n3",
+   "page": 1,
+   "lines": [
+    [
+     485.68,
+     544.9,
+     72.04,
+     12
+    ]
+   ]
+  },
+  {
+   "field": "guardian_name",
+   "page": 1,
+   "lines": [
+    [
+     264.44,
+     573.97,
+     112.83,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_address",
+   "page": 1,
+   "lines": [
+    [
+     246.55,
+     594.92,
+     40.57,
+     10
+    ],
+    [
+     246.55,
+     605.92,
+     80.04,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_mobile",
+   "page": 1,
+   "lines": [
+    [
+     257.02,
+     719.91,
+     129,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "guardian_email",
+   "page": 1,
+   "lines": [
+    [
+     245.67,
+     740.42,
+     122.88,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "guardian_pan",
+   "page": 1,
+   "lines": [
+    [
+     262.25,
+     773.2,
+     94.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "applicant_name",
+   "page": 2,
+   "lines": [
+    [
+     155.35,
+     163.98,
+     125.33,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "city_n1",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     366.4,
+     58.35,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "state_n1",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     382.4,
+     65.03,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "pincode_n1",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     398.3,
+     78.37,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "country_n1",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     414.3,
+     76.44,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "city_n2",
+   "page": 1,
+   "lines": [
+    [
+     362,
+     366.4,
+     58.35,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "state_n2",
+   "page": 1,
+   "lines": [
+    [
+     362,
+     382.4,
+     65.03,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "pincode_n2",
+   "page": 1,
+   "lines": [
+    [
+     362,
+     398.3,
+     78.37,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "country_n2",
+   "page": 1,
+   "lines": [
+    [
+     362,
+     414.3,
+     76.44,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "city_n3",
+   "page": 1,
+   "lines": [
+    [
+     472,
+     366.4,
+     58.35,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "state_n3",
+   "page": 1,
+   "lines": [
+    [
+     472,
+     382.4,
+     65.03,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "pincode_n3",
+   "page": 1,
+   "lines": [
+    [
+     472,
+     398.3,
+     78.37,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "country_n3",
+   "page": 1,
+   "lines": [
+    [
+     472,
+     414.3,
+     76.44,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_city",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     654,
+     102.82,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_state",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     669.9,
+     109.5,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_pincode",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     685.9,
+     122.84,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "guardian_country",
+   "page": 1,
+   "lines": [
+    [
+     250,
+     701.8,
+     120.91,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     62,
+     111,
+     88.32,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 2,
+   "lines": [
+    [
+     155.35,
+     214.95,
+     153.46,
+     11
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 2,
+   "lines": [
+    [
+     155.35,
+     268.95,
+     139.39,
+     11
+    ]
+   ]
+  }
+ ]
+}

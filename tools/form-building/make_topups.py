@@ -2,21 +2,21 @@
 (underscore runs and tick-box glyphs/squares); the three share one layout apart from page 1's series block, the
 page-1 date line and the page-4 note."""
 import json, shutil, os
-ROOT = "C:/zzz/demo/Fromwise/apps/backend/src/forms/"
+ROOT = "C:/zzz/demo/Fromwise/apps/backend/src/forms/vcc/"
 BLANKS = "C:/zzz/demo/Fromwise/data/Blank Forms/"
 VCC = "C:/zzz/demo/VCC/"
 
 FORMS = [
     dict(id="vcc-topup-global-bond-fund", const="VCC_TOPUP_GLOBAL_BOND_FUND", fund="360 ONE Global Bond Fund - Series II",
-         short="GBF top-up", source="360 ONE Global Bond Fund Series - II/360 ONE Global Bond Fund - Series II - Additional Subscription Agreement - 04.07.25.pdf",
+         short="GBF top-up", label="Global Bond Fund II – Top-up", source="360 ONE Global Bond Fund Series - II/360 ONE Global Bond Fund - Series II - Additional Subscription Agreement - 04.07.25.pdf",
          dateY=681.2, noteY=578.2, series="ticks",
          seriesBoxes={"Series A (ISIN SGXZ51510022)": (499.7, 373.9), "Series B (ISIN SGXZ73357493)": (499.5, 401.7)}, box=(7.0, 11.3)),
     dict(id="vcc-topup-global-investment-fund-2", const="VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2", fund="360 ONE Global Investment Fund 2",
-         short="GIF 2 top-up", source="360 ONE Global Investment Fund 2/360 ONE Global Investment Fund 2 - Additional Subscription Agreement (Non-US) - 06.10.25.pdf",
+         short="GIF 2 top-up", label="Global Investment Fund 2 – Top-up", source="360 ONE Global Investment Fund 2/360 ONE Global Investment Fund 2 - Additional Subscription Agreement (Non-US) - 06.10.25.pdf",
          dateY=681.2, noteY=578.2, series="ticks",
          seriesBoxes={f"Series {s}": (297.0, y) for s, y in zip("ABCDE", (375.4, 400.4, 427.7, 455.1, 482.5))}, box=(9.0, 9.96)),
     dict(id="vcc-topup-international-opportunities-fund", const="VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND", fund="360 ONE International Opportunities Fund",
-         short="IOF top-up", source="360 ONE International Opportunities Fund/360 ONE International Opportunities Fund - Additional Subscription Agreement.pdf",
+         short="IOF top-up", label="International Opportunities Fund – Top-up", source="360 ONE International Opportunities Fund/360 ONE International Opportunities Fund - Additional Subscription Agreement.pdf",
          dateY=667.8, noteY=539.7, series="typed"),
 ]
 
@@ -70,8 +70,8 @@ for form in FORMS:
               open(folder + "/required-fields.json", "w", encoding="utf-8"), indent=2)
     json.dump({
         "_about": "Form-level rules. One person (the subscriber) - KYC gives the name, the Excel the top-up details.",
-        "formId": form["id"], "label": f"{form['fund']} - Additional Subscription (top-up)", "shortLabel": form["short"],
-        "purpose": f"Top up an existing investment in {form['fund']}: name from KYC, amount and dates from Excel",
+        "formId": form["id"], "group": "VCC", "label": form["label"], "shortLabel": form["short"],
+        "purpose": "Add money to an existing investment",
         "blankFileName": blank, "keyFields": ["Subscriber name", "Top-up amount", "Series"], "sheetTabName": form["short"],
         "detectionPhrases": ["Additional Subscription Form for Sub-Fund", form["fund"].replace("360 ONE ", "")],
         "supportedNomineeCount": 1, "personLabel": "Subscriber",
@@ -83,24 +83,14 @@ for form in FORMS:
             {"key": "p4", "label": "Page 4 · Payment instructions", "fields": ["subscriber_name_p4"]},
         ],
     }, open(folder + "/form-rules.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-    js = f"""// {form['fund']} - Additional Subscription (top-up) form, 4 pages. Written by the VCC top-up generator: positions
-// are measured from the blank's underscore lines and series tick boxes.
-import path from "node:path";
-import {{ BLANK_FORMS_DIRECTORY }} from "../../config/paths-config.js";
-
-export const {form['const']}_FORM_CONFIGURATION = {{
-  id: "{form['id']}",
-  title: "{form['fund']} - Additional Subscription",
-  blankFormPath: path.join(BLANK_FORMS_DIRECTORY, "{blank}"),
-  nomineeHeaderRe: /(?!)/,
-  labels: [],
-  // Page 1 "Investor Signature" line and page 3 "For individuals" signature line.
-  signatureBoxes: [
-    {{ page: 1, x: 384, y: 289, w: 178, h: 16, signer: "subscriber", label: "Investor signature" }},
-    {{ page: 3, x: 175, y: 196, w: 175, h: 19, signer: "subscriber", label: "Subscriber signature" }},
-  ],
-  tickboxes: {json.dumps(tickboxes)},
-}};
-"""
-    open(folder + "/form-configuration.js", "w", encoding="utf-8").write(js)
+    json.dump({
+        "_about": f"{form['fund']} - Additional Subscription (top-up) form, 4 pages. Written by make_topups.py: positions are measured from the blank's underscore lines and series tick boxes.",
+        "id": form["id"], "title": f"{form['fund']} - Additional Subscription", "labels": [],
+        # Page 1 "Investor Signature" line and page 3 "For individuals" signature line.
+        "signatureBoxes": [
+            {"page": 1, "x": 384, "y": 289, "w": 178, "h": 16, "signer": "subscriber", "label": "Investor signature"},
+            {"page": 3, "x": 175, "y": 196, "w": 175, "h": 19, "signer": "subscriber", "label": "Subscriber signature"},
+        ],
+        "tickboxes": tickboxes, "blankFileName": blank, "nomineeHeaderRe": None, "tickboxRule": "usual",
+    }, open(folder + "/form-configuration.json", "w", encoding="utf-8"), indent=2)
     print("wrote", form["id"])

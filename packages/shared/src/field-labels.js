@@ -101,7 +101,7 @@ export function formatFieldLabel(fieldKey) {
   const baseKey = fieldKey.replace(/_n\d+$/, "");
   // "subscriber_name_p16": the same value printed again on page 16.
   const pageCopy = /^(.*)_p(\d+)$/.exec(baseKey);
-  if (pageCopy && FIELD_LABELS[pageCopy[1]]) return `${FIELD_LABELS[pageCopy[1]]} (p.${pageCopy[2]})`;
+  if (pageCopy) return `${formatFieldLabel(pageCopy[1])} (p.${pageCopy[2]})`;
   if (FIELD_LABELS[baseKey]) return FIELD_LABELS[baseKey].charAt(0).toUpperCase() + FIELD_LABELS[baseKey].slice(1);
   // No hand-written label: "us_city_state_zip" -> "US city, state, ZIP" style - known short forms stay upper case.
   const words = baseKey.split("_").map((word) => (ACRONYMS.has(word) ? word.toUpperCase() : word));

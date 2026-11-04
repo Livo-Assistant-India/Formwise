@@ -6,7 +6,7 @@ import {
   createCase, listCases, updateCase, deleteCase, getFillResultsPath, getFilledPdfPath, getRegeneratedPdfPath, getRegeneratedResultsPath,
 } from "../../services/storage/case-store-service.js";
 import { recordDecision, DECISION_KINDS } from "../../services/storage/decision-log-service.js";
-import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-memory-service.js";
+import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-store-service.js";
 import { fillCase } from "../../services/fill/fill-case-service.js";
 import { regenerateCasePdf } from "../../services/fill/regenerate-case-pdf-service.js";
 import { renderCasePreviewPage } from "../../services/fill/preview-case-page-service.js";

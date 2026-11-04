@@ -1,0 +1,352 @@
+{
+ "formId": "w8ben",
+ "pageCount": 1,
+ "configuration": {
+  "id": "w8ben",
+  "title": "Form W-8BEN",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 112,
+    "y": 690,
+    "w": 200,
+    "h": 28,
+    "signer": "subscriber",
+    "label": "Beneficial owner's signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "certify_capacity",
+    "page": 1,
+    "w": 8,
+    "h": 8,
+    "x": 110,
+    "y": 692.8,
+    "isAlwaysTicked": true
+   }
+  ],
+  "labels": [],
+  "blankFileName": "Form W-8BEN.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each text field is written on the blank IRS Form W-8BEN (Rev. October 2021): positions from the form's own fill-in boxes. alsoAt = printed again (name under the signature).",
+  "formId": "w8ben",
+  "title": "Form W-8BEN",
+  "fields": [
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 249,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 334,
+    "alsoAt": [
+     {
+      "page": 1,
+      "x": 110,
+      "y": 741,
+      "fontSize": 9,
+      "maxWidth": 312
+     }
+    ]
+   },
+   {
+    "key": "citizenship_country",
+    "nominee": null,
+    "page": 1,
+    "x": 378.4,
+    "y": 249,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 196
+   },
+   {
+    "key": "permanent_address",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 273,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "city_postal_code",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 297,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 400
+   },
+   {
+    "key": "residence_country",
+    "nominee": null,
+    "page": 1,
+    "x": 443.2,
+    "y": 297,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 132
+   },
+   {
+    "key": "tax_reference_number",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 393,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 248
+   },
+   {
+    "key": "date_of_birth_us",
+    "nominee": null,
+    "page": 1,
+    "x": 290,
+    "y": 417,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 284
+   },
+   {
+    "key": "treaty_country",
+    "nominee": null,
+    "page": 1,
+    "x": 239.6,
+    "y": 441,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 198
+   },
+   {
+    "key": "treaty_article",
+    "nominee": null,
+    "page": 1,
+    "x": 66.8,
+    "y": 477,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 108
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 434,
+    "y": 717,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 140
+   }
+  ]
+ },
+ "fieldSources": {
+  "subscriber_name": "document.name|upper",
+  "citizenship_country": "default.INDIA",
+  "permanent_address": "document.address|withoutCareOf|withoutPincode|upper",
+  "city_postal_code": "document.pincode",
+  "residence_country": "document.country|upper",
+  "tax_reference_number": "document.pan",
+  "date_of_birth_us": "document.dob|monthFirst",
+  "treaty_country": "copy.residence_country",
+  "treaty_article": "default.NA",
+  "form_date": "today|monthFirst",
+  "certify_capacity": "tick"
+ },
+ "formRules": {
+  "formId": "w8ben",
+  "group": "US tax",
+  "label": "W-8BEN – Individual",
+  "shortLabel": "W-8BEN",
+  "purpose": "Tax form for non-US individuals",
+  "blankFileName": "Form W-8BEN.pdf",
+  "keyFields": [
+   "Name",
+   "Country",
+   "Foreign TIN (PAN)",
+   "Date of birth"
+  ],
+  "sheetTabName": "W-8BEN",
+  "detectionPhrases": [
+   "W-8BEN",
+   "Certificate of Foreign Status"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Beneficial owner",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "owner",
+    "label": "Part I - Beneficial owner",
+    "fields": [
+     "subscriber_name",
+     "citizenship_country",
+     "permanent_address",
+     "city_postal_code",
+     "residence_country",
+     "tax_reference_number",
+     "date_of_birth_us"
+    ]
+   },
+   {
+    "key": "treaty",
+    "label": "Part II - Treaty",
+    "fields": [
+     "treaty_country",
+     "treaty_article"
+    ]
+   },
+   {
+    "key": "certification",
+    "label": "Part III - Certification",
+    "fields": [
+     "certify_capacity",
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "subscriber_name",
+   "citizenship_country",
+   "permanent_address",
+   "residence_country",
+   "tax_reference_number",
+   "date_of_birth_us"
+  ],
+  "nomineeFieldKeys": []
+ },
+ "drawnSpots": [
+  {
+   "field": "subscriber_name",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     241.35,
+     108.17,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "citizenship_country",
+   "page": 1,
+   "lines": [
+    [
+     378.4,
+     241.35,
+     115.68,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "permanent_address",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     265.35,
+     119.28,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "city_postal_code",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     289.35,
+     106.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "residence_country",
+   "page": 1,
+   "lines": [
+    [
+     443.2,
+     289.35,
+     112.82,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "tax_reference_number",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     385.35,
+     129.2,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "date_of_birth_us",
+   "page": 1,
+   "lines": [
+    [
+     290,
+     409.35,
+     106.42,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "treaty_country",
+   "page": 1,
+   "lines": [
+    [
+     239.6,
+     433.35,
+     96.31,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "treaty_article",
+   "page": 1,
+   "lines": [
+    [
+     66.8,
+     469.35,
+     90.89,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     434,
+     709.35,
+     79.49,
+     9
+    ]
+   ]
+  }
+ ]
+}

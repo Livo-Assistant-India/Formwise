@@ -15,6 +15,8 @@ export interface CaseDocument {
   personName: string | null;
   folderName: string | null;
   readFieldLabels: string[];
+  /** What was read, to check on screen: e.g. { label: "Date of birth", value: "17/03/2004" }. Aadhaar: last 4 only. */
+  readValues: { label: string; value: string }[];
 }
 
 export interface CaseSummary {

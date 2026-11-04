@@ -1,0 +1,46 @@
+{
+  "_about": "360 ONE Alternatives VCC - Common Redemption Form (3 pages, same form for every VCC fund). Text positions are measured from the blank's own labels and table cells; tick boxes are its ☐ glyphs (x, y = glyph baseline).",
+  "id": "vcc-redemption",
+  "title": "360 ONE Alternatives VCC - Redemption Request",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 3,
+      "x": 72,
+      "y": 596,
+      "w": 190,
+      "h": 32,
+      "signer": "subscriber",
+      "label": "Shareholder's signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "redemption_type",
+      "page": 2,
+      "w": 8.6,
+      "h": 9.96,
+      "options": [
+        "Full (100%)",
+        "Partial"
+      ],
+      "boxesByOption": {
+        "Full (100%)": [
+          {
+            "x": 196.9,
+            "y": 297.8
+          }
+        ],
+        "Partial": [
+          {
+            "x": 196.9,
+            "y": 325.5
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE Alternatives VCC - Common Redemption Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

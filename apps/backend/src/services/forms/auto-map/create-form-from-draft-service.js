@@ -4,7 +4,7 @@ import path from "node:path";
 import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { BLANK_FORMS_DIRECTORY, FORMS_DIRECTORY } from "../../../config/paths-config.js";
-import { listFormIds, registerGeneratedForm } from "../../../forms/form-registry.js";
+import { FORM_STREAMS, listFormIds, registerGeneratedForm } from "../../../forms/form-registry.js";
 import { deleteFormDraft, getDraftBlankPath } from "./form-draft-service.js";
 
 const FIELD_SOURCE_PATTERN = /^(typed|today(\|\w+)*|document\.\w+(\|\w+)*|copy\.\w+|default\..+)$/;
@@ -15,7 +15,7 @@ const writeJson = (filePath, value) => writeFile(filePath, `${JSON.stringify(val
 function makeFormId(label) {
   const baseId = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50) || "new-form";
   let formId = baseId;
-  for (let suffix = 2; listFormIds().includes(formId) || existsSync(path.join(FORMS_DIRECTORY, formId)); suffix += 1) formId = `${baseId}-${suffix}`;
+  for (let suffix = 2; listFormIds().includes(formId) || existsSync(path.join(FORMS_DIRECTORY, FORM_STREAMS.ADDED, formId)); suffix += 1) formId = `${baseId}-${suffix}`;
   return formId;
 }
 
@@ -37,7 +37,7 @@ export async function createFormFromDraft(draft, { label, shortLabel, purpose, p
   // Reading order (page, then top to bottom, then left to right): the review screen and the Excel follow it.
   const fields = [...checkedFields].sort((first, second) => first.page - second.page || Math.round(first.y / 6) - Math.round(second.y / 6) || first.x - second.x);
   const formId = makeFormId(label);
-  const formDirectory = path.join(FORMS_DIRECTORY, formId);
+  const formDirectory = path.join(FORMS_DIRECTORY, FORM_STREAMS.ADDED, formId);
   let blankFileName = `${label.replace(/[\\/:*?"<>|]+/g, " ").trim()}.pdf`;
   if (existsSync(path.join(BLANK_FORMS_DIRECTORY, blankFileName))) blankFileName = `${formId}.pdf`;
   const nomineeCount = Math.max(1, ...fields.map((field) => field.nominee || 1));
