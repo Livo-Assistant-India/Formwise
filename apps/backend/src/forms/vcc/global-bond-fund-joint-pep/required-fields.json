@@ -1,0 +1,7 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "joint_holder_name",
+    "joint_holder_pep_status"
+  ]
+}

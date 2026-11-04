@@ -1,0 +1,468 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE International Opportunities Fund Additional Declaration (Joint Investor), 14 Letter pages. Made by tools/form-building/make_vcc_joint_investor.mjs.",
+  "formId": "international-opportunities-fund-joint-investor",
+  "title": "360 ONE International Opportunities Fund - Joint Investor Declaration",
+  "fields": [
+    {
+      "key": "joint_holder_surname",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 147.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_title",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 165.3,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_given_name",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 183.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_middle_name",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 201.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_residence_address_line1",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 249.8,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 174
+    },
+    {
+      "key": "joint_holder_residence_address_line2",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 267.8,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 174
+    },
+    {
+      "key": "joint_holder_residence_country",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 285.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_pincode",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 303.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_mailing_address_line1",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 357.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 174
+    },
+    {
+      "key": "joint_holder_mailing_address_line2",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 375.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 174
+    },
+    {
+      "key": "joint_holder_mailing_country",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 392.9,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_mailing_postcode",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 410.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_dob",
+      "nominee": null,
+      "page": 3,
+      "x": 324,
+      "y": 441.1,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "joint_holder_us_tin",
+      "nominee": null,
+      "page": 3,
+      "x": 130,
+      "y": 559.8,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 210
+    },
+    {
+      "key": "joint_holder_tax_residence_country",
+      "nominee": null,
+      "page": 4,
+      "x": 137,
+      "y": 233.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "joint_holder_tax_reference_type",
+      "nominee": null,
+      "page": 4,
+      "x": 274,
+      "y": 233.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 115
+    },
+    {
+      "key": "joint_holder_tax_reference_number",
+      "nominee": null,
+      "page": 4,
+      "x": 396,
+      "y": 233.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 118
+    },
+    {
+      "key": "joint_holder_tax_residence_country_2",
+      "nominee": null,
+      "page": 4,
+      "x": 137,
+      "y": 254.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "joint_holder_tax_reference_type_2",
+      "nominee": null,
+      "page": 4,
+      "x": 274,
+      "y": 254.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 115
+    },
+    {
+      "key": "joint_holder_tax_reference_number_2",
+      "nominee": null,
+      "page": 4,
+      "x": 396,
+      "y": 254.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 118
+    },
+    {
+      "key": "joint_holder_tax_residence_country_3",
+      "nominee": null,
+      "page": 4,
+      "x": 137,
+      "y": 276,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "joint_holder_tax_reference_type_3",
+      "nominee": null,
+      "page": 4,
+      "x": 274,
+      "y": 276,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 115
+    },
+    {
+      "key": "joint_holder_tax_reference_number_3",
+      "nominee": null,
+      "page": 4,
+      "x": 396,
+      "y": 276,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 118
+    },
+    {
+      "key": "joint_holder_tin_unavailable_reason",
+      "nominee": null,
+      "page": 4,
+      "x": 95,
+      "y": 317.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 380
+    },
+    {
+      "key": "joint_holder_name",
+      "nominee": null,
+      "page": 4,
+      "x": 190,
+      "y": 602.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 214
+    },
+    {
+      "key": "joint_holder_form_date",
+      "nominee": null,
+      "page": 4,
+      "x": 190,
+      "y": 637.1,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 214
+    },
+    {
+      "key": "joint_holder_signing_capacity",
+      "nominee": null,
+      "page": 4,
+      "x": 190,
+      "y": 710.1,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 214
+    },
+    {
+      "key": "joint_holder_name_p54",
+      "nominee": null,
+      "page": 5,
+      "x": 241,
+      "y": 513.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 290
+    },
+    {
+      "key": "joint_holder_authorised_signatory_name_p54",
+      "nominee": null,
+      "page": 5,
+      "x": 241,
+      "y": 540.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 290
+    },
+    {
+      "key": "joint_holder_authorised_signatory_designation_p54",
+      "nominee": null,
+      "page": 5,
+      "x": 241,
+      "y": 567.8,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 290
+    },
+    {
+      "key": "joint_holder_form_date_p54",
+      "nominee": null,
+      "page": 5,
+      "x": 168,
+      "y": 677.9,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "joint_holder_beneficial_owner_name",
+      "nominee": null,
+      "page": 6,
+      "x": 212,
+      "y": 371,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "joint_holder_beneficial_owner_address",
+      "nominee": null,
+      "page": 6,
+      "x": 212,
+      "y": 405.4,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 288,
+      "maxY": 440
+    },
+    {
+      "key": "joint_holder_associate_name",
+      "nominee": null,
+      "page": 8,
+      "x": 111,
+      "y": 400,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 395
+    },
+    {
+      "key": "joint_holder_associate_ownership_percent",
+      "nominee": null,
+      "page": 8,
+      "x": 184,
+      "y": 463.8,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 200
+    },
+    {
+      "key": "joint_holder_tax_offence_part2_matters",
+      "nominee": null,
+      "page": 12,
+      "x": 78,
+      "y": 687.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 470
+    },
+    {
+      "key": "joint_holder_form_date_p64",
+      "nominee": null,
+      "page": 13,
+      "x": 292,
+      "y": 471.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 66
+    },
+    {
+      "key": "joint_holder_name_p64",
+      "nominee": null,
+      "page": 13,
+      "x": 292,
+      "y": 495,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 236
+    },
+    {
+      "key": "joint_holder_authorised_signatory_name_p64",
+      "nominee": null,
+      "page": 13,
+      "x": 292,
+      "y": 518.4,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 236
+    },
+    {
+      "key": "joint_holder_authorised_signatory_designation_p64",
+      "nominee": null,
+      "page": 13,
+      "x": 292,
+      "y": 564.4,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 236
+    },
+    {
+      "key": "joint_holder_pep_details_1",
+      "nominee": null,
+      "page": 14,
+      "x": 78,
+      "y": 515.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 425
+    },
+    {
+      "key": "joint_holder_pep_details_2",
+      "nominee": null,
+      "page": 14,
+      "x": 78,
+      "y": 538.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 425
+    },
+    {
+      "key": "joint_holder_pep_details_3",
+      "nominee": null,
+      "page": 14,
+      "x": 78,
+      "y": 561,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 425
+    },
+    {
+      "key": "joint_holder_pep_details_4",
+      "nominee": null,
+      "page": 14,
+      "x": 78,
+      "y": 583.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 425
+    },
+    {
+      "key": "joint_holder_name_p65",
+      "nominee": null,
+      "page": 14,
+      "x": 106,
+      "y": 631.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 250
+    },
+    {
+      "key": "joint_holder_form_date_p65",
+      "nominee": null,
+      "page": 14,
+      "x": 102,
+      "y": 687.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 120
+    }
+  ]
+}

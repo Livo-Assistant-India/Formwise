@@ -1,0 +1,681 @@
+{
+  "_about": "360 ONE Growth Strategy Fund - Additional Declaration to be signed by the Joint Investor, 14 pages (subscription pages 25-28, 54, 57-65). Made by tools/form-building/make_vcc_joint_investor.mjs; every spot measured on this blank. Every tick box is its own question with no assumed answer.",
+  "id": "growth-strategy-fund-joint-investor",
+  "title": "360 ONE Growth Strategy Fund - Joint Investor Declaration",
+  "labels": [],
+  "blankFileName": "360 ONE Growth Strategy Fund - Joint Investor Declaration.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [],
+  "signatureBoxes": [
+    {
+      "page": 4,
+      "x": 190,
+      "y": 545,
+      "w": 200,
+      "h": 23,
+      "signer": "subscriber",
+      "label": "Joint investor – tax self-certification"
+    },
+    {
+      "page": 5,
+      "x": 110,
+      "y": 598,
+      "w": 160,
+      "h": 30,
+      "signer": "subscriber",
+      "label": "Joint investor – accredited investor consent"
+    },
+    {
+      "page": 13,
+      "x": 78,
+      "y": 395,
+      "w": 210,
+      "h": 42,
+      "signer": "subscriber",
+      "label": "Joint investor – tax offences questionnaire"
+    },
+    {
+      "page": 14,
+      "x": 78,
+      "y": 637,
+      "w": 182,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Joint investor – PEP self-certification"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "joint_holder_us_tax_status",
+      "page": 3,
+      "w": 6.6,
+      "h": 7.4,
+      "options": [
+        "U.S. citizen or resident",
+        "Born in the U.S., citizenship given up",
+        "Not a U.S. citizen or resident"
+      ],
+      "boxesByOption": {
+        "U.S. citizen or resident": [
+          {
+            "x": 128.28,
+            "y": 518.62
+          }
+        ],
+        "Born in the U.S., citizenship given up": [
+          {
+            "x": 128.28,
+            "y": 579.22
+          }
+        ],
+        "Not a U.S. citizen or resident": [
+          {
+            "x": 128.28,
+            "y": 609.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_beneficial_owner",
+      "page": 6,
+      "w": 6.24,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 103.92,
+            "y": 325.06
+          }
+        ],
+        "No": [
+          {
+            "x": 103.92,
+            "y": 340.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_singapore_tax_status",
+      "page": 6,
+      "w": 5.9,
+      "h": 6.8,
+      "options": [
+        "Not tax resident in Singapore and not a citizen",
+        "Tax resident in Singapore and/or a citizen"
+      ],
+      "boxesByOption": {
+        "Not tax resident in Singapore and not a citizen": [
+          {
+            "x": 77.28,
+            "y": 564.58
+          }
+        ],
+        "Tax resident in Singapore and/or a citizen": [
+          {
+            "x": 77.28,
+            "y": 632.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_category",
+      "page": 7,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "(a) Not tax resident in Singapore",
+        "(b) Approved person - Section 13O / 13OA",
+        "(c) Approved person - Section 13U",
+        "(d) Approved trust - Section 13D",
+        "(e) Designated person",
+        "(f) None of these"
+      ],
+      "boxesByOption": {
+        "(a) Not tax resident in Singapore": [
+          {
+            "x": 77.28,
+            "y": 130.54
+          }
+        ],
+        "(b) Approved person - Section 13O / 13OA": [
+          {
+            "x": 77.28,
+            "y": 283.9
+          }
+        ],
+        "(c) Approved person - Section 13U": [
+          {
+            "x": 77.28,
+            "y": 330.34
+          }
+        ],
+        "(d) Approved trust - Section 13D": [
+          {
+            "x": 77.28,
+            "y": 376.78
+          }
+        ],
+        "(e) Designated person": [
+          {
+            "x": 77.28,
+            "y": 423.22
+          }
+        ],
+        "(f) None of these": [
+          {
+            "x": 77.28,
+            "y": 447.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q1_tax_resident",
+      "page": 7,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 110.52,
+            "y": 542.74
+          }
+        ],
+        "No": [
+          {
+            "x": 210.6,
+            "y": 542.74
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q2",
+      "page": 7,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 110.52,
+            "y": 649.18
+          }
+        ],
+        "No": [
+          {
+            "x": 210.6,
+            "y": 649.18
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q3",
+      "page": 8,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 110.52,
+            "y": 158.02
+          }
+        ],
+        "No": [
+          {
+            "x": 210.6,
+            "y": 158.02
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q4",
+      "page": 8,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 110.52,
+            "y": 264.46
+          }
+        ],
+        "No": [
+          {
+            "x": 210.6,
+            "y": 264.46
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q5",
+      "page": 8,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 110.52,
+            "y": 334.54
+          }
+        ],
+        "No": [
+          {
+            "x": 210.6,
+            "y": 334.54
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1a",
+      "page": 11,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 515.62
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 515.62
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1b",
+      "page": 11,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 550.78
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 550.78
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1c",
+      "page": 11,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 575.62
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 575.62
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1d",
+      "page": 11,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 610.78
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 610.78
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1e",
+      "page": 11,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 668.86
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 668.86
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1f",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 112.66
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 112.66
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1g",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 159.22
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 159.22
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2a",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 229.66
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 229.66
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2b",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 264.94
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 264.94
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2c",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 299.98
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 299.98
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2d",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 335.26
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 335.26
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2e",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 381.94
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 381.94
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_3",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 463.06
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 463.06
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_part2",
+      "page": 12,
+      "w": 6.6,
+      "h": 7.4,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 473.04,
+            "y": 618.1
+          }
+        ],
+        "No": [
+          {
+            "x": 520.2,
+            "y": 618.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_pep_status",
+      "page": 14,
+      "w": 5.2,
+      "h": 6.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 76.9,
+            "y": 436.9
+          }
+        ],
+        "No": [
+          {
+            "x": 76.9,
+            "y": 459.7
+          }
+        ]
+      }
+    }
+  ]
+}

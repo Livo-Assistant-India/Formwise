@@ -1,0 +1,34 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE Global Bond Fund - Series II joint holder Opt-in confirmation form (1 page). Made by tools/form-building/make_gbf_joint_holder.mjs from the GIF 2 subscription pages it copies.",
+  "formId": "global-bond-fund-joint-opt-in",
+  "title": "360 ONE Global Bond Fund - Series II - Joint holder Opt-in confirmation form",
+  "fields": [
+    {
+      "key": "joint_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 280,
+      "y": 200.8,
+      "fontSize": 12,
+      "type": "text",
+      "maxWidth": 236,
+      "alsoAt": [
+        {
+          "page": 1,
+          "x": 88,
+          "y": 589,
+          "maxWidth": 200
+        }
+      ]
+    },
+    {
+      "key": "joint_holder_form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 82,
+      "y": 649.4,
+      "fontSize": 12,
+      "type": "text"
+    }
+  ]
+}

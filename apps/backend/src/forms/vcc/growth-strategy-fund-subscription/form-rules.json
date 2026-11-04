@@ -189,7 +189,10 @@
         "crs_non_reporting_fi",
         "crs_non_reporting_fi_type",
         "crs_fi_non_participating_jurisdiction",
-        "crs_npj_fi_type"
+        "crs_npj_fi_type",
+        "crs_passive_nfe_controlling_person_1",
+        "crs_passive_nfe_controlling_person_2",
+        "crs_passive_nfe_controlling_person_3"
       ]
     },
     {
@@ -267,7 +270,9 @@
         "beneficial_owner",
         "singapore_tax_status",
         "beneficial_owner_name",
-        "beneficial_owner_address"
+        "beneficial_owner_address",
+        "beneficial_owner_address_line_2",
+        "beneficial_owner_address_line_3"
       ]
     },
     {

@@ -313,7 +313,11 @@
    "topup_amount_usd",
    "application_date"
   ],
-  "nomineeFieldKeys": []
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
  },
  "drawnSpots": [
   {

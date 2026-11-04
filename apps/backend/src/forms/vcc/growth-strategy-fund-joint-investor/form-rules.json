@@ -1,0 +1,156 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the joint investor, i.e. the second applicant) - their KYC documents fill the identity fields, the Excel fills the rest.",
+  "formId": "growth-strategy-fund-joint-investor",
+  "group": "VCC",
+  "label": "Growth Strategy Fund – Joint investor declaration",
+  "shortLabel": "GSF joint investor",
+  "purpose": "Joint investor's own declarations · non-US investors",
+  "blankFileName": "360 ONE Growth Strategy Fund - Joint Investor Declaration.pdf",
+  "keyFields": [
+    "Joint holder name",
+    "Date of birth",
+    "Tax reference number"
+  ],
+  "sheetTabName": "GSF joint investor",
+  "detectionPhrases": [
+    "360 ONE Growth Strategy Fund",
+    "ANNEX 3",
+    "Individual Tax Residency Self-Certification"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Joint investor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "p3",
+      "label": "Page 3 · Account holder (KYC)",
+      "fields": [
+        "joint_holder_title",
+        "joint_holder_surname",
+        "joint_holder_given_name",
+        "joint_holder_middle_name",
+        "joint_holder_residence_address_line1",
+        "joint_holder_residence_address_line2",
+        "joint_holder_residence_country",
+        "joint_holder_pincode",
+        "joint_holder_dob",
+        "joint_holder_us_tax_status",
+        "joint_holder_mailing_address_line1",
+        "joint_holder_mailing_address_line2",
+        "joint_holder_mailing_country",
+        "joint_holder_mailing_postcode",
+        "joint_holder_us_tin"
+      ]
+    },
+    {
+      "key": "p4",
+      "label": "Page 4 · Tax residency (KYC)",
+      "fields": [
+        "joint_holder_tax_residence_country",
+        "joint_holder_tax_reference_type",
+        "joint_holder_tax_reference_number",
+        "joint_holder_tax_residence_country_2",
+        "joint_holder_tax_reference_type_2",
+        "joint_holder_tax_reference_number_2",
+        "joint_holder_tax_residence_country_3",
+        "joint_holder_tax_reference_type_3",
+        "joint_holder_tax_reference_number_3",
+        "joint_holder_tin_unavailable_reason",
+        "joint_holder_name",
+        "joint_holder_form_date",
+        "joint_holder_signing_capacity"
+      ]
+    },
+    {
+      "key": "p5",
+      "label": "Page 5 · Accredited investor consent",
+      "fields": [
+        "joint_holder_name_p54",
+        "joint_holder_form_date_p54",
+        "joint_holder_authorised_signatory_name_p54",
+        "joint_holder_authorised_signatory_designation_p54"
+      ]
+    },
+    {
+      "key": "p6",
+      "label": "Page 6 · Singapore tax status",
+      "fields": [
+        "joint_holder_beneficial_owner",
+        "joint_holder_singapore_tax_status",
+        "joint_holder_beneficial_owner_name",
+        "joint_holder_beneficial_owner_address"
+      ]
+    },
+    {
+      "key": "p7",
+      "label": "Pages 7-8 · Singapore tax (non-individual owner)",
+      "fields": [
+        "joint_holder_sg_entity_category",
+        "joint_holder_sg_entity_q1_tax_resident",
+        "joint_holder_sg_entity_q2",
+        "joint_holder_sg_entity_q3",
+        "joint_holder_sg_entity_q4",
+        "joint_holder_sg_entity_q5",
+        "joint_holder_associate_name",
+        "joint_holder_associate_ownership_percent"
+      ]
+    },
+    {
+      "key": "p11",
+      "label": "Page 11 · Tax offences 1(a)-(e)",
+      "fields": [
+        "joint_holder_tax_offence_1a",
+        "joint_holder_tax_offence_1b",
+        "joint_holder_tax_offence_1c",
+        "joint_holder_tax_offence_1d",
+        "joint_holder_tax_offence_1e"
+      ]
+    },
+    {
+      "key": "p12",
+      "label": "Page 12 · Tax offences 1(f)-3, Part II",
+      "fields": [
+        "joint_holder_tax_offence_1f",
+        "joint_holder_tax_offence_1g",
+        "joint_holder_tax_offence_2a",
+        "joint_holder_tax_offence_2b",
+        "joint_holder_tax_offence_2c",
+        "joint_holder_tax_offence_2d",
+        "joint_holder_tax_offence_2e",
+        "joint_holder_tax_offence_3",
+        "joint_holder_tax_offence_part2",
+        "joint_holder_tax_offence_part2_matters"
+      ]
+    },
+    {
+      "key": "p13",
+      "label": "Page 13 · Tax offences signed",
+      "fields": [
+        "joint_holder_name_p64",
+        "joint_holder_form_date_p64",
+        "joint_holder_authorised_signatory_name_p64",
+        "joint_holder_authorised_signatory_designation_p64"
+      ]
+    },
+    {
+      "key": "p14",
+      "label": "Page 14 · Politically exposed person",
+      "fields": [
+        "joint_holder_pep_status",
+        "joint_holder_name_p65",
+        "joint_holder_form_date_p65",
+        "joint_holder_pep_details_1",
+        "joint_holder_pep_details_2",
+        "joint_holder_pep_details_3",
+        "joint_holder_pep_details_4"
+      ]
+    }
+  ],
+  "personRole": "joint_holder"
+}

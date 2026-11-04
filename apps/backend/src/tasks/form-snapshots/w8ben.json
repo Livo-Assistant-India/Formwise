@@ -225,7 +225,14 @@
    "tax_reference_number",
    "date_of_birth_us"
   ],
-  "nomineeFieldKeys": []
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address",
+   "idNumber",
+   "dob"
+  ]
  },
  "drawnSpots": [
   {

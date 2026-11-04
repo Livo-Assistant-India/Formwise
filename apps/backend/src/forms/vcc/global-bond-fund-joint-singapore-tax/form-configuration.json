@@ -1,0 +1,599 @@
+{
+  "_about": "360 ONE Global Bond Fund - Series II - joint holder Singapore tax questionnaire. Copy of the subscription agreement's pages for the joint holder (second applicant); positions are the GIF 2 subscription ones (same page layout). Every tick box is its own question with no assumed answer.",
+  "id": "global-bond-fund-joint-singapore-tax",
+  "title": "360 ONE Global Bond Fund - Series II - Joint holder Singapore tax questionnaire",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 8,
+      "x": 62,
+      "y": 363.4,
+      "w": 210,
+      "h": 62,
+      "signer": "subscriber",
+      "label": "Joint holder - Tax offences questionnaire"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "joint_holder_beneficial_owner",
+      "page": 1,
+      "w": 8.16,
+      "h": 9.48,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 82.34,
+            "y": 346.13
+          }
+        ],
+        "No": [
+          {
+            "x": 82.34,
+            "y": 362.93
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_singapore_tax_status",
+      "page": 1,
+      "w": 7.75,
+      "h": 9,
+      "options": [
+        "Not tax resident in Singapore and not a citizen",
+        "Tax resident in Singapore and/or a citizen"
+      ],
+      "boxesByOption": {
+        "Not tax resident in Singapore and not a citizen": [
+          {
+            "x": 54.02,
+            "y": 600.79
+          }
+        ],
+        "Tax resident in Singapore and/or a citizen": [
+          {
+            "x": 54.02,
+            "y": 672.94
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1a",
+      "page": 6,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 548.71
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 548.71
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1b",
+      "page": 6,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 586.15
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 586.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1c",
+      "page": 6,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 612.46
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 612.46
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1d",
+      "page": 6,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 649.9
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 649.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1e",
+      "page": 6,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 711.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 711.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1f",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 120.26
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 120.26
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_1g",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 169.82
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 169.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2a",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 244.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 244.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2b",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 282.17
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 282.17
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2c",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 319.49
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 319.49
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2d",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 356.93
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 356.93
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_2e",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 406.61
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 406.61
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_3",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": false,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 492.79
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 492.79
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_offence_part2",
+      "page": 7,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 474.82,
+            "y": 657.7
+          }
+        ],
+        "No": [
+          {
+            "x": 525,
+            "y": 657.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_category",
+      "page": 2,
+      "w": 7.75,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "(a) Not tax resident in Singapore",
+        "(b) Approved person - Section 13O / 13OA",
+        "(c) Approved person - Section 13U",
+        "(d) Approved trust - Section 13D",
+        "(e) Designated person",
+        "(f) None of these"
+      ],
+      "boxesByOption": {
+        "(a) Not tax resident in Singapore": [
+          {
+            "x": 54.02,
+            "y": 139.34
+          }
+        ],
+        "(b) Approved person - Section 13O / 13OA": [
+          {
+            "x": 54.02,
+            "y": 302.33
+          }
+        ],
+        "(c) Approved person - Section 13U": [
+          {
+            "x": 54.02,
+            "y": 351.77
+          }
+        ],
+        "(d) Approved trust - Section 13D": [
+          {
+            "x": 54.02,
+            "y": 401.09
+          }
+        ],
+        "(e) Designated person": [
+          {
+            "x": 54.02,
+            "y": 450.55
+          }
+        ],
+        "(f) None of these": [
+          {
+            "x": 54.02,
+            "y": 476.59
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q1_tax_resident",
+      "page": 2,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 577.51
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 577.51
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q2",
+      "page": 2,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 690.7
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 690.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q3",
+      "page": 3,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 168.5
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 168.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q4",
+      "page": 3,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 281.69
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 281.69
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_sg_entity_q5",
+      "page": 3,
+      "w": 8.58,
+      "h": 9.96,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 89.42,
+            "y": 356.21
+          }
+        ],
+        "No": [
+          {
+            "x": 195.77,
+            "y": 356.21
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Joint Singapore tax questionnaire.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

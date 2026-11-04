@@ -113,6 +113,9 @@ export default function CaseDocumentsPage() {
 
   const caseDocuments = caseSummary?.documents || [];
   const hasReadDocument = caseDocuments.some((caseDocument) => caseDocument.status === "done");
+  // A form filled only from the Excel (e.g. W-8BEN-E) can go on without ID documents, once its Excel is in.
+  const isExcelOnlyForm = formRules?.usesDocuments === false;
+  const canContinue = isExcelOnlyForm ? Boolean(sheetImport) || hasReadDocument : hasReadDocument;
   // Documents still being read wait in their own list, so they do not jump between nominees once the name is found.
   const readingDocuments = caseDocuments.filter((caseDocument) => caseDocument.status === "processing");
   const placedDocuments = caseDocuments.filter((caseDocument) => caseDocument.status !== "processing");
@@ -133,20 +136,21 @@ export default function CaseDocumentsPage() {
 
   return (
     <PageContainer title="Upload documents"
-      description={isOnePersonForm ? `Add the ${personLabel.toLowerCase()}'s ID documents. Name, address, date of birth and PAN are read from them.`
+      description={isExcelOnlyForm ? "This form is filled from the client Excel only - no ID documents are needed."
+        : isOnePersonForm ? `Add the ${personLabel.toLowerCase()}'s ID documents. Name, address, date of birth and PAN are read from them.`
         : "Add every nominee's ID documents. Each file is sorted to the person named on it."}
       actions={<>
         <CaseStepper currentStep="documents" caseId={caseId} />
         {isAnyDocumentProcessing ? <span className="text-xs text-muted">Reading documents…</span> : null}
-        <Button variant="primary" disabled={!hasReadDocument || isAnyDocumentProcessing || isFilling} onClick={handleContinue}
-          title={!hasReadDocument ? "Add at least one ID document first" : isAnyDocumentProcessing ? "Wait until every document is read" : undefined}>
+        <Button variant="primary" disabled={!canContinue || isAnyDocumentProcessing || isFilling} onClick={handleContinue}
+          title={!canContinue ? (isExcelOnlyForm ? "Add the client Excel first" : "Add at least one ID document first") : isAnyDocumentProcessing ? "Wait until every document is read" : undefined}>
           {isFilling ? "Filling the form…" : "Continue to review →"}
         </Button>
       </>}>
       <div className="grid h-full gap-3 md:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[minmax(320px,1fr)_minmax(0,2fr)]">
         <div className="space-y-3">
           <DocumentDropZone onFilesChosen={handleFilesChosen} />
-          <DocumentReadinessCard caseDocuments={caseDocuments} sheetImport={sheetImport} isRemovingSheet={isRemovingSheet}
+          <DocumentReadinessCard caseDocuments={caseDocuments} sheetImport={sheetImport} isRemovingSheet={isRemovingSheet} needsDocuments={!isExcelOnlyForm} documentDetails={formRules?.documentDetails}
             onAddExcel={() => { setSheetFileToImport(null); setIsSheetImportOpen(true); }} onRemoveExcel={handleRemoveSheet} />
           {loadError ? <Notice tone="error">{loadError}</Notice> : null}
           {uploadMessages.length ? <Notice tone="error">{uploadMessages.map((message) => <div key={message}>{message}</div>)}</Notice> : null}
@@ -155,7 +159,7 @@ export default function CaseDocumentsPage() {
           <h2 className="border-b border-line px-3 py-2 text-[13px] font-semibold">Documents by person <span className="font-normal tabular-nums text-muted">{caseDocuments.length}</span>
             {placedDocuments.length && !isOnePersonForm ? <span className="float-right text-xs font-normal text-muted">Drag a document onto another person to move it</span> : null}</h2>
           <div className="min-h-0 flex-1 space-y-2 overflow-auto p-3">
-            {!caseDocuments.length ? <StatusState title="No documents yet" message={isOnePersonForm ? `Drop the ${personLabel.toLowerCase()}'s Aadhaar, PAN, passport or licence on the left.` : "Drop each nominee's Aadhaar, PAN, passport or licence on the left. They are grouped by the name on them."} /> : null}
+            {!caseDocuments.length ? <StatusState title={isExcelOnlyForm ? "No ID documents needed" : "No documents yet"} message={isExcelOnlyForm ? "Add the client Excel on the left, then continue to review." : isOnePersonForm ? `Drop the ${personLabel.toLowerCase()}'s Aadhaar, PAN, passport or licence on the left.` : "Drop each nominee's Aadhaar, PAN, passport or licence on the left. They are grouped by the name on them."} /> : null}
             {readingDocuments.length ? (
               <section className="space-y-2 rounded-xl border border-dashed border-line p-3">
                 <div className="text-xs font-medium text-muted">Reading {readingDocuments.length} document{readingDocuments.length === 1 ? "" : "s"}… each moves to its person when done</div>

@@ -1,0 +1,117 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE Global Bond Fund - Series II joint holder Singapore tax questionnaire (8 pages). Made by tools/form-building/make_gbf_joint_holder.mjs from the GIF 2 subscription pages it copies.",
+  "formId": "global-bond-fund-joint-singapore-tax",
+  "title": "360 ONE Global Bond Fund - Series II - Joint holder Singapore tax questionnaire",
+  "fields": [
+    {
+      "key": "joint_holder_name",
+      "nominee": null,
+      "page": 8,
+      "x": 281.89,
+      "y": 488.05,
+      "fontSize": 12,
+      "type": "text",
+      "maxWidth": 240
+    },
+    {
+      "key": "joint_holder_form_date",
+      "nominee": null,
+      "page": 8,
+      "x": 281.89,
+      "y": 462.58,
+      "fontSize": 11,
+      "type": "text"
+    },
+    {
+      "key": "joint_holder_beneficial_owner_name",
+      "nominee": null,
+      "page": 1,
+      "x": 182,
+      "y": 393.65,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 330
+    },
+    {
+      "key": "joint_holder_beneficial_owner_address",
+      "nominee": null,
+      "page": 1,
+      "x": 182,
+      "y": 429.77,
+      "fontSize": 10,
+      "type": "multiline",
+      "maxWidth": 330,
+      "maxY": 470
+    },
+    {
+      "key": "joint_holder_associate_name",
+      "nominee": null,
+      "page": 3,
+      "x": 89.42,
+      "y": 426,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 420
+    },
+    {
+      "key": "joint_holder_associate_ownership_percent",
+      "nominee": null,
+      "page": 3,
+      "x": 165,
+      "y": 493.15,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 200
+    },
+    {
+      "key": "joint_holder_tax_offence_part2_matters",
+      "nominee": null,
+      "page": 7,
+      "x": 54,
+      "y": 728,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 480
+    },
+    {
+      "key": "joint_holder_authorised_signatory_name",
+      "nominee": null,
+      "page": 8,
+      "x": 281.89,
+      "y": 512.8,
+      "fontSize": 12,
+      "type": "text",
+      "maxWidth": 240
+    },
+    {
+      "key": "joint_holder_authorised_signatory_designation",
+      "nominee": null,
+      "page": 8,
+      "x": 281.89,
+      "y": 561.7,
+      "fontSize": 12,
+      "type": "text",
+      "maxWidth": 240
+    },
+    {
+      "key": "joint_holder_beneficial_owner_address_line_2",
+      "nominee": null,
+      "page": 1,
+      "x": 197,
+      "y": 455.1,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 308
+    },
+    {
+      "key": "joint_holder_beneficial_owner_address_line_3",
+      "nominee": null,
+      "page": 1,
+      "x": 197,
+      "y": 467.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 308
+    }
+  ]
+}

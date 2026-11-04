@@ -1,0 +1,66 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE Global Bond Fund - Series II joint holder PEP declaration (1 page). Made by tools/form-building/make_gbf_joint_holder.mjs from the GIF 2 subscription pages it copies.",
+  "formId": "global-bond-fund-joint-pep",
+  "title": "360 ONE Global Bond Fund - Series II - Joint holder PEP declaration",
+  "fields": [
+    {
+      "key": "joint_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 82.04,
+      "y": 669.36,
+      "fontSize": 11,
+      "type": "text",
+      "maxWidth": 250
+    },
+    {
+      "key": "joint_holder_form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 78.55,
+      "y": 733.07,
+      "fontSize": 11,
+      "type": "text"
+    },
+    {
+      "key": "joint_holder_pep_details_1",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 546.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 450
+    },
+    {
+      "key": "joint_holder_pep_details_2",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 570.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 450
+    },
+    {
+      "key": "joint_holder_pep_details_3",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 594.9,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 450
+    },
+    {
+      "key": "joint_holder_pep_details_4",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 619,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 450
+    }
+  ]
+}

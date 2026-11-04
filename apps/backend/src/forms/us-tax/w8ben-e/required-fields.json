@@ -1,0 +1,14 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed: the mandatory Part I lines and the certification.",
+  "requiredFields": [
+    "entity_name",
+    "country_of_incorporation",
+    "chapter_3_status",
+    "chapter_4_status",
+    "permanent_address",
+    "permanent_city_state_postal_code",
+    "permanent_country",
+    "signer_name",
+    "form_date"
+  ]
+}

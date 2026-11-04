@@ -56,6 +56,8 @@ export async function buildBatchStatus(batchEntry) {
     clients.push({
       caseId: caseEntry.id, formId: caseEntry.formId, formLabel: rowFormRules.label, formShortLabel: rowFormRules.shortLabel || rowFormRules.label,
       documentsFromCaseId: caseEntry.documentsFromCaseId || null, rowNumber: batchRow.rowNumber, clientReference: batchRow.clientReference,
+      // Whose documents this form reads: "investor" (the client's folder) or "joint_holder" (its "Joint holder" subfolder).
+      personRole: rowFormRules.personRole || "investor",
       // No name in the sheet: the name read from the client's own documents, once one is read.
       displayName: batchRow.displayName || documentSource.documents.map((caseDocument) => caseDocument.foundName || caseDocument.holderName).find(Boolean) || null,
       stage: getClientStage({ ...caseEntry, documents: documentSource.documents }, fillSummary), error: caseEntry.batchError || null, rowProblemCount: batchRow.rowProblemCount || 0,

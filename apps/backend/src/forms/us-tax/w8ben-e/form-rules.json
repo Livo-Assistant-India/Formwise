@@ -1,0 +1,318 @@
+{
+  "_about": "Form-level rules. One entity (the beneficial owner) - everything comes from the Excel; the reviewer can change it.",
+  "formId": "w8ben-e",
+  "group": "US tax",
+  "label": "W-8BEN-E – Entity",
+  "shortLabel": "W-8BEN-E",
+  "purpose": "Tax form for non-US entities",
+  "blankFileName": "Form W-8BEN-E.pdf",
+  "keyFields": [
+    "Entity name",
+    "Country of incorporation",
+    "Chapter 3 status",
+    "Chapter 4 status"
+  ],
+  "sheetTabName": "W-8BEN-E",
+  "detectionPhrases": [
+    "W-8BEN-E",
+    "(Entities)"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Entity",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "part1",
+      "label": "Part I · Identification of beneficial owner",
+      "fields": [
+        "entity_name",
+        "country_of_incorporation",
+        "disregarded_entity_name",
+        "permanent_address",
+        "permanent_city_state_postal_code",
+        "permanent_country",
+        "mailing_address",
+        "mailing_city_state_postal_code",
+        "mailing_country",
+        "us_tin",
+        "giin",
+        "foreign_tin",
+        "reference_numbers",
+        "chapter_3_status",
+        "hybrid_making_treaty_claim",
+        "chapter_4_status",
+        "foreign_tin_not_legally_required"
+      ]
+    },
+    {
+      "key": "part2",
+      "label": "Part II · Disregarded entity or branch receiving payment",
+      "fields": [
+        "disregarded_entity_address",
+        "disregarded_entity_city_state_postal_code",
+        "disregarded_entity_country",
+        "disregarded_entity_giin",
+        "disregarded_entity_chapter_4_status"
+      ]
+    },
+    {
+      "key": "part3",
+      "label": "Part III · Claim of tax treaty benefits",
+      "fields": [
+        "treaty_country",
+        "limitation_on_benefits_other_article",
+        "special_rates_article",
+        "special_rates_withholding_rate",
+        "special_rates_income_type",
+        "special_rates_conditions_line_1",
+        "special_rates_conditions_line_2",
+        "special_rates_conditions_line_3",
+        "treaty_resident_certified",
+        "treaty_limitation_on_benefits_certified",
+        "limitation_on_benefits_type",
+        "treaty_qualified_resident_status_certified"
+      ]
+    },
+    {
+      "key": "part4",
+      "label": "Part IV · Sponsored FFI",
+      "fields": [
+        "sponsored_ffi_sponsoring_entity_name",
+        "sponsored_ffi_certification"
+      ]
+    },
+    {
+      "key": "part5",
+      "label": "Part V · Certified deemed-compliant nonregistering local bank",
+      "fields": [
+        "nonregistering_local_bank_certified"
+      ]
+    },
+    {
+      "key": "part6",
+      "label": "Part VI · Certified deemed-compliant FFI with only low-value accounts",
+      "fields": [
+        "low_value_accounts_ffi_certified"
+      ]
+    },
+    {
+      "key": "part7",
+      "label": "Part VII · Certified deemed-compliant sponsored, closely held investment vehicle",
+      "fields": [
+        "closely_held_vehicle_sponsoring_entity_name",
+        "closely_held_vehicle_certified"
+      ]
+    },
+    {
+      "key": "part8",
+      "label": "Part VIII · Certified deemed-compliant limited life debt investment entity",
+      "fields": [
+        "limited_life_debt_entity_certified"
+      ]
+    },
+    {
+      "key": "part9",
+      "label": "Part IX · Investment entities that do not maintain financial accounts",
+      "fields": [
+        "no_financial_accounts_entity_certified"
+      ]
+    },
+    {
+      "key": "part10",
+      "label": "Part X · Owner-documented FFI",
+      "fields": [
+        "owner_documented_ffi_certified",
+        "owner_documented_ffi_documents",
+        "owner_documented_trust_certified"
+      ]
+    },
+    {
+      "key": "part11",
+      "label": "Part XI · Restricted distributor",
+      "fields": [
+        "restricted_distributor_certified",
+        "restricted_distributor_agreement"
+      ]
+    },
+    {
+      "key": "part12",
+      "label": "Part XII · Nonreporting IGA FFI",
+      "fields": [
+        "iga_partner_jurisdiction",
+        "iga_treated_as",
+        "trustee_or_sponsor_name",
+        "nonreporting_iga_ffi_certified",
+        "iga_model",
+        "trustee_location"
+      ]
+    },
+    {
+      "key": "part13",
+      "label": "Part XIII · Foreign government or central bank of issue",
+      "fields": [
+        "foreign_government_certified"
+      ]
+    },
+    {
+      "key": "part14",
+      "label": "Part XIV · International organization",
+      "fields": [
+        "international_organization_certification"
+      ]
+    },
+    {
+      "key": "part15",
+      "label": "Part XV · Exempt retirement plans",
+      "fields": [
+        "exempt_retirement_plan_certification"
+      ]
+    },
+    {
+      "key": "part16",
+      "label": "Part XVI · Entity wholly owned by exempt beneficial owners",
+      "fields": [
+        "wholly_owned_by_exempt_owners_certified"
+      ]
+    },
+    {
+      "key": "part17",
+      "label": "Part XVII · Territory financial institution",
+      "fields": [
+        "territory_financial_institution_certified"
+      ]
+    },
+    {
+      "key": "part18",
+      "label": "Part XVIII · Excepted nonfinancial group entity",
+      "fields": [
+        "nonfinancial_group_entity_certified"
+      ]
+    },
+    {
+      "key": "part19",
+      "label": "Part XIX · Excepted nonfinancial start-up company",
+      "fields": [
+        "startup_formation_date",
+        "nonfinancial_startup_certified"
+      ]
+    },
+    {
+      "key": "part20",
+      "label": "Part XX · Excepted nonfinancial entity in liquidation or bankruptcy",
+      "fields": [
+        "liquidation_or_bankruptcy_filing_date",
+        "liquidation_or_bankruptcy_certified"
+      ]
+    },
+    {
+      "key": "part21",
+      "label": "Part XXI · 501(c) organization",
+      "fields": [
+        "determination_letter_date",
+        "organization_501c_certified"
+      ]
+    },
+    {
+      "key": "part22",
+      "label": "Part XXII · Nonprofit organization",
+      "fields": [
+        "nonprofit_organization_certified"
+      ]
+    },
+    {
+      "key": "part23",
+      "label": "Part XXIII · Publicly traded NFFE or affiliate",
+      "fields": [
+        "securities_exchange_name",
+        "publicly_traded_affiliate_name",
+        "affiliate_securities_market_name",
+        "publicly_traded_nffe_certification"
+      ]
+    },
+    {
+      "key": "part24",
+      "label": "Part XXIV · Excepted territory NFFE",
+      "fields": [
+        "excepted_territory_nffe_certified"
+      ]
+    },
+    {
+      "key": "part25",
+      "label": "Part XXV · Active NFFE",
+      "fields": [
+        "active_nffe_certified"
+      ]
+    },
+    {
+      "key": "part26",
+      "label": "Part XXVI · Passive NFFE",
+      "fields": [
+        "passive_nffe_certified",
+        "passive_nffe_us_owners"
+      ]
+    },
+    {
+      "key": "part27",
+      "label": "Part XXVII · Excepted inter-affiliate FFI",
+      "fields": [
+        "inter_affiliate_ffi_certified"
+      ]
+    },
+    {
+      "key": "part28",
+      "label": "Part XXVIII · Sponsored direct reporting NFFE",
+      "fields": [
+        "direct_reporting_sponsoring_entity_name",
+        "sponsored_direct_reporting_nffe_certified"
+      ]
+    },
+    {
+      "key": "part29",
+      "label": "Part XXIX · Substantial U.S. owners of passive NFFE",
+      "fields": [
+        "substantial_us_owner_1_name",
+        "substantial_us_owner_1_address",
+        "substantial_us_owner_1_tin",
+        "substantial_us_owner_2_name",
+        "substantial_us_owner_2_address",
+        "substantial_us_owner_2_tin",
+        "substantial_us_owner_3_name",
+        "substantial_us_owner_3_address",
+        "substantial_us_owner_3_tin",
+        "substantial_us_owner_4_name",
+        "substantial_us_owner_4_address",
+        "substantial_us_owner_4_tin",
+        "substantial_us_owner_5_name",
+        "substantial_us_owner_5_address",
+        "substantial_us_owner_5_tin",
+        "substantial_us_owner_6_name",
+        "substantial_us_owner_6_address",
+        "substantial_us_owner_6_tin",
+        "substantial_us_owner_7_name",
+        "substantial_us_owner_7_address",
+        "substantial_us_owner_7_tin",
+        "substantial_us_owner_8_name",
+        "substantial_us_owner_8_address",
+        "substantial_us_owner_8_tin",
+        "substantial_us_owner_9_name",
+        "substantial_us_owner_9_address",
+        "substantial_us_owner_9_tin"
+      ]
+    },
+    {
+      "key": "part30",
+      "label": "Part XXX · Certification",
+      "fields": [
+        "certify_capacity",
+        "signer_name",
+        "form_date"
+      ]
+    }
+  ]
+}

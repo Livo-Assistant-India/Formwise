@@ -1,0 +1,12 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "joint_holder_name",
+    "joint_holder_surname",
+    "joint_holder_given_name",
+    "joint_holder_residence_country",
+    "joint_holder_dob",
+    "joint_holder_tax_reference_number",
+    "joint_holder_us_tax_status"
+  ]
+}

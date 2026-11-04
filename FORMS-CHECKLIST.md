@@ -27,14 +27,17 @@ Legend: ✅ done · ⏳ in progress · ⬜ not started · ❓ waiting on the use
 | W-9 | `w9` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
 | W-8BEN – Individual | `w8ben` | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | Growth Strategy Fund – Subscription (Non-US) | `growth-strategy-fund-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
-| International Opportunities Fund – Subscription (Non-US) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| International Opportunities Fund – Subscription (Non-US) | `international-opportunities-fund-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | Global Bond Fund II – Subscription (US), 125 pages | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| India Equity Fund – Subscription (US), 121 pages | – | ❓ | | | | | |
-| W-8BEN-E (entities) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| GIF 2 Joint Holder Declaration | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| Growth Strategy Fund – Additional Declaration (joint) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| IOF – Additional Declaration (joint) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| GBF joint holder pages (zip) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| India Equity Fund – Subscription (US), 121 pages | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| W-8BEN-E (entities) | `w8ben-e` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| GIF 2 Joint Holder Declaration | `global-investment-fund-2-joint-holder` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| Growth Strategy Fund – Additional Declaration (joint) | `growth-strategy-fund-joint-investor` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| IOF – Additional Declaration (joint) | `international-opportunities-fund-joint-investor` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| GBF joint holder – Opt-in | `global-bond-fund-joint-opt-in` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| GBF joint holder – PEP declaration | `global-bond-fund-joint-pep` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| GBF joint holder – Singapore tax | `global-bond-fund-joint-singapore-tax` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
+| GBF joint holder – Self-certification | `global-bond-fund-joint-self-certification` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | Investor Profiler (Excel output, not a PDF) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
 | Dynamic Equity Allocator Fund – Subscription and Top-up | – | ❓ | | | | | |
 | Growth Strategy Fund – Top-up | – | ❓ | | | | | |
@@ -47,10 +50,19 @@ Notes:
 - The blank check (2026-11-04) found gaps in forms built earlier, now covered: top-ups' page 3 "For entities"
   signatories (2 names + 2 signatures, optional), Redemption's "Investor Initial" on every page, CRN's "NRN No."
   (optional typed field). Confirm with 360 ONE where NRN No. should come from.
-- India Equity Fund (US): not in 360 ONE's form list. Ask whether it is in scope.
+- India Equity Fund (US): in scope (Mayur, 04 Nov: only GBF Series II and India Equity Fund are open to US investors).
+- 360 ONE still owes: the mandatory fields per form, and the document priority per KYC field (e.g. address from
+  Aadhaar first, then a utility bill). Until then "required" fields are our best reading of each form.
+- Joint holder / joint investor forms (decided 04 Nov): their fields are `joint_holder_…` (one Excel row carries the
+  investor and the joint holder), and in a batch they read the client folder's "Joint holder" subfolder, never the
+  investor's documents (form-rules `"personRole": "joint_holder"`).
+- GBF subscription is built on the older 65-page demo blank; 360 ONE's current file (04.07.25, 63 pages) differs. Rebuild
+  it on their current file (then the other subscriptions, made from it, must be re-checked with check-forms --compare).
 - Dynamic Equity Allocator Fund, Growth Strategy Fund top-up: no files received yet.
 
 ## GIFT City
+
+Forms are in 360 ONE's emails of 04 Nov (Mayur). Redemption and Top-up are ONE common form each for every GIFT fund.
 
 | Form | Form id | Built | Blanks | Test fill | UI test | Sheet | User OK |
 |------|---------|:-----:|:------:|:---------:|:-------:|:-----:|:-------:|

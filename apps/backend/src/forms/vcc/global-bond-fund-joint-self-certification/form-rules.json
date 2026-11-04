@@ -1,0 +1,69 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the joint holder) - their KYC documents fill the identity fields, the Excel fills the rest.",
+  "formId": "global-bond-fund-joint-self-certification",
+  "group": "VCC",
+  "label": "Global Bond Fund II – Joint holder self-certification",
+  "shortLabel": "GBF joint self-certification",
+  "purpose": "Joint holder · FATCA / CRS individual",
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Joint Individual self certification.pdf",
+  "keyFields": [
+    "Joint holder name"
+  ],
+  "sheetTabName": "GBF joint self-certification",
+  "detectionPhrases": [
+    "ANNEX 3 PART 1 (A)",
+    "Global Bond Fund – Series II"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Joint holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "p27",
+      "label": "Page 3 · Account holder (KYC)",
+      "fields": [
+        "joint_holder_title",
+        "joint_holder_surname",
+        "joint_holder_given_name",
+        "joint_holder_middle_name",
+        "joint_holder_residence_address_line1",
+        "joint_holder_residence_address_line2",
+        "joint_holder_residence_country",
+        "joint_holder_pincode",
+        "joint_holder_dob",
+        "joint_holder_us_tax_status",
+        "joint_holder_mailing_address_line1",
+        "joint_holder_mailing_address_line2",
+        "joint_holder_mailing_country",
+        "joint_holder_mailing_postcode",
+        "joint_holder_us_tin"
+      ]
+    },
+    {
+      "key": "p28",
+      "label": "Page 4 · Tax residency (KYC)",
+      "fields": [
+        "joint_holder_tax_residence_country",
+        "joint_holder_tax_reference_type",
+        "joint_holder_tax_reference_number",
+        "joint_holder_name",
+        "joint_holder_form_date",
+        "joint_holder_tax_residence_country_2",
+        "joint_holder_tax_reference_type_2",
+        "joint_holder_tax_reference_number_2",
+        "joint_holder_tax_residence_country_3",
+        "joint_holder_tax_reference_type_3",
+        "joint_holder_tax_reference_number_3",
+        "joint_holder_tin_unavailable_reason",
+        "joint_holder_signing_capacity"
+      ]
+    }
+  ],
+  "personRole": "joint_holder"
+}

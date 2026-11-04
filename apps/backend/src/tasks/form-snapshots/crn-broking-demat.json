@@ -848,6 +848,13 @@
    "state",
    "pincode",
    "country"
+  ],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address",
+   "idNumber",
+   "dob"
   ]
  },
  "drawnSpots": [

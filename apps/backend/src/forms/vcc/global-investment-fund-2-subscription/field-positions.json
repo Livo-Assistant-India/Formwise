@@ -1446,6 +1446,56 @@
       "fontSize": 10,
       "type": "text",
       "maxWidth": 355
+    },
+    {
+      "key": "crs_passive_nfe_controlling_person_1",
+      "nominee": null,
+      "page": 35,
+      "x": 106,
+      "y": 168,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "crs_passive_nfe_controlling_person_2",
+      "nominee": null,
+      "page": 35,
+      "x": 106,
+      "y": 198.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "crs_passive_nfe_controlling_person_3",
+      "nominee": null,
+      "page": 35,
+      "x": 106,
+      "y": 229.1,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "beneficial_owner_address_line_2",
+      "nominee": null,
+      "page": 54,
+      "x": 197,
+      "y": 455.1,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 308
+    },
+    {
+      "key": "beneficial_owner_address_line_3",
+      "nominee": null,
+      "page": 54,
+      "x": 197,
+      "y": 467.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 308
     }
   ]
 }

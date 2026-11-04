@@ -97,7 +97,18 @@ for (const rowNumber of [1, 2, 3]) {
 /** "name_n2" -> "Name"; unknown keys fall back to their words. */
 const ACRONYMS = new Set(["us", "usd", "ssn", "zip", "pan", "dob", "id", "isin", "iban", "swift", "aba", "chip", "uid", "kyc", "tin", "pep", "dp", "crn", "ifsc", "nri", "oci", "pio", "fatca", "crs", "gst", "vcc"]);
 
+const PERSON_ROLE_LABELS = { joint_holder_: "Joint holder" };
+
 export function formatFieldLabel(fieldKey) {
+  // A joint holder's field: "Joint holder · " + the investor field's own label ("joint_holder_dob" -> "… Date of birth").
+  for (const [prefix, roleLabel] of Object.entries(PERSON_ROLE_LABELS)) {
+    if (fieldKey.startsWith(prefix)) {
+      const plainKey = fieldKey.slice(prefix.length);
+      const namePage = /^name(?:_p(\d+))?$/.exec(plainKey);
+      if (namePage) return `${roleLabel} · Name${namePage[1] ? ` (p.${namePage[1]})` : ""}`;
+      return `${roleLabel} · ${formatFieldLabel(plainKey)}`;
+    }
+  }
   const baseKey = fieldKey.replace(/_n\d+$/, "");
   // "subscriber_name_p16": the same value printed again on page 16.
   const pageCopy = /^(.*)_p(\d+)$/.exec(baseKey);

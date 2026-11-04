@@ -158,7 +158,11 @@
    "us_city_state_zip",
    "ssn"
   ],
-  "nomineeFieldKeys": []
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
  },
  "drawnSpots": [
   {

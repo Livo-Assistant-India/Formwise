@@ -1,0 +1,1924 @@
+{
+ "formId": "global-investment-fund-2-joint-holder",
+ "pageCount": 14,
+ "configuration": {
+  "id": "global-investment-fund-2-joint-holder",
+  "title": "360 ONE Global Investment Fund 2 - Joint Holder Declaration",
+  "signatureBoxes": [
+   {
+    "page": 4,
+    "x": 190,
+    "y": 543,
+    "w": 200,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Joint holder – tax self-certification"
+   },
+   {
+    "page": 5,
+    "x": 78,
+    "y": 562,
+    "w": 180,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Joint holder – opt-in confirmation"
+   },
+   {
+    "page": 13,
+    "x": 80,
+    "y": 352,
+    "w": 205,
+    "h": 50,
+    "signer": "subscriber",
+    "label": "Joint holder – tax offences questionnaire"
+   },
+   {
+    "page": 14,
+    "x": 78,
+    "y": 639,
+    "w": 180,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Joint holder – PEP self-certification"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "joint_holder_us_tax_status",
+    "options": [
+     "U.S. citizen or resident",
+     "Born in the U.S., citizenship given up",
+     "Not a U.S. citizen or resident"
+    ],
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "U.S. citizen or resident": [
+      {
+       "x": 127.58,
+       "y": 518.02
+      }
+     ],
+     "Born in the U.S., citizenship given up": [
+      {
+       "x": 127.58,
+       "y": 578.62
+      }
+     ],
+     "Not a U.S. citizen or resident": [
+      {
+       "x": 127.58,
+       "y": 609.22
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_beneficial_owner",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 102.92,
+       "y": 324.52
+      }
+     ],
+     "No": [
+      {
+       "x": 102.92,
+       "y": 340.36
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_singapore_tax_status",
+    "options": [
+     "Not tax resident in Singapore and not a citizen",
+     "Tax resident in Singapore and/or a citizen"
+    ],
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Not tax resident in Singapore and not a citizen": [
+      {
+       "x": 76.28,
+       "y": 564.28
+      }
+     ],
+     "Tax resident in Singapore and/or a citizen": [
+      {
+       "x": 76.28,
+       "y": 632.2
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_category",
+    "isOptional": true,
+    "options": [
+     "(a) Not tax resident in Singapore",
+     "(b) Approved person - Section 13O / 13OA",
+     "(c) Approved person - Section 13U",
+     "(d) Approved trust - Section 13D",
+     "(e) Designated person",
+     "(f) None of these"
+    ],
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "(a) Not tax resident in Singapore": [
+      {
+       "x": 76.58,
+       "y": 129.94
+      }
+     ],
+     "(b) Approved person - Section 13O / 13OA": [
+      {
+       "x": 76.58,
+       "y": 283.3
+      }
+     ],
+     "(c) Approved person - Section 13U": [
+      {
+       "x": 76.58,
+       "y": 329.74
+      }
+     ],
+     "(d) Approved trust - Section 13D": [
+      {
+       "x": 76.58,
+       "y": 376.18
+      }
+     ],
+     "(e) Designated person": [
+      {
+       "x": 76.58,
+       "y": 422.62
+      }
+     ],
+     "(f) None of these": [
+      {
+       "x": 76.58,
+       "y": 447.22
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_q1_tax_resident",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 109.82,
+       "y": 542.14
+      }
+     ],
+     "No": [
+      {
+       "x": 209.9,
+       "y": 542.14
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_q2",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 109.82,
+       "y": 648.58
+      }
+     ],
+     "No": [
+      {
+       "x": 209.9,
+       "y": 648.58
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_q3",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 109.82,
+       "y": 157.42
+      }
+     ],
+     "No": [
+      {
+       "x": 209.9,
+       "y": 157.42
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_q4",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 109.82,
+       "y": 263.86
+      }
+     ],
+     "No": [
+      {
+       "x": 209.9,
+       "y": 263.86
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_sg_entity_q5",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 109.82,
+       "y": 333.94
+      }
+     ],
+     "No": [
+      {
+       "x": 209.9,
+       "y": 333.94
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1a",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 11,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 515.02
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 515.02
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1b",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 11,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 550.18
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 550.18
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1c",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 11,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 575.02
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 575.02
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1d",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 11,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 610.18
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 610.18
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1e",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 11,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 668.26
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 668.26
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1f",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 112.06
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 112.06
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_1g",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 158.62
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 158.62
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_2a",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 229.06
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 229.06
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_2b",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 264.34
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 264.34
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_2c",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 299.38
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 299.38
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_2d",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 334.66
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 334.66
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_2e",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 381.34
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 381.34
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_3",
+    "isOptional": false,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 462.46
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 462.46
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tax_offence_part2",
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 12,
+    "w": 8,
+    "h": 8,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 472.34,
+       "y": 617.5
+      }
+     ],
+     "No": [
+      {
+       "x": 519.5,
+       "y": 617.5
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_pep_status",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "page": 14,
+    "w": 6,
+    "h": 6,
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 76.43,
+       "y": 436.88
+      }
+     ],
+     "No": [
+      {
+       "x": 76.43,
+       "y": 459.68
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "360 ONE Global Investment Fund 2 - Joint Holder Declaration.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank 360 ONE Global Investment Fund 2 - Joint Holder Declaration, 14 pages (US Letter). Made by tools/form-building/make_vcc_joint_holder.mjs; every position measured on this blank.",
+  "formId": "global-investment-fund-2-joint-holder",
+  "title": "360 ONE Global Investment Fund 2 - Joint Holder Declaration",
+  "fields": [
+   {
+    "key": "joint_holder_surname",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 145.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_title",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 163.3,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_given_name",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 181.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_middle_name",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 199.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_residence_address_line1",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 247.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_residence_address_line2",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 265.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_residence_country",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 283.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_pincode",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 301.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_mailing_address_line1",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 355.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_mailing_address_line2",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 373.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_mailing_country",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 390.9,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_mailing_postcode",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 408.7,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_dob",
+    "nominee": null,
+    "page": 3,
+    "x": 324.5,
+    "y": 439.1,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "joint_holder_us_tin",
+    "nominee": null,
+    "page": 3,
+    "x": 130,
+    "y": 557.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 214
+   },
+   {
+    "key": "joint_holder_tax_residence_country",
+    "nominee": null,
+    "page": 4,
+    "x": 136.8,
+    "y": 236.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
+    "key": "joint_holder_tax_reference_type",
+    "nominee": null,
+    "page": 4,
+    "x": 273.2,
+    "y": 236.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 116
+   },
+   {
+    "key": "joint_holder_tax_reference_number",
+    "nominee": null,
+    "page": 4,
+    "x": 395.4,
+    "y": 236.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "joint_holder_tax_residence_country_2",
+    "nominee": null,
+    "page": 4,
+    "x": 136.8,
+    "y": 258,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
+    "key": "joint_holder_tax_reference_type_2",
+    "nominee": null,
+    "page": 4,
+    "x": 273.2,
+    "y": 258,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 116
+   },
+   {
+    "key": "joint_holder_tax_reference_number_2",
+    "nominee": null,
+    "page": 4,
+    "x": 395.4,
+    "y": 258,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "joint_holder_tax_residence_country_3",
+    "nominee": null,
+    "page": 4,
+    "x": 136.8,
+    "y": 279.4,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
+    "key": "joint_holder_tax_reference_type_3",
+    "nominee": null,
+    "page": 4,
+    "x": 273.2,
+    "y": 279.4,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 116
+   },
+   {
+    "key": "joint_holder_tax_reference_number_3",
+    "nominee": null,
+    "page": 4,
+    "x": 395.4,
+    "y": 279.4,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "joint_holder_tin_unavailable_reason",
+    "nominee": null,
+    "page": 4,
+    "x": 95.5,
+    "y": 315.9,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 378
+   },
+   {
+    "key": "joint_holder_name",
+    "nominee": null,
+    "page": 4,
+    "x": 189.5,
+    "y": 600.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 214
+   },
+   {
+    "key": "joint_holder_form_date",
+    "nominee": null,
+    "page": 4,
+    "x": 189.5,
+    "y": 635.1,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 214
+   },
+   {
+    "key": "joint_holder_signing_capacity",
+    "nominee": null,
+    "page": 4,
+    "x": 189.5,
+    "y": 708.1,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 214
+   },
+   {
+    "key": "joint_holder_name_p5",
+    "nominee": null,
+    "page": 5,
+    "x": 288,
+    "y": 188.9,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 225,
+    "alsoAt": [
+     {
+      "page": 5,
+      "x": 107,
+      "y": 554,
+      "maxWidth": 200
+     }
+    ]
+   },
+   {
+    "key": "joint_holder_form_date_p5",
+    "nominee": null,
+    "page": 5,
+    "x": 103,
+    "y": 610.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 150
+   },
+   {
+    "key": "joint_holder_beneficial_owner_name",
+    "nominee": null,
+    "page": 6,
+    "x": 212,
+    "y": 370,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "joint_holder_beneficial_owner_address",
+    "nominee": null,
+    "page": 6,
+    "x": 212,
+    "y": 406.5,
+    "fontSize": 10,
+    "type": "multiline",
+    "maxWidth": 288,
+    "maxY": 441
+   },
+   {
+    "key": "joint_holder_associate_name",
+    "nominee": null,
+    "page": 8,
+    "x": 110,
+    "y": 401,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 420
+   },
+   {
+    "key": "joint_holder_associate_ownership_percent",
+    "nominee": null,
+    "page": 8,
+    "x": 183,
+    "y": 463.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 200
+   },
+   {
+    "key": "joint_holder_tax_offence_part2_matters",
+    "nominee": null,
+    "page": 12,
+    "x": 78,
+    "y": 687,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 470
+   },
+   {
+    "key": "joint_holder_form_date_p13",
+    "nominee": null,
+    "page": 13,
+    "x": 291.5,
+    "y": 436,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 64
+   },
+   {
+    "key": "joint_holder_name_p13",
+    "nominee": null,
+    "page": 13,
+    "x": 291.5,
+    "y": 459,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 236
+   },
+   {
+    "key": "joint_holder_authorised_signatory_name_p13",
+    "nominee": null,
+    "page": 13,
+    "x": 291.5,
+    "y": 482.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 236
+   },
+   {
+    "key": "joint_holder_authorised_signatory_designation_p13",
+    "nominee": null,
+    "page": 13,
+    "x": 291.5,
+    "y": 528.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 236
+   },
+   {
+    "key": "joint_holder_pep_details_1",
+    "nominee": null,
+    "page": 14,
+    "x": 78,
+    "y": 513.2,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 425
+   },
+   {
+    "key": "joint_holder_pep_details_2",
+    "nominee": null,
+    "page": 14,
+    "x": 78,
+    "y": 536,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 425
+   },
+   {
+    "key": "joint_holder_pep_details_3",
+    "nominee": null,
+    "page": 14,
+    "x": 78,
+    "y": 558.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 425
+   },
+   {
+    "key": "joint_holder_pep_details_4",
+    "nominee": null,
+    "page": 14,
+    "x": 78,
+    "y": 581.6,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 425
+   },
+   {
+    "key": "joint_holder_name_p14",
+    "nominee": null,
+    "page": 14,
+    "x": 107,
+    "y": 631.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 250
+   },
+   {
+    "key": "joint_holder_form_date_p14",
+    "nominee": null,
+    "page": 14,
+    "x": 103,
+    "y": 687.8,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 150
+   }
+  ]
+ },
+ "fieldSources": {
+  "joint_holder_surname": "document.name|surname|upper",
+  "joint_holder_title": "typed",
+  "joint_holder_given_name": "document.name|givenName|upper",
+  "joint_holder_middle_name": "document.name|middleNames|upper",
+  "joint_holder_residence_address_line1": "document.address|withoutCareOf|addressLine1|upper",
+  "joint_holder_residence_address_line2": "document.address|withoutCareOf|addressLine2|upper",
+  "joint_holder_residence_country": "document.country|upper",
+  "joint_holder_pincode": "document.pincode",
+  "joint_holder_mailing_address_line1": "typed",
+  "joint_holder_mailing_address_line2": "typed",
+  "joint_holder_mailing_country": "typed",
+  "joint_holder_mailing_postcode": "typed",
+  "joint_holder_dob": "document.dob",
+  "joint_holder_us_tin": "typed",
+  "joint_holder_tax_residence_country": "copy.joint_holder_residence_country",
+  "joint_holder_tax_reference_type": "default.PAN",
+  "joint_holder_tax_reference_number": "document.pan",
+  "joint_holder_tax_residence_country_2": "typed",
+  "joint_holder_tax_reference_type_2": "typed",
+  "joint_holder_tax_reference_number_2": "typed",
+  "joint_holder_tax_residence_country_3": "typed",
+  "joint_holder_tax_reference_type_3": "typed",
+  "joint_holder_tax_reference_number_3": "typed",
+  "joint_holder_tin_unavailable_reason": "typed",
+  "joint_holder_name": "document.name|upper",
+  "joint_holder_form_date": "today",
+  "joint_holder_signing_capacity": "typed",
+  "joint_holder_name_p5": "copy.joint_holder_name",
+  "joint_holder_form_date_p5": "copy.joint_holder_form_date",
+  "joint_holder_beneficial_owner_name": "typed",
+  "joint_holder_beneficial_owner_address": "typed",
+  "joint_holder_associate_name": "typed",
+  "joint_holder_associate_ownership_percent": "typed",
+  "joint_holder_tax_offence_part2_matters": "typed",
+  "joint_holder_form_date_p13": "copy.joint_holder_form_date",
+  "joint_holder_name_p13": "copy.joint_holder_name",
+  "joint_holder_authorised_signatory_name_p13": "typed",
+  "joint_holder_authorised_signatory_designation_p13": "typed",
+  "joint_holder_pep_details_1": "typed",
+  "joint_holder_pep_details_2": "typed",
+  "joint_holder_pep_details_3": "typed",
+  "joint_holder_pep_details_4": "typed",
+  "joint_holder_name_p14": "copy.joint_holder_name",
+  "joint_holder_form_date_p14": "copy.joint_holder_form_date",
+  "joint_holder_us_tax_status": "tick",
+  "joint_holder_beneficial_owner": "tick",
+  "joint_holder_singapore_tax_status": "tick",
+  "joint_holder_sg_entity_category": "tick",
+  "joint_holder_sg_entity_q1_tax_resident": "tick",
+  "joint_holder_sg_entity_q2": "tick",
+  "joint_holder_sg_entity_q3": "tick",
+  "joint_holder_sg_entity_q4": "tick",
+  "joint_holder_sg_entity_q5": "tick",
+  "joint_holder_tax_offence_1a": "tick",
+  "joint_holder_tax_offence_1b": "tick",
+  "joint_holder_tax_offence_1c": "tick",
+  "joint_holder_tax_offence_1d": "tick",
+  "joint_holder_tax_offence_1e": "tick",
+  "joint_holder_tax_offence_1f": "tick",
+  "joint_holder_tax_offence_1g": "tick",
+  "joint_holder_tax_offence_2a": "tick",
+  "joint_holder_tax_offence_2b": "tick",
+  "joint_holder_tax_offence_2c": "tick",
+  "joint_holder_tax_offence_2d": "tick",
+  "joint_holder_tax_offence_2e": "tick",
+  "joint_holder_tax_offence_3": "tick",
+  "joint_holder_tax_offence_part2": "tick",
+  "joint_holder_pep_status": "tick"
+ },
+ "formRules": {
+  "formId": "global-investment-fund-2-joint-holder",
+  "group": "VCC",
+  "label": "Global Investment Fund 2 – Joint holder declaration",
+  "shortLabel": "GIF 2 joint holder",
+  "purpose": "Second applicant's declarations · joint GIF 2 subscription",
+  "blankFileName": "360 ONE Global Investment Fund 2 - Joint Holder Declaration.pdf",
+  "keyFields": [
+   "Joint holder name",
+   "Date of birth",
+   "Tax reference number"
+  ],
+  "sheetTabName": "GIF 2 joint holder",
+  "detectionPhrases": [
+   "360 ONE Global Investment Fund 2",
+   "Individual Tax Residency Self-Certification"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Joint holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "p3",
+    "label": "Page 3 · Joint holder identification (KYC)",
+    "fields": [
+     "joint_holder_title",
+     "joint_holder_surname",
+     "joint_holder_given_name",
+     "joint_holder_middle_name",
+     "joint_holder_residence_address_line1",
+     "joint_holder_residence_address_line2",
+     "joint_holder_residence_country",
+     "joint_holder_pincode",
+     "joint_holder_dob",
+     "joint_holder_us_tax_status",
+     "joint_holder_mailing_address_line1",
+     "joint_holder_mailing_address_line2",
+     "joint_holder_mailing_country",
+     "joint_holder_mailing_postcode",
+     "joint_holder_us_tin"
+    ]
+   },
+   {
+    "key": "p4",
+    "label": "Page 4 · Tax residency, signed (KYC)",
+    "fields": [
+     "joint_holder_tax_residence_country",
+     "joint_holder_tax_reference_type",
+     "joint_holder_tax_reference_number",
+     "joint_holder_tax_residence_country_2",
+     "joint_holder_tax_reference_type_2",
+     "joint_holder_tax_reference_number_2",
+     "joint_holder_tax_residence_country_3",
+     "joint_holder_tax_reference_type_3",
+     "joint_holder_tax_reference_number_3",
+     "joint_holder_tin_unavailable_reason",
+     "joint_holder_name",
+     "joint_holder_form_date",
+     "joint_holder_signing_capacity"
+    ]
+   },
+   {
+    "key": "p5",
+    "label": "Page 5 · Accredited investor opt-in",
+    "fields": [
+     "joint_holder_name_p5",
+     "joint_holder_form_date_p5"
+    ]
+   },
+   {
+    "key": "p6",
+    "label": "Page 6 · Singapore tax status",
+    "fields": [
+     "joint_holder_beneficial_owner",
+     "joint_holder_beneficial_owner_name",
+     "joint_holder_beneficial_owner_address",
+     "joint_holder_singapore_tax_status"
+    ]
+   },
+   {
+    "key": "p7",
+    "label": "Pages 7-8 · Singapore tax (non-individual owner)",
+    "fields": [
+     "joint_holder_sg_entity_category",
+     "joint_holder_sg_entity_q1_tax_resident",
+     "joint_holder_sg_entity_q2",
+     "joint_holder_sg_entity_q3",
+     "joint_holder_sg_entity_q4",
+     "joint_holder_sg_entity_q5",
+     "joint_holder_associate_name",
+     "joint_holder_associate_ownership_percent"
+    ]
+   },
+   {
+    "key": "p11",
+    "label": "Page 11 · Tax offences 1(a)-(e)",
+    "fields": [
+     "joint_holder_tax_offence_1a",
+     "joint_holder_tax_offence_1b",
+     "joint_holder_tax_offence_1c",
+     "joint_holder_tax_offence_1d",
+     "joint_holder_tax_offence_1e"
+    ]
+   },
+   {
+    "key": "p12",
+    "label": "Page 12 · Tax offences 1(f)-3, Part II",
+    "fields": [
+     "joint_holder_tax_offence_1f",
+     "joint_holder_tax_offence_1g",
+     "joint_holder_tax_offence_2a",
+     "joint_holder_tax_offence_2b",
+     "joint_holder_tax_offence_2c",
+     "joint_holder_tax_offence_2d",
+     "joint_holder_tax_offence_2e",
+     "joint_holder_tax_offence_3",
+     "joint_holder_tax_offence_part2",
+     "joint_holder_tax_offence_part2_matters"
+    ]
+   },
+   {
+    "key": "p13",
+    "label": "Page 13 · Tax offences signed",
+    "fields": [
+     "joint_holder_form_date_p13",
+     "joint_holder_name_p13",
+     "joint_holder_authorised_signatory_name_p13",
+     "joint_holder_authorised_signatory_designation_p13"
+    ]
+   },
+   {
+    "key": "p14",
+    "label": "Page 14 · Politically exposed person",
+    "fields": [
+     "joint_holder_pep_status",
+     "joint_holder_pep_details_1",
+     "joint_holder_pep_details_2",
+     "joint_holder_pep_details_3",
+     "joint_holder_pep_details_4",
+     "joint_holder_name_p14",
+     "joint_holder_form_date_p14"
+    ]
+   }
+  ],
+  "personRole": "joint_holder",
+  "requiredFields": [
+   "joint_holder_name",
+   "joint_holder_surname",
+   "joint_holder_given_name",
+   "joint_holder_residence_country",
+   "joint_holder_dob",
+   "joint_holder_tax_reference_number",
+   "joint_holder_us_tax_status",
+   "joint_holder_beneficial_owner",
+   "joint_holder_singapore_tax_status",
+   "joint_holder_tax_offence_1a",
+   "joint_holder_tax_offence_1b",
+   "joint_holder_tax_offence_1c",
+   "joint_holder_tax_offence_1d",
+   "joint_holder_tax_offence_1e",
+   "joint_holder_tax_offence_1f",
+   "joint_holder_tax_offence_1g",
+   "joint_holder_tax_offence_2a",
+   "joint_holder_tax_offence_2b",
+   "joint_holder_tax_offence_2c",
+   "joint_holder_tax_offence_2d",
+   "joint_holder_tax_offence_2e",
+   "joint_holder_tax_offence_3",
+   "joint_holder_pep_status"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address",
+   "dob",
+   "idNumber"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "joint_holder_surname",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     137.1,
+     139.75,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_title",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     154.8,
+     116.16,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_given_name",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     172.7,
+     154.82,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_middle_name",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     190.7,
+     160.62,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_residence_address_line1",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     241,
+     156.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_residence_address_line2",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     259,
+     156.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_residence_country",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     275.95,
+     164.34,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_pincode",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     293,
+     135.62,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_mailing_address_line1",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     348.3,
+     155.62,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_mailing_address_line2",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     366.3,
+     155.62,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_mailing_country",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     382.4,
+     170.92,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_mailing_postcode",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     400.63,
+     169.49,
+     9.5
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_dob",
+   "page": 3,
+   "lines": [
+    [
+     324.5,
+     430.6,
+     117.28,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_us_tin",
+   "page": 3,
+   "lines": [
+    [
+     130,
+     549.3,
+     127.28,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_residence_country",
+   "page": 4,
+   "lines": [
+    [
+     136.8,
+     231.28,
+     127.53,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_type",
+   "page": 4,
+   "lines": [
+    [
+     273.2,
+     231.7,
+     111.54,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_number",
+   "page": 4,
+   "lines": [
+    [
+     395.4,
+     231.7,
+     120.48,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_residence_country_2",
+   "page": 4,
+   "lines": [
+    [
+     136.8,
+     252.48,
+     127.53,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_type_2",
+   "page": 4,
+   "lines": [
+    [
+     273.2,
+     252.9,
+     118.21,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_number_2",
+   "page": 4,
+   "lines": [
+    [
+     395.4,
+     252.9,
+     120.48,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_residence_country_3",
+   "page": 4,
+   "lines": [
+    [
+     136.8,
+     273.88,
+     127.53,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_type_3",
+   "page": 4,
+   "lines": [
+    [
+     273.2,
+     274.3,
+     118.21,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_number_3",
+   "page": 4,
+   "lines": [
+    [
+     395.4,
+     274.3,
+     120.48,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tin_unavailable_reason",
+   "page": 4,
+   "lines": [
+    [
+     95.5,
+     308.25,
+     172.49,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name",
+   "page": 4,
+   "lines": [
+    [
+     189.5,
+     592.1,
+     125.61,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_form_date",
+   "page": 4,
+   "lines": [
+    [
+     189.5,
+     626.6,
+     145.57,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_signing_capacity",
+   "page": 4,
+   "lines": [
+    [
+     189.5,
+     699.6,
+     174.52,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name_p5",
+   "page": 5,
+   "lines": [
+    [
+     288,
+     180.4,
+     142.29,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_form_date_p5",
+   "page": 5,
+   "lines": [
+    [
+     103,
+     603.15,
+     146.02,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_beneficial_owner_name",
+   "page": 6,
+   "lines": [
+    [
+     212,
+     362.35,
+     180.44,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_beneficial_owner_address",
+   "page": 6,
+   "lines": [
+    [
+     212,
+     398,
+     197.72,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_associate_name",
+   "page": 8,
+   "lines": [
+    [
+     110,
+     392.5,
+     173.41,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_associate_ownership_percent",
+   "page": 8,
+   "lines": [
+    [
+     183,
+     455.3,
+     199.38,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_offence_part2_matters",
+   "page": 12,
+   "lines": [
+    [
+     78,
+     679.35,
+     180.18,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_form_date_p13",
+   "page": 13,
+   "lines": [
+    [
+     291.5,
+     430.9,
+     100.69,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name_p13",
+   "page": 13,
+   "lines": [
+    [
+     291.5,
+     450.5,
+     147.85,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_authorised_signatory_name_p13",
+   "page": 13,
+   "lines": [
+    [
+     291.5,
+     474,
+     193.87,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_authorised_signatory_designation_p13",
+   "page": 13,
+   "lines": [
+    [
+     291.5,
+     520,
+     193.87,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_pep_details_1",
+   "page": 14,
+   "lines": [
+    [
+     78,
+     505.55,
+     146.57,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_pep_details_2",
+   "page": 14,
+   "lines": [
+    [
+     78,
+     528.35,
+     146.57,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_pep_details_3",
+   "page": 14,
+   "lines": [
+    [
+     78,
+     551.15,
+     146.57,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_pep_details_4",
+   "page": 14,
+   "lines": [
+    [
+     78,
+     573.95,
+     146.57,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name_p14",
+   "page": 14,
+   "lines": [
+    [
+     107,
+     622.7,
+     147.85,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_form_date_p14",
+   "page": 14,
+   "lines": [
+    [
+     103,
+     680.58,
+     142.64,
+     8.5
+    ]
+   ]
+  }
+ ]
+}

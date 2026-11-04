@@ -5,7 +5,8 @@
 // Sanity checks per form: blank PDF exists; every field, tick box and signature box is on a real page and inside
 // it; every field has a source and every source a field; required fields, review sections and copy.X sources point
 // at real fields; every blank on the PDF (underscore line, ☐ box, dotted line) has a field near it, unless the form
-// lists it in "ignoredBlanks" with the reason (e.g. a wire-transfer instruction). Exit code 1 when anything fails.
+// lists it in "ignoredBlanks" with the reason (e.g. a wire-transfer instruction); the blank, dropped on "Pick a form", is
+// recognised as this form (not a near-identical one). Exit code 1 when anything fails.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,6 +16,7 @@ import { getFormDefinition, listFormIds } from "../forms/form-registry.js";
 import * as formFiles from "../services/forms/form-files-service.js";
 import { fillTextFields } from "../services/pdf/fill-pdf-service.js";
 import { extractTextItems } from "../services/pdf/pdf-text-service.js";
+import { detectFormId } from "../services/forms/detect-form-service.js";
 
 // Golden files: committed, so any change to what lands on a form shows up in review.
 const SNAPSHOT_DIRECTORY = path.join(path.dirname(fileURLToPath(import.meta.url)), "form-snapshots");
@@ -88,6 +90,9 @@ async function checkForm(formId) {
       || ignoredBlanks.some((ignored) => ignored.page === textItem.page && Math.abs(ignored.y - textItem.y) <= 6);
     if (!isCovered) problems.push(`blank not covered: page ${textItem.page}, y ${Math.round(textItem.y)}: "${textItem.text.trim().slice(0, 50)}"`);
   }
+
+  const detectedFormId = await detectFormId(readFileSync(formConfiguration.blankFormPath));
+  if (detectedFormId !== formId) problems.push(`its blank PDF is recognised as ${detectedFormId || "no form"} - recognition must pick this form`);
 
   // Where every value lands when each field gets a sample value - what the engine actually draws.
   const { results } = await fillTextFields(formConfiguration, positions, async (field) => ({ value: `SAMPLE ${field.key}`.slice(0, 40) }));

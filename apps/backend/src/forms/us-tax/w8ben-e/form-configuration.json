@@ -1,0 +1,1249 @@
+{
+  "_about": "IRS Form W-8BEN-E (Rev. October 2021), for non-US entities. The blank is the IRS form with its fill-in boxes removed; positions come from those boxes. Only Part I and the certification are always needed; every other Part is ticked only if it applies to the entity.",
+  "id": "w8ben-e",
+  "title": "Form W-8BEN-E",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 8,
+      "x": 100.8,
+      "y": 660.0,
+      "w": 223.2,
+      "h": 24.0,
+      "signer": "entity",
+      "label": "Signature of individual authorized to sign for the entity"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "certify_capacity",
+      "page": 8,
+      "w": 8,
+      "h": 8,
+      "x": 38.0,
+      "y": 658.0,
+      "isAlwaysTicked": true
+    },
+    {
+      "key": "chapter_3_status",
+      "page": 1,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "Corporation",
+        "Partnership",
+        "Simple trust",
+        "Tax-exempt organization",
+        "Complex trust",
+        "Foreign Government - Controlled Entity",
+        "Central Bank of Issue",
+        "Private foundation",
+        "Estate",
+        "Foreign Government - Integral Part",
+        "Grantor trust",
+        "Disregarded entity",
+        "International organization"
+      ],
+      "boxesByOption": {
+        "Corporation": [
+          {
+            "x": 290.0,
+            "y": 274.0
+          }
+        ],
+        "Partnership": [
+          {
+            "x": 419.6,
+            "y": 274.0
+          }
+        ],
+        "Simple trust": [
+          {
+            "x": 66.8,
+            "y": 286.0
+          }
+        ],
+        "Tax-exempt organization": [
+          {
+            "x": 174.8,
+            "y": 286.0
+          }
+        ],
+        "Complex trust": [
+          {
+            "x": 290.0,
+            "y": 286.0
+          }
+        ],
+        "Foreign Government - Controlled Entity": [
+          {
+            "x": 419.6,
+            "y": 286.0
+          }
+        ],
+        "Central Bank of Issue": [
+          {
+            "x": 66.8,
+            "y": 298.0
+          }
+        ],
+        "Private foundation": [
+          {
+            "x": 174.8,
+            "y": 298.0
+          }
+        ],
+        "Estate": [
+          {
+            "x": 290.0,
+            "y": 298.0
+          }
+        ],
+        "Foreign Government - Integral Part": [
+          {
+            "x": 419.6,
+            "y": 298.0
+          }
+        ],
+        "Grantor trust": [
+          {
+            "x": 66.8,
+            "y": 310.0
+          }
+        ],
+        "Disregarded entity": [
+          {
+            "x": 174.8,
+            "y": 310.0
+          }
+        ],
+        "International organization": [
+          {
+            "x": 290.0,
+            "y": 310.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "hybrid_making_treaty_claim",
+      "page": 1,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 511.2,
+            "y": 322.0
+          }
+        ],
+        "No": [
+          {
+            "x": 547.2,
+            "y": 322.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "chapter_4_status",
+      "page": 1,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "Nonparticipating FFI",
+        "Participating FFI",
+        "Reporting Model 1 FFI",
+        "Reporting Model 2 FFI",
+        "Registered deemed-compliant FFI",
+        "Sponsored FFI",
+        "Certified deemed-compliant nonregistering local bank",
+        "Certified deemed-compliant FFI with only low-value accounts",
+        "Certified deemed-compliant sponsored, closely held investment vehicle",
+        "Certified deemed-compliant limited life debt investment entity",
+        "Certain investment entities that do not maintain financial accounts",
+        "Owner-documented FFI",
+        "Restricted distributor",
+        "Nonreporting IGA FFI",
+        "Foreign government, government of a U.S. possession, or foreign central bank of issue",
+        "International organization",
+        "Exempt retirement plans",
+        "Entity wholly owned by exempt beneficial owners",
+        "Territory financial institution",
+        "Excepted nonfinancial group entity",
+        "Excepted nonfinancial start-up company",
+        "Excepted nonfinancial entity in liquidation or bankruptcy",
+        "501(c) organization",
+        "Nonprofit organization",
+        "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation",
+        "Excepted territory NFFE",
+        "Active NFFE",
+        "Passive NFFE",
+        "Excepted inter-affiliate FFI",
+        "Direct reporting NFFE",
+        "Sponsored direct reporting NFFE",
+        "Account that is not a financial account"
+      ],
+      "boxesByOption": {
+        "Nonparticipating FFI": [
+          {
+            "x": 66.8,
+            "y": 346.0
+          }
+        ],
+        "Participating FFI": [
+          {
+            "x": 66.8,
+            "y": 382.0
+          }
+        ],
+        "Reporting Model 1 FFI": [
+          {
+            "x": 66.8,
+            "y": 394.0
+          }
+        ],
+        "Reporting Model 2 FFI": [
+          {
+            "x": 66.8,
+            "y": 406.0
+          }
+        ],
+        "Registered deemed-compliant FFI": [
+          {
+            "x": 66.8,
+            "y": 418.0
+          }
+        ],
+        "Sponsored FFI": [
+          {
+            "x": 66.8,
+            "y": 454.0
+          }
+        ],
+        "Certified deemed-compliant nonregistering local bank": [
+          {
+            "x": 66.8,
+            "y": 466.0
+          }
+        ],
+        "Certified deemed-compliant FFI with only low-value accounts": [
+          {
+            "x": 66.8,
+            "y": 490.0
+          }
+        ],
+        "Certified deemed-compliant sponsored, closely held investment vehicle": [
+          {
+            "x": 66.8,
+            "y": 514.0
+          }
+        ],
+        "Certified deemed-compliant limited life debt investment entity": [
+          {
+            "x": 66.8,
+            "y": 538.0
+          }
+        ],
+        "Certain investment entities that do not maintain financial accounts": [
+          {
+            "x": 66.8,
+            "y": 562.0
+          }
+        ],
+        "Owner-documented FFI": [
+          {
+            "x": 66.8,
+            "y": 586.0
+          }
+        ],
+        "Restricted distributor": [
+          {
+            "x": 66.8,
+            "y": 598.0
+          }
+        ],
+        "Nonreporting IGA FFI": [
+          {
+            "x": 326.0,
+            "y": 346.0
+          }
+        ],
+        "Foreign government, government of a U.S. possession, or foreign central bank of issue": [
+          {
+            "x": 326.0,
+            "y": 358.0
+          }
+        ],
+        "International organization": [
+          {
+            "x": 326.0,
+            "y": 382.0
+          }
+        ],
+        "Exempt retirement plans": [
+          {
+            "x": 326.0,
+            "y": 394.0
+          }
+        ],
+        "Entity wholly owned by exempt beneficial owners": [
+          {
+            "x": 326.0,
+            "y": 406.0
+          }
+        ],
+        "Territory financial institution": [
+          {
+            "x": 326.0,
+            "y": 418.0
+          }
+        ],
+        "Excepted nonfinancial group entity": [
+          {
+            "x": 326.0,
+            "y": 430.0
+          }
+        ],
+        "Excepted nonfinancial start-up company": [
+          {
+            "x": 326.0,
+            "y": 442.0
+          }
+        ],
+        "Excepted nonfinancial entity in liquidation or bankruptcy": [
+          {
+            "x": 326.0,
+            "y": 454.0
+          }
+        ],
+        "501(c) organization": [
+          {
+            "x": 326.0,
+            "y": 478.0
+          }
+        ],
+        "Nonprofit organization": [
+          {
+            "x": 326.0,
+            "y": 490.0
+          }
+        ],
+        "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation": [
+          {
+            "x": 326.0,
+            "y": 502.0
+          }
+        ],
+        "Excepted territory NFFE": [
+          {
+            "x": 326.0,
+            "y": 526.0
+          }
+        ],
+        "Active NFFE": [
+          {
+            "x": 326.0,
+            "y": 538.0
+          }
+        ],
+        "Passive NFFE": [
+          {
+            "x": 326.0,
+            "y": 550.0
+          }
+        ],
+        "Excepted inter-affiliate FFI": [
+          {
+            "x": 326.0,
+            "y": 562.0
+          }
+        ],
+        "Direct reporting NFFE": [
+          {
+            "x": 326.0,
+            "y": 574.0
+          }
+        ],
+        "Sponsored direct reporting NFFE": [
+          {
+            "x": 326.0,
+            "y": 586.0
+          }
+        ],
+        "Account that is not a financial account": [
+          {
+            "x": 326.0,
+            "y": 598.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "foreign_tin_not_legally_required",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 560.2,
+            "y": 100.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "disregarded_entity_chapter_4_status",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Branch treated as nonparticipating FFI",
+        "Participating FFI",
+        "Reporting Model 1 FFI",
+        "Reporting Model 2 FFI",
+        "U.S. Branch"
+      ],
+      "boxesByOption": {
+        "Branch treated as nonparticipating FFI": [
+          {
+            "x": 66.8,
+            "y": 202.0
+          }
+        ],
+        "Participating FFI": [
+          {
+            "x": 66.8,
+            "y": 214.0
+          }
+        ],
+        "Reporting Model 1 FFI": [
+          {
+            "x": 246.8,
+            "y": 202.0
+          }
+        ],
+        "Reporting Model 2 FFI": [
+          {
+            "x": 246.8,
+            "y": 214.0
+          }
+        ],
+        "U.S. Branch": [
+          {
+            "x": 434.0,
+            "y": 202.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "treaty_resident_certified",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 358.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "treaty_limitation_on_benefits_certified",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 382.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "limitation_on_benefits_type",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Government",
+        "Tax-exempt pension trust or pension fund",
+        "Other tax-exempt organization",
+        "Publicly traded corporation",
+        "Subsidiary of a publicly traded corporation",
+        "Company that meets the ownership and base erosion test",
+        "Company that meets the derivative benefits test",
+        "Company with an item of income that meets active trade or business test",
+        "Favorable discretionary determination by the U.S. competent authority received",
+        "No LOB article in treaty",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Government": [
+          {
+            "x": 66.8,
+            "y": 418.0
+          }
+        ],
+        "Tax-exempt pension trust or pension fund": [
+          {
+            "x": 66.8,
+            "y": 430.0
+          }
+        ],
+        "Other tax-exempt organization": [
+          {
+            "x": 66.8,
+            "y": 442.0
+          }
+        ],
+        "Publicly traded corporation": [
+          {
+            "x": 66.8,
+            "y": 454.0
+          }
+        ],
+        "Subsidiary of a publicly traded corporation": [
+          {
+            "x": 66.8,
+            "y": 466.0
+          }
+        ],
+        "Company that meets the ownership and base erosion test": [
+          {
+            "x": 246.8,
+            "y": 418.0
+          }
+        ],
+        "Company that meets the derivative benefits test": [
+          {
+            "x": 246.8,
+            "y": 430.0
+          }
+        ],
+        "Company with an item of income that meets active trade or business test": [
+          {
+            "x": 246.8,
+            "y": 442.0
+          }
+        ],
+        "Favorable discretionary determination by the U.S. competent authority received": [
+          {
+            "x": 246.8,
+            "y": 454.0
+          }
+        ],
+        "No LOB article in treaty": [
+          {
+            "x": 246.8,
+            "y": 466.0
+          }
+        ],
+        "Other": [
+          {
+            "x": 246.8,
+            "y": 478.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "treaty_qualified_resident_status_certified",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 490.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "sponsored_ffi_certification",
+      "page": 2,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Investment entity (box 1)",
+        "Controlled foreign corporation (box 2)"
+      ],
+      "boxesByOption": {
+        "Investment entity (box 1)": [
+          {
+            "x": 66.8,
+            "y": 634.0
+          }
+        ],
+        "Controlled foreign corporation (box 2)": [
+          {
+            "x": 66.8,
+            "y": 682.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "nonregistering_local_bank_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 70.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "low_value_accounts_ffi_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 238.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "closely_held_vehicle_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 358.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "limited_life_debt_entity_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 466.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "no_financial_accounts_entity_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 538.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "owner_documented_ffi_certified",
+      "page": 3,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 610.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "owner_documented_ffi_documents",
+      "page": 4,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Owner reporting statement (24b)",
+        "Auditor's letter (24c)"
+      ],
+      "boxesByOption": {
+        "Owner reporting statement (24b)": [
+          {
+            "x": 66.8,
+            "y": 82.0
+          }
+        ],
+        "Auditor's letter (24c)": [
+          {
+            "x": 66.8,
+            "y": 226.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "owner_documented_trust_certified",
+      "page": 4,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 298.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "restricted_distributor_certified",
+      "page": 4,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 334.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "restricted_distributor_agreement",
+      "page": 4,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Has been and is bound by agreement (25b)",
+        "Is currently bound by agreement (25c)"
+      ],
+      "boxesByOption": {
+        "Has been and is bound by agreement (25b)": [
+          {
+            "x": 66.8,
+            "y": 538.0
+          }
+        ],
+        "Is currently bound by agreement (25c)": [
+          {
+            "x": 66.8,
+            "y": 574.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "nonreporting_iga_ffi_certified",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 70.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "iga_model",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Model 1 IGA",
+        "Model 2 IGA"
+      ],
+      "boxesByOption": {
+        "Model 1 IGA": [
+          {
+            "x": 419.6,
+            "y": 94.0
+          }
+        ],
+        "Model 2 IGA": [
+          {
+            "x": 498.8,
+            "y": 94.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "trustee_location",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "U.S.",
+        "Foreign"
+      ],
+      "boxesByOption": {
+        "U.S.": [
+          {
+            "x": 117.2,
+            "y": 142.0
+          }
+        ],
+        "Foreign": [
+          {
+            "x": 153.2,
+            "y": 142.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "foreign_government_certified",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 178.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "international_organization_certification",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Section 7701(a)(18) organization (28a)",
+        "Comprised of foreign governments (28b)"
+      ],
+      "boxesByOption": {
+        "Section 7701(a)(18) organization (28a)": [
+          {
+            "x": 66.8,
+            "y": 238.0
+          }
+        ],
+        "Comprised of foreign governments (28b)": [
+          {
+            "x": 66.8,
+            "y": 250.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "exempt_retirement_plan_certification",
+      "page": 5,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Treaty-qualified retirement fund (29a)",
+        "Broad participation retirement fund (29b)",
+        "Narrow participation retirement fund (29c)",
+        "Fund formed under a section 401(a)-type plan (29d)",
+        "Investment entity for retirement funds (29e)",
+        "Fund set up by an exempt beneficial owner (29f)"
+      ],
+      "boxesByOption": {
+        "Treaty-qualified retirement fund (29a)": [
+          {
+            "x": 66.8,
+            "y": 370.0
+          }
+        ],
+        "Broad participation retirement fund (29b)": [
+          {
+            "x": 66.8,
+            "y": 430.0
+          }
+        ],
+        "Narrow participation retirement fund (29c)": [
+          {
+            "x": 66.8,
+            "y": 622.0
+          }
+        ],
+        "Fund formed under a section 401(a)-type plan (29d)": [
+          {
+            "x": 66.8,
+            "y": 70.0,
+            "page": 6
+          }
+        ],
+        "Investment entity for retirement funds (29e)": [
+          {
+            "x": 66.8,
+            "y": 94.0,
+            "page": 6
+          }
+        ],
+        "Fund set up by an exempt beneficial owner (29f)": [
+          {
+            "x": 66.8,
+            "y": 130.0,
+            "page": 6
+          }
+        ]
+      }
+    },
+    {
+      "key": "wholly_owned_by_exempt_owners_certified",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 250.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "territory_financial_institution_certified",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 394.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "nonfinancial_group_entity_certified",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 430.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "nonfinancial_startup_certified",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 538.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "liquidation_or_bankruptcy_certified",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 646.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "organization_501c_certified",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 70.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "nonprofit_organization_certified",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 154.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "publicly_traded_nffe_certification",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Publicly traded corporation (37a)",
+        "Affiliate of a publicly traded corporation (37b)"
+      ],
+      "boxesByOption": {
+        "Publicly traded corporation (37a)": [
+          {
+            "x": 66.8,
+            "y": 322.0
+          }
+        ],
+        "Affiliate of a publicly traded corporation (37b)": [
+          {
+            "x": 66.8,
+            "y": 370.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "excepted_territory_nffe_certified",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 466.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "active_nffe_certified",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 586.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "passive_nffe_certified",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 670.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "passive_nffe_us_owners",
+      "page": 7,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "No substantial U.S. owners (40b)",
+        "Substantial U.S. owners listed in Part XXIX (40c)"
+      ],
+      "boxesByOption": {
+        "No substantial U.S. owners (40b)": [
+          {
+            "x": 66.8,
+            "y": 718.0
+          }
+        ],
+        "Substantial U.S. owners listed in Part XXIX (40c)": [
+          {
+            "x": 66.8,
+            "y": 730.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "inter_affiliate_ffi_certified",
+      "page": 8,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 70.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "sponsored_direct_reporting_nffe_certified",
+      "page": 8,
+      "w": 8,
+      "h": 8,
+      "isOptional": true,
+      "options": [
+        "Yes"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 66.8,
+            "y": 190.0
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "Form W-8BEN-E.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

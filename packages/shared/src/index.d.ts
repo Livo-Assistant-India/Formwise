@@ -16,6 +16,10 @@ export interface FormRules {
   /** How the review screen splits the form: base field keys per section, in printed order. */
   reviewSections: { key: string; label: string; fields: string[] }[];
   nomineeFieldKeys: string[];
+  /** False for a form filled only from the Excel: it needs no ID documents. */
+  usesDocuments?: boolean;
+  /** Identity details the form reads from documents: "name", "dob", "address", "idNumber". */
+  documentDetails?: string[];
   identityType: {
     scope: "shared" | "perNominee";
     tickboxField: string | null;
@@ -44,6 +48,9 @@ export function validateIdNumberFor(idType: string | null | undefined, value: un
 export function validatorFor(baseKey: string): FieldValidator | null;
 export function validatorForField(fieldKey: string): FieldValidator | null;
 export const RULE_TEXT: Record<string, string>;
+export const PERSON_ROLE_KEY_PREFIXES: Record<string, string>;
+export function toPlainFieldKey(fieldKey: string): string;
+export function ruleTextFor(baseKey: string): string | undefined;
 
 export function getChosenIdType(formRules: FormRules, values: Record<string, string>, nomineeNumber: number): string | undefined;
 export function checkForm(formRules: FormRules, values: Record<string, string>): FormCheckResult;

@@ -191,6 +191,11 @@
     "crs_non_reporting_fi": "tick",
     "crs_non_reporting_fi_type": "tick",
     "crs_fi_non_participating_jurisdiction": "tick",
-    "crs_npj_fi_type": "tick"
+    "crs_npj_fi_type": "tick",
+    "crs_passive_nfe_controlling_person_1": "typed",
+    "crs_passive_nfe_controlling_person_2": "typed",
+    "crs_passive_nfe_controlling_person_3": "typed",
+    "beneficial_owner_address_line_2": "typed",
+    "beneficial_owner_address_line_3": "typed"
   }
 }

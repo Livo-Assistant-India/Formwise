@@ -7,6 +7,8 @@ export interface BatchClient {
   formShortLabel: string;
   /** Set on a client's 2nd+ form: it uses the documents uploaded for this case. */
   documentsFromCaseId: string | null;
+  /** Whose documents this form reads: "investor" (the client's folder) or "joint_holder" (its "Joint holder" subfolder). */
+  personRole?: string;
   rowNumber: number;
   clientReference: string | null;
   displayName: string | null;

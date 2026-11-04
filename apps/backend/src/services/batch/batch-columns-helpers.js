@@ -1,6 +1,6 @@
 // The columns of a form's batch Excel: one per field a person (or their client master) supplies, in form order.
 // Shared by the template download and, later, by the Excel import - so a file we hand out is always readable.
-import { formatFieldLabel, RULE_TEXT } from "@prefill/shared";
+import { formatFieldLabel, ruleTextFor } from "@prefill/shared";
 import { getFormDefinition } from "../../forms/form-registry.js";
 import { fetchFieldPositions, fetchFieldSources, fetchFormRules } from "../forms/form-files-service.js";
 
@@ -53,7 +53,7 @@ export async function buildBatchColumns(formId) {
       sourceDescription: SOURCE_DESCRIPTIONS[source],
       isRequired: requiredBaseKeys.has(baseKey) && (nomineeNumber ?? 1) === 1,
       isRequiredWhenNomineeUsed: requiredBaseKeys.has(baseKey) && (nomineeNumber ?? 1) > 1,
-      rule: optionsByBaseKey[baseKey] ? `One of: ${optionsByBaseKey[baseKey].join(" / ")}${usualOptionByBaseKey[baseKey] ? ` (empty = ${usualOptionByBaseKey[baseKey]})` : ""}` : RULE_TEXT[baseKey] || "Free text",
+      rule: optionsByBaseKey[baseKey] ? `One of: ${optionsByBaseKey[baseKey].join(" / ")}${usualOptionByBaseKey[baseKey] ? ` (empty = ${usualOptionByBaseKey[baseKey]})` : ""}` : ruleTextFor(baseKey) || "Free text",
       options: optionsByBaseKey[baseKey] || null,
       usualOption: usualOptionByBaseKey[baseKey] || null,
       pages: listPages(baseKey), fieldSource: fieldSources[baseKey],

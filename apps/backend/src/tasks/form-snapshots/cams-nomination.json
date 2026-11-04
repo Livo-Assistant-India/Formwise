@@ -808,6 +808,13 @@
    "guardian_name",
    "relationship_option",
    "id_type"
+  ],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "dob",
+   "idNumber",
+   "address"
   ]
  },
  "drawnSpots": [

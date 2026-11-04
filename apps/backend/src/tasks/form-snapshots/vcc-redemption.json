@@ -380,7 +380,12 @@
    "subscriber_name",
    "mailing_address"
   ],
-  "nomineeFieldKeys": []
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address"
+  ]
  },
  "drawnSpots": [
   {

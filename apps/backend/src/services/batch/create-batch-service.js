@@ -12,6 +12,7 @@ import { readFormSheet } from "./read-form-sheet-service.js";
 import { buildRowValues } from "./sheet-row-values-service.js";
 import { deriveValuesForForm } from "./cross-form-values-helpers.js";
 
+export const DEFAULT_PERSON_ROLE = "investor";
 export const MAXIMUM_BATCH_ROW_COUNT = 50;
 
 const normalizeReference = (clientReference) => String(clientReference || "").trim().toLowerCase();
@@ -55,8 +56,10 @@ export async function createBatchFromSheet(formIds, fileBytes, fileName) {
   const idTypeNotes = [];
   for (const sheetRow of sheetRows) {
     const rowByForm = formSheets.map((formSheet) => ({ formSheet, ...buildRowValues(formSheet.rows, sheetRow.rowNumber, formSheet.columnMatch, formSheet.batchColumns) }));
-    let primaryCaseId = null;
-    for (const [formIndex, formRow] of rowByForm.entries()) {
+    // Documents are shared per person: a row's forms for the investor share the first investor form's documents,
+    // its joint-holder forms share the first joint-holder form's (that client's "Joint holder" subfolder).
+    const primaryCaseIdByPersonRole = {};
+    for (const formRow of rowByForm) {
       const typedValues = { ...formRow.typedValues };
       const panValues = { ...formRow.panValues };
       for (const otherRow of rowByForm.filter((candidate) => candidate !== formRow)) {
@@ -74,16 +77,18 @@ export async function createBatchFromSheet(formIds, fileBytes, fileName) {
       }
       const caseEntry = await createCase(formRow.formSheet.formId, { typedValues });
       storeTypedPanValues(caseEntry.id, panValues);
-      if (formIndex === 0) primaryCaseId = caseEntry.id;
+      const personRole = formRow.formSheet.formRules.personRole || DEFAULT_PERSON_ROLE;
+      const documentsFromCaseId = primaryCaseIdByPersonRole[personRole] || null;
+      primaryCaseIdByPersonRole[personRole] ||= caseEntry.id;
       const clientReference = rowByForm[0].clientReference || null;
       batchRows.push({
         rowNumber: sheetRow.rowNumber, formId: formRow.formSheet.formId, clientReference, displayName: sheetRow.displayName,
-        caseId: caseEntry.id, documentsFromCaseId: formIndex === 0 ? null : primaryCaseId,
+        caseId: caseEntry.id, documentsFromCaseId, personRole,
         isDuplicateReference: duplicateReferences.includes(normalizeReference(clientReference)),
         rowProblemCount: (formRow.report.invalidValues?.length || 0) + (formRow.report.unmatchedOptions?.length || 0),
       });
       await updateCase(caseEntry.id, {
-        documentsFromCaseId: formIndex === 0 ? null : primaryCaseId,
+        documentsFromCaseId,
         sheetImport: { fileName, sheetName, rowNumber: sheetRow.rowNumber, clientReference, importedAt: new Date().toISOString() },
       });
     }

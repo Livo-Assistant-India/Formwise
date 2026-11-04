@@ -2,7 +2,8 @@
 // usage: node try_form.mjs <formId> <values.json> <out.pdf>
 import { readFileSync, writeFileSync } from "node:fs";
 const [formId, valuesPath, outPath] = process.argv.slice(2);
-const API = "http://127.0.0.1:4500/api";
+// FORM_API lets several test backends run side by side (each on its own APPLICATION_PORT).
+const API = process.env.FORM_API || "http://127.0.0.1:4500/api";
 const values = JSON.parse(readFileSync(valuesPath, "utf-8"));
 const call = async (path, options = {}) => {
   const response = await fetch(API + path, options);

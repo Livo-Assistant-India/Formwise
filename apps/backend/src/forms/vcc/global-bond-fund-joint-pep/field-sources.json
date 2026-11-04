@@ -1,0 +1,12 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the joint holder's KYC documents (see ../document-data-dictionary.json); \"|surname\" etc. = the part of it this box wants; \"typed\" = from the batch Excel or the review screen; \"default.X\" = usually X, the Excel can change it; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed).",
+  "fieldSources": {
+    "joint_holder_pep_status": "tick",
+    "joint_holder_name": "document.name|upper",
+    "joint_holder_form_date": "today",
+    "joint_holder_pep_details_1": "typed",
+    "joint_holder_pep_details_2": "typed",
+    "joint_holder_pep_details_3": "typed",
+    "joint_holder_pep_details_4": "typed"
+  }
+}

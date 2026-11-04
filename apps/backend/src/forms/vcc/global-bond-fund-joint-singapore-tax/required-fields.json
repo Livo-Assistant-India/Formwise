@@ -1,0 +1,21 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "joint_holder_name",
+    "joint_holder_beneficial_owner",
+    "joint_holder_singapore_tax_status",
+    "joint_holder_tax_offence_1a",
+    "joint_holder_tax_offence_1b",
+    "joint_holder_tax_offence_1c",
+    "joint_holder_tax_offence_1d",
+    "joint_holder_tax_offence_1e",
+    "joint_holder_tax_offence_1f",
+    "joint_holder_tax_offence_1g",
+    "joint_holder_tax_offence_2a",
+    "joint_holder_tax_offence_2b",
+    "joint_holder_tax_offence_2c",
+    "joint_holder_tax_offence_2d",
+    "joint_holder_tax_offence_2e",
+    "joint_holder_tax_offence_3"
+  ]
+}

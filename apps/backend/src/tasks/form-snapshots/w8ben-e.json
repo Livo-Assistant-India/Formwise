@@ -1,0 +1,3152 @@
+{
+ "formId": "w8ben-e",
+ "pageCount": 8,
+ "configuration": {
+  "id": "w8ben-e",
+  "title": "Form W-8BEN-E",
+  "signatureBoxes": [
+   {
+    "page": 8,
+    "x": 100.8,
+    "y": 660,
+    "w": 223.2,
+    "h": 24,
+    "signer": "entity",
+    "label": "Signature of individual authorized to sign for the entity"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "certify_capacity",
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "x": 38,
+    "y": 658,
+    "isAlwaysTicked": true
+   },
+   {
+    "key": "chapter_3_status",
+    "page": 1,
+    "w": 8,
+    "h": 8,
+    "options": [
+     "Corporation",
+     "Partnership",
+     "Simple trust",
+     "Tax-exempt organization",
+     "Complex trust",
+     "Foreign Government - Controlled Entity",
+     "Central Bank of Issue",
+     "Private foundation",
+     "Estate",
+     "Foreign Government - Integral Part",
+     "Grantor trust",
+     "Disregarded entity",
+     "International organization"
+    ],
+    "boxesByOption": {
+     "Corporation": [
+      {
+       "x": 290,
+       "y": 274
+      }
+     ],
+     "Partnership": [
+      {
+       "x": 419.6,
+       "y": 274
+      }
+     ],
+     "Simple trust": [
+      {
+       "x": 66.8,
+       "y": 286
+      }
+     ],
+     "Tax-exempt organization": [
+      {
+       "x": 174.8,
+       "y": 286
+      }
+     ],
+     "Complex trust": [
+      {
+       "x": 290,
+       "y": 286
+      }
+     ],
+     "Foreign Government - Controlled Entity": [
+      {
+       "x": 419.6,
+       "y": 286
+      }
+     ],
+     "Central Bank of Issue": [
+      {
+       "x": 66.8,
+       "y": 298
+      }
+     ],
+     "Private foundation": [
+      {
+       "x": 174.8,
+       "y": 298
+      }
+     ],
+     "Estate": [
+      {
+       "x": 290,
+       "y": 298
+      }
+     ],
+     "Foreign Government - Integral Part": [
+      {
+       "x": 419.6,
+       "y": 298
+      }
+     ],
+     "Grantor trust": [
+      {
+       "x": 66.8,
+       "y": 310
+      }
+     ],
+     "Disregarded entity": [
+      {
+       "x": 174.8,
+       "y": 310
+      }
+     ],
+     "International organization": [
+      {
+       "x": 290,
+       "y": 310
+      }
+     ]
+    }
+   },
+   {
+    "key": "hybrid_making_treaty_claim",
+    "page": 1,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 511.2,
+       "y": 322
+      }
+     ],
+     "No": [
+      {
+       "x": 547.2,
+       "y": 322
+      }
+     ]
+    }
+   },
+   {
+    "key": "chapter_4_status",
+    "page": 1,
+    "w": 8,
+    "h": 8,
+    "options": [
+     "Nonparticipating FFI",
+     "Participating FFI",
+     "Reporting Model 1 FFI",
+     "Reporting Model 2 FFI",
+     "Registered deemed-compliant FFI",
+     "Sponsored FFI",
+     "Certified deemed-compliant nonregistering local bank",
+     "Certified deemed-compliant FFI with only low-value accounts",
+     "Certified deemed-compliant sponsored, closely held investment vehicle",
+     "Certified deemed-compliant limited life debt investment entity",
+     "Certain investment entities that do not maintain financial accounts",
+     "Owner-documented FFI",
+     "Restricted distributor",
+     "Nonreporting IGA FFI",
+     "Foreign government, government of a U.S. possession, or foreign central bank of issue",
+     "International organization",
+     "Exempt retirement plans",
+     "Entity wholly owned by exempt beneficial owners",
+     "Territory financial institution",
+     "Excepted nonfinancial group entity",
+     "Excepted nonfinancial start-up company",
+     "Excepted nonfinancial entity in liquidation or bankruptcy",
+     "501(c) organization",
+     "Nonprofit organization",
+     "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation",
+     "Excepted territory NFFE",
+     "Active NFFE",
+     "Passive NFFE",
+     "Excepted inter-affiliate FFI",
+     "Direct reporting NFFE",
+     "Sponsored direct reporting NFFE",
+     "Account that is not a financial account"
+    ],
+    "boxesByOption": {
+     "Nonparticipating FFI": [
+      {
+       "x": 66.8,
+       "y": 346
+      }
+     ],
+     "Participating FFI": [
+      {
+       "x": 66.8,
+       "y": 382
+      }
+     ],
+     "Reporting Model 1 FFI": [
+      {
+       "x": 66.8,
+       "y": 394
+      }
+     ],
+     "Reporting Model 2 FFI": [
+      {
+       "x": 66.8,
+       "y": 406
+      }
+     ],
+     "Registered deemed-compliant FFI": [
+      {
+       "x": 66.8,
+       "y": 418
+      }
+     ],
+     "Sponsored FFI": [
+      {
+       "x": 66.8,
+       "y": 454
+      }
+     ],
+     "Certified deemed-compliant nonregistering local bank": [
+      {
+       "x": 66.8,
+       "y": 466
+      }
+     ],
+     "Certified deemed-compliant FFI with only low-value accounts": [
+      {
+       "x": 66.8,
+       "y": 490
+      }
+     ],
+     "Certified deemed-compliant sponsored, closely held investment vehicle": [
+      {
+       "x": 66.8,
+       "y": 514
+      }
+     ],
+     "Certified deemed-compliant limited life debt investment entity": [
+      {
+       "x": 66.8,
+       "y": 538
+      }
+     ],
+     "Certain investment entities that do not maintain financial accounts": [
+      {
+       "x": 66.8,
+       "y": 562
+      }
+     ],
+     "Owner-documented FFI": [
+      {
+       "x": 66.8,
+       "y": 586
+      }
+     ],
+     "Restricted distributor": [
+      {
+       "x": 66.8,
+       "y": 598
+      }
+     ],
+     "Nonreporting IGA FFI": [
+      {
+       "x": 326,
+       "y": 346
+      }
+     ],
+     "Foreign government, government of a U.S. possession, or foreign central bank of issue": [
+      {
+       "x": 326,
+       "y": 358
+      }
+     ],
+     "International organization": [
+      {
+       "x": 326,
+       "y": 382
+      }
+     ],
+     "Exempt retirement plans": [
+      {
+       "x": 326,
+       "y": 394
+      }
+     ],
+     "Entity wholly owned by exempt beneficial owners": [
+      {
+       "x": 326,
+       "y": 406
+      }
+     ],
+     "Territory financial institution": [
+      {
+       "x": 326,
+       "y": 418
+      }
+     ],
+     "Excepted nonfinancial group entity": [
+      {
+       "x": 326,
+       "y": 430
+      }
+     ],
+     "Excepted nonfinancial start-up company": [
+      {
+       "x": 326,
+       "y": 442
+      }
+     ],
+     "Excepted nonfinancial entity in liquidation or bankruptcy": [
+      {
+       "x": 326,
+       "y": 454
+      }
+     ],
+     "501(c) organization": [
+      {
+       "x": 326,
+       "y": 478
+      }
+     ],
+     "Nonprofit organization": [
+      {
+       "x": 326,
+       "y": 490
+      }
+     ],
+     "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation": [
+      {
+       "x": 326,
+       "y": 502
+      }
+     ],
+     "Excepted territory NFFE": [
+      {
+       "x": 326,
+       "y": 526
+      }
+     ],
+     "Active NFFE": [
+      {
+       "x": 326,
+       "y": 538
+      }
+     ],
+     "Passive NFFE": [
+      {
+       "x": 326,
+       "y": 550
+      }
+     ],
+     "Excepted inter-affiliate FFI": [
+      {
+       "x": 326,
+       "y": 562
+      }
+     ],
+     "Direct reporting NFFE": [
+      {
+       "x": 326,
+       "y": 574
+      }
+     ],
+     "Sponsored direct reporting NFFE": [
+      {
+       "x": 326,
+       "y": 586
+      }
+     ],
+     "Account that is not a financial account": [
+      {
+       "x": 326,
+       "y": 598
+      }
+     ]
+    }
+   },
+   {
+    "key": "foreign_tin_not_legally_required",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 560.2,
+       "y": 100.5
+      }
+     ]
+    }
+   },
+   {
+    "key": "disregarded_entity_chapter_4_status",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Branch treated as nonparticipating FFI",
+     "Participating FFI",
+     "Reporting Model 1 FFI",
+     "Reporting Model 2 FFI",
+     "U.S. Branch"
+    ],
+    "boxesByOption": {
+     "Branch treated as nonparticipating FFI": [
+      {
+       "x": 66.8,
+       "y": 202
+      }
+     ],
+     "Participating FFI": [
+      {
+       "x": 66.8,
+       "y": 214
+      }
+     ],
+     "Reporting Model 1 FFI": [
+      {
+       "x": 246.8,
+       "y": 202
+      }
+     ],
+     "Reporting Model 2 FFI": [
+      {
+       "x": 246.8,
+       "y": 214
+      }
+     ],
+     "U.S. Branch": [
+      {
+       "x": 434,
+       "y": 202
+      }
+     ]
+    }
+   },
+   {
+    "key": "treaty_resident_certified",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 358
+      }
+     ]
+    }
+   },
+   {
+    "key": "treaty_limitation_on_benefits_certified",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 382
+      }
+     ]
+    }
+   },
+   {
+    "key": "limitation_on_benefits_type",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Government",
+     "Tax-exempt pension trust or pension fund",
+     "Other tax-exempt organization",
+     "Publicly traded corporation",
+     "Subsidiary of a publicly traded corporation",
+     "Company that meets the ownership and base erosion test",
+     "Company that meets the derivative benefits test",
+     "Company with an item of income that meets active trade or business test",
+     "Favorable discretionary determination by the U.S. competent authority received",
+     "No LOB article in treaty",
+     "Other"
+    ],
+    "boxesByOption": {
+     "Government": [
+      {
+       "x": 66.8,
+       "y": 418
+      }
+     ],
+     "Tax-exempt pension trust or pension fund": [
+      {
+       "x": 66.8,
+       "y": 430
+      }
+     ],
+     "Other tax-exempt organization": [
+      {
+       "x": 66.8,
+       "y": 442
+      }
+     ],
+     "Publicly traded corporation": [
+      {
+       "x": 66.8,
+       "y": 454
+      }
+     ],
+     "Subsidiary of a publicly traded corporation": [
+      {
+       "x": 66.8,
+       "y": 466
+      }
+     ],
+     "Company that meets the ownership and base erosion test": [
+      {
+       "x": 246.8,
+       "y": 418
+      }
+     ],
+     "Company that meets the derivative benefits test": [
+      {
+       "x": 246.8,
+       "y": 430
+      }
+     ],
+     "Company with an item of income that meets active trade or business test": [
+      {
+       "x": 246.8,
+       "y": 442
+      }
+     ],
+     "Favorable discretionary determination by the U.S. competent authority received": [
+      {
+       "x": 246.8,
+       "y": 454
+      }
+     ],
+     "No LOB article in treaty": [
+      {
+       "x": 246.8,
+       "y": 466
+      }
+     ],
+     "Other": [
+      {
+       "x": 246.8,
+       "y": 478
+      }
+     ]
+    }
+   },
+   {
+    "key": "treaty_qualified_resident_status_certified",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 490
+      }
+     ]
+    }
+   },
+   {
+    "key": "sponsored_ffi_certification",
+    "page": 2,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Investment entity (box 1)",
+     "Controlled foreign corporation (box 2)"
+    ],
+    "boxesByOption": {
+     "Investment entity (box 1)": [
+      {
+       "x": 66.8,
+       "y": 634
+      }
+     ],
+     "Controlled foreign corporation (box 2)": [
+      {
+       "x": 66.8,
+       "y": 682
+      }
+     ]
+    }
+   },
+   {
+    "key": "nonregistering_local_bank_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 70
+      }
+     ]
+    }
+   },
+   {
+    "key": "low_value_accounts_ffi_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 238
+      }
+     ]
+    }
+   },
+   {
+    "key": "closely_held_vehicle_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 358
+      }
+     ]
+    }
+   },
+   {
+    "key": "limited_life_debt_entity_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 466
+      }
+     ]
+    }
+   },
+   {
+    "key": "no_financial_accounts_entity_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 538
+      }
+     ]
+    }
+   },
+   {
+    "key": "owner_documented_ffi_certified",
+    "page": 3,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 610
+      }
+     ]
+    }
+   },
+   {
+    "key": "owner_documented_ffi_documents",
+    "page": 4,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Owner reporting statement (24b)",
+     "Auditor's letter (24c)"
+    ],
+    "boxesByOption": {
+     "Owner reporting statement (24b)": [
+      {
+       "x": 66.8,
+       "y": 82
+      }
+     ],
+     "Auditor's letter (24c)": [
+      {
+       "x": 66.8,
+       "y": 226
+      }
+     ]
+    }
+   },
+   {
+    "key": "owner_documented_trust_certified",
+    "page": 4,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 298
+      }
+     ]
+    }
+   },
+   {
+    "key": "restricted_distributor_certified",
+    "page": 4,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 334
+      }
+     ]
+    }
+   },
+   {
+    "key": "restricted_distributor_agreement",
+    "page": 4,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Has been and is bound by agreement (25b)",
+     "Is currently bound by agreement (25c)"
+    ],
+    "boxesByOption": {
+     "Has been and is bound by agreement (25b)": [
+      {
+       "x": 66.8,
+       "y": 538
+      }
+     ],
+     "Is currently bound by agreement (25c)": [
+      {
+       "x": 66.8,
+       "y": 574
+      }
+     ]
+    }
+   },
+   {
+    "key": "nonreporting_iga_ffi_certified",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 70
+      }
+     ]
+    }
+   },
+   {
+    "key": "iga_model",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Model 1 IGA",
+     "Model 2 IGA"
+    ],
+    "boxesByOption": {
+     "Model 1 IGA": [
+      {
+       "x": 419.6,
+       "y": 94
+      }
+     ],
+     "Model 2 IGA": [
+      {
+       "x": 498.8,
+       "y": 94
+      }
+     ]
+    }
+   },
+   {
+    "key": "trustee_location",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "U.S.",
+     "Foreign"
+    ],
+    "boxesByOption": {
+     "U.S.": [
+      {
+       "x": 117.2,
+       "y": 142
+      }
+     ],
+     "Foreign": [
+      {
+       "x": 153.2,
+       "y": 142
+      }
+     ]
+    }
+   },
+   {
+    "key": "foreign_government_certified",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 178
+      }
+     ]
+    }
+   },
+   {
+    "key": "international_organization_certification",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Section 7701(a)(18) organization (28a)",
+     "Comprised of foreign governments (28b)"
+    ],
+    "boxesByOption": {
+     "Section 7701(a)(18) organization (28a)": [
+      {
+       "x": 66.8,
+       "y": 238
+      }
+     ],
+     "Comprised of foreign governments (28b)": [
+      {
+       "x": 66.8,
+       "y": 250
+      }
+     ]
+    }
+   },
+   {
+    "key": "exempt_retirement_plan_certification",
+    "page": 5,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Treaty-qualified retirement fund (29a)",
+     "Broad participation retirement fund (29b)",
+     "Narrow participation retirement fund (29c)",
+     "Fund formed under a section 401(a)-type plan (29d)",
+     "Investment entity for retirement funds (29e)",
+     "Fund set up by an exempt beneficial owner (29f)"
+    ],
+    "boxesByOption": {
+     "Treaty-qualified retirement fund (29a)": [
+      {
+       "x": 66.8,
+       "y": 370
+      }
+     ],
+     "Broad participation retirement fund (29b)": [
+      {
+       "x": 66.8,
+       "y": 430
+      }
+     ],
+     "Narrow participation retirement fund (29c)": [
+      {
+       "x": 66.8,
+       "y": 622
+      }
+     ],
+     "Fund formed under a section 401(a)-type plan (29d)": [
+      {
+       "x": 66.8,
+       "y": 70,
+       "page": 6
+      }
+     ],
+     "Investment entity for retirement funds (29e)": [
+      {
+       "x": 66.8,
+       "y": 94,
+       "page": 6
+      }
+     ],
+     "Fund set up by an exempt beneficial owner (29f)": [
+      {
+       "x": 66.8,
+       "y": 130,
+       "page": 6
+      }
+     ]
+    }
+   },
+   {
+    "key": "wholly_owned_by_exempt_owners_certified",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 250
+      }
+     ]
+    }
+   },
+   {
+    "key": "territory_financial_institution_certified",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 394
+      }
+     ]
+    }
+   },
+   {
+    "key": "nonfinancial_group_entity_certified",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 430
+      }
+     ]
+    }
+   },
+   {
+    "key": "nonfinancial_startup_certified",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 538
+      }
+     ]
+    }
+   },
+   {
+    "key": "liquidation_or_bankruptcy_certified",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 646
+      }
+     ]
+    }
+   },
+   {
+    "key": "organization_501c_certified",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 70
+      }
+     ]
+    }
+   },
+   {
+    "key": "nonprofit_organization_certified",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 154
+      }
+     ]
+    }
+   },
+   {
+    "key": "publicly_traded_nffe_certification",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Publicly traded corporation (37a)",
+     "Affiliate of a publicly traded corporation (37b)"
+    ],
+    "boxesByOption": {
+     "Publicly traded corporation (37a)": [
+      {
+       "x": 66.8,
+       "y": 322
+      }
+     ],
+     "Affiliate of a publicly traded corporation (37b)": [
+      {
+       "x": 66.8,
+       "y": 370
+      }
+     ]
+    }
+   },
+   {
+    "key": "excepted_territory_nffe_certified",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 466
+      }
+     ]
+    }
+   },
+   {
+    "key": "active_nffe_certified",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 586
+      }
+     ]
+    }
+   },
+   {
+    "key": "passive_nffe_certified",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 670
+      }
+     ]
+    }
+   },
+   {
+    "key": "passive_nffe_us_owners",
+    "page": 7,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "No substantial U.S. owners (40b)",
+     "Substantial U.S. owners listed in Part XXIX (40c)"
+    ],
+    "boxesByOption": {
+     "No substantial U.S. owners (40b)": [
+      {
+       "x": 66.8,
+       "y": 718
+      }
+     ],
+     "Substantial U.S. owners listed in Part XXIX (40c)": [
+      {
+       "x": 66.8,
+       "y": 730
+      }
+     ]
+    }
+   },
+   {
+    "key": "inter_affiliate_ffi_certified",
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 70
+      }
+     ]
+    }
+   },
+   {
+    "key": "sponsored_direct_reporting_nffe_certified",
+    "page": 8,
+    "w": 8,
+    "h": 8,
+    "isOptional": true,
+    "options": [
+     "Yes"
+    ],
+    "boxesByOption": {
+     "Yes": [
+      {
+       "x": 66.8,
+       "y": 190
+      }
+     ]
+    }
+   }
+  ],
+  "labels": [],
+  "blankFileName": "Form W-8BEN-E.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each text field is written on the blank IRS Form W-8BEN-E (Rev. October 2021): positions from the form's own fill-in boxes (removed from the blank).",
+  "formId": "w8ben-e",
+  "title": "Form W-8BEN-E",
+  "fields": [
+   {
+    "key": "entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 238,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 334.4
+   },
+   {
+    "key": "country_of_incorporation",
+    "nominee": null,
+    "page": 1,
+    "x": 377.4,
+    "y": 238,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 196.6
+   },
+   {
+    "key": "disregarded_entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 262,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "permanent_address",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 622,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "permanent_city_state_postal_code",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 646,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 399.2
+   },
+   {
+    "key": "permanent_country",
+    "nominee": null,
+    "page": 1,
+    "x": 441.2,
+    "y": 646,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 132.8
+   },
+   {
+    "key": "mailing_address",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 670,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "mailing_city_state_postal_code",
+    "nominee": null,
+    "page": 1,
+    "x": 38,
+    "y": 694,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 399.2
+   },
+   {
+    "key": "mailing_country",
+    "nominee": null,
+    "page": 1,
+    "x": 441.2,
+    "y": 694,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 132.8
+   },
+   {
+    "key": "us_tin",
+    "nominee": null,
+    "page": 2,
+    "x": 38,
+    "y": 82,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "giin",
+    "nominee": null,
+    "page": 2,
+    "x": 38,
+    "y": 106,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 161.6
+   },
+   {
+    "key": "foreign_tin",
+    "nominee": null,
+    "page": 2,
+    "x": 203.6,
+    "y": 106,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 132.8
+   },
+   {
+    "key": "reference_numbers",
+    "nominee": null,
+    "page": 2,
+    "x": 60,
+    "y": 130,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 514
+   },
+   {
+    "key": "disregarded_entity_address",
+    "nominee": null,
+    "page": 2,
+    "x": 38,
+    "y": 250,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "disregarded_entity_city_state_postal_code",
+    "nominee": null,
+    "page": 2,
+    "x": 38,
+    "y": 274,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "disregarded_entity_country",
+    "nominee": null,
+    "page": 2,
+    "x": 38,
+    "y": 298,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 536
+   },
+   {
+    "key": "disregarded_entity_giin",
+    "nominee": null,
+    "page": 2,
+    "x": 117.2,
+    "y": 310,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 456.8
+   },
+   {
+    "key": "treaty_country",
+    "nominee": null,
+    "page": 2,
+    "x": 213.3,
+    "y": 358,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 209.5
+   },
+   {
+    "key": "limitation_on_benefits_other_article",
+    "nominee": null,
+    "page": 2,
+    "x": 398,
+    "y": 478,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 176
+   },
+   {
+    "key": "special_rates_article",
+    "nominee": null,
+    "page": 2,
+    "x": 324,
+    "y": 526,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 250
+   },
+   {
+    "key": "special_rates_withholding_rate",
+    "nominee": null,
+    "page": 2,
+    "x": 251,
+    "y": 538,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 63.8
+   },
+   {
+    "key": "special_rates_income_type",
+    "nominee": null,
+    "page": 2,
+    "x": 498.8,
+    "y": 538,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 75.2
+   },
+   {
+    "key": "special_rates_conditions_line_1",
+    "nominee": null,
+    "page": 2,
+    "x": 474.8,
+    "y": 550,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 99.2
+   },
+   {
+    "key": "special_rates_conditions_line_2",
+    "nominee": null,
+    "page": 2,
+    "x": 66.8,
+    "y": 562,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 507.2
+   },
+   {
+    "key": "special_rates_conditions_line_3",
+    "nominee": null,
+    "page": 2,
+    "x": 66.8,
+    "y": 574,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 507.2
+   },
+   {
+    "key": "sponsored_ffi_sponsoring_entity_name",
+    "nominee": null,
+    "page": 2,
+    "x": 167.6,
+    "y": 610,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 406.4
+   },
+   {
+    "key": "closely_held_vehicle_sponsoring_entity_name",
+    "nominee": null,
+    "page": 3,
+    "x": 167.6,
+    "y": 346,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 406.4
+   },
+   {
+    "key": "iga_partner_jurisdiction",
+    "nominee": null,
+    "page": 5,
+    "x": 66.8,
+    "y": 94,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 255.7
+   },
+   {
+    "key": "iga_treated_as",
+    "nominee": null,
+    "page": 5,
+    "x": 125,
+    "y": 106,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 211.4
+   },
+   {
+    "key": "trustee_or_sponsor_name",
+    "nominee": null,
+    "page": 5,
+    "x": 441.2,
+    "y": 130,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 126.6
+   },
+   {
+    "key": "startup_formation_date",
+    "nominee": null,
+    "page": 6,
+    "x": 506,
+    "y": 550,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 68
+   },
+   {
+    "key": "liquidation_or_bankruptcy_filing_date",
+    "nominee": null,
+    "page": 6,
+    "x": 369.2,
+    "y": 658,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 197.6
+   },
+   {
+    "key": "determination_letter_date",
+    "nominee": null,
+    "page": 7,
+    "x": 88.4,
+    "y": 94,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 68
+   },
+   {
+    "key": "securities_exchange_name",
+    "nominee": null,
+    "page": 7,
+    "x": 454.6,
+    "y": 346,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 119.4
+   },
+   {
+    "key": "publicly_traded_affiliate_name",
+    "nominee": null,
+    "page": 7,
+    "x": 434,
+    "y": 418,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 118.4
+   },
+   {
+    "key": "affiliate_securities_market_name",
+    "nominee": null,
+    "page": 7,
+    "x": 340.4,
+    "y": 430,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 226.4
+   },
+   {
+    "key": "direct_reporting_sponsoring_entity_name",
+    "nominee": null,
+    "page": 8,
+    "x": 168.5,
+    "y": 178,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 405.5
+   },
+   {
+    "key": "substantial_us_owner_1_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 279,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_1_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 279,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_1_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 279,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_2_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 303,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_2_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 303,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_2_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 303,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_3_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 327,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_3_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 327,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_3_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 327,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_4_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 351,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_4_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 351,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_4_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 351,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_5_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 375,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_5_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 375,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_5_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 375,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_6_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 399,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_6_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 399,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_6_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 399,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_7_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 423,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_7_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 423,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_7_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 423,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_8_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 447,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_8_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 447,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_8_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 447,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "substantial_us_owner_9_name",
+    "nominee": null,
+    "page": 8,
+    "x": 38,
+    "y": 471,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 147.2
+   },
+   {
+    "key": "substantial_us_owner_9_address",
+    "nominee": null,
+    "page": 8,
+    "x": 191.2,
+    "y": 471,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 296.4
+   },
+   {
+    "key": "substantial_us_owner_9_tin",
+    "nominee": null,
+    "page": 8,
+    "x": 491.6,
+    "y": 471,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 82.4
+   },
+   {
+    "key": "signer_name",
+    "nominee": null,
+    "page": 8,
+    "x": 333.2,
+    "y": 682,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 154.4
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 8,
+    "x": 498.8,
+    "y": 682,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 75.2
+   }
+  ]
+ },
+ "fieldSources": {
+  "entity_name": "typed",
+  "country_of_incorporation": "typed",
+  "disregarded_entity_name": "typed",
+  "permanent_address": "typed",
+  "permanent_city_state_postal_code": "typed",
+  "permanent_country": "typed",
+  "mailing_address": "typed",
+  "mailing_city_state_postal_code": "typed",
+  "mailing_country": "typed",
+  "us_tin": "typed",
+  "giin": "typed",
+  "foreign_tin": "typed",
+  "reference_numbers": "typed",
+  "disregarded_entity_address": "typed",
+  "disregarded_entity_city_state_postal_code": "typed",
+  "disregarded_entity_country": "typed",
+  "disregarded_entity_giin": "typed",
+  "treaty_country": "typed",
+  "limitation_on_benefits_other_article": "typed",
+  "special_rates_article": "typed",
+  "special_rates_withholding_rate": "typed",
+  "special_rates_income_type": "typed",
+  "special_rates_conditions_line_1": "typed",
+  "special_rates_conditions_line_2": "typed",
+  "special_rates_conditions_line_3": "typed",
+  "sponsored_ffi_sponsoring_entity_name": "typed",
+  "closely_held_vehicle_sponsoring_entity_name": "typed",
+  "iga_partner_jurisdiction": "typed",
+  "iga_treated_as": "typed",
+  "trustee_or_sponsor_name": "typed",
+  "startup_formation_date": "typed",
+  "liquidation_or_bankruptcy_filing_date": "typed",
+  "determination_letter_date": "typed",
+  "securities_exchange_name": "typed",
+  "publicly_traded_affiliate_name": "typed",
+  "affiliate_securities_market_name": "typed",
+  "direct_reporting_sponsoring_entity_name": "typed",
+  "substantial_us_owner_1_name": "typed",
+  "substantial_us_owner_1_address": "typed",
+  "substantial_us_owner_1_tin": "typed",
+  "substantial_us_owner_2_name": "typed",
+  "substantial_us_owner_2_address": "typed",
+  "substantial_us_owner_2_tin": "typed",
+  "substantial_us_owner_3_name": "typed",
+  "substantial_us_owner_3_address": "typed",
+  "substantial_us_owner_3_tin": "typed",
+  "substantial_us_owner_4_name": "typed",
+  "substantial_us_owner_4_address": "typed",
+  "substantial_us_owner_4_tin": "typed",
+  "substantial_us_owner_5_name": "typed",
+  "substantial_us_owner_5_address": "typed",
+  "substantial_us_owner_5_tin": "typed",
+  "substantial_us_owner_6_name": "typed",
+  "substantial_us_owner_6_address": "typed",
+  "substantial_us_owner_6_tin": "typed",
+  "substantial_us_owner_7_name": "typed",
+  "substantial_us_owner_7_address": "typed",
+  "substantial_us_owner_7_tin": "typed",
+  "substantial_us_owner_8_name": "typed",
+  "substantial_us_owner_8_address": "typed",
+  "substantial_us_owner_8_tin": "typed",
+  "substantial_us_owner_9_name": "typed",
+  "substantial_us_owner_9_address": "typed",
+  "substantial_us_owner_9_tin": "typed",
+  "signer_name": "typed",
+  "form_date": "today|monthFirst",
+  "certify_capacity": "tick",
+  "chapter_3_status": "tick",
+  "hybrid_making_treaty_claim": "tick",
+  "chapter_4_status": "tick",
+  "foreign_tin_not_legally_required": "tick",
+  "disregarded_entity_chapter_4_status": "tick",
+  "treaty_resident_certified": "tick",
+  "treaty_limitation_on_benefits_certified": "tick",
+  "limitation_on_benefits_type": "tick",
+  "treaty_qualified_resident_status_certified": "tick",
+  "sponsored_ffi_certification": "tick",
+  "nonregistering_local_bank_certified": "tick",
+  "low_value_accounts_ffi_certified": "tick",
+  "closely_held_vehicle_certified": "tick",
+  "limited_life_debt_entity_certified": "tick",
+  "no_financial_accounts_entity_certified": "tick",
+  "owner_documented_ffi_certified": "tick",
+  "owner_documented_ffi_documents": "tick",
+  "owner_documented_trust_certified": "tick",
+  "restricted_distributor_certified": "tick",
+  "restricted_distributor_agreement": "tick",
+  "nonreporting_iga_ffi_certified": "tick",
+  "iga_model": "tick",
+  "trustee_location": "tick",
+  "foreign_government_certified": "tick",
+  "international_organization_certification": "tick",
+  "exempt_retirement_plan_certification": "tick",
+  "wholly_owned_by_exempt_owners_certified": "tick",
+  "territory_financial_institution_certified": "tick",
+  "nonfinancial_group_entity_certified": "tick",
+  "nonfinancial_startup_certified": "tick",
+  "liquidation_or_bankruptcy_certified": "tick",
+  "organization_501c_certified": "tick",
+  "nonprofit_organization_certified": "tick",
+  "publicly_traded_nffe_certification": "tick",
+  "excepted_territory_nffe_certified": "tick",
+  "active_nffe_certified": "tick",
+  "passive_nffe_certified": "tick",
+  "passive_nffe_us_owners": "tick",
+  "inter_affiliate_ffi_certified": "tick",
+  "sponsored_direct_reporting_nffe_certified": "tick"
+ },
+ "formRules": {
+  "formId": "w8ben-e",
+  "group": "US tax",
+  "label": "W-8BEN-E – Entity",
+  "shortLabel": "W-8BEN-E",
+  "purpose": "Tax form for non-US entities",
+  "blankFileName": "Form W-8BEN-E.pdf",
+  "keyFields": [
+   "Entity name",
+   "Country of incorporation",
+   "Chapter 3 status",
+   "Chapter 4 status"
+  ],
+  "sheetTabName": "W-8BEN-E",
+  "detectionPhrases": [
+   "W-8BEN-E",
+   "(Entities)"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Entity",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "part1",
+    "label": "Part I · Identification of beneficial owner",
+    "fields": [
+     "entity_name",
+     "country_of_incorporation",
+     "disregarded_entity_name",
+     "permanent_address",
+     "permanent_city_state_postal_code",
+     "permanent_country",
+     "mailing_address",
+     "mailing_city_state_postal_code",
+     "mailing_country",
+     "us_tin",
+     "giin",
+     "foreign_tin",
+     "reference_numbers",
+     "chapter_3_status",
+     "hybrid_making_treaty_claim",
+     "chapter_4_status",
+     "foreign_tin_not_legally_required"
+    ]
+   },
+   {
+    "key": "part2",
+    "label": "Part II · Disregarded entity or branch receiving payment",
+    "fields": [
+     "disregarded_entity_address",
+     "disregarded_entity_city_state_postal_code",
+     "disregarded_entity_country",
+     "disregarded_entity_giin",
+     "disregarded_entity_chapter_4_status"
+    ]
+   },
+   {
+    "key": "part3",
+    "label": "Part III · Claim of tax treaty benefits",
+    "fields": [
+     "treaty_country",
+     "limitation_on_benefits_other_article",
+     "special_rates_article",
+     "special_rates_withholding_rate",
+     "special_rates_income_type",
+     "special_rates_conditions_line_1",
+     "special_rates_conditions_line_2",
+     "special_rates_conditions_line_3",
+     "treaty_resident_certified",
+     "treaty_limitation_on_benefits_certified",
+     "limitation_on_benefits_type",
+     "treaty_qualified_resident_status_certified"
+    ]
+   },
+   {
+    "key": "part4",
+    "label": "Part IV · Sponsored FFI",
+    "fields": [
+     "sponsored_ffi_sponsoring_entity_name",
+     "sponsored_ffi_certification"
+    ]
+   },
+   {
+    "key": "part5",
+    "label": "Part V · Certified deemed-compliant nonregistering local bank",
+    "fields": [
+     "nonregistering_local_bank_certified"
+    ]
+   },
+   {
+    "key": "part6",
+    "label": "Part VI · Certified deemed-compliant FFI with only low-value accounts",
+    "fields": [
+     "low_value_accounts_ffi_certified"
+    ]
+   },
+   {
+    "key": "part7",
+    "label": "Part VII · Certified deemed-compliant sponsored, closely held investment vehicle",
+    "fields": [
+     "closely_held_vehicle_sponsoring_entity_name",
+     "closely_held_vehicle_certified"
+    ]
+   },
+   {
+    "key": "part8",
+    "label": "Part VIII · Certified deemed-compliant limited life debt investment entity",
+    "fields": [
+     "limited_life_debt_entity_certified"
+    ]
+   },
+   {
+    "key": "part9",
+    "label": "Part IX · Investment entities that do not maintain financial accounts",
+    "fields": [
+     "no_financial_accounts_entity_certified"
+    ]
+   },
+   {
+    "key": "part10",
+    "label": "Part X · Owner-documented FFI",
+    "fields": [
+     "owner_documented_ffi_certified",
+     "owner_documented_ffi_documents",
+     "owner_documented_trust_certified"
+    ]
+   },
+   {
+    "key": "part11",
+    "label": "Part XI · Restricted distributor",
+    "fields": [
+     "restricted_distributor_certified",
+     "restricted_distributor_agreement"
+    ]
+   },
+   {
+    "key": "part12",
+    "label": "Part XII · Nonreporting IGA FFI",
+    "fields": [
+     "iga_partner_jurisdiction",
+     "iga_treated_as",
+     "trustee_or_sponsor_name",
+     "nonreporting_iga_ffi_certified",
+     "iga_model",
+     "trustee_location"
+    ]
+   },
+   {
+    "key": "part13",
+    "label": "Part XIII · Foreign government or central bank of issue",
+    "fields": [
+     "foreign_government_certified"
+    ]
+   },
+   {
+    "key": "part14",
+    "label": "Part XIV · International organization",
+    "fields": [
+     "international_organization_certification"
+    ]
+   },
+   {
+    "key": "part15",
+    "label": "Part XV · Exempt retirement plans",
+    "fields": [
+     "exempt_retirement_plan_certification"
+    ]
+   },
+   {
+    "key": "part16",
+    "label": "Part XVI · Entity wholly owned by exempt beneficial owners",
+    "fields": [
+     "wholly_owned_by_exempt_owners_certified"
+    ]
+   },
+   {
+    "key": "part17",
+    "label": "Part XVII · Territory financial institution",
+    "fields": [
+     "territory_financial_institution_certified"
+    ]
+   },
+   {
+    "key": "part18",
+    "label": "Part XVIII · Excepted nonfinancial group entity",
+    "fields": [
+     "nonfinancial_group_entity_certified"
+    ]
+   },
+   {
+    "key": "part19",
+    "label": "Part XIX · Excepted nonfinancial start-up company",
+    "fields": [
+     "startup_formation_date",
+     "nonfinancial_startup_certified"
+    ]
+   },
+   {
+    "key": "part20",
+    "label": "Part XX · Excepted nonfinancial entity in liquidation or bankruptcy",
+    "fields": [
+     "liquidation_or_bankruptcy_filing_date",
+     "liquidation_or_bankruptcy_certified"
+    ]
+   },
+   {
+    "key": "part21",
+    "label": "Part XXI · 501(c) organization",
+    "fields": [
+     "determination_letter_date",
+     "organization_501c_certified"
+    ]
+   },
+   {
+    "key": "part22",
+    "label": "Part XXII · Nonprofit organization",
+    "fields": [
+     "nonprofit_organization_certified"
+    ]
+   },
+   {
+    "key": "part23",
+    "label": "Part XXIII · Publicly traded NFFE or affiliate",
+    "fields": [
+     "securities_exchange_name",
+     "publicly_traded_affiliate_name",
+     "affiliate_securities_market_name",
+     "publicly_traded_nffe_certification"
+    ]
+   },
+   {
+    "key": "part24",
+    "label": "Part XXIV · Excepted territory NFFE",
+    "fields": [
+     "excepted_territory_nffe_certified"
+    ]
+   },
+   {
+    "key": "part25",
+    "label": "Part XXV · Active NFFE",
+    "fields": [
+     "active_nffe_certified"
+    ]
+   },
+   {
+    "key": "part26",
+    "label": "Part XXVI · Passive NFFE",
+    "fields": [
+     "passive_nffe_certified",
+     "passive_nffe_us_owners"
+    ]
+   },
+   {
+    "key": "part27",
+    "label": "Part XXVII · Excepted inter-affiliate FFI",
+    "fields": [
+     "inter_affiliate_ffi_certified"
+    ]
+   },
+   {
+    "key": "part28",
+    "label": "Part XXVIII · Sponsored direct reporting NFFE",
+    "fields": [
+     "direct_reporting_sponsoring_entity_name",
+     "sponsored_direct_reporting_nffe_certified"
+    ]
+   },
+   {
+    "key": "part29",
+    "label": "Part XXIX · Substantial U.S. owners of passive NFFE",
+    "fields": [
+     "substantial_us_owner_1_name",
+     "substantial_us_owner_1_address",
+     "substantial_us_owner_1_tin",
+     "substantial_us_owner_2_name",
+     "substantial_us_owner_2_address",
+     "substantial_us_owner_2_tin",
+     "substantial_us_owner_3_name",
+     "substantial_us_owner_3_address",
+     "substantial_us_owner_3_tin",
+     "substantial_us_owner_4_name",
+     "substantial_us_owner_4_address",
+     "substantial_us_owner_4_tin",
+     "substantial_us_owner_5_name",
+     "substantial_us_owner_5_address",
+     "substantial_us_owner_5_tin",
+     "substantial_us_owner_6_name",
+     "substantial_us_owner_6_address",
+     "substantial_us_owner_6_tin",
+     "substantial_us_owner_7_name",
+     "substantial_us_owner_7_address",
+     "substantial_us_owner_7_tin",
+     "substantial_us_owner_8_name",
+     "substantial_us_owner_8_address",
+     "substantial_us_owner_8_tin",
+     "substantial_us_owner_9_name",
+     "substantial_us_owner_9_address",
+     "substantial_us_owner_9_tin"
+    ]
+   },
+   {
+    "key": "part30",
+    "label": "Part XXX · Certification",
+    "fields": [
+     "certify_capacity",
+     "signer_name",
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "entity_name",
+   "country_of_incorporation",
+   "chapter_3_status",
+   "chapter_4_status",
+   "permanent_address",
+   "permanent_city_state_postal_code",
+   "permanent_country",
+   "signer_name",
+   "form_date"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": false,
+  "documentDetails": []
+ },
+ "drawnSpots": [
+  {
+   "field": "entity_name",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     230.35,
+     88.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "country_of_incorporation",
+   "page": 1,
+   "lines": [
+    [
+     377.4,
+     230.35,
+     138.51,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "disregarded_entity_name",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     254.35,
+     140.56,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "permanent_address",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     614.35,
+     119.28,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "permanent_city_state_postal_code",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     638.35,
+     178.81,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "permanent_country",
+   "page": 1,
+   "lines": [
+    [
+     441.2,
+     638.35,
+     117.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     662.35,
+     104.54,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "mailing_city_state_postal_code",
+   "page": 1,
+   "lines": [
+    [
+     38,
+     686.35,
+     164.07,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "mailing_country",
+   "page": 1,
+   "lines": [
+    [
+     441.2,
+     686.35,
+     102.3,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "us_tin",
+   "page": 2,
+   "lines": [
+    [
+     38,
+     74.35,
+     63.03,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "giin",
+   "page": 2,
+   "lines": [
+    [
+     38,
+     98.35,
+     53.02,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "foreign_tin",
+   "page": 2,
+   "lines": [
+    [
+     203.6,
+     98.35,
+     80.77,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "reference_numbers",
+   "page": 2,
+   "lines": [
+    [
+     60,
+     122.35,
+     116.68,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "disregarded_entity_address",
+   "page": 2,
+   "lines": [
+    [
+     38,
+     242.35,
+     150.07,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "disregarded_entity_city_state_postal_code",
+   "page": 2,
+   "lines": [
+    [
+     38,
+     266.35,
+     175.58,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "disregarded_entity_country",
+   "page": 2,
+   "lines": [
+    [
+     38,
+     290.35,
+     147.83,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "disregarded_entity_giin",
+   "page": 2,
+   "lines": [
+    [
+     117.2,
+     302.35,
+     132.06,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "treaty_country",
+   "page": 2,
+   "lines": [
+    [
+     213.3,
+     350.35,
+     96.31,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "limitation_on_benefits_other_article",
+   "page": 2,
+   "lines": [
+    [
+     398,
+     470.35,
+     169.43,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_article",
+   "page": 2,
+   "lines": [
+    [
+     324,
+     518.35,
+     121.31,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_withholding_rate",
+   "page": 2,
+   "lines": [
+    [
+     251,
+     532.9,
+     108.26,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_income_type",
+   "page": 2,
+   "lines": [
+    [
+     498.8,
+     532.9,
+     98.65,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_conditions_line_1",
+   "page": 2,
+   "lines": [
+    [
+     474.8,
+     544.9,
+     110.99,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_conditions_line_2",
+   "page": 2,
+   "lines": [
+    [
+     66.8,
+     554.35,
+     166.48,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "special_rates_conditions_line_3",
+   "page": 2,
+   "lines": [
+    [
+     66.8,
+     566.35,
+     166.48,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "sponsored_ffi_sponsoring_entity_name",
+   "page": 2,
+   "lines": [
+    [
+     167.6,
+     602.35,
+     178.72,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "closely_held_vehicle_sponsoring_entity_name",
+   "page": 3,
+   "lines": [
+    [
+     167.6,
+     338.35,
+     180.49,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "iga_partner_jurisdiction",
+   "page": 5,
+   "lines": [
+    [
+     66.8,
+     86.35,
+     132.54,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "iga_treated_as",
+   "page": 5,
+   "lines": [
+    [
+     125,
+     98.35,
+     98.55,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "trustee_or_sponsor_name",
+   "page": 5,
+   "lines": [
+    [
+     441.2,
+     123.63,
+     120.17,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "startup_formation_date",
+   "page": 6,
+   "lines": [
+    [
+     506,
+     544.9,
+     87.92,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "liquidation_or_bankruptcy_filing_date",
+   "page": 6,
+   "lines": [
+    [
+     369.2,
+     650.35,
+     170.21,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "determination_letter_date",
+   "page": 7,
+   "lines": [
+    [
+     88.4,
+     88.9,
+     94.19,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "securities_exchange_name",
+   "page": 7,
+   "lines": [
+    [
+     454.6,
+     340.05,
+     115.44,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "publicly_traded_affiliate_name",
+   "page": 7,
+   "lines": [
+    [
+     434,
+     412.48,
+     115.77,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "affiliate_securities_market_name",
+   "page": 7,
+   "lines": [
+    [
+     340.4,
+     422.35,
+     170.65,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "direct_reporting_sponsoring_entity_name",
+   "page": 8,
+   "lines": [
+    [
+     168.5,
+     170.35,
+     173.07,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_1_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     272.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_1_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     271.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_1_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     273.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_2_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     296.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_2_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     295.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_2_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     297.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_3_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     320.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_3_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     319.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_3_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     321.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_4_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     344.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_4_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     343.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_4_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     345.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_5_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     368.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_5_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     367.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_5_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     369.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_6_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     392.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_6_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     391.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_6_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     393.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_7_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     416.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_7_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     415.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_7_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     417.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_8_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     440.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_8_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     439.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_8_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     441.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_9_name",
+   "page": 8,
+   "lines": [
+    [
+     38,
+     464.2,
+     145.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_9_address",
+   "page": 8,
+   "lines": [
+    [
+     191.2,
+     463.35,
+     172.94,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "substantial_us_owner_9_tin",
+   "page": 8,
+   "lines": [
+    [
+     491.6,
+     465.9,
+     100.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "signer_name",
+   "page": 8,
+   "lines": [
+    [
+     333.2,
+     674.35,
+     91.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 8,
+   "lines": [
+    [
+     498.8,
+     674.78,
+     75.07,
+     8.5
+    ]
+   ]
+  }
+ ]
+}

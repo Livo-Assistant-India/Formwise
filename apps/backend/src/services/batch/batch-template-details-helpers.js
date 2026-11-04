@@ -1,6 +1,6 @@
 // The explaining parts of a batch Excel: an example per column, where each value comes from in plain words, and a
 // page-by-page map of the whole form (including what is never typed: today's date, ticks with a usual answer).
-import { formatFieldLabel } from "@prefill/shared";
+import { formatFieldLabel, toPlainFieldKey } from "@prefill/shared";
 import { getFormDefinition } from "../../forms/form-registry.js";
 import { fetchFieldPositions, fetchFieldSources } from "../forms/form-files-service.js";
 
@@ -28,7 +28,7 @@ export function describeComesFrom(fieldSource) {
   return "Fill in";
 }
 
-export const getExample = (baseKey, options) => EXAMPLES[baseKey] ?? (/^tax_offence/.test(baseKey) ? "No" : options?.length === 1 ? "Yes (= tick it)" : options ? options[0] : "");
+export const getExample = (baseKey, options) => EXAMPLES[toPlainFieldKey(baseKey)] ?? (/^tax_offence/.test(toPlainFieldKey(baseKey)) ? "No" : options?.length === 1 ? "Yes (= tick it)" : options ? options[0] : "");
 
 /** [{page, field, comesFrom, isExcelColumn}] for every value the form prints, page by page. */
 export async function buildPageMapRows(formId) {

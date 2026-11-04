@@ -51,6 +51,22 @@ const FUNDS = [
     sectionRenames: {},
     wireNote: { page: 18, y: 560 },
   },
+  {
+    formId: "international-opportunities-fund-subscription", fundName: "360 ONE International Opportunities Fund", pageCount: 65,
+    label: "International Opportunities Fund – Subscription", shortLabel: "IOF subscription",
+    blankFileName: "360 ONE International Opportunities Fund - Subscription.pdf",
+    sourcePdf: "360 ONE International Opportunities Fund/360 ONE International Opportunities Fund - Subscription Agreement (Non-U.S.).pdf",
+    // Every field page has the same number and the same line positions as GBF; only page 2's Series block differs.
+    pageMap: {}, droppedKeys: [], pageShifts: {}, positionOverrides: {},
+    // "Series/ Sub-Series: ____" and "ISIN: ____" are typed lines, not tick boxes (longer lines than GSF's).
+    series: { type: "typed", fields: [
+      { key: "series", page: 2, x: 337, y: 435.3, maxWidth: 86, fontSize: 9 },
+      { key: "isin", page: 2, x: 281, y: 459.7, maxWidth: 140, fontSize: 9 },
+    ] },
+    signatureOverrides: {},
+    sectionRenames: {},
+    wireNote: { page: 18, y: 601 },
+  },
 ];
 
 const roundNumber = (number) => Math.round(number * 100) / 100;

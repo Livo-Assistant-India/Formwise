@@ -2747,6 +2747,56 @@
     "fontSize": 10,
     "type": "text",
     "maxWidth": 355
+   },
+   {
+    "key": "crs_passive_nfe_controlling_person_1",
+    "nominee": null,
+    "page": 36,
+    "x": 106,
+    "y": 168,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 390
+   },
+   {
+    "key": "crs_passive_nfe_controlling_person_2",
+    "nominee": null,
+    "page": 36,
+    "x": 106,
+    "y": 198.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 390
+   },
+   {
+    "key": "crs_passive_nfe_controlling_person_3",
+    "nominee": null,
+    "page": 36,
+    "x": 106,
+    "y": 229.1,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 390
+   },
+   {
+    "key": "beneficial_owner_address_line_2",
+    "nominee": null,
+    "page": 57,
+    "x": 197,
+    "y": 455.1,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 308
+   },
+   {
+    "key": "beneficial_owner_address_line_3",
+    "nominee": null,
+    "page": 57,
+    "x": 197,
+    "y": 467.5,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 308
    }
   ]
  },
@@ -2943,7 +2993,12 @@
   "crs_non_reporting_fi": "tick",
   "crs_non_reporting_fi_type": "tick",
   "crs_fi_non_participating_jurisdiction": "tick",
-  "crs_npj_fi_type": "tick"
+  "crs_npj_fi_type": "tick",
+  "crs_passive_nfe_controlling_person_1": "typed",
+  "crs_passive_nfe_controlling_person_2": "typed",
+  "crs_passive_nfe_controlling_person_3": "typed",
+  "beneficial_owner_address_line_2": "typed",
+  "beneficial_owner_address_line_3": "typed"
  },
  "formRules": {
   "formId": "global-bond-fund-subscription",
@@ -3134,7 +3189,10 @@
      "crs_non_reporting_fi",
      "crs_non_reporting_fi_type",
      "crs_fi_non_participating_jurisdiction",
-     "crs_npj_fi_type"
+     "crs_npj_fi_type",
+     "crs_passive_nfe_controlling_person_1",
+     "crs_passive_nfe_controlling_person_2",
+     "crs_passive_nfe_controlling_person_3"
     ]
    },
    {
@@ -3212,7 +3270,9 @@
      "beneficial_owner",
      "singapore_tax_status",
      "beneficial_owner_name",
-     "beneficial_owner_address"
+     "beneficial_owner_address",
+     "beneficial_owner_address_line_2",
+     "beneficial_owner_address_line_3"
     ]
    },
    {
@@ -3314,7 +3374,14 @@
    "tax_offence_2e",
    "tax_offence_3"
   ],
-  "nomineeFieldKeys": []
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address",
+   "dob",
+   "idNumber"
+  ]
  },
  "drawnSpots": [
   {
@@ -5042,6 +5109,66 @@
      310.5,
      155.07,
      10
+    ]
+   ]
+  },
+  {
+   "field": "crs_passive_nfe_controlling_person_1",
+   "page": 36,
+   "lines": [
+    [
+     106,
+     159.5,
+     196.75,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "crs_passive_nfe_controlling_person_2",
+   "page": 36,
+   "lines": [
+    [
+     106,
+     190.1,
+     196.75,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "crs_passive_nfe_controlling_person_3",
+   "page": 36,
+   "lines": [
+    [
+     106,
+     220.6,
+     196.75,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "beneficial_owner_address_line_2",
+   "page": 57,
+   "lines": [
+    [
+     197,
+     447.45,
+     172.44,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "beneficial_owner_address_line_3",
+   "page": 57,
+   "lines": [
+    [
+     197,
+     459.85,
+     172.44,
+     9
     ]
    ]
   }

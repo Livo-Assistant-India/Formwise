@@ -1,0 +1,33 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the joint holder's KYC documents (see ../document-data-dictionary.json); \"|surname\" etc. = the part of it this box wants; \"typed\" = from the batch Excel or the review screen; \"default.X\" = usually X, the Excel can change it; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed).",
+  "fieldSources": {
+    "joint_holder_surname": "document.name|surname|upper",
+    "joint_holder_given_name": "document.name|givenName|upper",
+    "joint_holder_middle_name": "document.name|middleNames|upper",
+    "joint_holder_residence_address_line1": "document.address|withoutCareOf|addressLine1|upper",
+    "joint_holder_residence_address_line2": "document.address|withoutCareOf|addressLine2|upper",
+    "joint_holder_residence_country": "document.country|upper",
+    "joint_holder_pincode": "document.pincode",
+    "joint_holder_dob": "document.dob",
+    "joint_holder_tax_residence_country": "copy.joint_holder_residence_country",
+    "joint_holder_tax_reference_type": "default.PAN",
+    "joint_holder_tax_reference_number": "document.pan",
+    "joint_holder_title": "typed",
+    "joint_holder_us_tax_status": "tick",
+    "joint_holder_name": "document.name|upper",
+    "joint_holder_form_date": "today",
+    "joint_holder_mailing_address_line1": "typed",
+    "joint_holder_mailing_address_line2": "typed",
+    "joint_holder_mailing_country": "typed",
+    "joint_holder_mailing_postcode": "typed",
+    "joint_holder_us_tin": "typed",
+    "joint_holder_tax_residence_country_2": "typed",
+    "joint_holder_tax_reference_type_2": "typed",
+    "joint_holder_tax_reference_number_2": "typed",
+    "joint_holder_tax_residence_country_3": "typed",
+    "joint_holder_tax_reference_type_3": "typed",
+    "joint_holder_tax_reference_number_3": "typed",
+    "joint_holder_tin_unavailable_reason": "typed",
+    "joint_holder_signing_capacity": "typed"
+  }
+}

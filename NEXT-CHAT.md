@@ -95,6 +95,16 @@ nomination forms have one).
 - No layout shift: keep fixed heights on bars that change content (e.g. `FieldDetailBar`), and check new pages at
   1024px wide (= 150% zoom).
 
+## Joint holders, recognition (04 Nov)
+
+- A form for someone other than the investor sets `"personRole": "joint_holder"` in form-rules.json and its keys get a
+  `joint_holder_` prefix (tools/form-building/joint-holder-keys.mjs, called by every joint generator). Batches share
+  documents per person; a joint holder's documents go in the client folder's "Joint holder" subfolder.
+- Rules, labels and Excel examples ignore the prefix via `toPlainFieldKey` (packages/shared/src/field-validation.js).
+- "Drop a blank PDF" compares against every form's own blank (rare words weigh most); check-forms fails if a blank is
+  not recognised as its own form. No detection phrases to maintain.
+- A form whose sources use no `document.*` is Excel-only: the documents screen lets it go on once the Excel is in.
+
 ## Progress
 
 | # | Form | Form id | Status |
@@ -139,6 +149,10 @@ Work one form at a time: build it fully, then STOP so the user can test it. Only
    text) plus positions re-measured where a page's layout moved. Copy it per fund.
 
 ## Open questions for 360 ONE (don't decide these yourself)
+
+- Product requirement (Tushar, 23 Oct), not a form: store investor-level data once captured and reuse it for later
+  forms of the same investor. Not built yet.
+- See FORMS-CHECKLIST.md notes for the per-form open questions (joint-holder keys, 5.3 table, detection, W-8BEN-E).
 
 - CRN demat: "NRN No." is now an optional typed field; ask 360 ONE where it should come from.
 - GIF 2 and Growth Strategy subscriptions: built from the GBF form's sources, because `VCC & Gift City Form Details.xlsx` was not

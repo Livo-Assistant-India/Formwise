@@ -1,0 +1,37 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the joint holder) - their KYC documents fill the identity fields, the Excel fills the rest.",
+  "formId": "global-bond-fund-joint-opt-in",
+  "group": "VCC",
+  "label": "Global Bond Fund II – Joint holder opt-in",
+  "shortLabel": "GBF joint opt-in",
+  "purpose": "Joint holder · accredited investor opt-in",
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Joint Opt-in confirmation form.pdf",
+  "keyFields": [
+    "Joint holder name"
+  ],
+  "sheetTabName": "GBF joint opt-in",
+  "detectionPhrases": [
+    "OPT - IN CONFIRMATION FORM",
+    "Global Bond Fund – Series II"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Joint holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "p54",
+      "label": "Page 1 · Accredited investor opt-in",
+      "fields": [
+        "joint_holder_name",
+        "joint_holder_form_date"
+      ]
+    }
+  ],
+  "personRole": "joint_holder"
+}

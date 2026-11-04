@@ -1,0 +1,22 @@
+{
+  "_about": "360 ONE Global Bond Fund - Series II - joint holder Opt-in confirmation form. Copy of the subscription agreement's pages for the joint holder (second applicant); positions are the GIF 2 subscription ones (same page layout). Every tick box is its own question with no assumed answer.",
+  "id": "global-bond-fund-joint-opt-in",
+  "title": "360 ONE Global Bond Fund - Series II - Joint holder Opt-in confirmation form",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 54,
+      "y": 596,
+      "w": 196,
+      "h": 22,
+      "signer": "subscriber",
+      "label": "Joint holder - Opt-in confirmation"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Joint Opt-in confirmation form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

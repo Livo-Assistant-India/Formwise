@@ -32,9 +32,21 @@ async function fetchNomineeFieldKeys(formId) {
 }
 
 /** Everything the shared validation (checkForm) and the UI need to know about a form's rules. */
+const DOCUMENT_DETAIL_BY_SOURCE = [
+  [/^document\.name/, "name"], [/^document\.dob/, "dob"],
+  [/^document\.(address|city|state|street|pincode|country)/, "address"], [/^document\.(pan|passport|dl|id|aadhaar)/, "idNumber"],
+];
+/** "document.address_line1" -> "address", "document.pan" -> "idNumber": the identity detail a source needs. */
+const toDocumentDetail = (source) => DOCUMENT_DETAIL_BY_SOURCE.find(([pattern]) => pattern.test(source))?.[1] || null;
+
 export async function fetchFormRules(formId) {
   const { _about: _ignoredAbout, ...formRules } = await readFormJson(formId, "form-rules.json");
-  return { ...formRules, requiredFields: await fetchRequiredFields(formId), nomineeFieldKeys: await fetchNomineeFieldKeys(formId) };
+  // Which identity details this form reads from ID documents (the documents screen checks only those);
+  // none at all = a form filled only from the Excel (e.g. W-8BEN-E), which needs no ID documents to go on.
+  const documentSources = Object.values(await fetchFieldSources(formId)).filter((source) => source.startsWith("document."));
+  const documentDetails = [...new Set(documentSources.map(toDocumentDetail).filter(Boolean))];
+  return { ...formRules, requiredFields: await fetchRequiredFields(formId), nomineeFieldKeys: await fetchNomineeFieldKeys(formId),
+    usesDocuments: documentSources.length > 0, documentDetails };
 }
 
 /** How big a form is, for the forms list: distinct fields (text + tick boxes), how many are required, and the

@@ -125,8 +125,27 @@ export const RULE_TEXT = {
   id_number: "Must match the ticked ID type (PAN / Aadhaar last 4 / passport / DL)",
 };
 
+/** Person-role prefixes on keys of forms filled for someone other than the investor (see forms' "personRole"). */
+export const PERSON_ROLE_KEY_PREFIXES = { joint_holder: "joint_holder_" };
+
+/** The key without its person-role prefix, so a joint holder's field follows the same rules as the investor's:
+ * "joint_holder_dob" -> "dob", "joint_holder_name" -> "subscriber_name". Other keys are returned unchanged. */
+export function toPlainFieldKey(fieldKey) {
+  for (const prefix of Object.values(PERSON_ROLE_KEY_PREFIXES)) {
+    if (!fieldKey.startsWith(prefix)) continue;
+    const plainKey = fieldKey.slice(prefix.length);
+    return /^name(_p\d+)?$/.test(plainKey) ? `subscriber_${plainKey}` : plainKey;
+  }
+  return fieldKey;
+}
+
 export function validatorFor(baseKey) {
-  return VALIDATORS[baseKey] || null;
+  return VALIDATORS[toPlainFieldKey(baseKey)] || null;
+}
+
+/** Plain-language rule for a base key (person-role prefixes ignored), or undefined. */
+export function ruleTextFor(baseKey) {
+  return RULE_TEXT[toPlainFieldKey(baseKey)];
 }
 
 /** validatorFor(), but from a full field key like "name_n1" - strips the _n<nominee> suffix first. */
