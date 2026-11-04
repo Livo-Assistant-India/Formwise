@@ -52,7 +52,9 @@
       "fields": [
         "contact_person",
         "contact_email",
-        "subscriber_name_p3"
+        "subscriber_name_p3",
+        "entity_signatory_name_1",
+        "entity_signatory_name_2"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "_about": "360 ONE Global Investment Fund 2 - Subscription Agreement (Non-US), 63 pages. Made by tools/form-building/make_gif2_subscription.mjs from the GBF form: same boxes, pages moved, Series A-E and changed pages measured on this blank. Every tick box is its own question with no assumed answer.",
+  "_about": "360 ONE Global Investment Fund 2 - Subscription Agreement (Non-US), 63 pages. Made by tools/form-building/make_vcc_subscriptions.mjs from the GBF form; changed pages measured on this blank. Every tick box is its own question with no assumed answer.",
   "id": "global-investment-fund-2-subscription",
   "title": "360 ONE Global Investment Fund 2 - Subscription",
   "labels": [],
@@ -1298,5 +1298,12 @@
   ],
   "blankFileName": "360 ONE Global Investment Fund 2 - Subscription.pdf",
   "nomineeHeaderRe": null,
-  "tickboxRule": "usual"
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 17,
+      "y": 583,
+      "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"
+    }
+  ]
 }

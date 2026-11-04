@@ -675,6 +675,16 @@
     "y": 278.3,
     "fontSize": 11,
     "type": "text"
+   },
+   {
+    "key": "nrn_number",
+    "nominee": null,
+    "page": 1,
+    "x": 458,
+    "y": 138,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 62
    }
   ]
  },
@@ -710,7 +720,8 @@
   "guardian_pan": "typed",
   "guardian_id_type": "tick",
   "second_holder_name": "typed",
-  "third_holder_name": "typed"
+  "third_holder_name": "typed",
+  "nrn_number": "typed"
  },
  "formRules": {
   "formId": "crn-broking-demat",
@@ -757,7 +768,8 @@
      "second_holder_name",
      "third_holder_name",
      "wish_to_nominate",
-     "nominee_id_type"
+     "nominee_id_type",
+     "nrn_number"
     ]
    },
    {
@@ -1478,6 +1490,18 @@
      268.95,
      139.39,
      11
+    ]
+   ]
+  },
+  {
+   "field": "nrn_number",
+   "page": 1,
+   "lines": [
+    [
+     458,
+     132.9,
+     58.45,
+     6
     ]
    ]
   }

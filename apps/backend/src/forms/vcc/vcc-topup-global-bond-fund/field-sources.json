@@ -11,6 +11,8 @@
     "contact_email": "typed",
     "subscriber_name_p3": "copy.subscriber_name",
     "subscriber_name_p4": "copy.subscriber_name",
+    "entity_signatory_name_1": "typed",
+    "entity_signatory_name_2": "typed",
     "series": "tick"
   }
 }

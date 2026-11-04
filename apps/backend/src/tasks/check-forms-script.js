@@ -4,7 +4,8 @@
 //   pnpm check-forms --compare     also compare against the recorded snapshots and list every difference
 // Sanity checks per form: blank PDF exists; every field, tick box and signature box is on a real page and inside
 // it; every field has a source and every source a field; required fields, review sections and copy.X sources point
-// at real fields. Exit code 1 when anything fails, so it can gate a commit.
+// at real fields; every blank on the PDF (underscore line, ☐ box, dotted line) has a field near it, unless the form
+// lists it in "ignoredBlanks" with the reason (e.g. a wire-transfer instruction). Exit code 1 when anything fails.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,6 +14,7 @@ import { PDFDocument } from "pdf-lib";
 import { getFormDefinition, listFormIds } from "../forms/form-registry.js";
 import * as formFiles from "../services/forms/form-files-service.js";
 import { fillTextFields } from "../services/pdf/fill-pdf-service.js";
+import { extractTextItems } from "../services/pdf/pdf-text-service.js";
 
 // Golden files: committed, so any change to what lands on a form shows up in review.
 const SNAPSHOT_DIRECTORY = path.join(path.dirname(fileURLToPath(import.meta.url)), "form-snapshots");
@@ -63,6 +65,28 @@ async function checkForm(formId) {
   for (const fieldKey of formRules.requiredFields) if (!fieldKeys.has(toBaseKey(fieldKey))) problems.push(`required field ${fieldKey} does not exist`);
   for (const section of formRules.reviewSections || []) {
     for (const fieldKey of section.fields) if (!fieldKeys.has(toBaseKey(fieldKey))) problems.push(`review section "${section.label}" lists unknown field ${fieldKey}`);
+  }
+
+  // Every blank printed on the PDF must have a field, tick box or signature box on its line.
+  const BLANK_PATTERN = /_{4,}|☐|\.{8,}/;
+  const spotsByPage = {};
+  const addSpot = (page, y, tolerance) => (spotsByPage[page] ||= []).push({ y, tolerance });
+  for (const field of positions.fields) {
+    addSpot(field.page, field.y, 14);
+    for (const repeat of field.alsoAt || []) addSpot(repeat.page, repeat.y, 14);
+    if (field.maxY) addSpot(field.page, field.maxY, 14);
+  }
+  for (const tickbox of formConfiguration.tickboxes) {
+    for (const boxes of Object.values(tickbox.boxesByOption || {})) for (const box of boxes) addSpot(box.page || tickbox.page, box.y, 14);
+    for (const optionY of Object.values(tickbox.optionY || {})) addSpot(tickbox.page, optionY, 14);
+  }
+  for (const signatureBox of formConfiguration.signatureBoxes || []) addSpot(signatureBox.page, signatureBox.y + signatureBox.h, 25);
+  const ignoredBlanks = formConfiguration.ignoredBlanks || [];
+  for (const textItem of await extractTextItems(formConfiguration.blankFormPath)) {
+    if (!BLANK_PATTERN.test(textItem.text)) continue;
+    const isCovered = (spotsByPage[textItem.page] || []).some((spot) => Math.abs(spot.y - textItem.y) <= spot.tolerance)
+      || ignoredBlanks.some((ignored) => ignored.page === textItem.page && Math.abs(ignored.y - textItem.y) <= 6);
+    if (!isCovered) problems.push(`blank not covered: page ${textItem.page}, y ${Math.round(textItem.y)}: "${textItem.text.trim().slice(0, 50)}"`);
   }
 
   // Where every value lands when each field gets a sample value - what the engine actually draws.

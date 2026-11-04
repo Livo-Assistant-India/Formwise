@@ -102,6 +102,26 @@
       "fontSize": 10,
       "type": "text",
       "maxWidth": 430
+    },
+    {
+      "key": "entity_signatory_name_1",
+      "nominee": null,
+      "page": 3,
+      "x": 147,
+      "y": 387.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 96
+    },
+    {
+      "key": "entity_signatory_name_2",
+      "nominee": null,
+      "page": 3,
+      "x": 368,
+      "y": 387.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 64
     }
   ]
 }

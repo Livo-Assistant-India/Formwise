@@ -1297,12 +1297,19 @@
     }
    }
   ],
+  "ignoredBlanks": [
+   {
+    "page": 17,
+    "y": 583,
+    "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"
+   }
+  ],
   "labels": [],
   "blankFileName": "360 ONE Global Investment Fund 2 - Subscription.pdf",
   "nomineeHeaderRe": "/(?!)/"
  },
  "positions": {
-  "_about": "Where each value is written on the blank GIF 2 Subscription Agreement (Non-US), 63 pages. Made by tools/form-building/make_gif2_subscription.mjs from the GBF form (same document, pages moved).",
+  "_about": "Where each value is written on the blank 360 ONE Global Investment Fund 2 Subscription Agreement (Non-US), 63 pages. Made by tools/form-building/make_vcc_subscriptions.mjs from the GBF form.",
   "formId": "global-investment-fund-2-subscription",
   "title": "360 ONE Global Investment Fund 2 - Subscription",
   "fields": [

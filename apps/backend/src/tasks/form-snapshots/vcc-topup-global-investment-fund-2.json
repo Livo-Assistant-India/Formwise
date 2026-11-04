@@ -22,6 +22,31 @@
     "h": 19,
     "signer": "subscriber",
     "label": "Subscriber signature"
+   },
+   {
+    "page": 3,
+    "x": 135,
+    "y": 318,
+    "w": 100,
+    "h": 18,
+    "signer": "entity",
+    "label": "Entity signatory 1"
+   },
+   {
+    "page": 3,
+    "x": 373,
+    "y": 318,
+    "w": 70,
+    "h": 18,
+    "signer": "entity",
+    "label": "Entity signatory 2"
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 4,
+    "y": 699,
+    "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"
    }
   ],
   "tickboxes": [
@@ -179,6 +204,26 @@
     "fontSize": 10,
     "type": "text",
     "maxWidth": 430
+   },
+   {
+    "key": "entity_signatory_name_1",
+    "nominee": null,
+    "page": 3,
+    "x": 147,
+    "y": 387.7,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 96
+   },
+   {
+    "key": "entity_signatory_name_2",
+    "nominee": null,
+    "page": 3,
+    "x": 368,
+    "y": 387.7,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 64
    }
   ]
  },
@@ -193,6 +238,8 @@
   "contact_email": "typed",
   "subscriber_name_p3": "copy.subscriber_name",
   "subscriber_name_p4": "copy.subscriber_name",
+  "entity_signatory_name_1": "typed",
+  "entity_signatory_name_2": "typed",
   "series": "tick"
  },
  "formRules": {
@@ -247,7 +294,9 @@
     "fields": [
      "contact_person",
      "contact_email",
-     "subscriber_name_p3"
+     "subscriber_name_p3",
+     "entity_signatory_name_1",
+     "entity_signatory_name_2"
     ]
    },
    {
@@ -384,6 +433,30 @@
      584.7,
      136.87,
      10
+    ]
+   ]
+  },
+  {
+   "field": "entity_signatory_name_1",
+   "page": 3,
+   "lines": [
+    [
+     147,
+     382.6,
+     93.22,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "entity_signatory_name_2",
+   "page": 3,
+   "lines": [
+    [
+     368,
+     382.6,
+     93.22,
+     6
     ]
    ]
   }

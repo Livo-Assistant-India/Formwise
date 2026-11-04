@@ -9,15 +9,15 @@ VCC = "C:/zzz/demo/VCC/"
 FORMS = [
     dict(id="vcc-topup-global-bond-fund", const="VCC_TOPUP_GLOBAL_BOND_FUND", fund="360 ONE Global Bond Fund - Series II",
          short="GBF top-up", label="Global Bond Fund II – Top-up", source="360 ONE Global Bond Fund Series - II/360 ONE Global Bond Fund - Series II - Additional Subscription Agreement - 04.07.25.pdf",
-         dateY=681.2, noteY=578.2, series="ticks",
+         dateY=681.2, noteY=578.2, wireNoteY=699, series="ticks",
          seriesBoxes={"Series A (ISIN SGXZ51510022)": (499.7, 373.9), "Series B (ISIN SGXZ73357493)": (499.5, 401.7)}, box=(7.0, 11.3)),
     dict(id="vcc-topup-global-investment-fund-2", const="VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2", fund="360 ONE Global Investment Fund 2",
          short="GIF 2 top-up", label="Global Investment Fund 2 – Top-up", source="360 ONE Global Investment Fund 2/360 ONE Global Investment Fund 2 - Additional Subscription Agreement (Non-US) - 06.10.25.pdf",
-         dateY=681.2, noteY=578.2, series="ticks",
+         dateY=681.2, noteY=578.2, wireNoteY=699, series="ticks",
          seriesBoxes={f"Series {s}": (297.0, y) for s, y in zip("ABCDE", (375.4, 400.4, 427.7, 455.1, 482.5))}, box=(9.0, 9.96)),
     dict(id="vcc-topup-international-opportunities-fund", const="VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND", fund="360 ONE International Opportunities Fund",
          short="IOF top-up", label="International Opportunities Fund – Top-up", source="360 ONE International Opportunities Fund/360 ONE International Opportunities Fund - Additional Subscription Agreement.pdf",
-         dateY=667.8, noteY=539.7, series="typed"),
+         dateY=667.8, noteY=539.7, wireNoteY=661, series="typed"),
 ]
 
 def text(key, page, x, y, width, size=10):
@@ -40,12 +40,16 @@ for form in FORMS:
         text("contact_email", 3, 214, 107.5, 222),
         text("subscriber_name_p3", 3, 178, 240, 168),
         text("subscriber_name_p4", 4, 88, form["noteY"] + 15, 430),
+        # Page 3 "For entities" block: two authorised signatories (left and right), empty for individuals.
+        text("entity_signatory_name_1", 3, 147, 387.7, 96),
+        text("entity_signatory_name_2", 3, 368, 387.7, 64),
     ]
     sources = {
         "initial_sales_charge": "typed", "form_date": "today", "subscriber_name": "document.name|upper",
         "topup_amount_usd": "typed", "application_date": "typed", "funds_wired_date": "typed",
         "contact_person": "typed", "contact_email": "typed",
         "subscriber_name_p3": "copy.subscriber_name", "subscriber_name_p4": "copy.subscriber_name",
+        "entity_signatory_name_1": "typed", "entity_signatory_name_2": "typed",
     }
     page1 = ["initial_sales_charge", "series", "form_date"]
     tickboxes = []
@@ -79,7 +83,7 @@ for form in FORMS:
         "reviewSections": [
             {"key": "p1", "label": "Page 1 · Investment", "fields": page1},
             {"key": "p2", "label": "Page 2 · Subscription details", "fields": ["subscriber_name", "topup_amount_usd", "application_date", "funds_wired_date"]},
-            {"key": "p3", "label": "Page 3 · Contact and signatory", "fields": ["contact_person", "contact_email", "subscriber_name_p3"]},
+            {"key": "p3", "label": "Page 3 · Contact and signatory", "fields": ["contact_person", "contact_email", "subscriber_name_p3", "entity_signatory_name_1", "entity_signatory_name_2"]},
             {"key": "p4", "label": "Page 4 · Payment instructions", "fields": ["subscriber_name_p4"]},
         ],
     }, open(folder + "/form-rules.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
@@ -90,7 +94,11 @@ for form in FORMS:
         "signatureBoxes": [
             {"page": 1, "x": 384, "y": 289, "w": 178, "h": 16, "signer": "subscriber", "label": "Investor signature"},
             {"page": 3, "x": 175, "y": 196, "w": 175, "h": 19, "signer": "subscriber", "label": "Subscriber signature"},
+            {"page": 3, "x": 135, "y": 318, "w": 100, "h": 18, "signer": "entity", "label": "Entity signatory 1"},
+            {"page": 3, "x": 373, "y": 318, "w": 70, "h": 18, "signer": "entity", "label": "Entity signatory 2"},
         ],
+        # Printed instructions for the bank wire, not blanks to fill.
+        "ignoredBlanks": [{"page": 4, "y": form["wireNoteY"], "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"}],
         "tickboxes": tickboxes, "blankFileName": blank, "nomineeHeaderRe": None, "tickboxRule": "usual",
     }, open(folder + "/form-configuration.json", "w", encoding="utf-8"), indent=2)
     print("wrote", form["id"])

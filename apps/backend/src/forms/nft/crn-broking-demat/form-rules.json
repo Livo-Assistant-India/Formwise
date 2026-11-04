@@ -44,7 +44,8 @@
         "second_holder_name",
         "third_holder_name",
         "wish_to_nominate",
-        "nominee_id_type"
+        "nominee_id_type",
+        "nrn_number"
       ]
     },
     {

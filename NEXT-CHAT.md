@@ -64,7 +64,7 @@ Steps:
 2. Measure: `python -I tools/form-building/measure.py "<pdf>" 1,2,3 --draw` (every text line and drawn box).
 3. Make the folder. For a family of near-identical forms, write or extend a generator instead of hand-copying:
    - `tools/form-building/make_topups.py`: VCC top-ups.
-   - `tools/form-building/make_gif2_subscription.mjs`: a subscription from the GBF one, with a page map (pages
+   - `tools/form-building/make_vcc_subscriptions.mjs`: a subscription from the GBF one, with a page map (pages
      matched by text) and re-measured positions where a page moved. Copy it per fund.
    Change the generator, not its output: re-running it overwrites the folder.
 4. `pnpm check-forms`: every form must say `ok` (blank exists, every spot inside a real page, every field has a
@@ -107,11 +107,11 @@ nomination forms have one).
 | 3 | GBF Series II Additional Subscription (top-up) | `vcc-topup-global-bond-fund` | Done, verified |
 | 4 | Global Investment Fund 2 Additional Subscription | `vcc-topup-global-investment-fund-2` | Done, verified |
 | 5 | International Opportunities Fund Additional Subscription | `vcc-topup-international-opportunities-fund` | Done, verified |
-| 6 | Global Investment Fund 2 Subscription Agreement (Non-US), 63 pages | `global-investment-fund-2-subscription` | Built + test-filled; waiting for the user's test |
+| 6 | Global Investment Fund 2 Subscription Agreement (Non-US), 63 pages | `global-investment-fund-2-subscription` | Built, test-filled, UI-tested; waiting for the user's test |
+| 7 | Growth Strategy Fund Subscription Agreement (Non-US), 65 pages | `growth-strategy-fund-subscription` | Built, test-filled, UI-tested; waiting for the user's test |
 
 **Still to do, VCC** (files in `C:\zzz\demo\VCC`):
 - Subscription Agreement (Non-US):
-  - Growth Strategy Fund (65 pages)
   - International Opportunities Fund (65 pages)
   - Check that the existing Global Bond Fund form matches their new 63-page file dated 04.07.25.
 - Subscription Agreement (US):
@@ -134,13 +134,14 @@ nomination forms have one).
 
 Work one form at a time: build it fully, then STOP so the user can test it. Only move on once they say it works.
 
-1. Growth Strategy Fund, then International Opportunities Fund subscriptions, the same way as GIF 2:
-   `tools/form-building/make_gif2_subscription.mjs` makes a form from the GBF one with a page map (pages matched by
+1. International Opportunities Fund subscription, the same way as GIF 2 and Growth Strategy (add a block to FUNDS):
+   `tools/form-building/make_vcc_subscriptions.mjs` makes a form from the GBF one with a page map (pages matched by
    text) plus positions re-measured where a page's layout moved. Copy it per fund.
 
 ## Open questions for 360 ONE (don't decide these yourself)
 
-- GIF 2 subscription: built from the GBF form's sources, because `VCC & Gift City Form Details.xlsx` was not
+- CRN demat: "NRN No." is now an optional typed field; ask 360 ONE where it should come from.
+- GIF 2 and Growth Strategy subscriptions: built from the GBF form's sources, because `VCC & Gift City Form Details.xlsx` was not
   on disk. Check every source against the sheet's GIF 2 tab when the user shares it again. Page 50 (Opt-In
   Confirmation, different from GBF's page 54) fills Client Name and Name from the subscriber name, and Date = today.
 

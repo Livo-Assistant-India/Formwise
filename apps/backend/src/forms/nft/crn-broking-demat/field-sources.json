@@ -32,6 +32,7 @@
     "guardian_pan": "typed",
     "guardian_id_type": "tick",
     "second_holder_name": "typed",
-    "third_holder_name": "typed"
+    "third_holder_name": "typed",
+    "nrn_number": "typed"
   }
 }

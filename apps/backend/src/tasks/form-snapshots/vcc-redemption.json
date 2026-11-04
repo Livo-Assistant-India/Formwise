@@ -13,6 +13,33 @@
     "h": 32,
     "signer": "subscriber",
     "label": "Shareholder's signature"
+   },
+   {
+    "page": 1,
+    "x": 331,
+    "y": 776,
+    "w": 56,
+    "h": 14,
+    "signer": "subscriber",
+    "label": "Investor initials (page 1)"
+   },
+   {
+    "page": 2,
+    "x": 312,
+    "y": 776,
+    "w": 56,
+    "h": 14,
+    "signer": "subscriber",
+    "label": "Investor initials (page 2)"
+   },
+   {
+    "page": 3,
+    "x": 312,
+    "y": 776,
+    "w": 56,
+    "h": 14,
+    "signer": "subscriber",
+    "label": "Investor initials (page 3)"
    }
   ],
   "tickboxes": [
@@ -39,6 +66,13 @@
       }
      ]
     }
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 2,
+    "y": 150,
+    "why": "Second underline of the sub-fund name; every 360 ONE sub-fund name fits on the first line (440pt)"
    }
   ],
   "labels": [],

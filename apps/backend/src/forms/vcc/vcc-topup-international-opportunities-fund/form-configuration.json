@@ -21,6 +21,31 @@
       "h": 19,
       "signer": "subscriber",
       "label": "Subscriber signature"
+    },
+    {
+      "page": 3,
+      "x": 135,
+      "y": 318,
+      "w": 100,
+      "h": 18,
+      "signer": "entity",
+      "label": "Entity signatory 1"
+    },
+    {
+      "page": 3,
+      "x": 373,
+      "y": 318,
+      "w": 70,
+      "h": 18,
+      "signer": "entity",
+      "label": "Entity signatory 2"
+    }
+  ],
+  "ignoredBlanks": [
+    {
+      "page": 4,
+      "y": 661,
+      "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"
     }
   ],
   "tickboxes": [],
