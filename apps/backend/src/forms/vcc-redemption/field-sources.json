@@ -1,0 +1,24 @@
+{
+  "_about": "Same conventions as global-bond-fund-subscription. Sources follow the 'Redemption Form' sheet of VCC & Gift City Form Details.xlsx. Bank fields are typed (the app does not read bank documents yet). registered_names / registered_address: the sheet says 'check' - copied from the print name / mailing address until 360 ONE clarifies.",
+  "fieldSources": {
+    "form_date": "today",
+    "sub_fund_name": "typed",
+    "redemption_type": "tick",
+    "shares_to_redeem": "typed",
+    "redemption_amount_usd": "typed",
+    "registered_names": "copy.subscriber_name",
+    "registered_address": "copy.mailing_address",
+    "bank_name": "typed",
+    "bank_address": "typed",
+    "account_name": "copy.subscriber_name",
+    "account_number": "typed",
+    "iban": "typed",
+    "swift_code": "typed",
+    "intermediary_bank_name": "typed",
+    "correspondent_swift_code": "typed",
+    "chip_uid": "typed",
+    "aba_code": "typed",
+    "subscriber_name": "document.name|upper",
+    "mailing_address": "document.address|withoutCareOf|upper"
+  }
+}

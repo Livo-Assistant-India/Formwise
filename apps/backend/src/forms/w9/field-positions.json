@@ -1,0 +1,74 @@
+{
+  "_about": "Where each value is written on the blank IRS Form W-9 (Rev. March 2024): positions from the form's own fill-in boxes (top-left origin, y = baseline).",
+  "formId": "w9",
+  "title": "Form W-9",
+  "fields": [
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 1,
+      "x": 61,
+      "y": 128.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 510
+    },
+    {
+      "key": "us_address",
+      "nominee": null,
+      "page": 1,
+      "x": 61,
+      "y": 296.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 322
+    },
+    {
+      "key": "us_city_state_zip",
+      "nominee": null,
+      "page": 1,
+      "x": 61,
+      "y": 320.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 322
+    },
+    {
+      "key": "ssn",
+      "nominee": null,
+      "page": 1,
+      "x": 417.6,
+      "y": 389,
+      "fontSize": 12,
+      "type": "text",
+      "maxWidth": 158,
+      "combs": [
+        [
+          417.6,
+          43.2,
+          3
+        ],
+        [
+          475.2,
+          28.8,
+          2
+        ],
+        [
+          518.4,
+          57.6,
+          4
+        ]
+      ]
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 405,
+      "y": 594,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 170
+    }
+  ]
+}

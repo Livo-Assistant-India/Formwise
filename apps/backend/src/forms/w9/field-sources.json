@@ -1,0 +1,10 @@
+{
+  "_about": "Sources follow the 'W9BEN (US)' sheet of VCC & Gift City Form Details.xlsx: name from KYC (passport); address, city/state/ZIP and SSN have no source in the sheet, so they are typed (Excel) until 360 ONE says otherwise.",
+  "fieldSources": {
+    "subscriber_name": "document.name|upper",
+    "us_address": "typed",
+    "us_city_state_zip": "typed",
+    "ssn": "typed",
+    "form_date": "today|monthFirst"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE Global Bond Fund - Series II Additional Subscription Form (top-left origin, y = baseline), measured from its underscore lines.",
+  "formId": "vcc-topup-global-bond-fund",
+  "title": "360 ONE Global Bond Fund - Series II - Additional Subscription",
+  "fields": [
+    {
+      "key": "initial_sales_charge",
+      "nominee": null,
+      "page": 1,
+      "x": 386,
+      "y": 237.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 20
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 113,
+      "y": 679.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 74
+    },
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 2,
+      "x": 183,
+      "y": 537,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 330
+    },
+    {
+      "key": "topup_amount_usd",
+      "nominee": null,
+      "page": 2,
+      "x": 266,
+      "y": 590.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 248
+    },
+    {
+      "key": "application_date",
+      "nominee": null,
+      "page": 2,
+      "x": 300,
+      "y": 644.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 216
+    },
+    {
+      "key": "funds_wired_date",
+      "nominee": null,
+      "page": 2,
+      "x": 172,
+      "y": 685,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "contact_person",
+      "nominee": null,
+      "page": 3,
+      "x": 219,
+      "y": 80.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 216
+    },
+    {
+      "key": "contact_email",
+      "nominee": null,
+      "page": 3,
+      "x": 214,
+      "y": 107.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 222
+    },
+    {
+      "key": "subscriber_name_p3",
+      "nominee": null,
+      "page": 3,
+      "x": 178,
+      "y": 240,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 168
+    },
+    {
+      "key": "subscriber_name_p4",
+      "nominee": null,
+      "page": 4,
+      "x": 88,
+      "y": 593.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 430
+    }
+  ]
+}

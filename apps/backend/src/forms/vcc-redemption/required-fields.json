@@ -1,0 +1,4 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": ["sub_fund_name", "redemption_type", "shares_to_redeem", "bank_name", "account_name", "account_number", "swift_code", "subscriber_name", "mailing_address"]
+}

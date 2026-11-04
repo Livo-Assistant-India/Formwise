@@ -1,0 +1,17 @@
+{
+  "_about": "Sources follow the 'Top Up Form' sheet of VCC & Gift City Form Details.xlsx: subscriber name from KYC (passport) / original subscription; everything the RM provides is typed (Excel); the date is today. subscriber_name_p4 = the payment-instruction line 'From the Account of <Subscriber Name>', written under it.",
+  "fieldSources": {
+    "initial_sales_charge": "typed",
+    "form_date": "today",
+    "subscriber_name": "document.name|upper",
+    "topup_amount_usd": "typed",
+    "application_date": "typed",
+    "funds_wired_date": "typed",
+    "contact_person": "typed",
+    "contact_email": "typed",
+    "subscriber_name_p3": "copy.subscriber_name",
+    "subscriber_name_p4": "copy.subscriber_name",
+    "series": "typed",
+    "isin": "typed"
+  }
+}

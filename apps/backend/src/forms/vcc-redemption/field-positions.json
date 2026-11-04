@@ -1,0 +1,192 @@
+{
+  "_about": "Where each value is written on the blank Common Redemption Form (top-left origin, y = text baseline), measured from its labels and table cells.",
+  "formId": "vcc-redemption",
+  "title": "360 ONE Alternatives VCC - Redemption Request",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 122,
+      "y": 584,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 90
+    },
+    {
+      "key": "sub_fund_name",
+      "nominee": null,
+      "page": 2,
+      "x": 74,
+      "y": 134.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 440
+    },
+    {
+      "key": "shares_to_redeem",
+      "nominee": null,
+      "page": 2,
+      "x": 196,
+      "y": 362,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 320,
+      "maxY": 410
+    },
+    {
+      "key": "redemption_amount_usd",
+      "nominee": null,
+      "page": 2,
+      "x": 196,
+      "y": 430,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 320
+    },
+    {
+      "key": "registered_names",
+      "nominee": null,
+      "page": 2,
+      "x": 232,
+      "y": 660,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 288,
+      "maxY": 696
+    },
+    {
+      "key": "registered_address",
+      "nominee": null,
+      "page": 2,
+      "x": 232,
+      "y": 714,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 288,
+      "maxY": 750
+    },
+    {
+      "key": "bank_name",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 97.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "bank_address",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 112,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 288,
+      "maxY": 139
+    },
+    {
+      "key": "account_name",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 152.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 166.9,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "iban",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 181.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "swift_code",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 208.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "intermediary_bank_name",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 250.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "correspondent_swift_code",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 264.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "chip_uid",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 278.9,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "aba_code",
+      "nominee": null,
+      "page": 3,
+      "x": 232,
+      "y": 292.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 3,
+      "x": 132,
+      "y": 644.3,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 380
+    },
+    {
+      "key": "mailing_address",
+      "nominee": null,
+      "page": 3,
+      "x": 148,
+      "y": 697.8,
+      "fontSize": 9,
+      "type": "multiline",
+      "maxWidth": 370,
+      "maxY": 760
+    }
+  ]
+}

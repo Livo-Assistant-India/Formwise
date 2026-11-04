@@ -8,11 +8,20 @@ import { CRN_BROKING_DEMAT_FORM_CONFIGURATION } from "./crn-broking-demat/form-c
 import { CAMS_NOMINATION_FORM_CONFIGURATION } from "./cams-nomination/form-configuration.js";
 import { GLOBAL_BOND_FUND_SUBSCRIPTION_FORM_CONFIGURATION } from "./global-bond-fund-subscription/form-configuration.js";
 import { W8BEN_FORM_CONFIGURATION } from "./w8ben/form-configuration.js";
+import { W9_FORM_CONFIGURATION } from "./w9/form-configuration.js";
+import { VCC_TOPUP_GLOBAL_BOND_FUND_FORM_CONFIGURATION } from "./vcc-topup-global-bond-fund/form-configuration.js";
+import { VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2_FORM_CONFIGURATION } from "./vcc-topup-global-investment-fund-2/form-configuration.js";
+import { VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND_FORM_CONFIGURATION } from "./vcc-topup-international-opportunities-fund/form-configuration.js";
+import { VCC_REDEMPTION_FORM_CONFIGURATION } from "./vcc-redemption/form-configuration.js";
 import { applyCrnBrokingDematTickboxes, applyCamsNominationTickboxes, applyOptionTickboxes } from "../services/forms/tickbox-rules-service.js";
 
 export const FORM_IDS = {
   CRN_BROKING_DEMAT: "crn-broking-demat", CAMS_NOMINATION: "cams-nomination",
   GLOBAL_BOND_FUND_SUBSCRIPTION: "global-bond-fund-subscription", W8BEN: "w8ben",
+  VCC_REDEMPTION: "vcc-redemption", W9: "w9",
+  VCC_TOPUP_GLOBAL_BOND_FUND: "vcc-topup-global-bond-fund",
+  VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2: "vcc-topup-global-investment-fund-2",
+  VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND: "vcc-topup-international-opportunities-fund",
 };
 const applyUsualAnswerTickboxes = (pages, formConfiguration, tickboxContext) => applyOptionTickboxes(pages, formConfiguration, { overrides: tickboxContext.overrides });
 
@@ -25,6 +34,11 @@ const FORM_DEFINITIONS = {
   },
   [FORM_IDS.GLOBAL_BOND_FUND_SUBSCRIPTION]: { formConfiguration: GLOBAL_BOND_FUND_SUBSCRIPTION_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
   [FORM_IDS.W8BEN]: { formConfiguration: W8BEN_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
+  [FORM_IDS.VCC_TOPUP_GLOBAL_BOND_FUND]: { formConfiguration: VCC_TOPUP_GLOBAL_BOND_FUND_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
+  [FORM_IDS.VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2]: { formConfiguration: VCC_TOPUP_GLOBAL_INVESTMENT_FUND_2_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
+  [FORM_IDS.VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND]: { formConfiguration: VCC_TOPUP_INTERNATIONAL_OPPORTUNITIES_FUND_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
+  [FORM_IDS.W9]: { formConfiguration: W9_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
+  [FORM_IDS.VCC_REDEMPTION]: { formConfiguration: VCC_REDEMPTION_FORM_CONFIGURATION, applyTickboxes: applyUsualAnswerTickboxes },
   [FORM_IDS.CAMS_NOMINATION]: {
     formConfiguration: CAMS_NOMINATION_FORM_CONFIGURATION,
     applyTickboxes: (pages, formConfiguration, tickboxContext) => applyCamsNominationTickboxes(pages, formConfiguration, {
