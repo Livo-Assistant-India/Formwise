@@ -19,17 +19,17 @@ Legend: ✅ done · ⏳ in progress · ⬜ not started · ❓ waiting on the use
 | Form | Form id | Built | Blanks | Test fill | UI test | Sheet | User OK |
 |------|---------|:-----:|:------:|:---------:|:-------:|:-----:|:-------:|
 | Global Bond Fund II – Subscription (Non-US) | `global-bond-fund-subscription` | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
-| Global Bond Fund II – Top-up | `vcc-topup-global-bond-fund` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
+| Global Bond Fund II – Top-up | `vcc-topup-global-bond-fund` | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ |
 | Global Investment Fund 2 – Subscription (Non-US) | `global-investment-fund-2-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
-| Global Investment Fund 2 – Top-up | `vcc-topup-global-investment-fund-2` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
-| International Opportunities Fund – Top-up | `vcc-topup-international-opportunities-fund` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
-| VCC – Redemption | `vcc-redemption` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
-| W-9 | `w9` | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ |
+| Global Investment Fund 2 – Top-up | `vcc-topup-global-investment-fund-2` | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ |
+| International Opportunities Fund – Top-up | `vcc-topup-international-opportunities-fund` | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ |
+| VCC – Redemption | `vcc-redemption` | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ |
+| W-9 | `w9` | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ |
 | W-8BEN – Individual | `w8ben` | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | Growth Strategy Fund – Subscription (Non-US) | `growth-strategy-fund-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | International Opportunities Fund – Subscription (Non-US) | `international-opportunities-fund-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
-| Global Bond Fund II – Subscription (US), 125 pages | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| India Equity Fund – Subscription (US), 121 pages | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Global Bond Fund II – Subscription (US), 125 pages | `global-bond-fund-us-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ❓ |
+| India Equity Fund – Subscription (US), 121 pages | `india-equity-fund-us-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ❓ |
 | W-8BEN-E (entities) | `w8ben-e` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | GIF 2 Joint Holder Declaration | `global-investment-fund-2-joint-holder` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | Growth Strategy Fund – Additional Declaration (joint) | `growth-strategy-fund-joint-investor` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
@@ -38,7 +38,7 @@ Legend: ✅ done · ⏳ in progress · ⬜ not started · ❓ waiting on the use
 | GBF joint holder – PEP declaration | `global-bond-fund-joint-pep` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | GBF joint holder – Singapore tax | `global-bond-fund-joint-singapore-tax` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
 | GBF joint holder – Self-certification | `global-bond-fund-joint-self-certification` | ✅ | ✅ | ✅ | ✅ | ❓ | ❓ |
-| Investor Profiler (Excel output, not a PDF) | – | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Investor Profiler (Excel output, not a PDF) | `investor-profile` | ✅ | ✅ | ✅ | ⬜ | ❓ | ❓ |
 | Dynamic Equity Allocator Fund – Subscription and Top-up | – | ❓ | | | | | |
 | Growth Strategy Fund – Top-up | – | ❓ | | | | | |
 
@@ -56,8 +56,15 @@ Notes:
 - Joint holder / joint investor forms (decided 04 Nov): their fields are `joint_holder_…` (one Excel row carries the
   investor and the joint holder), and in a batch they read the client folder's "Joint holder" subfolder, never the
   investor's documents (form-rules `"personRole": "joint_holder"`).
-- GBF subscription is built on the older 65-page demo blank; 360 ONE's current file (04.07.25, 63 pages) differs. Rebuild
-  it on their current file (then the other subscriptions, made from it, must be re-checked with check-forms --compare).
+- GBF subscription rebuilt (05 Nov) on 360 ONE's current file (04.07.25, 63 pages). All four VCC subscriptions are now
+  generated from one template, tools/form-building/vcc-subscription-base/ (the old 65-page GBF mapping).
+- Investor Profiler (05 Nov): fills a copy of their Excel template cell by cell (`outputType: "xlsx"`). Only name, address,
+  date of birth and passport come from documents; everything else is typed until the field sheet is back. Form setup lists
+  its cells instead of page boxes. Test fill checked cell by cell; the in-app test with documents is still to do.
+- US subscriptions (05 Nov): both made by tools/form-building/make_vcc_us_subscriptions.mjs (GBF US measured, IEF US by page
+  map). Open with 360 ONE: blanks missing boxes (GBF Annex 3 B1-B3, Annex 5 J9, CFIUS 3.5); FATCA "regularly traded" box
+  comes pre-ticked on the blank; initials vs ticks on "initial one" items; whether K-1 consent (GBF p118) is signed by
+  default; telephone uses the Indian mobile check; no US tabs in the field sheet, so non-KYC fields are typed.
 - Dynamic Equity Allocator Fund, Growth Strategy Fund top-up: no files received yet.
 
 ## GIFT City

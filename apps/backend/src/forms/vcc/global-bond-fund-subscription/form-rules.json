@@ -5,16 +5,16 @@
   "label": "Global Bond Fund II – Subscription",
   "shortLabel": "GBF subscription",
   "purpose": "New investment · non-US investors",
-  "blankFileName": "360 ONE Global Bond Fund - Series II.pdf",
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Subscription.pdf",
   "keyFields": [
     "Subscription amount",
     "Subscriber name",
     "Bank account"
   ],
-  "sheetTabName": "Global Bond Fund",
+  "sheetTabName": "GBF subscription",
   "detectionPhrases": [
-    "360 ONE ALTERNATIVES VCC",
-    "SUBSCRIPTION FORM FOR NON"
+    "360 ONE Global Bond Fund - Series II",
+    "Subscription Agreement for"
   ],
   "supportedNomineeCount": 1,
   "personLabel": "Subscriber",
@@ -37,16 +37,16 @@
     },
     {
       "key": "p16",
-      "label": "Page 16 · Agreement signed",
+      "label": "Page 15 · Agreement signed",
       "fields": [
-        "subscriber_name_p16",
-        "form_date_p16",
+        "subscriber_name_p15",
+        "form_date_p15",
         "place"
       ]
     },
     {
       "key": "p17-subscriber",
-      "label": "Page 17 · Subscriber (KYC + Excel)",
+      "label": "Page 16 · Subscriber (KYC + Excel)",
       "fields": [
         "subscriber_name",
         "subscriber_address",
@@ -58,7 +58,7 @@
     },
     {
       "key": "p17-bank",
-      "label": "Page 17 · Bank account (Excel)",
+      "label": "Page 16 · Bank account (Excel)",
       "fields": [
         "bank_name",
         "bank_address",
@@ -74,7 +74,7 @@
     },
     {
       "key": "p27",
-      "label": "Page 27 · Account holder (KYC)",
+      "label": "Page 26 · Account holder (KYC)",
       "fields": [
         "title",
         "surname",
@@ -95,13 +95,13 @@
     },
     {
       "key": "p28",
-      "label": "Page 28 · Tax residency (KYC)",
+      "label": "Page 27 · Tax residency (KYC)",
       "fields": [
         "tax_residence_country",
         "tax_reference_type",
         "tax_reference_number",
-        "subscriber_name_p28",
-        "form_date_p28",
+        "subscriber_name_p27",
+        "form_date_p27",
         "tax_residence_country_2",
         "tax_reference_type_2",
         "tax_reference_number_2",
@@ -114,7 +114,7 @@
     },
     {
       "key": "p31",
-      "label": "Page 31 · Entity details (entities only)",
+      "label": "Page 30 · Entity details (entities only)",
       "fields": [
         "entity_legal_name",
         "entity_country_of_incorporation",
@@ -132,7 +132,7 @@
     },
     {
       "key": "p32",
-      "label": "Pages 32-36 · Entity tax status (entities only)",
+      "label": "Pages 31-35 · Entity tax status (entities only)",
       "fields": [
         "entity_specified_us_person",
         "entity_us_person_not_specified",
@@ -196,7 +196,7 @@
     },
     {
       "key": "p37",
-      "label": "Page 37 · Entity signatories (entities only)",
+      "label": "Page 36 · Entity signatories (entities only)",
       "fields": [
         "entity_signatory_1_title",
         "entity_signatory_2_title",
@@ -206,7 +206,7 @@
     },
     {
       "key": "p38",
-      "label": "Page 38 · Controlling person (entities only)",
+      "label": "Page 37 · Controlling person (entities only)",
       "fields": [
         "cp_surname",
         "cp_given_name",
@@ -227,7 +227,7 @@
     },
     {
       "key": "p39",
-      "label": "Page 39 · Controlling person tax (entities only)",
+      "label": "Page 38 · Controlling person tax (entities only)",
       "fields": [
         "controlling_person_us_status",
         "cp_us_tin",
@@ -245,7 +245,7 @@
     },
     {
       "key": "p41",
-      "label": "Page 41 · Controlling person signed",
+      "label": "Page 40 · Controlling person signed",
       "fields": [
         "cp_print_name",
         "cp_signed_date",
@@ -254,17 +254,15 @@
     },
     {
       "key": "p54",
-      "label": "Page 54 · Accredited investor consent",
+      "label": "Page 50 · Accredited investor opt-in",
       "fields": [
-        "subscriber_name_p54",
-        "form_date_p54",
-        "authorised_signatory_name_p54",
-        "authorised_signatory_designation_p54"
+        "subscriber_name_p50",
+        "form_date_p50"
       ]
     },
     {
       "key": "p57",
-      "label": "Page 57 · Singapore tax status",
+      "label": "Page 54 · Singapore tax status",
       "fields": [
         "beneficial_owner",
         "singapore_tax_status",
@@ -276,7 +274,7 @@
     },
     {
       "key": "p58",
-      "label": "Pages 58-59 · Singapore tax (non-individual owner)",
+      "label": "Pages 55-56 · Singapore tax (non-individual owner)",
       "fields": [
         "sg_entity_category",
         "sg_entity_q1_tax_resident",
@@ -290,7 +288,7 @@
     },
     {
       "key": "p62",
-      "label": "Page 62 · Tax offences 1(a)-(e)",
+      "label": "Page 59 · Tax offences 1(a)-(e)",
       "fields": [
         "tax_offence_1a",
         "tax_offence_1b",
@@ -301,7 +299,7 @@
     },
     {
       "key": "p63",
-      "label": "Page 63 · Tax offences 1(f)-3, Part II",
+      "label": "Page 60 · Tax offences 1(f)-3, Part II",
       "fields": [
         "tax_offence_1f",
         "tax_offence_1g",
@@ -317,21 +315,21 @@
     },
     {
       "key": "p64",
-      "label": "Page 64 · Tax offences signed",
+      "label": "Page 61 · Tax offences signed",
       "fields": [
-        "subscriber_name_p64",
-        "form_date_p64",
-        "authorised_signatory_name_p64",
-        "authorised_signatory_designation_p64"
+        "subscriber_name_p61",
+        "form_date_p61",
+        "authorised_signatory_name_p61",
+        "authorised_signatory_designation_p61"
       ]
     },
     {
       "key": "p65",
-      "label": "Page 65 · Politically exposed person",
+      "label": "Page 62 · Politically exposed person",
       "fields": [
         "pep_status",
-        "subscriber_name_p65",
-        "form_date_p65",
+        "subscriber_name_p62",
+        "form_date_p62",
         "pep_details_1",
         "pep_details_2",
         "pep_details_3",

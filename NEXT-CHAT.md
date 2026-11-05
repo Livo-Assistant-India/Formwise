@@ -64,8 +64,9 @@ Steps:
 2. Measure: `python -I tools/form-building/measure.py "<pdf>" 1,2,3 --draw` (every text line and drawn box).
 3. Make the folder. For a family of near-identical forms, write or extend a generator instead of hand-copying:
    - `tools/form-building/make_topups.py`: VCC top-ups.
-   - `tools/form-building/make_vcc_subscriptions.mjs`: a subscription from the GBF one, with a page map (pages
-     matched by text) and re-measured positions where a page moved. Copy it per fund.
+   - `tools/form-building/make_vcc_subscriptions.mjs`: every VCC subscription (GBF, GIF 2, GSF, IOF) from the template
+     in `tools/form-building/vcc-subscription-base/`, with a page map (pages matched by text) and re-measured positions
+     where a page moved. A new fund = one more FUNDS block.
    Change the generator, not its output: re-running it overwrites the folder.
 4. `pnpm check-forms`: every form must say `ok` (blank exists, every spot inside a real page, every field has a
    source, required fields and review sections point at real fields).
@@ -75,6 +76,10 @@ Steps:
 6. `pnpm check-forms --compare` must show only the changes you meant; then `pnpm check-forms --snapshot` to
    record the new golden files (`apps/backend/src/tasks/form-snapshots/`, committed).
 7. Tick the boxes in `FORMS-CHECKLIST.md`, then stop and let the user test.
+
+An **Excel form** (Investor Profiler) sets `"outputType": "xlsx"` in form-configuration.json; its field-positions give
+`sheet` + `cell` instead of x/y, and the filled file is a copy of the template (`services/fill/fill-xlsx-service.js`).
+Review and Form setup list its cells instead of page images. It is skipped by "Drop a blank PDF".
 
 Only a truly special form needs code: a new `tickboxRule` in `forms/form-registry.js` (today only the two NFT
 nomination forms have one).

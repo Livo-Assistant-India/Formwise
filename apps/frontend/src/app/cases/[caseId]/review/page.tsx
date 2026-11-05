@@ -8,6 +8,7 @@ import BlockedFieldsDialog from "@/components/review/BlockedFieldsDialog";
 import FieldDetailBar from "@/components/review/FieldDetailBar";
 import FieldMappingPane from "@/components/review/FieldMappingPane";
 import FormPreviewPane from "@/components/review/FormPreviewPane";
+import WorkbookCellsPane from "@/components/review/WorkbookCellsPane";
 import BatchClientSwitcher from "@/components/batches/BatchClientSwitcher";
 import SignatureCard from "@/components/review/SignatureCard";
 import SectionFields from "@/components/review/SectionFields";
@@ -91,7 +92,10 @@ export default function CaseReviewPage() {
     await session.reloadFields(Boolean(isIdTypeTick));
   }
 
-  async function handleDownloadPdf() {
+  // A form filled into an Excel template: its cells are listed instead of a page image, and it downloads as .xlsx.
+  const isWorkbookForm = fieldsView?.outputType === "xlsx";
+
+  async function handleDownloadFilledForm() {
     setIsDownloading(true);
     try {
       await session.commitAllFields();
@@ -138,7 +142,7 @@ export default function CaseReviewPage() {
               onGoToPage={(pageNumber) => { setPreviewPane("form"); setPageRequest({ pageNumber, requestId: Date.now() }); }} />
             <div className="grid grid-cols-2 gap-1.5">
               <Button size="small" className="w-full" onClick={() => setIsSheetImportOpen(true)}>Fill from Excel</Button>
-              <Button size="small" className="w-full" disabled={isDownloading} onClick={handleDownloadPdf}>{isDownloading ? "Preparing…" : "Download PDF"}</Button>
+              <Button size="small" className="w-full" disabled={isDownloading} onClick={handleDownloadFilledForm}>{isDownloading ? "Preparing…" : isWorkbookForm ? "Download Excel" : "Download PDF"}</Button>
             </div>
             <Button variant="primary" className="w-full" onClick={handleContinue}>Continue to save →</Button>
           </div>
@@ -170,7 +174,10 @@ export default function CaseReviewPage() {
         <div className="flex min-h-0 flex-col">
           {session.caseSummary?.batchId ? <BatchClientSwitcher batchId={session.caseSummary.batchId} caseId={caseId} /> : null}
           <div className="min-h-0 flex-1">
-            {previewPane === "form"
+            {previewPane === "form" && isWorkbookForm
+              ? <WorkbookCellsPane fields={shownFields} getFieldValue={(caseField) => getEffectiveValue(caseField, editedValues)} selectedFieldKey={selectedField?.field ?? null}
+                  onSelectField={goToField} headerActions={<SegmentedControl options={PREVIEW_PANE_OPTIONS} activeKey={previewPane} onChange={setPreviewPane} />} />
+              : previewPane === "form"
               ? <FormPreviewPane key={previewVersion} pageRequest={pageRequest} caseId={caseId} pageCount={fieldsView.pageCount} selectedField={selectedField} previewValue={selectedField ? getEffectiveValue(selectedField, editedValues) ?? "" : ""}
                   allFields={shownFields} onSelectField={goToField}
                   headerActions={<SegmentedControl options={PREVIEW_PANE_OPTIONS} activeKey={previewPane} onChange={setPreviewPane} />} />

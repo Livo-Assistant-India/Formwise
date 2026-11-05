@@ -81,6 +81,14 @@ export const FIELD_LABELS = {
   beneficial_owner_address: "Beneficial owner address", associate_name: "Associate's full name", associate_ownership_percent: "Combined ownership %",
   tax_offence_part2_matters: "Part II: which matters", pep_details_1: "PEP details line 1", pep_details_2: "PEP details line 2",
   pep_details_3: "PEP details line 3", pep_details_4: "PEP details line 4",
+  // Investor Profile (Excel template)
+  gender: "Gender", telephone: "Telephone", client_profile: "Client profile", qualification_1: "Qualification 1",
+  qualification_2: "Qualification 2", qualification_3: "Qualification 3", work_experience_1: "Work experience 1",
+  work_experience_2: "Work experience 2", work_experience_3: "Work experience 3", honorary_position_1: "Honorary position 1",
+  honorary_position_2: "Honorary position 2", capital_market_experience_years: "Capital market experience (years)",
+  source_of_funds: "Source of funds", net_worth_usd: "Net worth (USD)", gross_annual_income: "Gross annual income",
+  wealth_details: "Wealth details", regulatory_action: "Any regulatory action?", regulatory_action_details: "Regulatory action details",
+  rm_name: "RM name", rm_email: "RM email", rm_contact_number: "RM contact number",
 };
 // Numbered rows of the same table ("cp_tax_residence_country_2"): "CP tax country 2" etc.
 for (const rowNumber of [1, 2, 3]) {

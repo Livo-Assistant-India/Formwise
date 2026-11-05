@@ -2,9 +2,9 @@
 import { readFile } from "node:fs/promises";
 import { sendData, ApiError, ERROR_CODES } from "../../helpers/api-response-helpers.js";
 import { buildZipFile } from "../../helpers/zip-writer-helpers.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import { getBatch, listBatches, updateBatch, deleteBatch } from "../../services/storage/batch-store-service.js";
-import { getCase, deleteCase, getRegeneratedPdfPath } from "../../services/storage/case-store-service.js";
+import { getCase, deleteCase, getRegeneratedPdfPath, getRegeneratedWorkbookPath } from "../../services/storage/case-store-service.js";
 import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-store-service.js";
 import { SheetFileError } from "../../services/batch/read-sheet-file-service.js";
 import { createBatchFromSheet } from "../../services/batch/create-batch-service.js";
@@ -80,7 +80,8 @@ export async function handleBatchEvents(request, response) {
 
 const toSafeFileName = (text) => String(text || "").replace(/[\\/:*?"<>|]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80);
 
-/** Every filled client's PDF (with the reviewer's corrections) in one .zip. Clients still in progress are left out. */
+/** Every filled client's PDF (with the reviewer's corrections) in one .zip - or .xlsx for a form made from an Excel
+ * template. Clients still in progress are left out. */
 export async function handleDownloadBatchZip(request, response) {
   const { clients, forms } = await buildBatchStatus(request.batchEntry);
   const finishedClients = clients.filter((client) => FINISHED_STAGES.has(client.stage));
@@ -93,7 +94,9 @@ export async function handleDownloadBatchZip(request, response) {
     const fileLabel = toSafeFileName([client.clientReference || `Row ${client.rowNumber}`, client.displayName].filter(Boolean).join(" - "));
     // Several forms: one folder per form inside the zip.
     const folderPrefix = forms.length > 1 ? `${toSafeFileName(client.formShortLabel)}/` : "";
-    zipFiles.push({ name: `${folderPrefix}${fileLabel}.pdf`, bytes: await readFile(getRegeneratedPdfPath(caseEntry.id)) });
+    const isWorkbook = isWorkbookForm(getFormDefinition(caseEntry.formId).formConfiguration);
+    const filledFilePath = isWorkbook ? getRegeneratedWorkbookPath(caseEntry.id) : getRegeneratedPdfPath(caseEntry.id);
+    zipFiles.push({ name: `${folderPrefix}${fileLabel}.${isWorkbook ? "xlsx" : "pdf"}`, bytes: await readFile(filledFilePath) });
   }
   const clientCount = new Set(finishedClients.map((client) => client.rowNumber)).size;
   response.set("Content-Type", "application/zip")

@@ -1,0 +1,48 @@
+{
+  "_about": "Form-level rules. One person (the investor). Name, date of birth and passport number from KYC documents, the rest from the Excel. The output is a filled copy of 360 ONE's Excel template.",
+  "formId": "investor-profile",
+  "group": "VCC",
+  "label": "Investor Profile",
+  "shortLabel": "Investor Profile",
+  "purpose": "Investor profiler (Excel) · source of funds, education, occupation",
+  "blankFileName": "360 ONE Investor Profile Template.xlsx",
+  "keyFields": [
+    "Investor name",
+    "Source of funds",
+    "Net worth"
+  ],
+  "sheetTabName": "Investor Profile",
+  "detectionPhrases": [],
+  "supportedNomineeCount": 1,
+  "personLabel": "Investor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "personal",
+      "label": "1 · Personal details",
+      "fields": ["investor_name", "gender", "subscriber_address", "dob", "id_passport", "telephone", "email", "citizenship_country", "client_profile"]
+    },
+    {
+      "key": "experience",
+      "label": "2 · Academic and professional experience",
+      "fields": ["qualification_1", "qualification_2", "qualification_3", "work_experience_1", "work_experience_2", "work_experience_3",
+        "honorary_position_1", "honorary_position_2", "capital_market_experience_years"]
+    },
+    {
+      "key": "net-worth",
+      "label": "3 · Net worth",
+      "fields": ["source_of_funds", "net_worth_usd", "gross_annual_income", "wealth_details"]
+    },
+    {
+      "key": "authority",
+      "label": "4 · Authority, RM details, date",
+      "fields": ["regulatory_action", "regulatory_action_details", "rm_name", "rm_email", "rm_contact_number", "form_date"]
+    }
+  ]
+}

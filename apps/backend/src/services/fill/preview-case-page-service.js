@@ -6,7 +6,7 @@ import { drawSignatures } from "../pdf/draw-signatures-service.js";
 import { fillTextFields } from "../pdf/fill-pdf-service.js";
 import { renderPage } from "../pdf/render-page-service.js";
 import { drawTickOption, getTickboxPage } from "../forms/tickbox-rules-service.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import { fetchFieldPositions } from "../forms/form-files-service.js";
 import { fetchLatestDecisionsByField } from "../storage/decision-log-service.js";
 import { getFillResultsPath, getPreviewPdfPath } from "../storage/case-store-service.js";
@@ -19,6 +19,7 @@ const A4_WIDTH_POINTS = 595.28;
  * The edited field (if any) is drawn with its typed value either way. Null when there is nothing to show. */
 export async function renderCasePreviewPage(caseEntry, editedField, editedValue, requestedPageNumber = null) {
   const { formConfiguration } = getFormDefinition(caseEntry.formId);
+  if (isWorkbookForm(formConfiguration)) return null; // an Excel-template form has no page image; the screen shows its cells
   const baselineRecords = JSON.parse(await readFile(getFillResultsPath(caseEntry.id), "utf-8"));
   const editedRecord = editedField ? baselineRecords.find((baselineRecord) => baselineRecord.field === editedField) : null;
   const isTickboxEdit = Boolean(editedRecord && "option_chosen" in editedRecord);

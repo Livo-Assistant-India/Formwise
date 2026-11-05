@@ -1,0 +1,22 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. The template says every field is mandatory; the second/third qualification and work lines, honorary positions, regulatory details (only if Yes) and RM details are left optional.",
+  "requiredFields": [
+    "investor_name",
+    "gender",
+    "subscriber_address",
+    "dob",
+    "id_passport",
+    "telephone",
+    "email",
+    "citizenship_country",
+    "client_profile",
+    "qualification_1",
+    "work_experience_1",
+    "capital_market_experience_years",
+    "source_of_funds",
+    "net_worth_usd",
+    "gross_annual_income",
+    "wealth_details",
+    "regulatory_action"
+  ]
+}

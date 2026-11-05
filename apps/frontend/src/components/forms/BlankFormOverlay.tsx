@@ -24,8 +24,8 @@ export default function BlankFormOverlay({ formId, pageNumber, mappingItems, req
       {/* eslint-disable-next-line @next/next/no-img-element -- rendered by the local API */}
       <img key={pageNumber} src={getBlankPageImageUrl(formId, pageNumber)} alt={`Blank form page ${pageNumber}`} onLoad={() => setLoadedPage(pageNumber)}
         className={`h-full w-full rounded border border-line bg-white object-contain shadow-sm transition-opacity ${isLoaded ? "opacity-100" : "opacity-0"}`} />
-      {isLoaded ? mappingItems.filter((mappingItem) => mappingItem.page === pageNumber).map((mappingItem) => {
-        const [left, top, right, bottom] = mappingItem.box;
+      {isLoaded ? mappingItems.filter((mappingItem) => mappingItem.page === pageNumber && mappingItem.box).map((mappingItem) => {
+        const [left, top, right, bottom] = mappingItem.box!;
         const isSelected = mappingItem.key === selectedKey;
         const colourClasses = requiredFields.has(mappingItem.key) ? "border-red-500 bg-red-500/10 hover:bg-red-500/25" : "border-brand-500 bg-brand-500/10 hover:bg-brand-500/25";
         return (

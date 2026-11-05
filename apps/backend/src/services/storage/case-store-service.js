@@ -92,8 +92,11 @@ export const getFilledPdfPath = (caseId) => path.join(OUTPUT_DIRECTORY, `upload-
 export const getRegeneratedPdfPath = (caseId) => path.join(OUTPUT_DIRECTORY, `upload-${caseId}-regenerated.pdf`);
 export const getRegeneratedResultsPath = (caseId) => path.join(OUTPUT_DIRECTORY, `upload-${caseId}-regenerated-results.json`);
 export const getPreviewPdfPath = (caseId) => path.join(OUTPUT_DIRECTORY, `preview-${caseId}.pdf`);
+// A form filled into an Excel template (outputType "xlsx") is saved as .xlsx instead of the PDF.
+export const getFilledWorkbookPath = (caseId) => path.join(OUTPUT_DIRECTORY, `upload-${caseId}-prefilled.xlsx`);
+export const getRegeneratedWorkbookPath = (caseId) => path.join(OUTPUT_DIRECTORY, `upload-${caseId}-regenerated.xlsx`);
 
-/** Removes everything for one case: scans, generated PDFs/results, and its manifest entry. */
+/** Removes everything for one case: scans, generated PDFs / Excel files / results, and its manifest entry. */
 export async function deleteCase(caseId) {
   const didExist = await updateManifest((manifest) => {
     if (!manifest[caseId]) return false;
@@ -102,7 +105,8 @@ export async function deleteCase(caseId) {
   });
   if (!didExist) return false;
   await rm(getCaseUploadDirectory(caseId), { recursive: true, force: true });
-  for (const generatedPath of [getFillResultsPath(caseId), getFilledPdfPath(caseId), getRegeneratedPdfPath(caseId), getRegeneratedResultsPath(caseId), getPreviewPdfPath(caseId)]) {
+  for (const generatedPath of [getFillResultsPath(caseId), getFilledPdfPath(caseId), getRegeneratedPdfPath(caseId), getRegeneratedResultsPath(caseId), getPreviewPdfPath(caseId),
+    getFilledWorkbookPath(caseId), getRegeneratedWorkbookPath(caseId)]) {
     await rm(generatedPath, { force: true });
   }
   return true;

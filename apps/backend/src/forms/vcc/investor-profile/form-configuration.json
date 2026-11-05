@@ -1,0 +1,17 @@
+{
+  "_about": "360 ONE Investor Profile: an Excel template, not a PDF. The app fills a copy of the template cell by cell (field-positions.json gives sheet + cell) and the reviewer downloads the filled .xlsx. ignoredCells: boxed or yellow cells in the template that get no value, with the reason.",
+  "id": "investor-profile",
+  "title": "Investor Profile",
+  "outputType": "xlsx",
+  "blankFileName": "360 ONE Investor Profile Template.xlsx",
+  "labels": [],
+  "signatureBoxes": [],
+  "tickboxes": [],
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredCells": [
+    { "sheet": "Annexure 1", "cell": "C6", "reason": "Second line of the Name box; the full name goes in C5" },
+    { "sheet": "Annexure 1", "cell": "F57", "reason": "Beside the 'RM Details:' heading - not an input" },
+    { "sheet": "Annexure 1", "cell": "B58", "reason": "Client's signature box - signed by hand" }
+  ]
+}

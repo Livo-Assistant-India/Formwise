@@ -7,7 +7,7 @@ import { buildFormMappingOverlay } from "../../services/forms/form-mapping-overl
 import { buildSheetColumns } from "../../services/sheets/sheet-columns-helpers.js";
 import { renderPage } from "../../services/pdf/render-page-service.js";
 import { buildBatchTemplate, buildCombinedBatchTemplate } from "../../services/batch/batch-template-service.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import { buildBatchColumns } from "../../services/batch/batch-columns-helpers.js";
 
 const PAGE_IMAGE_WIDTH_PIXELS = 1400;
@@ -56,6 +56,7 @@ export async function handleGetSheetColumns(request, response) {
 export async function handleGetBlankPageImage(request, response) {
   const pageNumber = Number(request.params.pageNumber);
   if (!Number.isInteger(pageNumber) || pageNumber < 1) throw new ApiError(400, ERROR_CODES.INVALID_REQUEST, "Bad page number");
+  if (isWorkbookForm(request.formDefinition.formConfiguration)) throw new ApiError(400, ERROR_CODES.INVALID_REQUEST, "An Excel form has no page images");
   const { png } = await renderPage(request.formDefinition.formConfiguration.blankFormPath, pageNumber, { scale: PAGE_IMAGE_WIDTH_PIXELS / A4_WIDTH_POINTS });
   response.set("Content-Type", "image/png").set("Cache-Control", "no-store").send(png);
 }

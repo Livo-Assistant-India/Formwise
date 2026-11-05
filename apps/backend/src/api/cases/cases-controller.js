@@ -1,9 +1,10 @@
 // Case lifecycle: create, read, fill, review (decisions + live preview), regenerate, download, delete.
 import { existsSync } from "node:fs";
 import { sendData, ApiError, ERROR_CODES } from "../../helpers/api-response-helpers.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import {
   createCase, listCases, updateCase, deleteCase, getFillResultsPath, getFilledPdfPath, getRegeneratedPdfPath, getRegeneratedResultsPath,
+  getRegeneratedWorkbookPath,
 } from "../../services/storage/case-store-service.js";
 import { recordDecision, DECISION_KINDS } from "../../services/storage/decision-log-service.js";
 import { deleteIdentityRecord, deleteTypedPanValues } from "../../services/documents/identity-number-store-service.js";
@@ -74,10 +75,17 @@ export async function handleRegenerateCase(request, response) {
   sendData(response, await buildCaseFieldsView(request.caseEntry, { resultsPath: getRegeneratedResultsPath(caseId), pdfPath: getRegeneratedPdfPath(caseId) }));
 }
 
+/** The regenerated filled form: the PDF, or the filled Excel for a form made from an Excel template. */
 export async function handleDownloadPdf(request, response) {
-  const pdfPath = getRegeneratedPdfPath(request.caseEntry.id);
+  const caseId = request.caseEntry.id;
+  if (isWorkbookForm(getFormDefinition(request.caseEntry.formId).formConfiguration)) {
+    const workbookPath = getRegeneratedWorkbookPath(caseId);
+    if (!existsSync(workbookPath)) throw new ApiError(404, ERROR_CODES.NOT_FOUND, "Regenerate the Excel first");
+    return response.download(workbookPath, `filled-form-${caseId.slice(0, 8)}.xlsx`);
+  }
+  const pdfPath = getRegeneratedPdfPath(caseId);
   if (!existsSync(pdfPath)) throw new ApiError(404, ERROR_CODES.NOT_FOUND, "Regenerate the PDF first");
-  response.download(pdfPath, `filled-form-${request.caseEntry.id.slice(0, 8)}.pdf`);
+  response.download(pdfPath, `filled-form-${caseId.slice(0, 8)}.pdf`);
 }
 
 export async function handleDeleteCase(request, response) {

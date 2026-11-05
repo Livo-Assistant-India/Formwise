@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import { fetchPageSizes, toPageFractionBox } from "../pdf/page-size-service.js";
 import { fetchLatestDecisionsByField } from "../storage/decision-log-service.js";
 import { fetchFormRules } from "../forms/form-files-service.js";
+import { getFormDefinition, isWorkbookForm, OUTPUT_TYPES } from "../../forms/form-registry.js";
 
 const AADHAAR_FIELD_PATTERN = /^(id_aadhaar_last4|id_details|id_number)/;
 
@@ -18,11 +19,13 @@ function toDecisionView(decisionRow) {
   return decisionRow ? { kind: decisionRow.decision, who: decisionRow.who, value: decisionRow.value, decidedAt: decisionRow.timestamp } : null;
 }
 
-/** resultsPath/pdfPath: the first fill's, or the regenerated ones. */
+/** resultsPath/pdfPath: the first fill's, or the regenerated ones. An Excel-template form has no PDF: its fields
+ * carry sheet + cell instead of page boxes, and outputType "xlsx" tells the screen to show them as a table. */
 export async function buildCaseFieldsView(caseEntry, { resultsPath, pdfPath }) {
   const fieldRecords = JSON.parse(await readFile(resultsPath, "utf-8"));
   const latestDecisions = await fetchLatestDecisionsByField(caseEntry.id);
-  const pageSizes = await fetchPageSizes(pdfPath);
+  const isWorkbook = isWorkbookForm(getFormDefinition(caseEntry.formId).formConfiguration);
+  const pageSizes = isWorkbook ? [] : await fetchPageSizes(pdfPath);
   const { label } = await fetchFormRules(caseEntry.formId);
   const fields = fieldRecords.map((fieldRecord) => {
     const pageSize = fieldRecord.page ? pageSizes[fieldRecord.page - 1] : null;
@@ -34,5 +37,6 @@ export async function buildCaseFieldsView(caseEntry, { resultsPath, pdfPath }) {
       decision: toDecisionView(latestDecisions[fieldRecord.field]),
     });
   });
-  return { caseId: caseEntry.id, formId: caseEntry.formId, label, pageCount: pageSizes.length, fields };
+  const pageCount = isWorkbook ? Math.max(1, ...fieldRecords.map((fieldRecord) => fieldRecord.page || 1)) : pageSizes.length;
+  return { caseId: caseEntry.id, formId: caseEntry.formId, label, outputType: isWorkbook ? OUTPUT_TYPES.XLSX : OUTPUT_TYPES.PDF, pageCount, fields };
 }

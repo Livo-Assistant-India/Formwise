@@ -4,6 +4,7 @@ import { RULE_TEXT, formatFieldLabel } from "@prefill/shared";
 import { fetchPageSizes } from "../pdf/page-size-service.js";
 import { getTickOptionBox } from "./tickbox-rules-service.js";
 import { fetchFieldPositions, fetchFieldSources, fetchFormRules } from "./form-files-service.js";
+import { OUTPUT_TYPES, isWorkbookForm } from "../../forms/form-registry.js";
 
 const SOURCE_WORDS = { typed: "Typed / batch sheet", today: "Today's date", tick: "Tick box (rule / reviewer)" };
 function describeSource(fieldSource) {
@@ -15,9 +16,23 @@ function describeSource(fieldSource) {
   return SOURCE_WORDS[fieldSource] || "Not mapped";
 }
 
+/** An Excel form has no page image: one item per cell (sheet + cell instead of a box). */
+function buildWorkbookMapping(formId, fields, fieldSources, formRules) {
+  const requiredFields = new Set(formRules.requiredFields);
+  const items = fields.filter((field) => field.cell).map((field) => ({
+    id: field.key, key: field.key, nominee: field.nominee ?? null, page: field.page || 1, kind: "text",
+    source: describeSource(fieldSources[field.key]), isRequired: requiredFields.has(field.key),
+    rule: RULE_TEXT[field.key] || (field.options ? `One of: ${field.options.join(", ")}` : "Free text"),
+    sheet: field.sheet, cell: field.cell,
+  }));
+  const pageCount = Math.max(1, ...items.map((item) => item.page));
+  return { formId, label: formRules.label, outputType: OUTPUT_TYPES.XLSX, pageCount, items };
+}
+
 export async function buildFormMappingOverlay(formDefinition) {
   const { formId, formConfiguration } = formDefinition;
   const [{ fields }, fieldSources, formRules] = await Promise.all([fetchFieldPositions(formId), fetchFieldSources(formId), fetchFormRules(formId)]);
+  if (isWorkbookForm(formConfiguration)) return buildWorkbookMapping(formId, fields, fieldSources, formRules);
   const pageSizes = await fetchPageSizes(formConfiguration.blankFormPath);
   const requiredFields = new Set(formRules.requiredFields);
   const toFractions = (pageNumber, x, y, width, height) => {

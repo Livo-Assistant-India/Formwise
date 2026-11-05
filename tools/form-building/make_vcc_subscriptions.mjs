@@ -1,37 +1,55 @@
-// Writes every VCC Subscription Agreement (Non-US) form folder from the Global Bond Fund one. Each fund's agreement
-// is the same document with some pages moved or changed: field pages were matched to the GBF ones by their text, and
-// anything that moved was measured on that fund's own blank (FUNDS below). Change this file, not its output.
+// Writes every VCC Subscription Agreement (Non-US) form folder - Global Bond Fund included - from one template:
+// vcc-subscription-base/ (the mapping first made on the 65-page GBF demo blank, data/Blank Forms/360 ONE Global Bond
+// Fund - Series II.pdf, kept only as this template's reference). Each fund's agreement is the same document with some
+// pages moved or changed: field pages were matched to the template's by their text, and anything that moved was
+// measured on that fund's own blank (FUNDS below). Change this file or the template, never the generated folders.
 // usage (from the repo root): node tools/form-building/make_vcc_subscriptions.mjs [form-id]
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const FORMS = "apps/backend/src/forms/vcc";
-const BASE_FOLDER = path.join(FORMS, "global-bond-fund-subscription");
+const BASE_FOLDER = "tools/form-building/vcc-subscription-base";
 const VCC_FILES = "../VCC";
 
 // pageMap: GBF page -> this fund's page (missing = same number). pageShifts: y moves (pt) for everything on a page.
 // droppedKeys: GBF fields this fund's blank does not have. series: tick boxes (baselines) or typed lines (positions).
+// The 63-page layout (GIF 2 06.10.25 and GBF 04.07.25 share it): template page -> page, the opt-in page 50 instead of
+// "Acknowledgement and Consent" (no signatory lines), page 61 moved up 36.6pt, pages 15 and 50 measured.
+const SIXTY_THREE_PAGE_LAYOUT = {
+  pageCount: 63,
+  pageMap: { 16: 15, 17: 16, 27: 26, 28: 27, 31: 30, 32: 31, 33: 32, 34: 33, 35: 34, 36: 35, 37: 36, 38: 37, 39: 38,
+    41: 40, 54: 50, 57: 54, 58: 55, 59: 56, 62: 59, 63: 60, 64: 61, 65: 62 },
+  droppedKeys: ["authorised_signatory_name_p50", "authorised_signatory_designation_p50"],
+  pageShifts: { 61: -36.6 },
+  positionOverridesAfterPage2: {
+    subscriber_name_p15: { y: 719.0 }, form_date_p15: { y: 744.0 }, place: { y: 755.3 },
+    subscriber_name_p50: { x: 280, y: 200.8, maxWidth: 236, alsoAt: [{ page: 50, x: 88, y: 589, maxWidth: 200 }] },
+    form_date_p50: { x: 82, y: 649.4 },
+  },
+  signatureOverridesAfterPage2: { 15: { y: 679 }, 50: { x: 54, y: 596, w: 196, h: 22, label: "Opt-in confirmation" } },
+  sectionRenames: { "Accredited investor consent": "Accredited investor opt-in" },
+  wireNote: { page: 17, y: 583 },
+};
+
 const FUNDS = [
   {
-    formId: "global-investment-fund-2-subscription", fundName: "360 ONE Global Investment Fund 2", pageCount: 63,
+    // 360 ONE's current GBF agreement (04.07.25, 63 pages); page 2 measured on it.
+    formId: "global-bond-fund-subscription", fundName: "360 ONE Global Bond Fund - Series II", ...SIXTY_THREE_PAGE_LAYOUT,
+    label: "Global Bond Fund II – Subscription", shortLabel: "GBF subscription",
+    blankFileName: "360 ONE Global Bond Fund - Series II - Subscription.pdf",
+    sourcePdf: "360 ONE Global Bond Fund Series - II/360 ONE Global Bond Fund - Series II - Subscription Agreement (Non-US) - 04.07.25.pdf",
+    positionOverrides: { subscription_amount: { y: 376.44 }, initial_sales_charge: { y: 505.8 }, ...SIXTY_THREE_PAGE_LAYOUT.positionOverridesAfterPage2 },
+    series: { type: "ticks", baselines: { "Series A": 448.4, "Series B": 466.5 } },
+    signatureOverrides: { 2: { y: 619.6 }, ...SIXTY_THREE_PAGE_LAYOUT.signatureOverridesAfterPage2 },
+  },
+  {
+    formId: "global-investment-fund-2-subscription", fundName: "360 ONE Global Investment Fund 2", ...SIXTY_THREE_PAGE_LAYOUT,
     label: "Global Investment Fund 2 – Subscription", shortLabel: "GIF 2 subscription",
     blankFileName: "360 ONE Global Investment Fund 2 - Subscription.pdf",
     sourcePdf: "360 ONE Global Investment Fund 2/360 ONE Global Investment Fund 2 - Subscription Agreement (Non-US) - 06.10.25.pdf",
-    pageMap: { 16: 15, 17: 16, 27: 26, 28: 27, 31: 30, 32: 31, 33: 32, 34: 33, 35: 34, 36: 35, 37: 36, 38: 37, 39: 38,
-      41: 40, 54: 50, 57: 54, 58: 55, 59: 56, 62: 59, 63: 60, 64: 61, 65: 62 },
-    // Page 50 is an "Opt-In Confirmation Form" (GBF page 54 is "Acknowledgement and Consent"): no signatory lines.
-    droppedKeys: ["authorised_signatory_name_p50", "authorised_signatory_designation_p50"],
-    pageShifts: { 61: -36.6 },
-    positionOverrides: {
-      subscription_amount: { y: 376.44 }, initial_sales_charge: { y: 548.2 },
-      subscriber_name_p15: { y: 719.0 }, form_date_p15: { y: 744.0 }, place: { y: 755.3 },
-      subscriber_name_p50: { x: 280, y: 200.8, maxWidth: 236, alsoAt: [{ page: 50, x: 88, y: 589, maxWidth: 200 }] },
-      form_date_p50: { x: 82, y: 649.4 },
-    },
+    positionOverrides: { subscription_amount: { y: 376.44 }, initial_sales_charge: { y: 548.2 }, ...SIXTY_THREE_PAGE_LAYOUT.positionOverridesAfterPage2 },
     series: { type: "ticks", baselines: { "Series A": 448.4, "Series B": 466.6, "Series C": 484.7, "Series D": 503.0, "Series E": 521.2 } },
-    signatureOverrides: { 2: { y: 662 }, 15: { y: 679 }, 50: { x: 54, y: 596, w: 196, h: 22, label: "Opt-in confirmation" } },
-    sectionRenames: { "Accredited investor consent": "Accredited investor opt-in" },
-    wireNote: { page: 17, y: 583 },
+    signatureOverrides: { 2: { y: 662 }, ...SIXTY_THREE_PAGE_LAYOUT.signatureOverridesAfterPage2 },
   },
   {
     formId: "growth-strategy-fund-subscription", fundName: "360 ONE Growth Strategy Fund", pageCount: 65,

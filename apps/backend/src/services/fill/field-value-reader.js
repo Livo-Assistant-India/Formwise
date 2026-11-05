@@ -45,6 +45,7 @@ export function createFieldValueReader({
 
   // Values this run already produced, so "copy.X" also copies a value read from a document (not only typed ones).
   const valuesReadThisRun = {};
+  const copiesInProgress = new Set();
   return async function readFieldValue(field, fieldLabel) {
     const { baseSource, transformNames } = splitFieldSource(fieldSources[field.key]);
     const readValue = readUntransformedValue(field, fieldLabel, baseSource);
@@ -61,6 +62,22 @@ export function createFieldValueReader({
     return { ...readValue, value: transformedValue };
   };
 
+  // "copy.X" where X is filled later on the form (e.g. a bank account name before the shareholder's name): read X
+  // now, with its own source and transforms, instead of leaving the copy empty. Guards against copy loops
+  // (copiesInProgress, declared above the returned function so it exists before any field is read).
+  function readCopySource(copiedFrom, field) {
+    if (copiesInProgress.has(copiedFrom) || !fieldSources[copiedFrom]) return null;
+    copiesInProgress.add(copiedFrom);
+    try {
+      const { baseSource, transformNames } = splitFieldSource(fieldSources[copiedFrom]);
+      const sourceValue = readUntransformedValue({ ...field, key: copiedFrom, nominee: null }, copiedFrom, baseSource).value;
+      if (sourceValue == null) return null;
+      return transformNames.length ? applyValueTransforms(sourceValue, transformNames) : sourceValue;
+    } finally {
+      copiesInProgress.delete(copiedFrom);
+    }
+  }
+
   function readTypedSibling(field, fieldSource) {
     const suffix = field.nominee != null ? `_n${field.nominee}` : "";
     for (const [otherKey, otherSource] of Object.entries(fieldSources)) {
@@ -75,7 +92,8 @@ export function createFieldValueReader({
     if (field.nominee != null && field.nominee > formRules.supportedNomineeCount) {
       return { skipReason: `nominee ${field.nominee} not supported yet`, notApplicable: true };
     }
-    if (field.x == null) return { skipReason: "no mapped position" };
+    // A place on a PDF page (x/y), or an Excel template's cell.
+    if (field.x == null && field.cell == null) return { skipReason: "no mapped position" };
     if (fieldSource === "today") return { value: formatTodayDate(), sourceFile: "today's date" };
     const sheetValue = typedValues[fieldLabel] ? { value: String(typedValues[fieldLabel]), sourceFile: "batch sheet" } : null;
     if (fieldSource && fieldSource.startsWith("document.")) {
@@ -98,7 +116,7 @@ export function createFieldValueReader({
       // "Same as another field" (e.g. page 2's first holder = investor name) unless this one was typed itself.
       const copiedFrom = fieldSource.slice("copy.".length);
       if (sheetValue) return { ...sheetValue, copiedFrom };
-      const copiedValue = effectiveValues[copiedFrom] ?? valuesReadThisRun[copiedFrom];
+      const copiedValue = effectiveValues[copiedFrom] ?? valuesReadThisRun[copiedFrom] ?? readCopySource(copiedFrom, field);
       return copiedValue ? { value: String(copiedValue), sourceFile: "copied", copiedFrom } : { skipReason: NOT_TYPED_REASON, notProvided: true, copiedFrom };
     }
     if (sheetValue) return sheetValue;

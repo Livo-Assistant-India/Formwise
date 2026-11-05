@@ -5,7 +5,7 @@
 // maintain per form, so it keeps working at hundreds of forms (title phrases
 // alone could not: every VCC form starts with the same company name). Uploaded bytes are never written to disk.
 import { readFile } from "node:fs/promises";
-import { getFormDefinition, listFormIds } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm, listFormIds } from "../../forms/form-registry.js";
 
 const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
 
@@ -65,7 +65,9 @@ export async function rankFormsBySimilarity(pdfBytes) {
   const uploaded = await readFingerprint(pdfBytes);
   const blanks = [];
   for (const formId of listFormIds()) {
-    const blank = await getBlankFingerprint(getFormDefinition(formId).formConfiguration.blankFormPath);
+    const { formConfiguration } = getFormDefinition(formId);
+    if (isWorkbookForm(formConfiguration)) continue; // an Excel template is never a dropped PDF
+    const blank = await getBlankFingerprint(formConfiguration.blankFormPath);
     if (blank) blanks.push({ formId, blank });
   }
   const getWordWeight = buildWordWeights(blanks.map(({ blank }) => blank));

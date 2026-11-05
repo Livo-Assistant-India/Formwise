@@ -1,5 +1,5 @@
 {
-  "_about": "360 ONE Global Bond Fund - Series II subscription form (65 pages). The blank was made from the client's own filled sample by removing its flattened value layer, so every position here is where their sample wrote it. Tick boxes are the blank's own ☐ glyphs (x, y = glyph baseline, top-left origin; w/h = glyph box). No label lookup: field positions are fixed (field-positions.json). Every tick box is its own question with NO assumed answer: the answer comes from the client's Excel row or the reviewer; an unanswered one stays empty and is listed to fix. Annex 7 (pages 62-63): each question is answered on its own row. Part II is answered only by a non-individual applicant. Pages 32-36: FATCA / CRS self-certification for an ENTITY investor - each box is its own optional tick (\"Ticked\" or left empty). An individual's form (the client's sample) leaves all of them empty. Pages 34-35: CRS classification. These boxes are DRAWN squares (not ☐ characters), found from the page's own drawing instructions: x = left edge, y = top edge + 0.85 x size, so the tick sits inside the square. Pages 58-59: Singapore tax questionnaire, Part 3 - a beneficial owner that is NOT an individual.",
+  "_about": "360 ONE Global Bond Fund - Series II - Subscription Agreement (Non-US), 63 pages. Made by tools/form-building/make_vcc_subscriptions.mjs from the GBF form; changed pages measured on this blank. Every tick box is its own question with no assumed answer.",
   "id": "global-bond-fund-subscription",
   "title": "360 ONE Global Bond Fund - Series II - Subscription",
   "labels": [],
@@ -7,23 +7,23 @@
     {
       "page": 2,
       "x": 330,
-      "y": 610,
+      "y": 619.6,
       "w": 185,
       "h": 31,
       "signer": "subscriber",
       "label": "Subscriber's signature"
     },
     {
-      "page": 16,
+      "page": 15,
       "x": 110,
-      "y": 610,
+      "y": 679,
       "w": 130,
       "h": 26,
       "signer": "subscriber",
       "label": "Signed by the subscriber"
     },
     {
-      "page": 17,
+      "page": 16,
       "x": 74,
       "y": 692,
       "w": 130,
@@ -32,7 +32,7 @@
       "label": "Bank instruction signed"
     },
     {
-      "page": 28,
+      "page": 27,
       "x": 175,
       "y": 578,
       "w": 180,
@@ -41,7 +41,7 @@
       "label": "Tax self-certification"
     },
     {
-      "page": 37,
+      "page": 36,
       "x": 168,
       "y": 181,
       "w": 55,
@@ -50,7 +50,7 @@
       "label": "Entity authorised signatory 1"
     },
     {
-      "page": 37,
+      "page": 36,
       "x": 424,
       "y": 181,
       "w": 65,
@@ -59,7 +59,7 @@
       "label": "Entity authorised signatory 2"
     },
     {
-      "page": 41,
+      "page": 40,
       "x": 165,
       "y": 309,
       "w": 190,
@@ -68,25 +68,25 @@
       "label": "Controlling person"
     },
     {
-      "page": 54,
-      "x": 104,
-      "y": 646,
-      "w": 140,
-      "h": 30,
+      "page": 50,
+      "x": 54,
+      "y": 596,
+      "w": 196,
+      "h": 22,
       "signer": "subscriber",
-      "label": "Accredited investor consent"
+      "label": "Opt-in confirmation"
     },
     {
-      "page": 64,
+      "page": 61,
       "x": 62,
-      "y": 400,
+      "y": 363.4,
       "w": 210,
       "h": 62,
       "signer": "subscriber",
       "label": "Tax offences questionnaire"
     },
     {
-      "page": 65,
+      "page": 62,
       "x": 56,
       "y": 680,
       "w": 180,
@@ -109,20 +109,20 @@
         "Series A": [
           {
             "x": 275.81,
-            "y": 437.33
+            "y": 448.4
           }
         ],
         "Series B": [
           {
             "x": 275.81,
-            "y": 455.57
+            "y": 466.5
           }
         ]
       }
     },
     {
       "key": "us_tax_status",
-      "page": 27,
+      "page": 26,
       "w": 8.58,
       "h": 9.96,
       "options": [
@@ -153,7 +153,7 @@
     },
     {
       "key": "beneficial_owner",
-      "page": 57,
+      "page": 54,
       "w": 8.16,
       "h": 9.48,
       "options": [
@@ -177,7 +177,7 @@
     },
     {
       "key": "singapore_tax_status",
-      "page": 57,
+      "page": 54,
       "w": 7.75,
       "h": 9,
       "options": [
@@ -201,7 +201,7 @@
     },
     {
       "key": "tax_offence_1a",
-      "page": 62,
+      "page": 59,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -226,7 +226,7 @@
     },
     {
       "key": "tax_offence_1b",
-      "page": 62,
+      "page": 59,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -251,7 +251,7 @@
     },
     {
       "key": "tax_offence_1c",
-      "page": 62,
+      "page": 59,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -276,7 +276,7 @@
     },
     {
       "key": "tax_offence_1d",
-      "page": 62,
+      "page": 59,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -301,7 +301,7 @@
     },
     {
       "key": "tax_offence_1e",
-      "page": 62,
+      "page": 59,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -326,7 +326,7 @@
     },
     {
       "key": "tax_offence_1f",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -351,7 +351,7 @@
     },
     {
       "key": "tax_offence_1g",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -376,7 +376,7 @@
     },
     {
       "key": "tax_offence_2a",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -401,7 +401,7 @@
     },
     {
       "key": "tax_offence_2b",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -426,7 +426,7 @@
     },
     {
       "key": "tax_offence_2c",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -451,7 +451,7 @@
     },
     {
       "key": "tax_offence_2d",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -476,7 +476,7 @@
     },
     {
       "key": "tax_offence_2e",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -501,7 +501,7 @@
     },
     {
       "key": "tax_offence_3",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": false,
@@ -526,7 +526,7 @@
     },
     {
       "key": "tax_offence_part2",
-      "page": 63,
+      "page": 60,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -551,7 +551,7 @@
     },
     {
       "key": "entity_specified_us_person",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -569,7 +569,7 @@
     },
     {
       "key": "entity_us_person_not_specified",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -587,7 +587,7 @@
     },
     {
       "key": "entity_fi_singapore_or_iga",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -605,7 +605,7 @@
     },
     {
       "key": "entity_fi_registered_deemed_compliant",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -623,7 +623,7 @@
     },
     {
       "key": "entity_fi_participating",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -641,7 +641,7 @@
     },
     {
       "key": "entity_fi_sponsored",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -659,7 +659,7 @@
     },
     {
       "key": "entity_fi_trustee_documented_trust",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -677,7 +677,7 @@
     },
     {
       "key": "entity_fi_certified_deemed_compliant",
-      "page": 32,
+      "page": 31,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -695,7 +695,7 @@
     },
     {
       "key": "entity_fi_non_participating",
-      "page": 33,
+      "page": 32,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -713,7 +713,7 @@
     },
     {
       "key": "entity_exempt_beneficial_owner",
-      "page": 33,
+      "page": 32,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -731,7 +731,7 @@
     },
     {
       "key": "entity_active_nffe",
-      "page": 33,
+      "page": 32,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -749,7 +749,7 @@
     },
     {
       "key": "entity_passive_nffe",
-      "page": 33,
+      "page": 32,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -767,7 +767,7 @@
     },
     {
       "key": "entity_active_nfe_crs",
-      "page": 35,
+      "page": 34,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -785,7 +785,7 @@
     },
     {
       "key": "entity_active_nfe_regularly_traded",
-      "page": 35,
+      "page": 34,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -803,7 +803,7 @@
     },
     {
       "key": "entity_active_nfe_governmental",
-      "page": 35,
+      "page": 34,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -821,7 +821,7 @@
     },
     {
       "key": "entity_active_nfe_other",
-      "page": 35,
+      "page": 34,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -839,7 +839,7 @@
     },
     {
       "key": "entity_passive_nfe_crs",
-      "page": 36,
+      "page": 35,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -857,7 +857,7 @@
     },
     {
       "key": "crs_entity_is_fi",
-      "page": 34,
+      "page": 33,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -875,7 +875,7 @@
     },
     {
       "key": "crs_reporting_fi",
-      "page": 34,
+      "page": 33,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -893,7 +893,7 @@
     },
     {
       "key": "crs_non_reporting_fi",
-      "page": 34,
+      "page": 33,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -911,7 +911,7 @@
     },
     {
       "key": "crs_fi_non_participating_jurisdiction",
-      "page": 35,
+      "page": 34,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -929,7 +929,7 @@
     },
     {
       "key": "crs_non_reporting_fi_type",
-      "page": 34,
+      "page": 33,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -1010,7 +1010,7 @@
     },
     {
       "key": "crs_npj_fi_type",
-      "page": 35,
+      "page": 34,
       "w": 9.96,
       "h": 9.96,
       "isOptional": true,
@@ -1042,7 +1042,7 @@
     },
     {
       "key": "controlling_person_us_status",
-      "page": 39,
+      "page": 38,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1074,7 +1074,7 @@
     },
     {
       "key": "sg_entity_category",
-      "page": 58,
+      "page": 55,
       "w": 7.75,
       "h": 9,
       "isOptional": true,
@@ -1127,7 +1127,7 @@
     },
     {
       "key": "sg_entity_q1_tax_resident",
-      "page": 58,
+      "page": 55,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1152,7 +1152,7 @@
     },
     {
       "key": "sg_entity_q2",
-      "page": 58,
+      "page": 55,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1177,7 +1177,7 @@
     },
     {
       "key": "sg_entity_q3",
-      "page": 59,
+      "page": 56,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1202,7 +1202,7 @@
     },
     {
       "key": "sg_entity_q4",
-      "page": 59,
+      "page": 56,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1227,7 +1227,7 @@
     },
     {
       "key": "sg_entity_q5",
-      "page": 59,
+      "page": 56,
       "w": 8.58,
       "h": 9.96,
       "isOptional": true,
@@ -1252,7 +1252,7 @@
     },
     {
       "key": "pep_status",
-      "page": 65,
+      "page": 62,
       "w": 6.02,
       "h": 9.96,
       "options": [
@@ -1275,12 +1275,12 @@
       }
     }
   ],
-  "blankFileName": "360 ONE Global Bond Fund - Series II.pdf",
+  "blankFileName": "360 ONE Global Bond Fund - Series II - Subscription.pdf",
   "nomineeHeaderRe": null,
   "tickboxRule": "usual",
   "ignoredBlanks": [
     {
-      "page": 18,
+      "page": 17,
       "y": 583,
       "why": "Wire-transfer instruction (\"From the Account of: ___\"), printed text for the bank"
     }

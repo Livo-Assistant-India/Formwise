@@ -54,12 +54,17 @@ export interface CaseField {
   option_chosen?: string | null;
   boxes: [number, number, number, number][];
   decision: FieldDecision | null;
+  /** A form filled into an Excel template: the sheet and cell this value is written to (no page boxes). */
+  sheet?: string;
+  cell?: string;
 }
 
 export interface CaseFieldsView {
   caseId: string;
   formId: string;
   label: string;
+  /** "xlsx": the filled form is a copy of an Excel template - the review shows its cells and downloads the .xlsx. */
+  outputType?: "pdf" | "xlsx";
   pageCount: number;
   fields: CaseField[];
 }

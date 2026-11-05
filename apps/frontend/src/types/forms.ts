@@ -28,12 +28,17 @@ export interface FormMappingItem {
   source: string;
   isRequired: boolean;
   rule: string;
-  box: [number, number, number, number];
+  /** Page-fraction box on the blank PDF; absent on an Excel form (sheet + cell instead). */
+  box?: [number, number, number, number];
+  sheet?: string;
+  cell?: string;
 }
 
 export interface FormMapping {
   formId: string;
   label: string;
+  /** "xlsx" for a form filled into an Excel template; absent for PDF forms. */
+  outputType?: "xlsx";
   pageCount: number;
   items: FormMappingItem[];
 }

@@ -40,7 +40,9 @@ async function checkServerConnection() {
 }
 
 export const reportRequestSucceeded = () => setConnectionState(CONNECTION_STATES.ONLINE);
-export const reportRequestFailed = () => setConnectionState(isBrowserOffline() ? CONNECTION_STATES.NO_NETWORK : CONNECTION_STATES.SERVER_DOWN);
+// One failed request is not proof the server is down (a busy server reading documents can drop one): confirm with a
+// /health check first, so the "Disconnected" notice never flashes up for nothing.
+export const reportRequestFailed = () => (isBrowserOffline() ? setConnectionState(CONNECTION_STATES.NO_NETWORK) : checkServerConnection());
 export const retryConnectionNow = () => checkServerConnection();
 
 if (typeof window !== "undefined") {

@@ -1,0 +1,401 @@
+{
+ "formId": "investor-profile",
+ "configuration": {
+  "id": "investor-profile",
+  "title": "Investor Profile",
+  "outputType": "xlsx",
+  "signatureBoxes": [],
+  "tickboxes": [],
+  "ignoredCells": [
+   {
+    "sheet": "Annexure 1",
+    "cell": "C6",
+    "reason": "Second line of the Name box; the full name goes in C5"
+   },
+   {
+    "sheet": "Annexure 1",
+    "cell": "F57",
+    "reason": "Beside the 'RM Details:' heading - not an input"
+   },
+   {
+    "sheet": "Annexure 1",
+    "cell": "B58",
+    "reason": "Client's signature box - signed by hand"
+   }
+  ],
+  "labels": [],
+  "blankFileName": "360 ONE Investor Profile Template.xlsx",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written in the Investor Profile Excel template: sheet + cell (the top-left cell of a merged box). page = sheet number, so review sections and page grouping work as for PDF forms. A field with options writes the chosen option as text (F51 holds the printed 'Yes   No'; it is replaced by the answer). appendToTemplateText: the value goes after the prompt printed in the same box (B53).",
+  "formId": "investor-profile",
+  "title": "Investor Profile",
+  "fields": [
+   {
+    "key": "investor_name",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C5",
+    "type": "text"
+   },
+   {
+    "key": "gender",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "E5",
+    "type": "text"
+   },
+   {
+    "key": "subscriber_address",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "F5",
+    "type": "multiline"
+   },
+   {
+    "key": "dob",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "E7",
+    "type": "text"
+   },
+   {
+    "key": "id_passport",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C9",
+    "type": "text"
+   },
+   {
+    "key": "telephone",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "E9",
+    "type": "text"
+   },
+   {
+    "key": "email",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "E10",
+    "type": "text"
+   },
+   {
+    "key": "citizenship_country",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C11",
+    "type": "text"
+   },
+   {
+    "key": "client_profile",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "B14",
+    "type": "multiline"
+   },
+   {
+    "key": "qualification_1",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C21",
+    "type": "text"
+   },
+   {
+    "key": "qualification_2",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C22",
+    "type": "text"
+   },
+   {
+    "key": "qualification_3",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C23",
+    "type": "text"
+   },
+   {
+    "key": "work_experience_1",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C26",
+    "type": "text"
+   },
+   {
+    "key": "work_experience_2",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C27",
+    "type": "text"
+   },
+   {
+    "key": "work_experience_3",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C28",
+    "type": "text"
+   },
+   {
+    "key": "honorary_position_1",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C31",
+    "type": "text"
+   },
+   {
+    "key": "honorary_position_2",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C32",
+    "type": "text"
+   },
+   {
+    "key": "capital_market_experience_years",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "D34",
+    "type": "text"
+   },
+   {
+    "key": "source_of_funds",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "B39",
+    "type": "multiline"
+   },
+   {
+    "key": "net_worth_usd",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C43",
+    "type": "text"
+   },
+   {
+    "key": "gross_annual_income",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C44",
+    "type": "text"
+   },
+   {
+    "key": "wealth_details",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C45",
+    "type": "multiline"
+   },
+   {
+    "key": "regulatory_action",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "F51",
+    "type": "text",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "key": "regulatory_action_details",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "B53",
+    "type": "multiline",
+    "appendToTemplateText": true
+   },
+   {
+    "key": "rm_name",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "F58",
+    "type": "text"
+   },
+   {
+    "key": "rm_email",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "F59",
+    "type": "text"
+   },
+   {
+    "key": "rm_contact_number",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "F60",
+    "type": "text"
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "sheet": "Annexure 1",
+    "cell": "C61",
+    "type": "text"
+   }
+  ]
+ },
+ "fieldSources": {
+  "investor_name": "document.name|upper",
+  "gender": "typed",
+  "subscriber_address": "document.address|withoutCareOf|upper",
+  "dob": "document.dob",
+  "id_passport": "document.passport",
+  "telephone": "typed",
+  "email": "typed",
+  "citizenship_country": "typed",
+  "client_profile": "typed",
+  "qualification_1": "typed",
+  "qualification_2": "typed",
+  "qualification_3": "typed",
+  "work_experience_1": "typed",
+  "work_experience_2": "typed",
+  "work_experience_3": "typed",
+  "honorary_position_1": "typed",
+  "honorary_position_2": "typed",
+  "capital_market_experience_years": "typed",
+  "source_of_funds": "typed",
+  "net_worth_usd": "typed",
+  "gross_annual_income": "typed",
+  "wealth_details": "typed",
+  "regulatory_action": "typed",
+  "regulatory_action_details": "typed",
+  "rm_name": "typed",
+  "rm_email": "typed",
+  "rm_contact_number": "typed",
+  "form_date": "today"
+ },
+ "formRules": {
+  "formId": "investor-profile",
+  "group": "VCC",
+  "label": "Investor Profile",
+  "shortLabel": "Investor Profile",
+  "purpose": "Investor profiler (Excel) · source of funds, education, occupation",
+  "blankFileName": "360 ONE Investor Profile Template.xlsx",
+  "keyFields": [
+   "Investor name",
+   "Source of funds",
+   "Net worth"
+  ],
+  "sheetTabName": "Investor Profile",
+  "detectionPhrases": [],
+  "supportedNomineeCount": 1,
+  "personLabel": "Investor",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "personal",
+    "label": "1 · Personal details",
+    "fields": [
+     "investor_name",
+     "gender",
+     "subscriber_address",
+     "dob",
+     "id_passport",
+     "telephone",
+     "email",
+     "citizenship_country",
+     "client_profile"
+    ]
+   },
+   {
+    "key": "experience",
+    "label": "2 · Academic and professional experience",
+    "fields": [
+     "qualification_1",
+     "qualification_2",
+     "qualification_3",
+     "work_experience_1",
+     "work_experience_2",
+     "work_experience_3",
+     "honorary_position_1",
+     "honorary_position_2",
+     "capital_market_experience_years"
+    ]
+   },
+   {
+    "key": "net-worth",
+    "label": "3 · Net worth",
+    "fields": [
+     "source_of_funds",
+     "net_worth_usd",
+     "gross_annual_income",
+     "wealth_details"
+    ]
+   },
+   {
+    "key": "authority",
+    "label": "4 · Authority, RM details, date",
+    "fields": [
+     "regulatory_action",
+     "regulatory_action_details",
+     "rm_name",
+     "rm_email",
+     "rm_contact_number",
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "investor_name",
+   "gender",
+   "subscriber_address",
+   "dob",
+   "id_passport",
+   "telephone",
+   "email",
+   "citizenship_country",
+   "client_profile",
+   "qualification_1",
+   "work_experience_1",
+   "capital_market_experience_years",
+   "source_of_funds",
+   "net_worth_usd",
+   "gross_annual_income",
+   "wealth_details",
+   "regulatory_action"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "address",
+   "dob",
+   "idNumber"
+  ]
+ }
+}

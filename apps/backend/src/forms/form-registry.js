@@ -9,6 +9,9 @@ import { BLANK_FORMS_DIRECTORY, FORMS_DIRECTORY } from "../config/paths-config.j
 import { applyCrnBrokingDematTickboxes, applyCamsNominationTickboxes, applyOptionTickboxes } from "../services/forms/tickbox-rules-service.js";
 
 export const FORM_STREAMS = { VCC: "vcc", US_TAX: "us-tax", NFT: "nft", GIFT_CITY: "gift-city", ADDED: "added" };
+// What a filled form is: a PDF (almost every form; no "outputType" in its configuration) or a copy of an Excel
+// template filled cell by cell ("outputType": "xlsx", field-positions.json gives sheet + cell instead of x/y).
+export const OUTPUT_TYPES = { PDF: "pdf", XLSX: "xlsx" };
 const CONFIGURATION_FILE_NAME = "form-configuration.json";
 const NEVER_MATCHES = /(?!)/;
 
@@ -31,6 +34,9 @@ function readFormDefinition(formDirectory) {
   if (!existsSync(configurationPath)) return null;
   const { _about: _ignoredAbout, blankFileName, nomineeHeaderRe, labels = [], tickboxRule = "usual", ...configuration } = JSON.parse(readFileSync(configurationPath, "utf-8"));
   if (!TICKBOX_RULES[tickboxRule]) throw new Error(`${configurationPath}: unknown tickboxRule "${tickboxRule}"`);
+  if (configuration.outputType && !Object.values(OUTPUT_TYPES).includes(configuration.outputType)) {
+    throw new Error(`${configurationPath}: unknown outputType "${configuration.outputType}"`);
+  }
   return {
     directory: formDirectory,
     formConfiguration: {
@@ -65,6 +71,9 @@ export function registerGeneratedForm(formId) {
 export function listFormIds() {
   return Object.keys(FORM_DEFINITIONS);
 }
+
+/** True for a form filled into an Excel template instead of a PDF. */
+export const isWorkbookForm = (formConfiguration) => formConfiguration.outputType === OUTPUT_TYPES.XLSX;
 
 /** null for an unknown id - callers answer 404. */
 export function getFormDefinition(formId) {

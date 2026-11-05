@@ -7,9 +7,10 @@ import { drawSignatures } from "../pdf/draw-signatures-service.js";
 import path from "node:path";
 import { validatorFor, validateIdNumberFor } from "@prefill/shared";
 import { fillTextFields } from "../pdf/fill-pdf-service.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { fillWorkbookCells } from "./fill-xlsx-service.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import { fetchFieldPositions, fetchFieldSources, fetchFormRules } from "../forms/form-files-service.js";
-import { getFilledPdfPath, getFillResultsPath } from "../storage/case-store-service.js";
+import { getFilledPdfPath, getFilledWorkbookPath, getFillResultsPath } from "../storage/case-store-service.js";
 import { fetchCorrectedValues } from "../storage/decision-log-service.js";
 import { buildNomineeProfile, IDENTITY_KIND_PRIORITY } from "../profile/build-nominee-profile-service.js";
 import { rereadMissingIdentityDocuments } from "../documents/read-identity-document-service.js";
@@ -72,13 +73,24 @@ export async function fillCase(caseEntry) {
       : validatorFor(fieldKey)?.(value)),
   });
 
-  const { pdfDoc, pages, results } = await fillTextFields(formDefinition.formConfiguration, fieldPositions, readFieldValue);
+  // An Excel-template form fills cells instead of drawing on PDF pages; everything else below is shared.
+  const isWorkbook = isWorkbookForm(formDefinition.formConfiguration);
+  const { pdfDoc, pages, workbook, results } = isWorkbook
+    ? await fillWorkbookCells(formDefinition.formConfiguration, fieldPositions, readFieldValue)
+    : await fillTextFields(formDefinition.formConfiguration, fieldPositions, readFieldValue);
   for (const fieldResult of results) {
     if (flaggedReasons[fieldResult.field] && fieldResult.value != null) {
       fieldResult.status = "invalid";
       fieldResult.reason = `Read from the document, but: ${flaggedReasons[fieldResult.field]} - please correct it`;
     }
     attachSourceDocument(fieldResult, { profiles, profileKeyByField, getIdentityKind, numberField: formRules.identityType.numberField });
+  }
+
+  if (isWorkbook) {
+    await mkdir(path.dirname(getFilledWorkbookPath(caseEntry.id)), { recursive: true });
+    await workbook.xlsx.writeFile(getFilledWorkbookPath(caseEntry.id));
+    await writeFile(getFillResultsPath(caseEntry.id), JSON.stringify(results, null, 2));
+    return { results };
   }
 
   const anyNomineeAadhaarLast4 = nomineeNumbers.some((nomineeNumber) => profiles[nomineeNumber]?.aadhaarLast4);

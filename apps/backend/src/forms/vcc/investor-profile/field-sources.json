@@ -1,0 +1,33 @@
+{
+  "_about": "VCC & Gift City Form Details.xlsx was not on disk, so only the identity details an ID document shows come from KYC documents: name (template note: as per passport), resident address (template note on F5: as per the Aadhaar), date of birth, passport number; everything else is typed (Excel) until 360 ONE says otherwise. Date = today, like the other VCC forms.",
+  "fieldSources": {
+    "investor_name": "document.name|upper",
+    "gender": "typed",
+    "subscriber_address": "document.address|withoutCareOf|upper",
+    "dob": "document.dob",
+    "id_passport": "document.passport",
+    "telephone": "typed",
+    "email": "typed",
+    "citizenship_country": "typed",
+    "client_profile": "typed",
+    "qualification_1": "typed",
+    "qualification_2": "typed",
+    "qualification_3": "typed",
+    "work_experience_1": "typed",
+    "work_experience_2": "typed",
+    "work_experience_3": "typed",
+    "honorary_position_1": "typed",
+    "honorary_position_2": "typed",
+    "capital_market_experience_years": "typed",
+    "source_of_funds": "typed",
+    "net_worth_usd": "typed",
+    "gross_annual_income": "typed",
+    "wealth_details": "typed",
+    "regulatory_action": "typed",
+    "regulatory_action_details": "typed",
+    "rm_name": "typed",
+    "rm_email": "typed",
+    "rm_contact_number": "typed",
+    "form_date": "today"
+  }
+}

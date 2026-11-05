@@ -25,7 +25,8 @@ export async function buildBatchColumns(formId) {
   const [{ fields }, fieldSources, formRules] = await Promise.all([fetchFieldPositions(formId), fetchFieldSources(formId), fetchFormRules(formId)]);
   const requiredBaseKeys = new Set(formRules.requiredFields);
   const nomineeBaseKeys = new Set(formRules.nomineeFieldKeys);
-  const optionsByBaseKey = Object.fromEntries(formConfiguration.tickboxes.filter((tickbox) => tickbox.options).map((tickbox) => [tickbox.key, tickbox.options]));
+  // Allowed answers: a tick box's options, or an Excel-template cell's (e.g. Yes / No written as text).
+  const optionsByBaseKey = Object.fromEntries([...fields, ...formConfiguration.tickboxes].filter((choice) => choice.options).map((choice) => [choice.key, choice.options]));
   const usualOptionByBaseKey = Object.fromEntries(formConfiguration.tickboxes.filter((tickbox) => tickbox.defaultOption).map((tickbox) => [tickbox.key, tickbox.defaultOption]));
   const presentBaseKeys = new Set([...fields.map((field) => field.key), ...formConfiguration.tickboxes.map((tickbox) => tickbox.key)]);
   // Every page a value is printed on (its own place, places it repeats, and every box of a tick answer).

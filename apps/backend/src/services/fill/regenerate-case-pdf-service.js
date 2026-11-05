@@ -1,13 +1,15 @@
 // "Regenerate PDF": re-fill one case from its first fill results with every reviewer correction applied. Writes
-// to separate -regenerated paths; the first fill's PDF and results are never touched. No OCR here.
+// to separate -regenerated paths; the first fill's PDF and results are never touched. No OCR here. A form filled into
+// an Excel template (outputType "xlsx") is re-filled the same way into a regenerated .xlsx.
 import { readFile, writeFile } from "node:fs/promises";
 import { drawSignatures } from "../pdf/draw-signatures-service.js";
 import { fillTextFields } from "../pdf/fill-pdf-service.js";
 import { drawTickOption, getTickOptionBox } from "../forms/tickbox-rules-service.js";
-import { getFormDefinition } from "../../forms/form-registry.js";
+import { getFormDefinition, isWorkbookForm } from "../../forms/form-registry.js";
 import { fetchFieldPositions } from "../forms/form-files-service.js";
 import { fetchLatestDecisionsByField } from "../storage/decision-log-service.js";
-import { getFillResultsPath, getRegeneratedPdfPath, getRegeneratedResultsPath } from "../storage/case-store-service.js";
+import { getFillResultsPath, getRegeneratedPdfPath, getRegeneratedResultsPath, getRegeneratedWorkbookPath } from "../storage/case-store-service.js";
+import { fillWorkbookCells } from "./fill-xlsx-service.js";
 import { createBaselineValueReader, getEffectiveTickOption } from "./baseline-value-reader.js";
 
 export async function regenerateCasePdf(caseEntry) {
@@ -15,6 +17,12 @@ export async function regenerateCasePdf(caseEntry) {
   const fieldPositions = await fetchFieldPositions(caseEntry.formId);
   const baselineRecords = JSON.parse(await readFile(getFillResultsPath(caseEntry.id), "utf-8"));
   const latestDecisions = await fetchLatestDecisionsByField(caseEntry.id);
+  if (isWorkbookForm(formConfiguration)) {
+    const { workbook, results } = await fillWorkbookCells(formConfiguration, fieldPositions, createBaselineValueReader(baselineRecords, latestDecisions));
+    await workbook.xlsx.writeFile(getRegeneratedWorkbookPath(caseEntry.id));
+    await writeFile(getRegeneratedResultsPath(caseEntry.id), JSON.stringify(results, null, 2));
+    return { results };
+  }
 
   const { pdfDoc, pages, results } = await fillTextFields(formConfiguration, fieldPositions, createBaselineValueReader(baselineRecords, latestDecisions));
   const tickRecords = [];

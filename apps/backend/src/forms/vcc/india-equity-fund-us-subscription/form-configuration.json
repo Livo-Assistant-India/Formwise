@@ -1,0 +1,3221 @@
+{
+  "_about": "360 ONE India Equity Fund - Subscription (US), 121 pages. Made by tools/form-building/make_vcc_us_subscriptions.mjs. Tick boxes: x = box left; y = the ☐ glyph's baseline, or top + 0.85 x side for drawn squares, or the middle of an underscore blank (\"initial one\" / \"check\" lines). Every tick box is its own question with no assumed answer; \"isOptional\" ones apply only to some investors (entities, joint applications, IRAs).",
+  "id": "india-equity-fund-us-subscription",
+  "title": "360 ONE India Equity Fund - Subscription (US)",
+  "blankFileName": "360 ONE India Equity Fund - Subscription (US).pdf",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 7,
+      "x": 108,
+      "y": 608,
+      "w": 155,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Bank account confirmation"
+    },
+    {
+      "page": 9,
+      "x": 72,
+      "y": 338,
+      "w": 163,
+      "h": 27,
+      "signer": "subscriber",
+      "label": "Subscription agreement signed"
+    },
+    {
+      "page": 10,
+      "x": 96,
+      "y": 311,
+      "w": 214,
+      "h": 25,
+      "signer": "ira_investor",
+      "label": "IRA owner / directing individual"
+    },
+    {
+      "page": 10,
+      "x": 96,
+      "y": 563,
+      "w": 214,
+      "h": 25,
+      "signer": "ira_investor",
+      "label": "IRA applicant signature"
+    },
+    {
+      "page": 10,
+      "x": 90,
+      "y": 655,
+      "w": 214,
+      "h": 25,
+      "signer": "custodian",
+      "label": "IRA custodian (authorised signatory)"
+    },
+    {
+      "page": 68,
+      "x": 72,
+      "y": 646.5,
+      "w": 163,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Accredited investor consent"
+    },
+    {
+      "page": 73,
+      "x": 304,
+      "y": 699,
+      "w": 195,
+      "h": 22,
+      "signer": "subscriber",
+      "label": "U.S. person status"
+    },
+    {
+      "page": 88,
+      "x": 316,
+      "y": 601,
+      "w": 160,
+      "h": 23,
+      "signer": "entity",
+      "label": "Account party (entity)"
+    },
+    {
+      "page": 83,
+      "x": 74,
+      "y": 403.8,
+      "w": 210,
+      "h": 26,
+      "signer": "subscriber",
+      "label": "Tax offences questionnaire"
+    },
+    {
+      "page": 98,
+      "x": 173,
+      "y": 571,
+      "w": 250,
+      "h": 25,
+      "signer": "subscriber",
+      "label": "Tax self-certification"
+    },
+    {
+      "page": 107,
+      "x": 172,
+      "y": 176,
+      "w": 64,
+      "h": 21,
+      "signer": "entity",
+      "label": "Entity authorised signatory 1"
+    },
+    {
+      "page": 107,
+      "x": 424,
+      "y": 176,
+      "w": 80,
+      "h": 21,
+      "signer": "entity",
+      "label": "Entity authorised signatory 2"
+    },
+    {
+      "page": 111,
+      "x": 183,
+      "y": 325,
+      "w": 230,
+      "h": 23,
+      "signer": "controlling_person",
+      "label": "Controlling person"
+    },
+    {
+      "page": 121,
+      "x": 74,
+      "y": 664.1,
+      "w": 190,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "PEP self-certification"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "applicant_type",
+      "page": 3,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Individual (natural person)",
+        "Entity (legal person / arrangement)"
+      ],
+      "boxesByOption": {
+        "Individual (natural person)": [
+          {
+            "x": 212.7,
+            "y": 504.25
+          }
+        ],
+        "Entity (legal person / arrangement)": [
+          {
+            "x": 212.7,
+            "y": 517.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_applicant_type",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Individual (natural person)",
+        "Entity (legal person / arrangement)"
+      ],
+      "boxesByOption": {
+        "Individual (natural person)": [
+          {
+            "x": 212.7,
+            "y": 275.65
+          }
+        ],
+        "Entity (legal person / arrangement)": [
+          {
+            "x": 212.7,
+            "y": 288.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "wiring_bank_in_fatf_country",
+      "page": 7,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 144,
+            "y": 751.75
+          }
+        ],
+        "No": [
+          {
+            "x": 144,
+            "y": 764.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "applicant_customer_of_wiring_bank",
+      "page": 8,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 144,
+            "y": 116.15
+          }
+        ],
+        "No": [
+          {
+            "x": 144,
+            "y": 129.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_instructions",
+      "page": 8,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Any of the joint applicants",
+        "All of the joint applicants"
+      ],
+      "boxesByOption": {
+        "Any of the joint applicants": [
+          {
+            "x": 72.8,
+            "y": 510.95
+          }
+        ],
+        "All of the joint applicants": [
+          {
+            "x": 72.8,
+            "y": 555.25
+          }
+        ]
+      }
+    },
+    {
+      "key": "singapore_investor_status",
+      "page": 58,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "A1(a) Individual: net personal assets over S$2 million",
+        "A1(b) Individual: net financial assets over S$1 million",
+        "A1(c) Individual: income of S$300,000 or more",
+        "A2 Corporation: net assets over S$10 million",
+        "A3 Entity: net assets over S$10 million",
+        "A4 Partnership of accredited investors",
+        "A5 Corporation owned by accredited investors",
+        "A6 Joint account with an accredited investor",
+        "A7(a) Trust: all beneficiaries accredited",
+        "A7(b) Trust: all settlors accredited",
+        "A7(c) Trust: subject matter over $10 million",
+        "B1 Government of Singapore",
+        "B2 Statutory board",
+        "B3(a) Government-owned entity managing its own funds",
+        "B3(b) Government-owned entity managing government funds",
+        "B3(c) Government-owned entity managing other government funds",
+        "B4 Government-owned entity",
+        "B5 Central bank outside Singapore",
+        "B6 Central government outside Singapore",
+        "B7 Agency of a foreign central government",
+        "B8 Multilateral agency or supranational body",
+        "B9 Licensed bank (Singapore)",
+        "B10 Merchant bank",
+        "B11 Finance company",
+        "B12 Insurance company or society",
+        "B13 Trust company",
+        "B14(a) CMS licence: dealing in capital markets products",
+        "B14(b) CMS licence: advising on corporate finance",
+        "B14(c) CMS licence: fund management",
+        "B14(d) CMS licence: REIT management",
+        "B14(e) CMS licence: product financing",
+        "B14(f) CMS licence: credit rating services",
+        "B14(g) CMS licence: custodial services",
+        "B15 Approved exchange",
+        "B16 Recognised market operator",
+        "B17 Approved clearing house",
+        "B18 Recognised clearing house",
+        "B19 Licensed trade repository",
+        "B20 Licensed foreign trade repository",
+        "B21 Approved holding company",
+        "B22 Depository (Section 81SF)",
+        "B23 Regulated foreign financial entity or trust",
+        "B24 Pension fund or collective investment scheme",
+        "B25 Dealer in bonds with accredited / expert investors",
+        "B26 Designated market-maker",
+        "B27 Headquarters company or finance and treasury centre",
+        "B28 Fund manager for up to 30 qualified investors",
+        "B29 Lloyd's service company",
+        "B30 Corporation owned by institutional investors",
+        "B31 Partnership of institutional investors"
+      ],
+      "boxesByOption": {
+        "A1(a) Individual: net personal assets over S$2 million": [
+          {
+            "x": 495.7,
+            "y": 260.15
+          }
+        ],
+        "A1(b) Individual: net financial assets over S$1 million": [
+          {
+            "x": 495.7,
+            "y": 306.65
+          }
+        ],
+        "A1(c) Individual: income of S$300,000 or more": [
+          {
+            "x": 495.7,
+            "y": 458.15
+          }
+        ],
+        "A2 Corporation: net assets over S$10 million": [
+          {
+            "x": 495.7,
+            "y": 504.75
+          }
+        ],
+        "A3 Entity: net assets over S$10 million": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 81.65
+          }
+        ],
+        "A4 Partnership of accredited investors": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 116.75
+          }
+        ],
+        "A5 Corporation owned by accredited investors": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 163.15
+          }
+        ],
+        "A6 Joint account with an accredited investor": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 198.15
+          }
+        ],
+        "A7(a) Trust: all beneficiaries accredited": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 256.65
+          }
+        ],
+        "A7(b) Trust: all settlors accredited": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 291.65
+          }
+        ],
+        "A7(c) Trust: subject matter over $10 million": [
+          {
+            "page": 59,
+            "x": 495.7,
+            "y": 397.15
+          }
+        ],
+        "B1 Government of Singapore": [
+          {
+            "page": 59,
+            "x": 495.5,
+            "y": 451.65
+          }
+        ],
+        "B2 Statutory board": [
+          {
+            "page": 59,
+            "x": 495.5,
+            "y": 476.95
+          }
+        ],
+        "B3(a) Government-owned entity managing its own funds": [
+          {
+            "page": 59,
+            "x": 495.5,
+            "y": 626.55
+          }
+        ],
+        "B3(b) Government-owned entity managing government funds": [
+          {
+            "page": 59,
+            "x": 495.5,
+            "y": 651.85
+          }
+        ],
+        "B3(c) Government-owned entity managing other government funds": [
+          {
+            "page": 59,
+            "x": 495.5,
+            "y": 698.35
+          }
+        ],
+        "B4 Government-owned entity": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 81.65
+          }
+        ],
+        "B5 Central bank outside Singapore": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 163.65
+          }
+        ],
+        "B6 Central government outside Singapore": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 188.95
+          }
+        ],
+        "B7 Agency of a foreign central government": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 214.25
+          }
+        ],
+        "B8 Multilateral agency or supranational body": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 249.35
+          }
+        ],
+        "B9 Licensed bank (Singapore)": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 375.35
+          }
+        ],
+        "B10 Merchant bank": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 400.55
+          }
+        ],
+        "B11 Finance company": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 435.55
+          }
+        ],
+        "B12 Insurance company or society": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 460.95
+          }
+        ],
+        "B13 Trust company": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 495.95
+          }
+        ],
+        "B14(a) CMS licence: dealing in capital markets products": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 544.65
+          }
+        ],
+        "B14(b) CMS licence: advising on corporate finance": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 570.05
+          }
+        ],
+        "B14(c) CMS licence: fund management": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 595.35
+          }
+        ],
+        "B14(d) CMS licence: REIT management": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 620.65
+          }
+        ],
+        "B14(e) CMS licence: product financing": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 645.95
+          }
+        ],
+        "B14(f) CMS licence: credit rating services": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 671.15
+          }
+        ],
+        "B14(g) CMS licence: custodial services": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 696.55
+          }
+        ],
+        "B15 Approved exchange": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 721.85
+          }
+        ],
+        "B16 Recognised market operator": [
+          {
+            "page": 60,
+            "x": 495.5,
+            "y": 747.15
+          }
+        ],
+        "B17 Approved clearing house": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 81.65
+          }
+        ],
+        "B18 Recognised clearing house": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 106.95
+          }
+        ],
+        "B19 Licensed trade repository": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 132.35
+          }
+        ],
+        "B20 Licensed foreign trade repository": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 157.65
+          }
+        ],
+        "B21 Approved holding company": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 182.85
+          }
+        ],
+        "B22 Depository (Section 81SF)": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 208.15
+          }
+        ],
+        "B23 Regulated foreign financial entity or trust": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 233.45
+          }
+        ],
+        "B24 Pension fund or collective investment scheme": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 337.55
+          }
+        ],
+        "B25 Dealer in bonds with accredited / expert investors": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 372.45
+          }
+        ],
+        "B26 Designated market-maker": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 407.45
+          }
+        ],
+        "B27 Headquarters company or finance and treasury centre": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 442.55
+          }
+        ],
+        "B28 Fund manager for up to 30 qualified investors": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 534.95
+          }
+        ],
+        "B29 Lloyd's service company": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 570.05
+          }
+        ],
+        "B30 Corporation owned by institutional investors": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 616.45
+          }
+        ],
+        "B31 Partnership of institutional investors": [
+          {
+            "page": 61,
+            "x": 495.5,
+            "y": 651.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "us_accredited_investor_category",
+      "page": 69,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "A1 Individual: net worth over $1,000,000",
+        "A2 Individual: income over $200,000 ($300,000 joint)",
+        "A3 Holds a Series 7, 82 or 65 licence",
+        "A4 Knowledgeable employee of the Fund",
+        "A5 Spouse of a knowledgeable employee",
+        "B1 Entity: total assets over $5,000,000",
+        "B2 Entity: every equity owner accredited",
+        "C1 Family office",
+        "C2 Family client of a family office",
+        "D1 ERISA plan, decision by a plan fiduciary",
+        "D2 ERISA plan: total assets over $5,000,000",
+        "D3 State plan: total assets over $5,000,000",
+        "E IRA, Keogh or self-directed plan",
+        "F 501(c)(3) organisation",
+        "G1 Trust: total assets over $5,000,000",
+        "G2 Bank or savings institution as trust fiduciary",
+        "G3 Revocable trust, grantors accredited",
+        "H Bank or savings and loan association",
+        "I Insurance company",
+        "J1 Director, officer or general partner of the Fund",
+        "J2 Registered broker or dealer",
+        "J3 Registered investment adviser",
+        "J4 Exempt reporting adviser",
+        "J5 Registered investment company",
+        "J6 Business development company",
+        "J7 Small Business Investment Company",
+        "J8 Rural Business Investment Company"
+      ],
+      "boxesByOption": {
+        "A1 Individual: net worth over $1,000,000": [
+          {
+            "x": 121.5,
+            "y": 209.4
+          }
+        ],
+        "A2 Individual: income over $200,000 ($300,000 joint)": [
+          {
+            "x": 121.5,
+            "y": 244.5
+          }
+        ],
+        "A3 Holds a Series 7, 82 or 65 licence": [
+          {
+            "x": 121.5,
+            "y": 314
+          }
+        ],
+        "A4 Knowledgeable employee of the Fund": [
+          {
+            "x": 121.5,
+            "y": 371.9
+          }
+        ],
+        "A5 Spouse of a knowledgeable employee": [
+          {
+            "x": 121.5,
+            "y": 395.4
+          }
+        ],
+        "B1 Entity: total assets over $5,000,000": [
+          {
+            "x": 121.5,
+            "y": 465.4
+          }
+        ],
+        "B2 Entity: every equity owner accredited": [
+          {
+            "x": 121.5,
+            "y": 512
+          }
+        ],
+        "C1 Family office": [
+          {
+            "page": 70,
+            "x": 122.9,
+            "y": 140.3
+          }
+        ],
+        "C2 Family client of a family office": [
+          {
+            "page": 70,
+            "x": 122.9,
+            "y": 232.8
+          }
+        ],
+        "D1 ERISA plan, decision by a plan fiduciary": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 303.9
+          }
+        ],
+        "D2 ERISA plan: total assets over $5,000,000": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 373.5
+          }
+        ],
+        "D3 State plan: total assets over $5,000,000": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 408.4
+          }
+        ],
+        "E IRA, Keogh or self-directed plan": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 501.4
+          }
+        ],
+        "F 501(c)(3) organisation": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 652
+          }
+        ],
+        "G1 Trust: total assets over $5,000,000": [
+          {
+            "page": 70,
+            "x": 121.5,
+            "y": 721.9
+          }
+        ],
+        "G2 Bank or savings institution as trust fiduciary": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 140.9
+          }
+        ],
+        "G3 Revocable trust, grantors accredited": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 210.4
+          }
+        ],
+        "H Bank or savings and loan association": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 291.9
+          }
+        ],
+        "I Insurance company": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 362
+          }
+        ],
+        "J1 Director, officer or general partner of the Fund": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 420.4
+          }
+        ],
+        "J2 Registered broker or dealer": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 455.5
+          }
+        ],
+        "J3 Registered investment adviser": [
+          {
+            "page": 71,
+            "x": 122.9,
+            "y": 489.3
+          }
+        ],
+        "J4 Exempt reporting adviser": [
+          {
+            "page": 71,
+            "x": 122.9,
+            "y": 524.4
+          }
+        ],
+        "J5 Registered investment company": [
+          {
+            "page": 71,
+            "x": 122.9,
+            "y": 559.4
+          }
+        ],
+        "J6 Business development company": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 595.4
+          }
+        ],
+        "J7 Small Business Investment Company": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 630
+          }
+        ],
+        "J8 Rural Business Investment Company": [
+          {
+            "page": 71,
+            "x": 121.5,
+            "y": 676.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "us_person_status",
+      "page": 73,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "A. U.S. Person",
+        "B. Not a U.S. Person (non-U.S. branch or agency)",
+        "C. Not a U.S. Person (non-U.S. employee benefit plan)",
+        "D. Not a U.S. Person (no category applies)"
+      ],
+      "boxesByOption": {
+        "A. U.S. Person": [
+          {
+            "x": 135.8,
+            "y": 169.95
+          }
+        ],
+        "B. Not a U.S. Person (non-U.S. branch or agency)": [
+          {
+            "x": 135.8,
+            "y": 532.15
+          }
+        ],
+        "C. Not a U.S. Person (non-U.S. employee benefit plan)": [
+          {
+            "x": 135.8,
+            "y": 597.75
+          }
+        ],
+        "D. Not a U.S. Person (no category applies)": [
+          {
+            "x": 135.8,
+            "y": 653.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "us_person_category",
+      "page": 73,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Natural person resident in the U.S.",
+        "U.S. partnership or corporation",
+        "Estate with a U.S. executor or administrator",
+        "Trust with a U.S. trustee",
+        "U.S. agency or branch of a foreign entity",
+        "Non-discretionary account for a U.S. Person",
+        "Discretionary account held by a U.S. dealer or fiduciary",
+        "Non-U.S. entity formed by a U.S. Person to invest"
+      ],
+      "boxesByOption": {
+        "Natural person resident in the U.S.": [
+          {
+            "x": 108.8,
+            "y": 214.25
+          }
+        ],
+        "U.S. partnership or corporation": [
+          {
+            "x": 108.8,
+            "y": 247.05
+          }
+        ],
+        "Estate with a U.S. executor or administrator": [
+          {
+            "x": 108.8,
+            "y": 279.85
+          }
+        ],
+        "Trust with a U.S. trustee": [
+          {
+            "x": 108.8,
+            "y": 323.45
+          }
+        ],
+        "U.S. agency or branch of a foreign entity": [
+          {
+            "x": 108.8,
+            "y": 367.15
+          }
+        ],
+        "Non-discretionary account for a U.S. Person": [
+          {
+            "x": 108.8,
+            "y": 389.05
+          }
+        ],
+        "Discretionary account held by a U.S. dealer or fiduciary": [
+          {
+            "x": 108.8,
+            "y": 421.75
+          }
+        ],
+        "Non-U.S. entity formed by a U.S. Person to invest": [
+          {
+            "x": 108.8,
+            "y": 465.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "benefit_plan_investor_status",
+      "page": 84,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Benefit Plan Investor",
+        "Not a Benefit Plan Investor"
+      ],
+      "boxesByOption": {
+        "Benefit Plan Investor": [
+          {
+            "x": 187.15,
+            "y": 350.3
+          }
+        ],
+        "Not a Benefit Plan Investor": [
+          {
+            "x": 245.75,
+            "y": 350.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "benefit_plan_investor_type",
+      "page": 84,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "ERISA plan (ERISA)",
+        "IRA, Keogh or other plan (E-IRC)",
+        "Entity holding plan assets (E-25%+)"
+      ],
+      "boxesByOption": {
+        "ERISA plan (ERISA)": [
+          {
+            "x": 181.1,
+            "y": 396.92
+          }
+        ],
+        "IRA, Keogh or other plan (E-IRC)": [
+          {
+            "x": 181.1,
+            "y": 466.42
+          }
+        ],
+        "Entity holding plan assets (E-25%+)": [
+          {
+            "x": 181.1,
+            "y": 501.42
+          }
+        ]
+      }
+    },
+    {
+      "key": "benefit_plan_equity_interest",
+      "page": 85,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "Less than 25% held by Benefit Plan Investors",
+        "25% or more held by Benefit Plan Investors"
+      ],
+      "boxesByOption": {
+        "Less than 25% held by Benefit Plan Investors": [
+          {
+            "x": 181.1,
+            "y": 139.32
+          }
+        ],
+        "25% or more held by Benefit Plan Investors": [
+          {
+            "x": 181.1,
+            "y": 231.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "insurance_company_general_account",
+      "page": 85,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "No plan assets in the general account",
+        "Part of the general account is plan assets"
+      ],
+      "boxesByOption": {
+        "No plan assets in the general account": [
+          {
+            "x": 181.1,
+            "y": 417.92
+          }
+        ],
+        "Part of the general account is plan assets": [
+          {
+            "x": 181.1,
+            "y": 475.42
+          }
+        ]
+      }
+    },
+    {
+      "key": "control_person_affiliate",
+      "page": 85,
+      "w": 9,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 253.7,
+            "y": 718.9
+          }
+        ],
+        "No": [
+          {
+            "x": 468.05,
+            "y": 718.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "guaranteed_leveraged_product",
+      "page": 85,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Is",
+        "Is not"
+      ],
+      "boxesByOption": {
+        "Is": [
+          {
+            "x": 183.5,
+            "y": 742.4
+          }
+        ],
+        "Is not": [
+          {
+            "x": 225,
+            "y": 742.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "government_entity",
+      "page": 86,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Is",
+        "Is not"
+      ],
+      "boxesByOption": {
+        "Is": [
+          {
+            "x": 186.75,
+            "y": 162.4
+          }
+        ],
+        "Is not": [
+          {
+            "x": 245.05,
+            "y": 162.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "registered_fund",
+      "page": 86,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Is",
+        "Is not"
+      ],
+      "boxesByOption": {
+        "Is": [
+          {
+            "x": 187.4,
+            "y": 524.9
+          }
+        ],
+        "Is not": [
+          {
+            "x": 246.4,
+            "y": 524.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "bank_holding_company_act",
+      "page": 87,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 209.3,
+            "y": 80.92
+          }
+        ],
+        "No": [
+          {
+            "x": 254.4,
+            "y": 80.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "freedom_of_information_act",
+      "page": 87,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 209.3,
+            "y": 569.52
+          }
+        ],
+        "No": [
+          {
+            "x": 254.4,
+            "y": 569.52
+          }
+        ]
+      }
+    },
+    {
+      "key": "fund_of_funds",
+      "page": 86,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 209.3,
+            "y": 138.92
+          }
+        ],
+        "No": [
+          {
+            "x": 251.7,
+            "y": 138.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "rule_506d_group",
+      "page": 87,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Is",
+        "Is not"
+      ],
+      "boxesByOption": {
+        "Is": [
+          {
+            "x": 251.45,
+            "y": 696.4
+          }
+        ],
+        "Is not": [
+          {
+            "x": 298.7,
+            "y": 696.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "voting_trust_arrangement",
+      "page": 87,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Does",
+        "Does not"
+      ],
+      "boxesByOption": {
+        "Does": [
+          {
+            "x": 133.75,
+            "y": 742.4
+          }
+        ],
+        "Does not": [
+          {
+            "x": 203.25,
+            "y": 742.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "other_beneficial_interest",
+      "page": 88,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 202.1,
+            "y": 363.92
+          }
+        ],
+        "No": [
+          {
+            "x": 241.7,
+            "y": 363.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_felony_conviction",
+      "page": 89,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 195.92
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 195.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_court_injunction",
+      "page": 89,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 310.92
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 310.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_state_regulator_order",
+      "page": 89,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 448.92
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 448.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_fraud_order",
+      "page": 89,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 540.82
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 540.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_sec_disciplinary_order",
+      "page": 89,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 667.42
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 667.42
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_sec_cease_and_desist",
+      "page": 90,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 115.32
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 115.32
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_sro_suspension",
+      "page": 90,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 184.32
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 184.32
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_stop_order",
+      "page": 90,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 264.92
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 264.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_actor_usps_false_representation",
+      "page": 90,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 468.7,
+            "y": 333.92
+          }
+        ],
+        "No": [
+          {
+            "x": 500.3,
+            "y": 333.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "beneficial_owner",
+      "page": 74,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 101.1,
+            "y": 383.75
+          }
+        ],
+        "No": [
+          {
+            "x": 101.1,
+            "y": 404.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "singapore_tax_status",
+      "page": 75,
+      "w": 5.6,
+      "h": 5.6,
+      "options": [
+        "Not tax resident in Singapore and not a citizen",
+        "Tax resident in Singapore and/or a citizen"
+      ],
+      "boxesByOption": {
+        "Not tax resident in Singapore and not a citizen": [
+          {
+            "x": 72.6,
+            "y": 180.86
+          }
+        ],
+        "Tax resident in Singapore and/or a citizen": [
+          {
+            "x": 72.6,
+            "y": 253.56
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_category",
+      "page": 75,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "(a) Not tax resident in Singapore",
+        "(b) Approved person - Section 13O / 13OA",
+        "(c) Approved person - Section 13U",
+        "(d) Approved trust - Section 13D",
+        "(e) Designated person",
+        "(f) None of these"
+      ],
+      "boxesByOption": {
+        "(a) Not tax resident in Singapore": [
+          {
+            "x": 72.8,
+            "y": 392.35
+          }
+        ],
+        "(b) Approved person - Section 13O / 13OA": [
+          {
+            "x": 72.8,
+            "y": 551.25
+          }
+        ],
+        "(c) Approved person - Section 13U": [
+          {
+            "x": 72.8,
+            "y": 598.45
+          }
+        ],
+        "(d) Approved trust - Section 13D": [
+          {
+            "x": 72.8,
+            "y": 645.75
+          }
+        ],
+        "(e) Designated person": [
+          {
+            "x": 72.8,
+            "y": 693.05
+          }
+        ],
+        "(f) None of these": [
+          {
+            "x": 72.8,
+            "y": 719.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q1_tax_resident",
+      "page": 76,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 108.2,
+            "y": 141.55
+          }
+        ],
+        "No": [
+          {
+            "x": 214.6,
+            "y": 141.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q2",
+      "page": 76,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 108.2,
+            "y": 274.75
+          }
+        ],
+        "No": [
+          {
+            "x": 214.6,
+            "y": 274.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q3",
+      "page": 76,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 108.2,
+            "y": 396.55
+          }
+        ],
+        "No": [
+          {
+            "x": 214.6,
+            "y": 396.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q4",
+      "page": 76,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 108.2,
+            "y": 506.85
+          }
+        ],
+        "No": [
+          {
+            "x": 214.6,
+            "y": 506.85
+          }
+        ]
+      }
+    },
+    {
+      "key": "sg_entity_q5",
+      "page": 76,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 108.2,
+            "y": 580.05
+          }
+        ],
+        "No": [
+          {
+            "x": 214.6,
+            "y": 580.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1a",
+      "page": 81,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 512.05
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 512.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1b",
+      "page": 81,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 548.05
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 548.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1c",
+      "page": 81,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 574.35
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 574.35
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1d",
+      "page": 81,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 610.35
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 610.35
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1e",
+      "page": 81,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 680.75
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 680.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1f",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 74.45
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 74.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_1g",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 121.95
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 121.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2a",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 193.95
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 193.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2b",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 229.95
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 229.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2c",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 266.05
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 266.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2d",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 302.05
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 302.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_2e",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 349.55
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 349.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_3",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 454.45
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 454.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_offence_part2",
+      "page": 82,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 455.9,
+            "y": 620.95
+          }
+        ],
+        "No": [
+          {
+            "x": 501.7,
+            "y": 620.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "us_tax_status",
+      "page": 97,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "U.S. citizen or resident",
+        "Born in the U.S., citizenship given up",
+        "Not a U.S. citizen or resident"
+      ],
+      "boxesByOption": {
+        "U.S. citizen or resident": [
+          {
+            "x": 108.8,
+            "y": 543.85
+          }
+        ],
+        "Born in the U.S., citizenship given up": [
+          {
+            "x": 108.8,
+            "y": 608.15
+          }
+        ],
+        "Not a U.S. citizen or resident": [
+          {
+            "x": 108.8,
+            "y": 640.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_specified_us_person",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 141.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_us_person_not_specified",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 177.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_singapore_or_iga",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 329.25
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_registered_deemed_compliant",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 342.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_participating",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 355.85
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_sponsored",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 464.35
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_trustee_documented_trust",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 547.65
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_certified_deemed_compliant",
+      "page": 102,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 617.95
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_fi_non_participating",
+      "page": 103,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 119.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_exempt_beneficial_owner",
+      "page": 103,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.8,
+            "y": 184.25
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nffe",
+      "page": 103,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.8,
+            "y": 222.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_passive_nffe",
+      "page": 103,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 90.8,
+            "y": 362.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_entity_is_fi",
+      "page": 104,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 109.1,
+            "y": 416.22
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_reporting_fi",
+      "page": 104,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 464.22
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_non_reporting_fi",
+      "page": 104,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 490.52
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_non_reporting_fi_type",
+      "page": 104,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "Governmental Entity",
+        "International Organization",
+        "Central Bank",
+        "Broad Participation Retirement Fund",
+        "Narrow Participation Retirement Fund",
+        "Pension Fund of a Governmental Entity / Intl. Org. / Central Bank",
+        "Exempt Collective Investment Vehicle",
+        "Trust whose trustee reports all required information",
+        "Qualified Credit Card Issuer",
+        "Other Entity defined under domestic law"
+      ],
+      "boxesByOption": {
+        "Governmental Entity": [
+          {
+            "x": 163.1,
+            "y": 530.12
+          }
+        ],
+        "International Organization": [
+          {
+            "x": 163.1,
+            "y": 543.42
+          }
+        ],
+        "Central Bank": [
+          {
+            "x": 163.1,
+            "y": 556.72
+          }
+        ],
+        "Broad Participation Retirement Fund": [
+          {
+            "x": 163.1,
+            "y": 570.12
+          }
+        ],
+        "Narrow Participation Retirement Fund": [
+          {
+            "x": 163.1,
+            "y": 583.42
+          }
+        ],
+        "Pension Fund of a Governmental Entity / Intl. Org. / Central Bank": [
+          {
+            "x": 163.1,
+            "y": 596.72
+          }
+        ],
+        "Exempt Collective Investment Vehicle": [
+          {
+            "x": 163.1,
+            "y": 623.02
+          }
+        ],
+        "Trust whose trustee reports all required information": [
+          {
+            "x": 163.1,
+            "y": 636.32
+          }
+        ],
+        "Qualified Credit Card Issuer": [
+          {
+            "x": 163.1,
+            "y": 662.62
+          }
+        ],
+        "Other Entity defined under domestic law": [
+          {
+            "x": 163.1,
+            "y": 675.72
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_fi_non_participating_jurisdiction",
+      "page": 105,
+      "w": 5.8,
+      "h": 5.8,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.1,
+            "y": 121.83
+          }
+        ]
+      }
+    },
+    {
+      "key": "crs_npj_fi_type",
+      "page": 105,
+      "w": 9.2,
+      "h": 9.2,
+      "isOptional": true,
+      "options": [
+        "(a) Investment Entity managed by another FI",
+        "(b) Other Investment Entity",
+        "(c) Other Financial Institution"
+      ],
+      "boxesByOption": {
+        "(a) Investment Entity managed by another FI": [
+          {
+            "x": 181.1,
+            "y": 173.22
+          }
+        ],
+        "(b) Other Investment Entity": [
+          {
+            "x": 181.1,
+            "y": 397.02
+          }
+        ],
+        "(c) Other Financial Institution": [
+          {
+            "x": 181.1,
+            "y": 410.22
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_crs",
+      "page": 105,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 448.85
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_regularly_traded",
+      "page": 105,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 127.3,
+            "y": 493.55
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_governmental",
+      "page": 105,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 126.7,
+            "y": 598.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_active_nfe_other",
+      "page": 105,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 126.7,
+            "y": 627.85
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_passive_nfe_crs",
+      "page": 105,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 108.8,
+            "y": 654.25
+          }
+        ]
+      }
+    },
+    {
+      "key": "controlling_person_us_status",
+      "page": 109,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "U.S. citizen or resident",
+        "Born in the U.S., citizenship given up",
+        "Not a U.S. citizen or resident"
+      ],
+      "boxesByOption": {
+        "U.S. citizen or resident": [
+          {
+            "x": 108.8,
+            "y": 138.45
+          }
+        ],
+        "Born in the U.S., citizenship given up": [
+          {
+            "x": 108.8,
+            "y": 202.75
+          }
+        ],
+        "Not a U.S. citizen or resident": [
+          {
+            "x": 108.8,
+            "y": 235.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "controlling_person_type_entity_1",
+      "page": 110,
+      "w": 9,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "a. Legal person - control by ownership",
+        "b. Legal person - control by other means",
+        "c. Legal person - senior managing official",
+        "d. Trust - settlor",
+        "e. Trust - trustee",
+        "f. Trust - protector",
+        "g. Trust - beneficiary",
+        "h. Trust - other",
+        "i. Legal arrangement - settlor-equivalent",
+        "j. Legal arrangement - trustee-equivalent",
+        "k. Legal arrangement - protector-equivalent",
+        "l. Legal arrangement - beneficiary-equivalent",
+        "m. Legal arrangement - other-equivalent"
+      ],
+      "boxesByOption": {
+        "a. Legal person - control by ownership": [
+          {
+            "x": 391.9,
+            "y": 182.8
+          }
+        ],
+        "b. Legal person - control by other means": [
+          {
+            "x": 391.9,
+            "y": 220.6
+          }
+        ],
+        "c. Legal person - senior managing official": [
+          {
+            "x": 391.9,
+            "y": 258.4
+          }
+        ],
+        "d. Trust - settlor": [
+          {
+            "x": 391.9,
+            "y": 289.6
+          }
+        ],
+        "e. Trust - trustee": [
+          {
+            "x": 391.9,
+            "y": 314.15
+          }
+        ],
+        "f. Trust - protector": [
+          {
+            "x": 391.9,
+            "y": 338.7
+          }
+        ],
+        "g. Trust - beneficiary": [
+          {
+            "x": 391.9,
+            "y": 363.3
+          }
+        ],
+        "h. Trust - other": [
+          {
+            "x": 391.9,
+            "y": 387.85
+          }
+        ],
+        "i. Legal arrangement - settlor-equivalent": [
+          {
+            "x": 391.9,
+            "y": 419
+          }
+        ],
+        "j. Legal arrangement - trustee-equivalent": [
+          {
+            "x": 391.9,
+            "y": 456.8
+          }
+        ],
+        "k. Legal arrangement - protector-equivalent": [
+          {
+            "x": 391.9,
+            "y": 494.6
+          }
+        ],
+        "l. Legal arrangement - beneficiary-equivalent": [
+          {
+            "x": 391.9,
+            "y": 532.4
+          }
+        ],
+        "m. Legal arrangement - other-equivalent": [
+          {
+            "x": 391.9,
+            "y": 570.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "controlling_person_type_entity_2",
+      "page": 110,
+      "w": 9,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "a. Legal person - control by ownership",
+        "b. Legal person - control by other means",
+        "c. Legal person - senior managing official",
+        "d. Trust - settlor",
+        "e. Trust - trustee",
+        "f. Trust - protector",
+        "g. Trust - beneficiary",
+        "h. Trust - other",
+        "i. Legal arrangement - settlor-equivalent",
+        "j. Legal arrangement - trustee-equivalent",
+        "k. Legal arrangement - protector-equivalent",
+        "l. Legal arrangement - beneficiary-equivalent",
+        "m. Legal arrangement - other-equivalent"
+      ],
+      "boxesByOption": {
+        "a. Legal person - control by ownership": [
+          {
+            "x": 443.6,
+            "y": 182.8
+          }
+        ],
+        "b. Legal person - control by other means": [
+          {
+            "x": 443.6,
+            "y": 220.6
+          }
+        ],
+        "c. Legal person - senior managing official": [
+          {
+            "x": 443.6,
+            "y": 258.4
+          }
+        ],
+        "d. Trust - settlor": [
+          {
+            "x": 443.6,
+            "y": 289.6
+          }
+        ],
+        "e. Trust - trustee": [
+          {
+            "x": 443.6,
+            "y": 314.15
+          }
+        ],
+        "f. Trust - protector": [
+          {
+            "x": 443.6,
+            "y": 338.7
+          }
+        ],
+        "g. Trust - beneficiary": [
+          {
+            "x": 443.6,
+            "y": 363.3
+          }
+        ],
+        "h. Trust - other": [
+          {
+            "x": 443.6,
+            "y": 387.85
+          }
+        ],
+        "i. Legal arrangement - settlor-equivalent": [
+          {
+            "x": 443.6,
+            "y": 419
+          }
+        ],
+        "j. Legal arrangement - trustee-equivalent": [
+          {
+            "x": 443.6,
+            "y": 456.8
+          }
+        ],
+        "k. Legal arrangement - protector-equivalent": [
+          {
+            "x": 443.6,
+            "y": 494.6
+          }
+        ],
+        "l. Legal arrangement - beneficiary-equivalent": [
+          {
+            "x": 443.6,
+            "y": 532.4
+          }
+        ],
+        "m. Legal arrangement - other-equivalent": [
+          {
+            "x": 443.6,
+            "y": 570.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "controlling_person_type_entity_3",
+      "page": 110,
+      "w": 9,
+      "h": 9,
+      "isOptional": true,
+      "options": [
+        "a. Legal person - control by ownership",
+        "b. Legal person - control by other means",
+        "c. Legal person - senior managing official",
+        "d. Trust - settlor",
+        "e. Trust - trustee",
+        "f. Trust - protector",
+        "g. Trust - beneficiary",
+        "h. Trust - other",
+        "i. Legal arrangement - settlor-equivalent",
+        "j. Legal arrangement - trustee-equivalent",
+        "k. Legal arrangement - protector-equivalent",
+        "l. Legal arrangement - beneficiary-equivalent",
+        "m. Legal arrangement - other-equivalent"
+      ],
+      "boxesByOption": {
+        "a. Legal person - control by ownership": [
+          {
+            "x": 493.7,
+            "y": 182.8
+          }
+        ],
+        "b. Legal person - control by other means": [
+          {
+            "x": 493.7,
+            "y": 220.6
+          }
+        ],
+        "c. Legal person - senior managing official": [
+          {
+            "x": 493.7,
+            "y": 258.4
+          }
+        ],
+        "d. Trust - settlor": [
+          {
+            "x": 493.7,
+            "y": 289.6
+          }
+        ],
+        "e. Trust - trustee": [
+          {
+            "x": 493.7,
+            "y": 314.15
+          }
+        ],
+        "f. Trust - protector": [
+          {
+            "x": 493.7,
+            "y": 338.7
+          }
+        ],
+        "g. Trust - beneficiary": [
+          {
+            "x": 493.7,
+            "y": 363.3
+          }
+        ],
+        "h. Trust - other": [
+          {
+            "x": 493.7,
+            "y": 387.85
+          }
+        ],
+        "i. Legal arrangement - settlor-equivalent": [
+          {
+            "x": 493.7,
+            "y": 419
+          }
+        ],
+        "j. Legal arrangement - trustee-equivalent": [
+          {
+            "x": 493.7,
+            "y": 456.8
+          }
+        ],
+        "k. Legal arrangement - protector-equivalent": [
+          {
+            "x": 493.7,
+            "y": 494.6
+          }
+        ],
+        "l. Legal arrangement - beneficiary-equivalent": [
+          {
+            "x": 493.7,
+            "y": 532.4
+          }
+        ],
+        "m. Legal arrangement - other-equivalent": [
+          {
+            "x": 493.7,
+            "y": 570.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "aml_verification_acknowledged",
+      "page": 62,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 72.8,
+            "y": 192.65
+          }
+        ]
+      }
+    },
+    {
+      "key": "natural_person_own_behalf",
+      "page": 62,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 72.8,
+            "y": 325.45
+          }
+        ]
+      }
+    },
+    {
+      "key": "designated_body_declaration",
+      "page": 62,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 72.8,
+            "y": 377.75
+          }
+        ]
+      }
+    },
+    {
+      "key": "corporate_applicant_declaration",
+      "page": 62,
+      "w": 7,
+      "h": 7,
+      "isOptional": true,
+      "options": [
+        "Ticked"
+      ],
+      "boxesByOption": {
+        "Ticked": [
+          {
+            "x": 72.8,
+            "y": 589.05
+          }
+        ]
+      }
+    },
+    {
+      "key": "form_pf_capacity",
+      "page": 72,
+      "w": 9.2,
+      "h": 9.2,
+      "options": [
+        "Acting for a beneficial owner (trustee, agent or nominee)",
+        "Acting on its own behalf"
+      ],
+      "boxesByOption": {
+        "Acting for a beneficial owner (trustee, agent or nominee)": [
+          {
+            "x": 109.1,
+            "y": 158.42
+          }
+        ],
+        "Acting on its own behalf": [
+          {
+            "x": 109.1,
+            "y": 198.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "form_pf_investor_type",
+      "page": 72,
+      "w": 5.6,
+      "h": 6.3,
+      "options": [
+        "Individual that is a United States person",
+        "Individual that is not a United States person",
+        "Broker-dealer",
+        "Insurance company",
+        "Registered investment company",
+        "Private fund",
+        "Non-profit",
+        "Pension plan (not governmental)",
+        "Banking or thrift institution",
+        "State or municipal government entity",
+        "State or municipal governmental pension plan",
+        "Sovereign wealth fund or foreign official institution",
+        "Non-U.S. person, beneficial ownership unknown",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Individual that is a United States person": [
+          {
+            "x": 83.8,
+            "y": 289.46
+          }
+        ],
+        "Individual that is not a United States person": [
+          {
+            "x": 83.8,
+            "y": 324.36
+          }
+        ],
+        "Broker-dealer": [
+          {
+            "x": 83.8,
+            "y": 359.36
+          }
+        ],
+        "Insurance company": [
+          {
+            "x": 83.8,
+            "y": 376.86
+          }
+        ],
+        "Registered investment company": [
+          {
+            "x": 83.8,
+            "y": 394.46
+          }
+        ],
+        "Private fund": [
+          {
+            "x": 83.8,
+            "y": 411.86
+          }
+        ],
+        "Non-profit": [
+          {
+            "x": 83.8,
+            "y": 429.36
+          }
+        ],
+        "Pension plan (not governmental)": [
+          {
+            "x": 83.8,
+            "y": 446.86
+          }
+        ],
+        "Banking or thrift institution": [
+          {
+            "x": 83.8,
+            "y": 464.36
+          }
+        ],
+        "State or municipal government entity": [
+          {
+            "x": 83.8,
+            "y": 481.96
+          }
+        ],
+        "State or municipal governmental pension plan": [
+          {
+            "x": 83.8,
+            "y": 499.36
+          }
+        ],
+        "Sovereign wealth fund or foreign official institution": [
+          {
+            "x": 83.8,
+            "y": 516.86
+          }
+        ],
+        "Non-U.S. person, beneficial ownership unknown": [
+          {
+            "x": 83.8,
+            "y": 534.36
+          }
+        ],
+        "Other": [
+          {
+            "x": 83.8,
+            "y": 574.96
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 121,
+      "w": 4.5,
+      "h": 4.5,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 72.7,
+            "y": 455.73
+          }
+        ],
+        "No": [
+          {
+            "x": 72.7,
+            "y": 479.33
+          }
+        ]
+      }
+    }
+  ],
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 6,
+      "y": 225,
+      "why": "Spare empty line under the joint applicant's Email, with no label"
+    },
+    {
+      "page": 11,
+      "y": 100,
+      "why": "Checklist tick column (supporting documents and annexes): a reminder list for whoever assembles the pack, not investor data"
+    },
+    {
+      "page": 12,
+      "y": 160,
+      "why": "\"To be completed by the Fund only\": the Fund's own acceptance and signature"
+    }
+  ]
+}
