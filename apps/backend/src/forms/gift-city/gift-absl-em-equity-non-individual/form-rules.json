@@ -1,0 +1,342 @@
+{
+  "_about": "Form-level rules. The investor is an entity: its details come from the Excel. The KYC documents are the authorised signatory's (CKYC related person, page 22).",
+  "formId": "gift-absl-em-equity-non-individual",
+  "group": "GIFT City",
+  "label": "GIFT – ABSL Emerging Market Equity Fund – Non-individual application",
+  "shortLabel": "ABSL EM non-individual",
+  "purpose": "New investment · companies, trusts and other entities",
+  "blankFileName": "ABSL Emerging Market Equity Fund - Non Individual Application.pdf",
+  "keyFields": [
+    "Entity name",
+    "Entity PAN",
+    "Investment amount",
+    "Plan"
+  ],
+  "sheetTabName": "ABSL EM non-individual",
+  "detectionPhrases": [
+    "ABSL Emerging Market Equity Fund",
+    "Application Form for Non Individuals"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Authorised signatory",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "entity",
+      "label": "Page 9 · Entity",
+      "fields": [
+        "investor_category",
+        "entity_constitution",
+        "entity_constitution_other",
+        "entity_legal_name",
+        "entity_incorporation_date",
+        "entity_registration_number",
+        "entity_pan",
+        "entity_ckyc_number"
+      ]
+    },
+    {
+      "key": "address",
+      "label": "Page 9 · Addresses",
+      "fields": [
+        "entity_address_street",
+        "entity_address_city",
+        "entity_address_state",
+        "entity_address_postcode",
+        "entity_address_country",
+        "entity_address_district",
+        "entity_address_state_code",
+        "entity_address_country_code",
+        "entity_mailing_street",
+        "entity_mailing_city",
+        "entity_mailing_state",
+        "entity_mailing_postcode",
+        "entity_mailing_country"
+      ]
+    },
+    {
+      "key": "contact",
+      "label": "Page 9 · Contact person, POA, PEP",
+      "fields": [
+        "contact_person_name",
+        "contact_person_address",
+        "contact_person_designation",
+        "contact_person_pan",
+        "contact_person_ckyc_number",
+        "telephone",
+        "mobile",
+        "fax",
+        "email",
+        "alternate_email",
+        "poa_holder_name",
+        "poa_holder_pan",
+        "poa_holder_ckyc_number",
+        "pep_status"
+      ]
+    },
+    {
+      "key": "distributor",
+      "label": "Page 9 · Distributor, RM, existing folio",
+      "fields": [
+        "distributor_name",
+        "distributor_code",
+        "distributor_email",
+        "distributor_rm_name",
+        "distributor_rm_contact",
+        "rm_name",
+        "rm_branch",
+        "rm_email",
+        "rm_contact",
+        "existing_unitholder_name",
+        "folio_no"
+      ]
+    },
+    {
+      "key": "investment",
+      "label": "Page 10 · Investment and bank",
+      "fields": [
+        "plan_class",
+        "subscription_amount",
+        "subscription_amount_words",
+        "account_number",
+        "account_type",
+        "bank_name",
+        "bank_city",
+        "bank_state",
+        "bank_postcode",
+        "bank_country",
+        "ifsc_code",
+        "swift_code"
+      ]
+    },
+    {
+      "key": "payout",
+      "label": "Page 10 · Payout bank",
+      "fields": [
+        "payout_bank_same",
+        "payout_account_number",
+        "payout_account_type",
+        "payout_bank_name",
+        "payout_bank_city",
+        "payout_bank_state",
+        "payout_bank_postcode",
+        "payout_bank_country",
+        "payout_ifsc_code",
+        "payout_swift_code"
+      ]
+    },
+    {
+      "key": "signature",
+      "label": "Pages 11, 14, 17, 23 · Place and date",
+      "fields": [
+        "place",
+        "form_date",
+        "form_date_p14",
+        "form_date_p17",
+        "place_p17",
+        "form_date_p23",
+        "place_p23"
+      ]
+    },
+    {
+      "key": "ubo",
+      "label": "Page 12 · Beneficial owners",
+      "fields": [
+        "ubo_1_name",
+        "ubo_1_father_name",
+        "ubo_1_gender",
+        "ubo_1_dob",
+        "ubo_1_place_of_birth",
+        "ubo_1_occupation",
+        "ubo_1_tax_residence_country",
+        "ubo_1_ownership_percent",
+        "ubo_1_tax_identification_number",
+        "ubo_1_identity_document_type",
+        "ubo_2_name",
+        "ubo_2_father_name",
+        "ubo_2_gender",
+        "ubo_2_dob",
+        "ubo_2_place_of_birth",
+        "ubo_2_occupation",
+        "ubo_2_tax_residence_country",
+        "ubo_2_ownership_percent",
+        "ubo_2_tax_identification_number",
+        "ubo_2_identity_document_type",
+        "ubo_3_name",
+        "ubo_3_father_name",
+        "ubo_3_gender",
+        "ubo_3_dob",
+        "ubo_3_place_of_birth",
+        "ubo_3_occupation",
+        "ubo_3_tax_residence_country",
+        "ubo_3_ownership_percent",
+        "ubo_3_tax_identification_number",
+        "ubo_3_identity_document_type"
+      ]
+    },
+    {
+      "key": "fatca",
+      "label": "Page 13 · FATCA / CRS",
+      "fields": [
+        "entity_pan_p13",
+        "entity_incorporation_date_p13",
+        "entity_legal_name_p13",
+        "kyc_address_type",
+        "entity_place_of_incorporation",
+        "entity_country_of_incorporation",
+        "gross_annual_income",
+        "net_worth_usd_million",
+        "net_worth_date",
+        "entity_restricted_services",
+        "entity_tax_resident_outside_india",
+        "entity_tax_residence_country_1",
+        "entity_tax_reference_number_1",
+        "entity_tax_reference_type_1",
+        "entity_tax_residence_country_2",
+        "entity_tax_reference_number_2",
+        "entity_tax_reference_type_2",
+        "entity_tax_residence_country_3",
+        "entity_tax_reference_number_3",
+        "entity_tax_reference_type_3",
+        "entity_us_exemption"
+      ]
+    },
+    {
+      "key": "fatca-parts",
+      "label": "Page 13 · FATCA parts B and C",
+      "fields": [
+        "fatca_part_b_status",
+        "entity_giin",
+        "sponsoring_entity_name",
+        "giin_not_available_reason",
+        "giin_exemption_subcategory_code",
+        "listed_company",
+        "stock_exchange_name",
+        "related_entity_of_listed_company",
+        "listed_company_name",
+        "listed_company_relation",
+        "related_entity_stock_exchange_name",
+        "active_nfe",
+        "active_nfe_subcategory",
+        "passive_nfe",
+        "passive_nfe_nature_of_business"
+      ]
+    },
+    {
+      "key": "controlling",
+      "label": "Page 14 · Controlling persons (passive NFE)",
+      "fields": [
+        "controlling_person_1_name",
+        "controlling_person_1_tax_identification_number",
+        "controlling_person_1_place_of_birth",
+        "controlling_person_1_tax_residence_country",
+        "controlling_person_1_occupation_type",
+        "controlling_person_1_nationality",
+        "controlling_person_1_father_name",
+        "controlling_person_1_dob",
+        "controlling_person_1_gender",
+        "controlling_person_2_name",
+        "controlling_person_2_tax_identification_number",
+        "controlling_person_2_place_of_birth",
+        "controlling_person_2_tax_residence_country",
+        "controlling_person_2_occupation_type",
+        "controlling_person_2_nationality",
+        "controlling_person_2_father_name",
+        "controlling_person_2_dob",
+        "controlling_person_2_gender",
+        "controlling_person_3_name",
+        "controlling_person_3_tax_identification_number",
+        "controlling_person_3_place_of_birth",
+        "controlling_person_3_tax_residence_country",
+        "controlling_person_3_occupation_type",
+        "controlling_person_3_nationality",
+        "controlling_person_3_father_name",
+        "controlling_person_3_dob",
+        "controlling_person_3_gender"
+      ]
+    },
+    {
+      "key": "non-pan",
+      "label": "Page 15 · Non-PAN declaration (only without a PAN)",
+      "fields": [
+        "non_pan_declarant_name",
+        "non_pan_tax_residence_country",
+        "non_pan_email",
+        "non_pan_contact_number",
+        "non_pan_address",
+        "non_pan_tax_identification_number",
+        "non_pan_unique_identification_number",
+        "non_pan_place",
+        "non_pan_date"
+      ]
+    },
+    {
+      "key": "ckyc",
+      "label": "Page 16 · CKYC entity",
+      "fields": [
+        "entity_legal_name_p16",
+        "entity_constitution_code",
+        "entity_incorporation_date_p16",
+        "business_commencement_date",
+        "entity_place_of_incorporation_p16",
+        "entity_incorporation_country_code",
+        "tin_issuing_country_code",
+        "entity_pan_p16",
+        "entity_tin_gst_number",
+        "entity_ckyc_address_line_1",
+        "entity_ckyc_address_line_2",
+        "entity_address_city_p16",
+        "entity_address_postcode_p16",
+        "india_address_line_1",
+        "india_address_line_2",
+        "india_address_city",
+        "india_address_district",
+        "india_address_pincode",
+        "india_address_state_code",
+        "india_address_country_code",
+        "telephone_p16",
+        "fax_p16",
+        "mobile_p16",
+        "email_p16",
+        "alternate_email_p16",
+        "number_of_related_persons"
+      ]
+    },
+    {
+      "key": "related-person",
+      "label": "Pages 22-23 · Authorised signatory (KYC)",
+      "fields": [
+        "related_person_type",
+        "related_person_din",
+        "related_person_prefix",
+        "related_person_first_name",
+        "related_person_middle_name",
+        "related_person_last_name",
+        "related_person_father_spouse_name",
+        "related_person_dob",
+        "related_person_gender",
+        "related_person_nationality",
+        "related_person_pan",
+        "related_person_identity_proof",
+        "related_person_passport",
+        "related_person_driving_licence",
+        "related_person_address_line_1",
+        "related_person_address_line_2",
+        "related_person_city",
+        "related_person_district",
+        "related_person_pincode",
+        "related_person_state_code",
+        "related_person_country_code",
+        "related_person_current_address_same",
+        "related_person_mobile",
+        "related_person_email"
+      ]
+    }
+  ]
+}

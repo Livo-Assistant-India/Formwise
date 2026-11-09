@@ -1,0 +1,10 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": [
+    "subscriber_name",
+    "id_pan",
+    "residential_status",
+    "plan_class",
+    "subscription_amount"
+  ]
+}

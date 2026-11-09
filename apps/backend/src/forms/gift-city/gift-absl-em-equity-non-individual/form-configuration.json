@@ -1,0 +1,764 @@
+{
+  "_about": "ABSL Emerging Market Equity Fund (GIFT IFSC) application form for non-individuals, 23 pages; written by tools/form-building/make_absl_non_individual.mjs. Pages 1-8: scheme information, terms, guidelines and checklist; 9-11 application, investment, bank, declarations; 12 UBO declaration; 13-14 FATCA/CRS for entities; 15 non-PAN declaration (typed, only if the entity has no PAN); 16-17 CKYC form for the entity; 18 and 21 code lists and instructions; 19-20 CKYC Annexure A1 (related person of an individual: guardian / assignee) left blank; 22-23 CKYC Annexure A2 (related person of the entity: the authorised signatory, from their KYC documents).",
+  "id": "gift-absl-em-equity-non-individual",
+  "title": "ABSL Emerging Market Equity Fund - Application Form for Non Individuals",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 11,
+      "x": 15,
+      "y": 565,
+      "w": 186,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "Authorised signatory 1 (with seal)"
+    },
+    {
+      "page": 11,
+      "x": 203,
+      "y": 565,
+      "w": 182,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "Authorised signatory 2 (with seal)"
+    },
+    {
+      "page": 11,
+      "x": 387,
+      "y": 565,
+      "w": 188,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "Authorised signatory 3 (with seal)"
+    },
+    {
+      "page": 14,
+      "x": 18,
+      "y": 432,
+      "w": 186,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "FATCA / CRS - authorised signatory 1"
+    },
+    {
+      "page": 14,
+      "x": 206,
+      "y": 432,
+      "w": 182,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "FATCA / CRS - authorised signatory 2"
+    },
+    {
+      "page": 14,
+      "x": 390,
+      "y": 432,
+      "w": 188,
+      "h": 69.3,
+      "signer": "entity",
+      "label": "FATCA / CRS - authorised signatory 3"
+    },
+    {
+      "page": 17,
+      "x": 420,
+      "y": 90,
+      "w": 146,
+      "h": 56,
+      "signer": "entity",
+      "label": "CKYC - authorised person(s)"
+    },
+    {
+      "page": 23,
+      "x": 420,
+      "y": 180,
+      "w": 146,
+      "h": 56,
+      "signer": "entity",
+      "label": "CKYC related person - applicant"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "investor_category",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "x": 184.5,
+      "y": 299.1,
+      "isAlwaysTicked": true
+    },
+    {
+      "key": "entity_constitution",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Partnership LLP",
+        "Company",
+        "Bank / Insurance Company / Pension Fund / Provident Fund",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Partnership LLP": [
+          {
+            "x": 22.3,
+            "y": 317.7
+          }
+        ],
+        "Company": [
+          {
+            "x": 112,
+            "y": 317.7
+          }
+        ],
+        "Bank / Insurance Company / Pension Fund / Provident Fund": [
+          {
+            "x": 180.9,
+            "y": 317.7
+          }
+        ],
+        "Others": [
+          {
+            "x": 22.3,
+            "y": 336.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "I am PEP",
+        "I am related to a PEP",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "I am PEP": [
+          {
+            "x": 22.3,
+            "y": 763.1
+          }
+        ],
+        "I am related to a PEP": [
+          {
+            "x": 83.9,
+            "y": 763.1
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 184.4,
+            "y": 763.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "plan_class",
+      "page": 10,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Direct Plan Class A",
+        "Regular Plan Class B"
+      ],
+      "boxesByOption": {
+        "Direct Plan Class A": [
+          {
+            "x": 155,
+            "y": 46.7
+          }
+        ],
+        "Regular Plan Class B": [
+          {
+            "x": 333.3,
+            "y": 46.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "payout_bank_same",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Same as above"
+      ],
+      "boxesByOption": {
+        "Same as above": [
+          {
+            "x": 20,
+            "y": 256.8
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "kyc_address_type",
+      "page": 13,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Residential",
+        "Residential / Business",
+        "Business",
+        "Registered Office"
+      ],
+      "boxesByOption": {
+        "Residential": [
+          {
+            "x": 183.5,
+            "y": 108.6
+          }
+        ],
+        "Residential / Business": [
+          {
+            "x": 267.5,
+            "y": 108.6
+          }
+        ],
+        "Business": [
+          {
+            "x": 398.4,
+            "y": 108.6
+          }
+        ],
+        "Registered Office": [
+          {
+            "x": 497.1,
+            "y": 108.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "gross_annual_income",
+      "page": 13,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Below 1 million",
+        "1 to 5 million",
+        "5 to 10 million",
+        "10 million and above"
+      ],
+      "boxesByOption": {
+        "Below 1 million": [
+          {
+            "x": 183.5,
+            "y": 142.7
+          }
+        ],
+        "1 to 5 million": [
+          {
+            "x": 267.5,
+            "y": 142.7
+          }
+        ],
+        "5 to 10 million": [
+          {
+            "x": 398.4,
+            "y": 142.7
+          }
+        ],
+        "10 million and above": [
+          {
+            "x": 494.7,
+            "y": 142.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_restricted_services",
+      "page": 13,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Foreign Exchange / Money Changer Services",
+        "Money Laundering / Pawning",
+        "Gaming / Gambling / Lottery Services"
+      ],
+      "boxesByOption": {
+        "Foreign Exchange / Money Changer Services": [
+          {
+            "x": 175.6,
+            "y": 177.6
+          }
+        ],
+        "Money Laundering / Pawning": [
+          {
+            "x": 412.1,
+            "y": 177.6
+          }
+        ],
+        "Gaming / Gambling / Lottery Services": [
+          {
+            "x": 175.6,
+            "y": 190.6
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "entity_tax_resident_outside_india",
+      "page": 13,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 219.2,
+            "y": 210
+          }
+        ],
+        "No": [
+          {
+            "x": 264.2,
+            "y": 210
+          }
+        ]
+      }
+    },
+    {
+      "key": "fatca_part_b_status",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "Financial institution",
+        "Direct reporting NFFE"
+      ],
+      "boxesByOption": {
+        "Financial institution": [
+          {
+            "x": 24.7,
+            "y": 429.1
+          }
+        ],
+        "Direct reporting NFFE": [
+          {
+            "x": 24.7,
+            "y": 450.4
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "giin_not_available_reason",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "Applied for",
+        "Not required to apply for",
+        "Not obtained - Non-participating FFI"
+      ],
+      "boxesByOption": {
+        "Applied for": [
+          {
+            "x": 202.9,
+            "y": 523
+          }
+        ],
+        "Not required to apply for": [
+          {
+            "x": 202.9,
+            "y": 535.9
+          }
+        ],
+        "Not obtained - Non-participating FFI": [
+          {
+            "x": 202.9,
+            "y": 548.5
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "listed_company",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "boxesByOption": {
+        "No": [
+          {
+            "x": 202.9,
+            "y": 588.4
+          }
+        ],
+        "Yes": [
+          {
+            "x": 202.9,
+            "y": 601.3
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "related_entity_of_listed_company",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "boxesByOption": {
+        "No": [
+          {
+            "x": 202.9,
+            "y": 635.9
+          }
+        ],
+        "Yes": [
+          {
+            "x": 202.9,
+            "y": 648.8
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "listed_company_relation",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "Subsidiary",
+        "Controlled"
+      ],
+      "boxesByOption": {
+        "Subsidiary": [
+          {
+            "x": 268.1,
+            "y": 669.5
+          }
+        ],
+        "Controlled": [
+          {
+            "x": 321.2,
+            "y": 669.5
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "active_nfe",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "boxesByOption": {
+        "No": [
+          {
+            "x": 202.9,
+            "y": 692.9
+          }
+        ],
+        "Yes": [
+          {
+            "x": 202.9,
+            "y": 705.8
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "passive_nfe",
+      "page": 13,
+      "w": 6.7,
+      "h": 6.7,
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "boxesByOption": {
+        "No": [
+          {
+            "x": 202.9,
+            "y": 733.9
+          }
+        ],
+        "Yes": [
+          {
+            "x": 202.9,
+            "y": 746.8
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "related_person_type",
+      "page": 22,
+      "w": 6.2,
+      "h": 6.2,
+      "options": [
+        "Director",
+        "Promoter",
+        "Karta",
+        "Trustee",
+        "Partner",
+        "Court Appointment Official",
+        "Proprietor",
+        "Beneficiary",
+        "Authorised Signatory",
+        "Beneficial Owner",
+        "Power of Attorney Holder",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Director": [
+          {
+            "x": 103.2,
+            "y": 219.4
+          }
+        ],
+        "Promoter": [
+          {
+            "x": 151.9,
+            "y": 218.4
+          }
+        ],
+        "Karta": [
+          {
+            "x": 198.6,
+            "y": 221
+          }
+        ],
+        "Trustee": [
+          {
+            "x": 236.4,
+            "y": 220
+          }
+        ],
+        "Partner": [
+          {
+            "x": 280.5,
+            "y": 220
+          }
+        ],
+        "Court Appointment Official": [
+          {
+            "x": 326.4,
+            "y": 221
+          }
+        ],
+        "Proprietor": [
+          {
+            "x": 428,
+            "y": 220.7
+          }
+        ],
+        "Beneficiary": [
+          {
+            "x": 103.2,
+            "y": 232.3
+          }
+        ],
+        "Authorised Signatory": [
+          {
+            "x": 151.9,
+            "y": 232.3
+          }
+        ],
+        "Beneficial Owner": [
+          {
+            "x": 228.6,
+            "y": 233.9
+          }
+        ],
+        "Power of Attorney Holder": [
+          {
+            "x": 296.4,
+            "y": 233.9
+          }
+        ],
+        "Other": [
+          {
+            "x": 398,
+            "y": 233.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "related_person_gender",
+      "page": 22,
+      "w": 6.2,
+      "h": 6.2,
+      "options": [
+        "Male",
+        "Female",
+        "Transgender"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 132.1,
+            "y": 375.4
+          }
+        ],
+        "Female": [
+          {
+            "x": 220.9,
+            "y": 375.4
+          }
+        ],
+        "Transgender": [
+          {
+            "x": 319.1,
+            "y": 376.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "related_person_nationality",
+      "page": 22,
+      "w": 6.2,
+      "h": 6.2,
+      "options": [
+        "Indian",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Indian": [
+          {
+            "x": 132.1,
+            "y": 385.6
+          }
+        ],
+        "Other": [
+          {
+            "x": 220.9,
+            "y": 385.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "related_person_identity_proof",
+      "page": 22,
+      "w": 6.2,
+      "h": 6.2,
+      "options": [
+        "Passport",
+        "Voter ID card",
+        "Driving licence",
+        "NREGA job card",
+        "National Population Register letter",
+        "Proof of possession of Aadhaar",
+        "E-KYC authentication",
+        "Offline verification of Aadhaar"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 24.7,
+            "y": 444.9
+          }
+        ],
+        "Voter ID card": [
+          {
+            "x": 24.7,
+            "y": 460.1
+          }
+        ],
+        "Driving licence": [
+          {
+            "x": 24.7,
+            "y": 476.8
+          }
+        ],
+        "NREGA job card": [
+          {
+            "x": 24.7,
+            "y": 491.7
+          }
+        ],
+        "National Population Register letter": [
+          {
+            "x": 24.7,
+            "y": 508.3
+          }
+        ],
+        "Proof of possession of Aadhaar": [
+          {
+            "x": 24.7,
+            "y": 522.7
+          }
+        ],
+        "E-KYC authentication": [
+          {
+            "x": 24.7,
+            "y": 536.2
+          }
+        ],
+        "Offline verification of Aadhaar": [
+          {
+            "x": 24.7,
+            "y": 550.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "related_person_current_address_same",
+      "page": 22,
+      "w": 6.2,
+      "h": 6.2,
+      "options": [
+        "Same as above"
+      ],
+      "boxesByOption": {
+        "Same as above": [
+          {
+            "x": 25,
+            "y": 660.6
+          }
+        ]
+      },
+      "isOptional": true
+    }
+  ],
+  "ignoredBlanks": [
+    {
+      "page": 15,
+      "y": 113,
+      "why": "Non-PAN \"I/ We, ____ is/ are non-resident\": too short for an entity name, which is printed in the table and the declaration below"
+    },
+    {
+      "page": 9,
+      "y": 300,
+      "why": "\"Others (e.g. OCI)\" in the individual / minor / others row: this form is for non-individuals"
+    }
+  ],
+  "blankFileName": "ABSL Emerging Market Equity Fund - Non Individual Application.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

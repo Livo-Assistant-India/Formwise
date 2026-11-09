@@ -94,17 +94,22 @@ export async function fillTextFields(formConfig, mapping, getValue) {
         bbox = { x: field.x, y: field.y, width: round(maxLineWidth), height: round(fit.lines.length * lineHeight) };
       } else if (field.combs) {
         // One character per printed box (e.g. SSN 3-2-4 digit boxes): combs = [[left x, group width, box count], …].
-        const characters = value.replace(/[^0-9A-Za-z]/g, "").split("");
+        // combKeepAll (names, emails): keep every character, a space leaves its box empty.
+        const characters = field.combKeepAll
+          ? value.trim().replace(/\s+/g, " ").split("")
+          : value.replace(/[^0-9A-Za-z]/g, "").split("");
         const fontSize = field.fontSize || 10;
         lines = [];
         for (const [groupX, groupWidth, boxCount] of field.combs) {
           const pitch = groupWidth / boxCount;
           characters.splice(0, boxCount).forEach((character, index) => {
+            if (character === " ") return;
             const characterX = groupX + pitch * index + (pitch - font.widthOfTextAtSize(character, fontSize)) / 2;
             page.drawText(character, { x: characterX, y: baseY, size: fontSize, font });
           });
           lines.push(glyphBox(groupX, field.y, groupWidth, fontSize));
         }
+        truncated = characters.length > 0;
         bbox = lines[0];
       } else {
         const fontSize = fitOneLine(value, font, field.fontSize || 10, field.maxWidth);

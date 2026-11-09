@@ -78,7 +78,12 @@ Forms are in 360 ONE's emails of 04 Nov (Mayur). Redemption and Top-up are ONE c
 | White Oak EM ex India – Redemption | `gift-whiteoak-em-redemption` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | White Oak EM ex India – Top-up (Amendment) | `gift-whiteoak-em-topup` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | SBI Global Thematic Advantage – Additional Capital Commitment | `gift-sbi-gtaf-additional-commitment` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
-| Application sets: Dynamic Equity Allocator, Global Real Assets, Growth Strategy, India Diversified, IOF Feeder, ABSL EM (Ind / Non-Ind), SBI GTAF, White Oak | | ⬜ | | | | | |
+| ABSL EM Equity – Application (Individual), 20 pages | `gift-absl-em-equity-individual` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| ABSL EM Equity – Application (Non-individual), 23 pages | `gift-absl-em-equity-non-individual` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Dynamic Equity Allocator GIFT Feeder – Subscription, 83 pages | `gift-dynamic-equity-allocator-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Growth Strategy GIFT – Subscription, 83 pages | `gift-growth-strategy-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| International Opportunities GIFT Feeder – Subscription, 83 pages | `gift-international-opportunities-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Still to build: Global Real Assets (71 p), India Diversified (76 p), SBI GTAF application (68 p), White Oak application (76 p) | | ⬜ | | | | | |
 
 GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 - No GIFT City field sheet: name from KYC (upper case), dates = today, everything else typed (Excel). Confirm every source.

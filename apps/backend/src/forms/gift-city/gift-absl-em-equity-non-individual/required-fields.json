@@ -1,0 +1,15 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": [
+    "entity_legal_name",
+    "entity_constitution",
+    "entity_pan",
+    "plan_class",
+    "subscription_amount",
+    "account_number",
+    "bank_name",
+    "swift_code",
+    "related_person_first_name",
+    "related_person_last_name"
+  ]
+}

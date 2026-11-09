@@ -1,0 +1,750 @@
+{
+  "_about": "ABSL Emerging Market Equity Fund (GIFT IFSC) application form for individuals, 20 pages; written by tools/form-building/make_absl_individual.mjs. Pages 1-8 are scheme information, terms and the checklist; 9-13 the application, declarations and FATCA/CRS; 15 the NRI declaration; 16 the non-PAN declaration (only for investors without a PAN, left blank); 17-18 the CKYC form; 19-20 instructions.",
+  "id": "gift-absl-em-equity-individual",
+  "title": "ABSL Emerging Market Equity Fund - Application Form for Individuals",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 12,
+      "x": 20,
+      "y": 683,
+      "w": 180,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "First holder signature"
+    },
+    {
+      "page": 13,
+      "x": 70,
+      "y": 503,
+      "w": 300,
+      "h": 14,
+      "signer": "subscriber",
+      "label": "FATCA / CRS signature"
+    },
+    {
+      "page": 15,
+      "x": 18,
+      "y": 422,
+      "w": 185,
+      "h": 50,
+      "signer": "subscriber",
+      "label": "NRI declaration - first holder"
+    },
+    {
+      "page": 18,
+      "x": 430,
+      "y": 556,
+      "w": 150,
+      "h": 34,
+      "signer": "subscriber",
+      "label": "CKYC applicant signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "investor_category",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Individual",
+        "Minor",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Individual": [
+          {
+            "x": 184.5,
+            "y": 283.1
+          }
+        ],
+        "Minor": [
+          {
+            "x": 271.1,
+            "y": 284.1
+          }
+        ],
+        "Others": [
+          {
+            "x": 340.6,
+            "y": 284.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "residential_status",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Resident Indian",
+        "Non-Resident Indian",
+        "Foreign National"
+      ],
+      "boxesByOption": {
+        "Resident Indian": [
+          {
+            "x": 92.3,
+            "y": 301.7
+          },
+          {
+            "x": 120.3,
+            "y": 318.6,
+            "page": 17
+          }
+        ],
+        "Non-Resident Indian": [
+          {
+            "x": 182,
+            "y": 301.7
+          },
+          {
+            "x": 262.6,
+            "y": 318.6,
+            "page": 17
+          }
+        ],
+        "Foreign National": [
+          {
+            "x": 290.2,
+            "y": 301.7
+          },
+          {
+            "x": 120.3,
+            "y": 329.3,
+            "page": 17
+          }
+        ]
+      }
+    },
+    {
+      "key": "holding_mode",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Single",
+        "Joint",
+        "Anyone or Survivor"
+      ],
+      "boxesByOption": {
+        "Single": [
+          {
+            "x": 193.9,
+            "y": 321.7
+          }
+        ],
+        "Joint": [
+          {
+            "x": 322,
+            "y": 321.7
+          }
+        ],
+        "Anyone or Survivor": [
+          {
+            "x": 439.6,
+            "y": 321.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "gender",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 211.6,
+            "y": 376.3
+          },
+          {
+            "x": 120.4,
+            "y": 272.4,
+            "page": 17
+          }
+        ],
+        "Female": [
+          {
+            "x": 267.1,
+            "y": 376.3
+          },
+          {
+            "x": 262.4,
+            "y": 272.4,
+            "page": 17
+          }
+        ],
+        "Other": [
+          {
+            "x": 326.5,
+            "y": 376.3
+          },
+          {
+            "x": 346.6,
+            "y": 272.4,
+            "page": 17
+          }
+        ]
+      }
+    },
+    {
+      "key": "second_holder_gender",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 211.6,
+            "y": 457
+          }
+        ],
+        "Female": [
+          {
+            "x": 267.1,
+            "y": 457
+          }
+        ],
+        "Other": [
+          {
+            "x": 326.5,
+            "y": 457
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "permanent_address_same",
+      "page": 9,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Same as correspondence"
+      ],
+      "boxesByOption": {
+        "Same as correspondence": [
+          {
+            "x": 273.2,
+            "y": 659.1
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "gross_annual_income",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Below 1 Lakh",
+        "1-5 Lakh",
+        "5-10 Lakh",
+        "Above 10 Lakh"
+      ],
+      "boxesByOption": {
+        "Below 1 Lakh": [
+          {
+            "x": 131.5,
+            "y": 51.1
+          }
+        ],
+        "1-5 Lakh": [
+          {
+            "x": 206.9,
+            "y": 51.1
+          }
+        ],
+        "5-10 Lakh": [
+          {
+            "x": 276.4,
+            "y": 51.1
+          }
+        ],
+        "Above 10 Lakh": [
+          {
+            "x": 370.6,
+            "y": 51.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "occupation",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Private Sector",
+        "Public Sector",
+        "Government Service",
+        "Business",
+        "Student",
+        "Retired",
+        "Professional",
+        "Agriculturist",
+        "House-Wife",
+        "Forex Dealer",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Private Sector": [
+          {
+            "x": 131.5,
+            "y": 68.6
+          }
+        ],
+        "Public Sector": [
+          {
+            "x": 206.9,
+            "y": 68.6
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 276.4,
+            "y": 68.6
+          }
+        ],
+        "Business": [
+          {
+            "x": 370.6,
+            "y": 68.6
+          }
+        ],
+        "Student": [
+          {
+            "x": 435.2,
+            "y": 68.6
+          }
+        ],
+        "Retired": [
+          {
+            "x": 489.5,
+            "y": 68.6
+          }
+        ],
+        "Professional": [
+          {
+            "x": 131.5,
+            "y": 85.8
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 206.9,
+            "y": 85.8
+          }
+        ],
+        "House-Wife": [
+          {
+            "x": 276.4,
+            "y": 85.8
+          }
+        ],
+        "Forex Dealer": [
+          {
+            "x": 370.6,
+            "y": 85.8
+          }
+        ],
+        "Others": [
+          {
+            "x": 435.2,
+            "y": 85.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Politically Exposed Person",
+        "Related to Politically Exposed Person",
+        "Not Applicable"
+      ],
+      "boxesByOption": {
+        "Politically Exposed Person": [
+          {
+            "x": 131.5,
+            "y": 216.9
+          }
+        ],
+        "Related to Politically Exposed Person": [
+          {
+            "x": 276.4,
+            "y": 216.9
+          }
+        ],
+        "Not Applicable": [
+          {
+            "x": 463.4,
+            "y": 216.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "source_of_funds",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Savings",
+        "Salary",
+        "Business Income",
+        "Gift / Inheritance",
+        "Loan",
+        "Investment Earnings",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Savings": [
+          {
+            "x": 131.5,
+            "y": 234.8
+          }
+        ],
+        "Salary": [
+          {
+            "x": 276.4,
+            "y": 234.9
+          }
+        ],
+        "Business Income": [
+          {
+            "x": 463.4,
+            "y": 235.3
+          }
+        ],
+        "Gift / Inheritance": [
+          {
+            "x": 131.5,
+            "y": 252.4
+          }
+        ],
+        "Loan": [
+          {
+            "x": 276.4,
+            "y": 252.8
+          }
+        ],
+        "Investment Earnings": [
+          {
+            "x": 463.4,
+            "y": 252.8
+          }
+        ],
+        "Others": [
+          {
+            "x": 131.5,
+            "y": 270.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "plan_class",
+      "page": 10,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Direct Plan Class A",
+        "Regular Plan Class B"
+      ],
+      "boxesByOption": {
+        "Direct Plan Class A": [
+          {
+            "x": 154.8,
+            "y": 659.5
+          }
+        ],
+        "Regular Plan Class B": [
+          {
+            "x": 333.1,
+            "y": 659.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "payout_bank_same",
+      "page": 11,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Same as above"
+      ],
+      "boxesByOption": {
+        "Same as above": [
+          {
+            "x": 24.2,
+            "y": 61.6
+          }
+        ]
+      },
+      "isOptional": true
+    },
+    {
+      "key": "wish_to_nominate",
+      "page": 11,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Wish to nominate",
+        "Do not wish to nominate"
+      ],
+      "boxesByOption": {
+        "Wish to nominate": [
+          {
+            "x": 24.2,
+            "y": 199.8
+          }
+        ],
+        "Do not wish to nominate": [
+          {
+            "x": 166.3,
+            "y": 199.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "marital_status",
+      "page": 17,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Married",
+        "Unmarried",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Married": [
+          {
+            "x": 120.4,
+            "y": 287
+          }
+        ],
+        "Unmarried": [
+          {
+            "x": 262.6,
+            "y": 287
+          }
+        ],
+        "Others": [
+          {
+            "x": 346.6,
+            "y": 287
+          }
+        ]
+      }
+    },
+    {
+      "key": "citizenship",
+      "page": 17,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "IN - Indian",
+        "Others"
+      ],
+      "boxesByOption": {
+        "IN - Indian": [
+          {
+            "x": 120.4,
+            "y": 301.4
+          }
+        ],
+        "Others": [
+          {
+            "x": 262.8,
+            "y": 301.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "proof_of_identity",
+      "page": 17,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Passport",
+        "PAN Card"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 12.3,
+            "y": 519.5
+          }
+        ],
+        "PAN Card": [
+          {
+            "x": 12.3,
+            "y": 548.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "address_type",
+      "page": 17,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Residential / Business",
+        "Residential",
+        "Business",
+        "Registered Office",
+        "Unspecified"
+      ],
+      "boxesByOption": {
+        "Residential / Business": [
+          {
+            "x": 97.2,
+            "y": 683.7
+          }
+        ],
+        "Residential": [
+          {
+            "x": 224.3,
+            "y": 683.7
+          }
+        ],
+        "Business": [
+          {
+            "x": 324.4,
+            "y": 683.7
+          }
+        ],
+        "Registered Office": [
+          {
+            "x": 410.4,
+            "y": 683.7
+          }
+        ],
+        "Unspecified": [
+          {
+            "x": 522.5,
+            "y": 683.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "proof_of_address",
+      "page": 17,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Passport",
+        "Driving Licence",
+        "UID (Aadhaar)",
+        "Voter Identity Card",
+        "NREGA Job Card",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 97.2,
+            "y": 697.7
+          }
+        ],
+        "Driving Licence": [
+          {
+            "x": 224.3,
+            "y": 697.7
+          }
+        ],
+        "UID (Aadhaar)": [
+          {
+            "x": 324.4,
+            "y": 697.7
+          }
+        ],
+        "Voter Identity Card": [
+          {
+            "x": 97.2,
+            "y": 707.7
+          }
+        ],
+        "NREGA Job Card": [
+          {
+            "x": 224.3,
+            "y": 707.7
+          }
+        ],
+        "Others": [
+          {
+            "x": 324.4,
+            "y": 707.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "correspondence_address_same",
+      "page": 18,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Same as current address"
+      ],
+      "boxesByOption": {
+        "Same as current address": [
+          {
+            "x": 17.4,
+            "y": 38.4
+          }
+        ]
+      },
+      "isOptional": true
+    }
+  ],
+  "ignoredBlanks": [
+    {
+      "page": 15,
+      "y": 330,
+      "why": "\"We have contacted ____\": only if the investor approached someone; written by hand"
+    },
+    {
+      "page": 16,
+      "y": 111,
+      "why": "Non-PAN declaration: only for non-residents without a PAN"
+    },
+    {
+      "page": 16,
+      "y": 149,
+      "why": "Non-PAN declaration: only for non-residents without a PAN"
+    },
+    {
+      "page": 16,
+      "y": 315,
+      "why": "Non-PAN declaration: only for non-residents without a PAN"
+    }
+  ],
+  "blankFileName": "ABSL Emerging Market Equity Fund - Application Form for Individuals.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

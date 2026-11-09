@@ -1,0 +1,210 @@
+{
+  "_about": "Form-level rules. One investor (first holder); second holder, guardian, distributor and bank details come from the Excel.",
+  "formId": "gift-absl-em-equity-individual",
+  "group": "GIFT City",
+  "label": "GIFT – ABSL Emerging Market Equity Fund – Individual application",
+  "shortLabel": "ABSL EM individual",
+  "purpose": "New investment · individual investors",
+  "blankFileName": "ABSL Emerging Market Equity Fund - Application Form for Individuals.pdf",
+  "keyFields": [
+    "Investor name",
+    "PAN",
+    "Investment amount",
+    "Plan"
+  ],
+  "sheetTabName": "ABSL EM individual",
+  "detectionPhrases": [
+    "ABSL Emerging Market Equity Fund",
+    "Application Form for Individuals"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Investor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "investor",
+      "label": "Page 9 · Investor",
+      "fields": [
+        "investor_category",
+        "investor_category_other",
+        "residential_status",
+        "holding_mode",
+        "subscriber_name",
+        "dob",
+        "gender",
+        "id_pan",
+        "ckyc_number"
+      ]
+    },
+    {
+      "key": "address",
+      "label": "Page 9 · Address and contact",
+      "fields": [
+        "correspondence_street",
+        "city",
+        "state",
+        "pincode",
+        "country",
+        "permanent_address_same",
+        "permanent_street",
+        "permanent_city",
+        "permanent_state",
+        "permanent_pincode",
+        "permanent_country",
+        "mobile",
+        "email"
+      ]
+    },
+    {
+      "key": "joint",
+      "label": "Page 9 · Second holder and guardian",
+      "fields": [
+        "second_holder_name",
+        "second_holder_dob",
+        "second_holder_gender",
+        "second_holder_pan",
+        "second_holder_ckyc_number",
+        "guardian_name",
+        "guardian_relationship",
+        "guardian_pan"
+      ]
+    },
+    {
+      "key": "distributor",
+      "label": "Page 9 · Distributor, RM, existing folio",
+      "fields": [
+        "distributor_name",
+        "distributor_code",
+        "distributor_email",
+        "distributor_rm_name",
+        "distributor_rm_contact",
+        "rm_name",
+        "rm_branch",
+        "rm_email",
+        "rm_contact",
+        "existing_unitholder_name",
+        "folio_no"
+      ]
+    },
+    {
+      "key": "kyc",
+      "label": "Page 10 · KYC details",
+      "fields": [
+        "gross_annual_income",
+        "occupation",
+        "occupation_other",
+        "place_of_work",
+        "employer_name",
+        "business_nature",
+        "business_location",
+        "business_countries",
+        "pep_status",
+        "source_of_funds",
+        "source_of_funds_other",
+        "source_of_wealth"
+      ]
+    },
+    {
+      "key": "investment",
+      "label": "Page 10 · Investment and bank",
+      "fields": [
+        "plan_class",
+        "subscription_amount",
+        "subscription_amount_words",
+        "account_number",
+        "account_type",
+        "bank_name",
+        "bank_city",
+        "bank_state",
+        "bank_postcode",
+        "bank_country",
+        "ifsc_code",
+        "swift_code"
+      ]
+    },
+    {
+      "key": "payout",
+      "label": "Page 11 · Payout bank and nomination",
+      "fields": [
+        "payout_bank_same",
+        "payout_account_number",
+        "payout_account_type",
+        "payout_bank_name",
+        "payout_bank_city",
+        "payout_bank_state",
+        "payout_bank_postcode",
+        "payout_bank_country",
+        "payout_ifsc_code",
+        "payout_swift_code",
+        "wish_to_nominate"
+      ]
+    },
+    {
+      "key": "fatca",
+      "label": "Pages 12-15 · FATCA / CRS, place and date",
+      "fields": [
+        "place_of_birth",
+        "country_of_birth",
+        "citizenship_country",
+        "tax_residence_country",
+        "us_person",
+        "second_holder_place_of_birth",
+        "second_holder_country_of_birth",
+        "second_holder_citizenship_country",
+        "second_holder_tax_residence_country",
+        "second_holder_us_person",
+        "fatca_tin",
+        "fatca_tin_issuing_country",
+        "subscriber_name_p13",
+        "place",
+        "form_date",
+        "form_date_p13",
+        "form_date_p15"
+      ]
+    },
+    {
+      "key": "ckyc",
+      "label": "Pages 17-18 · CKYC form",
+      "fields": [
+        "title",
+        "given_name",
+        "middle_name",
+        "surname",
+        "father_spouse_first_name",
+        "father_spouse_middle_name",
+        "father_spouse_last_name",
+        "mother_first_name",
+        "mother_middle_name",
+        "mother_last_name",
+        "dob_p17",
+        "marital_status",
+        "citizenship",
+        "citizenship_country_code",
+        "place_of_birth_p17",
+        "proof_of_identity",
+        "id_passport",
+        "id_pan_p17",
+        "address_type",
+        "proof_of_address",
+        "residence_address_line1",
+        "residence_address_line2",
+        "city_p17",
+        "district",
+        "pincode_p17",
+        "state_code",
+        "country_code",
+        "correspondence_address_same",
+        "mobile_p18",
+        "email_p18",
+        "form_date_p18",
+        "place_p18"
+      ]
+    }
+  ]
+}

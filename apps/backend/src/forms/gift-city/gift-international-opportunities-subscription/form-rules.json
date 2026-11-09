@@ -1,0 +1,291 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first applicant) - their KYC documents fill the identity fields, the Excel fills the rest; the second applicant's fields are typed.",
+  "formId": "gift-international-opportunities-subscription",
+  "group": "GIFT City",
+  "label": "GIFT – International Opportunities Fund – Subscription",
+  "shortLabel": "GIFT International Opportunities subscription",
+  "purpose": "New investment · application form and contribution agreement",
+  "blankFileName": "360 ONE International Opportunities Fund GIFT Feeder - Application Form.pdf",
+  "keyFields": [
+    "Applicant name",
+    "Subscription amount",
+    "Bank account"
+  ],
+  "sheetTabName": "GIFT International Opportunities subscription",
+  "detectionPhrases": [
+    "360 ONE International Opportunities Fund GIFT Feeder",
+    "Application Form for First Applicant"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Applicant",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "applicant",
+      "label": "Page 4 · Applicant (KYC + Excel)",
+      "fields": [
+        "gender",
+        "subscriber_name",
+        "dob",
+        "citizenship",
+        "citizenship_country",
+        "citizenship_country_code",
+        "residential_status",
+        "minor_status",
+        "tax_reference_number",
+        "residence_address_line1",
+        "residence_address_line2",
+        "city",
+        "pincode",
+        "residence_country",
+        "correspondence_same_as_residence",
+        "mailing_address_line1",
+        "mailing_address_line2",
+        "mailing_address_line3",
+        "mailing_postcode",
+        "mailing_country",
+        "landline",
+        "mobile",
+        "fax",
+        "email",
+        "occupation",
+        "occupation_other",
+        "employer_name",
+        "place_of_work"
+      ]
+    },
+    {
+      "key": "kyc",
+      "label": "Page 5 · KYC details (Excel)",
+      "fields": [
+        "business_nature",
+        "business_location",
+        "business_countries",
+        "gross_annual_income_range",
+        "net_worth_usd",
+        "net_worth_usd_words",
+        "net_worth_date",
+        "pep_status"
+      ]
+    },
+    {
+      "key": "bank",
+      "label": "Page 5 · Bank account (Excel)",
+      "fields": [
+        "account_name",
+        "account_number",
+        "bank_name",
+        "swift_code",
+        "bank_address",
+        "bank_address_line2",
+        "bank_state",
+        "bank_country",
+        "correspondent_bank_name",
+        "correspondent_swift_code"
+      ]
+    },
+    {
+      "key": "investment",
+      "label": "Page 5 · Investment (Excel)",
+      "fields": [
+        "subscription_amount",
+        "subscription_amount_words",
+        "placement_fee_percent",
+        "class_of_units"
+      ]
+    },
+    {
+      "key": "distributor",
+      "label": "Page 5 · Distributor (Excel)",
+      "fields": [
+        "distributor_code",
+        "distributor_name",
+        "distributor_rm_name",
+        "distributor_contact_number",
+        "distributor_email"
+      ]
+    },
+    {
+      "key": "fatca",
+      "label": "Page 6 · FATCA & CRS (Excel)",
+      "fields": [
+        "address_type",
+        "nationality",
+        "place_of_birth",
+        "country_of_birth",
+        "country_of_birth_code",
+        "father_name",
+        "identity_document_if_no_pan",
+        "identity_document_other",
+        "identity_document_number",
+        "tax_resident_outside_india",
+        "foreign_tax_country_1",
+        "foreign_tax_identification_number_1",
+        "foreign_tax_identification_type_1",
+        "foreign_tax_country_2",
+        "foreign_tax_identification_number_2",
+        "foreign_tax_identification_type_2",
+        "foreign_tax_country_3",
+        "foreign_tax_identification_number_3",
+        "foreign_tax_identification_type_3"
+      ]
+    },
+    {
+      "key": "holding",
+      "label": "Page 6 · Joint holding (Excel)",
+      "fields": [
+        "first_second_holder_relationship",
+        "mode_of_holding"
+      ]
+    },
+    {
+      "key": "signed",
+      "label": "Page 7 · Declaration signed",
+      "fields": [
+        "place",
+        "form_date"
+      ]
+    },
+    {
+      "key": "second-applicant",
+      "label": "Pages 8-9 · Second applicant (Excel)",
+      "fields": [
+        "joint_holder_gender",
+        "joint_holder_name",
+        "joint_holder_dob",
+        "joint_holder_citizenship",
+        "joint_holder_citizenship_country",
+        "joint_holder_citizenship_country_code",
+        "joint_holder_residential_status",
+        "joint_holder_tax_reference_number",
+        "joint_holder_residence_address_line1",
+        "joint_holder_residence_address_line2",
+        "joint_holder_city",
+        "joint_holder_pincode",
+        "joint_holder_residence_country",
+        "joint_holder_mobile",
+        "joint_holder_email",
+        "joint_holder_occupation",
+        "joint_holder_occupation_other",
+        "joint_holder_gross_annual_income_range",
+        "joint_holder_pep_status",
+        "joint_holder_address_type",
+        "joint_holder_nationality",
+        "joint_holder_place_of_birth",
+        "joint_holder_country_of_birth",
+        "joint_holder_country_of_birth_code",
+        "joint_holder_father_name",
+        "joint_holder_identity_document_if_no_pan",
+        "joint_holder_identity_document_other",
+        "joint_holder_identity_document_number",
+        "joint_holder_tax_resident_outside_india"
+      ]
+    },
+    {
+      "key": "second-applicant-signed",
+      "label": "Page 10 · Second applicant signed",
+      "fields": [
+        "place_p10",
+        "form_date_p10"
+      ]
+    },
+    {
+      "key": "profile",
+      "label": "Page 14 · Investor profile",
+      "fields": [
+        "subscriber_name_p14",
+        "gender_p14",
+        "dob_p14",
+        "subscriber_address",
+        "id_passport",
+        "telephone",
+        "nationality_p14",
+        "email_p14",
+        "client_profile",
+        "qualification_1",
+        "qualification_2",
+        "qualification_3",
+        "work_experience_1",
+        "work_experience_2",
+        "work_experience_3",
+        "honorary_position_1",
+        "honorary_position_2",
+        "capital_market_experience_years",
+        "source_of_funds",
+        "net_worth_usd_p14",
+        "gross_annual_income",
+        "wealth_details",
+        "regulatory_action",
+        "regulatory_action_details",
+        "rm_name",
+        "rm_email",
+        "rm_contact_number"
+      ]
+    },
+    {
+      "key": "nomination",
+      "label": "Page 21 · Nomination",
+      "fields": [
+        "wish_to_nominate",
+        "place_p21",
+        "form_date_p21"
+      ]
+    },
+    {
+      "key": "memorandum",
+      "label": "Pages 22-23 · Memorandum acknowledged",
+      "fields": [
+        "subscriber_name_p22",
+        "distributor_name_p23",
+        "subscriber_name_p23",
+        "form_date_p23",
+        "place_p23"
+      ]
+    },
+    {
+      "key": "agreement",
+      "label": "Page 26 · Contribution Agreement date (Excel)",
+      "fields": [
+        "agreement_execution_day",
+        "agreement_execution_month"
+      ]
+    },
+    {
+      "key": "annexure-a",
+      "label": "Page 76 · Annexure A: key details",
+      "fields": [
+        "subscriber_name_p76",
+        "subscriber_address_p76",
+        "subscription_amount_p76",
+        "subscription_amount_words_p76",
+        "class_of_units_p76",
+        "mailing_address_line1_p76",
+        "mailing_address_line2_p76",
+        "mailing_address_line3_p76",
+        "email_p76",
+        "mobile_p76",
+        "landline_p76"
+      ]
+    },
+    {
+      "key": "accredited",
+      "label": "Pages 79-83 · Accredited investor declaration",
+      "fields": [
+        "subscriber_name_p79",
+        "accredited_investor_category",
+        "accredited_income_financial_year",
+        "accredited_joint_investment",
+        "accredited_documentation",
+        "accredited_additional_documentation",
+        "subscriber_name_p83",
+        "form_date_p83"
+      ]
+    }
+  ]
+}

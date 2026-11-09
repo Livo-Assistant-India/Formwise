@@ -1,0 +1,1374 @@
+{
+  "_about": "Where each value is written on the blank (top-left origin, y = baseline). combs = one character per printed box. Written by make_absl_individual.mjs.",
+  "formId": "gift-absl-em-equity-individual",
+  "title": "ABSL Emerging Market Equity Fund - Application Form for Individuals",
+  "fields": [
+    {
+      "key": "distributor_name",
+      "nominee": null,
+      "page": 9,
+      "x": 124.9,
+      "y": 103,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          124.9,
+          440,
+          30
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "distributor_code",
+      "nominee": null,
+      "page": 9,
+      "x": 81.9,
+      "y": 124,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          81.9,
+          190.7,
+          13
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "distributor_email",
+      "nominee": null,
+      "page": 9,
+      "x": 413,
+      "y": 124,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 147
+    },
+    {
+      "key": "distributor_rm_name",
+      "nominee": null,
+      "page": 9,
+      "x": 97,
+      "y": 145,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 228
+    },
+    {
+      "key": "distributor_rm_contact",
+      "nominee": null,
+      "page": 9,
+      "x": 434,
+      "y": 145,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 126
+    },
+    {
+      "key": "rm_name",
+      "nominee": null,
+      "page": 9,
+      "x": 53,
+      "y": 176.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "rm_branch",
+      "nominee": null,
+      "page": 9,
+      "x": 367,
+      "y": 176.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 193
+    },
+    {
+      "key": "rm_email",
+      "nominee": null,
+      "page": 9,
+      "x": 53,
+      "y": 196.3,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "rm_contact",
+      "nominee": null,
+      "page": 9,
+      "x": 383,
+      "y": 196.3,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 177
+    },
+    {
+      "key": "existing_unitholder_name",
+      "nominee": null,
+      "page": 9,
+      "x": 46.4,
+      "y": 242.3,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          46.4,
+          440.1,
+          30
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "folio_no",
+      "nominee": null,
+      "page": 9,
+      "x": 52.1,
+      "y": 259.5,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          52.1,
+          176.1,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "investor_category_other",
+      "nominee": null,
+      "page": 9,
+      "x": 480,
+      "y": 280.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 92
+    },
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 9,
+      "x": 64.9,
+      "y": 354.8,
+      "fontSize": 9,
+      "type": "text",
+      "combs": [
+        [
+          64.9,
+          507,
+          34
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "dob",
+      "nominee": null,
+      "page": 9,
+      "x": 64.9,
+      "y": 375,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          64.9,
+          91.9,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "id_pan",
+      "nominee": null,
+      "page": 9,
+      "x": 53,
+      "y": 395.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "ckyc_number",
+      "nominee": null,
+      "page": 9,
+      "x": 295,
+      "y": 395.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 9,
+      "x": 64.9,
+      "y": 435.5,
+      "fontSize": 9,
+      "type": "text",
+      "combs": [
+        [
+          64.9,
+          507,
+          34
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "second_holder_dob",
+      "nominee": null,
+      "page": 9,
+      "x": 64.9,
+      "y": 455.8,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          64.9,
+          91.9,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "second_holder_pan",
+      "nominee": null,
+      "page": 9,
+      "x": 53,
+      "y": 476,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "second_holder_ckyc_number",
+      "nominee": null,
+      "page": 9,
+      "x": 295,
+      "y": 476,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "guardian_name",
+      "nominee": null,
+      "page": 9,
+      "x": 64.9,
+      "y": 517.3,
+      "fontSize": 9,
+      "type": "text",
+      "combs": [
+        [
+          64.9,
+          507,
+          34
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "guardian_relationship",
+      "nominee": null,
+      "page": 9,
+      "x": 318,
+      "y": 495.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "guardian_pan",
+      "nominee": null,
+      "page": 9,
+      "x": 53,
+      "y": 558.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "correspondence_street",
+      "nominee": null,
+      "page": 9,
+      "x": 100,
+      "y": 592.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 468
+    },
+    {
+      "key": "city",
+      "nominee": null,
+      "page": 9,
+      "x": 39,
+      "y": 615.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 233
+    },
+    {
+      "key": "state",
+      "nominee": null,
+      "page": 9,
+      "x": 315,
+      "y": 615.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 253
+    },
+    {
+      "key": "pincode",
+      "nominee": null,
+      "page": 9,
+      "x": 69,
+      "y": 638,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 203
+    },
+    {
+      "key": "country",
+      "nominee": null,
+      "page": 9,
+      "x": 323,
+      "y": 638,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 245
+    },
+    {
+      "key": "permanent_street",
+      "nominee": null,
+      "page": 9,
+      "x": 100,
+      "y": 678,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 468
+    },
+    {
+      "key": "permanent_city",
+      "nominee": null,
+      "page": 9,
+      "x": 39,
+      "y": 701,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 233
+    },
+    {
+      "key": "permanent_state",
+      "nominee": null,
+      "page": 9,
+      "x": 315,
+      "y": 701,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 253
+    },
+    {
+      "key": "permanent_pincode",
+      "nominee": null,
+      "page": 9,
+      "x": 69,
+      "y": 723.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 203
+    },
+    {
+      "key": "permanent_country",
+      "nominee": null,
+      "page": 9,
+      "x": 323,
+      "y": 723.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 245
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 9,
+      "x": 348.9,
+      "y": 759.8,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          348.9,
+          176.1,
+          12
+        ]
+      ]
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 9,
+      "x": 52,
+      "y": 802,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          52,
+          473,
+          33
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "occupation_other",
+      "nominee": null,
+      "page": 10,
+      "x": 511,
+      "y": 83,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 62
+    },
+    {
+      "key": "place_of_work",
+      "nominee": null,
+      "page": 10,
+      "x": 138,
+      "y": 117.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 432
+    },
+    {
+      "key": "employer_name",
+      "nominee": null,
+      "page": 10,
+      "x": 86,
+      "y": 132.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 484
+    },
+    {
+      "key": "business_nature",
+      "nominee": null,
+      "page": 10,
+      "x": 88,
+      "y": 164.9,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 482
+    },
+    {
+      "key": "business_location",
+      "nominee": null,
+      "page": 10,
+      "x": 93,
+      "y": 180.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 477
+    },
+    {
+      "key": "business_countries",
+      "nominee": null,
+      "page": 10,
+      "x": 287,
+      "y": 197.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 285
+    },
+    {
+      "key": "source_of_funds_other",
+      "nominee": null,
+      "page": 10,
+      "x": 226,
+      "y": 268,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 132
+    },
+    {
+      "key": "source_of_wealth",
+      "nominee": null,
+      "page": 10,
+      "x": 80,
+      "y": 284.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 356
+    },
+    {
+      "key": "subscription_amount",
+      "nominee": null,
+      "page": 10,
+      "x": 184,
+      "y": 676,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "subscription_amount_words",
+      "nominee": null,
+      "page": 10,
+      "x": 184,
+      "y": 692,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 10,
+      "x": 100.7,
+      "y": 712.5,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          100.7,
+          283.5,
+          18
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "account_type",
+      "nominee": null,
+      "page": 10,
+      "x": 444,
+      "y": 712.3,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "bank_name",
+      "nominee": null,
+      "page": 10,
+      "x": 104,
+      "y": 731.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 468
+    },
+    {
+      "key": "bank_city",
+      "nominee": null,
+      "page": 10,
+      "x": 64,
+      "y": 751.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 155
+    },
+    {
+      "key": "bank_state",
+      "nominee": null,
+      "page": 10,
+      "x": 260,
+      "y": 751.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 312
+    },
+    {
+      "key": "bank_postcode",
+      "nominee": null,
+      "page": 10,
+      "x": 64,
+      "y": 771.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 155
+    },
+    {
+      "key": "bank_country",
+      "nominee": null,
+      "page": 10,
+      "x": 260,
+      "y": 771.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 312
+    },
+    {
+      "key": "ifsc_code",
+      "nominee": null,
+      "page": 10,
+      "x": 64,
+      "y": 792.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 212
+    },
+    {
+      "key": "swift_code",
+      "nominee": null,
+      "page": 10,
+      "x": 348,
+      "y": 792.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 224
+    },
+    {
+      "key": "payout_account_number",
+      "nominee": null,
+      "page": 11,
+      "x": 102.2,
+      "y": 75,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          102.2,
+          283.4,
+          18
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "payout_account_type",
+      "nominee": null,
+      "page": 11,
+      "x": 445,
+      "y": 74.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "payout_bank_name",
+      "nominee": null,
+      "page": 11,
+      "x": 105,
+      "y": 94.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 468
+    },
+    {
+      "key": "payout_bank_city",
+      "nominee": null,
+      "page": 11,
+      "x": 66,
+      "y": 114.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 154
+    },
+    {
+      "key": "payout_bank_state",
+      "nominee": null,
+      "page": 11,
+      "x": 262,
+      "y": 114,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 312
+    },
+    {
+      "key": "payout_bank_postcode",
+      "nominee": null,
+      "page": 11,
+      "x": 66,
+      "y": 133.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 154
+    },
+    {
+      "key": "payout_bank_country",
+      "nominee": null,
+      "page": 11,
+      "x": 262,
+      "y": 134.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 312
+    },
+    {
+      "key": "payout_ifsc_code",
+      "nominee": null,
+      "page": 11,
+      "x": 66,
+      "y": 155,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 212
+    },
+    {
+      "key": "payout_swift_code",
+      "nominee": null,
+      "page": 11,
+      "x": 350,
+      "y": 155.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 224
+    },
+    {
+      "key": "place",
+      "nominee": null,
+      "page": 12,
+      "x": 86,
+      "y": 727.5,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 330,
+      "alsoAt": [
+        {
+          "page": 15,
+          "x": 86,
+          "y": 490.5,
+          "fontSize": 9,
+          "maxWidth": 330
+        }
+      ]
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 12,
+      "x": 83.1,
+      "y": 743.5,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          83.1,
+          91.9,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "form_date_p15",
+      "nominee": null,
+      "page": 15,
+      "x": 83.1,
+      "y": 506.5,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          83.1,
+          91.9,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "place_of_birth",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 74,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "country_of_birth",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 89.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "citizenship_country",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 104.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "tax_residence_country",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 120.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "us_person",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 136,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "second_holder_place_of_birth",
+      "nominee": null,
+      "page": 13,
+      "x": 369,
+      "y": 74,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "second_holder_country_of_birth",
+      "nominee": null,
+      "page": 13,
+      "x": 369,
+      "y": 89.2,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "second_holder_citizenship_country",
+      "nominee": null,
+      "page": 13,
+      "x": 369,
+      "y": 104.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "second_holder_tax_residence_country",
+      "nominee": null,
+      "page": 13,
+      "x": 369,
+      "y": 120.7,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "second_holder_us_person",
+      "nominee": null,
+      "page": 13,
+      "x": 369,
+      "y": 136,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "fatca_tin",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 230.1,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "fatca_tin_issuing_country",
+      "nominee": null,
+      "page": 13,
+      "x": 156,
+      "y": 249.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 205
+    },
+    {
+      "key": "subscriber_name_p13",
+      "nominee": null,
+      "page": 13,
+      "x": 48,
+      "y": 536.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "form_date_p13",
+      "nominee": null,
+      "page": 13,
+      "x": 45,
+      "y": 554.6,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "title",
+      "nominee": null,
+      "page": 17,
+      "x": 121.1,
+      "y": 199.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          121.1,
+          32.9,
+          3
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "given_name",
+      "nominee": null,
+      "page": 17,
+      "x": 165,
+      "y": 199.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          165,
+          132,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "middle_name",
+      "nominee": null,
+      "page": 17,
+      "x": 308,
+      "y": 199.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          308,
+          131.9,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "surname",
+      "nominee": null,
+      "page": 17,
+      "x": 450.9,
+      "y": 199.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          450.9,
+          131.6,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "father_spouse_first_name",
+      "nominee": null,
+      "page": 17,
+      "x": 165,
+      "y": 227.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          165,
+          132,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "father_spouse_middle_name",
+      "nominee": null,
+      "page": 17,
+      "x": 308,
+      "y": 227.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          308,
+          131.9,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "father_spouse_last_name",
+      "nominee": null,
+      "page": 17,
+      "x": 450.9,
+      "y": 227.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          450.9,
+          131.6,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mother_first_name",
+      "nominee": null,
+      "page": 17,
+      "x": 165,
+      "y": 241.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          165,
+          132,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mother_middle_name",
+      "nominee": null,
+      "page": 17,
+      "x": 308,
+      "y": 241.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          308,
+          131.9,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mother_last_name",
+      "nominee": null,
+      "page": 17,
+      "x": 450.9,
+      "y": 241.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          450.9,
+          131.6,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "dob_p17",
+      "nominee": null,
+      "page": 17,
+      "x": 121.1,
+      "y": 256,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          121.1,
+          22.1,
+          2
+        ],
+        [
+          154,
+          21.9,
+          2
+        ],
+        [
+          186.7,
+          44.1,
+          4
+        ]
+      ]
+    },
+    {
+      "key": "citizenship_country_code",
+      "nominee": null,
+      "page": 17,
+      "x": 401.8,
+      "y": 299.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          401.8,
+          22,
+          2
+        ]
+      ]
+    },
+    {
+      "key": "place_of_birth_p17",
+      "nominee": null,
+      "page": 17,
+      "x": 121.1,
+      "y": 459.7,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          121.1,
+          131.7,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "id_passport",
+      "nominee": null,
+      "page": 17,
+      "x": 121.1,
+      "y": 519.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          121.1,
+          87.7,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "id_pan_p17",
+      "nominee": null,
+      "page": 17,
+      "x": 121.1,
+      "y": 547.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          121.1,
+          109.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "residence_address_line1",
+      "nominee": null,
+      "page": 17,
+      "x": 63,
+      "y": 737.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          63,
+          516.3,
+          47
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_address_line2",
+      "nominee": null,
+      "page": 17,
+      "x": 63,
+      "y": 750.1,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          63,
+          516.3,
+          47
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "city_p17",
+      "nominee": null,
+      "page": 17,
+      "x": 469.4,
+      "y": 763.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          469.4,
+          109.8,
+          10
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "district",
+      "nominee": null,
+      "page": 17,
+      "x": 63.4,
+      "y": 776.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          63.4,
+          109.8,
+          10
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "pincode_p17",
+      "nominee": null,
+      "page": 17,
+      "x": 260.7,
+      "y": 776.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          260.7,
+          65.9,
+          6
+        ]
+      ]
+    },
+    {
+      "key": "state_code",
+      "nominee": null,
+      "page": 17,
+      "x": 415.8,
+      "y": 776.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          415.8,
+          22,
+          2
+        ]
+      ]
+    },
+    {
+      "key": "country_code",
+      "nominee": null,
+      "page": 17,
+      "x": 557.4,
+      "y": 776.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          557.4,
+          22,
+          2
+        ]
+      ]
+    },
+    {
+      "key": "mobile_p18",
+      "nominee": null,
+      "page": 18,
+      "x": 442.8,
+      "y": 220.1,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          442.8,
+          21.9,
+          2
+        ],
+        [
+          473.8,
+          110,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "email_p18",
+      "nominee": null,
+      "page": 18,
+      "x": 264.1,
+      "y": 233.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          264.1,
+          319.1,
+          29
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "form_date_p18",
+      "nominee": null,
+      "page": 18,
+      "x": 49.3,
+      "y": 595.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          49.3,
+          22.1,
+          2
+        ],
+        [
+          82.2,
+          21.9,
+          2
+        ],
+        [
+          115,
+          44,
+          4
+        ]
+      ]
+    },
+    {
+      "key": "place_p18",
+      "nominee": null,
+      "page": 18,
+      "x": 227.3,
+      "y": 594.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "combs": [
+        [
+          227.3,
+          131.7,
+          12
+        ]
+      ],
+      "combKeepAll": true
+    }
+  ]
+}
