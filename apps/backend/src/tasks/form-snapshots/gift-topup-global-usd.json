@@ -1,0 +1,451 @@
+{
+ "formId": "gift-topup-global-usd",
+ "pageCount": 1,
+ "configuration": {
+  "id": "gift-topup-global-usd",
+  "title": "360 ONE Top-up on Commitment - Global (USD)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 36,
+    "y": 406,
+    "w": 174,
+    "h": 38,
+    "signer": "subscriber",
+    "label": "Sole / first holder signature"
+   },
+   {
+    "page": 1,
+    "x": 210,
+    "y": 406,
+    "w": 174,
+    "h": 38,
+    "signer": "joint_holder",
+    "label": "Second holder signature"
+   },
+   {
+    "page": 1,
+    "x": 385,
+    "y": 406,
+    "w": 174,
+    "h": 38,
+    "signer": "joint_holder",
+    "label": "Third holder signature"
+   }
+  ],
+  "ignoredBlanks": [],
+  "tickboxes": [],
+  "labels": [],
+  "blankFileName": "360 One_Top Up Commitment - Global_USD.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank 360 ONE Top-up on Commitment - Global (USD) form (top-left origin, y = baseline), measured from its drawn boxes. Dates go one digit per box (DDMMYYYY).",
+  "formId": "gift-topup-global-usd",
+  "title": "360 ONE Top-up on Commitment - Global (USD)",
+  "fields": [
+   {
+    "key": "request_date",
+    "nominee": null,
+    "page": 1,
+    "x": 392.1,
+    "y": 103.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 167,
+    "combs": [
+     [
+      391.6,
+      167.1,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 143.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 408
+   },
+   {
+    "key": "scheme_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 162,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 408
+   },
+   {
+    "key": "topup_amount_usd",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 184.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380,
+    "alsoAt": [
+     {
+      "page": 1,
+      "x": 214,
+      "y": 325.5,
+      "fontSize": 7,
+      "maxWidth": 78
+     }
+    ]
+   },
+   {
+    "key": "bank_name",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 205.6,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 223.9,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "bank_branch_city",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 242.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "cp_rm_name",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 260.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "cp_broker_email",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 277.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 186
+   },
+   {
+    "key": "cp_mobile_number",
+    "nominee": null,
+    "page": 1,
+    "x": 486,
+    "y": 277.5,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 70
+   },
+   {
+    "key": "rm_name",
+    "nominee": null,
+    "page": 1,
+    "x": 175,
+    "y": 294.3,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 380
+   },
+   {
+    "key": "place",
+    "nominee": null,
+    "page": 1,
+    "x": 83,
+    "y": 474,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 160
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 79,
+    "y": 497.2,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 167,
+    "combs": [
+     [
+      78.4,
+      167.3,
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "fieldSources": {
+  "request_date": "today",
+  "subscriber_name": "document.name|upper",
+  "scheme_name": "typed",
+  "topup_amount_usd": "typed",
+  "bank_name": "typed",
+  "account_number": "typed",
+  "bank_branch_city": "typed",
+  "cp_rm_name": "typed",
+  "cp_broker_email": "typed",
+  "cp_mobile_number": "typed",
+  "rm_name": "typed",
+  "place": "typed",
+  "form_date": "today"
+ },
+ "formRules": {
+  "formId": "gift-topup-global-usd",
+  "group": "GIFT City",
+  "label": "GIFT – 360 ONE Global USD – Top-up",
+  "shortLabel": "GIFT Global USD top-up",
+  "purpose": "Add to an existing commitment",
+  "blankFileName": "360 One_Top Up Commitment - Global_USD.pdf",
+  "keyFields": [
+   "Client name",
+   "Scheme name",
+   "Additional commitment (USD)"
+  ],
+  "sheetTabName": "GIFT Global USD top-up",
+  "detectionPhrases": [
+   "TOP-UP ON COMMITMENT",
+   "Additional Commitment Amount (In USD)"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Client",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "p1-commitment",
+    "label": "Page 1 · Commitment",
+    "fields": [
+     "request_date",
+     "subscriber_name",
+     "scheme_name",
+     "topup_amount_usd"
+    ]
+   },
+   {
+    "key": "p1-bank",
+    "label": "Page 1 · Bank",
+    "fields": [
+     "bank_name",
+     "account_number",
+     "bank_branch_city"
+    ]
+   },
+   {
+    "key": "p1-rm",
+    "label": "Page 1 · Relationship managers",
+    "fields": [
+     "cp_rm_name",
+     "cp_broker_email",
+     "cp_mobile_number",
+     "rm_name"
+    ]
+   },
+   {
+    "key": "p1-sign",
+    "label": "Page 1 · Place and date",
+    "fields": [
+     "place",
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "subscriber_name",
+   "scheme_name",
+   "topup_amount_usd"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "request_date",
+   "page": 1,
+   "lines": [
+    [
+     391.6,
+     95,
+     167.1,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     135.1,
+     120.19,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "scheme_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     153.5,
+     108.93,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "topup_amount_usd",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     176,
+     128.96,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "bank_name",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     197.1,
+     95.6,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     215.4,
+     117.73,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "bank_branch_city",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     233.7,
+     121.62,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "cp_rm_name",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     252,
+     101.95,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "cp_broker_email",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     269,
+     117.06,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "cp_mobile_number",
+   "page": 1,
+   "lines": [
+    [
+     486,
+     272.4,
+     76.97,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "rm_name",
+   "page": 1,
+   "lines": [
+    [
+     175,
+     285.8,
+     85.83,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "place",
+   "page": 1,
+   "lines": [
+    [
+     83,
+     465.5,
+     67.25,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     78.4,
+     488.7,
+     167.3,
+     10
+    ]
+   ]
+  }
+ ]
+}

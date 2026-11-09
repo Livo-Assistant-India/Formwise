@@ -1,0 +1,21 @@
+{
+  "_about": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund top-up form (Amendment to the Capital Contribution Agreement), 2 pages. Blank has its fill-in widgets removed.",
+  "id": "gift-whiteoak-em-topup",
+  "title": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Top-up (Amendment to the Capital Contribution Agreement)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 218,
+      "y": 467,
+      "w": 296,
+      "h": 44,
+      "signer": "subscriber",
+      "label": "Investor / Contributor signature"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "Top Up Form for ASHOKA WHITEOAK GLOBAL EMERGING MARKETS EX INDIA GIFT FUND.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

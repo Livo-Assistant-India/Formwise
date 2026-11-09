@@ -1,0 +1,78 @@
+{
+  "_about": "Form-level rules. One person (the investor / contributor) - KYC gives the name, the Excel everything else.",
+  "formId": "gift-whiteoak-em-topup",
+  "group": "GIFT City",
+  "label": "GIFT – WhiteOak Global EM ex India – Top-up",
+  "shortLabel": "WhiteOak EM top-up",
+  "purpose": "Add money to an existing investment",
+  "blankFileName": "Top Up Form for ASHOKA WHITEOAK GLOBAL EMERGING MARKETS EX INDIA GIFT FUND.pdf",
+  "keyFields": [
+    "Investor name",
+    "Folio number",
+    "Revised commitment"
+  ],
+  "sheetTabName": "WhiteOak EM top-up",
+  "detectionPhrases": [
+    "Amendment to the Capital Contribution Agreement",
+    "ASHOKA WHITEOAK GLOBAL EMERGING MARKETS EX INDIA GIFT FUND"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Investor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "p1a",
+      "label": "Page 1 · Investor",
+      "fields": [
+        "folio_no",
+        "subscriber_name"
+      ]
+    },
+    {
+      "key": "p1b",
+      "label": "Page 1 · First agreement",
+      "fields": [
+        "first_contribution_agreement_date",
+        "first_capital_commitment_usd",
+        "first_capital_contribution_usd"
+      ]
+    },
+    {
+      "key": "p1c",
+      "label": "Page 1 · Amendments",
+      "fields": [
+        "amendment_1_date",
+        "amendment_1_commitment_usd",
+        "amendment_1_contribution_usd",
+        "amendment_2_date",
+        "amendment_2_commitment_usd",
+        "amendment_2_contribution_usd",
+        "amendment_3_date",
+        "amendment_3_commitment_usd",
+        "amendment_3_contribution_usd"
+      ]
+    },
+    {
+      "key": "p1d",
+      "label": "Page 1 · Revised totals",
+      "fields": [
+        "revised_capital_commitment_usd",
+        "revised_capital_contribution_usd"
+      ]
+    },
+    {
+      "key": "p2",
+      "label": "Page 2 · Signature",
+      "fields": [
+        "form_date",
+        "place"
+      ]
+    }
+  ]
+}

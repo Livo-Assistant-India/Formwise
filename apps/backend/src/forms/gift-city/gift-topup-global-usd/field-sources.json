@@ -1,0 +1,18 @@
+{
+  "_about": "No GIFT City field sheet exists yet, so sources reuse the VCC top-up / redemption sheets for equivalent fields: client name from KYC (like subscriber_name), amount and bank details typed (Excel), dates = today. Scheme name, branch & city, CP RM / broker fields, 360 ONE RM name and place have no sheet source: typed until 360 ONE confirms.",
+  "fieldSources": {
+    "request_date": "today",
+    "subscriber_name": "document.name|upper",
+    "scheme_name": "typed",
+    "topup_amount_usd": "typed",
+    "bank_name": "typed",
+    "account_number": "typed",
+    "bank_branch_city": "typed",
+    "cp_rm_name": "typed",
+    "cp_broker_email": "typed",
+    "cp_mobile_number": "typed",
+    "rm_name": "typed",
+    "place": "typed",
+    "form_date": "today"
+  }
+}

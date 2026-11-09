@@ -1,0 +1,406 @@
+{
+ "formId": "gift-redemption-global-usd",
+ "pageCount": 1,
+ "configuration": {
+  "id": "gift-redemption-global-usd",
+  "title": "360 ONE GIFT City - Redemption Request (Global USD)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 41,
+    "y": 469,
+    "w": 165,
+    "h": 34,
+    "signer": "subscriber",
+    "label": "Sole / first holder's signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "redemption_by",
+    "page": 1,
+    "w": 10,
+    "h": 10,
+    "options": [
+     "No of Units",
+     "All Units",
+     "Amount (USD)"
+    ],
+    "boxesByOption": {
+     "No of Units": [
+      {
+       "x": 38.1,
+       "y": 191.7
+      }
+     ],
+     "All Units": [
+      {
+       "x": 38.1,
+       "y": 208.7
+      }
+     ],
+     "Amount (USD)": [
+      {
+       "x": 38.1,
+       "y": 225.1
+      },
+      {
+       "x": 38.1,
+       "y": 241.5
+      }
+     ]
+    }
+   }
+  ],
+  "labels": [],
+  "blankFileName": "360 One_Redepmtion Form - Global_USD.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank GIFT City Redemption Form, Global USD (top-left origin, y = text baseline), measured from its drawn boxes.",
+  "formId": "gift-redemption-global-usd",
+  "title": "360 ONE GIFT City - Redemption Request (Global USD)",
+  "fields": [
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 126.6,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 408
+   },
+   {
+    "key": "scheme_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 172,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 212
+   },
+   {
+    "key": "class_of_units",
+    "nominee": null,
+    "page": 1,
+    "x": 424,
+    "y": 172,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 131
+   },
+   {
+    "key": "units_to_redeem",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 191.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 340
+   },
+   {
+    "key": "redemption_amount_usd",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 225.2,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 409
+   },
+   {
+    "key": "redemption_amount_usd_words",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 241.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 409
+   },
+   {
+    "key": "cp_rm_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 260,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 408
+   },
+   {
+    "key": "cp_broker_email",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 277.4,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 198
+   },
+   {
+    "key": "cp_mobile_number",
+    "nominee": null,
+    "page": 1,
+    "x": 451,
+    "y": 277.4,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 104
+   },
+   {
+    "key": "rm_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 294.4,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 408
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 78.9,
+    "y": 546,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 167,
+    "combs": [
+     [
+      78.9,
+      166.8,
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "fieldSources": {
+  "first_holder_name": "document.name|upper",
+  "scheme_name": "typed",
+  "class_of_units": "typed",
+  "redemption_by": "tick",
+  "units_to_redeem": "typed",
+  "redemption_amount_usd": "typed",
+  "redemption_amount_usd_words": "typed",
+  "cp_rm_name": "typed",
+  "cp_broker_email": "typed",
+  "cp_mobile_number": "typed",
+  "rm_name": "typed",
+  "form_date": "today"
+ },
+ "formRules": {
+  "formId": "gift-redemption-global-usd",
+  "group": "GIFT City",
+  "label": "GIFT – 360 ONE Global USD – Redemption",
+  "shortLabel": "Redemption (Global USD)",
+  "purpose": "Redeem units in a GIFT City Global USD scheme",
+  "blankFileName": "360 One_Redepmtion Form - Global_USD.pdf",
+  "keyFields": [
+   "Scheme",
+   "Units / amount to redeem"
+  ],
+  "sheetTabName": "GIFT Redemption USD",
+  "detectionPhrases": [
+   "REDEMPTION REQUEST FORM",
+   "Class of Units"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Sole / first holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "investor",
+    "label": "Investor",
+    "fields": [
+     "first_holder_name"
+    ]
+   },
+   {
+    "key": "redemption",
+    "label": "Redemption",
+    "fields": [
+     "scheme_name",
+     "class_of_units",
+     "redemption_by",
+     "units_to_redeem",
+     "redemption_amount_usd",
+     "redemption_amount_usd_words"
+    ]
+   },
+   {
+    "key": "relationship",
+    "label": "CP / RM",
+    "fields": [
+     "cp_rm_name",
+     "cp_broker_email",
+     "cp_mobile_number",
+     "rm_name"
+    ]
+   },
+   {
+    "key": "signed",
+    "label": "Date",
+    "fields": [
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "scheme_name",
+   "class_of_units",
+   "redemption_by"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     118.95,
+     111.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "scheme_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     164.35,
+     98.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "class_of_units",
+   "page": 1,
+   "lines": [
+    [
+     424,
+     164.35,
+     96.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "units_to_redeem",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     184.15,
+     106.05,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "redemption_amount_usd",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     217.55,
+     138.56,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "redemption_amount_usd_words",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     234.15,
+     167.48,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "cp_rm_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     252.35,
+     91.76,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "cp_broker_email",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     269.75,
+     105.35,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "cp_mobile_number",
+   "page": 1,
+   "lines": [
+    [
+     451,
+     270.6,
+     102.62,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "rm_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     286.75,
+     77.25,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     78.9,
+     537.5,
+     166.8,
+     10
+    ]
+   ]
+  }
+ ]
+}

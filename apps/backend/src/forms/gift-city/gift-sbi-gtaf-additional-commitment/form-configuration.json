@@ -1,0 +1,15 @@
+{
+  "_about": "SBI Global Thematic Advantage Fund (IFSC) - Additional Capital Commitment Form, 1 page (letter to SBI Funds International (IFSC) Limited). No fill widgets; positions measured from the blank's [____] brackets and underscore lines.",
+  "id": "gift-sbi-gtaf-additional-commitment",
+  "title": "SBI Global Thematic Advantage Fund - Additional Capital Commitment",
+  "labels": [],
+  "signatureBoxes": [
+    { "page": 1, "x": 72, "y": 684, "w": 192, "h": 24, "signer": "subscriber", "label": "First holder / authorised signatory" },
+    { "page": 1, "x": 324, "y": 684, "w": 198, "h": 24, "signer": "second_holder", "label": "Second holder / authorised signatory" }
+  ],
+  "ignoredBlanks": [],
+  "tickboxes": [],
+  "blankFileName": "SBIGTAF - Addl.CapitalCommittment.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

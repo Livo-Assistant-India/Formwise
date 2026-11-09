@@ -1,0 +1,16 @@
+{
+  "_about": "No GIFT City field sheet yet: sources follow the VCC top-up form where a field has an equivalent (name from KYC, amounts typed, date today). Everything else is typed and listed as an open question.",
+  "fieldSources": {
+    "form_date": "today",
+    "contribution_agreement_date": "typed",
+    "additional_commitment_usd": "typed",
+    "additional_commitment_usd_words": "typed",
+    "unit_class": "typed",
+    "aggregate_commitment_usd": "typed",
+    "aggregate_commitment_usd_words": "typed",
+    "subscriber_name": "document.name|upper",
+    "second_holder_name": "typed",
+    "first_holder_designation": "typed",
+    "second_holder_designation": "typed"
+  }
+}

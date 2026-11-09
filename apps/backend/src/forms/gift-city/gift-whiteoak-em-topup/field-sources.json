@@ -1,0 +1,23 @@
+{
+  "_about": "No GIFT City field sheet yet. Reused from the VCC top-up sources where the field is the same: investor name from KYC (upper case), date = today. Everything else (folio, agreement/amendment dates and amounts, revised totals, place) is typed (Excel) until 360 ONE confirms the sources.",
+  "fieldSources": {
+    "folio_no": "typed",
+    "subscriber_name": "document.name|upper",
+    "first_contribution_agreement_date": "typed",
+    "first_capital_commitment_usd": "typed",
+    "first_capital_contribution_usd": "typed",
+    "amendment_1_date": "typed",
+    "amendment_1_commitment_usd": "typed",
+    "amendment_1_contribution_usd": "typed",
+    "amendment_2_date": "typed",
+    "amendment_2_commitment_usd": "typed",
+    "amendment_2_contribution_usd": "typed",
+    "amendment_3_date": "typed",
+    "amendment_3_commitment_usd": "typed",
+    "amendment_3_contribution_usd": "typed",
+    "revised_capital_commitment_usd": "typed",
+    "revised_capital_contribution_usd": "typed",
+    "form_date": "today",
+    "place": "typed"
+  }
+}

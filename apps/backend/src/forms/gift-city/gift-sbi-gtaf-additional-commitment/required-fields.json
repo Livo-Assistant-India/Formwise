@@ -1,0 +1,12 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": [
+    "subscriber_name",
+    "contribution_agreement_date",
+    "additional_commitment_usd",
+    "additional_commitment_usd_words",
+    "unit_class",
+    "aggregate_commitment_usd",
+    "aggregate_commitment_usd_words"
+  ]
+}

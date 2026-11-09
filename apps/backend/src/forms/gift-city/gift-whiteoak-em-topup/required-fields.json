@@ -1,0 +1,9 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": [
+    "subscriber_name",
+    "folio_no",
+    "revised_capital_commitment_usd",
+    "revised_capital_contribution_usd"
+  ]
+}

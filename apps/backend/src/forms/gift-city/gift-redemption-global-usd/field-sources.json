@@ -1,0 +1,17 @@
+{
+  "_about": "No GIFT City field sheet exists yet. Sources reuse the VCC Redemption form's for the same fields (name from KYC documents, redemption and amounts typed). Scheme, class of units, amount in words and the CP / RM fields have no VCC equivalent: typed, listed as open questions.",
+  "fieldSources": {
+    "first_holder_name": "document.name|upper",
+    "scheme_name": "typed",
+    "class_of_units": "typed",
+    "redemption_by": "tick",
+    "units_to_redeem": "typed",
+    "redemption_amount_usd": "typed",
+    "redemption_amount_usd_words": "typed",
+    "cp_rm_name": "typed",
+    "cp_broker_email": "typed",
+    "cp_mobile_number": "typed",
+    "rm_name": "typed",
+    "form_date": "today"
+  }
+}

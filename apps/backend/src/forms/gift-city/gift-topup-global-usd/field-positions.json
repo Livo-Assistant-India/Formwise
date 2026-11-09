@@ -1,0 +1,20 @@
+{
+  "_about": "Where each value is written on the blank 360 ONE Top-up on Commitment - Global (USD) form (top-left origin, y = baseline), measured from its drawn boxes. Dates go one digit per box (DDMMYYYY).",
+  "formId": "gift-topup-global-usd",
+  "title": "360 ONE Top-up on Commitment - Global (USD)",
+  "fields": [
+    { "key": "request_date", "nominee": null, "page": 1, "x": 392.1, "y": 103.5, "fontSize": 10, "type": "text", "maxWidth": 167, "combs": [[391.6, 167.1, 8]] },
+    { "key": "subscriber_name", "nominee": null, "page": 1, "x": 146, "y": 143.6, "fontSize": 10, "type": "text", "maxWidth": 408 },
+    { "key": "scheme_name", "nominee": null, "page": 1, "x": 146, "y": 162, "fontSize": 10, "type": "text", "maxWidth": 408 },
+    { "key": "topup_amount_usd", "nominee": null, "page": 1, "x": 175, "y": 184.5, "fontSize": 10, "type": "text", "maxWidth": 380, "alsoAt": [{ "page": 1, "x": 214, "y": 325.5, "fontSize": 7, "maxWidth": 78 }] },
+    { "key": "bank_name", "nominee": null, "page": 1, "x": 175, "y": 205.6, "fontSize": 10, "type": "text", "maxWidth": 380 },
+    { "key": "account_number", "nominee": null, "page": 1, "x": 175, "y": 223.9, "fontSize": 10, "type": "text", "maxWidth": 380 },
+    { "key": "bank_branch_city", "nominee": null, "page": 1, "x": 175, "y": 242.2, "fontSize": 10, "type": "text", "maxWidth": 380 },
+    { "key": "cp_rm_name", "nominee": null, "page": 1, "x": 175, "y": 260.5, "fontSize": 10, "type": "text", "maxWidth": 380 },
+    { "key": "cp_broker_email", "nominee": null, "page": 1, "x": 175, "y": 277.5, "fontSize": 10, "type": "text", "maxWidth": 186 },
+    { "key": "cp_mobile_number", "nominee": null, "page": 1, "x": 486, "y": 277.5, "fontSize": 10, "type": "text", "maxWidth": 70 },
+    { "key": "rm_name", "nominee": null, "page": 1, "x": 175, "y": 294.3, "fontSize": 10, "type": "text", "maxWidth": 380 },
+    { "key": "place", "nominee": null, "page": 1, "x": 83, "y": 474, "fontSize": 10, "type": "text", "maxWidth": 160 },
+    { "key": "form_date", "nominee": null, "page": 1, "x": 79, "y": 497.2, "fontSize": 10, "type": "text", "maxWidth": 167, "combs": [[78.4, 167.3, 8]] }
+  ]
+}

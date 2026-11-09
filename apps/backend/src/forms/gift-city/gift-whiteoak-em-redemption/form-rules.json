@@ -1,0 +1,50 @@
+{
+  "_about": "Form-level rules. One page; the first contributor's KYC documents fill the name, the Excel fills folio, scheme, redemption type and amount.",
+  "formId": "gift-whiteoak-em-redemption",
+  "group": "GIFT City",
+  "label": "GIFT – WhiteOak Global EM ex India – Redemption",
+  "shortLabel": "WhiteOak EM redemption",
+  "purpose": "Redeem units of the Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund",
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Redemption Form.pdf",
+  "keyFields": [
+    "Folio number",
+    "Full or partial",
+    "Redemption amount (USD)"
+  ],
+  "sheetTabName": "GIFT WhiteOak EM Redemption",
+  "detectionPhrases": [
+    "ASHOKA WHITEOAK",
+    "REDEMPTION FORM",
+    "Contributor"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Contributor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "contributor",
+      "label": "Page 1 · Contributor details",
+      "fields": [
+        "folio_no",
+        "form_date",
+        "subscriber_name",
+        "second_holder_name",
+        "sub_fund_name"
+      ]
+    },
+    {
+      "key": "redemption",
+      "label": "Page 1 · Redemption",
+      "fields": [
+        "redemption_type",
+        "redemption_amount_usd"
+      ]
+    }
+  ]
+}

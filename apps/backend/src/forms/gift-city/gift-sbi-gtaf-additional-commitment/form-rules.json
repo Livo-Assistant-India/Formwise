@@ -1,0 +1,53 @@
+{
+  "_about": "Form-level rules. One letter from the contributor(s): KYC gives the first holder's name, the Excel the amounts, class and agreement date.",
+  "formId": "gift-sbi-gtaf-additional-commitment",
+  "group": "GIFT City",
+  "label": "GIFT – SBI Global Thematic Advantage – Additional commitment",
+  "shortLabel": "SBI GTAF top-up",
+  "purpose": "Commit more capital to an existing investment",
+  "blankFileName": "SBIGTAF - Addl.CapitalCommittment.pdf",
+  "keyFields": [
+    "Subscriber name",
+    "Additional commitment (USD)",
+    "Unit class"
+  ],
+  "sheetTabName": "SBI GTAF top-up",
+  "detectionPhrases": [
+    "ADDITIONAL CAPITAL COMMITMENT FORM",
+    "SBI Global Thematic Advantage Fund (IFSC)"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Contributor",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "commitment",
+      "label": "Page 1 · Commitment",
+      "fields": [
+        "form_date",
+        "contribution_agreement_date",
+        "additional_commitment_usd",
+        "additional_commitment_usd_words",
+        "unit_class",
+        "aggregate_commitment_usd",
+        "aggregate_commitment_usd_words"
+      ]
+    },
+    {
+      "key": "contributors",
+      "label": "Page 1 · Contributors",
+      "fields": [
+        "subscriber_name",
+        "second_holder_name",
+        "first_holder_designation",
+        "second_holder_designation"
+      ]
+    }
+  ]
+}

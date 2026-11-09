@@ -1,0 +1,50 @@
+{
+  "_about": "Form-level rules. One person (the client) - KYC gives the name, the Excel the top-up and bank details.",
+  "formId": "gift-topup-global-usd",
+  "group": "GIFT City",
+  "label": "GIFT – 360 ONE Global USD – Top-up",
+  "shortLabel": "GIFT Global USD top-up",
+  "purpose": "Add to an existing commitment",
+  "blankFileName": "360 One_Top Up Commitment - Global_USD.pdf",
+  "keyFields": [
+    "Client name",
+    "Scheme name",
+    "Additional commitment (USD)"
+  ],
+  "sheetTabName": "GIFT Global USD top-up",
+  "detectionPhrases": [
+    "TOP-UP ON COMMITMENT",
+    "Additional Commitment Amount (In USD)"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Client",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "p1-commitment",
+      "label": "Page 1 · Commitment",
+      "fields": ["request_date", "subscriber_name", "scheme_name", "topup_amount_usd"]
+    },
+    {
+      "key": "p1-bank",
+      "label": "Page 1 · Bank",
+      "fields": ["bank_name", "account_number", "bank_branch_city"]
+    },
+    {
+      "key": "p1-rm",
+      "label": "Page 1 · Relationship managers",
+      "fields": ["cp_rm_name", "cp_broker_email", "cp_mobile_number", "rm_name"]
+    },
+    {
+      "key": "p1-sign",
+      "label": "Page 1 · Place and date",
+      "fields": ["place", "form_date"]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": ["first_holder_name", "scheme_name", "class_of_units", "redemption_by"]
+}

@@ -1,0 +1,49 @@
+{
+  "_about": "Form-level rules. One person (the sole / first holder) - KYC documents fill the name, the Excel fills the redemption details.",
+  "formId": "gift-redemption-global-usd",
+  "group": "GIFT City",
+  "label": "GIFT – 360 ONE Global USD – Redemption",
+  "shortLabel": "Redemption (Global USD)",
+  "purpose": "Redeem units in a GIFT City Global USD scheme",
+  "blankFileName": "360 One_Redepmtion Form - Global_USD.pdf",
+  "keyFields": [
+    "Scheme",
+    "Units / amount to redeem"
+  ],
+  "sheetTabName": "GIFT Redemption USD",
+  "detectionPhrases": [
+    "REDEMPTION REQUEST FORM",
+    "Class of Units"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Sole / first holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "investor",
+      "label": "Investor",
+      "fields": ["first_holder_name"]
+    },
+    {
+      "key": "redemption",
+      "label": "Redemption",
+      "fields": ["scheme_name", "class_of_units", "redemption_by", "units_to_redeem", "redemption_amount_usd", "redemption_amount_usd_words"]
+    },
+    {
+      "key": "relationship",
+      "label": "CP / RM",
+      "fields": ["cp_rm_name", "cp_broker_email", "cp_mobile_number", "rm_name"]
+    },
+    {
+      "key": "signed",
+      "label": "Date",
+      "fields": ["form_date"]
+    }
+  ]
+}

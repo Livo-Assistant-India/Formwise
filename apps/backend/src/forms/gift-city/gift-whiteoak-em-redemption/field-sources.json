@@ -1,0 +1,12 @@
+{
+  "_about": "No client field sheet for GIFT City yet: sources reuse the VCC redemption form's for the same fields (form_date, sub_fund_name, redemption_type, redemption_amount_usd, subscriber_name). folio_no and second_holder_name have no VCC equivalent, so they are typed until 360 ONE says otherwise.",
+  "fieldSources": {
+    "folio_no": "typed",
+    "form_date": "today",
+    "subscriber_name": "document.name|upper",
+    "second_holder_name": "typed",
+    "sub_fund_name": "typed",
+    "redemption_type": "tick",
+    "redemption_amount_usd": "typed"
+  }
+}

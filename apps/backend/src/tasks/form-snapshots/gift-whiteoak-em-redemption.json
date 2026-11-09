@@ -1,0 +1,267 @@
+{
+ "formId": "gift-whiteoak-em-redemption",
+ "pageCount": 1,
+ "configuration": {
+  "id": "gift-whiteoak-em-redemption",
+  "title": "Ashoka WhiteOak Global EM ex India GIFT Fund - Redemption",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 90,
+    "y": 642,
+    "w": 184,
+    "h": 56,
+    "signer": "subscriber",
+    "label": "Sole / first contributor's signature"
+   },
+   {
+    "page": 1,
+    "x": 285,
+    "y": 642,
+    "w": 184,
+    "h": 56,
+    "signer": "joint_holder",
+    "label": "Second / joint contributor's signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "redemption_type",
+    "page": 1,
+    "w": 12,
+    "h": 12,
+    "options": [
+     "Full (100%)",
+     "Partial"
+    ],
+    "boxesByOption": {
+     "Full (100%)": [
+      {
+       "x": 202.6,
+       "y": 368.5
+      }
+     ],
+     "Partial": [
+      {
+       "x": 440.5,
+       "y": 368.9
+      }
+     ]
+    }
+   }
+  ],
+  "labels": [],
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Redemption Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank WhiteOak GIFT redemption form (top-left origin, y = text baseline), measured from its underscore lines.",
+  "formId": "gift-whiteoak-em-redemption",
+  "title": "Ashoka WhiteOak Global EM ex India GIFT Fund - Redemption",
+  "fields": [
+   {
+    "key": "folio_no",
+    "nominee": null,
+    "page": 1,
+    "x": 138,
+    "y": 174.5,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 88
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 449,
+    "y": 174.5,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 62
+   },
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 1,
+    "x": 229,
+    "y": 238,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 216
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 244,
+    "y": 259,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 202
+   },
+   {
+    "key": "sub_fund_name",
+    "nominee": null,
+    "page": 1,
+    "x": 167,
+    "y": 280,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 282
+   },
+   {
+    "key": "redemption_amount_usd",
+    "nominee": null,
+    "page": 1,
+    "x": 273,
+    "y": 428,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 172
+   }
+  ]
+ },
+ "fieldSources": {
+  "folio_no": "typed",
+  "form_date": "today",
+  "subscriber_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "sub_fund_name": "typed",
+  "redemption_type": "tick",
+  "redemption_amount_usd": "typed"
+ },
+ "formRules": {
+  "formId": "gift-whiteoak-em-redemption",
+  "group": "GIFT City",
+  "label": "GIFT – WhiteOak Global EM ex India – Redemption",
+  "shortLabel": "WhiteOak EM redemption",
+  "purpose": "Redeem units of the Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund",
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Redemption Form.pdf",
+  "keyFields": [
+   "Folio number",
+   "Full or partial",
+   "Redemption amount (USD)"
+  ],
+  "sheetTabName": "GIFT WhiteOak EM Redemption",
+  "detectionPhrases": [
+   "ASHOKA WHITEOAK",
+   "REDEMPTION FORM",
+   "Contributor"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Contributor",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "contributor",
+    "label": "Page 1 · Contributor details",
+    "fields": [
+     "folio_no",
+     "form_date",
+     "subscriber_name",
+     "second_holder_name",
+     "sub_fund_name"
+    ]
+   },
+   {
+    "key": "redemption",
+    "label": "Page 1 · Redemption",
+    "fields": [
+     "redemption_type",
+     "redemption_amount_usd"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "folio_no",
+   "subscriber_name",
+   "sub_fund_name",
+   "redemption_type"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "folio_no",
+   "page": 1,
+   "lines": [
+    [
+     138,
+     166.85,
+     70.26,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     449,
+     168.55,
+     61.82,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name",
+   "page": 1,
+   "lines": [
+    [
+     229,
+     230.35,
+     108.17,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     244,
+     251.35,
+     125.56,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "sub_fund_name",
+   "page": 1,
+   "lines": [
+    [
+     167,
+     272.35,
+     103.55,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "redemption_amount_usd",
+   "page": 1,
+   "lines": [
+    [
+     273,
+     420.35,
+     138.56,
+     9
+    ]
+   ]
+  }
+ ]
+}

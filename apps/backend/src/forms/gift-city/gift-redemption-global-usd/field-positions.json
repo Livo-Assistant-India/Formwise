@@ -1,0 +1,18 @@
+{
+  "_about": "Where each value is written on the blank GIFT City Redemption Form, Global USD (top-left origin, y = text baseline), measured from its drawn boxes.",
+  "formId": "gift-redemption-global-usd",
+  "title": "360 ONE GIFT City - Redemption Request (Global USD)",
+  "fields": [
+    { "key": "first_holder_name", "nominee": null, "page": 1, "x": 146, "y": 126.6, "fontSize": 9, "type": "text", "maxWidth": 408 },
+    { "key": "scheme_name", "nominee": null, "page": 1, "x": 146, "y": 172, "fontSize": 9, "type": "text", "maxWidth": 212 },
+    { "key": "class_of_units", "nominee": null, "page": 1, "x": 424, "y": 172, "fontSize": 9, "type": "text", "maxWidth": 131 },
+    { "key": "units_to_redeem", "nominee": null, "page": 1, "x": 146, "y": 191.8, "fontSize": 9, "type": "text", "maxWidth": 340 },
+    { "key": "redemption_amount_usd", "nominee": null, "page": 1, "x": 146, "y": 225.2, "fontSize": 9, "type": "text", "maxWidth": 409 },
+    { "key": "redemption_amount_usd_words", "nominee": null, "page": 1, "x": 146, "y": 241.8, "fontSize": 9, "type": "text", "maxWidth": 409 },
+    { "key": "cp_rm_name", "nominee": null, "page": 1, "x": 146, "y": 260, "fontSize": 9, "type": "text", "maxWidth": 408 },
+    { "key": "cp_broker_email", "nominee": null, "page": 1, "x": 146, "y": 277.4, "fontSize": 9, "type": "text", "maxWidth": 198 },
+    { "key": "cp_mobile_number", "nominee": null, "page": 1, "x": 451, "y": 277.4, "fontSize": 9, "type": "text", "maxWidth": 104 },
+    { "key": "rm_name", "nominee": null, "page": 1, "x": 146, "y": 294.4, "fontSize": 9, "type": "text", "maxWidth": 408 },
+    { "key": "form_date", "nominee": null, "page": 1, "x": 78.9, "y": 546, "fontSize": 10, "type": "text", "maxWidth": 167, "combs": [[78.9, 166.8, 8]] }
+  ]
+}

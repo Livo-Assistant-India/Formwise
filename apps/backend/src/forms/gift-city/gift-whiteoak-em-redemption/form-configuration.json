@@ -1,0 +1,55 @@
+{
+  "_about": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Redemption Form (1 page, no built-in fill boxes). Text positions are measured from the blank's underscore lines; the Full / Partial tick boxes are its drawn green boxes (x, y = tick baseline, centred in the box).",
+  "id": "gift-whiteoak-em-redemption",
+  "title": "Ashoka WhiteOak Global EM ex India GIFT Fund - Redemption",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 90,
+      "y": 642,
+      "w": 184,
+      "h": 56,
+      "signer": "subscriber",
+      "label": "Sole / first contributor's signature"
+    },
+    {
+      "page": 1,
+      "x": 285,
+      "y": 642,
+      "w": 184,
+      "h": 56,
+      "signer": "joint_holder",
+      "label": "Second / joint contributor's signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "redemption_type",
+      "page": 1,
+      "w": 12,
+      "h": 12,
+      "options": [
+        "Full (100%)",
+        "Partial"
+      ],
+      "boxesByOption": {
+        "Full (100%)": [
+          {
+            "x": 202.6,
+            "y": 368.5
+          }
+        ],
+        "Partial": [
+          {
+            "x": 440.5,
+            "y": 368.9
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Redemption Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

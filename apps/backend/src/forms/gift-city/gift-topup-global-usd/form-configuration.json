@@ -1,0 +1,40 @@
+{
+  "_about": "360 ONE GIFT City Top-up on Commitment form (Global, USD), 1 page. Positions measured from the blank's drawn boxes (measure.py).",
+  "id": "gift-topup-global-usd",
+  "title": "360 ONE Top-up on Commitment - Global (USD)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 36,
+      "y": 406,
+      "w": 174,
+      "h": 38,
+      "signer": "subscriber",
+      "label": "Sole / first holder signature"
+    },
+    {
+      "page": 1,
+      "x": 210,
+      "y": 406,
+      "w": 174,
+      "h": 38,
+      "signer": "joint_holder",
+      "label": "Second holder signature"
+    },
+    {
+      "page": 1,
+      "x": 385,
+      "y": 406,
+      "w": 174,
+      "h": 38,
+      "signer": "joint_holder",
+      "label": "Third holder signature"
+    }
+  ],
+  "ignoredBlanks": [],
+  "tickboxes": [],
+  "blankFileName": "360 One_Top Up Commitment - Global_USD.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}

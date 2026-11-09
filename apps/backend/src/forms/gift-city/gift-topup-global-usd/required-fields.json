@@ -1,0 +1,8 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed.",
+  "requiredFields": [
+    "subscriber_name",
+    "scheme_name",
+    "topup_amount_usd"
+  ]
+}

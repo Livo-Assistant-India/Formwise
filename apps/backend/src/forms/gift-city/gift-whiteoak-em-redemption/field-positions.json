@@ -1,0 +1,13 @@
+{
+  "_about": "Where each value is written on the blank WhiteOak GIFT redemption form (top-left origin, y = text baseline), measured from its underscore lines.",
+  "formId": "gift-whiteoak-em-redemption",
+  "title": "Ashoka WhiteOak Global EM ex India GIFT Fund - Redemption",
+  "fields": [
+    { "key": "folio_no", "nominee": null, "page": 1, "x": 138, "y": 174.5, "fontSize": 9, "type": "text", "maxWidth": 88 },
+    { "key": "form_date", "nominee": null, "page": 1, "x": 449, "y": 174.5, "fontSize": 9, "type": "text", "maxWidth": 62 },
+    { "key": "subscriber_name", "nominee": null, "page": 1, "x": 229, "y": 238, "fontSize": 9, "type": "text", "maxWidth": 216 },
+    { "key": "second_holder_name", "nominee": null, "page": 1, "x": 244, "y": 259, "fontSize": 9, "type": "text", "maxWidth": 202 },
+    { "key": "sub_fund_name", "nominee": null, "page": 1, "x": 167, "y": 280, "fontSize": 9, "type": "text", "maxWidth": 282 },
+    { "key": "redemption_amount_usd", "nominee": null, "page": 1, "x": 273, "y": 428, "fontSize": 9, "type": "text", "maxWidth": 172 }
+  ]
+}

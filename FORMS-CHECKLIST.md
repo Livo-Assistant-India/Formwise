@@ -73,7 +73,22 @@ Forms are in 360 ONE's emails of 04 Nov (Mayur). Redemption and Top-up are ONE c
 
 | Form | Form id | Built | Blanks | Test fill | UI test | Sheet | User OK |
 |------|---------|:-----:|:------:|:---------:|:-------:|:-----:|:-------:|
-| (waiting for the user to add the GIFT City forms next to `VCC`) | | ❓ | | | | | |
+| 360 ONE Redemption – Global USD (common) | `gift-redemption-global-usd` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| 360 ONE Top-up on Commitment – Global USD (common) | `gift-topup-global-usd` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| White Oak EM ex India – Redemption | `gift-whiteoak-em-redemption` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| White Oak EM ex India – Top-up (Amendment) | `gift-whiteoak-em-topup` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| SBI Global Thematic Advantage – Additional Capital Commitment | `gift-sbi-gtaf-additional-commitment` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Application sets: Dynamic Equity Allocator, Global Real Assets, Growth Strategy, India Diversified, IOF Feeder, ABSL EM (Ind / Non-Ind), SBI GTAF, White Oak | | ⬜ | | | | | |
+
+GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
+- No GIFT City field sheet: name from KYC (upper case), dates = today, everything else typed (Excel). Confirm every source.
+- Scheme name is typed on the common forms: fixed per fund, or typed?
+- Amounts in words are typed: should the app write them from the number?
+- Second/third holders: names typed, signatures not stamped. Joint holders in scope?
+- 360 ONE Redemption: "Amount (USD)" ticks both the figures and the words box.
+- White Oak Redemption: unlabelled box left of "Amount (USD)" is left empty — what goes there?
+- White Oak Top-up: which amendment row does a new top-up go in? Should the revised totals be calculated?
+- SBI: Contribution Agreement date, unit class and total commitment are typed. "Class ___" space is short.
 
 ## NFT (58 service-request types)
 

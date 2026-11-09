@@ -1,0 +1,204 @@
+{
+  "_about": "Where each value is written on the blank WhiteOak EM ex India GIFT Fund top-up form (top-left origin, y = baseline). The blank had built-in fill boxes; they were removed (as for the W-9) and positions come from their rects and the table cells. Amounts are written after the printed grey hint \"Amount – USD\". The name is printed again in the I/We declaration (page 1) and the signature table (page 2).",
+  "formId": "gift-whiteoak-em-topup",
+  "title": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Top-up (Amendment to the Capital Contribution Agreement)",
+  "fields": [
+    {
+      "key": "folio_no",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 176,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 160
+    },
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 201,
+      "fontSize": 10,
+      "type": "multiline",
+      "maxWidth": 160,
+      "maxY": 222,
+      "alsoAt": [
+        {
+          "page": 1,
+          "x": 98,
+          "y": 602.5,
+          "fontSize": 10,
+          "maxWidth": 355
+        },
+        {
+          "page": 2,
+          "x": 219,
+          "y": 455,
+          "fontSize": 10,
+          "maxWidth": 295
+        }
+      ]
+    },
+    {
+      "key": "first_contribution_agreement_date",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 239.3,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 160
+    },
+    {
+      "key": "first_capital_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 262.6,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "first_capital_contribution_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 285.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_1_date",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 308.9,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 160
+    },
+    {
+      "key": "amendment_1_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 332.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_1_contribution_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 355.3,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_2_date",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 378.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 160
+    },
+    {
+      "key": "amendment_2_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 401.8,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_2_contribution_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 424.9,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_3_date",
+      "nominee": null,
+      "page": 1,
+      "x": 360,
+      "y": 448.1,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 160
+    },
+    {
+      "key": "amendment_3_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 471.4,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "amendment_3_contribution_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 494.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "revised_capital_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 517.7,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "revised_capital_contribution_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 433,
+      "y": 541,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 2,
+      "x": 125,
+      "y": 548,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 85
+    },
+    {
+      "key": "place",
+      "nominee": null,
+      "page": 2,
+      "x": 125,
+      "y": 570.2,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 120
+    }
+  ]
+}

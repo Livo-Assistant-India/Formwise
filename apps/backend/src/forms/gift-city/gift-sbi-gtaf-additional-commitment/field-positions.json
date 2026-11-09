@@ -1,0 +1,117 @@
+{
+  "_about": "Where each value is written on the blank SBI GTAF Additional Capital Commitment Form (top-left origin, y = baseline), measured with measure.py. Amounts in words go on the long second line of each (USD [...]) bracket.",
+  "formId": "gift-sbi-gtaf-additional-commitment",
+  "title": "SBI Global Thematic Advantage Fund - Additional Capital Commitment",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 102,
+      "y": 78,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 110
+    },
+    {
+      "key": "contribution_agreement_date",
+      "nominee": null,
+      "page": 1,
+      "x": 362,
+      "y": 254,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 76
+    },
+    {
+      "key": "additional_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 205,
+      "y": 393.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 168
+    },
+    {
+      "key": "additional_commitment_usd_words",
+      "nominee": null,
+      "page": 1,
+      "x": 76,
+      "y": 406,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 328
+    },
+    {
+      "key": "unit_class",
+      "nominee": null,
+      "page": 1,
+      "x": 227,
+      "y": 418.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 19
+    },
+    {
+      "key": "aggregate_commitment_usd",
+      "nominee": null,
+      "page": 1,
+      "x": 285,
+      "y": 444,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 136
+    },
+    {
+      "key": "aggregate_commitment_usd_words",
+      "nominee": null,
+      "page": 1,
+      "x": 76,
+      "y": 456.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 420
+    },
+    {
+      "key": "subscriber_name",
+      "nominee": null,
+      "page": 1,
+      "x": 74,
+      "y": 607,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 190
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 326,
+      "y": 607,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 196
+    },
+    {
+      "key": "first_holder_designation",
+      "nominee": null,
+      "page": 1,
+      "x": 74,
+      "y": 670.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 190
+    },
+    {
+      "key": "second_holder_designation",
+      "nominee": null,
+      "page": 1,
+      "x": 326,
+      "y": 670.5,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 196
+    }
+  ]
+}

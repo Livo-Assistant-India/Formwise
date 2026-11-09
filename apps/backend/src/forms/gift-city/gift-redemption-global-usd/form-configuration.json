@@ -1,0 +1,45 @@
+{
+  "_about": "360 ONE GIFT City - Redemption Request Form, Global USD (1 page). Text positions are measured from the blank's own boxes; tick boxes are the drawn squares left of each redemption row (x, y = checkmark anchor, top-left origin).",
+  "id": "gift-redemption-global-usd",
+  "title": "360 ONE GIFT City - Redemption Request (Global USD)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 41,
+      "y": 469,
+      "w": 165,
+      "h": 34,
+      "signer": "subscriber",
+      "label": "Sole / first holder's signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "redemption_by",
+      "page": 1,
+      "w": 10,
+      "h": 10,
+      "options": [
+        "No of Units",
+        "All Units",
+        "Amount (USD)"
+      ],
+      "boxesByOption": {
+        "No of Units": [
+          { "x": 38.1, "y": 191.7 }
+        ],
+        "All Units": [
+          { "x": 38.1, "y": 208.7 }
+        ],
+        "Amount (USD)": [
+          { "x": 38.1, "y": 225.1 },
+          { "x": 38.1, "y": 241.5 }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 One_Redepmtion Form - Global_USD.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual"
+}
