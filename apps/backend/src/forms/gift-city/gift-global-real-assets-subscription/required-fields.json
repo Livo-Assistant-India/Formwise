@@ -1,0 +1,22 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "subscriber_name",
+    "dob",
+    "tax_reference_number",
+    "gender",
+    "residential_status",
+    "mobile",
+    "email",
+    "account_name",
+    "account_number",
+    "bank_name",
+    "swift_code",
+    "subscription_amount",
+    "class_of_units",
+    "pep_status",
+    "tax_resident_outside_india",
+    "wish_to_nominate",
+    "place"
+  ]
+}

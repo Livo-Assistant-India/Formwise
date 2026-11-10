@@ -1,0 +1,234 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the identity fields, the Excel fills the rest; the second holder's fields are typed.",
+  "formId": "gift-sbi-gtaf-application",
+  "group": "GIFT City",
+  "label": "GIFT – SBI Global Thematic Advantage – Application",
+  "shortLabel": "GIFT SBI GTAF application",
+  "purpose": "New investment · application form and contribution agreement",
+  "blankFileName": "SBI Global Thematic Advantage Fund - Application Form.pdf",
+  "keyFields": [
+    "Applicant name",
+    "Capital commitment",
+    "Bank account"
+  ],
+  "sheetTabName": "GIFT SBI GTAF application",
+  "detectionPhrases": [
+    "SBI Global Thematic Advantage Fund",
+    "GENERAL INFORMATION"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Applicant",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "applicant",
+      "label": "Page 4 · First holder (KYC + Excel)",
+      "fields": [
+        "applicant_type",
+        "folio_no",
+        "subscriber_name",
+        "aliases",
+        "dob",
+        "gender",
+        "ckyc_number",
+        "tax_reference_number",
+        "id_passport",
+        "nationality",
+        "legal_domicile",
+        "mode_of_holding"
+      ]
+    },
+    {
+      "key": "second-holder",
+      "label": "Pages 4-7 · Second holder (Excel)",
+      "fields": [
+        "joint_holder_relationship",
+        "joint_holder_name",
+        "joint_holder_aliases",
+        "joint_holder_dob",
+        "joint_holder_gender",
+        "joint_holder_ckyc_number",
+        "joint_holder_tax_reference_number",
+        "joint_holder_id_passport",
+        "joint_holder_nationality",
+        "joint_holder_legal_domicile",
+        "joint_holder_occupation",
+        "joint_holder_gross_annual_income_range",
+        "joint_holder_pep_status",
+        "joint_holder_employer_name",
+        "joint_holder_designation",
+        "joint_holder_place_of_work",
+        "joint_holder_business_name",
+        "joint_holder_business_nature",
+        "joint_holder_occupation_other",
+        "joint_holder_origin_of_funds",
+        "joint_holder_source_of_wealth",
+        "joint_holder_country_of_birth",
+        "joint_holder_citizenship_country",
+        "joint_holder_tax_residence_country",
+        "joint_holder_us_person",
+        "joint_holder_name_p7"
+      ]
+    },
+    {
+      "key": "contact",
+      "label": "Page 4 · Addresses and contact",
+      "fields": [
+        "mailing_address_line1",
+        "mailing_address_line2",
+        "mailing_city",
+        "mailing_state",
+        "mailing_postcode",
+        "mailing_country",
+        "residence_address_line1",
+        "residence_address_line2",
+        "residence_city",
+        "residence_state",
+        "residence_postcode",
+        "residence_country",
+        "landline",
+        "mobile",
+        "office_phone",
+        "email",
+        "alternate_email"
+      ]
+    },
+    {
+      "key": "investment",
+      "label": "Pages 4-5 · Capital commitment and contribution (Excel)",
+      "fields": [
+        "capital_commitment_usd",
+        "capital_commitment_usd_words",
+        "investment_option",
+        "remitting_bank_line1",
+        "remitting_bank_line2",
+        "subscription_amount",
+        "subscription_amount_words"
+      ]
+    },
+    {
+      "key": "nomination",
+      "label": "Page 5 · Nomination",
+      "fields": [
+        "wish_to_nominate"
+      ]
+    },
+    {
+      "key": "bank",
+      "label": "Page 5 · Bank account (Excel)",
+      "fields": [
+        "account_number",
+        "account_type",
+        "iban",
+        "bank_name",
+        "bank_city",
+        "bank_state",
+        "bank_postcode",
+        "bank_country",
+        "swift_code",
+        "account_currency"
+      ]
+    },
+    {
+      "key": "kyc",
+      "label": "Pages 5-6 · KYC details (Excel)",
+      "fields": [
+        "occupation",
+        "gross_annual_income_range",
+        "pep_status",
+        "employer_name",
+        "designation",
+        "place_of_work",
+        "business_name",
+        "business_nature",
+        "occupation_other",
+        "origin_of_funds",
+        "source_of_wealth"
+      ]
+    },
+    {
+      "key": "signed",
+      "label": "Page 6 · Declaration signed",
+      "fields": [
+        "place",
+        "form_date"
+      ]
+    },
+    {
+      "key": "fatca",
+      "label": "Page 7 · FATCA & CRS",
+      "fields": [
+        "country_of_birth",
+        "citizenship_country",
+        "tax_residence_country",
+        "us_person",
+        "foreign_tax_identification_number_1",
+        "foreign_tax_country_1",
+        "foreign_tax_identification_number_2",
+        "foreign_tax_country_2",
+        "foreign_tax_identification_number_3",
+        "foreign_tax_country_3",
+        "citizenship_relinquishment_reason",
+        "subscriber_name_p7",
+        "form_date_p7"
+      ]
+    },
+    {
+      "key": "schedule",
+      "label": "Page 23 · Schedule I",
+      "fields": [
+        "subscriber_name_p23",
+        "subscriber_address_p23",
+        "mailing_address_line1_p23",
+        "mailing_address_line2_p23",
+        "mobile_p23",
+        "fax",
+        "email_p23",
+        "capital_commitment_usd_p23",
+        "capital_commitment_usd_words_p23",
+        "class_of_units",
+        "investor_name_p23"
+      ]
+    },
+    {
+      "key": "waiver",
+      "label": "Page 24 · FME contribution waiver",
+      "fields": [
+        "subscriber_name_p24",
+        "capital_commitment_usd_p24",
+        "first_holder_name_p24",
+        "joint_holder_name_p24"
+      ]
+    },
+    {
+      "key": "agreement",
+      "label": "Page 27 · Contribution Agreement date (Excel)",
+      "fields": [
+        "agreement_execution_day",
+        "agreement_execution_month",
+        "agreement_execution_year"
+      ]
+    },
+    {
+      "key": "annexure-a",
+      "label": "Pages 66-67 · Annexure A: key details",
+      "fields": [
+        "subscriber_name_p66",
+        "subscriber_address_p66",
+        "capital_commitment_usd_p66",
+        "capital_commitment_usd_words_p66",
+        "class_of_units_p66",
+        "mailing_address_line1_p67",
+        "mailing_address_line2_p67",
+        "email_p67",
+        "mobile_p67"
+      ]
+    }
+  ]
+}

@@ -100,7 +100,7 @@ export async function handleDownloadBatchZip(request, response) {
   }
   const clientCount = new Set(finishedClients.map((client) => client.rowNumber)).size;
   response.set("Content-Type", "application/zip")
-    .set("Content-Disposition", `attachment; filename="${toSafeFileName(forms.map((form) => form.shortLabel).join(" + "))} - ${clientCount} clients.zip"`)
+    .attachment(`${toSafeFileName(forms.map((form) => form.shortLabel).join(" + "))} - ${clientCount} clients.zip`)
     .send(buildZipFile(zipFiles));
 }
 

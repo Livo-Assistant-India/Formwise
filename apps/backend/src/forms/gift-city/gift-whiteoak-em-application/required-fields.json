@@ -1,0 +1,19 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "subscriber_name",
+    "dob",
+    "tax_reference_number",
+    "residential_status",
+    "mobile",
+    "email",
+    "capital_commitment_usd",
+    "class_of_units",
+    "account_number",
+    "bank_name",
+    "swift_code",
+    "pep_status",
+    "wish_to_nominate",
+    "place"
+  ]
+}

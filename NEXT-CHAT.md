@@ -62,6 +62,8 @@ Steps:
 1. Copy the blank PDF into `data/Blank Forms/`. If it has built-in fill boxes (IRS forms), remove the widgets with
    PyMuPDF first and use each widget's rect as the position (see how `Form W-9.pdf` was made).
 2. Measure: `python -I tools/form-building/measure.py "<pdf>" 1,2,3 --draw` (every text line and drawn box).
+   For scanned pages, or boxes drawn as loose lines, use `python -I tools/form-building/scan_boxes.py "<pdf>" 4,5 235`
+   (finds combs and tick boxes from the pixels; 235 = threshold for light grey borders).
 3. Make the folder. For a family of near-identical forms, write or extend a generator instead of hand-copying:
    - `tools/form-building/make_topups.py`: VCC top-ups.
    - `tools/form-building/make_vcc_subscriptions.mjs`: every VCC subscription (GBF, GIF 2, GSF, IOF) from the template

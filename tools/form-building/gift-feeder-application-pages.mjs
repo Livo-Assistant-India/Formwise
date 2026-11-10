@@ -30,16 +30,16 @@ export function tick(key, page, size, boxesByOption, { section } = {}) {
       [option, Array.isArray(boxes[0]) ? boxes.map(toBox) : [toBox(boxes)]])) };
 }
 
-const OCCUPATION_OPTIONS = (firstRowTop, secondRowTop, columnXs) => ({
+export const OCCUPATION_OPTIONS = (firstRowTop, secondRowTop, columnXs) => ({
   Professional: [columnXs[0], firstRowTop], Business: [columnXs[1], firstRowTop], "Private Sector Service": [columnXs[2], firstRowTop],
   "Public Sector Service": [columnXs[3], firstRowTop], "Government Service": [columnXs[4], firstRowTop], "Self Employed": [columnXs[5], firstRowTop],
   Retired: [columnXs[0], secondRowTop], Housewife: [columnXs[1], secondRowTop], Student: [columnXs[2], secondRowTop],
   Agriculturist: [columnXs[3], secondRowTop], Others: [columnXs[4], secondRowTop],
 });
-const INCOME_OPTIONS = (top, xs) => ({ "Below 1 million": [xs[0], top], "1 to 5 million": [xs[1], top], "5 to 10 million": [xs[2], top], "10 million and above": [xs[3], top] });
-const PEP_OPTIONS = (top) => ({ "I am PEP": [35.2, top], "I am related to a PEP": [95.5, top], "Not applicable": [180.5, top] });
-const NO_PAN_DOCUMENT_OPTIONS = (top, xs) => ({ Passport: [xs[0], top], "Election ID card": [xs[1], top], "Government ID": [xs[2], top], UIDAI: [xs[3], top], Others: [xs[4], top] });
-const ADDRESS_TYPE_OPTIONS = (top, xs) => ({ Residential: [xs[0], top], Business: [xs[1], top], "Registered office": [xs[2], top] });
+export const INCOME_OPTIONS = (top, xs) => ({ "Below 1 million": [xs[0], top], "1 to 5 million": [xs[1], top], "5 to 10 million": [xs[2], top], "10 million and above": [xs[3], top] });
+export const PEP_OPTIONS = (top) => ({ "I am PEP": [35.2, top], "I am related to a PEP": [95.5, top], "Not applicable": [180.5, top] });
+export const NO_PAN_DOCUMENT_OPTIONS = (top, xs) => ({ Passport: [xs[0], top], "Election ID card": [xs[1], top], "Government ID": [xs[2], top], UIDAI: [xs[3], top], Others: [xs[4], top] });
+export const ADDRESS_TYPE_OPTIONS = (top, xs) => ({ Residential: [xs[0], top], Business: [xs[1], top], "Registered office": [xs[2], top] });
 
 /** Page 2 of the form (PDF page 4) and its scanned twin for the second applicant (PDF page 8, rows moved up). */
 function firstApplicantPage() {
@@ -77,7 +77,7 @@ function firstApplicantPage() {
   ];
 }
 
-function secondApplicantPages() {
+export function secondApplicantPages() {
   const s = { section: "second-applicant" };
   return [
     tick("joint_holder_gender", 8, 8.5, { Male: [126.0, 125.8], Female: [155.0, 125.8], Others: [192.0, 125.8], "Non-individual": [227.2, 125.8] }, s),
@@ -179,7 +179,7 @@ function fatcaPage() {
   ];
 }
 
-function investorProfilePage() {
+export function investorProfilePage() {
   const p = { section: "profile" };
   return [
     text("subscriber_name_p14", 14, 126, 155, 130, "copy.subscriber_name", { fontSize: 7, ...p }),
@@ -207,7 +207,7 @@ function investorProfilePage() {
   ];
 }
 
-function nominationPage() {
+export function nominationPage() {
   const n = { section: "nomination" };
   return [
     tick("wish_to_nominate", 21, 8.7, { "Do not wish to nominate": [115.2, 95.0], "Wish to nominate": [269.5, 95.0] }, n),

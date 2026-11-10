@@ -83,7 +83,10 @@ Forms are in 360 ONE's emails of 04 Nov (Mayur). Redemption and Top-up are ONE c
 | Dynamic Equity Allocator GIFT Feeder – Subscription, 83 pages | `gift-dynamic-equity-allocator-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
 | Growth Strategy GIFT – Subscription, 83 pages | `gift-growth-strategy-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
 | International Opportunities GIFT Feeder – Subscription, 83 pages | `gift-international-opportunities-subscription` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
-| Still to build: Global Real Assets (71 p), India Diversified (76 p), SBI GTAF application (68 p), White Oak application (76 p) | | ⬜ | | | | | |
+| Global Real Assets – Subscription, 71 pages | `gift-global-real-assets-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| India Diversified (CAT III) – Subscription, 76 pages | `gift-india-diversified-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| SBI Global Thematic Advantage – Application, 68 pages | `gift-sbi-gtaf-application` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| WhiteOak Global EM ex India – Application, 76 pages | `gift-whiteoak-em-application` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 
 GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 - No GIFT City field sheet: name from KYC (upper case), dates = today, everything else typed (Excel). Confirm every source.
@@ -94,6 +97,14 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 - White Oak Redemption: unlabelled box left of "Amount (USD)" is left empty — what goes there?
 - White Oak Top-up: which amendment row does a new top-up go in? Should the revised totals be calculated?
 - SBI: Contribution Agreement date, unit class and total commitment are typed. "Class ___" space is short.
+- Application sets (10 Nov): nominee details tables are not filled (only "wish / do not wish to nominate"), as on the
+  feeder forms. Guardian (minor) and non-individual sections are left blank.
+- India Diversified: its accredited-investor tables have no tick boxes, so no category is ticked. Annexure A amount
+  line has a second blank ("(USD/GBP) ___") left empty.
+- SBI application: the "Please tick" columns for total expense and set-up fee (Annexure A) follow the unit class; left
+  blank for now.
+- WhiteOak application: the management fee, placement cost, operating and set-up expense brackets (Annexure A) are
+  typed per case; ask if they are fixed per fund. Landline has 8 boxes after a separate STD code.
 
 ## NFT (58 service-request types)
 

@@ -65,7 +65,7 @@ export async function handleGetBlankPageImage(request, response) {
 export async function handleDownloadBatchTemplate(request, response) {
   const { fileBytes, fileName } = await buildBatchTemplate(request.formDefinition.formId);
   response.set("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-    .set("Content-Disposition", `attachment; filename="${fileName}"`).send(fileBytes);
+    .attachment(fileName).send(fileBytes); // attachment() encodes names with "–" etc. (a raw header rejects them)
 }
 
 /** ?formIds=a,b -> one Excel template for several forms (each shared value asked once). */
@@ -74,7 +74,7 @@ export async function handleDownloadCombinedBatchTemplate(request, response) {
   if (!formIds.length || formIds.some((formId) => !getFormDefinition(formId))) throw new ApiError(400, ERROR_CODES.INVALID_REQUEST, "Unknown formId");
   const { fileBytes, fileName } = formIds.length === 1 ? await buildBatchTemplate(formIds[0]) : await buildCombinedBatchTemplate(formIds);
   response.set("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-    .set("Content-Disposition", `attachment; filename="${fileName}"`).send(fileBytes);
+    .attachment(fileName).send(fileBytes); // attachment() encodes names with "–" etc. (a raw header rejects them)
 }
 
 export async function handleGetBatchColumns(request, response) {

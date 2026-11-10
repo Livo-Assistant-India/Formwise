@@ -1,0 +1,3639 @@
+{
+ "formId": "gift-whiteoak-em-application",
+ "pageCount": 76,
+ "configuration": {
+  "id": "gift-whiteoak-em-application",
+  "title": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Application Form",
+  "signatureBoxes": [
+   {
+    "page": 9,
+    "x": 15,
+    "y": 683,
+    "w": 182,
+    "h": 34,
+    "signer": "subscriber",
+    "label": "Application - first holder"
+   },
+   {
+    "page": 9,
+    "x": 198,
+    "y": 683,
+    "w": 183,
+    "h": 34,
+    "signer": "joint_holder",
+    "label": "Application - second holder"
+   },
+   {
+    "page": 18,
+    "x": 40,
+    "y": 590,
+    "w": 220,
+    "h": 40,
+    "signer": "subscriber",
+    "label": "Accredited investor declaration"
+   },
+   {
+    "page": 72,
+    "x": 107.4,
+    "y": 513.6,
+    "w": 88.1,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Contribution Agreement - contributor"
+   },
+   {
+    "page": 73,
+    "x": 95.3,
+    "y": 737.5,
+    "w": 132.3,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Annexure A - contributor"
+   },
+   {
+    "page": 74,
+    "x": 72,
+    "y": 530.3,
+    "w": 110.2,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "FME commitment waiver"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "residential_status",
+    "page": 5,
+    "w": 14.9,
+    "h": 14.9,
+    "options": [
+     "RI",
+     "NRI",
+     "Company",
+     "Minor",
+     "Trust",
+     "FPI / FII",
+     "Partnership LLP",
+     "Others"
+    ],
+    "boxesByOption": {
+     "RI": [
+      {
+       "x": 134.1,
+       "y": 468.42
+      }
+     ],
+     "NRI": [
+      {
+       "x": 217.1,
+       "y": 469.42
+      }
+     ],
+     "Company": [
+      {
+       "x": 290.8,
+       "y": 469.42
+      }
+     ],
+     "Minor": [
+      {
+       "x": 393.3,
+       "y": 469.42
+      }
+     ],
+     "Trust": [
+      {
+       "x": 520.3,
+       "y": 469.42
+      }
+     ],
+     "FPI / FII": [
+      {
+       "x": 134.1,
+       "y": 488.92
+      }
+     ],
+     "Partnership LLP": [
+      {
+       "x": 216.2,
+       "y": 488.92
+      }
+     ],
+     "Others": [
+      {
+       "x": 325.3,
+       "y": 488.92
+      }
+     ]
+    }
+   },
+   {
+    "key": "occupation",
+    "page": 5,
+    "w": 14.9,
+    "h": 14.9,
+    "options": [
+     "Private Sector",
+     "Public Sector",
+     "Government Service",
+     "Business",
+     "Student",
+     "Retired",
+     "Professional",
+     "Agriculturist",
+     "House Wife",
+     "Forex Dealer",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Private Sector": [
+      {
+       "x": 132.8,
+       "y": 510.32
+      }
+     ],
+     "Public Sector": [
+      {
+       "x": 216.2,
+       "y": 510.32
+      }
+     ],
+     "Government Service": [
+      {
+       "x": 290.8,
+       "y": 510.32
+      }
+     ],
+     "Business": [
+      {
+       "x": 392.9,
+       "y": 510.32
+      }
+     ],
+     "Student": [
+      {
+       "x": 453.1,
+       "y": 510.32
+      }
+     ],
+     "Retired": [
+      {
+       "x": 522.1,
+       "y": 510.32
+      }
+     ],
+     "Professional": [
+      {
+       "x": 132.8,
+       "y": 530.82
+      }
+     ],
+     "Agriculturist": [
+      {
+       "x": 215.3,
+       "y": 530.82
+      }
+     ],
+     "House Wife": [
+      {
+       "x": 290.8,
+       "y": 530.82
+      }
+     ],
+     "Forex Dealer": [
+      {
+       "x": 363.2,
+       "y": 530.82
+      }
+     ],
+     "Others": [
+      {
+       "x": 437,
+       "y": 530.82
+      }
+     ]
+    }
+   },
+   {
+    "key": "gross_annual_income_range",
+    "page": 5,
+    "w": 14.9,
+    "h": 14.9,
+    "options": [
+     "Below 1 million",
+     "1 to 5 million",
+     "5 to 10 million",
+     "10 million and above"
+    ],
+    "boxesByOption": {
+     "Below 1 million": [
+      {
+       "x": 134.9,
+       "y": 681.32
+      }
+     ],
+     "1 to 5 million": [
+      {
+       "x": 219.6,
+       "y": 680.82
+      }
+     ],
+     "5 to 10 million": [
+      {
+       "x": 296.4,
+       "y": 680.82
+      }
+     ],
+     "10 million and above": [
+      {
+       "x": 372.2,
+       "y": 681.32
+      }
+     ]
+    }
+   },
+   {
+    "key": "pep_status",
+    "page": 5,
+    "w": 14.9,
+    "h": 14.9,
+    "options": [
+     "I am PEP",
+     "I am related to a PEP",
+     "Not applicable"
+    ],
+    "boxesByOption": {
+     "I am PEP": [
+      {
+       "x": 49.9,
+       "y": 756.12
+      }
+     ],
+     "I am related to a PEP": [
+      {
+       "x": 49.9,
+       "y": 773.22
+      }
+     ],
+     "Not applicable": [
+      {
+       "x": 49.4,
+       "y": 790.22
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_residential_status",
+    "page": 6,
+    "w": 14.5,
+    "h": 14.5,
+    "options": [
+     "RI",
+     "NRI"
+    ],
+    "boxesByOption": {
+     "RI": [
+      {
+       "x": 138.2,
+       "y": 180.8
+      }
+     ],
+     "NRI": [
+      {
+       "x": 220.7,
+       "y": 182.3
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_occupation",
+    "page": 6,
+    "w": 14.5,
+    "h": 14.5,
+    "options": [
+     "Private Sector",
+     "Public Sector",
+     "Government Service",
+     "Business",
+     "Student",
+     "Retired",
+     "Professional",
+     "Agriculturist",
+     "House Wife",
+     "Forex Dealer",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Private Sector": [
+      {
+       "x": 137.2,
+       "y": 201.3
+      }
+     ],
+     "Public Sector": [
+      {
+       "x": 220.7,
+       "y": 200.8
+      }
+     ],
+     "Government Service": [
+      {
+       "x": 295.7,
+       "y": 200.8
+      }
+     ],
+     "Business": [
+      {
+       "x": 398.1,
+       "y": 201.8
+      }
+     ],
+     "Student": [
+      {
+       "x": 459.1,
+       "y": 201.3
+      }
+     ],
+     "Retired": [
+      {
+       "x": 526.1,
+       "y": 203.3
+      }
+     ],
+     "Professional": [
+      {
+       "x": 137.2,
+       "y": 220.3
+      }
+     ],
+     "Agriculturist": [
+      {
+       "x": 220.2,
+       "y": 220.8
+      }
+     ],
+     "House Wife": [
+      {
+       "x": 295.2,
+       "y": 220.8
+      }
+     ],
+     "Forex Dealer": [
+      {
+       "x": 369.6,
+       "y": 220.8
+      }
+     ],
+     "Others": [
+      {
+       "x": 441.6,
+       "y": 220.3
+      }
+     ]
+    }
+   },
+   {
+    "key": "mode_of_holding",
+    "page": 6,
+    "w": 14,
+    "h": 14,
+    "options": [
+     "Single",
+     "Joint",
+     "Anyone or survivor"
+    ],
+    "boxesByOption": {
+     "Single": [
+      {
+       "x": 219.7,
+       "y": 248.4
+      }
+     ],
+     "Joint": [
+      {
+       "x": 295.7,
+       "y": 248.9
+      }
+     ],
+     "Anyone or survivor": [
+      {
+       "x": 369.1,
+       "y": 248.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_pep_status",
+    "page": 6,
+    "w": 14.5,
+    "h": 14.5,
+    "options": [
+     "I am PEP",
+     "I am related to a PEP",
+     "Not applicable"
+    ],
+    "boxesByOption": {
+     "I am PEP": [
+      {
+       "x": 147.7,
+       "y": 353.7
+      }
+     ],
+     "I am related to a PEP": [
+      {
+       "x": 272.2,
+       "y": 353.7
+      }
+     ],
+     "Not applicable": [
+      {
+       "x": 439.1,
+       "y": 353.7
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_gross_annual_income_range",
+    "page": 6,
+    "w": 14,
+    "h": 14,
+    "options": [
+     "Below 1 million",
+     "1 to 5 million",
+     "5 to 10 million",
+     "10 million and above"
+    ],
+    "boxesByOption": {
+     "Below 1 million": [
+      {
+       "x": 149.7,
+       "y": 372.3
+      }
+     ],
+     "1 to 5 million": [
+      {
+       "x": 244.2,
+       "y": 372.3
+      }
+     ],
+     "5 to 10 million": [
+      {
+       "x": 333.1,
+       "y": 372.3
+      }
+     ],
+     "10 million and above": [
+      {
+       "x": 439.6,
+       "y": 373.3
+      }
+     ]
+    }
+   },
+   {
+    "key": "citizenship",
+    "page": 6,
+    "w": 8.5,
+    "h": 8.5,
+    "options": [
+     "U.S.",
+     "Others"
+    ],
+    "boxesByOption": {
+     "U.S.": [
+      {
+       "x": 344.9,
+       "y": 476.4
+      }
+     ],
+     "Others": [
+      {
+       "x": 392.6,
+       "y": 477.1
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_citizenship",
+    "page": 6,
+    "w": 8.5,
+    "h": 8.5,
+    "options": [
+     "U.S.",
+     "Others"
+    ],
+    "boxesByOption": {
+     "U.S.": [
+      {
+       "x": 345.3,
+       "y": 492.2
+      }
+     ],
+     "Others": [
+      {
+       "x": 393.8,
+       "y": 492.2
+      }
+     ]
+    }
+   },
+   {
+    "key": "tin_unavailable_reason",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "options": [
+     "A - country does not issue TINs",
+     "B - no TIN required",
+     "C - other reason"
+    ],
+    "boxesByOption": {
+     "A - country does not issue TINs": [
+      {
+       "x": 489.3,
+       "y": 584.4
+      }
+     ],
+     "B - no TIN required": [
+      {
+       "x": 522.9,
+       "y": 584.2
+      }
+     ],
+     "C - other reason": [
+      {
+       "x": 552,
+       "y": 584
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_tin_unavailable_reason",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "options": [
+     "A - country does not issue TINs",
+     "B - no TIN required",
+     "C - other reason"
+    ],
+    "boxesByOption": {
+     "A - country does not issue TINs": [
+      {
+       "x": 489.3,
+       "y": 604
+      }
+     ],
+     "B - no TIN required": [
+      {
+       "x": 522.9,
+       "y": 603.5
+      }
+     ],
+     "C - other reason": [
+      {
+       "x": 552,
+       "y": 603.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "address_type",
+    "page": 6,
+    "w": 8.5,
+    "h": 8.5,
+    "options": [
+     "Residential",
+     "Registered office",
+     "Business"
+    ],
+    "boxesByOption": {
+     "Residential": [
+      {
+       "x": 37.4,
+       "y": 723.8
+      }
+     ],
+     "Registered office": [
+      {
+       "x": 87.9,
+       "y": 724.7
+      }
+     ],
+     "Business": [
+      {
+       "x": 159.8,
+       "y": 725.7
+      }
+     ]
+    }
+   },
+   {
+    "key": "joint_holder_address_type",
+    "page": 6,
+    "w": 8,
+    "h": 8,
+    "options": [
+     "Residential",
+     "Registered office",
+     "Business"
+    ],
+    "boxesByOption": {
+     "Residential": [
+      {
+       "x": 215,
+       "y": 722.5
+      }
+     ],
+     "Registered office": [
+      {
+       "x": 267.8,
+       "y": 723.1
+      }
+     ],
+     "Business": [
+      {
+       "x": 340.6,
+       "y": 723.1
+      }
+     ]
+    }
+   },
+   {
+    "key": "wish_to_nominate",
+    "page": 7,
+    "w": 15,
+    "h": 15,
+    "options": [
+     "Wish to nominate",
+     "Do not wish to nominate"
+    ],
+    "boxesByOption": {
+     "Wish to nominate": [
+      {
+       "x": 68.4,
+       "y": 120
+      }
+     ],
+     "Do not wish to nominate": [
+      {
+       "x": 185.3,
+       "y": 120
+      }
+     ]
+    }
+   },
+   {
+    "key": "accredited_investor_category",
+    "page": 17,
+    "w": 7.9,
+    "h": 7.9,
+    "options": [
+     "Individual - income criteria",
+     "Individual - net assets criteria"
+    ],
+    "boxesByOption": {
+     "Individual - income criteria": [
+      {
+       "x": 69.2,
+       "y": 372.62
+      },
+      {
+       "x": 234.2,
+       "y": 372.92
+      }
+     ],
+     "Individual - net assets criteria": [
+      {
+       "x": 69.2,
+       "y": 372.62
+      },
+      {
+       "x": 398.2,
+       "y": 372.92
+      }
+     ]
+    }
+   },
+   {
+    "key": "accredited_joint_investment",
+    "page": 17,
+    "w": 7.9,
+    "h": 7.9,
+    "options": [
+     "Parent(s) and child(ren)",
+     "Spouses"
+    ],
+    "boxesByOption": {
+     "Parent(s) and child(ren)": [
+      {
+       "x": 63.6,
+       "y": 583.42
+      }
+     ],
+     "Spouses": [
+      {
+       "x": 63.6,
+       "y": 615.72
+      }
+     ]
+    }
+   },
+   {
+    "key": "accredited_documentation",
+    "page": 17,
+    "w": 7.9,
+    "h": 7.9,
+    "options": [
+     "Net worth certificate (last 6 months)",
+     "Income proof (salary slip or other)"
+    ],
+    "boxesByOption": {
+     "Net worth certificate (last 6 months)": [
+      {
+       "x": 69.7,
+       "y": 669.82
+      },
+      {
+       "x": 315.3,
+       "y": 669.42
+      }
+     ],
+     "Income proof (salary slip or other)": [
+      {
+       "x": 69.7,
+       "y": 669.82
+      },
+      {
+       "x": 311.6,
+       "y": 117.42,
+       "page": 18
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 5,
+    "y": 270,
+    "why": "Guardian / contact person for an entity: relationship to minor - only for a minor or an entity"
+   },
+   {
+    "page": 6,
+    "y": 508,
+    "why": "Guardian's citizenship (\"Others, please specify\"): only when the first holder is a minor"
+   },
+   {
+    "page": 7,
+    "y": 370,
+    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+   },
+   {
+    "page": 7,
+    "y": 418,
+    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+   },
+   {
+    "page": 7,
+    "y": 440,
+    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+   },
+   {
+    "page": 7,
+    "y": 470,
+    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+   },
+   {
+    "page": 7,
+    "y": 500,
+    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+   },
+   {
+    "page": 20,
+    "y": 107.5,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 120.1,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 132.8,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 145.5,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 158,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 170.8,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 183.4,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 196.1,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 208.7,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 221.3,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 234,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 246.6,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 259.3,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 271.9,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 284.7,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 297.2,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 309.8,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 322.6,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 335.2,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 347.9,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 360.5,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 373.1,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 385.8,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 398.4,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 411.1,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 20,
+    "y": 423.7,
+    "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+   },
+   {
+    "page": 18,
+    "y": 150,
+    "why": "Body corporate documentation: for a non-individual investor"
+   },
+   {
+    "page": 18,
+    "y": 183,
+    "why": "Body corporate documentation: for a non-individual investor"
+   },
+   {
+    "page": 72,
+    "y": 183.4,
+    "why": "Signed by the Trustee / FME"
+   },
+   {
+    "page": 72,
+    "y": 246.6,
+    "why": "Signed by the Trustee / FME"
+   },
+   {
+    "page": 72,
+    "y": 360.5,
+    "why": "Signed by the Trustee / FME"
+   },
+   {
+    "page": 72,
+    "y": 423.7,
+    "why": "Signed by the Trustee / FME"
+   },
+   {
+    "page": 72,
+    "y": 600.8,
+    "why": "Witness to the contributor's signature (\"In the presence of\")"
+   },
+   {
+    "page": 73,
+    "y": 170.8,
+    "why": "\"Mr./Mrs./Messers [___]\": the 40pt bracket has no room; the name is written on the free line under it"
+   },
+   {
+    "page": 73,
+    "y": 183.4,
+    "why": "\"office at [___]\": the 40pt bracket has no room; the address is written on the free line under it"
+   },
+   {
+    "page": 73,
+    "y": 246.6,
+    "why": "\"Dollars [___]\": the 40pt bracket has no room; the amount in words is written on the free line under it"
+   },
+   {
+    "page": 73,
+    "y": 651.4,
+    "why": "Third mailing-address line: the Excel gives two (city, state and country are on page 8)"
+   },
+   {
+    "page": 75,
+    "y": 132.8,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   },
+   {
+    "page": 75,
+    "y": 234,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   },
+   {
+    "page": 75,
+    "y": 360.5,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   },
+   {
+    "page": 76,
+    "y": 271.9,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   },
+   {
+    "page": 76,
+    "y": 309.8,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   },
+   {
+    "page": 76,
+    "y": 335.3,
+    "why": "Deed of Adherence: only when units are transferred to a new contributor"
+   }
+  ],
+  "labels": [],
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Application Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund application form (widgets removed), 76 pages. Made by tools/form-building/make_gift_whiteoak_application.mjs.",
+  "formId": "gift-whiteoak-em-application",
+  "title": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Application Form",
+  "fields": [
+   {
+    "key": "distributor_name_code",
+    "nominee": null,
+    "page": 5,
+    "x": 26.5,
+    "y": 124,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 131.6,
+    "maxY": 156
+   },
+   {
+    "key": "rm_name_contact",
+    "nominee": null,
+    "page": 5,
+    "x": 164.1,
+    "y": 124,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 131.4,
+    "maxY": 156
+   },
+   {
+    "key": "rm_email",
+    "nominee": null,
+    "page": 5,
+    "x": 301.5,
+    "y": 124,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 131.60000000000002,
+    "maxY": 156
+   },
+   {
+    "key": "distributor_email",
+    "nominee": null,
+    "page": 5,
+    "x": 439.1,
+    "y": 124,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 131.5,
+    "maxY": 156
+   },
+   {
+    "key": "subscriber_name",
+    "nominee": null,
+    "page": 5,
+    "x": 77.7,
+    "y": 212.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      77.7,
+      494.9,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "tax_reference_number",
+    "nominee": null,
+    "page": 5,
+    "x": 78,
+    "y": 232.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      78,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "ckyc_number",
+    "nominee": null,
+    "page": 5,
+    "x": 374.7,
+    "y": 230.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      374.7,
+      198.24,
+      14
+     ]
+    ]
+   },
+   {
+    "key": "dob",
+    "nominee": null,
+    "page": 5,
+    "x": 78,
+    "y": 252.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      78,
+      113.28,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "std_code",
+    "nominee": null,
+    "page": 5,
+    "x": 113,
+    "y": 380.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      113,
+      112.96,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "mobile",
+    "nominee": null,
+    "page": 5,
+    "x": 311.7,
+    "y": 380.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      311.7,
+      169.56,
+      12
+     ]
+    ]
+   },
+   {
+    "key": "landline",
+    "nominee": null,
+    "page": 5,
+    "x": 113,
+    "y": 400.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      113,
+      112.96,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "office_phone",
+    "nominee": null,
+    "page": 5,
+    "x": 311.7,
+    "y": 399.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      311.7,
+      169.56,
+      12
+     ]
+    ]
+   },
+   {
+    "key": "email",
+    "nominee": null,
+    "page": 5,
+    "x": 76,
+    "y": 419.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      76,
+      494.55,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "alternate_email",
+    "nominee": null,
+    "page": 5,
+    "x": 76,
+    "y": 437.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      76,
+      494.55,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residential_status_other",
+    "nominee": null,
+    "page": 5,
+    "x": 445,
+    "y": 484.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 123
+   },
+   {
+    "key": "occupation_other",
+    "nominee": null,
+    "page": 5,
+    "x": 533.2,
+    "y": 526.8,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 38
+   },
+   {
+    "key": "place_of_work",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 565.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "employer_name",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 586.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "business_nature",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 615.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "business_location",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 632.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "business_countries",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 646.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "business_countries_line2",
+    "nominee": null,
+    "page": 5,
+    "x": 160.3,
+    "y": 661.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      160.3,
+      410.64,
+      29
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "joint_holder_relationship",
+    "nominee": null,
+    "page": 6,
+    "x": 409.8,
+    "y": 100,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 159
+   },
+   {
+    "key": "joint_holder_name",
+    "nominee": null,
+    "page": 6,
+    "x": 79.7,
+    "y": 121.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      79.7,
+      493.15,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "joint_holder_tax_reference_number",
+    "nominee": null,
+    "page": 6,
+    "x": 78,
+    "y": 142.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      78,
+      141.3,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "joint_holder_ckyc_number",
+    "nominee": null,
+    "page": 6,
+    "x": 374.3,
+    "y": 142.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      374.3,
+      197.96,
+      14
+     ]
+    ]
+   },
+   {
+    "key": "joint_holder_dob",
+    "nominee": null,
+    "page": 6,
+    "x": 80.7,
+    "y": 162.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      80.7,
+      113.28,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "joint_holder_occupation_other",
+    "nominee": null,
+    "page": 6,
+    "x": 537.9,
+    "y": 218,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 37
+   },
+   {
+    "key": "joint_holding_percentage",
+    "nominee": null,
+    "page": 6,
+    "x": 279.9,
+    "y": 263.6,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 42
+   },
+   {
+    "key": "joint_holder_mobile",
+    "nominee": null,
+    "page": 6,
+    "x": 81.3,
+    "y": 309.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      81.3,
+      169.68,
+      12
+     ]
+    ]
+   },
+   {
+    "key": "joint_holder_email",
+    "nominee": null,
+    "page": 6,
+    "x": 79.7,
+    "y": 330.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      79.7,
+      494.55,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "place_of_birth",
+    "nominee": null,
+    "page": 6,
+    "x": 118.9,
+    "y": 477.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 105
+   },
+   {
+    "key": "country_of_birth",
+    "nominee": null,
+    "page": 6,
+    "x": 228.3,
+    "y": 477.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "citizenship_country",
+    "nominee": null,
+    "page": 6,
+    "x": 469.8,
+    "y": 476.1,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 70
+   },
+   {
+    "key": "joint_holder_place_of_birth",
+    "nominee": null,
+    "page": 6,
+    "x": 118.9,
+    "y": 493.1,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 105
+   },
+   {
+    "key": "joint_holder_country_of_birth",
+    "nominee": null,
+    "page": 6,
+    "x": 228.3,
+    "y": 493.1,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "joint_holder_citizenship_country",
+    "nominee": null,
+    "page": 6,
+    "x": 470.8,
+    "y": 491.2,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 70
+   },
+   {
+    "key": "foreign_tax_country_1",
+    "nominee": null,
+    "page": 6,
+    "x": 116.5,
+    "y": 587.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "foreign_tax_identification_number_1",
+    "nominee": null,
+    "page": 6,
+    "x": 229.5,
+    "y": 587.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "foreign_tax_identification_type_1",
+    "nominee": null,
+    "page": 6,
+    "x": 342.3,
+    "y": 587.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "joint_holder_foreign_tax_country_1",
+    "nominee": null,
+    "page": 6,
+    "x": 116.5,
+    "y": 605.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "joint_holder_foreign_tax_identification_number_1",
+    "nominee": null,
+    "page": 6,
+    "x": 229.5,
+    "y": 605.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "joint_holder_foreign_tax_identification_type_1",
+    "nominee": null,
+    "page": 6,
+    "x": 342.3,
+    "y": 605.6,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "tin_reason_c_details",
+    "nominee": null,
+    "page": 6,
+    "x": 215.6,
+    "y": 679.1,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 347
+   },
+   {
+    "key": "subscriber_name_p7",
+    "nominee": null,
+    "page": 7,
+    "x": 144.6,
+    "y": 100,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 390
+   },
+   {
+    "key": "class_of_units",
+    "nominee": null,
+    "page": 8,
+    "x": 374.8,
+    "y": 140.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 173
+   },
+   {
+    "key": "capital_commitment_usd",
+    "nominee": null,
+    "page": 8,
+    "x": 76.2,
+    "y": 179.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 213
+   },
+   {
+    "key": "contribution_amount_usd",
+    "nominee": null,
+    "page": 8,
+    "x": 375,
+    "y": 180.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 171
+   },
+   {
+    "key": "payment_reference",
+    "nominee": null,
+    "page": 8,
+    "x": 76.2,
+    "y": 218.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 213
+   },
+   {
+    "key": "drawn_on_bank_date",
+    "nominee": null,
+    "page": 8,
+    "x": 375,
+    "y": 212,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 170
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 8,
+    "x": 111,
+    "y": 293,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      111,
+      227.2,
+      16
+     ]
+    ]
+   },
+   {
+    "key": "account_type",
+    "nominee": null,
+    "page": 8,
+    "x": 408,
+    "y": 293,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      408,
+      156.2,
+      11
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "bank_name",
+    "nominee": null,
+    "page": 8,
+    "x": 111,
+    "y": 311.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      111,
+      454.4,
+      32
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "bank_city",
+    "nominee": null,
+    "page": 8,
+    "x": 39.8,
+    "y": 329.6,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      39.8,
+      269.8,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "bank_state",
+    "nominee": null,
+    "page": 8,
+    "x": 337.2,
+    "y": 329.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      337.2,
+      227.2,
+      16
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "bank_postcode",
+    "nominee": null,
+    "page": 8,
+    "x": 68,
+    "y": 347,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      68,
+      184.6,
+      13
+     ]
+    ]
+   },
+   {
+    "key": "bank_country",
+    "nominee": null,
+    "page": 8,
+    "x": 295,
+    "y": 347.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      295,
+      269.8,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "swift_code",
+    "nominee": null,
+    "page": 8,
+    "x": 68,
+    "y": 365.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      68,
+      184.6,
+      13
+     ]
+    ]
+   },
+   {
+    "key": "mailing_address_line1",
+    "nominee": null,
+    "page": 8,
+    "x": 121.3,
+    "y": 440.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      121.3,
+      438.34,
+      31
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_address_line2",
+    "nominee": null,
+    "page": 8,
+    "x": 121.3,
+    "y": 457.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      121.3,
+      438.65,
+      31
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_city",
+    "nominee": null,
+    "page": 8,
+    "x": 36.3,
+    "y": 478.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      36.3,
+      268.66,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_state",
+    "nominee": null,
+    "page": 8,
+    "x": 333.3,
+    "y": 478.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      333.3,
+      226.4,
+      16
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_postcode",
+    "nominee": null,
+    "page": 8,
+    "x": 64.7,
+    "y": 495.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      64.7,
+      183.95,
+      13
+     ]
+    ]
+   },
+   {
+    "key": "mailing_country",
+    "nominee": null,
+    "page": 8,
+    "x": 291,
+    "y": 495.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      291,
+      268.66,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "ppm_date",
+    "nominee": null,
+    "page": 8,
+    "x": 463.7,
+    "y": 797.9,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 76
+   },
+   {
+    "key": "subscriber_name_p9",
+    "nominee": null,
+    "page": 9,
+    "x": 16.2,
+    "y": 676.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 179
+   },
+   {
+    "key": "joint_holder_name_p9",
+    "nominee": null,
+    "page": 9,
+    "x": 199.6,
+    "y": 676.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 180
+   },
+   {
+    "key": "place",
+    "nominee": null,
+    "page": 9,
+    "x": 40.8,
+    "y": 747.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 132
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 9,
+    "x": 37.7,
+    "y": 769.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      37.7,
+      113.28,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "subscriber_name_p17",
+    "nominee": null,
+    "page": 17,
+    "x": 142.9,
+    "y": 139.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 254
+   },
+   {
+    "key": "subscriber_address_p17",
+    "nominee": null,
+    "page": 17,
+    "x": 45,
+    "y": 152.5,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 510,
+    "maxY": 163
+   },
+   {
+    "key": "subscriber_name_p18",
+    "nominee": null,
+    "page": 18,
+    "x": 60.5,
+    "y": 663.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 402
+   },
+   {
+    "key": "form_date_p18",
+    "nominee": null,
+    "page": 18,
+    "x": 55.4,
+    "y": 701.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 109
+   },
+   {
+    "key": "agreement_execution_day",
+    "nominee": null,
+    "page": 21,
+    "x": 106,
+    "y": 182,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 30
+   },
+   {
+    "key": "subscriber_name_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 100,
+    "y": 197,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 150
+   },
+   {
+    "key": "subscriber_address_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 255,
+    "y": 197,
+    "fontSize": 6.5,
+    "type": "text",
+    "maxWidth": 268
+   },
+   {
+    "key": "capital_commitment_usd_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 415.9,
+    "y": 232.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.3
+   },
+   {
+    "key": "capital_commitment_usd_words",
+    "nominee": null,
+    "page": 73,
+    "x": 100,
+    "y": 259,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 420
+   },
+   {
+    "key": "class_of_units_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 366.1,
+    "y": 295.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.4
+   },
+   {
+    "key": "management_fee_percent",
+    "nominee": null,
+    "page": 73,
+    "x": 102.3,
+    "y": 359,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.4
+   },
+   {
+    "key": "management_fee_percent_words",
+    "nominee": null,
+    "page": 73,
+    "x": 157.4,
+    "y": 359,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 40
+   },
+   {
+    "key": "placement_cost",
+    "nominee": null,
+    "page": 73,
+    "x": 102.3,
+    "y": 409.6,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.4
+   },
+   {
+    "key": "operating_expenses",
+    "nominee": null,
+    "page": 73,
+    "x": 102.3,
+    "y": 460.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.4
+   },
+   {
+    "key": "setup_expenses",
+    "nominee": null,
+    "page": 73,
+    "x": 102.3,
+    "y": 510.79999999999995,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 36.4
+   },
+   {
+    "key": "mailing_address_line1_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 102,
+    "y": 624.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 410
+   },
+   {
+    "key": "mailing_address_line2_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 102,
+    "y": 637.3,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 410
+   },
+   {
+    "key": "email_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 138,
+    "y": 662.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 168
+   },
+   {
+    "key": "mobile_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 158,
+    "y": 684.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 152
+   },
+   {
+    "key": "landline_p73",
+    "nominee": null,
+    "page": 73,
+    "x": 158,
+    "y": 697,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 152
+   },
+   {
+    "key": "form_date_p74",
+    "nominee": null,
+    "page": 74,
+    "x": 100,
+    "y": 143.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 80
+   }
+  ]
+ },
+ "fieldSources": {
+  "distributor_name_code": "typed",
+  "rm_name_contact": "typed",
+  "rm_email": "typed",
+  "distributor_email": "typed",
+  "subscriber_name": "document.name|upper",
+  "tax_reference_number": "document.pan",
+  "ckyc_number": "typed",
+  "dob": "document.dob",
+  "std_code": "typed",
+  "mobile": "typed",
+  "landline": "typed",
+  "office_phone": "typed",
+  "email": "typed",
+  "alternate_email": "typed",
+  "residential_status": "tick",
+  "residential_status_other": "typed",
+  "occupation": "tick",
+  "occupation_other": "typed",
+  "place_of_work": "typed",
+  "employer_name": "typed",
+  "business_nature": "typed",
+  "business_location": "typed",
+  "business_countries": "typed",
+  "business_countries_line2": "typed",
+  "gross_annual_income_range": "tick",
+  "pep_status": "tick",
+  "joint_holder_relationship": "typed",
+  "joint_holder_name": "typed",
+  "joint_holder_tax_reference_number": "typed",
+  "joint_holder_ckyc_number": "typed",
+  "joint_holder_dob": "typed",
+  "joint_holder_residential_status": "tick",
+  "joint_holder_occupation": "tick",
+  "joint_holder_occupation_other": "typed",
+  "mode_of_holding": "tick",
+  "joint_holding_percentage": "typed",
+  "joint_holder_mobile": "typed",
+  "joint_holder_email": "typed",
+  "joint_holder_pep_status": "tick",
+  "joint_holder_gross_annual_income_range": "tick",
+  "place_of_birth": "typed",
+  "country_of_birth": "typed",
+  "citizenship": "tick",
+  "citizenship_country": "typed",
+  "joint_holder_place_of_birth": "typed",
+  "joint_holder_country_of_birth": "typed",
+  "joint_holder_citizenship": "tick",
+  "joint_holder_citizenship_country": "typed",
+  "foreign_tax_country_1": "typed",
+  "foreign_tax_identification_number_1": "typed",
+  "foreign_tax_identification_type_1": "typed",
+  "tin_unavailable_reason": "tick",
+  "joint_holder_foreign_tax_country_1": "typed",
+  "joint_holder_foreign_tax_identification_number_1": "typed",
+  "joint_holder_foreign_tax_identification_type_1": "typed",
+  "joint_holder_tin_unavailable_reason": "tick",
+  "tin_reason_c_details": "typed",
+  "address_type": "tick",
+  "joint_holder_address_type": "tick",
+  "subscriber_name_p7": "copy.subscriber_name",
+  "wish_to_nominate": "tick",
+  "class_of_units": "typed",
+  "capital_commitment_usd": "typed",
+  "contribution_amount_usd": "typed",
+  "payment_reference": "typed",
+  "drawn_on_bank_date": "typed",
+  "account_number": "typed",
+  "account_type": "typed",
+  "bank_name": "typed",
+  "bank_city": "typed",
+  "bank_state": "typed",
+  "bank_postcode": "typed",
+  "bank_country": "typed",
+  "swift_code": "typed",
+  "mailing_address_line1": "document.street|addressLine1|upper",
+  "mailing_address_line2": "document.street|addressLine2|upper",
+  "mailing_city": "document.city|upper",
+  "mailing_state": "document.state|upper",
+  "mailing_postcode": "document.pincode",
+  "mailing_country": "document.country|upper",
+  "ppm_date": "typed",
+  "subscriber_name_p9": "copy.subscriber_name",
+  "joint_holder_name_p9": "copy.joint_holder_name",
+  "place": "typed",
+  "form_date": "today",
+  "subscriber_name_p17": "copy.subscriber_name",
+  "subscriber_address_p17": "document.address|withoutCareOf|upper",
+  "accredited_investor_category": "tick",
+  "accredited_joint_investment": "tick",
+  "accredited_documentation": "tick",
+  "subscriber_name_p18": "copy.subscriber_name",
+  "form_date_p18": "copy.form_date",
+  "agreement_execution_day": "typed",
+  "subscriber_name_p73": "copy.subscriber_name",
+  "subscriber_address_p73": "document.address|withoutCareOf|upper",
+  "capital_commitment_usd_p73": "copy.capital_commitment_usd",
+  "capital_commitment_usd_words": "typed",
+  "class_of_units_p73": "copy.class_of_units",
+  "management_fee_percent": "typed",
+  "management_fee_percent_words": "typed",
+  "placement_cost": "typed",
+  "operating_expenses": "typed",
+  "setup_expenses": "typed",
+  "mailing_address_line1_p73": "copy.mailing_address_line1",
+  "mailing_address_line2_p73": "copy.mailing_address_line2",
+  "email_p73": "copy.email",
+  "mobile_p73": "copy.mobile",
+  "landline_p73": "copy.landline",
+  "form_date_p74": "copy.form_date"
+ },
+ "formRules": {
+  "formId": "gift-whiteoak-em-application",
+  "group": "GIFT City",
+  "label": "GIFT – WhiteOak Global EM ex India – Application",
+  "shortLabel": "GIFT WhiteOak EM application",
+  "purpose": "New investment · application form and contribution agreement",
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Application Form.pdf",
+  "keyFields": [
+   "Applicant name",
+   "Capital commitment",
+   "Bank account"
+  ],
+  "sheetTabName": "GIFT WhiteOak EM application",
+  "detectionPhrases": [
+   "APPLICATION FORM FOR INDIVIDUALS",
+   "Ashoka WhiteOak Capital Management (GIFT) LLP"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Applicant",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "distributor",
+    "label": "Page 5 · Distributor / RM (Excel)",
+    "fields": [
+     "distributor_name_code",
+     "rm_name_contact",
+     "rm_email",
+     "distributor_email"
+    ]
+   },
+   {
+    "key": "applicant",
+    "label": "Page 5 · First holder (KYC + Excel)",
+    "fields": [
+     "subscriber_name",
+     "tax_reference_number",
+     "ckyc_number",
+     "dob",
+     "residential_status",
+     "residential_status_other"
+    ]
+   },
+   {
+    "key": "contact",
+    "label": "Pages 5-8 · Contact and mailing address",
+    "fields": [
+     "std_code",
+     "mobile",
+     "landline",
+     "office_phone",
+     "email",
+     "alternate_email",
+     "mailing_address_line1",
+     "mailing_address_line2",
+     "mailing_city",
+     "mailing_state",
+     "mailing_postcode",
+     "mailing_country"
+    ]
+   },
+   {
+    "key": "kyc",
+    "label": "Page 5 · KYC details (Excel)",
+    "fields": [
+     "occupation",
+     "occupation_other",
+     "place_of_work",
+     "employer_name",
+     "business_nature",
+     "business_location",
+     "business_countries",
+     "business_countries_line2",
+     "gross_annual_income_range",
+     "pep_status"
+    ]
+   },
+   {
+    "key": "second-holder",
+    "label": "Page 6 · Second holder (Excel)",
+    "fields": [
+     "joint_holder_relationship",
+     "joint_holder_name",
+     "joint_holder_tax_reference_number",
+     "joint_holder_ckyc_number",
+     "joint_holder_dob",
+     "joint_holder_residential_status",
+     "joint_holder_occupation",
+     "joint_holder_occupation_other",
+     "joint_holder_mobile",
+     "joint_holder_email",
+     "joint_holder_pep_status",
+     "joint_holder_gross_annual_income_range",
+     "joint_holder_place_of_birth",
+     "joint_holder_country_of_birth",
+     "joint_holder_citizenship",
+     "joint_holder_citizenship_country",
+     "joint_holder_foreign_tax_country_1",
+     "joint_holder_foreign_tax_identification_number_1",
+     "joint_holder_foreign_tax_identification_type_1",
+     "joint_holder_tin_unavailable_reason",
+     "joint_holder_address_type"
+    ]
+   },
+   {
+    "key": "holding",
+    "label": "Page 6 · Mode of holding",
+    "fields": [
+     "mode_of_holding",
+     "joint_holding_percentage"
+    ]
+   },
+   {
+    "key": "fatca",
+    "label": "Page 6 · FATCA & CRS (Excel)",
+    "fields": [
+     "place_of_birth",
+     "country_of_birth",
+     "citizenship",
+     "citizenship_country",
+     "foreign_tax_country_1",
+     "foreign_tax_identification_number_1",
+     "foreign_tax_identification_type_1",
+     "tin_unavailable_reason",
+     "tin_reason_c_details",
+     "address_type"
+    ]
+   },
+   {
+    "key": "nomination",
+    "label": "Page 7 · Nomination",
+    "fields": [
+     "subscriber_name_p7",
+     "wish_to_nominate"
+    ]
+   },
+   {
+    "key": "investment",
+    "label": "Page 8 · Investment (Excel)",
+    "fields": [
+     "class_of_units",
+     "capital_commitment_usd",
+     "contribution_amount_usd",
+     "payment_reference",
+     "drawn_on_bank_date"
+    ]
+   },
+   {
+    "key": "bank",
+    "label": "Page 8 · Bank account (Excel)",
+    "fields": [
+     "account_number",
+     "account_type",
+     "bank_name",
+     "bank_city",
+     "bank_state",
+     "bank_postcode",
+     "bank_country",
+     "swift_code"
+    ]
+   },
+   {
+    "key": "signed",
+    "label": "Pages 8-9 · Declaration signed",
+    "fields": [
+     "ppm_date",
+     "subscriber_name_p9",
+     "joint_holder_name_p9",
+     "place",
+     "form_date"
+    ]
+   },
+   {
+    "key": "accredited",
+    "label": "Pages 17-18 · Accredited investor declaration",
+    "fields": [
+     "subscriber_name_p17",
+     "subscriber_address_p17",
+     "accredited_investor_category",
+     "accredited_joint_investment",
+     "accredited_documentation",
+     "subscriber_name_p18",
+     "form_date_p18"
+    ]
+   },
+   {
+    "key": "agreement",
+    "label": "Page 21 · Contribution Agreement date (Excel)",
+    "fields": [
+     "agreement_execution_day"
+    ]
+   },
+   {
+    "key": "annexure-a",
+    "label": "Page 73 · Annexure A: key details",
+    "fields": [
+     "subscriber_name_p73",
+     "subscriber_address_p73",
+     "capital_commitment_usd_p73",
+     "capital_commitment_usd_words",
+     "class_of_units_p73",
+     "management_fee_percent",
+     "management_fee_percent_words",
+     "placement_cost",
+     "operating_expenses",
+     "setup_expenses",
+     "mailing_address_line1_p73",
+     "mailing_address_line2_p73",
+     "email_p73",
+     "mobile_p73",
+     "landline_p73"
+    ]
+   },
+   {
+    "key": "waiver",
+    "label": "Page 74 · FME commitment waiver",
+    "fields": [
+     "form_date_p74"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "subscriber_name",
+   "dob",
+   "tax_reference_number",
+   "residential_status",
+   "mobile",
+   "email",
+   "capital_commitment_usd",
+   "class_of_units",
+   "account_number",
+   "bank_name",
+   "swift_code",
+   "pep_status",
+   "wish_to_nominate",
+   "place"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "idNumber",
+   "dob",
+   "address"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "distributor_name_code",
+   "page": 5,
+   "lines": [
+    [
+     26.5,
+     118.05,
+     101.51,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "rm_name_contact",
+   "page": 5,
+   "lines": [
+    [
+     164.1,
+     118.05,
+     86.54,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "rm_email",
+   "page": 5,
+   "lines": [
+    [
+     301.5,
+     118.05,
+     59.3,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "distributor_email",
+   "page": 5,
+   "lines": [
+    [
+     439.1,
+     118.05,
+     81.66,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name",
+   "page": 5,
+   "lines": [
+    [
+     77.7,
+     205.9,
+     494.9,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "tax_reference_number",
+   "page": 5,
+   "lines": [
+    [
+     78,
+     225.6,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "ckyc_number",
+   "page": 5,
+   "lines": [
+    [
+     374.7,
+     223.9,
+     198.24,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "dob",
+   "page": 5,
+   "lines": [
+    [
+     78,
+     245.6,
+     113.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "std_code",
+   "page": 5,
+   "lines": [
+    [
+     113,
+     373.9,
+     112.96,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mobile",
+   "page": 5,
+   "lines": [
+    [
+     311.7,
+     373.9,
+     169.56,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "landline",
+   "page": 5,
+   "lines": [
+    [
+     113,
+     393.9,
+     112.96,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "office_phone",
+   "page": 5,
+   "lines": [
+    [
+     311.7,
+     392.3,
+     169.56,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "email",
+   "page": 5,
+   "lines": [
+    [
+     76,
+     412.9,
+     494.55,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "alternate_email",
+   "page": 5,
+   "lines": [
+    [
+     76,
+     430.9,
+     494.55,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residential_status_other",
+   "page": 5,
+   "lines": [
+    [
+     445,
+     478.1,
+     119.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "occupation_other",
+   "page": 5,
+   "lines": [
+    [
+     533.2,
+     521.7,
+     72.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "place_of_work",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     558.6,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "employer_name",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     579.3,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "business_nature",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     608.3,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "business_location",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     625.6,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "business_countries",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     639.9,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "business_countries_line2",
+   "page": 5,
+   "lines": [
+    [
+     160.3,
+     654.3,
+     410.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_relationship",
+   "page": 6,
+   "lines": [
+    [
+     409.8,
+     93.2,
+     121.38,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name",
+   "page": 6,
+   "lines": [
+    [
+     79.7,
+     114.9,
+     493.15,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_tax_reference_number",
+   "page": 6,
+   "lines": [
+    [
+     78,
+     135.3,
+     141.3,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_ckyc_number",
+   "page": 6,
+   "lines": [
+    [
+     374.3,
+     135.3,
+     197.96,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_dob",
+   "page": 6,
+   "lines": [
+    [
+     80.7,
+     155.6,
+     113.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_occupation_other",
+   "page": 6,
+   "lines": [
+    [
+     537.9,
+     212.9,
+     106.39,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holding_percentage",
+   "page": 6,
+   "lines": [
+    [
+     279.9,
+     258.5,
+     93.05,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_mobile",
+   "page": 6,
+   "lines": [
+    [
+     81.3,
+     302.6,
+     169.68,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_email",
+   "page": 6,
+   "lines": [
+    [
+     79.7,
+     323.3,
+     494.55,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "place_of_birth",
+   "page": 6,
+   "lines": [
+    [
+     118.9,
+     471.25,
+     74.59,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "country_of_birth",
+   "page": 6,
+   "lines": [
+    [
+     228.3,
+     471.25,
+     81.03,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "citizenship_country",
+   "page": 6,
+   "lines": [
+    [
+     469.8,
+     471,
+     77.12,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_place_of_birth",
+   "page": 6,
+   "lines": [
+    [
+     118.9,
+     488,
+     98.29,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_country_of_birth",
+   "page": 6,
+   "lines": [
+    [
+     228.3,
+     488,
+     103.8,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_citizenship_country",
+   "page": 6,
+   "lines": [
+    [
+     470.8,
+     486.1,
+     111.47,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "foreign_tax_country_1",
+   "page": 6,
+   "lines": [
+    [
+     116.5,
+     581.65,
+     99.6,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "foreign_tax_identification_number_1",
+   "page": 6,
+   "lines": [
+    [
+     229.5,
+     582.5,
+     115.81,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "foreign_tax_identification_type_1",
+   "page": 6,
+   "lines": [
+    [
+     342.3,
+     582.5,
+     113.54,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_foreign_tax_country_1",
+   "page": 6,
+   "lines": [
+    [
+     116.5,
+     600.5,
+     116.39,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_foreign_tax_identification_number_1",
+   "page": 6,
+   "lines": [
+    [
+     229.5,
+     600.5,
+     110.54,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_foreign_tax_identification_type_1",
+   "page": 6,
+   "lines": [
+    [
+     342.3,
+     600.5,
+     110.54,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "tin_reason_c_details",
+   "page": 6,
+   "lines": [
+    [
+     215.6,
+     673.15,
+     94.54,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p7",
+   "page": 7,
+   "lines": [
+    [
+     144.6,
+     93.2,
+     109.5,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "class_of_units",
+   "page": 8,
+   "lines": [
+    [
+     374.8,
+     133.6,
+     85.37,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "capital_commitment_usd",
+   "page": 8,
+   "lines": [
+    [
+     76.2,
+     173.1,
+     123.15,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "contribution_amount_usd",
+   "page": 8,
+   "lines": [
+    [
+     375,
+     173.9,
+     124.46,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "payment_reference",
+   "page": 8,
+   "lines": [
+    [
+     76.2,
+     211.3,
+     103.12,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "drawn_on_bank_date",
+   "page": 8,
+   "lines": [
+    [
+     375,
+     205.2,
+     111.38,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 8,
+   "lines": [
+    [
+     111,
+     286.2,
+     227.2,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_type",
+   "page": 8,
+   "lines": [
+    [
+     408,
+     286.2,
+     156.2,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_name",
+   "page": 8,
+   "lines": [
+    [
+     111,
+     304.6,
+     454.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_city",
+   "page": 8,
+   "lines": [
+    [
+     39.8,
+     322.8,
+     269.8,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_state",
+   "page": 8,
+   "lines": [
+    [
+     337.2,
+     322.6,
+     227.2,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_postcode",
+   "page": 8,
+   "lines": [
+    [
+     68,
+     340.2,
+     184.6,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_country",
+   "page": 8,
+   "lines": [
+    [
+     295,
+     340.3,
+     269.8,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "swift_code",
+   "page": 8,
+   "lines": [
+    [
+     68,
+     358.3,
+     184.6,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line1",
+   "page": 8,
+   "lines": [
+    [
+     121.3,
+     433.9,
+     438.34,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line2",
+   "page": 8,
+   "lines": [
+    [
+     121.3,
+     450.6,
+     438.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_city",
+   "page": 8,
+   "lines": [
+    [
+     36.3,
+     471.3,
+     268.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_state",
+   "page": 8,
+   "lines": [
+    [
+     333.3,
+     471.3,
+     226.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_postcode",
+   "page": 8,
+   "lines": [
+    [
+     64.7,
+     488.9,
+     183.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_country",
+   "page": 8,
+   "lines": [
+    [
+     291,
+     488.9,
+     268.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "ppm_date",
+   "page": 8,
+   "lines": [
+    [
+     463.7,
+     791.95,
+     61.47,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p9",
+   "page": 9,
+   "lines": [
+    [
+     16.2,
+     670,
+     109.5,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "joint_holder_name_p9",
+   "page": 9,
+   "lines": [
+    [
+     199.6,
+     670,
+     113.83,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "place",
+   "page": 9,
+   "lines": [
+    [
+     40.8,
+     740.6,
+     53.8,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 9,
+   "lines": [
+    [
+     37.7,
+     762.9,
+     113.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p17",
+   "page": 17,
+   "lines": [
+    [
+     142.9,
+     132.6,
+     113.94,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_address_p17",
+   "page": 17,
+   "lines": [
+    [
+     45,
+     146.55,
+     107.09,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p18",
+   "page": 18,
+   "lines": [
+    [
+     60.5,
+     656.7,
+     113.94,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date_p18",
+   "page": 18,
+   "lines": [
+    [
+     55.4,
+     694.3,
+     88.45,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "agreement_execution_day",
+   "page": 21,
+   "lines": [
+    [
+     106,
+     176.9,
+     96.11,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p73",
+   "page": 73,
+   "lines": [
+    [
+     100,
+     189.35,
+     128.19,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_address_p73",
+   "page": 73,
+   "lines": [
+    [
+     255,
+     191.48,
+     99.44,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "capital_commitment_usd_p73",
+   "page": 73,
+   "lines": [
+    [
+     415.9,
+     227.4,
+     105.71,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "capital_commitment_usd_words",
+   "page": 73,
+   "lines": [
+    [
+     100,
+     252.63,
+     139.55,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "class_of_units_p73",
+   "page": 73,
+   "lines": [
+    [
+     366.1,
+     290.6,
+     77.37,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "management_fee_percent",
+   "page": 73,
+   "lines": [
+    [
+     102.3,
+     353.9,
+     95.87,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "management_fee_percent_words",
+   "page": 73,
+   "lines": [
+    [
+     157.4,
+     353.9,
+     115.15,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "placement_cost",
+   "page": 73,
+   "lines": [
+    [
+     102.3,
+     404.5,
+     68.03,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "operating_expenses",
+   "page": 73,
+   "lines": [
+    [
+     102.3,
+     455,
+     79.8,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "setup_expenses",
+   "page": 73,
+   "lines": [
+    [
+     102.3,
+     505.7,
+     69.52,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line1_p73",
+   "page": 73,
+   "lines": [
+    [
+     102,
+     617.9,
+     132.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line2_p73",
+   "page": 73,
+   "lines": [
+    [
+     102,
+     630.5,
+     132.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "email_p73",
+   "page": 73,
+   "lines": [
+    [
+     138,
+     655.7,
+     71.58,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mobile_p73",
+   "page": 73,
+   "lines": [
+    [
+     158,
+     677.6,
+     76.03,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "landline_p73",
+   "page": 73,
+   "lines": [
+    [
+     158,
+     690.2,
+     80.04,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date_p74",
+   "page": 74,
+   "lines": [
+    [
+     100,
+     137.25,
+     77.39,
+     7
+    ]
+   ]
+  }
+ ]
+}

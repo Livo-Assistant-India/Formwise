@@ -10,6 +10,15 @@
 import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { APPLICATION_IGNORED_BLANKS, APPLICATION_SECTIONS, APPLICATION_SIGNATURE_BOXES, listApplicationFields, multiline, text, tick } from "./gift-feeder-application-pages.mjs";
+import { GRA_APPLICATION_IGNORED_BLANKS, GRA_APPLICATION_SIGNATURE_BOXES, listGraApplicationFields } from "./gift-gra-application-pages.mjs";
+import { IDF_APPLICATION_IGNORED_BLANKS, IDF_APPLICATION_SIGNATURE_BOXES, listIdfApplicationFields } from "./gift-idf-application-pages.mjs";
+
+/** The application pages (1-21) of each layout: the feeder sets share one, Global Real Assets has its own pages 4-7. */
+const APPLICATION_LAYOUTS = {
+  feeder: { listFields: listApplicationFields, signatureBoxes: APPLICATION_SIGNATURE_BOXES, ignoredBlanks: APPLICATION_IGNORED_BLANKS },
+  globalRealAssets: { listFields: listGraApplicationFields, signatureBoxes: GRA_APPLICATION_SIGNATURE_BOXES, ignoredBlanks: GRA_APPLICATION_IGNORED_BLANKS },
+  indiaDiversified: { listFields: listIdfApplicationFields, signatureBoxes: IDF_APPLICATION_SIGNATURE_BOXES, ignoredBlanks: IDF_APPLICATION_IGNORED_BLANKS },
+};
 
 const FORMS = "apps/backend/src/forms/gift-city";
 const GIFT_FILES = "../GIFT";
@@ -112,6 +121,79 @@ const FUNDS = [
       [83, 189.3, "\"For and on behalf of ___\": for a non-individual investor"],
     ],
   },
+  {
+    // 71 pages: the same application pages 1-21, then a shorter Memorandum and Contribution Agreement (Category II AIF).
+    formId: "gift-global-real-assets-subscription", fundName: "360 ONE Global Real Assets Fund", pageCount: 71, applicationLayout: "globalRealAssets",
+    label: "GIFT – Global Real Assets Fund – Subscription", shortLabel: "GIFT Global Real Assets subscription",
+    blankFileName: "360 ONE Global Real Assets Fund - Application Form.pdf",
+    sourcePdf: "360 One Global Real Assets Fund/Application Form & Documentation Set_360 ONE Global Real Assets Fund.pdf",
+    memorandumName: { page: 22, x: 133, y: 757, maxWidth: 106 },
+    notice: { page: 23, signatureLine: [85.2, 168.0, 458.3], distributor: [360, 456.5, 81], name: [165, 528, 96], date: [112, 540, 96], place: [115, 552, 148] },
+    executionDate: { page: 26, day: [56, 141.6, 66], month: [158, 141.6, 54] },
+    // Page 64: the Cr marker sits on the second line under "SIGNED AND DELIVERED by the Contributor".
+    contributorSignatureLine: { page: 64, line: [107.4, 227.4, 528.0] },
+    // "Mr./Mrs./Messers [______]" and "[______]." (address) leave no room: both go on the free line under it.
+    annexureA: { page: 65, name: [72, 172, 190], address: [270, 169.5, 262, 178], amount: [343, 204.6, 32], amountWords: [72, 230, 455],
+      unitClass: [376, 263, 32], mailing: [391, 402.5, 414], email: [107, 442, 150], telephone1: [130, 483.5, 135], telephone2: [130, 511.5, 135],
+      signatureLine: [72, 217.0, 610.4] },
+    annexureBSignatureLines: null, // no Annexure B in this blank
+    accredited: {
+      name: { page: 69, x: 171, y: 122.5, maxWidth: 286 }, incomeYear: { page: 69, x: 254, y: 357.5, maxWidth: 70 },
+      categoryBoxes: { page: 69, y: 336.5, individualX: 113.6, incomeX: 216.2, netAssetsX: 381.3 },
+      // Parent/child box ends page 69, the spouses box starts page 70.
+      jointBoxes: { page: 69, x: 108.0, parentChildY: 727.4, spousesPage: 70, spousesY: 82.3, size: 5.6 },
+      certificateBoxes: { page: 71, y: 127.6, natureX: 131.8, documentX: 255.3 },
+      additionalBoxes: { page: 71, y: 303.7, natureX: 131.8, documentX: 255.3 }, additionalText: { page: 71, x: 275, y: 314.5, maxWidth: 180 },
+      final: { page: 71, signatureLine: [72, 167.1, 676.3], nameY: 704, dateY: 727.1 },
+    },
+    agreementIgnoredBlanks: [
+      ...TABLE_OF_CONTENTS([125,144,163,182,201,220,239,258,277,296,315,334,353,372,391,410,429,448,467,486,504,524,543,561,580,599,618]),
+      ...[193.1, 342.6, 354.1, 377.1, 400.1, 457.7, 480.6, 503.7, 515.2, 526.7, 538.1, 549.6, 584.2, 687.7].map((y) => [66, y, "Exhibit A drawdown notice: filled by the FME when it calls capital"]),
+      ...[142.2, 188.3, 240.0, 251.4].map((y) => [67, y, "Exhibit B Deed of Adherence: only when units are transferred to a new contributor"]),
+      ...[185.9, 231.9, 285.1, 299.0, 368.5, 438.0].map((y) => [68, y, "Exhibit B Deed of Adherence: only when units are transferred to a new contributor"]),
+      [22, 758.6, "Copy No: numbered by 360 ONE"],
+      ...[184.8, 230.9, 327.7, 385.2].map((y) => [64, y, "Signed by the Trustee / FME"]),
+      [64, 470.5, "Contributor's authorised signatory line (the contributor signs on the Cr line below)"],
+      [71, 620.7, "\"For and on behalf of ___\": for a non-individual investor"],
+    ],
+  },
+  {
+    // 76 pages (CAT III AIF): no Memorandum or notice pages; the agreement starts on page 25. First and second holder
+    // sign side by side on the agreement, Annexure A and Exhibit B.
+    formId: "gift-india-diversified-subscription", fundName: "360 ONE India Diversified Fund", pageCount: 76, applicationLayout: "indiaDiversified",
+    label: "GIFT – India Diversified Fund – Subscription", shortLabel: "GIFT India Diversified subscription",
+    blankFileName: "360 ONE India Diversified Fund - Application Form.pdf",
+    sourcePdf: "360 ONE India Diversified Fund/India Diversified Fund CAT III AIF-FORMS 09 04 2025.pdf",
+    memorandumName: null, notice: null,
+    executionDate: { page: 26, day: [102, 190, 14], month: [152, 190, 48] },
+    contributorSignatureLine: { page: 69, line: [103.5, 228.0, 479.7] },
+    annexureA: { page: 70, name: [208, 185.5, 310], address: [98, 210.5, 412], amount: [407, 269.5, 52], amountWords: [134, 294.8, 302],
+      unitClass: [399, 358, 14], mailing: [510.2, 522.8, 535.4], email: [134, 573.5, 166], telephone1: [159, 603.2, 150], telephone2: [158, 644.5, 150],
+      signatureLine: [68.9, 193.4, 738.6] },
+    annexureBSignatureLines: null,
+    accredited: {
+      name: { page: 73, x: 174, y: 137.8, maxWidth: 310 }, incomeYear: { page: 73, x: 252, y: 417.3, maxWidth: 78 },
+      categoryBoxes: null, // the category table has no tick boxes in this blank
+      // The two joint-investment boxes are small images at x 103.9 (tops 118.7 and 169.3).
+      jointBoxes: { page: 74, x: 105, parentChildY: 125, spousesY: 175.6, size: 6 },
+      certificateBoxes: null, additionalBoxes: null, // the documentation table has no tick boxes either
+      additionalText: { page: 75, x: 279, y: 674.5, maxWidth: 200 },
+      final: { page: 76, signatureLine: [67.9, 172.5, 480.5], nameX: 102, nameY: 505.7, dateX: 98, dateY: 531.0 },
+    },
+    extraSignatureLines: [
+      [69, [301.3, 425.9, 479.7], "joint_holder", "Contribution Agreement - second holder"],
+      [70, [266.7, 391.2, 738.6], "joint_holder", "Annexure A - second holder"],
+      [76, [68.9, 193.4, 629.6], "subscriber", "Accredited investor - first holder (applicant)"],
+      [76, [266.7, 391.2, 629.6], "joint_holder", "Accredited investor - second holder (applicant)"],
+    ],
+    agreementIgnoredBlanks: [
+      [70, 283.7, "Second blank of the amount line (\"(USD/GBP) ___ (United States Dollars/ Great Britain Pounds)\"): the figure is on the first blank - open question"],
+      [70, 549.7, "Fourth mailing-address line: the Excel gives three"],
+      ...[141.2, 242.4, 267.7, 368.9].map((y) => [71, y, "Exhibit A Deed of Adherence: only when units are transferred to a new contributor"]),
+      [72, 428.4, "Exhibit A Deed of Adherence: only when units are transferred to a new contributor"],
+      [76, 417.3, "\"For and on behalf of ___\": for a non-individual investor"],
+    ],
+  },
 ];
 
 const AGREEMENT_SECTIONS = [["memorandum", "Memorandum acknowledged"], ["agreement", "Contribution Agreement date (Excel)"],
@@ -138,25 +220,30 @@ function listAgreementFields(fund) {
   const category = c.categoryBoxes, joint = c.jointBoxes, certificate = c.certificateBoxes, additional = c.additionalBoxes;
   const accreditedFields = [
     at("subscriber_name", c.name.page, [c.name.x, c.name.y, c.name.maxWidth], "copy.subscriber_name", { fontSize: 9, ...accr }),
-    tick("accredited_investor_category", category.page, 6.6, {
+    // A blank whose category table has no tick boxes (India Diversified) has no category question.
+    ...(category ? [tick("accredited_investor_category", category.page, 6.6, {
       "Individual - income criteria": boxesAt([category.individualX, category.incomeX], category.page, category.y),
-      "Individual - net assets criteria": boxesAt([category.individualX, category.netAssetsX], category.page, category.y) }, accr),
+      "Individual - net assets criteria": boxesAt([category.individualX, category.netAssetsX], category.page, category.y) }, accr)] : []),
     text("accredited_income_financial_year", c.incomeYear.page, c.incomeYear.x, c.incomeYear.y, c.incomeYear.maxWidth, "typed", accr),
     tick("accredited_joint_investment", joint.page, joint.size, {
-      "Parent(s) and child(ren)": [joint.x, joint.parentChildY - joint.size * 0.8], Spouses: [joint.x, joint.spousesY - joint.size * 0.8] }, accr),
-    tick("accredited_documentation", certificate.page, 6.6, {
+      "Parent(s) and child(ren)": [joint.x, joint.parentChildY - joint.size * 0.8],
+      Spouses: joint.spousesPage ? [[joint.x, joint.spousesY - joint.size * 0.8, joint.spousesPage]] : [joint.x, joint.spousesY - joint.size * 0.8] }, accr),
+    ...(certificate ? [tick("accredited_documentation", certificate.page, 6.6, {
       "Certificate (last 6 months)": boxesAt([certificate.natureX, certificate.documentX], certificate.page, certificate.y),
-      "Additional documentation": boxesAt([additional.natureX, additional.documentX], additional.page, additional.y) }, accr),
+      "Additional documentation": boxesAt([additional.natureX, additional.documentX], additional.page, additional.y) }, accr)] : []),
     text("accredited_additional_documentation", c.additionalText.page, c.additionalText.x, c.additionalText.y, c.additionalText.maxWidth, "typed", accr),
-    at("subscriber_name", c.final.page, [108, c.final.nameY, 200], "copy.subscriber_name", accr),
-    at("form_date", c.final.page, [104, c.final.dateY, 120], "copy.form_date", accr),
+    at("subscriber_name", c.final.page, [c.final.nameX || 108, c.final.nameY, 200], "copy.subscriber_name", accr),
+    at("form_date", c.final.page, [c.final.dateX || 104, c.final.dateY, 120], "copy.form_date", accr),
   ];
-  return [
-    at("subscriber_name", m.page, [m.x, m.y, m.maxWidth], "copy.subscriber_name", { fontSize: 9, ...memo }),
+  // India Diversified has no Memorandum or important-notice pages.
+  const memorandumFields = m ? [at("subscriber_name", m.page, [m.x, m.y, m.maxWidth], "copy.subscriber_name", { fontSize: 9, ...memo })] : [];
+  const noticeFields = n ? [
     at("distributor_name", n.page, n.distributor, "copy.distributor_name", memo),
     at("subscriber_name", n.page, n.name, "copy.subscriber_name", memo),
     at("form_date", n.page, n.date, "copy.form_date", memo),
-    at("place", n.page, n.place, "copy.place", memo),
+    at("place", n.page, n.place, "copy.place", memo)] : [];
+  return [
+    ...memorandumFields, ...noticeFields,
     text("agreement_execution_day", e.page, ...e.day, "typed", { section: "agreement" }),
     text("agreement_execution_month", e.page, ...e.month, "typed", { section: "agreement" }),
     ...annexureFields, ...accreditedFields,
@@ -167,14 +254,15 @@ function listAgreementFields(fund) {
 const onLine = (page, [x0, x1, y], signer, label) => ({ page, x: x0, y: Math.round((y - 24) * 10) / 10, w: Math.round((x1 - x0) * 10) / 10, h: 24, signer, label });
 
 function listAgreementSignatureBoxes(fund) {
-  const { notice, contributorSignatureLine, annexureA, annexureBSignatureLines: annexureB, accredited } = fund;
+  const { notice, contributorSignatureLine, annexureA, annexureBSignatureLines: annexureB, accredited, extraSignatureLines = [] } = fund;
   return [
-    onLine(notice.page, notice.signatureLine, "subscriber", "Memorandum - important notice"),
+    ...(notice ? [onLine(notice.page, notice.signatureLine, "subscriber", "Memorandum - important notice")] : []),
     onLine(contributorSignatureLine.page, contributorSignatureLine.line, "subscriber", "Contribution Agreement - contributor"),
     onLine(annexureA.page, annexureA.signatureLine, "subscriber", "Annexure A - contributor"),
     ...(annexureB ? [onLine(annexureB.page, annexureB.first, "subscriber", "Annexure B - first contributor"),
       onLine(annexureB.page, annexureB.second, "joint_holder", "Annexure B - second contributor")] : []),
     onLine(accredited.final.page, accredited.final.signatureLine, "subscriber", "Accredited investor declaration"),
+    ...extraSignatureLines.map(([page, line, signer, label]) => onLine(page, line, signer, label)),
   ];
 }
 
@@ -197,13 +285,14 @@ function writeFund(fund) {
   mkdirSync(folder, { recursive: true });
   copyFileSync(path.join(GIFT_FILES, fund.sourcePdf), path.join("data/Blank Forms", fund.blankFileName));
 
-  const allFields = [...listApplicationFields(), ...listAgreementFields(fund)];
+  const application = APPLICATION_LAYOUTS[fund.applicationLayout || "feeder"];
+  const allFields = [...application.listFields(), ...listAgreementFields(fund)];
   const duplicateKeys = allFields.map((field) => field.key).filter((key, index, keys) => keys.indexOf(key) !== index);
   if (duplicateKeys.length) throw new Error(`${fund.formId}: duplicate keys ${duplicateKeys.join(", ")}`);
   const textFields = allFields.filter((field) => !field.tickbox);
   const tickboxes = allFields.filter((field) => field.tickbox);
 
-  writeJson("field-positions.json", { _about: `Where each value is written on the blank ${fund.fundName} Application Form & Documentation Set, 83 pages. Made by tools/form-building/make_gift_feeder_subscriptions.mjs.`,
+  writeJson("field-positions.json", { _about: `Where each value is written on the blank ${fund.fundName} Application Form & Documentation Set, ${fund.pageCount || 83} pages. Made by tools/form-building/make_gift_feeder_subscriptions.mjs.`,
     formId: fund.formId, title: `${fund.fundName} - Application Form`,
     fields: textFields.map(({ source, section, ...field }) => ({ key: field.key, nominee: null, ...field })) });
 
@@ -222,10 +311,10 @@ function writeFund(fund) {
     identityType: { scope: "shared", tickboxField: null, numberField: null, optionByIdentityKind: {}, numberFieldByIdentityKind: {} },
     reviewSections: listReviewSections(allFields) });
 
-  const signatureBoxes = [...APPLICATION_SIGNATURE_BOXES, ...listAgreementSignatureBoxes(fund)];
-  const ignoredBlanks = [...APPLICATION_IGNORED_BLANKS, ...fund.agreementIgnoredBlanks.map(([page, y, why]) => ({ page, y, why }))];
+  const signatureBoxes = [...application.signatureBoxes, ...listAgreementSignatureBoxes(fund)];
+  const ignoredBlanks = [...application.ignoredBlanks, ...fund.agreementIgnoredBlanks.map(([page, y, why]) => ({ page, y, why }))];
   writeJson("form-configuration.json", {
-    _about: `${fund.fundName} - Application Form & Documentation Set, 83 pages. Made by tools/form-building/make_gift_feeder_subscriptions.mjs; pages 1-21 shared by the three GIFT feeder funds, pages 22-83 measured on this blank. Every tick box is its own question with no assumed answer.`,
+    _about: `${fund.fundName} - Application Form & Documentation Set, ${fund.pageCount || 83} pages. Made by tools/form-building/make_gift_feeder_subscriptions.mjs; pages 1-21 shared by the GIFT application sets, pages 22-${fund.pageCount || 83} measured on this blank. Every tick box is its own question with no assumed answer.`,
     id: fund.formId, title: `${fund.fundName} - Application Form`, labels: [], signatureBoxes,
     tickboxes: tickboxes.map(({ tickbox, section, ...tickboxSpec }) => tickboxSpec),
     blankFileName: fund.blankFileName, nomineeHeaderRe: null, tickboxRule: "usual", ignoredBlanks });

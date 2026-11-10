@@ -1,0 +1,1037 @@
+{
+  "_about": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund application form, 76 pages (widgets removed). Made by tools/form-building/make_gift_whiteoak_application.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "gift-whiteoak-em-application",
+  "title": "Ashoka WhiteOak Global Emerging Markets ex India GIFT Fund - Application Form",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 9,
+      "x": 15,
+      "y": 683,
+      "w": 182,
+      "h": 34,
+      "signer": "subscriber",
+      "label": "Application - first holder"
+    },
+    {
+      "page": 9,
+      "x": 198,
+      "y": 683,
+      "w": 183,
+      "h": 34,
+      "signer": "joint_holder",
+      "label": "Application - second holder"
+    },
+    {
+      "page": 18,
+      "x": 40,
+      "y": 590,
+      "w": 220,
+      "h": 40,
+      "signer": "subscriber",
+      "label": "Accredited investor declaration"
+    },
+    {
+      "page": 72,
+      "x": 107.4,
+      "y": 513.6,
+      "w": 88.1,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Contribution Agreement - contributor"
+    },
+    {
+      "page": 73,
+      "x": 95.3,
+      "y": 737.5,
+      "w": 132.3,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Annexure A - contributor"
+    },
+    {
+      "page": 74,
+      "x": 72,
+      "y": 530.3,
+      "w": 110.2,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "FME commitment waiver"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "residential_status",
+      "page": 5,
+      "w": 14.9,
+      "h": 14.9,
+      "options": [
+        "RI",
+        "NRI",
+        "Company",
+        "Minor",
+        "Trust",
+        "FPI / FII",
+        "Partnership LLP",
+        "Others"
+      ],
+      "boxesByOption": {
+        "RI": [
+          {
+            "x": 134.1,
+            "y": 468.42
+          }
+        ],
+        "NRI": [
+          {
+            "x": 217.1,
+            "y": 469.42
+          }
+        ],
+        "Company": [
+          {
+            "x": 290.8,
+            "y": 469.42
+          }
+        ],
+        "Minor": [
+          {
+            "x": 393.3,
+            "y": 469.42
+          }
+        ],
+        "Trust": [
+          {
+            "x": 520.3,
+            "y": 469.42
+          }
+        ],
+        "FPI / FII": [
+          {
+            "x": 134.1,
+            "y": 488.92
+          }
+        ],
+        "Partnership LLP": [
+          {
+            "x": 216.2,
+            "y": 488.92
+          }
+        ],
+        "Others": [
+          {
+            "x": 325.3,
+            "y": 488.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "occupation",
+      "page": 5,
+      "w": 14.9,
+      "h": 14.9,
+      "options": [
+        "Private Sector",
+        "Public Sector",
+        "Government Service",
+        "Business",
+        "Student",
+        "Retired",
+        "Professional",
+        "Agriculturist",
+        "House Wife",
+        "Forex Dealer",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Private Sector": [
+          {
+            "x": 132.8,
+            "y": 510.32
+          }
+        ],
+        "Public Sector": [
+          {
+            "x": 216.2,
+            "y": 510.32
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 290.8,
+            "y": 510.32
+          }
+        ],
+        "Business": [
+          {
+            "x": 392.9,
+            "y": 510.32
+          }
+        ],
+        "Student": [
+          {
+            "x": 453.1,
+            "y": 510.32
+          }
+        ],
+        "Retired": [
+          {
+            "x": 522.1,
+            "y": 510.32
+          }
+        ],
+        "Professional": [
+          {
+            "x": 132.8,
+            "y": 530.82
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 215.3,
+            "y": 530.82
+          }
+        ],
+        "House Wife": [
+          {
+            "x": 290.8,
+            "y": 530.82
+          }
+        ],
+        "Forex Dealer": [
+          {
+            "x": 363.2,
+            "y": 530.82
+          }
+        ],
+        "Others": [
+          {
+            "x": 437,
+            "y": 530.82
+          }
+        ]
+      }
+    },
+    {
+      "key": "gross_annual_income_range",
+      "page": 5,
+      "w": 14.9,
+      "h": 14.9,
+      "options": [
+        "Below 1 million",
+        "1 to 5 million",
+        "5 to 10 million",
+        "10 million and above"
+      ],
+      "boxesByOption": {
+        "Below 1 million": [
+          {
+            "x": 134.9,
+            "y": 681.32
+          }
+        ],
+        "1 to 5 million": [
+          {
+            "x": 219.6,
+            "y": 680.82
+          }
+        ],
+        "5 to 10 million": [
+          {
+            "x": 296.4,
+            "y": 680.82
+          }
+        ],
+        "10 million and above": [
+          {
+            "x": 372.2,
+            "y": 681.32
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 5,
+      "w": 14.9,
+      "h": 14.9,
+      "options": [
+        "I am PEP",
+        "I am related to a PEP",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "I am PEP": [
+          {
+            "x": 49.9,
+            "y": 756.12
+          }
+        ],
+        "I am related to a PEP": [
+          {
+            "x": 49.9,
+            "y": 773.22
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 49.4,
+            "y": 790.22
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_residential_status",
+      "page": 6,
+      "w": 14.5,
+      "h": 14.5,
+      "options": [
+        "RI",
+        "NRI"
+      ],
+      "boxesByOption": {
+        "RI": [
+          {
+            "x": 138.2,
+            "y": 180.8
+          }
+        ],
+        "NRI": [
+          {
+            "x": 220.7,
+            "y": 182.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_occupation",
+      "page": 6,
+      "w": 14.5,
+      "h": 14.5,
+      "options": [
+        "Private Sector",
+        "Public Sector",
+        "Government Service",
+        "Business",
+        "Student",
+        "Retired",
+        "Professional",
+        "Agriculturist",
+        "House Wife",
+        "Forex Dealer",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Private Sector": [
+          {
+            "x": 137.2,
+            "y": 201.3
+          }
+        ],
+        "Public Sector": [
+          {
+            "x": 220.7,
+            "y": 200.8
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 295.7,
+            "y": 200.8
+          }
+        ],
+        "Business": [
+          {
+            "x": 398.1,
+            "y": 201.8
+          }
+        ],
+        "Student": [
+          {
+            "x": 459.1,
+            "y": 201.3
+          }
+        ],
+        "Retired": [
+          {
+            "x": 526.1,
+            "y": 203.3
+          }
+        ],
+        "Professional": [
+          {
+            "x": 137.2,
+            "y": 220.3
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 220.2,
+            "y": 220.8
+          }
+        ],
+        "House Wife": [
+          {
+            "x": 295.2,
+            "y": 220.8
+          }
+        ],
+        "Forex Dealer": [
+          {
+            "x": 369.6,
+            "y": 220.8
+          }
+        ],
+        "Others": [
+          {
+            "x": 441.6,
+            "y": 220.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "mode_of_holding",
+      "page": 6,
+      "w": 14,
+      "h": 14,
+      "options": [
+        "Single",
+        "Joint",
+        "Anyone or survivor"
+      ],
+      "boxesByOption": {
+        "Single": [
+          {
+            "x": 219.7,
+            "y": 248.4
+          }
+        ],
+        "Joint": [
+          {
+            "x": 295.7,
+            "y": 248.9
+          }
+        ],
+        "Anyone or survivor": [
+          {
+            "x": 369.1,
+            "y": 248.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_pep_status",
+      "page": 6,
+      "w": 14.5,
+      "h": 14.5,
+      "options": [
+        "I am PEP",
+        "I am related to a PEP",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "I am PEP": [
+          {
+            "x": 147.7,
+            "y": 353.7
+          }
+        ],
+        "I am related to a PEP": [
+          {
+            "x": 272.2,
+            "y": 353.7
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 439.1,
+            "y": 353.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_gross_annual_income_range",
+      "page": 6,
+      "w": 14,
+      "h": 14,
+      "options": [
+        "Below 1 million",
+        "1 to 5 million",
+        "5 to 10 million",
+        "10 million and above"
+      ],
+      "boxesByOption": {
+        "Below 1 million": [
+          {
+            "x": 149.7,
+            "y": 372.3
+          }
+        ],
+        "1 to 5 million": [
+          {
+            "x": 244.2,
+            "y": 372.3
+          }
+        ],
+        "5 to 10 million": [
+          {
+            "x": 333.1,
+            "y": 372.3
+          }
+        ],
+        "10 million and above": [
+          {
+            "x": 439.6,
+            "y": 373.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "citizenship",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "U.S.",
+        "Others"
+      ],
+      "boxesByOption": {
+        "U.S.": [
+          {
+            "x": 344.9,
+            "y": 476.4
+          }
+        ],
+        "Others": [
+          {
+            "x": 392.6,
+            "y": 477.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_citizenship",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "U.S.",
+        "Others"
+      ],
+      "boxesByOption": {
+        "U.S.": [
+          {
+            "x": 345.3,
+            "y": 492.2
+          }
+        ],
+        "Others": [
+          {
+            "x": 393.8,
+            "y": 492.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "tin_unavailable_reason",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "A - country does not issue TINs",
+        "B - no TIN required",
+        "C - other reason"
+      ],
+      "boxesByOption": {
+        "A - country does not issue TINs": [
+          {
+            "x": 489.3,
+            "y": 584.4
+          }
+        ],
+        "B - no TIN required": [
+          {
+            "x": 522.9,
+            "y": 584.2
+          }
+        ],
+        "C - other reason": [
+          {
+            "x": 552,
+            "y": 584
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tin_unavailable_reason",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "A - country does not issue TINs",
+        "B - no TIN required",
+        "C - other reason"
+      ],
+      "boxesByOption": {
+        "A - country does not issue TINs": [
+          {
+            "x": 489.3,
+            "y": 604
+          }
+        ],
+        "B - no TIN required": [
+          {
+            "x": 522.9,
+            "y": 603.5
+          }
+        ],
+        "C - other reason": [
+          {
+            "x": 552,
+            "y": 603.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "address_type",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Residential",
+        "Registered office",
+        "Business"
+      ],
+      "boxesByOption": {
+        "Residential": [
+          {
+            "x": 37.4,
+            "y": 723.8
+          }
+        ],
+        "Registered office": [
+          {
+            "x": 87.9,
+            "y": 724.7
+          }
+        ],
+        "Business": [
+          {
+            "x": 159.8,
+            "y": 725.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_address_type",
+      "page": 6,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "Residential",
+        "Registered office",
+        "Business"
+      ],
+      "boxesByOption": {
+        "Residential": [
+          {
+            "x": 215,
+            "y": 722.5
+          }
+        ],
+        "Registered office": [
+          {
+            "x": 267.8,
+            "y": 723.1
+          }
+        ],
+        "Business": [
+          {
+            "x": 340.6,
+            "y": 723.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "wish_to_nominate",
+      "page": 7,
+      "w": 15,
+      "h": 15,
+      "options": [
+        "Wish to nominate",
+        "Do not wish to nominate"
+      ],
+      "boxesByOption": {
+        "Wish to nominate": [
+          {
+            "x": 68.4,
+            "y": 120
+          }
+        ],
+        "Do not wish to nominate": [
+          {
+            "x": 185.3,
+            "y": 120
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_investor_category",
+      "page": 17,
+      "w": 7.9,
+      "h": 7.9,
+      "options": [
+        "Individual - income criteria",
+        "Individual - net assets criteria"
+      ],
+      "boxesByOption": {
+        "Individual - income criteria": [
+          {
+            "x": 69.2,
+            "y": 372.62
+          },
+          {
+            "x": 234.2,
+            "y": 372.92
+          }
+        ],
+        "Individual - net assets criteria": [
+          {
+            "x": 69.2,
+            "y": 372.62
+          },
+          {
+            "x": 398.2,
+            "y": 372.92
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_joint_investment",
+      "page": 17,
+      "w": 7.9,
+      "h": 7.9,
+      "options": [
+        "Parent(s) and child(ren)",
+        "Spouses"
+      ],
+      "boxesByOption": {
+        "Parent(s) and child(ren)": [
+          {
+            "x": 63.6,
+            "y": 583.42
+          }
+        ],
+        "Spouses": [
+          {
+            "x": 63.6,
+            "y": 615.72
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_documentation",
+      "page": 17,
+      "w": 7.9,
+      "h": 7.9,
+      "options": [
+        "Net worth certificate (last 6 months)",
+        "Income proof (salary slip or other)"
+      ],
+      "boxesByOption": {
+        "Net worth certificate (last 6 months)": [
+          {
+            "x": 69.7,
+            "y": 669.82
+          },
+          {
+            "x": 315.3,
+            "y": 669.42
+          }
+        ],
+        "Income proof (salary slip or other)": [
+          {
+            "x": 69.7,
+            "y": 669.82
+          },
+          {
+            "x": 311.6,
+            "y": 117.42,
+            "page": 18
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Application Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 5,
+      "y": 270,
+      "why": "Guardian / contact person for an entity: relationship to minor - only for a minor or an entity"
+    },
+    {
+      "page": 6,
+      "y": 508,
+      "why": "Guardian's citizenship (\"Others, please specify\"): only when the first holder is a minor"
+    },
+    {
+      "page": 7,
+      "y": 370,
+      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    },
+    {
+      "page": 7,
+      "y": 418,
+      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    },
+    {
+      "page": 7,
+      "y": 440,
+      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    },
+    {
+      "page": 7,
+      "y": 470,
+      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    },
+    {
+      "page": 7,
+      "y": 500,
+      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    },
+    {
+      "page": 20,
+      "y": 107.5,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 120.1,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 132.8,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 145.5,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 158,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 170.8,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 183.4,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 196.1,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 208.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 221.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 234,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 246.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 259.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 271.9,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 284.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 297.2,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 309.8,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 322.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 335.2,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 347.9,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 360.5,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 373.1,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 385.8,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 398.4,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 411.1,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 20,
+      "y": 423.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 18,
+      "y": 150,
+      "why": "Body corporate documentation: for a non-individual investor"
+    },
+    {
+      "page": 18,
+      "y": 183,
+      "why": "Body corporate documentation: for a non-individual investor"
+    },
+    {
+      "page": 72,
+      "y": 183.4,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 72,
+      "y": 246.6,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 72,
+      "y": 360.5,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 72,
+      "y": 423.7,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 72,
+      "y": 600.8,
+      "why": "Witness to the contributor's signature (\"In the presence of\")"
+    },
+    {
+      "page": 73,
+      "y": 170.8,
+      "why": "\"Mr./Mrs./Messers [___]\": the 40pt bracket has no room; the name is written on the free line under it"
+    },
+    {
+      "page": 73,
+      "y": 183.4,
+      "why": "\"office at [___]\": the 40pt bracket has no room; the address is written on the free line under it"
+    },
+    {
+      "page": 73,
+      "y": 246.6,
+      "why": "\"Dollars [___]\": the 40pt bracket has no room; the amount in words is written on the free line under it"
+    },
+    {
+      "page": 73,
+      "y": 651.4,
+      "why": "Third mailing-address line: the Excel gives two (city, state and country are on page 8)"
+    },
+    {
+      "page": 75,
+      "y": 132.8,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 75,
+      "y": 234,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 75,
+      "y": 360.5,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 76,
+      "y": 271.9,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 76,
+      "y": 309.8,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 76,
+      "y": 335.3,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    }
+  ]
+}

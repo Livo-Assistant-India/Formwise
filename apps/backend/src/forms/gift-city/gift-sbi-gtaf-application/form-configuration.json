@@ -1,0 +1,769 @@
+{
+  "_about": "SBI Global Thematic Advantage Fund (IFSC) application form, 68 pages. Made by tools/form-building/make_gift_sbi_application.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "gift-sbi-gtaf-application",
+  "title": "SBI Global Thematic Advantage Fund (IFSC) - Application Form",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 6,
+      "x": 29,
+      "y": 697,
+      "w": 178,
+      "h": 44,
+      "signer": "subscriber",
+      "label": "Application - first holder"
+    },
+    {
+      "page": 6,
+      "x": 208,
+      "y": 697,
+      "w": 178,
+      "h": 44,
+      "signer": "joint_holder",
+      "label": "Application - second holder"
+    },
+    {
+      "page": 7,
+      "x": 80,
+      "y": 704,
+      "w": 154,
+      "h": 22,
+      "signer": "subscriber",
+      "label": "FATCA & CRS - first holder"
+    },
+    {
+      "page": 7,
+      "x": 237,
+      "y": 704,
+      "w": 157,
+      "h": 22,
+      "signer": "joint_holder",
+      "label": "FATCA & CRS - second holder"
+    },
+    {
+      "page": 23,
+      "x": 29,
+      "y": 469,
+      "w": 170,
+      "h": 52,
+      "signer": "subscriber",
+      "label": "Schedule I - contributor"
+    },
+    {
+      "page": 24,
+      "x": 72,
+      "y": 473.6,
+      "w": 192.6,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "FME contribution waiver - first holder"
+    },
+    {
+      "page": 24,
+      "x": 324.1,
+      "y": 473.6,
+      "w": 198.1,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "FME contribution waiver - second holder"
+    },
+    {
+      "page": 65,
+      "x": 71.5,
+      "y": 548.7,
+      "w": 133.3,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Contribution Agreement - contributor"
+    },
+    {
+      "page": 65,
+      "x": 71.5,
+      "y": 627.9,
+      "w": 133.3,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "Contribution Agreement - second holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "applicant_type",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Individual",
+        "Minor"
+      ],
+      "boxesByOption": {
+        "Individual": [
+          {
+            "x": 219.3,
+            "y": 40.5
+          }
+        ],
+        "Minor": [
+          {
+            "x": 282.7,
+            "y": 40.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "gender",
+      "page": 4,
+      "w": 11.6,
+      "h": 11.6,
+      "options": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 288.7,
+            "y": 133.28
+          }
+        ],
+        "Female": [
+          {
+            "x": 345,
+            "y": 133.28
+          }
+        ],
+        "Other": [
+          {
+            "x": 401.3,
+            "y": 133.28
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_gender",
+      "page": 4,
+      "w": 11.6,
+      "h": 11.6,
+      "options": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 288.7,
+            "y": 259.98
+          }
+        ],
+        "Female": [
+          {
+            "x": 345,
+            "y": 259.98
+          }
+        ],
+        "Other": [
+          {
+            "x": 401.3,
+            "y": 259.98
+          }
+        ]
+      }
+    },
+    {
+      "key": "mode_of_holding",
+      "page": 4,
+      "w": 8.6,
+      "h": 8.6,
+      "options": [
+        "Single",
+        "Joint",
+        "Anyone or survivor",
+        "POA holder"
+      ],
+      "boxesByOption": {
+        "Single": [
+          {
+            "x": 167.3,
+            "y": 454.58
+          }
+        ],
+        "Joint": [
+          {
+            "x": 257.3,
+            "y": 454.58
+          }
+        ],
+        "Anyone or survivor": [
+          {
+            "x": 334.3,
+            "y": 454.58
+          }
+        ],
+        "POA holder": [
+          {
+            "x": 449.7,
+            "y": 454.58
+          }
+        ]
+      }
+    },
+    {
+      "key": "investment_option",
+      "page": 5,
+      "w": 8.6,
+      "h": 8.6,
+      "options": [
+        "SWIFT"
+      ],
+      "boxesByOption": {
+        "SWIFT": [
+          {
+            "x": 306.7,
+            "y": 31.88
+          }
+        ]
+      }
+    },
+    {
+      "key": "wish_to_nominate",
+      "page": 5,
+      "w": 11.8,
+      "h": 11.8,
+      "options": [
+        "Wish to nominate",
+        "Do not wish to nominate"
+      ],
+      "boxesByOption": {
+        "Wish to nominate": [
+          {
+            "x": 28.7,
+            "y": 149.74
+          }
+        ],
+        "Do not wish to nominate": [
+          {
+            "x": 150.3,
+            "y": 149.74
+          }
+        ]
+      }
+    },
+    {
+      "key": "occupation",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Private Sector Service",
+        "Public Sector Service",
+        "Government Service",
+        "Business",
+        "Professional",
+        "Agriculturist",
+        "Retired",
+        "Housewife",
+        "Student",
+        "Forex Dealer"
+      ],
+      "boxesByOption": {
+        "Private Sector Service": [
+          {
+            "x": 88.3,
+            "y": 518.9
+          }
+        ],
+        "Public Sector Service": [
+          {
+            "x": 88.3,
+            "y": 529.6
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 88.3,
+            "y": 539.9
+          }
+        ],
+        "Business": [
+          {
+            "x": 88.3,
+            "y": 550.6
+          }
+        ],
+        "Professional": [
+          {
+            "x": 88.3,
+            "y": 561.3
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 183.3,
+            "y": 518.9
+          }
+        ],
+        "Retired": [
+          {
+            "x": 183.3,
+            "y": 529.6
+          }
+        ],
+        "Housewife": [
+          {
+            "x": 183.3,
+            "y": 539.9
+          }
+        ],
+        "Student": [
+          {
+            "x": 183.3,
+            "y": 550.6
+          }
+        ],
+        "Forex Dealer": [
+          {
+            "x": 183.3,
+            "y": 561.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "gross_annual_income_range",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Below $10,000",
+        "$10,000 to $50,000",
+        "$50,000 to $100,000",
+        "Above $100,000"
+      ],
+      "boxesByOption": {
+        "Below $10,000": [
+          {
+            "x": 88.3,
+            "y": 589.6
+          }
+        ],
+        "$10,000 to $50,000": [
+          {
+            "x": 88.3,
+            "y": 599.9
+          }
+        ],
+        "$50,000 to $100,000": [
+          {
+            "x": 88.3,
+            "y": 610.6
+          }
+        ],
+        "Above $100,000": [
+          {
+            "x": 88.3,
+            "y": 620.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Not a PEP",
+        "PEP",
+        "Related to a PEP"
+      ],
+      "boxesByOption": {
+        "Not a PEP": [
+          {
+            "x": 88.3,
+            "y": 634.9
+          }
+        ],
+        "PEP": [
+          {
+            "x": 88.3,
+            "y": 645.3
+          }
+        ],
+        "Related to a PEP": [
+          {
+            "x": 88.3,
+            "y": 655.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_occupation",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Private Sector Service",
+        "Public Sector Service",
+        "Government Service",
+        "Business",
+        "Professional",
+        "Agriculturist",
+        "Retired",
+        "Housewife",
+        "Student",
+        "Forex Dealer"
+      ],
+      "boxesByOption": {
+        "Private Sector Service": [
+          {
+            "x": 249,
+            "y": 518.9
+          }
+        ],
+        "Public Sector Service": [
+          {
+            "x": 249,
+            "y": 529.6
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 249,
+            "y": 539.9
+          }
+        ],
+        "Business": [
+          {
+            "x": 249,
+            "y": 550.6
+          }
+        ],
+        "Professional": [
+          {
+            "x": 249,
+            "y": 561.3
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 344,
+            "y": 518.9
+          }
+        ],
+        "Retired": [
+          {
+            "x": 344,
+            "y": 529.6
+          }
+        ],
+        "Housewife": [
+          {
+            "x": 344,
+            "y": 539.9
+          }
+        ],
+        "Student": [
+          {
+            "x": 344,
+            "y": 550.6
+          }
+        ],
+        "Forex Dealer": [
+          {
+            "x": 344,
+            "y": 561.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_gross_annual_income_range",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Below $10,000",
+        "$10,000 to $50,000",
+        "$50,000 to $100,000",
+        "Above $100,000"
+      ],
+      "boxesByOption": {
+        "Below $10,000": [
+          {
+            "x": 249,
+            "y": 589.6
+          }
+        ],
+        "$10,000 to $50,000": [
+          {
+            "x": 249,
+            "y": 599.9
+          }
+        ],
+        "$50,000 to $100,000": [
+          {
+            "x": 249,
+            "y": 610.6
+          }
+        ],
+        "Above $100,000": [
+          {
+            "x": 249,
+            "y": 620.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_pep_status",
+      "page": 5,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Not a PEP",
+        "PEP",
+        "Related to a PEP"
+      ],
+      "boxesByOption": {
+        "Not a PEP": [
+          {
+            "x": 249,
+            "y": 634.9
+          }
+        ],
+        "PEP": [
+          {
+            "x": 249,
+            "y": 645.3
+          }
+        ],
+        "Related to a PEP": [
+          {
+            "x": 249,
+            "y": 655.9
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "SBI Global Thematic Advantage Fund - Application Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 4,
+      "y": 340,
+      "why": "Relationship to minor: only when the first holder is a minor (guardian block)"
+    },
+    {
+      "page": 4,
+      "y": 690,
+      "why": "\"[STD /ISD Code]\" is a label, not a blank"
+    },
+    {
+      "page": 5,
+      "y": 575.6,
+      "why": "Guardian's \"Others (Please specify)\": only when the first holder is a minor"
+    },
+    {
+      "page": 12,
+      "y": 115.9,
+      "why": "Non-individual application (pages 10-16): this form is for individuals"
+    },
+    {
+      "page": 12,
+      "y": 138,
+      "why": "Non-individual application (pages 10-16): this form is for individuals"
+    },
+    {
+      "page": 13,
+      "y": 700.2,
+      "why": "Non-individual application (pages 10-16): this form is for individuals"
+    },
+    {
+      "page": 13,
+      "y": 734.4,
+      "why": "Non-individual application (pages 10-16): this form is for individuals"
+    },
+    {
+      "page": 23,
+      "y": 616.7,
+      "why": "Name of authorised signatory: for a non-individual investor"
+    },
+    {
+      "page": 24,
+      "y": 616,
+      "why": "Name & designation of the authorised signatory: for a non-individual investor"
+    },
+    {
+      "page": 26,
+      "y": 138.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 155.9,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 173.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 191.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 209,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 226.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 244.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 262,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 279.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 297.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 315,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 332.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 350.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 368,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 385.6,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 403.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 421,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 438.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 456.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 474,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 491.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 509.3,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 527,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 26,
+      "y": 544.7,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 27,
+      "y": 57.9,
+      "why": "\"[To be Stamped]\" is an instruction"
+    },
+    {
+      "page": 65,
+      "y": 163.5,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 65,
+      "y": 242.7,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 65,
+      "y": 374.7,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 65,
+      "y": 453.9,
+      "why": "Signed by the Trustee / FME"
+    },
+    {
+      "page": 66,
+      "y": 151.5,
+      "why": "First part of the address bracket: the address is written on the full line under it"
+    },
+    {
+      "page": 66,
+      "y": 346.2,
+      "why": "Total expense ratio tick column: follows the class of units - open question"
+    },
+    {
+      "page": 67,
+      "y": 114.2,
+      "why": "Set-up fee tick column: follows the class of units - open question"
+    },
+    {
+      "page": 67,
+      "y": 524.8,
+      "why": "Third mailing-address line: the Excel gives two (city, state and country are on page 3)"
+    }
+  ]
+}

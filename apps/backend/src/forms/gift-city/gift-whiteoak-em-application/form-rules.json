@@ -1,0 +1,229 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the identity fields, the Excel fills the rest; the second holder's fields are typed.",
+  "formId": "gift-whiteoak-em-application",
+  "group": "GIFT City",
+  "label": "GIFT – WhiteOak Global EM ex India – Application",
+  "shortLabel": "GIFT WhiteOak EM application",
+  "purpose": "New investment · application form and contribution agreement",
+  "blankFileName": "WhiteOak Global EM ex India GIFT Fund - Application Form.pdf",
+  "keyFields": [
+    "Applicant name",
+    "Capital commitment",
+    "Bank account"
+  ],
+  "sheetTabName": "GIFT WhiteOak EM application",
+  "detectionPhrases": [
+    "APPLICATION FORM FOR INDIVIDUALS",
+    "Ashoka WhiteOak Capital Management (GIFT) LLP"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Applicant",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "distributor",
+      "label": "Page 5 · Distributor / RM (Excel)",
+      "fields": [
+        "distributor_name_code",
+        "rm_name_contact",
+        "rm_email",
+        "distributor_email"
+      ]
+    },
+    {
+      "key": "applicant",
+      "label": "Page 5 · First holder (KYC + Excel)",
+      "fields": [
+        "subscriber_name",
+        "tax_reference_number",
+        "ckyc_number",
+        "dob",
+        "residential_status",
+        "residential_status_other"
+      ]
+    },
+    {
+      "key": "contact",
+      "label": "Pages 5-8 · Contact and mailing address",
+      "fields": [
+        "std_code",
+        "mobile",
+        "landline",
+        "office_phone",
+        "email",
+        "alternate_email",
+        "mailing_address_line1",
+        "mailing_address_line2",
+        "mailing_city",
+        "mailing_state",
+        "mailing_postcode",
+        "mailing_country"
+      ]
+    },
+    {
+      "key": "kyc",
+      "label": "Page 5 · KYC details (Excel)",
+      "fields": [
+        "occupation",
+        "occupation_other",
+        "place_of_work",
+        "employer_name",
+        "business_nature",
+        "business_location",
+        "business_countries",
+        "business_countries_line2",
+        "gross_annual_income_range",
+        "pep_status"
+      ]
+    },
+    {
+      "key": "second-holder",
+      "label": "Page 6 · Second holder (Excel)",
+      "fields": [
+        "joint_holder_relationship",
+        "joint_holder_name",
+        "joint_holder_tax_reference_number",
+        "joint_holder_ckyc_number",
+        "joint_holder_dob",
+        "joint_holder_residential_status",
+        "joint_holder_occupation",
+        "joint_holder_occupation_other",
+        "joint_holder_mobile",
+        "joint_holder_email",
+        "joint_holder_pep_status",
+        "joint_holder_gross_annual_income_range",
+        "joint_holder_place_of_birth",
+        "joint_holder_country_of_birth",
+        "joint_holder_citizenship",
+        "joint_holder_citizenship_country",
+        "joint_holder_foreign_tax_country_1",
+        "joint_holder_foreign_tax_identification_number_1",
+        "joint_holder_foreign_tax_identification_type_1",
+        "joint_holder_tin_unavailable_reason",
+        "joint_holder_address_type"
+      ]
+    },
+    {
+      "key": "holding",
+      "label": "Page 6 · Mode of holding",
+      "fields": [
+        "mode_of_holding",
+        "joint_holding_percentage"
+      ]
+    },
+    {
+      "key": "fatca",
+      "label": "Page 6 · FATCA & CRS (Excel)",
+      "fields": [
+        "place_of_birth",
+        "country_of_birth",
+        "citizenship",
+        "citizenship_country",
+        "foreign_tax_country_1",
+        "foreign_tax_identification_number_1",
+        "foreign_tax_identification_type_1",
+        "tin_unavailable_reason",
+        "tin_reason_c_details",
+        "address_type"
+      ]
+    },
+    {
+      "key": "nomination",
+      "label": "Page 7 · Nomination",
+      "fields": [
+        "subscriber_name_p7",
+        "wish_to_nominate"
+      ]
+    },
+    {
+      "key": "investment",
+      "label": "Page 8 · Investment (Excel)",
+      "fields": [
+        "class_of_units",
+        "capital_commitment_usd",
+        "contribution_amount_usd",
+        "payment_reference",
+        "drawn_on_bank_date"
+      ]
+    },
+    {
+      "key": "bank",
+      "label": "Page 8 · Bank account (Excel)",
+      "fields": [
+        "account_number",
+        "account_type",
+        "bank_name",
+        "bank_city",
+        "bank_state",
+        "bank_postcode",
+        "bank_country",
+        "swift_code"
+      ]
+    },
+    {
+      "key": "signed",
+      "label": "Pages 8-9 · Declaration signed",
+      "fields": [
+        "ppm_date",
+        "subscriber_name_p9",
+        "joint_holder_name_p9",
+        "place",
+        "form_date"
+      ]
+    },
+    {
+      "key": "accredited",
+      "label": "Pages 17-18 · Accredited investor declaration",
+      "fields": [
+        "subscriber_name_p17",
+        "subscriber_address_p17",
+        "accredited_investor_category",
+        "accredited_joint_investment",
+        "accredited_documentation",
+        "subscriber_name_p18",
+        "form_date_p18"
+      ]
+    },
+    {
+      "key": "agreement",
+      "label": "Page 21 · Contribution Agreement date (Excel)",
+      "fields": [
+        "agreement_execution_day"
+      ]
+    },
+    {
+      "key": "annexure-a",
+      "label": "Page 73 · Annexure A: key details",
+      "fields": [
+        "subscriber_name_p73",
+        "subscriber_address_p73",
+        "capital_commitment_usd_p73",
+        "capital_commitment_usd_words",
+        "class_of_units_p73",
+        "management_fee_percent",
+        "management_fee_percent_words",
+        "placement_cost",
+        "operating_expenses",
+        "setup_expenses",
+        "mailing_address_line1_p73",
+        "mailing_address_line2_p73",
+        "email_p73",
+        "mobile_p73",
+        "landline_p73"
+      ]
+    },
+    {
+      "key": "waiver",
+      "label": "Page 74 · FME commitment waiver",
+      "fields": [
+        "form_date_p74"
+      ]
+    }
+  ]
+}
