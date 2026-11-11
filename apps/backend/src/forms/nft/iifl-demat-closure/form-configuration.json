@@ -1,0 +1,313 @@
+{
+  "_about": "Account closure – IIFL Capital trading / demat. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "iifl-demat-closure",
+  "title": "Account closure – IIFL Capital trading / demat",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 97,
+      "y": 539,
+      "w": 157,
+      "h": 54,
+      "signer": "subscriber",
+      "label": "First / sole holder"
+    },
+    {
+      "page": 1,
+      "x": 255,
+      "y": 539,
+      "w": 157,
+      "h": 54,
+      "signer": "joint_holder",
+      "label": "Second holder"
+    },
+    {
+      "page": 1,
+      "x": 413,
+      "y": 539,
+      "w": 157,
+      "h": 54,
+      "signer": "third_holder",
+      "label": "Third holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "closure_initiated_by",
+      "page": 1,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "BO",
+        "DP",
+        "CDSL",
+        "NSDL"
+      ],
+      "boxesByOption": {
+        "BO": [
+          {
+            "x": 282.6,
+            "y": 91.6
+          }
+        ],
+        "DP": [
+          {
+            "x": 306.3,
+            "y": 91.6
+          }
+        ],
+        "CDSL": [
+          {
+            "x": 329.9,
+            "y": 91.6
+          }
+        ],
+        "NSDL": [
+          {
+            "x": 363.7,
+            "y": 91.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "closure_for",
+      "page": 1,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Only trading account",
+        "Only demat account",
+        "Both"
+      ],
+      "boxesByOption": {
+        "Only trading account": [
+          {
+            "x": 88.3,
+            "y": 128.2
+          }
+        ],
+        "Only demat account": [
+          {
+            "x": 168.9,
+            "y": 128.2
+          }
+        ],
+        "Both": [
+          {
+            "x": 244.5,
+            "y": 128.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "segment",
+      "page": 1,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Cash & F&O",
+        "Currency",
+        "Commodities",
+        "NSEL Spot"
+      ],
+      "boxesByOption": {
+        "Cash & F&O": [
+          {
+            "x": 71.5,
+            "y": 142.9
+          }
+        ],
+        "Currency": [
+          {
+            "x": 131.9,
+            "y": 142.9
+          }
+        ],
+        "Commodities": [
+          {
+            "x": 181,
+            "y": 142.9
+          }
+        ],
+        "NSEL Spot": [
+          {
+            "x": 247.5,
+            "y": 142.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "cdsl_dp_id",
+      "page": 1,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "12044700",
+        "13014400"
+      ],
+      "boxesByOption": {
+        "12044700": [
+          {
+            "x": 81,
+            "y": 183.2
+          }
+        ],
+        "13014400": [
+          {
+            "x": 137.1,
+            "y": 183.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "nsdl_dp_id",
+      "page": 1,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "IN302269",
+        "IN300394",
+        "IN301557",
+        "IN301926",
+        "IN302470"
+      ],
+      "boxesByOption": {
+        "IN302269": [
+          {
+            "x": 304.8,
+            "y": 182.7
+          }
+        ],
+        "IN300394": [
+          {
+            "x": 357.2,
+            "y": 182.7
+          }
+        ],
+        "IN301557": [
+          {
+            "x": 409.7,
+            "y": 182.7
+          }
+        ],
+        "IN301926": [
+          {
+            "x": 462.1,
+            "y": 182.7
+          }
+        ],
+        "IN302470": [
+          {
+            "x": 514.6,
+            "y": 182.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "balance_remaining",
+      "page": 1,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Partly rematerialised and partly transferred",
+        "Rematerialised",
+        "Transferred to another account",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "Partly rematerialised and partly transferred": [
+          {
+            "x": 34.9,
+            "y": 411.3
+          }
+        ],
+        "Rematerialised": [
+          {
+            "x": 354.5,
+            "y": 411.3
+          }
+        ],
+        "Transferred to another account": [
+          {
+            "x": 34.9,
+            "y": 425.4
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 354.5,
+            "y": 425.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "balance_present",
+      "page": 1,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Ear-marked",
+        "Pledged",
+        "Pending for dematerialisation",
+        "Frozen",
+        "Pending for rematerialisation",
+        "Lock-in"
+      ],
+      "boxesByOption": {
+        "Ear-marked": [
+          {
+            "x": 34,
+            "y": 469.3
+          }
+        ],
+        "Pledged": [
+          {
+            "x": 102,
+            "y": 469.3
+          }
+        ],
+        "Pending for dematerialisation": [
+          {
+            "x": 148.1,
+            "y": 469.3
+          }
+        ],
+        "Frozen": [
+          {
+            "x": 282.3,
+            "y": 469.3
+          }
+        ],
+        "Pending for rematerialisation": [
+          {
+            "x": 324.4,
+            "y": 469.3
+          }
+        ],
+        "Lock-in": [
+          {
+            "x": 458.1,
+            "y": 469.3
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "IIFL Capital Account Closure Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 1,
+      "y": 628.4,
+      "why": "\"[DIS]\" in the instructions is not a blank"
+    }
+  ]
+}

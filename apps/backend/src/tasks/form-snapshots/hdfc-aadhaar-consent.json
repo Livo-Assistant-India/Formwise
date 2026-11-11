@@ -1,0 +1,149 @@
+{
+ "formId": "hdfc-aadhaar-consent",
+ "pageCount": 1,
+ "configuration": {
+  "id": "hdfc-aadhaar-consent",
+  "title": "Aadhaar e-KYC consent – HDFC Bank",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 386,
+    "y": 517,
+    "w": 155,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Customer"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HDFC Bank Aadhaar Consent Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Aadhaar e-KYC consent – HDFC Bank (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-aadhaar-consent",
+  "title": "Aadhaar e-KYC consent – HDFC Bank",
+  "fields": [
+   {
+    "key": "branch_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 118.6,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 150
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 124,
+    "y": 539.3,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 210
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 77,
+    "y": 558,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 58
+   }
+  ]
+ },
+ "fieldSources": {
+  "branch_name": "typed",
+  "first_holder_name": "document.name|upper",
+  "form_date": "today"
+ },
+ "formRules": {
+  "formId": "hdfc-aadhaar-consent",
+  "group": "NFT",
+  "label": "Aadhaar e-KYC consent – HDFC Bank",
+  "shortLabel": "HDFC Aadhaar consent",
+  "purpose": "Customer consent to use Aadhaar / e-KYC",
+  "blankFileName": "HDFC Bank Aadhaar Consent Letter.pdf",
+  "keyFields": [
+   "Customer name",
+   "Branch"
+  ],
+  "sheetTabName": "HDFC Aadhaar consent",
+  "detectionPhrases": [
+   "APPLICATION FOR ACCOUNT OPENING USING AADHAAR"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "consent",
+    "label": "Page 1 · Consent letter",
+    "fields": [
+     "branch_name",
+     "first_holder_name",
+     "form_date"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "branch_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "branch_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     111.8,
+     83.51,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     124,
+     532.5,
+     98.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     77,
+     552.48,
+     57.41,
+     6.5
+    ]
+   ]
+  }
+ ]
+}

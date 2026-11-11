@@ -1,0 +1,472 @@
+{
+ "formId": "hdfc-pis-cancellation",
+ "pageCount": 2,
+ "configuration": {
+  "id": "hdfc-pis-cancellation",
+  "title": "PIS permission cancellation – HDFC Bank (NR accounts)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 51,
+    "y": 624,
+    "w": 132,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "1st account holder"
+   },
+   {
+    "page": 1,
+    "x": 205,
+    "y": 626,
+    "w": 126,
+    "h": 24,
+    "signer": "joint_holder",
+    "label": "2nd account holder"
+   },
+   {
+    "page": 1,
+    "x": 346,
+    "y": 628,
+    "w": 120,
+    "h": 24,
+    "signer": "third_holder",
+    "label": "3rd account holder"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "pis_cancellation_reason",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Changed residential status to Resident Indian",
+     "Do not intend to trade shares in the secondary market",
+     "Transferring the PIS permission to another bank"
+    ],
+    "boxesByOption": {
+     "Changed residential status to Resident Indian": [
+      {
+       "x": 62,
+       "y": 355.2
+      }
+     ],
+     "Do not intend to trade shares in the secondary market": [
+      {
+       "x": 62,
+       "y": 380.2
+      }
+     ],
+     "Transferring the PIS permission to another bank": [
+      {
+       "x": 62,
+       "y": 404.7
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HDFC Bank PIS Permission Cancellation Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank PIS permission cancellation – HDFC Bank (NR accounts) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-pis-cancellation",
+  "title": "PIS permission cancellation – HDFC Bank (NR accounts)",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 92,
+    "y": 79,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "branch_name",
+    "nominee": null,
+    "page": 1,
+    "x": 61,
+    "y": 128,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 74
+   },
+   {
+    "key": "pis_permission_number",
+    "nominee": null,
+    "page": 1,
+    "x": 263,
+    "y": 204.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 178
+   },
+   {
+    "key": "pis_savings_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 253,
+    "y": 229.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 100
+   },
+   {
+    "key": "transfer_bank_name",
+    "nominee": null,
+    "page": 1,
+    "x": 260,
+    "y": 404,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 88
+   },
+   {
+    "key": "transfer_bank_address_line1",
+    "nominee": null,
+    "page": 1,
+    "x": 71,
+    "y": 449.5,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 272
+   },
+   {
+    "key": "transfer_bank_address_line2",
+    "nominee": null,
+    "page": 1,
+    "x": 71,
+    "y": 461.8,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 272
+   },
+   {
+    "key": "transfer_bank_address_line3",
+    "nominee": null,
+    "page": 1,
+    "x": 71,
+    "y": 474.2,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 272
+   },
+   {
+    "key": "mobile",
+    "nominee": null,
+    "page": 1,
+    "x": 145,
+    "y": 487.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 88
+   },
+   {
+    "key": "email",
+    "nominee": null,
+    "page": 1,
+    "x": 307,
+    "y": 490.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 157
+   },
+   {
+    "key": "non_pis_savings_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 262,
+    "y": 526.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 82
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 84,
+    "y": 683,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 106
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 212,
+    "y": 684,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 126
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 348,
+    "y": 685.5,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 120
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "branch_name": "typed",
+  "pis_permission_number": "typed",
+  "pis_savings_account_number": "typed",
+  "pis_cancellation_reason": "tick",
+  "transfer_bank_name": "typed",
+  "transfer_bank_address_line1": "typed",
+  "transfer_bank_address_line2": "typed",
+  "transfer_bank_address_line3": "typed",
+  "mobile": "typed",
+  "email": "typed",
+  "non_pis_savings_account_number": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed"
+ },
+ "formRules": {
+  "formId": "hdfc-pis-cancellation",
+  "group": "NFT",
+  "label": "PIS permission cancellation – HDFC Bank (NR accounts)",
+  "shortLabel": "HDFC PIS cancellation",
+  "purpose": "Cancel a PIS permission and close the PIS savings account",
+  "blankFileName": "HDFC Bank PIS Permission Cancellation Letter.pdf",
+  "keyFields": [
+   "PIS permission no",
+   "PIS account no"
+  ],
+  "sheetTabName": "HDFC PIS cancellation",
+  "detectionPhrases": [
+   "Cancellation of my PIS permission"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "pis",
+    "label": "Page 1 · PIS permission and accounts (Excel)",
+    "fields": [
+     "form_date",
+     "branch_name",
+     "pis_permission_number",
+     "pis_savings_account_number",
+     "pis_cancellation_reason",
+     "transfer_bank_name",
+     "transfer_bank_address_line1",
+     "transfer_bank_address_line2",
+     "transfer_bank_address_line3",
+     "mobile",
+     "email",
+     "non_pis_savings_account_number"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 1 · Account holders",
+    "fields": [
+     "first_holder_name",
+     "second_holder_name",
+     "third_holder_name"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "pis_permission_number",
+   "pis_savings_account_number"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     92,
+     72.2,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "branch_name",
+   "page": 1,
+   "lines": [
+    [
+     61,
+     122.05,
+     73.07,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "pis_permission_number",
+   "page": 1,
+   "lines": [
+    [
+     263,
+     197.7,
+     119.71,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "pis_savings_account_number",
+   "page": 1,
+   "lines": [
+    [
+     253,
+     224.4,
+     105.2,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "transfer_bank_name",
+   "page": 1,
+   "lines": [
+    [
+     260,
+     398.48,
+     87.53,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "transfer_bank_address_line1",
+   "page": 1,
+   "lines": [
+    [
+     71,
+     443.13,
+     128.92,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "transfer_bank_address_line2",
+   "page": 1,
+   "lines": [
+    [
+     71,
+     455.43,
+     128.92,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "transfer_bank_address_line3",
+   "page": 1,
+   "lines": [
+    [
+     71,
+     467.83,
+     128.92,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "mobile",
+   "page": 1,
+   "lines": [
+    [
+     145,
+     480.7,
+     58.24,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "email",
+   "page": 1,
+   "lines": [
+    [
+     307,
+     483.7,
+     53.79,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "non_pis_savings_account_number",
+   "page": 1,
+   "lines": [
+    [
+     262,
+     521.4,
+     118.54,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     84,
+     676.63,
+     92.54,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     212,
+     677.63,
+     104.63,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     348,
+     679.13,
+     95.04,
+     7.5
+    ]
+   ]
+  }
+ ]
+}

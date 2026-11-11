@@ -1,0 +1,92 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "iifl-demat-closure",
+  "group": "NFT",
+  "label": "Account closure – IIFL Capital trading / demat",
+  "shortLabel": "IIFL closure",
+  "purpose": "Close an IIFL trading / demat account",
+  "blankFileName": "IIFL Capital Account Closure Form.pdf",
+  "keyFields": [
+    "Login ID",
+    "Client ID",
+    "Reason"
+  ],
+  "sheetTabName": "IIFL closure",
+  "detectionPhrases": [
+    "IIFL Capital Services Limited",
+    "ACCOUNT CLOSURE REQUEST FORM"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "account",
+      "label": "Page 1 · Closure request (Excel)",
+      "fields": [
+        "closure_initiated_by",
+        "closure_for",
+        "segment",
+        "login_id",
+        "form_date",
+        "cdsl_dp_id",
+        "nsdl_dp_id",
+        "cdsl_client_id",
+        "nsdl_client_id"
+      ]
+    },
+    {
+      "key": "holders",
+      "label": "Page 1 · Account holders",
+      "fields": [
+        "first_holder_name",
+        "second_holder_name",
+        "third_holder_name",
+        "correspondence_address",
+        "city",
+        "state",
+        "pincode",
+        "first_holder_name_signed",
+        "second_holder_name_signed",
+        "third_holder_name_signed",
+        "mobile",
+        "rm_contact_number"
+      ]
+    },
+    {
+      "key": "reason",
+      "label": "Page 1 · Reason for closure (Excel)",
+      "fields": [
+        "closure_reason"
+      ]
+    },
+    {
+      "key": "balances",
+      "label": "Page 1 · Remaining balances (Excel)",
+      "fields": [
+        "balance_remaining",
+        "target_dp_id",
+        "target_client_id",
+        "balance_present"
+      ]
+    },
+    {
+      "key": "acknowledgement",
+      "label": "Page 1 · Acknowledgement receipt",
+      "fields": [
+        "form_date_acknowledgement",
+        "client_id_acknowledgement",
+        "first_holder_name_acknowledgement",
+        "second_holder_name_acknowledgement",
+        "third_holder_name_acknowledgement",
+        "closure_reason_acknowledgement"
+      ]
+    }
+  ]
+}

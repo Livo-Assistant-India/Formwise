@@ -1,0 +1,37 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-aadhaar-consent",
+  "group": "NFT",
+  "label": "Aadhaar e-KYC consent – HDFC Bank",
+  "shortLabel": "HDFC Aadhaar consent",
+  "purpose": "Customer consent to use Aadhaar / e-KYC",
+  "blankFileName": "HDFC Bank Aadhaar Consent Letter.pdf",
+  "keyFields": [
+    "Customer name",
+    "Branch"
+  ],
+  "sheetTabName": "HDFC Aadhaar consent",
+  "detectionPhrases": [
+    "APPLICATION FOR ACCOUNT OPENING USING AADHAAR"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "consent",
+      "label": "Page 1 · Consent letter",
+      "fields": [
+        "branch_name",
+        "first_holder_name",
+        "form_date"
+      ]
+    }
+  ]
+}

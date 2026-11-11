@@ -1,0 +1,306 @@
+{
+  "_about": "Where each value is written on the blank Account closure – IIFL Capital trading / demat (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "iifl-demat-closure",
+  "title": "Account closure – IIFL Capital trading / demat",
+  "fields": [
+    {
+      "key": "login_id",
+      "nominee": null,
+      "page": 1,
+      "x": 65.3,
+      "y": 163.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          65.3,
+          176,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 479.5,
+      "y": 167.2,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          479.5,
+          90.72,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "cdsl_client_id",
+      "nominee": null,
+      "page": 1,
+      "x": 88,
+      "y": 204.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          88,
+          152.96,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "nsdl_client_id",
+      "nominee": null,
+      "page": 1,
+      "x": 317.3,
+      "y": 204.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          317.3,
+          152.96,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 163,
+      "y": 266,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 190
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 163,
+      "y": 283,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 190
+    },
+    {
+      "key": "third_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 163,
+      "y": 300,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 190
+    },
+    {
+      "key": "correspondence_address",
+      "nominee": null,
+      "page": 1,
+      "x": 154,
+      "y": 315.5,
+      "fontSize": 6.5,
+      "type": "multiline",
+      "maxWidth": 198,
+      "maxY": 333
+    },
+    {
+      "key": "city",
+      "nominee": null,
+      "page": 1,
+      "x": 53,
+      "y": 349.9,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 80
+    },
+    {
+      "key": "state",
+      "nominee": null,
+      "page": 1,
+      "x": 162,
+      "y": 349.9,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 110
+    },
+    {
+      "key": "pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 294,
+      "y": 349.9,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 60
+    },
+    {
+      "key": "closure_reason",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 379.8,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 395
+    },
+    {
+      "key": "target_dp_id",
+      "nominee": null,
+      "page": 1,
+      "x": 63.7,
+      "y": 443.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          63.7,
+          206,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "target_client_id",
+      "nominee": null,
+      "page": 1,
+      "x": 339,
+      "y": 443.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          339,
+          206,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "first_holder_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 100,
+      "y": 530,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 152
+    },
+    {
+      "key": "second_holder_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 258,
+      "y": 530,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 152
+    },
+    {
+      "key": "third_holder_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 416,
+      "y": 530,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 152
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 148,
+      "y": 712,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 92
+    },
+    {
+      "key": "rm_contact_number",
+      "nominee": null,
+      "page": 1,
+      "x": 404,
+      "y": 712,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 165
+    },
+    {
+      "key": "form_date_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 479.5,
+      "y": 814.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          479.5,
+          90.72,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "client_id_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 444,
+      "y": 837.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          444,
+          132,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "first_holder_name_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 128,
+      "y": 851.5,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 445
+    },
+    {
+      "key": "second_holder_name_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 128,
+      "y": 865,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 445
+    },
+    {
+      "key": "third_holder_name_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 128,
+      "y": 878.5,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 445
+    },
+    {
+      "key": "closure_reason_acknowledgement",
+      "nominee": null,
+      "page": 1,
+      "x": 128,
+      "y": 891.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 445
+    }
+  ]
+}

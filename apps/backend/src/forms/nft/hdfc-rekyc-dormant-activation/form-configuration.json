@@ -1,0 +1,546 @@
+{
+  "_about": "Dormant activation & re-KYC – HDFC Bank (resident individuals). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-rekyc-dormant-activation",
+  "title": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 364,
+      "y": 677,
+      "w": 204,
+      "h": 39,
+      "signer": "subscriber",
+      "label": "Applicant signature"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "occupation",
+      "page": 1,
+      "w": 9.7,
+      "h": 9.7,
+      "options": [
+        "Salaried",
+        "Self-employed",
+        "Retired",
+        "Self-employed professional",
+        "Student",
+        "Housewife",
+        "Politician",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Salaried": [
+          {
+            "x": 62,
+            "y": 251.46
+          }
+        ],
+        "Self-employed": [
+          {
+            "x": 123,
+            "y": 251.46
+          }
+        ],
+        "Retired": [
+          {
+            "x": 189,
+            "y": 251.46
+          }
+        ],
+        "Self-employed professional": [
+          {
+            "x": 249.7,
+            "y": 251.46
+          }
+        ],
+        "Student": [
+          {
+            "x": 315,
+            "y": 251.46
+          }
+        ],
+        "Housewife": [
+          {
+            "x": 372.7,
+            "y": 251.46
+          }
+        ],
+        "Politician": [
+          {
+            "x": 438.7,
+            "y": 251.46
+          }
+        ],
+        "Others": [
+          {
+            "x": 498.3,
+            "y": 251.46
+          }
+        ]
+      }
+    },
+    {
+      "key": "employer_type",
+      "page": 1,
+      "w": 9.7,
+      "h": 9.7,
+      "options": [
+        "Private Limited",
+        "Proprietorship",
+        "Public sector",
+        "Multinational",
+        "Partnership",
+        "Public Limited",
+        "Government",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Private Limited": [
+          {
+            "x": 62,
+            "y": 272.76
+          }
+        ],
+        "Proprietorship": [
+          {
+            "x": 123,
+            "y": 272.76
+          }
+        ],
+        "Public sector": [
+          {
+            "x": 189,
+            "y": 272.76
+          }
+        ],
+        "Multinational": [
+          {
+            "x": 249.7,
+            "y": 272.76
+          }
+        ],
+        "Partnership": [
+          {
+            "x": 315,
+            "y": 272.76
+          }
+        ],
+        "Public Limited": [
+          {
+            "x": 372.7,
+            "y": 272.76
+          }
+        ],
+        "Government": [
+          {
+            "x": 438.7,
+            "y": 272.76
+          }
+        ],
+        "Others": [
+          {
+            "x": 498.3,
+            "y": 272.76
+          }
+        ]
+      }
+    },
+    {
+      "key": "source_of_funds",
+      "page": 1,
+      "w": 9.7,
+      "h": 9.7,
+      "options": [
+        "Salary",
+        "Agriculture",
+        "Business income",
+        "Investment income",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Salary": [
+          {
+            "x": 62,
+            "y": 407.76
+          }
+        ],
+        "Agriculture": [
+          {
+            "x": 106.3,
+            "y": 407.76
+          }
+        ],
+        "Business income": [
+          {
+            "x": 184.7,
+            "y": 407.76
+          }
+        ],
+        "Investment income": [
+          {
+            "x": 245.7,
+            "y": 407.76
+          }
+        ],
+        "Others": [
+          {
+            "x": 306.3,
+            "y": 407.76
+          }
+        ]
+      }
+    },
+    {
+      "key": "gross_annual_income_range",
+      "page": 1,
+      "w": 9.7,
+      "h": 9.7,
+      "options": [
+        "< 50,000",
+        "50,000 - 1 Lac",
+        "1 - 3 Lac",
+        "3 - 5 Lac",
+        "5 - 7.5 Lac",
+        "7.5 - 10 Lac",
+        "10 - 15 Lac",
+        "> 15.25 Lac",
+        "> 25.50 Lac",
+        "> 50 Lac - 1 Cr",
+        "> 1 Cr"
+      ],
+      "boxesByOption": {
+        "< 50,000": [
+          {
+            "x": 62,
+            "y": 429.06
+          }
+        ],
+        "50,000 - 1 Lac": [
+          {
+            "x": 107,
+            "y": 429.06
+          }
+        ],
+        "1 - 3 Lac": [
+          {
+            "x": 184.7,
+            "y": 429.06
+          }
+        ],
+        "3 - 5 Lac": [
+          {
+            "x": 245.7,
+            "y": 429.06
+          }
+        ],
+        "5 - 7.5 Lac": [
+          {
+            "x": 306.3,
+            "y": 429.06
+          }
+        ],
+        "7.5 - 10 Lac": [
+          {
+            "x": 369.7,
+            "y": 429.06
+          }
+        ],
+        "10 - 15 Lac": [
+          {
+            "x": 429.7,
+            "y": 429.06
+          }
+        ],
+        "> 15.25 Lac": [
+          {
+            "x": 487.3,
+            "y": 429.06
+          }
+        ],
+        "> 25.50 Lac": [
+          {
+            "x": 62,
+            "y": 441.46
+          }
+        ],
+        "> 50 Lac - 1 Cr": [
+          {
+            "x": 184.7,
+            "y": 441.46
+          }
+        ],
+        "> 1 Cr": [
+          {
+            "x": 245.7,
+            "y": 441.46
+          }
+        ]
+      }
+    },
+    {
+      "key": "residence_type",
+      "page": 1,
+      "w": 9.7,
+      "h": 9.7,
+      "options": [
+        "Owned",
+        "Rental / Leased",
+        "Ancestral / Family",
+        "Company provided"
+      ],
+      "boxesByOption": {
+        "Owned": [
+          {
+            "x": 62,
+            "y": 460.76
+          }
+        ],
+        "Rental / Leased": [
+          {
+            "x": 123,
+            "y": 460.76
+          }
+        ],
+        "Ancestral / Family": [
+          {
+            "x": 184.7,
+            "y": 460.76
+          }
+        ],
+        "Company provided": [
+          {
+            "x": 245.7,
+            "y": 460.76
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_resident_outside_india",
+      "page": 2,
+      "w": 8.6,
+      "h": 8.6,
+      "options": [
+        "Yes - tax resident outside India"
+      ],
+      "boxesByOption": {
+        "Yes - tax resident outside India": [
+          {
+            "x": 323.7,
+            "y": 79.78
+          }
+        ]
+      }
+    },
+    {
+      "key": "marital_status",
+      "page": 2,
+      "w": 8.7,
+      "h": 8.7,
+      "options": [
+        "Married",
+        "Unmarried",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Married": [
+          {
+            "x": 136.5,
+            "y": 140.86
+          }
+        ],
+        "Unmarried": [
+          {
+            "x": 187.5,
+            "y": 141.06
+          }
+        ],
+        "Others": [
+          {
+            "x": 253.1,
+            "y": 141.76
+          }
+        ]
+      }
+    },
+    {
+      "key": "identity_document_type",
+      "page": 2,
+      "w": 8.7,
+      "h": 8.7,
+      "options": [
+        "Passport",
+        "Driving licence",
+        "Aadhaar card / letter",
+        "Election / Voter's ID",
+        "NREGA card",
+        "NPR letter"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 136.6,
+            "y": 158.86
+          }
+        ],
+        "Driving licence": [
+          {
+            "x": 136.6,
+            "y": 171.86
+          }
+        ],
+        "Aadhaar card / letter": [
+          {
+            "x": 136.6,
+            "y": 184.56
+          }
+        ],
+        "Election / Voter's ID": [
+          {
+            "x": 136.6,
+            "y": 196.56
+          }
+        ],
+        "NREGA card": [
+          {
+            "x": 241.1,
+            "y": 196.46
+          }
+        ],
+        "NPR letter": [
+          {
+            "x": 136.6,
+            "y": 209.06
+          }
+        ]
+      }
+    },
+    {
+      "key": "residential_status",
+      "page": 2,
+      "w": 8.7,
+      "h": 8.7,
+      "options": [
+        "Resident individual",
+        "Non-resident Indian",
+        "Foreign national",
+        "Person of Indian origin"
+      ],
+      "boxesByOption": {
+        "Resident individual": [
+          {
+            "x": 136.5,
+            "y": 259.26
+          }
+        ],
+        "Non-resident Indian": [
+          {
+            "x": 220.4,
+            "y": 259.46
+          }
+        ],
+        "Foreign national": [
+          {
+            "x": 136.5,
+            "y": 273.06
+          }
+        ],
+        "Person of Indian origin": [
+          {
+            "x": 220.5,
+            "y": 272.86
+          }
+        ]
+      }
+    },
+    {
+      "key": "address_proof_type",
+      "page": 2,
+      "w": 8.7,
+      "h": 8.7,
+      "options": [
+        "Passport",
+        "Driving licence",
+        "Aadhaar card / letter",
+        "Election / Voter's ID",
+        "NREGA card",
+        "NPR letter"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 137.9,
+            "y": 345.66
+          }
+        ],
+        "Driving licence": [
+          {
+            "x": 137.9,
+            "y": 358.06
+          }
+        ],
+        "Aadhaar card / letter": [
+          {
+            "x": 137.8,
+            "y": 371.26
+          }
+        ],
+        "Election / Voter's ID": [
+          {
+            "x": 138,
+            "y": 383.36
+          }
+        ],
+        "NREGA card": [
+          {
+            "x": 232.1,
+            "y": 383.36
+          }
+        ],
+        "NPR letter": [
+          {
+            "x": 137.8,
+            "y": 395.46
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank ReKYC cum Dormant Activation Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 2,
+      "y": 332.9,
+      "why": "Visa expiry date: only for NRI / foreign nationals"
+    },
+    {
+      "page": 2,
+      "y": 743.7,
+      "why": "For bank use"
+    },
+    {
+      "page": 2,
+      "y": 761.3,
+      "why": "For bank use"
+    },
+    {
+      "page": 2,
+      "y": 778.3,
+      "why": "For bank use"
+    },
+    {
+      "page": 2,
+      "y": 794.2,
+      "why": "For bank use"
+    },
+    {
+      "page": 2,
+      "y": 844.3,
+      "why": "Customer acknowledgement copy: filled by the bank"
+    }
+  ]
+}

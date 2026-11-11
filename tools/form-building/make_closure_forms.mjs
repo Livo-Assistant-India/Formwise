@@ -7,10 +7,12 @@
 // Spots were measured with boxes.py / scan_boxes.py and the drawn underlines. Sources: the first holder's name from the
 // KYC documents, everything else typed (Excel); other holders typed; tick boxes are answered per client, never assumed.
 // Change this file, never the generated folders.
-// usage (from the repo root): node tools/form-building/make_closure_forms.mjs [form-id]
+// More forms: closure-forms-second-batch.mjs. usage (from the repo root): python -I tools/form-building/make_closure_blanks.py,
+// then node tools/form-building/make_closure_forms.mjs [form-id]
 import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { comb, multiline, text, tick } from "./gift-feeder-application-pages.mjs";
+import { SECOND_BATCH } from "./closure-forms-second-batch.mjs";
 
 const SOURCE_FOLDER = "../Account Closure Forms";
 const NAME = "document.name|upper";
@@ -207,7 +209,8 @@ function writeForm(form) {
   const folder = path.join("apps/backend/src/forms/nft", form.formId);
   const writeJson = (fileName, content) => writeFileSync(path.join(folder, fileName), JSON.stringify(content, null, 2) + "\n");
   mkdirSync(folder, { recursive: true });
-  copyFileSync(path.join(SOURCE_FOLDER, form.sourcePdf), path.join("data/Blank Forms", form.blankFileName));
+  // A prebuilt blank (e.g. the rotated PIS scan) is made by make_closure_blanks.py instead of copied.
+  if (!form.prebuiltBlank) copyFileSync(path.join(SOURCE_FOLDER, form.sourcePdf), path.join("data/Blank Forms", form.blankFileName));
   const fields = form.fields();
   const duplicateKeys = fields.map((field) => field.key).filter((key, index, keys) => keys.indexOf(key) !== index);
   if (duplicateKeys.length) throw new Error(`${form.formId}: duplicate keys ${duplicateKeys.join(", ")}`);
@@ -238,4 +241,4 @@ function writeForm(form) {
 }
 
 const onlyFormId = process.argv[2];
-for (const form of FORMS) if (!onlyFormId || form.formId === onlyFormId) writeForm(form);
+for (const form of [...FORMS, ...SECOND_BATCH]) if (!onlyFormId || form.formId === onlyFormId) writeForm(form);

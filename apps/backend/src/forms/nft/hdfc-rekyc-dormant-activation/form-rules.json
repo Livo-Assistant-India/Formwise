@@ -1,0 +1,97 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-rekyc-dormant-activation",
+  "group": "NFT",
+  "label": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "shortLabel": "HDFC re-KYC dormant activation",
+  "purpose": "Reactivate a dormant account and update KYC",
+  "blankFileName": "HDFC Bank ReKYC cum Dormant Activation Form.pdf",
+  "keyFields": [
+    "Customer ID",
+    "Account number",
+    "PAN"
+  ],
+  "sheetTabName": "HDFC re-KYC dormant activation",
+  "detectionPhrases": [
+    "EXTENDED KYC",
+    "AADHAAR CONSENT DECLARATION"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "personal",
+      "label": "Page 1 · Customer (KYC + Excel)",
+      "fields": [
+        "customer_id",
+        "account_number",
+        "name_prefix",
+        "first_holder_name",
+        "pan"
+      ]
+    },
+    {
+      "key": "occupation",
+      "label": "Page 1 · Occupation and income (Excel)",
+      "fields": [
+        "occupation",
+        "employer_type",
+        "source_of_funds",
+        "gross_annual_income_range",
+        "residence_type"
+      ]
+    },
+    {
+      "key": "mailing",
+      "label": "Page 1 · Mailing address and contact (Excel)",
+      "fields": [
+        "mailing_address_line1",
+        "mailing_address_line2",
+        "mailing_landmark",
+        "mailing_city",
+        "mailing_pincode",
+        "mailing_state",
+        "mailing_country",
+        "email",
+        "mobile"
+      ]
+    },
+    {
+      "key": "permanent",
+      "label": "Page 1 · Permanent address (KYC)",
+      "fields": [
+        "residence_address_line1",
+        "residence_address_line2",
+        "residence_landmark",
+        "residence_city",
+        "residence_pincode",
+        "residence_state",
+        "residence_country"
+      ]
+    },
+    {
+      "key": "extended-kyc",
+      "label": "Page 2 · Extended KYC (Excel)",
+      "fields": [
+        "tax_resident_outside_india",
+        "maiden_name",
+        "father_name",
+        "spouse_name",
+        "marital_status",
+        "identity_document_type",
+        "identity_document_number",
+        "residential_status",
+        "address_proof_type",
+        "address_proof_number",
+        "nationality"
+      ]
+    }
+  ]
+}

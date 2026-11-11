@@ -117,10 +117,21 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 | Account closure – 360 ONE broking & demat | `broking-demat-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | Account closure – 360 ONE PMS (AMC) | `pms-account-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | Dormant account activation – HDFC Bank (letter) | `hdfc-dormant-activation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
-| Account closure: rest of `C:\zzz\demo\Account Closure Forms` (≈20 more, 15 are Word files) | | ⬜ | | | | | |
+| Aadhaar e-KYC consent – HDFC Bank | `hdfc-aadhaar-consent` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Dormant activation & re-KYC – HDFC Bank (resident individuals) | `hdfc-rekyc-dormant-activation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – IIFL Capital trading / demat | `iifl-demat-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| PIS permission cancellation – HDFC Bank (NR accounts) | `hdfc-pis-cancellation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – HSBC PMS accounts (UBS format) | `hsbc-pms-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure: rest of `C:\zzz\demo\Account Closure Forms` (RBI DEAF ×2, non-individual dormant re-KYC, 15 Word files) | | ⬜ | | | | | |
 | The other NFT forms (waiting for 360 ONE's forms and field lists) | | ❓ | | | | | |
 
 Account closure notes (10 Nov): files in `C:\zzz\demo\Account Closure Forms`; the same form often repeats across the
 Individual / Non-Individual and Bank / PMS / Demat folders (identical text). Built from `tools/form-building/make_closure_forms.mjs`.
 - HDFC demat closure: built on REVISED1 (Ver 1.02 Oct 2021, a scan); the custodian's address is printed on it.
 - No field sheet for closure forms: first holder's name from KYC, everything else from the Excel.
+- "Demat Closure form.pdf" (Demat folder) is the same file as the 360 ONE broking & demat closure (pixel-identical);
+  IndusInd "Closure Broking PMS" differs by 0.5% - check before building it as a separate form.
+- PIS cancellation letter is a rotated scan with no text: its blank is redrawn upright with a hidden text layer by
+  `tools/form-building/make_closure_blanks.py` (run it before make_closure_forms.mjs).
+- UI test of the second five was run through the app's API (Chrome extension disconnected): upload, Excel import,
+  fill and PDF checked; the Review screen itself was not opened for these five.

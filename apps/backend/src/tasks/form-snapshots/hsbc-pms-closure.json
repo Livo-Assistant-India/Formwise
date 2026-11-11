@@ -1,0 +1,319 @@
+{
+ "formId": "hsbc-pms-closure",
+ "pageCount": 1,
+ "configuration": {
+  "id": "hsbc-pms-closure",
+  "title": "Account closure – HSBC PMS accounts (UBS format)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 90,
+    "y": 390.2,
+    "w": 120,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Account holder 1"
+   },
+   {
+    "page": 1,
+    "x": 234.1,
+    "y": 390.2,
+    "w": 119.9,
+    "h": 24,
+    "signer": "joint_holder",
+    "label": "Account holder 2"
+   },
+   {
+    "page": 1,
+    "x": 378.1,
+    "y": 390.2,
+    "w": 120,
+    "h": 24,
+    "signer": "third_holder",
+    "label": "Account holder 3"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HSBC PMS Accounts Closure Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Account closure – HSBC PMS accounts (UBS format) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hsbc-pms-closure",
+  "title": "Account closure – HSBC PMS accounts (UBS format)",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 125,
+    "y": 140.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "cash_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 236,
+    "y": 233.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 164
+   },
+   {
+    "key": "custody_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 236,
+    "y": 274.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 164
+   },
+   {
+    "key": "nsdl_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 236,
+    "y": 302.3,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 164
+   },
+   {
+    "key": "pis_permission_number",
+    "nominee": null,
+    "page": 1,
+    "x": 236,
+    "y": 329.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 164
+   },
+   {
+    "key": "pis_permission_date",
+    "nominee": null,
+    "page": 1,
+    "x": 439,
+    "y": 329.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 70
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 92,
+    "y": 454,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 122
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 236,
+    "y": 454,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 122
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 380,
+    "y": 454,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 122
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "cash_account_number": "typed",
+  "custody_account_number": "typed",
+  "nsdl_account_number": "typed",
+  "pis_permission_number": "typed",
+  "pis_permission_date": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed"
+ },
+ "formRules": {
+  "formId": "hsbc-pms-closure",
+  "group": "NFT",
+  "label": "Account closure – HSBC PMS accounts (UBS format)",
+  "shortLabel": "HSBC PMS closure",
+  "purpose": "Close the HSBC cash, custody, NSDL and PIS accounts opened for PMS",
+  "blankFileName": "HSBC PMS Accounts Closure Letter.pdf",
+  "keyFields": [
+   "Cash account",
+   "Custody account",
+   "NSDL account"
+  ],
+  "sheetTabName": "HSBC PMS closure",
+  "detectionPhrases": [
+   "Hongkong And Shanghai Banking Corporation",
+   "opened for the purpose of investments through PMS"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "accounts",
+    "label": "Page 1 · Accounts to close (Excel)",
+    "fields": [
+     "form_date",
+     "cash_account_number",
+     "custody_account_number",
+     "nsdl_account_number",
+     "pis_permission_number",
+     "pis_permission_date"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 1 · Account holders",
+    "fields": [
+     "first_holder_name",
+     "second_holder_name",
+     "third_holder_name"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "cash_account_number"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     125,
+     133.9,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "cash_account_number",
+   "page": 1,
+   "lines": [
+    [
+     236,
+     226.4,
+     115.53,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "custody_account_number",
+   "page": 1,
+   "lines": [
+    [
+     236,
+     267.9,
+     126.2,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "nsdl_account_number",
+   "page": 1,
+   "lines": [
+    [
+     236,
+     295.5,
+     113.3,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "pis_permission_number",
+   "page": 1,
+   "lines": [
+    [
+     236,
+     323.1,
+     119.71,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "pis_permission_date",
+   "page": 1,
+   "lines": [
+    [
+     439,
+     324.8,
+     81.18,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     92,
+     447.2,
+     98.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     236,
+     447.2,
+     111.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     380,
+     447.2,
+     101.38,
+     8
+    ]
+   ]
+  }
+ ]
+}

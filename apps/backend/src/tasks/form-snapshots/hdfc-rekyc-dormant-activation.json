@@ -1,0 +1,1433 @@
+{
+ "formId": "hdfc-rekyc-dormant-activation",
+ "pageCount": 2,
+ "configuration": {
+  "id": "hdfc-rekyc-dormant-activation",
+  "title": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "signatureBoxes": [
+   {
+    "page": 2,
+    "x": 364,
+    "y": 677,
+    "w": 204,
+    "h": 39,
+    "signer": "subscriber",
+    "label": "Applicant signature"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "occupation",
+    "page": 1,
+    "w": 9.7,
+    "h": 9.7,
+    "options": [
+     "Salaried",
+     "Self-employed",
+     "Retired",
+     "Self-employed professional",
+     "Student",
+     "Housewife",
+     "Politician",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Salaried": [
+      {
+       "x": 62,
+       "y": 251.46
+      }
+     ],
+     "Self-employed": [
+      {
+       "x": 123,
+       "y": 251.46
+      }
+     ],
+     "Retired": [
+      {
+       "x": 189,
+       "y": 251.46
+      }
+     ],
+     "Self-employed professional": [
+      {
+       "x": 249.7,
+       "y": 251.46
+      }
+     ],
+     "Student": [
+      {
+       "x": 315,
+       "y": 251.46
+      }
+     ],
+     "Housewife": [
+      {
+       "x": 372.7,
+       "y": 251.46
+      }
+     ],
+     "Politician": [
+      {
+       "x": 438.7,
+       "y": 251.46
+      }
+     ],
+     "Others": [
+      {
+       "x": 498.3,
+       "y": 251.46
+      }
+     ]
+    }
+   },
+   {
+    "key": "employer_type",
+    "page": 1,
+    "w": 9.7,
+    "h": 9.7,
+    "options": [
+     "Private Limited",
+     "Proprietorship",
+     "Public sector",
+     "Multinational",
+     "Partnership",
+     "Public Limited",
+     "Government",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Private Limited": [
+      {
+       "x": 62,
+       "y": 272.76
+      }
+     ],
+     "Proprietorship": [
+      {
+       "x": 123,
+       "y": 272.76
+      }
+     ],
+     "Public sector": [
+      {
+       "x": 189,
+       "y": 272.76
+      }
+     ],
+     "Multinational": [
+      {
+       "x": 249.7,
+       "y": 272.76
+      }
+     ],
+     "Partnership": [
+      {
+       "x": 315,
+       "y": 272.76
+      }
+     ],
+     "Public Limited": [
+      {
+       "x": 372.7,
+       "y": 272.76
+      }
+     ],
+     "Government": [
+      {
+       "x": 438.7,
+       "y": 272.76
+      }
+     ],
+     "Others": [
+      {
+       "x": 498.3,
+       "y": 272.76
+      }
+     ]
+    }
+   },
+   {
+    "key": "source_of_funds",
+    "page": 1,
+    "w": 9.7,
+    "h": 9.7,
+    "options": [
+     "Salary",
+     "Agriculture",
+     "Business income",
+     "Investment income",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Salary": [
+      {
+       "x": 62,
+       "y": 407.76
+      }
+     ],
+     "Agriculture": [
+      {
+       "x": 106.3,
+       "y": 407.76
+      }
+     ],
+     "Business income": [
+      {
+       "x": 184.7,
+       "y": 407.76
+      }
+     ],
+     "Investment income": [
+      {
+       "x": 245.7,
+       "y": 407.76
+      }
+     ],
+     "Others": [
+      {
+       "x": 306.3,
+       "y": 407.76
+      }
+     ]
+    }
+   },
+   {
+    "key": "gross_annual_income_range",
+    "page": 1,
+    "w": 9.7,
+    "h": 9.7,
+    "options": [
+     "< 50,000",
+     "50,000 - 1 Lac",
+     "1 - 3 Lac",
+     "3 - 5 Lac",
+     "5 - 7.5 Lac",
+     "7.5 - 10 Lac",
+     "10 - 15 Lac",
+     "> 15.25 Lac",
+     "> 25.50 Lac",
+     "> 50 Lac - 1 Cr",
+     "> 1 Cr"
+    ],
+    "boxesByOption": {
+     "< 50,000": [
+      {
+       "x": 62,
+       "y": 429.06
+      }
+     ],
+     "50,000 - 1 Lac": [
+      {
+       "x": 107,
+       "y": 429.06
+      }
+     ],
+     "1 - 3 Lac": [
+      {
+       "x": 184.7,
+       "y": 429.06
+      }
+     ],
+     "3 - 5 Lac": [
+      {
+       "x": 245.7,
+       "y": 429.06
+      }
+     ],
+     "5 - 7.5 Lac": [
+      {
+       "x": 306.3,
+       "y": 429.06
+      }
+     ],
+     "7.5 - 10 Lac": [
+      {
+       "x": 369.7,
+       "y": 429.06
+      }
+     ],
+     "10 - 15 Lac": [
+      {
+       "x": 429.7,
+       "y": 429.06
+      }
+     ],
+     "> 15.25 Lac": [
+      {
+       "x": 487.3,
+       "y": 429.06
+      }
+     ],
+     "> 25.50 Lac": [
+      {
+       "x": 62,
+       "y": 441.46
+      }
+     ],
+     "> 50 Lac - 1 Cr": [
+      {
+       "x": 184.7,
+       "y": 441.46
+      }
+     ],
+     "> 1 Cr": [
+      {
+       "x": 245.7,
+       "y": 441.46
+      }
+     ]
+    }
+   },
+   {
+    "key": "residence_type",
+    "page": 1,
+    "w": 9.7,
+    "h": 9.7,
+    "options": [
+     "Owned",
+     "Rental / Leased",
+     "Ancestral / Family",
+     "Company provided"
+    ],
+    "boxesByOption": {
+     "Owned": [
+      {
+       "x": 62,
+       "y": 460.76
+      }
+     ],
+     "Rental / Leased": [
+      {
+       "x": 123,
+       "y": 460.76
+      }
+     ],
+     "Ancestral / Family": [
+      {
+       "x": 184.7,
+       "y": 460.76
+      }
+     ],
+     "Company provided": [
+      {
+       "x": 245.7,
+       "y": 460.76
+      }
+     ]
+    }
+   },
+   {
+    "key": "tax_resident_outside_india",
+    "page": 2,
+    "w": 8.6,
+    "h": 8.6,
+    "options": [
+     "Yes - tax resident outside India"
+    ],
+    "boxesByOption": {
+     "Yes - tax resident outside India": [
+      {
+       "x": 323.7,
+       "y": 79.78
+      }
+     ]
+    }
+   },
+   {
+    "key": "marital_status",
+    "page": 2,
+    "w": 8.7,
+    "h": 8.7,
+    "options": [
+     "Married",
+     "Unmarried",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Married": [
+      {
+       "x": 136.5,
+       "y": 140.86
+      }
+     ],
+     "Unmarried": [
+      {
+       "x": 187.5,
+       "y": 141.06
+      }
+     ],
+     "Others": [
+      {
+       "x": 253.1,
+       "y": 141.76
+      }
+     ]
+    }
+   },
+   {
+    "key": "identity_document_type",
+    "page": 2,
+    "w": 8.7,
+    "h": 8.7,
+    "options": [
+     "Passport",
+     "Driving licence",
+     "Aadhaar card / letter",
+     "Election / Voter's ID",
+     "NREGA card",
+     "NPR letter"
+    ],
+    "boxesByOption": {
+     "Passport": [
+      {
+       "x": 136.6,
+       "y": 158.86
+      }
+     ],
+     "Driving licence": [
+      {
+       "x": 136.6,
+       "y": 171.86
+      }
+     ],
+     "Aadhaar card / letter": [
+      {
+       "x": 136.6,
+       "y": 184.56
+      }
+     ],
+     "Election / Voter's ID": [
+      {
+       "x": 136.6,
+       "y": 196.56
+      }
+     ],
+     "NREGA card": [
+      {
+       "x": 241.1,
+       "y": 196.46
+      }
+     ],
+     "NPR letter": [
+      {
+       "x": 136.6,
+       "y": 209.06
+      }
+     ]
+    }
+   },
+   {
+    "key": "residential_status",
+    "page": 2,
+    "w": 8.7,
+    "h": 8.7,
+    "options": [
+     "Resident individual",
+     "Non-resident Indian",
+     "Foreign national",
+     "Person of Indian origin"
+    ],
+    "boxesByOption": {
+     "Resident individual": [
+      {
+       "x": 136.5,
+       "y": 259.26
+      }
+     ],
+     "Non-resident Indian": [
+      {
+       "x": 220.4,
+       "y": 259.46
+      }
+     ],
+     "Foreign national": [
+      {
+       "x": 136.5,
+       "y": 273.06
+      }
+     ],
+     "Person of Indian origin": [
+      {
+       "x": 220.5,
+       "y": 272.86
+      }
+     ]
+    }
+   },
+   {
+    "key": "address_proof_type",
+    "page": 2,
+    "w": 8.7,
+    "h": 8.7,
+    "options": [
+     "Passport",
+     "Driving licence",
+     "Aadhaar card / letter",
+     "Election / Voter's ID",
+     "NREGA card",
+     "NPR letter"
+    ],
+    "boxesByOption": {
+     "Passport": [
+      {
+       "x": 137.9,
+       "y": 345.66
+      }
+     ],
+     "Driving licence": [
+      {
+       "x": 137.9,
+       "y": 358.06
+      }
+     ],
+     "Aadhaar card / letter": [
+      {
+       "x": 137.8,
+       "y": 371.26
+      }
+     ],
+     "Election / Voter's ID": [
+      {
+       "x": 138,
+       "y": 383.36
+      }
+     ],
+     "NREGA card": [
+      {
+       "x": 232.1,
+       "y": 383.36
+      }
+     ],
+     "NPR letter": [
+      {
+       "x": 137.8,
+       "y": 395.46
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 2,
+    "y": 332.9,
+    "why": "Visa expiry date: only for NRI / foreign nationals"
+   },
+   {
+    "page": 2,
+    "y": 743.7,
+    "why": "For bank use"
+   },
+   {
+    "page": 2,
+    "y": 761.3,
+    "why": "For bank use"
+   },
+   {
+    "page": 2,
+    "y": 778.3,
+    "why": "For bank use"
+   },
+   {
+    "page": 2,
+    "y": 794.2,
+    "why": "For bank use"
+   },
+   {
+    "page": 2,
+    "y": 844.3,
+    "why": "Customer acknowledgement copy: filled by the bank"
+   }
+  ],
+  "labels": [],
+  "blankFileName": "HDFC Bank ReKYC cum Dormant Activation Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Dormant activation & re-KYC – HDFC Bank (resident individuals) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-rekyc-dormant-activation",
+  "title": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "fields": [
+   {
+    "key": "customer_id",
+    "nominee": null,
+    "page": 1,
+    "x": 69,
+    "y": 150.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      69,
+      142,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 292.3,
+    "y": 150.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      292.3,
+      198.66,
+      14
+     ]
+    ]
+   },
+   {
+    "key": "name_prefix",
+    "nominee": null,
+    "page": 1,
+    "x": 13.3,
+    "y": 187.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      13.3,
+      57.4,
+      4
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 83.3,
+    "y": 187.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      83.3,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "pan",
+    "nominee": null,
+    "page": 1,
+    "x": 196.7,
+    "y": 201.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      196.7,
+      142.3,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "mailing_address_line1",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 528.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_address_line2",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 543.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_landmark",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 557.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_city",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 571.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      269.61,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_pincode",
+    "nominee": null,
+    "page": 1,
+    "x": 368,
+    "y": 571.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      368,
+      85.32,
+      6
+     ]
+    ]
+   },
+   {
+    "key": "mailing_state",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 585.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      269.61,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_country",
+    "nominee": null,
+    "page": 1,
+    "x": 368,
+    "y": 585.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      368,
+      184.73,
+      13
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "email",
+    "nominee": null,
+    "page": 1,
+    "x": 58,
+    "y": 614,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 492
+   },
+   {
+    "key": "mobile",
+    "nominee": null,
+    "page": 1,
+    "x": 197.7,
+    "y": 628.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      197.7,
+      142.3,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "residence_address_line1",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 675.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residence_address_line2",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 690.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residence_landmark",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 704.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      496.65,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residence_city",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 718.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      269.61,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residence_pincode",
+    "nominee": null,
+    "page": 1,
+    "x": 368,
+    "y": 718.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      368,
+      85.32,
+      6
+     ]
+    ]
+   },
+   {
+    "key": "residence_state",
+    "nominee": null,
+    "page": 1,
+    "x": 56,
+    "y": 732.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      56,
+      269.61,
+      19
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "residence_country",
+    "nominee": null,
+    "page": 1,
+    "x": 368,
+    "y": 732.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      368,
+      184.73,
+      13
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "maiden_name",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 66,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   },
+   {
+    "key": "father_name",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 98,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   },
+   {
+    "key": "spouse_name",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 120,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   },
+   {
+    "key": "identity_document_number",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 234,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   },
+   {
+    "key": "address_proof_number",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 414,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   },
+   {
+    "key": "nationality",
+    "nominee": null,
+    "page": 2,
+    "x": 137,
+    "y": 485,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 175
+   }
+  ]
+ },
+ "fieldSources": {
+  "customer_id": "typed",
+  "account_number": "typed",
+  "name_prefix": "typed",
+  "first_holder_name": "document.name|upper",
+  "pan": "document.pan",
+  "occupation": "tick",
+  "employer_type": "tick",
+  "source_of_funds": "tick",
+  "gross_annual_income_range": "tick",
+  "residence_type": "tick",
+  "mailing_address_line1": "typed",
+  "mailing_address_line2": "typed",
+  "mailing_landmark": "typed",
+  "mailing_city": "typed",
+  "mailing_pincode": "typed",
+  "mailing_state": "typed",
+  "mailing_country": "typed",
+  "email": "typed",
+  "mobile": "typed",
+  "residence_address_line1": "document.street|addressLine1|upper",
+  "residence_address_line2": "document.street|addressLine2|upper",
+  "residence_landmark": "typed",
+  "residence_city": "document.city|upper",
+  "residence_pincode": "document.pincode",
+  "residence_state": "document.state|upper",
+  "residence_country": "document.country|upper",
+  "tax_resident_outside_india": "tick",
+  "maiden_name": "typed",
+  "father_name": "typed",
+  "spouse_name": "typed",
+  "marital_status": "tick",
+  "identity_document_type": "tick",
+  "identity_document_number": "typed",
+  "residential_status": "tick",
+  "address_proof_type": "tick",
+  "address_proof_number": "typed",
+  "nationality": "typed"
+ },
+ "formRules": {
+  "formId": "hdfc-rekyc-dormant-activation",
+  "group": "NFT",
+  "label": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "shortLabel": "HDFC re-KYC dormant activation",
+  "purpose": "Reactivate a dormant account and update KYC",
+  "blankFileName": "HDFC Bank ReKYC cum Dormant Activation Form.pdf",
+  "keyFields": [
+   "Customer ID",
+   "Account number",
+   "PAN"
+  ],
+  "sheetTabName": "HDFC re-KYC dormant activation",
+  "detectionPhrases": [
+   "EXTENDED KYC",
+   "AADHAAR CONSENT DECLARATION"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "personal",
+    "label": "Page 1 · Customer (KYC + Excel)",
+    "fields": [
+     "customer_id",
+     "account_number",
+     "name_prefix",
+     "first_holder_name",
+     "pan"
+    ]
+   },
+   {
+    "key": "occupation",
+    "label": "Page 1 · Occupation and income (Excel)",
+    "fields": [
+     "occupation",
+     "employer_type",
+     "source_of_funds",
+     "gross_annual_income_range",
+     "residence_type"
+    ]
+   },
+   {
+    "key": "mailing",
+    "label": "Page 1 · Mailing address and contact (Excel)",
+    "fields": [
+     "mailing_address_line1",
+     "mailing_address_line2",
+     "mailing_landmark",
+     "mailing_city",
+     "mailing_pincode",
+     "mailing_state",
+     "mailing_country",
+     "email",
+     "mobile"
+    ]
+   },
+   {
+    "key": "permanent",
+    "label": "Page 1 · Permanent address (KYC)",
+    "fields": [
+     "residence_address_line1",
+     "residence_address_line2",
+     "residence_landmark",
+     "residence_city",
+     "residence_pincode",
+     "residence_state",
+     "residence_country"
+    ]
+   },
+   {
+    "key": "extended-kyc",
+    "label": "Page 2 · Extended KYC (Excel)",
+    "fields": [
+     "tax_resident_outside_india",
+     "maiden_name",
+     "father_name",
+     "spouse_name",
+     "marital_status",
+     "identity_document_type",
+     "identity_document_number",
+     "residential_status",
+     "address_proof_type",
+     "address_proof_number",
+     "nationality"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "customer_id",
+   "account_number",
+   "first_holder_name",
+   "father_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name",
+   "idNumber",
+   "address"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "customer_id",
+   "page": 1,
+   "lines": [
+    [
+     69,
+     143.6,
+     142,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     292.3,
+     143.6,
+     198.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "name_prefix",
+   "page": 1,
+   "lines": [
+    [
+     13.3,
+     180.3,
+     57.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     83.3,
+     180.3,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "pan",
+   "page": 1,
+   "lines": [
+    [
+     196.7,
+     194.6,
+     142.3,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line1",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     521.9,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line2",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     536.3,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_landmark",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     550.3,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_city",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     564.3,
+     269.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_pincode",
+   "page": 1,
+   "lines": [
+    [
+     368,
+     564.3,
+     85.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_state",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     578.6,
+     269.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_country",
+   "page": 1,
+   "lines": [
+    [
+     368,
+     578.6,
+     184.73,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "email",
+   "page": 1,
+   "lines": [
+    [
+     58,
+     607.2,
+     53.79,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mobile",
+   "page": 1,
+   "lines": [
+    [
+     197.7,
+     621.3,
+     142.3,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_address_line1",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     668.9,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_address_line2",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     683.3,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_landmark",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     697.3,
+     496.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_city",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     711.3,
+     269.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_pincode",
+   "page": 1,
+   "lines": [
+    [
+     368,
+     711.3,
+     85.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_state",
+   "page": 1,
+   "lines": [
+    [
+     56,
+     725.6,
+     269.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "residence_country",
+   "page": 1,
+   "lines": [
+    [
+     368,
+     725.6,
+     184.73,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "maiden_name",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     59.2,
+     85.37,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "father_name",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     91.2,
+     79.35,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "spouse_name",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     113.2,
+     84.93,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "identity_document_number",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     227.2,
+     131.09,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "address_proof_number",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     407.2,
+     117.3,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "nationality",
+   "page": 2,
+   "lines": [
+    [
+     137,
+     478.2,
+     70.7,
+     8
+    ]
+   ]
+  }
+ ]
+}

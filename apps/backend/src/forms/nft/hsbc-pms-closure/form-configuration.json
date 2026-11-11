@@ -1,0 +1,40 @@
+{
+  "_about": "Account closure – HSBC PMS accounts (UBS format). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hsbc-pms-closure",
+  "title": "Account closure – HSBC PMS accounts (UBS format)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 90,
+      "y": 390.2,
+      "w": 120,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Account holder 1"
+    },
+    {
+      "page": 1,
+      "x": 234.1,
+      "y": 390.2,
+      "w": 119.9,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "Account holder 2"
+    },
+    {
+      "page": 1,
+      "x": 378.1,
+      "y": 390.2,
+      "w": 120,
+      "h": 24,
+      "signer": "third_holder",
+      "label": "Account holder 3"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HSBC PMS Accounts Closure Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

@@ -1,0 +1,22 @@
+{
+  "_about": "Aadhaar e-KYC consent – HDFC Bank. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-aadhaar-consent",
+  "title": "Aadhaar e-KYC consent – HDFC Bank",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 386,
+      "y": 517,
+      "w": 155,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Customer"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HDFC Bank Aadhaar Consent Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

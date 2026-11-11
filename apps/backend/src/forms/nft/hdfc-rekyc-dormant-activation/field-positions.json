@@ -1,0 +1,411 @@
+{
+  "_about": "Where each value is written on the blank Dormant activation & re-KYC – HDFC Bank (resident individuals) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-rekyc-dormant-activation",
+  "title": "Dormant activation & re-KYC – HDFC Bank (resident individuals)",
+  "fields": [
+    {
+      "key": "customer_id",
+      "nominee": null,
+      "page": 1,
+      "x": 69,
+      "y": 150.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          69,
+          142,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 292.3,
+      "y": 150.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          292.3,
+          198.66,
+          14
+        ]
+      ]
+    },
+    {
+      "key": "name_prefix",
+      "nominee": null,
+      "page": 1,
+      "x": 13.3,
+      "y": 187.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          13.3,
+          57.4,
+          4
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 83.3,
+      "y": 187.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          83.3,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "pan",
+      "nominee": null,
+      "page": 1,
+      "x": 196.7,
+      "y": 201.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          196.7,
+          142.3,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "mailing_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 528.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 543.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_landmark",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 557.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_city",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 571.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          269.61,
+          19
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 368,
+      "y": 571.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          368,
+          85.32,
+          6
+        ]
+      ]
+    },
+    {
+      "key": "mailing_state",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 585.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          269.61,
+          19
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_country",
+      "nominee": null,
+      "page": 1,
+      "x": 368,
+      "y": 585.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          368,
+          184.73,
+          13
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 1,
+      "x": 58,
+      "y": 614,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 492
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 197.7,
+      "y": 628.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          197.7,
+          142.3,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "residence_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 675.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 690.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_landmark",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 704.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          496.65,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_city",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 718.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          269.61,
+          19
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 368,
+      "y": 718.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          368,
+          85.32,
+          6
+        ]
+      ]
+    },
+    {
+      "key": "residence_state",
+      "nominee": null,
+      "page": 1,
+      "x": 56,
+      "y": 732.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          56,
+          269.61,
+          19
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "residence_country",
+      "nominee": null,
+      "page": 1,
+      "x": 368,
+      "y": 732.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          368,
+          184.73,
+          13
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "maiden_name",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 66,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    },
+    {
+      "key": "father_name",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 98,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    },
+    {
+      "key": "spouse_name",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 120,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    },
+    {
+      "key": "identity_document_number",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 234,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    },
+    {
+      "key": "address_proof_number",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 414,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    },
+    {
+      "key": "nationality",
+      "nominee": null,
+      "page": 2,
+      "x": 137,
+      "y": 485,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 175
+    }
+  ]
+}

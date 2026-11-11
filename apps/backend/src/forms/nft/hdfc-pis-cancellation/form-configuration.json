@@ -1,0 +1,72 @@
+{
+  "_about": "PIS permission cancellation – HDFC Bank (NR accounts). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-pis-cancellation",
+  "title": "PIS permission cancellation – HDFC Bank (NR accounts)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 51,
+      "y": 624,
+      "w": 132,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "1st account holder"
+    },
+    {
+      "page": 1,
+      "x": 205,
+      "y": 626,
+      "w": 126,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "2nd account holder"
+    },
+    {
+      "page": 1,
+      "x": 346,
+      "y": 628,
+      "w": 120,
+      "h": 24,
+      "signer": "third_holder",
+      "label": "3rd account holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "pis_cancellation_reason",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Changed residential status to Resident Indian",
+        "Do not intend to trade shares in the secondary market",
+        "Transferring the PIS permission to another bank"
+      ],
+      "boxesByOption": {
+        "Changed residential status to Resident Indian": [
+          {
+            "x": 62,
+            "y": 355.2
+          }
+        ],
+        "Do not intend to trade shares in the secondary market": [
+          {
+            "x": 62,
+            "y": 380.2
+          }
+        ],
+        "Transferring the PIS permission to another bank": [
+          {
+            "x": 62,
+            "y": 404.7
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank PIS Permission Cancellation Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

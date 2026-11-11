@@ -1,0 +1,37 @@
+{
+  "_about": "Where each value is written on the blank Aadhaar e-KYC consent – HDFC Bank (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-aadhaar-consent",
+  "title": "Aadhaar e-KYC consent – HDFC Bank",
+  "fields": [
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 146,
+      "y": 118.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 150
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 124,
+      "y": 539.3,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 210
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 77,
+      "y": 558,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 58
+    }
+  ]
+}

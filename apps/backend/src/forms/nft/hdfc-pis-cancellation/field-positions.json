@@ -1,0 +1,147 @@
+{
+  "_about": "Where each value is written on the blank PIS permission cancellation – HDFC Bank (NR accounts) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-pis-cancellation",
+  "title": "PIS permission cancellation – HDFC Bank (NR accounts)",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 92,
+      "y": 79,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 61,
+      "y": 128,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 74
+    },
+    {
+      "key": "pis_permission_number",
+      "nominee": null,
+      "page": 1,
+      "x": 263,
+      "y": 204.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 178
+    },
+    {
+      "key": "pis_savings_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 253,
+      "y": 229.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "transfer_bank_name",
+      "nominee": null,
+      "page": 1,
+      "x": 260,
+      "y": 404,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "transfer_bank_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 71,
+      "y": 449.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "transfer_bank_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 71,
+      "y": 461.8,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "transfer_bank_address_line3",
+      "nominee": null,
+      "page": 1,
+      "x": 71,
+      "y": 474.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 272
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 145,
+      "y": 487.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 1,
+      "x": 307,
+      "y": 490.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 157
+    },
+    {
+      "key": "non_pis_savings_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 262,
+      "y": 526.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 82
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 84,
+      "y": 683,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 106
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 212,
+      "y": 684,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 126
+    },
+    {
+      "key": "third_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 348,
+      "y": 685.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 120
+    }
+  ]
+}
