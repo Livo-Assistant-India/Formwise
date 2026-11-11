@@ -1,0 +1,47 @@
+{
+  "_about": "Where each value is written on the blank Power of attorney revocation – HDFC Bank (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-poa-revocation",
+  "title": "Power of attorney revocation – HDFC Bank",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 450,
+      "y": 82.3,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 90
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 292,
+      "y": 261.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 170
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 90,
+      "y": 492,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 145
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 356,
+      "y": 492,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 145
+    }
+  ]
+}

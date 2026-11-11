@@ -1,0 +1,37 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-poa-revocation",
+  "group": "NFT",
+  "label": "Power of attorney revocation – HDFC Bank",
+  "shortLabel": "HDFC POA revocation",
+  "purpose": "Revoke the POA given to 360 ONE Distribution on an HDFC Bank account",
+  "blankFileName": "HDFC Bank POA Revocation Letter.pdf",
+  "keyFields": [
+    "Bank account number"
+  ],
+  "sheetTabName": "HDFC POA revocation",
+  "detectionPhrases": [
+    "Request for Revocation of Power of Attorney"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "account",
+      "label": "Page 1 · Bank account (Excel)",
+      "fields": [
+        "form_date",
+        "account_number",
+        "first_holder_name",
+        "second_holder_name"
+      ]
+    }
+  ]
+}

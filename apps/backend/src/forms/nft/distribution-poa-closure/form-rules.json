@@ -1,0 +1,47 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "distribution-poa-closure",
+  "group": "NFT",
+  "label": "POA account closure – 360 ONE Distribution",
+  "shortLabel": "Distribution POA closure",
+  "purpose": "Close a distribution POA account and its linked bank / demat / broking accounts",
+  "blankFileName": "360 ONE Distribution POA Closure Letter.pdf",
+  "keyFields": [
+    "Bank account",
+    "Demat account",
+    "Broking account"
+  ],
+  "sheetTabName": "Distribution POA closure",
+  "detectionPhrases": [
+    "Closure of Distribution POA account"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "accounts",
+      "label": "Page 1 · Linked accounts to close (Excel)",
+      "fields": [
+        "form_date",
+        "reference",
+        "first_holder_name",
+        "bank_name",
+        "bank_account_holder_name",
+        "bank_account_number",
+        "demat_dp_name",
+        "demat_account_holder_name",
+        "demat_account_number",
+        "broking_dp_name",
+        "broking_account_holder_name",
+        "broking_account_number"
+      ]
+    }
+  ]
+}

@@ -122,7 +122,12 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 | Account closure – IIFL Capital trading / demat | `iifl-demat-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | PIS permission cancellation – HDFC Bank (NR accounts) | `hdfc-pis-cancellation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | Account closure – HSBC PMS accounts (UBS format) | `hsbc-pms-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
-| Account closure: rest of `C:\zzz\demo\Account Closure Forms` (RBI DEAF ×2, non-individual dormant re-KYC, 15 Word files) | | ⬜ | | | | | |
+| POA account closure – 360 ONE Distribution (Word) | `distribution-poa-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| POA account closure – 360 ONE Advisory (Word) | `advisory-poa-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – 360 ONE Portfolio Managers PMS (Word) | `pms-portfolio-managers-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Power of attorney revocation – HDFC Bank (Word) | `hdfc-poa-revocation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Unclaimed deposits (RBI DEAF) claim – HDFC Bank | `hdfc-deaf-claim` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure: still to do – RBI DEAF request letter (non-individual), non-individual dormant re-KYC (8 p), board resolutions ×4, PoA revocation (bank + demat), Notice of Termination – Advisory, Dormant Removal letters ×3 (Word) | | ⬜ | | | | | |
 | The other NFT forms (waiting for 360 ONE's forms and field lists) | | ❓ | | | | | |
 
 Account closure notes (10 Nov): files in `C:\zzz\demo\Account Closure Forms`; the same form often repeats across the
@@ -133,5 +138,6 @@ Individual / Non-Individual and Bank / PMS / Demat folders (identical text). Bui
   IndusInd "Closure Broking PMS" differs by 0.5% - check before building it as a separate form.
 - PIS cancellation letter is a rotated scan with no text: its blank is redrawn upright with a hidden text layer by
   `tools/form-building/make_closure_blanks.py` (run it before make_closure_forms.mjs).
-- UI test of the second five was run through the app's API (Chrome extension disconnected): upload, Excel import,
+- Word forms: `tools/form-building/convert_word_blanks.ps1` (Microsoft Word) turns them into PDF blanks first.
+- UI test of the second and third five was run through the app's API (Chrome extension disconnected): upload, Excel import,
   fill and PDF checked; the Review screen itself was not opened for these five.

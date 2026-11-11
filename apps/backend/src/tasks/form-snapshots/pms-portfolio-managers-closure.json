@@ -1,0 +1,626 @@
+{
+ "formId": "pms-portfolio-managers-closure",
+ "pageCount": 3,
+ "configuration": {
+  "id": "pms-portfolio-managers-closure",
+  "title": "Account closure – 360 ONE Portfolio Managers PMS",
+  "signatureBoxes": [
+   {
+    "page": 2,
+    "x": 135,
+    "y": 464,
+    "w": 183,
+    "h": 48,
+    "signer": "subscriber",
+    "label": "First holder"
+   },
+   {
+    "page": 2,
+    "x": 320,
+    "y": 464,
+    "w": 133,
+    "h": 48,
+    "signer": "joint_holder",
+    "label": "Second holder"
+   },
+   {
+    "page": 2,
+    "x": 454,
+    "y": 464,
+    "w": 105,
+    "h": 48,
+    "signer": "third_holder",
+    "label": "Third holder"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "settlement_mode",
+    "page": 1,
+    "w": 7.5,
+    "h": 7.5,
+    "options": [
+     "Issue cheque for the portfolio value",
+     "Transfer securities to my demat account"
+    ],
+    "boxesByOption": {
+     "Issue cheque for the portfolio value": [
+      {
+       "x": 72.6,
+       "y": 558.2,
+       "page": 1
+      }
+     ],
+     "Transfer securities to my demat account": [
+      {
+       "x": 72.6,
+       "y": 137.7,
+       "page": 2
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "360 ONE Portfolio Managers PMS Closure Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Account closure – 360 ONE Portfolio Managers PMS (3 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "pms-portfolio-managers-closure",
+  "title": "Account closure – 360 ONE Portfolio Managers PMS",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 100,
+    "y": 112.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "ws_code",
+    "nominee": null,
+    "page": 1,
+    "x": 415,
+    "y": 204.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 100
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 274.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "scheme_name",
+    "nominee": null,
+    "page": 1,
+    "x": 148,
+    "y": 298.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "dp_id",
+    "nominee": null,
+    "page": 1,
+    "x": 140,
+    "y": 322.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 115
+   },
+   {
+    "key": "client_id",
+    "nominee": null,
+    "page": 1,
+    "x": 290,
+    "y": 322.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 160
+   },
+   {
+    "key": "custody_code",
+    "nominee": null,
+    "page": 1,
+    "x": 146,
+    "y": 368.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 90
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 138,
+    "y": 446.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 250
+   },
+   {
+    "key": "target_dp_name",
+    "nominee": null,
+    "page": 2,
+    "x": 218,
+    "y": 215.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 340
+   },
+   {
+    "key": "target_dp_id",
+    "nominee": null,
+    "page": 2,
+    "x": 214.5,
+    "y": 240.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      214.5,
+      106.32,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "target_client_id",
+    "nominee": null,
+    "page": 2,
+    "x": 439.5,
+    "y": 240.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      439.5,
+      120.33,
+      9
+     ]
+    ]
+   },
+   {
+    "key": "closure_reason",
+    "nominee": null,
+    "page": 2,
+    "x": 271,
+    "y": 296.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 286
+   },
+   {
+    "key": "first_holder_name_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 138,
+    "y": 454,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 178
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 2,
+    "x": 322,
+    "y": 454,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 129
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 2,
+    "x": 456,
+    "y": 454,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 102
+   },
+   {
+    "key": "form_date_acknowledgement",
+    "nominee": null,
+    "page": 3,
+    "x": 432,
+    "y": 127.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 90
+   },
+   {
+    "key": "pms_account_number",
+    "nominee": null,
+    "page": 3,
+    "x": 164.7,
+    "y": 188.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      164.7,
+      290.61,
+      9
+     ]
+    ]
+   },
+   {
+    "key": "first_holder_name_acknowledgement",
+    "nominee": null,
+    "page": 3,
+    "x": 168,
+    "y": 204,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "closure_reason_acknowledgement",
+    "nominee": null,
+    "page": 3,
+    "x": 168,
+    "y": 219.5,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 288
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "ws_code": "typed",
+  "first_holder_name": "document.name|upper",
+  "scheme_name": "typed",
+  "dp_id": "typed",
+  "client_id": "typed",
+  "custody_code": "typed",
+  "account_number": "typed",
+  "settlement_mode": "tick",
+  "target_dp_name": "typed",
+  "target_dp_id": "typed",
+  "target_client_id": "typed",
+  "closure_reason": "typed",
+  "first_holder_name_p2": "copy.first_holder_name",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed",
+  "form_date_acknowledgement": "copy.form_date",
+  "pms_account_number": "typed",
+  "first_holder_name_acknowledgement": "copy.first_holder_name",
+  "closure_reason_acknowledgement": "copy.closure_reason"
+ },
+ "formRules": {
+  "formId": "pms-portfolio-managers-closure",
+  "group": "NFT",
+  "label": "Account closure – 360 ONE Portfolio Managers PMS",
+  "shortLabel": "Portfolio Managers PMS closure",
+  "purpose": "Close a 360 ONE Portfolio Managers PMS account (Consult & Alpha / HSBC / IndusInd)",
+  "blankFileName": "360 ONE Portfolio Managers PMS Closure Form.pdf",
+  "keyFields": [
+   "Client name",
+   "WS code",
+   "Reason"
+  ],
+  "sheetTabName": "Portfolio Managers PMS closure",
+  "detectionPhrases": [
+   "360 One Portfolio Managers Limited",
+   "PMS Account Closure Form"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Pages 1-2 · PMS account and settlement (Excel)",
+    "fields": [
+     "form_date",
+     "ws_code",
+     "first_holder_name",
+     "scheme_name",
+     "dp_id",
+     "client_id",
+     "custody_code",
+     "account_number",
+     "settlement_mode"
+    ]
+   },
+   {
+    "key": "demat",
+    "label": "Page 2 · Demat account for transfer (Excel)",
+    "fields": [
+     "target_dp_name",
+     "target_dp_id",
+     "target_client_id"
+    ]
+   },
+   {
+    "key": "reason",
+    "label": "Page 2 · Reason for closure (Excel)",
+    "fields": [
+     "closure_reason"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 2 · Account holders",
+    "fields": [
+     "first_holder_name_p2",
+     "second_holder_name",
+     "third_holder_name"
+    ]
+   },
+   {
+    "key": "acknowledgement",
+    "label": "Page 3 · Acknowledgement receipt",
+    "fields": [
+     "form_date_acknowledgement",
+     "pms_account_number",
+     "first_holder_name_acknowledgement",
+     "closure_reason_acknowledgement"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "scheme_name",
+   "settlement_mode",
+   "closure_reason"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     100,
+     106.1,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "ws_code",
+   "page": 1,
+   "lines": [
+    [
+     415,
+     198.1,
+     66.25,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     267.6,
+     98.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "scheme_name",
+   "page": 1,
+   "lines": [
+    [
+     148,
+     291.7,
+     87.14,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "dp_id",
+   "page": 1,
+   "lines": [
+    [
+     140,
+     315.9,
+     54.25,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "client_id",
+   "page": 1,
+   "lines": [
+    [
+     290,
+     315.9,
+     64.02,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "custody_code",
+   "page": 1,
+   "lines": [
+    [
+     146,
+     362,
+     84.04,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     138,
+     439.9,
+     94.18,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "target_dp_name",
+   "page": 2,
+   "lines": [
+    [
+     218,
+     208.7,
+     92.94,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "target_dp_id",
+   "page": 2,
+   "lines": [
+    [
+     214.5,
+     233.6,
+     106.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "target_client_id",
+   "page": 2,
+   "lines": [
+    [
+     439.5,
+     233.6,
+     120.33,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "closure_reason",
+   "page": 2,
+   "lines": [
+    [
+     271,
+     289.7,
+     89.37,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name_p2",
+   "page": 2,
+   "lines": [
+    [
+     138,
+     447.63,
+     105.05,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 2,
+   "lines": [
+    [
+     322,
+     447.63,
+     104.63,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 2,
+   "lines": [
+    [
+     456,
+     448.05,
+     88.7,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "form_date_acknowledgement",
+   "page": 3,
+   "lines": [
+    [
+     432,
+     122.1,
+     104.47,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "pms_account_number",
+   "page": 3,
+   "lines": [
+    [
+     164.7,
+     181.9,
+     290.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name_acknowledgement",
+   "page": 3,
+   "lines": [
+    [
+     168,
+     197.63,
+     156.89,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "closure_reason_acknowledgement",
+   "page": 3,
+   "lines": [
+    [
+     168,
+     213.55,
+     138.26,
+     7
+    ]
+   ]
+  }
+ ]
+}

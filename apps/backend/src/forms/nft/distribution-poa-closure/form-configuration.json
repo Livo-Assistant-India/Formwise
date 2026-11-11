@@ -1,0 +1,31 @@
+{
+  "_about": "POA account closure – 360 ONE Distribution. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "distribution-poa-closure",
+  "title": "POA account closure – 360 ONE Distribution",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 72,
+      "y": 585.5,
+      "w": 98,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "First holder"
+    },
+    {
+      "page": 1,
+      "x": 399,
+      "y": 585.5,
+      "w": 97.9,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "Second holder"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "360 ONE Distribution POA Closure Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

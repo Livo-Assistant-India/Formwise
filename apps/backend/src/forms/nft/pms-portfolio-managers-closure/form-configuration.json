@@ -1,0 +1,67 @@
+{
+  "_about": "Account closure – 360 ONE Portfolio Managers PMS. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "pms-portfolio-managers-closure",
+  "title": "Account closure – 360 ONE Portfolio Managers PMS",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 135,
+      "y": 464,
+      "w": 183,
+      "h": 48,
+      "signer": "subscriber",
+      "label": "First holder"
+    },
+    {
+      "page": 2,
+      "x": 320,
+      "y": 464,
+      "w": 133,
+      "h": 48,
+      "signer": "joint_holder",
+      "label": "Second holder"
+    },
+    {
+      "page": 2,
+      "x": 454,
+      "y": 464,
+      "w": 105,
+      "h": 48,
+      "signer": "third_holder",
+      "label": "Third holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "settlement_mode",
+      "page": 1,
+      "w": 7.5,
+      "h": 7.5,
+      "options": [
+        "Issue cheque for the portfolio value",
+        "Transfer securities to my demat account"
+      ],
+      "boxesByOption": {
+        "Issue cheque for the portfolio value": [
+          {
+            "x": 72.6,
+            "y": 558.2,
+            "page": 1
+          }
+        ],
+        "Transfer securities to my demat account": [
+          {
+            "x": 72.6,
+            "y": 137.7,
+            "page": 2
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE Portfolio Managers PMS Closure Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

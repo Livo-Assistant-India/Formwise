@@ -1,0 +1,31 @@
+{
+  "_about": "Power of attorney revocation – HDFC Bank. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-poa-revocation",
+  "title": "Power of attorney revocation – HDFC Bank",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 90,
+      "y": 455.8,
+      "w": 144.3,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Account holder"
+    },
+    {
+      "page": 1,
+      "x": 355.9,
+      "y": 455.8,
+      "w": 144.1,
+      "h": 24,
+      "signer": "joint_holder",
+      "label": "Joint account holder"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HDFC Bank POA Revocation Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

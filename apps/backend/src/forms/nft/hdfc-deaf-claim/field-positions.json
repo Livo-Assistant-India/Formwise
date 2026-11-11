@@ -1,0 +1,157 @@
+{
+  "_about": "Where each value is written on the blank Unclaimed deposits (RBI DEAF) claim – HDFC Bank (3 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-deaf-claim",
+  "title": "Unclaimed deposits (RBI DEAF) claim – HDFC Bank",
+  "fields": [
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 82,
+      "y": 128.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 150
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 70,
+      "y": 142.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 102,
+      "y": 183.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "udrn_number",
+      "nominee": null,
+      "page": 1,
+      "x": 391,
+      "y": 183.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 138
+    },
+    {
+      "key": "customer_names",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 285.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 352
+    },
+    {
+      "key": "customer_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 139,
+      "y": 315.6,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 390
+    },
+    {
+      "key": "customer_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 52,
+      "y": 343.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 380
+    },
+    {
+      "key": "pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 438,
+      "y": 343.3,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 90
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 104,
+      "y": 373.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 1,
+      "x": 268,
+      "y": 373.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 258
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 180,
+      "y": 432.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 324
+    },
+    {
+      "key": "unable_to_operate_reason",
+      "nominee": null,
+      "page": 1,
+      "x": 52,
+      "y": 488.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 325
+    },
+    {
+      "key": "refund_account_number",
+      "nominee": null,
+      "page": 2,
+      "x": 304,
+      "y": 297.7,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 178
+    },
+    {
+      "key": "first_holder_name_claimant",
+      "nominee": null,
+      "page": 2,
+      "x": 43,
+      "y": 349,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 330
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 2,
+      "x": 43,
+      "y": 374.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 330
+    }
+  ]
+}

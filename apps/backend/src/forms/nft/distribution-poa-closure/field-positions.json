@@ -1,0 +1,127 @@
+{
+  "_about": "Where each value is written on the blank POA account closure – 360 ONE Distribution (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "distribution-poa-closure",
+  "title": "POA account closure – 360 ONE Distribution",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 532,
+      "y": 82.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 60
+    },
+    {
+      "key": "reference",
+      "nominee": null,
+      "page": 1,
+      "x": 102,
+      "y": 178.9,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 72,
+      "y": 621,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 140
+    },
+    {
+      "key": "bank_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 344.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "bank_account_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 359.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "bank_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 372.9,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "demat_dp_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 400.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "demat_account_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 414.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "demat_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 428,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "broking_dp_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 454.9,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "broking_account_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 468.7,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    },
+    {
+      "key": "broking_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 230,
+      "y": 482.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 300
+    }
+  ]
+}

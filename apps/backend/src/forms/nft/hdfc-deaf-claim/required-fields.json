@@ -1,0 +1,8 @@
+{
+  "_about": "Fields that must be filled before a case can be confirmed. Changed from the Form setup screen.",
+  "requiredFields": [
+    "first_holder_name",
+    "account_number",
+    "refund_mode"
+  ]
+}

@@ -7,12 +7,14 @@
 // Spots were measured with boxes.py / scan_boxes.py and the drawn underlines. Sources: the first holder's name from the
 // KYC documents, everything else typed (Excel); other holders typed; tick boxes are answered per client, never assumed.
 // Change this file, never the generated folders.
-// More forms: closure-forms-second-batch.mjs. usage (from the repo root): python -I tools/form-building/make_closure_blanks.py,
+// More forms: closure-forms-second-batch.mjs, closure-forms-third-batch.mjs. usage (from the repo root): convert_word_blanks.ps1,
+// python -I tools/form-building/make_closure_blanks.py,
 // then node tools/form-building/make_closure_forms.mjs [form-id]
 import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { comb, multiline, text, tick } from "./gift-feeder-application-pages.mjs";
 import { SECOND_BATCH } from "./closure-forms-second-batch.mjs";
+import { THIRD_BATCH } from "./closure-forms-third-batch.mjs";
 
 const SOURCE_FOLDER = "../Account Closure Forms";
 const NAME = "document.name|upper";
@@ -241,4 +243,4 @@ function writeForm(form) {
 }
 
 const onlyFormId = process.argv[2];
-for (const form of [...FORMS, ...SECOND_BATCH]) if (!onlyFormId || form.formId === onlyFormId) writeForm(form);
+for (const form of [...FORMS, ...SECOND_BATCH, ...THIRD_BATCH]) if (!onlyFormId || form.formId === onlyFormId) writeForm(form);

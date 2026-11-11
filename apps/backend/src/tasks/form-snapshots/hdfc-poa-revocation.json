@@ -1,0 +1,181 @@
+{
+ "formId": "hdfc-poa-revocation",
+ "pageCount": 1,
+ "configuration": {
+  "id": "hdfc-poa-revocation",
+  "title": "Power of attorney revocation – HDFC Bank",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 90,
+    "y": 455.8,
+    "w": 144.3,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Account holder"
+   },
+   {
+    "page": 1,
+    "x": 355.9,
+    "y": 455.8,
+    "w": 144.1,
+    "h": 24,
+    "signer": "joint_holder",
+    "label": "Joint account holder"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HDFC Bank POA Revocation Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Power of attorney revocation – HDFC Bank (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-poa-revocation",
+  "title": "Power of attorney revocation – HDFC Bank",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 450,
+    "y": 82.3,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 90
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 292,
+    "y": 261.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 170
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 90,
+    "y": 492,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 145
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 356,
+    "y": 492,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 145
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "account_number": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed"
+ },
+ "formRules": {
+  "formId": "hdfc-poa-revocation",
+  "group": "NFT",
+  "label": "Power of attorney revocation – HDFC Bank",
+  "shortLabel": "HDFC POA revocation",
+  "purpose": "Revoke the POA given to 360 ONE Distribution on an HDFC Bank account",
+  "blankFileName": "HDFC Bank POA Revocation Letter.pdf",
+  "keyFields": [
+   "Bank account number"
+  ],
+  "sheetTabName": "HDFC POA revocation",
+  "detectionPhrases": [
+   "Request for Revocation of Power of Attorney"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Page 1 · Bank account (Excel)",
+    "fields": [
+     "form_date",
+     "account_number",
+     "first_holder_name",
+     "second_holder_name"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "account_number"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     450,
+     75.5,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     292,
+     254.4,
+     94.18,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     90,
+     485.2,
+     98.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     356,
+     485.2,
+     111.61,
+     8
+    ]
+   ]
+  }
+ ]
+}

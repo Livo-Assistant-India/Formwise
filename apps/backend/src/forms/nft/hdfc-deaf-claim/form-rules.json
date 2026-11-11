@@ -1,0 +1,59 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-deaf-claim",
+  "group": "NFT",
+  "label": "Unclaimed deposits (RBI DEAF) claim – HDFC Bank",
+  "shortLabel": "HDFC DEAF claim",
+  "purpose": "Claim an unclaimed deposit / reactivate an account moved to DEAF",
+  "blankFileName": "HDFC Bank Unclaimed Deposits Claim Form.pdf",
+  "keyFields": [
+    "Account number",
+    "UDRN",
+    "Refund mode"
+  ],
+  "sheetTabName": "HDFC DEAF claim",
+  "detectionPhrases": [
+    "Unclaimed Deposits: Common Claim Application Form"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "claim",
+      "label": "Pages 1-2 · Customer and account (KYC + Excel)",
+      "fields": [
+        "branch_name",
+        "form_date",
+        "first_holder_name",
+        "udrn_number",
+        "customer_names",
+        "customer_address_line1",
+        "customer_address_line2",
+        "pincode",
+        "mobile",
+        "email",
+        "account_number",
+        "unable_to_operate_reason",
+        "kyc_documents_status",
+        "customer_deceased"
+      ]
+    },
+    {
+      "key": "claimant",
+      "label": "Page 2 · Refund and claimants (Excel)",
+      "fields": [
+        "refund_mode",
+        "refund_account_number",
+        "first_holder_name_claimant",
+        "second_holder_name"
+      ]
+    }
+  ]
+}

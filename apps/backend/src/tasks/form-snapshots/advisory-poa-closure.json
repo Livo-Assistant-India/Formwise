@@ -1,0 +1,318 @@
+{
+ "formId": "advisory-poa-closure",
+ "pageCount": 1,
+ "configuration": {
+  "id": "advisory-poa-closure",
+  "title": "POA account closure – 360 ONE Advisory",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 72,
+    "y": 663.9,
+    "w": 144.3,
+    "h": 24,
+    "signer": "subscriber",
+    "label": "Account holder"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "360 ONE Advisory POA Closure Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank POA account closure – 360 ONE Advisory (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "advisory-poa-closure",
+  "title": "POA account closure – 360 ONE Advisory",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 532,
+    "y": 82.4,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 60
+   },
+   {
+    "key": "reference_1",
+    "nominee": null,
+    "page": 1,
+    "x": 98,
+    "y": 191.2,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 77
+   },
+   {
+    "key": "reference_2",
+    "nominee": null,
+    "page": 1,
+    "x": 189,
+    "y": 191.2,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 204
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 404,
+    "y": 260.4,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 118
+   },
+   {
+    "key": "bank_account_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 400.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "bank_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 415,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "demat_account_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 458.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "demat_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 472.9,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "broking_account_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 522.1,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   },
+   {
+    "key": "broking_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 230,
+    "y": 536.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 300
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "reference_1": "typed",
+  "reference_2": "typed",
+  "first_holder_name": "document.name|upper",
+  "bank_account_holder_name": "copy.first_holder_name",
+  "bank_account_number": "typed",
+  "demat_account_holder_name": "copy.first_holder_name",
+  "demat_account_number": "typed",
+  "broking_account_holder_name": "copy.first_holder_name",
+  "broking_account_number": "typed"
+ },
+ "formRules": {
+  "formId": "advisory-poa-closure",
+  "group": "NFT",
+  "label": "POA account closure – 360 ONE Advisory",
+  "shortLabel": "Advisory POA closure",
+  "purpose": "Close an advisory POA account and its linked bank / demat / broking accounts",
+  "blankFileName": "360 ONE Advisory POA Closure Letter.pdf",
+  "keyFields": [
+   "Bank account",
+   "Demat account",
+   "Broking account"
+  ],
+  "sheetTabName": "Advisory POA closure",
+  "detectionPhrases": [
+   "Closure of Advisory POA account"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "accounts",
+    "label": "Page 1 · Linked accounts to close (Excel)",
+    "fields": [
+     "form_date",
+     "reference_1",
+     "reference_2",
+     "first_holder_name",
+     "bank_account_holder_name",
+     "bank_account_number",
+     "demat_account_holder_name",
+     "demat_account_number",
+     "broking_account_holder_name",
+     "broking_account_number"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "first_holder_name",
+   "bank_account_number"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     532,
+     76.88,
+     57.41,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "reference_1",
+   "page": 1,
+   "lines": [
+    [
+     98,
+     184.83,
+     72.31,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "reference_2",
+   "page": 1,
+   "lines": [
+    [
+     189,
+     184.83,
+     72.31,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     404,
+     254.02,
+     92.54,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "bank_account_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     393.4,
+     135.62,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "bank_account_number",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     408.2,
+     115.98,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "demat_account_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     451.3,
+     140.51,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "demat_account_number",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     466.1,
+     120.86,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "broking_account_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     515.3,
+     144.51,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "broking_account_number",
+   "page": 1,
+   "lines": [
+    [
+     230,
+     530,
+     124.86,
+     8
+    ]
+   ]
+  }
+ ]
+}

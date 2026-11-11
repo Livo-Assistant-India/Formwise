@@ -1,0 +1,22 @@
+{
+  "_about": "POA account closure – 360 ONE Advisory. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "advisory-poa-closure",
+  "title": "POA account closure – 360 ONE Advisory",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 72,
+      "y": 663.9,
+      "w": 144.3,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Account holder"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "360 ONE Advisory POA Closure Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}
