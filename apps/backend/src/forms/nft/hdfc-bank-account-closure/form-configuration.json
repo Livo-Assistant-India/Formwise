@@ -1,0 +1,271 @@
+{
+  "_about": "Account closure – HDFC Bank account. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-bank-account-closure",
+  "title": "Account closure – HDFC Bank account",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 362.1,
+      "y": 325.6,
+      "w": 230.3,
+      "h": 21.4,
+      "signer": "subscriber",
+      "label": "Applicant 1"
+    },
+    {
+      "page": 1,
+      "x": 362.1,
+      "y": 347,
+      "w": 230.3,
+      "h": 21.4,
+      "signer": "joint_holder",
+      "label": "Applicant 2"
+    },
+    {
+      "page": 1,
+      "x": 362.1,
+      "y": 368.4,
+      "w": 230.3,
+      "h": 21.4,
+      "signer": "third_holder",
+      "label": "Applicant 3"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "pay_proceeds_by",
+      "page": 1,
+      "w": 5.8,
+      "h": 5.8,
+      "options": [
+        "Cash",
+        "Manager's cheque / DD",
+        "Credit to account"
+      ],
+      "boxesByOption": {
+        "Cash": [
+          {
+            "x": 58.8,
+            "y": 181.54
+          }
+        ],
+        "Manager's cheque / DD": [
+          {
+            "x": 103,
+            "y": 181.54
+          }
+        ],
+        "Credit to account": [
+          {
+            "x": 221.1,
+            "y": 180.84
+          }
+        ]
+      }
+    },
+    {
+      "key": "closure_reason",
+      "page": 1,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "1 - Branch/ATM of other bank is suitably located",
+        "2 - Product deficiency",
+        "3 - Facility no longer required",
+        "4 - Unhappy with service",
+        "5 - Corporate salary account - employer changed",
+        "6 - Service charges / AQB",
+        "7 - Incorrect product assurance",
+        "8 - Transferred to a non-HDFC Bank branch location",
+        "9 - Upgrading / consolidating bank account",
+        "10 - Account wrongly opened",
+        "11 - Change of status NRI / resident",
+        "12 - Legal / regulatory / KYC / AML",
+        "13 - Customer deceased",
+        "14 - Tatkal account - initial pay-in returned"
+      ],
+      "boxesByOption": {
+        "1 - Branch/ATM of other bank is suitably located": [
+          {
+            "x": 108.2,
+            "y": 494.3
+          }
+        ],
+        "2 - Product deficiency": [
+          {
+            "x": 108.2,
+            "y": 512.7
+          }
+        ],
+        "3 - Facility no longer required": [
+          {
+            "x": 108.2,
+            "y": 539.7
+          }
+        ],
+        "4 - Unhappy with service": [
+          {
+            "x": 108.2,
+            "y": 565.2
+          }
+        ],
+        "5 - Corporate salary account - employer changed": [
+          {
+            "x": 108.2,
+            "y": 585
+          }
+        ],
+        "6 - Service charges / AQB": [
+          {
+            "x": 108.2,
+            "y": 603.4
+          }
+        ],
+        "7 - Incorrect product assurance": [
+          {
+            "x": 108.2,
+            "y": 621.9
+          }
+        ],
+        "8 - Transferred to a non-HDFC Bank branch location": [
+          {
+            "x": 108.2,
+            "y": 640.3
+          }
+        ],
+        "9 - Upgrading / consolidating bank account": [
+          {
+            "x": 108.2,
+            "y": 669.3
+          }
+        ],
+        "10 - Account wrongly opened": [
+          {
+            "x": 108.2,
+            "y": 701.2
+          }
+        ],
+        "11 - Change of status NRI / resident": [
+          {
+            "x": 108.2,
+            "y": 722.5
+          }
+        ],
+        "12 - Legal / regulatory / KYC / AML": [
+          {
+            "x": 108.2,
+            "y": 743.8
+          }
+        ],
+        "13 - Customer deceased": [
+          {
+            "x": 108.2,
+            "y": 765
+          }
+        ],
+        "14 - Tatkal account - initial pay-in returned": [
+          {
+            "x": 108.2,
+            "y": 786.3
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank Account Closure Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 2,
+      "y": 301,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 317,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 333,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 387,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 403,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 419,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 435,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 451,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 467,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 541,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 616,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 629,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 685,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 711,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 725,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 740,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 754,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    },
+    {
+      "page": 2,
+      "y": 783,
+      "why": "Page 2 \"To be filled in by a bank official\""
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "_about": "Where each value is written on the blank Account closure – 360 ONE PMS (AMC) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "pms-account-closure",
+  "title": "Account closure – 360 ONE PMS (AMC)",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 60,
+      "y": 190.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "pms_agreement_date",
+      "nominee": null,
+      "page": 1,
+      "x": 398,
+      "y": 315.2,
+      "fontSize": 6.5,
+      "type": "text",
+      "maxWidth": 36
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 354,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 324
+    },
+    {
+      "key": "scheme_name",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 370,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 324
+    },
+    {
+      "key": "dp_id",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 386,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 114
+    },
+    {
+      "key": "client_id",
+      "nominee": null,
+      "page": 1,
+      "x": 349,
+      "y": 386,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 148
+    },
+    {
+      "key": "custody_code",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 418,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 324
+    },
+    {
+      "key": "bank_name",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 450,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 296
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 172,
+      "y": 466,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 324
+    },
+    {
+      "key": "target_dp_name",
+      "nominee": null,
+      "page": 2,
+      "x": 94,
+      "y": 266,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 458
+    },
+    {
+      "key": "target_dp_id",
+      "nominee": null,
+      "page": 2,
+      "x": 94,
+      "y": 282,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 192
+    },
+    {
+      "key": "target_client_id",
+      "nominee": null,
+      "page": 2,
+      "x": 349,
+      "y": 282,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 204
+    },
+    {
+      "key": "closure_reason",
+      "nominee": null,
+      "page": 2,
+      "x": 38,
+      "y": 321,
+      "fontSize": 8,
+      "type": "multiline",
+      "maxWidth": 515,
+      "maxY": 345
+    },
+    {
+      "key": "first_holder_name_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 101,
+      "y": 455.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 148
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 2,
+      "x": 254,
+      "y": 455.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 146
+    },
+    {
+      "key": "third_holder_name",
+      "nominee": null,
+      "page": 2,
+      "x": 406,
+      "y": 455.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 146
+    },
+    {
+      "key": "form_date_acknowledgement",
+      "nominee": null,
+      "page": 2,
+      "x": 372,
+      "y": 621.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 90
+    },
+    {
+      "key": "pms_account_number",
+      "nominee": null,
+      "page": 2,
+      "x": 123,
+      "y": 655.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          123,
+          208.35,
+          9
+        ]
+      ]
+    },
+    {
+      "key": "first_holder_name_acknowledgement",
+      "nominee": null,
+      "page": 2,
+      "x": 126,
+      "y": 670.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 435
+    },
+    {
+      "key": "closure_reason_acknowledgement",
+      "nominee": null,
+      "page": 2,
+      "x": 126,
+      "y": 685.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 435
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+ "formId": "hdfc-bank-account-closure",
+ "pageCount": 2,
+ "configuration": {
+  "id": "hdfc-bank-account-closure",
+  "title": "Account closure – HDFC Bank account",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 362.1,
+    "y": 325.6,
+    "w": 230.3,
+    "h": 21.4,
+    "signer": "subscriber",
+    "label": "Applicant 1"
+   },
+   {
+    "page": 1,
+    "x": 362.1,
+    "y": 347,
+    "w": 230.3,
+    "h": 21.4,
+    "signer": "joint_holder",
+    "label": "Applicant 2"
+   },
+   {
+    "page": 1,
+    "x": 362.1,
+    "y": 368.4,
+    "w": 230.3,
+    "h": 21.4,
+    "signer": "third_holder",
+    "label": "Applicant 3"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "pay_proceeds_by",
+    "page": 1,
+    "w": 5.8,
+    "h": 5.8,
+    "options": [
+     "Cash",
+     "Manager's cheque / DD",
+     "Credit to account"
+    ],
+    "boxesByOption": {
+     "Cash": [
+      {
+       "x": 58.8,
+       "y": 181.54
+      }
+     ],
+     "Manager's cheque / DD": [
+      {
+       "x": 103,
+       "y": 181.54
+      }
+     ],
+     "Credit to account": [
+      {
+       "x": 221.1,
+       "y": 180.84
+      }
+     ]
+    }
+   },
+   {
+    "key": "closure_reason",
+    "page": 1,
+    "w": 8.5,
+    "h": 8.5,
+    "options": [
+     "1 - Branch/ATM of other bank is suitably located",
+     "2 - Product deficiency",
+     "3 - Facility no longer required",
+     "4 - Unhappy with service",
+     "5 - Corporate salary account - employer changed",
+     "6 - Service charges / AQB",
+     "7 - Incorrect product assurance",
+     "8 - Transferred to a non-HDFC Bank branch location",
+     "9 - Upgrading / consolidating bank account",
+     "10 - Account wrongly opened",
+     "11 - Change of status NRI / resident",
+     "12 - Legal / regulatory / KYC / AML",
+     "13 - Customer deceased",
+     "14 - Tatkal account - initial pay-in returned"
+    ],
+    "boxesByOption": {
+     "1 - Branch/ATM of other bank is suitably located": [
+      {
+       "x": 108.2,
+       "y": 494.3
+      }
+     ],
+     "2 - Product deficiency": [
+      {
+       "x": 108.2,
+       "y": 512.7
+      }
+     ],
+     "3 - Facility no longer required": [
+      {
+       "x": 108.2,
+       "y": 539.7
+      }
+     ],
+     "4 - Unhappy with service": [
+      {
+       "x": 108.2,
+       "y": 565.2
+      }
+     ],
+     "5 - Corporate salary account - employer changed": [
+      {
+       "x": 108.2,
+       "y": 585
+      }
+     ],
+     "6 - Service charges / AQB": [
+      {
+       "x": 108.2,
+       "y": 603.4
+      }
+     ],
+     "7 - Incorrect product assurance": [
+      {
+       "x": 108.2,
+       "y": 621.9
+      }
+     ],
+     "8 - Transferred to a non-HDFC Bank branch location": [
+      {
+       "x": 108.2,
+       "y": 640.3
+      }
+     ],
+     "9 - Upgrading / consolidating bank account": [
+      {
+       "x": 108.2,
+       "y": 669.3
+      }
+     ],
+     "10 - Account wrongly opened": [
+      {
+       "x": 108.2,
+       "y": 701.2
+      }
+     ],
+     "11 - Change of status NRI / resident": [
+      {
+       "x": 108.2,
+       "y": 722.5
+      }
+     ],
+     "12 - Legal / regulatory / KYC / AML": [
+      {
+       "x": 108.2,
+       "y": 743.8
+      }
+     ],
+     "13 - Customer deceased": [
+      {
+       "x": 108.2,
+       "y": 765
+      }
+     ],
+     "14 - Tatkal account - initial pay-in returned": [
+      {
+       "x": 108.2,
+       "y": 786.3
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 2,
+    "y": 301,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 317,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 333,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 387,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 403,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 419,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 435,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 451,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 467,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 541,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 616,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 629,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 685,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 711,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 725,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 740,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 754,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   },
+   {
+    "page": 2,
+    "y": 783,
+    "why": "Page 2 \"To be filled in by a bank official\""
+   }
+  ],
+  "labels": [],
+  "blankFileName": "HDFC Bank Account Closure Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Account closure – HDFC Bank account (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-bank-account-closure",
+  "title": "Account closure – HDFC Bank account",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 104.4,
+    "y": 97.8,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      104.4,
+      27.4,
+      2
+     ],
+     [
+      143.4,
+      27.4,
+      2
+     ],
+     [
+      182,
+      57.5,
+      4
+     ]
+    ]
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 363.8,
+    "y": 97.8,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      363.8,
+      210.28,
+      14
+     ]
+    ]
+   },
+   {
+    "key": "credit_account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 312,
+    "y": 181.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 276
+   },
+   {
+    "key": "unused_cheques_from",
+    "nominee": null,
+    "page": 1,
+    "x": 114,
+    "y": 251,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 204
+   },
+   {
+    "key": "unused_cheques_to",
+    "nominee": null,
+    "page": 1,
+    "x": 350,
+    "y": 251,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 236
+   },
+   {
+    "key": "debit_card_number_1",
+    "nominee": null,
+    "page": 1,
+    "x": 84,
+    "y": 285.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 234
+   },
+   {
+    "key": "debit_card_number_2",
+    "nominee": null,
+    "page": 1,
+    "x": 350,
+    "y": 285.7,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 236
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 135,
+    "y": 341,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 222
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 135,
+    "y": 362.4,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 222
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 135,
+    "y": 383.8,
+    "fontSize": 9,
+    "type": "text",
+    "maxWidth": 222
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "account_number": "typed",
+  "pay_proceeds_by": "tick",
+  "credit_account_number": "typed",
+  "unused_cheques_from": "typed",
+  "unused_cheques_to": "typed",
+  "debit_card_number_1": "typed",
+  "debit_card_number_2": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed",
+  "closure_reason": "tick"
+ },
+ "formRules": {
+  "formId": "hdfc-bank-account-closure",
+  "group": "NFT",
+  "label": "Account closure – HDFC Bank account",
+  "shortLabel": "HDFC Bank closure",
+  "purpose": "Close a savings / current account",
+  "blankFileName": "HDFC Bank Account Closure Form.pdf",
+  "keyFields": [
+   "Account number",
+   "Pay proceeds by",
+   "Reason"
+  ],
+  "sheetTabName": "HDFC Bank closure",
+  "detectionPhrases": [
+   "SAVINGS/CURRENT ACCOUNT CLOSURE FORM"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Page 1 · Account and payout (Excel)",
+    "fields": [
+     "form_date",
+     "account_number",
+     "pay_proceeds_by",
+     "credit_account_number",
+     "unused_cheques_from",
+     "unused_cheques_to",
+     "debit_card_number_1",
+     "debit_card_number_2"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 1 · Account holders",
+    "fields": [
+     "first_holder_name",
+     "second_holder_name",
+     "third_holder_name"
+    ]
+   },
+   {
+    "key": "reason",
+    "label": "Page 1 · Reason for closure (Excel)",
+    "fields": [
+     "closure_reason"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "account_number",
+   "first_holder_name",
+   "pay_proceeds_by",
+   "closure_reason"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     104.4,
+     91,
+     27.4,
+     8
+    ],
+    [
+     143.4,
+     91,
+     27.4,
+     8
+    ],
+    [
+     182,
+     91,
+     57.5,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     363.8,
+     91,
+     210.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "credit_account_number",
+   "page": 1,
+   "lines": [
+    [
+     312,
+     174.7,
+     118.19,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "unused_cheques_from",
+   "page": 1,
+   "lines": [
+    [
+     114,
+     244.2,
+     115.98,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "unused_cheques_to",
+   "page": 1,
+   "lines": [
+    [
+     350,
+     244.2,
+     106.65,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "debit_card_number_1",
+   "page": 1,
+   "lines": [
+    [
+     84,
+     278.9,
+     112.42,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "debit_card_number_2",
+   "page": 1,
+   "lines": [
+    [
+     350,
+     278.9,
+     112.42,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     135,
+     333.35,
+     111.04,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     135,
+     354.75,
+     125.56,
+     9
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     135,
+     376.15,
+     114.05,
+     9
+    ]
+   ]
+  }
+ ]
+}

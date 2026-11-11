@@ -112,4 +112,15 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 |------|---------|:-----:|:------:|:---------:|:-------:|:-----:|:-------:|
 | CAMS Mutual Fund – Nomination | `cams-nomination` | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | Broking & Demat – Nomination | `crn-broking-demat` | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
+| Account closure – HDFC Bank account | `hdfc-bank-account-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – HDFC Bank demat (CDSL / NSDL) | `hdfc-demat-account-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – 360 ONE broking & demat | `broking-demat-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure – 360 ONE PMS (AMC) | `pms-account-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Dormant account activation – HDFC Bank (letter) | `hdfc-dormant-activation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| Account closure: rest of `C:\zzz\demo\Account Closure Forms` (≈20 more, 15 are Word files) | | ⬜ | | | | | |
 | The other NFT forms (waiting for 360 ONE's forms and field lists) | | ❓ | | | | | |
+
+Account closure notes (10 Nov): files in `C:\zzz\demo\Account Closure Forms`; the same form often repeats across the
+Individual / Non-Individual and Bank / PMS / Demat folders (identical text). Built from `tools/form-building/make_closure_forms.mjs`.
+- HDFC demat closure: built on REVISED1 (Ver 1.02 Oct 2021, a scan); the custodian's address is printed on it.
+- No field sheet for closure forms: first holder's name from KYC, everything else from the Excel.

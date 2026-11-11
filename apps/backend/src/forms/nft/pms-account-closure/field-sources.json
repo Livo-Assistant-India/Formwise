@@ -1,0 +1,26 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the first holder's KYC documents (see ../document-data-dictionary.json); \"|upper\" etc. = the part or form of it this box wants; \"typed\" = from the batch Excel or the review screen; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed). No field sheet exists for account closure forms yet.",
+  "fieldSources": {
+    "form_date": "today",
+    "pms_agreement_date": "typed",
+    "first_holder_name": "document.name|upper",
+    "scheme_name": "typed",
+    "dp_id": "typed",
+    "client_id": "typed",
+    "custody_code": "typed",
+    "bank_name": "typed",
+    "account_number": "typed",
+    "settlement_mode": "tick",
+    "target_dp_name": "typed",
+    "target_dp_id": "typed",
+    "target_client_id": "typed",
+    "closure_reason": "typed",
+    "first_holder_name_p2": "copy.first_holder_name",
+    "second_holder_name": "typed",
+    "third_holder_name": "typed",
+    "form_date_acknowledgement": "copy.form_date",
+    "pms_account_number": "typed",
+    "first_holder_name_acknowledgement": "copy.first_holder_name",
+    "closure_reason_acknowledgement": "copy.closure_reason"
+  }
+}

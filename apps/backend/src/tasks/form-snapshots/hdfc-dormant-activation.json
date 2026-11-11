@@ -1,0 +1,271 @@
+{
+ "formId": "hdfc-dormant-activation",
+ "pageCount": 1,
+ "configuration": {
+  "id": "hdfc-dormant-activation",
+  "title": "Dormant account activation – HDFC Bank (covering letter)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 87.8,
+    "y": 405,
+    "w": 117.1,
+    "h": 27,
+    "signer": "subscriber",
+    "label": "1st holder"
+   },
+   {
+    "page": 1,
+    "x": 250.6,
+    "y": 405,
+    "w": 127.3,
+    "h": 27,
+    "signer": "joint_holder",
+    "label": "2nd holder"
+   },
+   {
+    "page": 1,
+    "x": 403.4,
+    "y": 405,
+    "w": 127.4,
+    "h": 27,
+    "signer": "third_holder",
+    "label": "3rd holder"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HDFC Bank Dormant Activation Letter.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Dormant account activation – HDFC Bank (covering letter) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-dormant-activation",
+  "title": "Dormant account activation – HDFC Bank (covering letter)",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 164,
+    "y": 127.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 120
+   },
+   {
+    "key": "branch_name",
+    "nominee": null,
+    "page": 1,
+    "x": 136,
+    "y": 180.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 86
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 222,
+    "y": 312,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 172
+   },
+   {
+    "key": "dormancy_reason",
+    "nominee": null,
+    "page": 1,
+    "x": 136,
+    "y": 352.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 386
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 140,
+    "y": 474.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 150
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 328,
+    "y": 474.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 118
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 481,
+    "y": 474.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 90
+   }
+  ]
+ },
+ "fieldSources": {
+  "form_date": "today",
+  "branch_name": "typed",
+  "account_number": "typed",
+  "dormancy_reason": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed"
+ },
+ "formRules": {
+  "formId": "hdfc-dormant-activation",
+  "group": "NFT",
+  "label": "Dormant account activation – HDFC Bank (covering letter)",
+  "shortLabel": "HDFC dormant activation",
+  "purpose": "Reactivate a dormant bank account",
+  "blankFileName": "HDFC Bank Dormant Activation Letter.pdf",
+  "keyFields": [
+   "Account number",
+   "Branch",
+   "Reason"
+  ],
+  "sheetTabName": "HDFC dormant activation",
+  "detectionPhrases": [
+   "COVERING LETTER FOR DORMANT ACTIVATION"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Page 1 · Account (Excel)",
+    "fields": [
+     "form_date",
+     "branch_name",
+     "account_number",
+     "dormancy_reason"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 1 · Account holders",
+    "fields": [
+     "first_holder_name",
+     "second_holder_name",
+     "third_holder_name"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "account_number",
+   "first_holder_name",
+   "branch_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     164,
+     120.7,
+     70.66,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "branch_name",
+   "page": 1,
+   "lines": [
+    [
+     136,
+     173.7,
+     83.51,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     222,
+     305.2,
+     94.18,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "dormancy_reason",
+   "page": 1,
+   "lines": [
+    [
+     136,
+     345.7,
+     98.9,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     140,
+     467.4,
+     98.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     328,
+     467.4,
+     111.61,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     481,
+     468.25,
+     88.7,
+     7
+    ]
+   ]
+  }
+ ]
+}

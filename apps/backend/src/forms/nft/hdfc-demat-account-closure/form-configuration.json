@@ -1,0 +1,289 @@
+{
+  "_about": "Account closure – HDFC Bank demat (CDSL / NSDL). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-demat-account-closure",
+  "title": "Account closure – HDFC Bank demat (CDSL / NSDL)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 60,
+      "y": 548,
+      "w": 136,
+      "h": 78,
+      "signer": "subscriber",
+      "label": "First / sole holder"
+    },
+    {
+      "page": 1,
+      "x": 202,
+      "y": 548,
+      "w": 134,
+      "h": 78,
+      "signer": "joint_holder",
+      "label": "Second holder"
+    },
+    {
+      "page": 1,
+      "x": 345,
+      "y": 548,
+      "w": 135,
+      "h": 78,
+      "signer": "third_holder",
+      "label": "Third holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "closure_initiated_by",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "BO",
+        "DP",
+        "CDSL",
+        "NSDL"
+      ],
+      "boxesByOption": {
+        "BO": [
+          {
+            "x": 255.7,
+            "y": 61.2
+          }
+        ],
+        "DP": [
+          {
+            "x": 279.7,
+            "y": 61.2
+          }
+        ],
+        "CDSL": [
+          {
+            "x": 304,
+            "y": 61.2
+          }
+        ],
+        "NSDL": [
+          {
+            "x": 340.3,
+            "y": 61.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "closure_option",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "A - No balances in this account",
+        "B (NSDL) - Transfer the balances",
+        "C (NSDL) - Rematerialise / reconvert"
+      ],
+      "boxesByOption": {
+        "A - No balances in this account": [
+          {
+            "x": 89.7,
+            "y": 368.9
+          }
+        ],
+        "B (NSDL) - Transfer the balances": [
+          {
+            "x": 81.7,
+            "y": 388.5
+          }
+        ],
+        "C (NSDL) - Rematerialise / reconvert": [
+          {
+            "x": 194.3,
+            "y": 492.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "nsdl_transfer_to",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Any other account",
+        "My own account"
+      ],
+      "boxesByOption": {
+        "Any other account": [
+          {
+            "x": 209.7,
+            "y": 388.5
+          }
+        ],
+        "My own account": [
+          {
+            "x": 209.7,
+            "y": 400.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "cdsl_balance_remaining",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Partly rematerialised and partly transferred",
+        "Rematerialised",
+        "Transferred to another account",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "Partly rematerialised and partly transferred": [
+          {
+            "x": 178,
+            "y": 420.5
+          }
+        ],
+        "Rematerialised": [
+          {
+            "x": 395,
+            "y": 420.5
+          }
+        ],
+        "Transferred to another account": [
+          {
+            "x": 178,
+            "y": 432.9
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 395,
+            "y": 432.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "cdsl_balance_present",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Ear-marked",
+        "Pledged",
+        "Frozen",
+        "Lock-in",
+        "Pending for dematerialisation",
+        "Pending for rematerialisation"
+      ],
+      "boxesByOption": {
+        "Ear-marked": [
+          {
+            "x": 174,
+            "y": 448.9
+          }
+        ],
+        "Pledged": [
+          {
+            "x": 230.7,
+            "y": 448.9
+          }
+        ],
+        "Frozen": [
+          {
+            "x": 274.3,
+            "y": 448.9
+          }
+        ],
+        "Lock-in": [
+          {
+            "x": 316,
+            "y": 448.9
+          }
+        ],
+        "Pending for dematerialisation": [
+          {
+            "x": 358.3,
+            "y": 448.9
+          }
+        ],
+        "Pending for rematerialisation": [
+          {
+            "x": 464,
+            "y": 448.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "target_depository",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "NSDL",
+        "CDSL"
+      ],
+      "boxesByOption": {
+        "NSDL": [
+          {
+            "x": 178,
+            "y": 463.9
+          }
+        ],
+        "CDSL": [
+          {
+            "x": 226.7,
+            "y": 463.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "delivery_instruction_slips",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Surrendered / destroyed all unutilised slips",
+        "Exhausted all slips / misplaced"
+      ],
+      "boxesByOption": {
+        "Surrendered / destroyed all unutilised slips": [
+          {
+            "x": 50.7,
+            "y": 519.9
+          }
+        ],
+        "Exhausted all slips / misplaced": [
+          {
+            "x": 314,
+            "y": 518.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "shifting_confirmation",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Confirmed - all transactions authentic"
+      ],
+      "boxesByOption": {
+        "Confirmed - all transactions authentic": [
+          {
+            "x": 290,
+            "y": 538.9
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank Demat Account Closure Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

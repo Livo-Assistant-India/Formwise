@@ -1,0 +1,86 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-demat-account-closure",
+  "group": "NFT",
+  "label": "Account closure – HDFC Bank demat (CDSL / NSDL)",
+  "shortLabel": "HDFC demat closure",
+  "purpose": "Close a demat account held with HDFC Bank",
+  "blankFileName": "HDFC Bank Demat Account Closure Form.pdf",
+  "keyFields": [
+    "DP ID",
+    "Client ID",
+    "Reason"
+  ],
+  "sheetTabName": "HDFC demat closure",
+  "detectionPhrases": [
+    "Account Closure Request form - CDSL & NSDL"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "account",
+      "label": "Page 1 · Closure request (Excel)",
+      "fields": [
+        "closure_initiated_by",
+        "form_date",
+        "dp_id",
+        "client_id"
+      ]
+    },
+    {
+      "key": "holders",
+      "label": "Page 1 · Account holders",
+      "fields": [
+        "first_holder_name",
+        "second_holder_name",
+        "third_holder_name",
+        "mobile",
+        "first_holder_name_signed",
+        "second_holder_name_signed",
+        "third_holder_name_signed"
+      ]
+    },
+    {
+      "key": "reason",
+      "label": "Page 1 · Reason for closure (Excel)",
+      "fields": [
+        "closure_reason"
+      ]
+    },
+    {
+      "key": "balances",
+      "label": "Page 1 · Balances and declarations (Excel)",
+      "fields": [
+        "closure_option",
+        "nsdl_transfer_to",
+        "cdsl_balance_remaining",
+        "cdsl_balance_present",
+        "target_depository",
+        "target_dp_id",
+        "target_client_id",
+        "delivery_instruction_slips",
+        "shifting_confirmation"
+      ]
+    },
+    {
+      "key": "acknowledgement",
+      "label": "Page 1 · Acknowledgement receipt",
+      "fields": [
+        "form_date_acknowledgement",
+        "dp_id_acknowledgement",
+        "client_id_acknowledgement",
+        "first_holder_name_acknowledgement",
+        "second_holder_name_acknowledgement",
+        "third_holder_name_acknowledgement"
+      ]
+    }
+  ]
+}

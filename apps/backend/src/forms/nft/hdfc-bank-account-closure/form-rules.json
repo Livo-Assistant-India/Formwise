@@ -1,0 +1,59 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "hdfc-bank-account-closure",
+  "group": "NFT",
+  "label": "Account closure – HDFC Bank account",
+  "shortLabel": "HDFC Bank closure",
+  "purpose": "Close a savings / current account",
+  "blankFileName": "HDFC Bank Account Closure Form.pdf",
+  "keyFields": [
+    "Account number",
+    "Pay proceeds by",
+    "Reason"
+  ],
+  "sheetTabName": "HDFC Bank closure",
+  "detectionPhrases": [
+    "SAVINGS/CURRENT ACCOUNT CLOSURE FORM"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "account",
+      "label": "Page 1 · Account and payout (Excel)",
+      "fields": [
+        "form_date",
+        "account_number",
+        "pay_proceeds_by",
+        "credit_account_number",
+        "unused_cheques_from",
+        "unused_cheques_to",
+        "debit_card_number_1",
+        "debit_card_number_2"
+      ]
+    },
+    {
+      "key": "holders",
+      "label": "Page 1 · Account holders",
+      "fields": [
+        "first_holder_name",
+        "second_holder_name",
+        "third_holder_name"
+      ]
+    },
+    {
+      "key": "reason",
+      "label": "Page 1 · Reason for closure (Excel)",
+      "fields": [
+        "closure_reason"
+      ]
+    }
+  ]
+}

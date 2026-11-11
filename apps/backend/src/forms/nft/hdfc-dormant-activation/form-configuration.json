@@ -1,0 +1,40 @@
+{
+  "_about": "Dormant account activation – HDFC Bank (covering letter). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-dormant-activation",
+  "title": "Dormant account activation – HDFC Bank (covering letter)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 87.8,
+      "y": 405,
+      "w": 117.1,
+      "h": 27,
+      "signer": "subscriber",
+      "label": "1st holder"
+    },
+    {
+      "page": 1,
+      "x": 250.6,
+      "y": 405,
+      "w": 127.3,
+      "h": 27,
+      "signer": "joint_holder",
+      "label": "2nd holder"
+    },
+    {
+      "page": 1,
+      "x": 403.4,
+      "y": 405,
+      "w": 127.4,
+      "h": 27,
+      "signer": "third_holder",
+      "label": "3rd holder"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HDFC Bank Dormant Activation Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

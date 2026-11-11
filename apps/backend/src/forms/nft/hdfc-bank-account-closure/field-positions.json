@@ -1,0 +1,129 @@
+{
+  "_about": "Where each value is written on the blank Account closure – HDFC Bank account (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-bank-account-closure",
+  "title": "Account closure – HDFC Bank account",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 104.4,
+      "y": 97.8,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          104.4,
+          27.4,
+          2
+        ],
+        [
+          143.4,
+          27.4,
+          2
+        ],
+        [
+          182,
+          57.5,
+          4
+        ]
+      ]
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 363.8,
+      "y": 97.8,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          363.8,
+          210.28,
+          14
+        ]
+      ]
+    },
+    {
+      "key": "credit_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 312,
+      "y": 181.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 276
+    },
+    {
+      "key": "unused_cheques_from",
+      "nominee": null,
+      "page": 1,
+      "x": 114,
+      "y": 251,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 204
+    },
+    {
+      "key": "unused_cheques_to",
+      "nominee": null,
+      "page": 1,
+      "x": 350,
+      "y": 251,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 236
+    },
+    {
+      "key": "debit_card_number_1",
+      "nominee": null,
+      "page": 1,
+      "x": 84,
+      "y": 285.7,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 234
+    },
+    {
+      "key": "debit_card_number_2",
+      "nominee": null,
+      "page": 1,
+      "x": 350,
+      "y": 285.7,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 236
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 135,
+      "y": 341,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 222
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 135,
+      "y": 362.4,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 222
+    },
+    {
+      "key": "third_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 135,
+      "y": 383.8,
+      "fontSize": 9,
+      "type": "text",
+      "maxWidth": 222
+    }
+  ]
+}

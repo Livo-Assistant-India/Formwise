@@ -1,0 +1,67 @@
+{
+  "_about": "Account closure – 360 ONE PMS (AMC). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "pms-account-closure",
+  "title": "Account closure – 360 ONE PMS (AMC)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 99,
+      "y": 462,
+      "w": 151,
+      "h": 46,
+      "signer": "subscriber",
+      "label": "First holder"
+    },
+    {
+      "page": 2,
+      "x": 251,
+      "y": 462,
+      "w": 151,
+      "h": 46,
+      "signer": "joint_holder",
+      "label": "Second holder"
+    },
+    {
+      "page": 2,
+      "x": 404,
+      "y": 462,
+      "w": 150,
+      "h": 46,
+      "signer": "third_holder",
+      "label": "Third holder"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "settlement_mode",
+      "page": 1,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "Issue cheque for the portfolio value",
+        "Transfer securities to my demat account"
+      ],
+      "boxesByOption": {
+        "Issue cheque for the portfolio value": [
+          {
+            "x": 35.5,
+            "y": 562.9,
+            "page": 1
+          }
+        ],
+        "Transfer securities to my demat account": [
+          {
+            "x": 35,
+            "y": 197.9,
+            "page": 2
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE AMC PMS Account Closure Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

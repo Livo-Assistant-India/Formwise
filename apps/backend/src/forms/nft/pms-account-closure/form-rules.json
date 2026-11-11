@@ -1,0 +1,80 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "pms-account-closure",
+  "group": "NFT",
+  "label": "Account closure – 360 ONE PMS (AMC)",
+  "shortLabel": "PMS closure",
+  "purpose": "Close a discretionary / non-discretionary PMS account",
+  "blankFileName": "360 ONE AMC PMS Account Closure Form.pdf",
+  "keyFields": [
+    "Client name",
+    "Scheme",
+    "Reason"
+  ],
+  "sheetTabName": "PMS closure",
+  "detectionPhrases": [
+    "PMS Account Closure Form"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "account",
+      "label": "Pages 1-2 · PMS account and settlement (Excel)",
+      "fields": [
+        "form_date",
+        "pms_agreement_date",
+        "first_holder_name",
+        "scheme_name",
+        "dp_id",
+        "client_id",
+        "custody_code",
+        "bank_name",
+        "account_number",
+        "settlement_mode"
+      ]
+    },
+    {
+      "key": "demat",
+      "label": "Page 2 · Demat account for transfer (Excel)",
+      "fields": [
+        "target_dp_name",
+        "target_dp_id",
+        "target_client_id"
+      ]
+    },
+    {
+      "key": "reason",
+      "label": "Page 2 · Reason for closure (Excel)",
+      "fields": [
+        "closure_reason"
+      ]
+    },
+    {
+      "key": "holders",
+      "label": "Page 2 · Account holders",
+      "fields": [
+        "first_holder_name_p2",
+        "second_holder_name",
+        "third_holder_name"
+      ]
+    },
+    {
+      "key": "acknowledgement",
+      "label": "Page 2 · Acknowledgement receipt",
+      "fields": [
+        "form_date_acknowledgement",
+        "pms_account_number",
+        "first_holder_name_acknowledgement",
+        "closure_reason_acknowledgement"
+      ]
+    }
+  ]
+}

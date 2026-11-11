@@ -1,0 +1,939 @@
+{
+ "formId": "hdfc-demat-account-closure",
+ "pageCount": 1,
+ "configuration": {
+  "id": "hdfc-demat-account-closure",
+  "title": "Account closure – HDFC Bank demat (CDSL / NSDL)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 60,
+    "y": 548,
+    "w": 136,
+    "h": 78,
+    "signer": "subscriber",
+    "label": "First / sole holder"
+   },
+   {
+    "page": 1,
+    "x": 202,
+    "y": 548,
+    "w": 134,
+    "h": 78,
+    "signer": "joint_holder",
+    "label": "Second holder"
+   },
+   {
+    "page": 1,
+    "x": 345,
+    "y": 548,
+    "w": 135,
+    "h": 78,
+    "signer": "third_holder",
+    "label": "Third holder"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "closure_initiated_by",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "BO",
+     "DP",
+     "CDSL",
+     "NSDL"
+    ],
+    "boxesByOption": {
+     "BO": [
+      {
+       "x": 255.7,
+       "y": 61.2
+      }
+     ],
+     "DP": [
+      {
+       "x": 279.7,
+       "y": 61.2
+      }
+     ],
+     "CDSL": [
+      {
+       "x": 304,
+       "y": 61.2
+      }
+     ],
+     "NSDL": [
+      {
+       "x": 340.3,
+       "y": 61.2
+      }
+     ]
+    }
+   },
+   {
+    "key": "closure_option",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "A - No balances in this account",
+     "B (NSDL) - Transfer the balances",
+     "C (NSDL) - Rematerialise / reconvert"
+    ],
+    "boxesByOption": {
+     "A - No balances in this account": [
+      {
+       "x": 89.7,
+       "y": 368.9
+      }
+     ],
+     "B (NSDL) - Transfer the balances": [
+      {
+       "x": 81.7,
+       "y": 388.5
+      }
+     ],
+     "C (NSDL) - Rematerialise / reconvert": [
+      {
+       "x": 194.3,
+       "y": 492.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "nsdl_transfer_to",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Any other account",
+     "My own account"
+    ],
+    "boxesByOption": {
+     "Any other account": [
+      {
+       "x": 209.7,
+       "y": 388.5
+      }
+     ],
+     "My own account": [
+      {
+       "x": 209.7,
+       "y": 400.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "cdsl_balance_remaining",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Partly rematerialised and partly transferred",
+     "Rematerialised",
+     "Transferred to another account",
+     "Not applicable"
+    ],
+    "boxesByOption": {
+     "Partly rematerialised and partly transferred": [
+      {
+       "x": 178,
+       "y": 420.5
+      }
+     ],
+     "Rematerialised": [
+      {
+       "x": 395,
+       "y": 420.5
+      }
+     ],
+     "Transferred to another account": [
+      {
+       "x": 178,
+       "y": 432.9
+      }
+     ],
+     "Not applicable": [
+      {
+       "x": 395,
+       "y": 432.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "cdsl_balance_present",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Ear-marked",
+     "Pledged",
+     "Frozen",
+     "Lock-in",
+     "Pending for dematerialisation",
+     "Pending for rematerialisation"
+    ],
+    "boxesByOption": {
+     "Ear-marked": [
+      {
+       "x": 174,
+       "y": 448.9
+      }
+     ],
+     "Pledged": [
+      {
+       "x": 230.7,
+       "y": 448.9
+      }
+     ],
+     "Frozen": [
+      {
+       "x": 274.3,
+       "y": 448.9
+      }
+     ],
+     "Lock-in": [
+      {
+       "x": 316,
+       "y": 448.9
+      }
+     ],
+     "Pending for dematerialisation": [
+      {
+       "x": 358.3,
+       "y": 448.9
+      }
+     ],
+     "Pending for rematerialisation": [
+      {
+       "x": 464,
+       "y": 448.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "target_depository",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "NSDL",
+     "CDSL"
+    ],
+    "boxesByOption": {
+     "NSDL": [
+      {
+       "x": 178,
+       "y": 463.9
+      }
+     ],
+     "CDSL": [
+      {
+       "x": 226.7,
+       "y": 463.9
+      }
+     ]
+    }
+   },
+   {
+    "key": "delivery_instruction_slips",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Surrendered / destroyed all unutilised slips",
+     "Exhausted all slips / misplaced"
+    ],
+    "boxesByOption": {
+     "Surrendered / destroyed all unutilised slips": [
+      {
+       "x": 50.7,
+       "y": 519.9
+      }
+     ],
+     "Exhausted all slips / misplaced": [
+      {
+       "x": 314,
+       "y": 518.2
+      }
+     ]
+    }
+   },
+   {
+    "key": "shifting_confirmation",
+    "page": 1,
+    "w": 9,
+    "h": 9,
+    "options": [
+     "Confirmed - all transactions authentic"
+    ],
+    "boxesByOption": {
+     "Confirmed - all transactions authentic": [
+      {
+       "x": 290,
+       "y": 538.9
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "HDFC Bank Demat Account Closure Form.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Account closure – HDFC Bank demat (CDSL / NSDL) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-demat-account-closure",
+  "title": "Account closure – HDFC Bank demat (CDSL / NSDL)",
+  "fields": [
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 468.7,
+    "y": 61.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      468.7,
+      96.32,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "dp_id",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 219.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      96.32,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "client_id",
+    "nominee": null,
+    "page": 1,
+    "x": 251.3,
+    "y": 219.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      251.3,
+      97.36,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "first_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 233.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      445.85,
+      37
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "second_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 247.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      445.85,
+      37
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "third_holder_name",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 262.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      445.85,
+      37
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mobile",
+    "nominee": null,
+    "page": 1,
+    "x": 420.7,
+    "y": 333.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      420.7,
+      144.24,
+      12
+     ]
+    ]
+   },
+   {
+    "key": "closure_reason",
+    "nominee": null,
+    "page": 1,
+    "x": 178,
+    "y": 348.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 365
+   },
+   {
+    "key": "target_dp_id",
+    "nominee": null,
+    "page": 1,
+    "x": 284.7,
+    "y": 463.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      284.7,
+      96.64,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "target_client_id",
+    "nominee": null,
+    "page": 1,
+    "x": 417.3,
+    "y": 463.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      417.3,
+      96.4,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "first_holder_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 68,
+    "y": 636,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 100
+   },
+   {
+    "key": "second_holder_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 228,
+    "y": 636,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 96
+   },
+   {
+    "key": "third_holder_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 372,
+    "y": 636,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 96
+   },
+   {
+    "key": "form_date_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 432.7,
+    "y": 711.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      432.7,
+      96.32,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "dp_id_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 729.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      96.32,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "client_id_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 251.3,
+    "y": 729.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      251.3,
+      97.36,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "first_holder_name_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 742.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      253.68,
+      21
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "second_holder_name_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 754.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      253.68,
+      21
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "third_holder_name_acknowledgement",
+    "nominee": null,
+    "page": 1,
+    "x": 119,
+    "y": 766.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      119,
+      253.68,
+      21
+     ]
+    ],
+    "combKeepAll": true
+   }
+  ]
+ },
+ "fieldSources": {
+  "closure_initiated_by": "tick",
+  "form_date": "today",
+  "dp_id": "typed",
+  "client_id": "typed",
+  "first_holder_name": "document.name|upper",
+  "second_holder_name": "typed",
+  "third_holder_name": "typed",
+  "mobile": "typed",
+  "closure_reason": "typed",
+  "closure_option": "tick",
+  "nsdl_transfer_to": "tick",
+  "cdsl_balance_remaining": "tick",
+  "cdsl_balance_present": "tick",
+  "target_depository": "tick",
+  "target_dp_id": "typed",
+  "target_client_id": "typed",
+  "delivery_instruction_slips": "tick",
+  "shifting_confirmation": "tick",
+  "first_holder_name_signed": "copy.first_holder_name",
+  "second_holder_name_signed": "copy.second_holder_name",
+  "third_holder_name_signed": "copy.third_holder_name",
+  "form_date_acknowledgement": "copy.form_date",
+  "dp_id_acknowledgement": "copy.dp_id",
+  "client_id_acknowledgement": "copy.client_id",
+  "first_holder_name_acknowledgement": "copy.first_holder_name",
+  "second_holder_name_acknowledgement": "copy.second_holder_name",
+  "third_holder_name_acknowledgement": "copy.third_holder_name"
+ },
+ "formRules": {
+  "formId": "hdfc-demat-account-closure",
+  "group": "NFT",
+  "label": "Account closure – HDFC Bank demat (CDSL / NSDL)",
+  "shortLabel": "HDFC demat closure",
+  "purpose": "Close a demat account held with HDFC Bank",
+  "blankFileName": "HDFC Bank Demat Account Closure Form.pdf",
+  "keyFields": [
+   "DP ID",
+   "Client ID",
+   "Reason"
+  ],
+  "sheetTabName": "HDFC demat closure",
+  "detectionPhrases": [
+   "Account Closure Request form - CDSL & NSDL"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "account",
+    "label": "Page 1 · Closure request (Excel)",
+    "fields": [
+     "closure_initiated_by",
+     "form_date",
+     "dp_id",
+     "client_id"
+    ]
+   },
+   {
+    "key": "holders",
+    "label": "Page 1 · Account holders",
+    "fields": [
+     "first_holder_name",
+     "second_holder_name",
+     "third_holder_name",
+     "mobile",
+     "first_holder_name_signed",
+     "second_holder_name_signed",
+     "third_holder_name_signed"
+    ]
+   },
+   {
+    "key": "reason",
+    "label": "Page 1 · Reason for closure (Excel)",
+    "fields": [
+     "closure_reason"
+    ]
+   },
+   {
+    "key": "balances",
+    "label": "Page 1 · Balances and declarations (Excel)",
+    "fields": [
+     "closure_option",
+     "nsdl_transfer_to",
+     "cdsl_balance_remaining",
+     "cdsl_balance_present",
+     "target_depository",
+     "target_dp_id",
+     "target_client_id",
+     "delivery_instruction_slips",
+     "shifting_confirmation"
+    ]
+   },
+   {
+    "key": "acknowledgement",
+    "label": "Page 1 · Acknowledgement receipt",
+    "fields": [
+     "form_date_acknowledgement",
+     "dp_id_acknowledgement",
+     "client_id_acknowledgement",
+     "first_holder_name_acknowledgement",
+     "second_holder_name_acknowledgement",
+     "third_holder_name_acknowledgement"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "dp_id",
+   "client_id",
+   "first_holder_name",
+   "closure_reason"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": true,
+  "documentDetails": [
+   "name"
+  ]
+ },
+ "drawnSpots": [
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     468.7,
+     54.6,
+     96.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "dp_id",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     212.9,
+     96.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "client_id",
+   "page": 1,
+   "lines": [
+    [
+     251.3,
+     212.9,
+     97.36,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     226.9,
+     445.85,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     240.3,
+     445.85,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     255.9,
+     445.85,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mobile",
+   "page": 1,
+   "lines": [
+    [
+     420.7,
+     326.3,
+     144.24,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "closure_reason",
+   "page": 1,
+   "lines": [
+    [
+     178,
+     341.7,
+     89.37,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "target_dp_id",
+   "page": 1,
+   "lines": [
+    [
+     284.7,
+     456.9,
+     96.64,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "target_client_id",
+   "page": 1,
+   "lines": [
+    [
+     417.3,
+     456.9,
+     96.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     68,
+     630.9,
+     95.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     228,
+     630.9,
+     104.72,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     372,
+     630.9,
+     97.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "form_date_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     432.7,
+     704.3,
+     96.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "dp_id_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     722.9,
+     96.32,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "client_id_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     251.3,
+     722.9,
+     97.36,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "first_holder_name_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     735.9,
+     253.68,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "second_holder_name_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     747.3,
+     253.68,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "third_holder_name_acknowledgement",
+   "page": 1,
+   "lines": [
+    [
+     119,
+     759.9,
+     253.68,
+     8
+    ]
+   ]
+  }
+ ]
+}

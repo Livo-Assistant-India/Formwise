@@ -1,0 +1,77 @@
+{
+  "_about": "Where each value is written on the blank Dormant account activation – HDFC Bank (covering letter) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-dormant-activation",
+  "title": "Dormant account activation – HDFC Bank (covering letter)",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 164,
+      "y": 127.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 120
+    },
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 136,
+      "y": 180.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 86
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 222,
+      "y": 312,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 172
+    },
+    {
+      "key": "dormancy_reason",
+      "nominee": null,
+      "page": 1,
+      "x": 136,
+      "y": 352.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 386
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 140,
+      "y": 474.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 150
+    },
+    {
+      "key": "second_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 328,
+      "y": 474.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 118
+    },
+    {
+      "key": "third_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 481,
+      "y": 474.2,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 90
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the first holder's KYC documents (see ../document-data-dictionary.json); \"|upper\" etc. = the part or form of it this box wants; \"typed\" = from the batch Excel or the review screen; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed). No field sheet exists for account closure forms yet.",
+  "fieldSources": {
+    "closure_initiated_by": "tick",
+    "form_date": "today",
+    "dp_id": "typed",
+    "client_id": "typed",
+    "first_holder_name": "document.name|upper",
+    "second_holder_name": "typed",
+    "third_holder_name": "typed",
+    "mobile": "typed",
+    "closure_reason": "typed",
+    "closure_option": "tick",
+    "nsdl_transfer_to": "tick",
+    "cdsl_balance_remaining": "tick",
+    "cdsl_balance_present": "tick",
+    "target_depository": "tick",
+    "target_dp_id": "typed",
+    "target_client_id": "typed",
+    "delivery_instruction_slips": "tick",
+    "shifting_confirmation": "tick",
+    "first_holder_name_signed": "copy.first_holder_name",
+    "second_holder_name_signed": "copy.second_holder_name",
+    "third_holder_name_signed": "copy.third_holder_name",
+    "form_date_acknowledgement": "copy.form_date",
+    "dp_id_acknowledgement": "copy.dp_id",
+    "client_id_acknowledgement": "copy.client_id",
+    "first_holder_name_acknowledgement": "copy.first_holder_name",
+    "second_holder_name_acknowledgement": "copy.second_holder_name",
+    "third_holder_name_acknowledgement": "copy.third_holder_name"
+  }
+}
