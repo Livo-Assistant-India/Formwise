@@ -1,0 +1,465 @@
+{
+ "formId": "partnership-resolution-bank-closure",
+ "pageCount": 2,
+ "configuration": {
+  "id": "partnership-resolution-bank-closure",
+  "title": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 90,
+    "y": 330.8,
+    "w": 134.6,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 1"
+   },
+   {
+    "page": 1,
+    "x": 275.3,
+    "y": 330.8,
+    "w": 118.4,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 2"
+   },
+   {
+    "page": 1,
+    "x": 410.5,
+    "y": 330.8,
+    "w": 98,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 3"
+   },
+   {
+    "page": 2,
+    "x": 90,
+    "y": 366.7,
+    "w": 134.6,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 1 (demat)"
+   },
+   {
+    "page": 2,
+    "x": 275.3,
+    "y": 366.7,
+    "w": 118.4,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 2 (demat)"
+   },
+   {
+    "page": 2,
+    "x": 410.5,
+    "y": 366.7,
+    "w": 98,
+    "h": 24,
+    "signer": "partner",
+    "label": "Partner 3 (demat)"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "Partnership Resolution - HDFC Bank Account Closure.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Partners' resolution – HDFC Bank account closure (partnership firm) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "partnership-resolution-bank-closure",
+  "title": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "fields": [
+   {
+    "key": "entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 240,
+    "y": 82,
+    "fontSize": 10,
+    "type": "text",
+    "maxWidth": 200
+   },
+   {
+    "key": "entity_name_meeting",
+    "nominee": null,
+    "page": 1,
+    "x": 164,
+    "y": 119.6,
+    "fontSize": 6,
+    "type": "text",
+    "maxWidth": 44
+   },
+   {
+    "key": "registered_office_address",
+    "nominee": null,
+    "page": 1,
+    "x": 135,
+    "y": 132.5,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 92,
+    "y": 183.8,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 80
+   },
+   {
+    "key": "partner_1_name",
+    "nominee": null,
+    "page": 1,
+    "x": 259,
+    "y": 222.8,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 55
+   },
+   {
+    "key": "partner_2_name",
+    "nominee": null,
+    "page": 1,
+    "x": 362,
+    "y": 222.8,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 72
+   },
+   {
+    "key": "entity_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 111,
+    "y": 288.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 200
+   },
+   {
+    "key": "entity_name_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 107,
+    "y": 139.1,
+    "fontSize": 6.5,
+    "type": "text",
+    "maxWidth": 54
+   },
+   {
+    "key": "meeting_date",
+    "nominee": null,
+    "page": 2,
+    "x": 246,
+    "y": 139.1,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 60
+   },
+   {
+    "key": "registered_office_address_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 138,
+    "y": 152,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 288
+   },
+   {
+    "key": "demat_account_number",
+    "nominee": null,
+    "page": 2,
+    "x": 229,
+    "y": 197.3,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 98
+   },
+   {
+    "key": "partner_1_name_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 261,
+    "y": 236,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 62
+   },
+   {
+    "key": "partner_2_name_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 374,
+    "y": 236,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 58
+   },
+   {
+    "key": "entity_name_signed_p2",
+    "nominee": null,
+    "page": 2,
+    "x": 111,
+    "y": 324.8,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 200
+   }
+  ]
+ },
+ "fieldSources": {
+  "entity_name": "typed",
+  "entity_name_meeting": "copy.entity_name",
+  "registered_office_address": "typed",
+  "account_number": "typed",
+  "partner_1_name": "typed",
+  "partner_2_name": "typed",
+  "entity_name_signed": "copy.entity_name",
+  "entity_name_p2": "copy.entity_name",
+  "meeting_date": "typed",
+  "registered_office_address_p2": "copy.registered_office_address",
+  "demat_account_number": "typed",
+  "partner_1_name_p2": "copy.partner_1_name",
+  "partner_2_name_p2": "copy.partner_2_name",
+  "entity_name_signed_p2": "copy.entity_name"
+ },
+ "formRules": {
+  "formId": "partnership-resolution-bank-closure",
+  "group": "NFT",
+  "label": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "shortLabel": "Partnership resolution - bank closure",
+  "purpose": "Partnership firm resolutions to close the HDFC Bank account (page 1) and the demat account (page 2)",
+  "blankFileName": "Partnership Resolution - HDFC Bank Account Closure.pdf",
+  "keyFields": [
+   "Firm",
+   "Account number",
+   "Partners"
+  ],
+  "sheetTabName": "Partnership resolution - bank closure",
+  "detectionPhrases": [
+   "MEETING OF BOARD OF PARTNERS",
+   "REGISTERED OFFICE OF THE PARTNERSHIP"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "resolution",
+    "label": "Page 1 · Bank account resolution (Excel)",
+    "fields": [
+     "entity_name",
+     "entity_name_meeting",
+     "registered_office_address",
+     "account_number",
+     "partner_1_name",
+     "partner_2_name",
+     "entity_name_signed"
+    ]
+   },
+   {
+    "key": "demat",
+    "label": "Page 2 · Demat account resolution (Excel)",
+    "fields": [
+     "entity_name_p2",
+     "meeting_date",
+     "registered_office_address_p2",
+     "demat_account_number",
+     "partner_1_name_p2",
+     "partner_2_name_p2",
+     "entity_name_signed_p2"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "entity_name",
+   "account_number",
+   "partner_1_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": false,
+  "documentDetails": []
+ },
+ "drawnSpots": [
+  {
+   "field": "entity_name",
+   "page": 1,
+   "lines": [
+    [
+     240,
+     73.5,
+     97.82,
+     10
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_meeting",
+   "page": 1,
+   "lines": [
+    [
+     164,
+     114.5,
+     83.37,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "registered_office_address",
+   "page": 1,
+   "lines": [
+    [
+     135,
+     126.13,
+     118.8,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     92,
+     178.28,
+     76.52,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "partner_1_name",
+   "page": 1,
+   "lines": [
+    [
+     259,
+     217.7,
+     70.27,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "partner_2_name",
+   "page": 1,
+   "lines": [
+    [
+     362,
+     217.7,
+     70.27,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     111,
+     282,
+     106.27,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_p2",
+   "page": 2,
+   "lines": [
+    [
+     107,
+     134,
+     68.7,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "meeting_date",
+   "page": 2,
+   "lines": [
+    [
+     246,
+     134,
+     62.36,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "registered_office_address_p2",
+   "page": 2,
+   "lines": [
+    [
+     138,
+     145.63,
+     131.31,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "demat_account_number",
+   "page": 2,
+   "lines": [
+    [
+     229,
+     192.2,
+     90.65,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "partner_1_name_p2",
+   "page": 2,
+   "lines": [
+    [
+     261,
+     230.9,
+     80.28,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "partner_2_name_p2",
+   "page": 2,
+   "lines": [
+    [
+     374,
+     230.9,
+     80.28,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_signed_p2",
+   "page": 2,
+   "lines": [
+    [
+     111,
+     318,
+     119.62,
+     8
+    ]
+   ]
+  }
+ ]
+}

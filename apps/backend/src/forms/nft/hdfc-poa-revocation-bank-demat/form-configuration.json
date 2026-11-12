@@ -1,0 +1,22 @@
+{
+  "_about": "Power of attorney revocation – HDFC Bank account and demat. Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-poa-revocation-bank-demat",
+  "title": "Power of attorney revocation – HDFC Bank account and demat",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 90,
+      "y": 433,
+      "w": 102,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Client (all account holders sign)"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HDFC Bank and Demat POA Revocation Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

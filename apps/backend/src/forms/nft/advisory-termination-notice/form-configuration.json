@@ -1,0 +1,22 @@
+{
+  "_about": "Notice of termination – 360 ONE investment advisory (company). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "advisory-termination-notice",
+  "title": "Notice of termination – 360 ONE investment advisory (company)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 43.2,
+      "y": 457.5,
+      "w": 114.2,
+      "h": 24,
+      "signer": "authorised_signatory",
+      "label": "For and on behalf of the company"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "360 ONE Advisory Notice of Termination.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

@@ -1,0 +1,57 @@
+{
+  "_about": "Where each value is written on the blank Notice of termination – 360 ONE investment advisory (company) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "advisory-termination-notice",
+  "title": "Notice of termination – 360 ONE investment advisory (company)",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 77,
+      "y": 118.9,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "agreement_date",
+      "nominee": null,
+      "page": 1,
+      "x": 415,
+      "y": 272.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 76
+    },
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 393,
+      "y": 285.1,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 86
+    },
+    {
+      "key": "termination_effective_date",
+      "nominee": null,
+      "page": 1,
+      "x": 332,
+      "y": 323.7,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 98
+    },
+    {
+      "key": "entity_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 138,
+      "y": 426.9,
+      "fontSize": 6.5,
+      "type": "text",
+      "maxWidth": 64
+    }
+  ]
+}

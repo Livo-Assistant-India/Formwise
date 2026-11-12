@@ -1,0 +1,1473 @@
+{
+ "formId": "hdfc-rekyc-non-individual",
+ "pageCount": 8,
+ "configuration": {
+  "id": "hdfc-rekyc-non-individual",
+  "title": "Dormancy removal & re-KYC – HDFC Bank (non-individuals)",
+  "signatureBoxes": [
+   {
+    "page": 2,
+    "x": 103.1,
+    "y": 576.1,
+    "w": 126,
+    "h": 24,
+    "signer": "authorised_signatory",
+    "label": "Authorised signatory 1"
+   },
+   {
+    "page": 2,
+    "x": 279.1,
+    "y": 576.1,
+    "w": 126,
+    "h": 24,
+    "signer": "authorised_signatory",
+    "label": "Authorised signatory 2"
+   },
+   {
+    "page": 2,
+    "x": 455.2,
+    "y": 576.1,
+    "w": 125.9,
+    "h": 24,
+    "signer": "authorised_signatory",
+    "label": "Authorised signatory 3"
+   }
+  ],
+  "tickboxes": [
+   {
+    "key": "mailing_address_change",
+    "page": 1,
+    "w": 11.3,
+    "h": 11.3,
+    "options": [
+     "No change in mailing address",
+     "Change mailing / contact details as below"
+    ],
+    "boxesByOption": {
+     "No change in mailing address": [
+      {
+       "x": 24.7,
+       "y": 259.04
+      }
+     ],
+     "Change mailing / contact details as below": [
+      {
+       "x": 364,
+       "y": 247.34
+      }
+     ]
+    }
+   },
+   {
+    "key": "registered_address_same_as_mailing",
+    "page": 1,
+    "w": 11.3,
+    "h": 11.3,
+    "options": [
+     "Same as mailing address"
+    ],
+    "boxesByOption": {
+     "Same as mailing address": [
+      {
+       "x": 364,
+       "y": 441.04
+      }
+     ]
+    }
+   },
+   {
+    "key": "registered_address_type",
+    "page": 1,
+    "w": 11.6,
+    "h": 11.6,
+    "options": [
+     "Owned",
+     "Rented / leased"
+    ],
+    "boxesByOption": {
+     "Owned": [
+      {
+       "x": 119.7,
+       "y": 537.28
+      }
+     ],
+     "Rented / leased": [
+      {
+       "x": 289,
+       "y": 537.28
+      }
+     ]
+    }
+   },
+   {
+    "key": "entity_type",
+    "page": 1,
+    "w": 11.5,
+    "h": 11.5,
+    "options": [
+     "Proprietorship",
+     "Partnership",
+     "Limited Liability Partnership",
+     "Public / Private Limited / OPC",
+     "HUF",
+     "Government",
+     "Bank",
+     "Societies",
+     "Insurance",
+     "Self Help Group",
+     "Foreign Bodies",
+     "Clubs",
+     "Non-Government Organisation",
+     "Mutual Fund",
+     "Association",
+     "Trust"
+    ],
+    "boxesByOption": {
+     "Proprietorship": [
+      {
+       "x": 24.3,
+       "y": 598.9
+      }
+     ],
+     "Partnership": [
+      {
+       "x": 112.3,
+       "y": 598.9
+      }
+     ],
+     "Limited Liability Partnership": [
+      {
+       "x": 192.3,
+       "y": 598.9
+      }
+     ],
+     "Public / Private Limited / OPC": [
+      {
+       "x": 306.3,
+       "y": 598.9
+      }
+     ],
+     "HUF": [
+      {
+       "x": 522,
+       "y": 598.9
+      }
+     ],
+     "Government": [
+      {
+       "x": 24.3,
+       "y": 620.5
+      }
+     ],
+     "Bank": [
+      {
+       "x": 112.3,
+       "y": 620.5
+      }
+     ],
+     "Societies": [
+      {
+       "x": 192.3,
+       "y": 620.5
+      }
+     ],
+     "Insurance": [
+      {
+       "x": 306.3,
+       "y": 620.5
+      }
+     ],
+     "Self Help Group": [
+      {
+       "x": 421,
+       "y": 620.5
+      }
+     ],
+     "Foreign Bodies": [
+      {
+       "x": 522,
+       "y": 620.5
+      }
+     ],
+     "Clubs": [
+      {
+       "x": 24.3,
+       "y": 641.9
+      }
+     ],
+     "Non-Government Organisation": [
+      {
+       "x": 112.3,
+       "y": 641.9
+      }
+     ],
+     "Mutual Fund": [
+      {
+       "x": 306.3,
+       "y": 641.9
+      }
+     ],
+     "Association": [
+      {
+       "x": 421,
+       "y": 641.9
+      }
+     ],
+     "Trust": [
+      {
+       "x": 522,
+       "y": 641.9
+      }
+     ]
+    }
+   }
+  ],
+  "ignoredBlanks": [
+   {
+    "page": 3,
+    "y": 157.6,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 3,
+    "y": 538.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 3,
+    "y": 607.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 4,
+    "y": 124.2,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 4,
+    "y": 211.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 4,
+    "y": 222.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 4,
+    "y": 288.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 4,
+    "y": 735,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 65.5,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 79.5,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 96.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 116.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 132.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 311.6,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 354.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 372.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 816.2,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 5,
+    "y": 817.6,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 108.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 122.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 142,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 332.4,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 384.7,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 451.9,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 6,
+    "y": 709.2,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 127.5,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 138.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 148.2,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 165.5,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 169.9,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 175.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 180.4,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 186.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 190.7,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 197,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 201,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 207.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 211.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 217.6,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 221.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 237.9,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 242.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 259.5,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 264.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 299.3,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 309.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 320.1,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 330.4,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 340.7,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 351.2,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 371.7,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 393.4,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 576.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   },
+   {
+    "page": 8,
+    "y": 730.8,
+    "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+   }
+  ],
+  "labels": [],
+  "blankFileName": "HDFC Bank Re-KYC Customer Updation Form - Non-Individual.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Dormancy removal & re-KYC – HDFC Bank (non-individuals) (8 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-rekyc-non-individual",
+  "title": "Dormancy removal & re-KYC – HDFC Bank (non-individuals)",
+  "fields": [
+   {
+    "key": "customer_id",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 102.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "form_date",
+    "nominee": null,
+    "page": 1,
+    "x": 476,
+    "y": 102.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      476,
+      113.28,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "proprietor_customer_id",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 124.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "proprietor_pan",
+    "nominee": null,
+    "page": 1,
+    "x": 320,
+    "y": 124.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      320,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "proprietor_name_prefix",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 147.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      56.72,
+      4
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "proprietor_name",
+    "nominee": null,
+    "page": 1,
+    "x": 221,
+    "y": 147.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      221,
+      283.2,
+      20
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 176.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "entity_pan",
+    "nominee": null,
+    "page": 1,
+    "x": 221,
+    "y": 190.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      221,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 222,
+    "y": 214.6,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 260
+   },
+   {
+    "key": "mailing_address_line1",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 280.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_address_line2",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 295.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_landmark",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 309.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_city",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 323.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      283.4,
+      20
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_pincode",
+    "nominee": null,
+    "page": 1,
+    "x": 447.7,
+    "y": 323.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      447.7,
+      85.02,
+      6
+     ]
+    ]
+   },
+   {
+    "key": "mailing_state",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 337.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      255.06,
+      18
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mailing_country",
+    "nominee": null,
+    "page": 1,
+    "x": 405,
+    "y": 337.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      405,
+      184.34,
+      13
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "mobile",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 380.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      141.7,
+      10
+     ]
+    ]
+   },
+   {
+    "key": "email",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 394.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_address_line1",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 461.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_address_line2",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 476.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_landmark",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 490.1,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      495.95,
+      35
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_city",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 504.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      283.4,
+      20
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_pincode",
+    "nominee": null,
+    "page": 1,
+    "x": 447.7,
+    "y": 504.4,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      447.7,
+      85.02,
+      6
+     ]
+    ]
+   },
+   {
+    "key": "registered_state",
+    "nominee": null,
+    "page": 1,
+    "x": 93.3,
+    "y": 518.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      93.3,
+      255.06,
+      18
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "registered_country",
+    "nominee": null,
+    "page": 1,
+    "x": 405,
+    "y": 518.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      405,
+      184.34,
+      13
+     ]
+    ],
+    "combKeepAll": true
+   },
+   {
+    "key": "date_of_incorporation",
+    "nominee": null,
+    "page": 2,
+    "x": 92.7,
+    "y": 170.7,
+    "fontSize": 8,
+    "type": "text",
+    "combs": [
+     [
+      92.7,
+      112.96,
+      8
+     ]
+    ]
+   },
+   {
+    "key": "annual_turnover",
+    "nominee": null,
+    "page": 2,
+    "x": 402,
+    "y": 172.3,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 180
+   },
+   {
+    "key": "annual_turnover_words",
+    "nominee": null,
+    "page": 2,
+    "x": 399,
+    "y": 186.9,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 184
+   },
+   {
+    "key": "place",
+    "nominee": null,
+    "page": 2,
+    "x": 60,
+    "y": 642,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 170
+   },
+   {
+    "key": "form_date_signed",
+    "nominee": null,
+    "page": 2,
+    "x": 52,
+    "y": 662,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 100
+   }
+  ]
+ },
+ "fieldSources": {
+  "customer_id": "typed",
+  "form_date": "today",
+  "proprietor_customer_id": "typed",
+  "proprietor_pan": "typed",
+  "proprietor_name_prefix": "typed",
+  "proprietor_name": "typed",
+  "entity_name": "typed",
+  "entity_pan": "typed",
+  "account_number": "typed",
+  "mailing_address_change": "tick",
+  "mailing_address_line1": "typed",
+  "mailing_address_line2": "typed",
+  "mailing_landmark": "typed",
+  "mailing_city": "typed",
+  "mailing_pincode": "typed",
+  "mailing_state": "typed",
+  "mailing_country": "typed",
+  "mobile": "typed",
+  "email": "typed",
+  "registered_address_same_as_mailing": "tick",
+  "registered_address_line1": "typed",
+  "registered_address_line2": "typed",
+  "registered_landmark": "typed",
+  "registered_city": "typed",
+  "registered_pincode": "typed",
+  "registered_state": "typed",
+  "registered_country": "typed",
+  "registered_address_type": "tick",
+  "entity_type": "tick",
+  "date_of_incorporation": "typed",
+  "annual_turnover": "typed",
+  "annual_turnover_words": "typed",
+  "place": "typed",
+  "form_date_signed": "copy.form_date"
+ },
+ "formRules": {
+  "formId": "hdfc-rekyc-non-individual",
+  "group": "NFT",
+  "label": "Dormancy removal & re-KYC – HDFC Bank (non-individuals)",
+  "shortLabel": "HDFC re-KYC (non-individual)",
+  "purpose": "Reactivate a company / firm account and update its KYC",
+  "blankFileName": "HDFC Bank Re-KYC Customer Updation Form - Non-Individual.pdf",
+  "keyFields": [
+   "Customer ID",
+   "Entity PAN",
+   "Account number"
+  ],
+  "sheetTabName": "HDFC re-KYC (non-individual)",
+  "detectionPhrases": [
+   "CUSTOMER UPDATION FORM FOR RE KYC - NON-INDIVIDUALS"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "entity",
+    "label": "Page 1 · Entity (Excel)",
+    "fields": [
+     "customer_id",
+     "form_date",
+     "proprietor_customer_id",
+     "proprietor_pan",
+     "proprietor_name_prefix",
+     "proprietor_name",
+     "entity_name",
+     "entity_pan",
+     "account_number"
+    ]
+   },
+   {
+    "key": "mailing",
+    "label": "Page 1 · Mailing address and contact (Excel)",
+    "fields": [
+     "mailing_address_change",
+     "mailing_address_line1",
+     "mailing_address_line2",
+     "mailing_landmark",
+     "mailing_city",
+     "mailing_pincode",
+     "mailing_state",
+     "mailing_country",
+     "mobile",
+     "email"
+    ]
+   },
+   {
+    "key": "registered",
+    "label": "Page 1 · Registered office (Excel)",
+    "fields": [
+     "registered_address_same_as_mailing",
+     "registered_address_line1",
+     "registered_address_line2",
+     "registered_landmark",
+     "registered_city",
+     "registered_pincode",
+     "registered_state",
+     "registered_country",
+     "registered_address_type"
+    ]
+   },
+   {
+    "key": "business",
+    "label": "Pages 1-2 · Entity type and business (Excel)",
+    "fields": [
+     "entity_type",
+     "date_of_incorporation",
+     "annual_turnover",
+     "annual_turnover_words"
+    ]
+   },
+   {
+    "key": "signed",
+    "label": "Page 2 · Declaration signed",
+    "fields": [
+     "place",
+     "form_date_signed"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "customer_id",
+   "entity_name",
+   "entity_pan",
+   "account_number"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": false,
+  "documentDetails": []
+ },
+ "drawnSpots": [
+  {
+   "field": "customer_id",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     95.3,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date",
+   "page": 1,
+   "lines": [
+    [
+     476,
+     95.3,
+     113.28,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "proprietor_customer_id",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     117.6,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "proprietor_pan",
+   "page": 1,
+   "lines": [
+    [
+     320,
+     117.6,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "proprietor_name_prefix",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     140.9,
+     56.72,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "proprietor_name",
+   "page": 1,
+   "lines": [
+    [
+     221,
+     140.9,
+     283.2,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "entity_name",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     169.3,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "entity_pan",
+   "page": 1,
+   "lines": [
+    [
+     221,
+     183.6,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     222,
+     207.8,
+     94.18,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line1",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     273.9,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_address_line2",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     288.3,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_landmark",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     302.3,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_city",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     316.6,
+     283.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_pincode",
+   "page": 1,
+   "lines": [
+    [
+     447.7,
+     316.6,
+     85.02,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_state",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     330.9,
+     255.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mailing_country",
+   "page": 1,
+   "lines": [
+    [
+     405,
+     330.9,
+     184.34,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "mobile",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     373.3,
+     141.7,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "email",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     387.6,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_address_line1",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     454.9,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_address_line2",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     469.3,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_landmark",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     483.3,
+     495.95,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_city",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     497.6,
+     283.4,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_pincode",
+   "page": 1,
+   "lines": [
+    [
+     447.7,
+     497.6,
+     85.02,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_state",
+   "page": 1,
+   "lines": [
+    [
+     93.3,
+     511.9,
+     255.06,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "registered_country",
+   "page": 1,
+   "lines": [
+    [
+     405,
+     511.9,
+     184.34,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "date_of_incorporation",
+   "page": 2,
+   "lines": [
+    [
+     92.7,
+     163.9,
+     112.96,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "annual_turnover",
+   "page": 2,
+   "lines": [
+    [
+     402,
+     165.5,
+     92.29,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "annual_turnover_words",
+   "page": 2,
+   "lines": [
+    [
+     399,
+     180.53,
+     110.62,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "place",
+   "page": 2,
+   "lines": [
+    [
+     60,
+     635.2,
+     53.8,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "form_date_signed",
+   "page": 2,
+   "lines": [
+    [
+     52,
+     655.2,
+     98.67,
+     8
+    ]
+   ]
+  }
+ ]
+}

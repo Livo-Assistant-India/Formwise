@@ -21,6 +21,23 @@ HIDDEN_TEXT = {
     ],
 }
 
+# Sample client data printed in a template (converted from Word by convert_word_blanks.ps1): blanked out of the copy.
+REDACT = {
+    "data/Blank Forms/Partnership Resolution - HDFC Bank Account Closure.pdf": ["JUVAS SOLUTIONS LLP"],
+}
+
+for blank_path, phrases in REDACT.items():
+    document = pymupdf.open(blank_path)
+    found = 0
+    for page in document:
+        for phrase in phrases:
+            for rect in page.search_for(phrase):
+                page.add_redact_annot(rect, fill=(1, 1, 1))
+                found += 1
+        page.apply_redactions()
+    document.save(blank_path, incremental=True, encryption=pymupdf.PDF_ENCRYPT_KEEP)
+    print(f"{blank_path}: {found} sample text spots blanked")
+
 for source_path, blank_path in UPRIGHT:
     source = pymupdf.open(source_path)
     upright = pymupdf.open()

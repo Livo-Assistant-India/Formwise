@@ -1,0 +1,77 @@
+{
+  "_about": "Where each value is written on the blank Power of attorney revocation – HDFC Bank account and demat (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-poa-revocation-bank-demat",
+  "title": "Power of attorney revocation – HDFC Bank account and demat",
+  "fields": [
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 92,
+      "y": 123.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "branch_address",
+      "nominee": null,
+      "page": 1,
+      "x": 92,
+      "y": 137,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 446,
+      "y": 166,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 80
+    },
+    {
+      "key": "bank_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 293,
+      "y": 247.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 124
+    },
+    {
+      "key": "demat_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 300,
+      "y": 261.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 124
+    },
+    {
+      "key": "poa_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 114,
+      "y": 316.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 168
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 196,
+      "y": 455,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 150
+    }
+  ]
+}

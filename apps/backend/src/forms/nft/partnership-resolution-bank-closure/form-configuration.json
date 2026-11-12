@@ -1,0 +1,67 @@
+{
+  "_about": "Partners' resolution – HDFC Bank account closure (partnership firm). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "partnership-resolution-bank-closure",
+  "title": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 90,
+      "y": 330.8,
+      "w": 134.6,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 1"
+    },
+    {
+      "page": 1,
+      "x": 275.3,
+      "y": 330.8,
+      "w": 118.4,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 2"
+    },
+    {
+      "page": 1,
+      "x": 410.5,
+      "y": 330.8,
+      "w": 98,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 3"
+    },
+    {
+      "page": 2,
+      "x": 90,
+      "y": 366.7,
+      "w": 134.6,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 1 (demat)"
+    },
+    {
+      "page": 2,
+      "x": 275.3,
+      "y": 366.7,
+      "w": 118.4,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 2 (demat)"
+    },
+    {
+      "page": 2,
+      "x": 410.5,
+      "y": 366.7,
+      "w": 98,
+      "h": 24,
+      "signer": "partner",
+      "label": "Partner 3 (demat)"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "Partnership Resolution - HDFC Bank Account Closure.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

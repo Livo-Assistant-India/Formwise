@@ -1,0 +1,12 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the first holder's KYC documents (see ../document-data-dictionary.json); \"|upper\" etc. = the part or form of it this box wants; \"typed\" = from the batch Excel or the review screen; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed). No field sheet exists for account closure forms yet.",
+  "fieldSources": {
+    "branch_name": "typed",
+    "branch_address": "typed",
+    "form_date": "today",
+    "bank_account_number": "typed",
+    "demat_account_number": "typed",
+    "poa_holder_name": "typed",
+    "first_holder_name": "document.name|upper"
+  }
+}

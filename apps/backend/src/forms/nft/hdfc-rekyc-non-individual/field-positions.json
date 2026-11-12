@@ -1,0 +1,473 @@
+{
+  "_about": "Where each value is written on the blank Dormancy removal & re-KYC – HDFC Bank (non-individuals) (8 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-rekyc-non-individual",
+  "title": "Dormancy removal & re-KYC – HDFC Bank (non-individuals)",
+  "fields": [
+    {
+      "key": "customer_id",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 102.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          141.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 476,
+      "y": 102.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          476,
+          113.28,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "proprietor_customer_id",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 124.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          141.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "proprietor_pan",
+      "nominee": null,
+      "page": 1,
+      "x": 320,
+      "y": 124.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          320,
+          141.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "proprietor_name_prefix",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 147.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          56.72,
+          4
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "proprietor_name",
+      "nominee": null,
+      "page": 1,
+      "x": 221,
+      "y": 147.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          221,
+          283.2,
+          20
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 176.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "entity_pan",
+      "nominee": null,
+      "page": 1,
+      "x": 221,
+      "y": 190.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          221,
+          141.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 222,
+      "y": 214.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 260
+    },
+    {
+      "key": "mailing_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 280.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 295.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_landmark",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 309.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_city",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 323.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          283.4,
+          20
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 447.7,
+      "y": 323.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          447.7,
+          85.02,
+          6
+        ]
+      ]
+    },
+    {
+      "key": "mailing_state",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 337.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          255.06,
+          18
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mailing_country",
+      "nominee": null,
+      "page": 1,
+      "x": 405,
+      "y": 337.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          405,
+          184.34,
+          13
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 380.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          141.7,
+          10
+        ]
+      ]
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 394.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 461.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 476.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_landmark",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 490.1,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          495.95,
+          35
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_city",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 504.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          283.4,
+          20
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 447.7,
+      "y": 504.4,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          447.7,
+          85.02,
+          6
+        ]
+      ]
+    },
+    {
+      "key": "registered_state",
+      "nominee": null,
+      "page": 1,
+      "x": 93.3,
+      "y": 518.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          93.3,
+          255.06,
+          18
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "registered_country",
+      "nominee": null,
+      "page": 1,
+      "x": 405,
+      "y": 518.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          405,
+          184.34,
+          13
+        ]
+      ],
+      "combKeepAll": true
+    },
+    {
+      "key": "date_of_incorporation",
+      "nominee": null,
+      "page": 2,
+      "x": 92.7,
+      "y": 170.7,
+      "fontSize": 8,
+      "type": "text",
+      "combs": [
+        [
+          92.7,
+          112.96,
+          8
+        ]
+      ]
+    },
+    {
+      "key": "annual_turnover",
+      "nominee": null,
+      "page": 2,
+      "x": 402,
+      "y": 172.3,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 180
+    },
+    {
+      "key": "annual_turnover_words",
+      "nominee": null,
+      "page": 2,
+      "x": 399,
+      "y": 186.9,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 184
+    },
+    {
+      "key": "place",
+      "nominee": null,
+      "page": 2,
+      "x": 60,
+      "y": 642,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 170
+    },
+    {
+      "key": "form_date_signed",
+      "nominee": null,
+      "page": 2,
+      "x": 52,
+      "y": 662,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    }
+  ]
+}

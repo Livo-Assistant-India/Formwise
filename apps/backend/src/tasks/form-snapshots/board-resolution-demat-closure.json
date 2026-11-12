@@ -1,0 +1,231 @@
+{
+ "formId": "board-resolution-demat-closure",
+ "pageCount": 1,
+ "configuration": {
+  "id": "board-resolution-demat-closure",
+  "title": "Board resolution – demat account closure (company)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 112,
+    "y": 278.3,
+    "w": 140,
+    "h": 18,
+    "signer": "director",
+    "label": "Director 1"
+   },
+   {
+    "page": 1,
+    "x": 292,
+    "y": 278.3,
+    "w": 140,
+    "h": 18,
+    "signer": "director",
+    "label": "Director 2"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "Board Resolution - Demat Account Closure.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Board resolution – demat account closure (company) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "board-resolution-demat-closure",
+  "title": "Board resolution – demat account closure (company)",
+  "fields": [
+   {
+    "key": "entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 455,
+    "y": 107,
+    "fontSize": 6.5,
+    "type": "text",
+    "maxWidth": 42
+   },
+   {
+    "key": "meeting_date",
+    "nominee": null,
+    "page": 1,
+    "x": 118,
+    "y": 116.8,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 38
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 406,
+    "y": 146.1,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 72
+   },
+   {
+    "key": "director_1_name",
+    "nominee": null,
+    "page": 1,
+    "x": 225,
+    "y": 195,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 39
+   },
+   {
+    "key": "director_2_name",
+    "nominee": null,
+    "page": 1,
+    "x": 291,
+    "y": 195,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 31
+   },
+   {
+    "key": "entity_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 106,
+    "y": 253.6,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 86
+   }
+  ]
+ },
+ "fieldSources": {
+  "entity_name": "typed",
+  "meeting_date": "typed",
+  "account_number": "typed",
+  "director_1_name": "typed",
+  "director_2_name": "typed",
+  "entity_name_signed": "copy.entity_name"
+ },
+ "formRules": {
+  "formId": "board-resolution-demat-closure",
+  "group": "NFT",
+  "label": "Board resolution – demat account closure (company)",
+  "shortLabel": "Board resolution - demat closure",
+  "purpose": "Company board resolution to close a demat account",
+  "blankFileName": "Board Resolution - Demat Account Closure.pdf",
+  "keyFields": [
+   "Company",
+   "Account number",
+   "Directors"
+  ],
+  "sheetTabName": "Board resolution - demat closure",
+  "detectionPhrases": [
+   "Board resolution format for Demat",
+   "Demat Account which was opened"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "resolution",
+    "label": "Page 1 · Resolution (Excel)",
+    "fields": [
+     "entity_name",
+     "meeting_date",
+     "account_number",
+     "director_1_name",
+     "director_2_name",
+     "entity_name_signed"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "entity_name",
+   "account_number",
+   "director_1_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": false,
+  "documentDetails": []
+ },
+ "drawnSpots": [
+  {
+   "field": "entity_name",
+   "page": 1,
+   "lines": [
+    [
+     455,
+     101.9,
+     58.69,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "meeting_date",
+   "page": 1,
+   "lines": [
+    [
+     118,
+     111.7,
+     62.36,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     406,
+     141,
+     70.64,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "director_1_name",
+   "page": 1,
+   "lines": [
+    [
+     225,
+     189.9,
+     71.03,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "director_2_name",
+   "page": 1,
+   "lines": [
+    [
+     291,
+     189.9,
+     71.03,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     106,
+     248.5,
+     79.7,
+     6
+    ]
+   ]
+  }
+ ]
+}

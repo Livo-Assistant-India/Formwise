@@ -116,6 +116,8 @@ export async function fillTextFields(formConfig, mapping, getValue) {
         // A printed grey hint (e.g. "dd-mmm-yyyy") under the value is blanked first so the two don't overlap.
         if (field.cover) page.drawRectangle({ x: field.x + (field.cover.dx || 0), y: baseY - (field.cover.below || 3), width: field.cover.width, height: field.cover.height, color: rgb(1, 1, 1) });
         page.drawText(value, { x: field.x, y: baseY, size: fontSize, font });
+        // Still wider than its blank at the smallest size: it runs into the printed text, so the reviewer must look.
+        truncated = Boolean(field.maxWidth) && font.widthOfTextAtSize(value, fontSize) > field.maxWidth + 1;
         bbox = glyphBox(field.x, field.y, font.widthOfTextAtSize(value, fontSize), fontSize);
         lines = [bbox];
       }

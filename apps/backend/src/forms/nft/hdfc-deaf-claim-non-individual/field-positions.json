@@ -1,0 +1,157 @@
+{
+  "_about": "Where each value is written on the blank Unclaimed deposits (RBI DEAF) request – HDFC Bank (non-individual) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-deaf-claim-non-individual",
+  "title": "Unclaimed deposits (RBI DEAF) request – HDFC Bank (non-individual)",
+  "fields": [
+    {
+      "key": "bank_name",
+      "nominee": null,
+      "page": 1,
+      "x": 109,
+      "y": 119.8,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 88
+    },
+    {
+      "key": "branch_name",
+      "nominee": null,
+      "page": 1,
+      "x": 118,
+      "y": 133.7,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 80
+    },
+    {
+      "key": "udrn_number",
+      "nominee": null,
+      "page": 1,
+      "x": 316,
+      "y": 107.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 228
+    },
+    {
+      "key": "entity_address_line1",
+      "nominee": null,
+      "page": 1,
+      "x": 250,
+      "y": 122.9,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 294
+    },
+    {
+      "key": "entity_address_line2",
+      "nominee": null,
+      "page": 1,
+      "x": 205,
+      "y": 138.6,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 252
+    },
+    {
+      "key": "pincode",
+      "nominee": null,
+      "page": 1,
+      "x": 482,
+      "y": 138.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 62
+    },
+    {
+      "key": "mobile",
+      "nominee": null,
+      "page": 1,
+      "x": 252,
+      "y": 154.6,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 155
+    },
+    {
+      "key": "email",
+      "nominee": null,
+      "page": 1,
+      "x": 443,
+      "y": 154.6,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 102
+    },
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 235,
+      "y": 170.7,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 213,
+      "y": 269.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 228
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 156,
+      "y": 297.1,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 216
+    },
+    {
+      "key": "unable_to_operate_reason",
+      "nominee": null,
+      "page": 1,
+      "x": 269,
+      "y": 324.6,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 250
+    },
+    {
+      "key": "refund_account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 326,
+      "y": 737,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 188
+    },
+    {
+      "key": "authorised_signatory_1_name",
+      "nominee": null,
+      "page": 2,
+      "x": 76,
+      "y": 105,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 330
+    },
+    {
+      "key": "authorised_signatory_2_name",
+      "nominee": null,
+      "page": 2,
+      "x": 76,
+      "y": 160,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 330
+    }
+  ]
+}

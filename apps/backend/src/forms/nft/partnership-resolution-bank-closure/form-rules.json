@@ -1,0 +1,56 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "partnership-resolution-bank-closure",
+  "group": "NFT",
+  "label": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "shortLabel": "Partnership resolution - bank closure",
+  "purpose": "Partnership firm resolutions to close the HDFC Bank account (page 1) and the demat account (page 2)",
+  "blankFileName": "Partnership Resolution - HDFC Bank Account Closure.pdf",
+  "keyFields": [
+    "Firm",
+    "Account number",
+    "Partners"
+  ],
+  "sheetTabName": "Partnership resolution - bank closure",
+  "detectionPhrases": [
+    "MEETING OF BOARD OF PARTNERS",
+    "REGISTERED OFFICE OF THE PARTNERSHIP"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "resolution",
+      "label": "Page 1 · Bank account resolution (Excel)",
+      "fields": [
+        "entity_name",
+        "entity_name_meeting",
+        "registered_office_address",
+        "account_number",
+        "partner_1_name",
+        "partner_2_name",
+        "entity_name_signed"
+      ]
+    },
+    {
+      "key": "demat",
+      "label": "Page 2 · Demat account resolution (Excel)",
+      "fields": [
+        "entity_name_p2",
+        "meeting_date",
+        "registered_office_address_p2",
+        "demat_account_number",
+        "partner_1_name_p2",
+        "partner_2_name_p2",
+        "entity_name_signed_p2"
+      ]
+    }
+  ]
+}

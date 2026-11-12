@@ -1,0 +1,231 @@
+{
+ "formId": "board-resolution-bank-closure",
+ "pageCount": 1,
+ "configuration": {
+  "id": "board-resolution-bank-closure",
+  "title": "Board resolution – HDFC Bank account closure (company)",
+  "signatureBoxes": [
+   {
+    "page": 1,
+    "x": 112,
+    "y": 260.7,
+    "w": 140,
+    "h": 18,
+    "signer": "director",
+    "label": "Director 1"
+   },
+   {
+    "page": 1,
+    "x": 292,
+    "y": 260.7,
+    "w": 140,
+    "h": 18,
+    "signer": "director",
+    "label": "Director 2"
+   }
+  ],
+  "tickboxes": [],
+  "ignoredBlanks": [],
+  "labels": [],
+  "blankFileName": "Board Resolution - HDFC Bank Account Closure.pdf",
+  "nomineeHeaderRe": "/(?!)/"
+ },
+ "positions": {
+  "_about": "Where each value is written on the blank Board resolution – HDFC Bank account closure (company) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "board-resolution-bank-closure",
+  "title": "Board resolution – HDFC Bank account closure (company)",
+  "fields": [
+   {
+    "key": "entity_name",
+    "nominee": null,
+    "page": 1,
+    "x": 421,
+    "y": 126.4,
+    "fontSize": 6.5,
+    "type": "text",
+    "maxWidth": 68
+   },
+   {
+    "key": "meeting_date",
+    "nominee": null,
+    "page": 1,
+    "x": 116,
+    "y": 136.2,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 46
+   },
+   {
+    "key": "account_number",
+    "nominee": null,
+    "page": 1,
+    "x": 386,
+    "y": 167.4,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 92
+   },
+   {
+    "key": "director_1_name",
+    "nominee": null,
+    "page": 1,
+    "x": 216,
+    "y": 206.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 40
+   },
+   {
+    "key": "director_2_name",
+    "nominee": null,
+    "page": 1,
+    "x": 289,
+    "y": 206.2,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 50
+   },
+   {
+    "key": "entity_name_signed",
+    "nominee": null,
+    "page": 1,
+    "x": 105,
+    "y": 255.1,
+    "fontSize": 7.5,
+    "type": "text",
+    "maxWidth": 105
+   }
+  ]
+ },
+ "fieldSources": {
+  "entity_name": "typed",
+  "meeting_date": "typed",
+  "account_number": "typed",
+  "director_1_name": "typed",
+  "director_2_name": "typed",
+  "entity_name_signed": "copy.entity_name"
+ },
+ "formRules": {
+  "formId": "board-resolution-bank-closure",
+  "group": "NFT",
+  "label": "Board resolution – HDFC Bank account closure (company)",
+  "shortLabel": "Board resolution - bank closure",
+  "purpose": "Company board resolution to close an HDFC Bank account",
+  "blankFileName": "Board Resolution - HDFC Bank Account Closure.pdf",
+  "keyFields": [
+   "Company",
+   "Account number",
+   "Directors"
+  ],
+  "sheetTabName": "Board resolution - bank closure",
+  "detectionPhrases": [
+   "Board resolution format for HDFC bank",
+   "bearing account no.--"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+   "scope": "shared",
+   "tickboxField": null,
+   "numberField": null,
+   "optionByIdentityKind": {},
+   "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+   {
+    "key": "resolution",
+    "label": "Page 1 · Resolution (Excel)",
+    "fields": [
+     "entity_name",
+     "meeting_date",
+     "account_number",
+     "director_1_name",
+     "director_2_name",
+     "entity_name_signed"
+    ]
+   }
+  ],
+  "requiredFields": [
+   "entity_name",
+   "account_number",
+   "director_1_name"
+  ],
+  "nomineeFieldKeys": [],
+  "usesDocuments": false,
+  "documentDetails": []
+ },
+ "drawnSpots": [
+  {
+   "field": "entity_name",
+   "page": 1,
+   "lines": [
+    [
+     421,
+     120.88,
+     63.58,
+     6.5
+    ]
+   ]
+  },
+  {
+   "field": "meeting_date",
+   "page": 1,
+   "lines": [
+    [
+     116,
+     131.1,
+     62.36,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "account_number",
+   "page": 1,
+   "lines": [
+    [
+     386,
+     161.03,
+     88.3,
+     7.5
+    ]
+   ]
+  },
+  {
+   "field": "director_1_name",
+   "page": 1,
+   "lines": [
+    [
+     216,
+     201.1,
+     71.03,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "director_2_name",
+   "page": 1,
+   "lines": [
+    [
+     289,
+     201.1,
+     71.03,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "entity_name_signed",
+   "page": 1,
+   "lines": [
+    [
+     105,
+     248.73,
+     99.63,
+     7.5
+    ]
+   ]
+  }
+ ]
+}

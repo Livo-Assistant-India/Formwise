@@ -1,0 +1,499 @@
+{
+  "_about": "Dormancy removal & re-KYC – HDFC Bank (non-individuals). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-rekyc-non-individual",
+  "title": "Dormancy removal & re-KYC – HDFC Bank (non-individuals)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 103.1,
+      "y": 576.1,
+      "w": 126,
+      "h": 24,
+      "signer": "authorised_signatory",
+      "label": "Authorised signatory 1"
+    },
+    {
+      "page": 2,
+      "x": 279.1,
+      "y": 576.1,
+      "w": 126,
+      "h": 24,
+      "signer": "authorised_signatory",
+      "label": "Authorised signatory 2"
+    },
+    {
+      "page": 2,
+      "x": 455.2,
+      "y": 576.1,
+      "w": 125.9,
+      "h": 24,
+      "signer": "authorised_signatory",
+      "label": "Authorised signatory 3"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "mailing_address_change",
+      "page": 1,
+      "w": 11.3,
+      "h": 11.3,
+      "options": [
+        "No change in mailing address",
+        "Change mailing / contact details as below"
+      ],
+      "boxesByOption": {
+        "No change in mailing address": [
+          {
+            "x": 24.7,
+            "y": 259.04
+          }
+        ],
+        "Change mailing / contact details as below": [
+          {
+            "x": 364,
+            "y": 247.34
+          }
+        ]
+      }
+    },
+    {
+      "key": "registered_address_same_as_mailing",
+      "page": 1,
+      "w": 11.3,
+      "h": 11.3,
+      "options": [
+        "Same as mailing address"
+      ],
+      "boxesByOption": {
+        "Same as mailing address": [
+          {
+            "x": 364,
+            "y": 441.04
+          }
+        ]
+      }
+    },
+    {
+      "key": "registered_address_type",
+      "page": 1,
+      "w": 11.6,
+      "h": 11.6,
+      "options": [
+        "Owned",
+        "Rented / leased"
+      ],
+      "boxesByOption": {
+        "Owned": [
+          {
+            "x": 119.7,
+            "y": 537.28
+          }
+        ],
+        "Rented / leased": [
+          {
+            "x": 289,
+            "y": 537.28
+          }
+        ]
+      }
+    },
+    {
+      "key": "entity_type",
+      "page": 1,
+      "w": 11.5,
+      "h": 11.5,
+      "options": [
+        "Proprietorship",
+        "Partnership",
+        "Limited Liability Partnership",
+        "Public / Private Limited / OPC",
+        "HUF",
+        "Government",
+        "Bank",
+        "Societies",
+        "Insurance",
+        "Self Help Group",
+        "Foreign Bodies",
+        "Clubs",
+        "Non-Government Organisation",
+        "Mutual Fund",
+        "Association",
+        "Trust"
+      ],
+      "boxesByOption": {
+        "Proprietorship": [
+          {
+            "x": 24.3,
+            "y": 598.9
+          }
+        ],
+        "Partnership": [
+          {
+            "x": 112.3,
+            "y": 598.9
+          }
+        ],
+        "Limited Liability Partnership": [
+          {
+            "x": 192.3,
+            "y": 598.9
+          }
+        ],
+        "Public / Private Limited / OPC": [
+          {
+            "x": 306.3,
+            "y": 598.9
+          }
+        ],
+        "HUF": [
+          {
+            "x": 522,
+            "y": 598.9
+          }
+        ],
+        "Government": [
+          {
+            "x": 24.3,
+            "y": 620.5
+          }
+        ],
+        "Bank": [
+          {
+            "x": 112.3,
+            "y": 620.5
+          }
+        ],
+        "Societies": [
+          {
+            "x": 192.3,
+            "y": 620.5
+          }
+        ],
+        "Insurance": [
+          {
+            "x": 306.3,
+            "y": 620.5
+          }
+        ],
+        "Self Help Group": [
+          {
+            "x": 421,
+            "y": 620.5
+          }
+        ],
+        "Foreign Bodies": [
+          {
+            "x": 522,
+            "y": 620.5
+          }
+        ],
+        "Clubs": [
+          {
+            "x": 24.3,
+            "y": 641.9
+          }
+        ],
+        "Non-Government Organisation": [
+          {
+            "x": 112.3,
+            "y": 641.9
+          }
+        ],
+        "Mutual Fund": [
+          {
+            "x": 306.3,
+            "y": 641.9
+          }
+        ],
+        "Association": [
+          {
+            "x": 421,
+            "y": 641.9
+          }
+        ],
+        "Trust": [
+          {
+            "x": 522,
+            "y": 641.9
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank Re-KYC Customer Updation Form - Non-Individual.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 3,
+      "y": 157.6,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 3,
+      "y": 538.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 3,
+      "y": 607.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 4,
+      "y": 124.2,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 4,
+      "y": 211.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 4,
+      "y": 222.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 4,
+      "y": 288.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 4,
+      "y": 735,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 65.5,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 79.5,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 96.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 116.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 132.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 311.6,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 354.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 372.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 816.2,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 5,
+      "y": 817.6,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 108.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 122.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 142,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 332.4,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 384.7,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 451.9,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 6,
+      "y": 709.2,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 127.5,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 138.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 148.2,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 165.5,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 169.9,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 175.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 180.4,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 186.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 190.7,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 197,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 201,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 207.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 211.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 217.6,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 221.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 237.9,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 242.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 259.5,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 264.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 299.3,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 309.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 320.1,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 330.4,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 340.7,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 351.2,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 371.7,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 393.4,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 576.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    },
+    {
+      "page": 8,
+      "y": 730.8,
+      "why": "Extended CKYC / FATCA / authorised-signatory / controlling-person annexure (pages 3-8): entity-specific, filled by the RM - open question"
+    }
+  ]
+}

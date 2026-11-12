@@ -1,0 +1,31 @@
+{
+  "_about": "Board resolution – demat account closure (company). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "board-resolution-demat-closure",
+  "title": "Board resolution – demat account closure (company)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 112,
+      "y": 278.3,
+      "w": 140,
+      "h": 18,
+      "signer": "director",
+      "label": "Director 1"
+    },
+    {
+      "page": 1,
+      "x": 292,
+      "y": 278.3,
+      "w": 140,
+      "h": 18,
+      "signer": "director",
+      "label": "Director 2"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "Board Resolution - Demat Account Closure.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

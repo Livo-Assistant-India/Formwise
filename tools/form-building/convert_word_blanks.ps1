@@ -8,6 +8,13 @@ $files = [ordered]@{
   "Caliber\Advisory closure form.docx" = "360 ONE Advisory POA Closure Letter.pdf"
   "PMS\Consult & Alpha\360 One Portfolio Managers PMS closure Form_UPDATED.docx" = "360 ONE Portfolio Managers PMS Closure Form.pdf"
   "Bank\Revocation of POA.doc" = "HDFC Bank POA Revocation Letter.pdf"
+  "PMS\AMC PMS\0.PoA revocation letter (HDFC Bank and Demat).doc" = "HDFC Bank and Demat POA Revocation Letter.pdf"
+  "Caliber\Notice of Termination - Advisory.docx" = "360 ONE Advisory Notice of Termination.pdf"
+  "PMS\AMC PMS\DORMANT REMOVAL_BANK.docx" = "HDFC Bank Dormant Removal Letter.pdf"
+  "..\Non-Individual\PMS\4.Board Resolution format Hdfc Bank and DP.docx" = "Board Resolution - HDFC Bank Account Closure.pdf"
+  "..\Non-Individual\PMS\Board resolution format for Demat.docx" = "Board Resolution - Demat Account Closure.pdf"
+  # Carries a sample firm name: make_closure_blanks.py blanks it out of the copy afterwards.
+  "..\Non-Individual\Bank\Partnership firm Board Resolution format Hdfc Bank and DP_HDFC CLOSURE.docx" = "Partnership Resolution - HDFC Bank Account Closure.pdf"
 }
 $word = New-Object -ComObject Word.Application
 $word.Visible = $false

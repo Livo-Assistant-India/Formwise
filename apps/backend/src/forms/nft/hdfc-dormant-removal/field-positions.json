@@ -1,0 +1,47 @@
+{
+  "_about": "Where each value is written on the blank Removal of dormant & no-debit – HDFC Bank (letter) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "hdfc-dormant-removal",
+  "title": "Removal of dormant & no-debit – HDFC Bank (letter)",
+  "fields": [
+    {
+      "key": "form_date",
+      "nominee": null,
+      "page": 1,
+      "x": 100,
+      "y": 104.9,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 100
+    },
+    {
+      "key": "first_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 99,
+      "y": 238.7,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 95
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 115,
+      "y": 283.7,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 80
+    },
+    {
+      "key": "account_holder_name",
+      "nominee": null,
+      "page": 1,
+      "x": 111,
+      "y": 306.1,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 80
+    }
+  ]
+}

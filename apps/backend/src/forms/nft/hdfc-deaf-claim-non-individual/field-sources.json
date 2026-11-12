@@ -1,0 +1,22 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the first holder's KYC documents (see ../document-data-dictionary.json); \"|upper\" etc. = the part or form of it this box wants; \"typed\" = from the batch Excel or the review screen; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed). No field sheet exists for account closure forms yet.",
+  "fieldSources": {
+    "bank_name": "typed",
+    "branch_name": "typed",
+    "udrn_number": "typed",
+    "entity_address_line1": "typed",
+    "entity_address_line2": "typed",
+    "pincode": "typed",
+    "mobile": "typed",
+    "email": "typed",
+    "form_date": "today",
+    "entity_name": "typed",
+    "account_number": "typed",
+    "unable_to_operate_reason": "typed",
+    "kyc_documents_status": "tick",
+    "refund_mode": "tick",
+    "refund_account_number": "typed",
+    "authorised_signatory_1_name": "typed",
+    "authorised_signatory_2_name": "typed"
+  }
+}

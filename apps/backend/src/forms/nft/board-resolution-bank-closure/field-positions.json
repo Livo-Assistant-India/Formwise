@@ -1,0 +1,67 @@
+{
+  "_about": "Where each value is written on the blank Board resolution – HDFC Bank account closure (company) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "board-resolution-bank-closure",
+  "title": "Board resolution – HDFC Bank account closure (company)",
+  "fields": [
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 421,
+      "y": 126.4,
+      "fontSize": 6.5,
+      "type": "text",
+      "maxWidth": 68
+    },
+    {
+      "key": "meeting_date",
+      "nominee": null,
+      "page": 1,
+      "x": 116,
+      "y": 136.2,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 46
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 386,
+      "y": 167.4,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 92
+    },
+    {
+      "key": "director_1_name",
+      "nominee": null,
+      "page": 1,
+      "x": 216,
+      "y": 206.2,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 40
+    },
+    {
+      "key": "director_2_name",
+      "nominee": null,
+      "page": 1,
+      "x": 289,
+      "y": 206.2,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 50
+    },
+    {
+      "key": "entity_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 105,
+      "y": 255.1,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 105
+    }
+  ]
+}

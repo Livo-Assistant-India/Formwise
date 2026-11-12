@@ -1,0 +1,67 @@
+{
+  "_about": "Where each value is written on the blank Board resolution – demat account closure (company) (1 page). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "board-resolution-demat-closure",
+  "title": "Board resolution – demat account closure (company)",
+  "fields": [
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 455,
+      "y": 107,
+      "fontSize": 6.5,
+      "type": "text",
+      "maxWidth": 42
+    },
+    {
+      "key": "meeting_date",
+      "nominee": null,
+      "page": 1,
+      "x": 118,
+      "y": 116.8,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 38
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 406,
+      "y": 146.1,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 72
+    },
+    {
+      "key": "director_1_name",
+      "nominee": null,
+      "page": 1,
+      "x": 225,
+      "y": 195,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 39
+    },
+    {
+      "key": "director_2_name",
+      "nominee": null,
+      "page": 1,
+      "x": 291,
+      "y": 195,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 31
+    },
+    {
+      "key": "entity_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 106,
+      "y": 253.6,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 86
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "_about": "Removal of dormant & no-debit – HDFC Bank (letter). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-dormant-removal",
+  "title": "Removal of dormant & no-debit – HDFC Bank (letter)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 1,
+      "x": 72,
+      "y": 442.6,
+      "w": 76.8,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Account holder"
+    }
+  ],
+  "tickboxes": [],
+  "blankFileName": "HDFC Bank Dormant Removal Letter.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": []
+}

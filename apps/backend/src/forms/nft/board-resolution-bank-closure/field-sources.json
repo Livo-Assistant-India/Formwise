@@ -1,0 +1,11 @@
+{
+  "_about": "Form field -> where its value comes from. \"document.X\" = X read from the first holder's KYC documents (see ../document-data-dictionary.json); \"|upper\" etc. = the part or form of it this box wants; \"typed\" = from the batch Excel or the review screen; \"copy.X\" = same as field X unless typed separately; \"today\" = today's date; \"tick\" = a tick box, answered per client in the Excel (never assumed). No field sheet exists for account closure forms yet.",
+  "fieldSources": {
+    "entity_name": "typed",
+    "meeting_date": "typed",
+    "account_number": "typed",
+    "director_1_name": "typed",
+    "director_2_name": "typed",
+    "entity_name_signed": "copy.entity_name"
+  }
+}

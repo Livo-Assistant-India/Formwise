@@ -1,0 +1,147 @@
+{
+  "_about": "Where each value is written on the blank Partners' resolution – HDFC Bank account closure (partnership firm) (2 pages). Made by tools/form-building/make_closure_forms.mjs.",
+  "formId": "partnership-resolution-bank-closure",
+  "title": "Partners' resolution – HDFC Bank account closure (partnership firm)",
+  "fields": [
+    {
+      "key": "entity_name",
+      "nominee": null,
+      "page": 1,
+      "x": 240,
+      "y": 82,
+      "fontSize": 10,
+      "type": "text",
+      "maxWidth": 200
+    },
+    {
+      "key": "entity_name_meeting",
+      "nominee": null,
+      "page": 1,
+      "x": 164,
+      "y": 119.6,
+      "fontSize": 6,
+      "type": "text",
+      "maxWidth": 44
+    },
+    {
+      "key": "registered_office_address",
+      "nominee": null,
+      "page": 1,
+      "x": 135,
+      "y": 132.5,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "account_number",
+      "nominee": null,
+      "page": 1,
+      "x": 92,
+      "y": 183.8,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 80
+    },
+    {
+      "key": "partner_1_name",
+      "nominee": null,
+      "page": 1,
+      "x": 259,
+      "y": 222.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 55
+    },
+    {
+      "key": "partner_2_name",
+      "nominee": null,
+      "page": 1,
+      "x": 362,
+      "y": 222.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 72
+    },
+    {
+      "key": "entity_name_signed",
+      "nominee": null,
+      "page": 1,
+      "x": 111,
+      "y": 288.8,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 200
+    },
+    {
+      "key": "entity_name_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 107,
+      "y": 139.1,
+      "fontSize": 6.5,
+      "type": "text",
+      "maxWidth": 54
+    },
+    {
+      "key": "meeting_date",
+      "nominee": null,
+      "page": 2,
+      "x": 246,
+      "y": 139.1,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 60
+    },
+    {
+      "key": "registered_office_address_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 138,
+      "y": 152,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 288
+    },
+    {
+      "key": "demat_account_number",
+      "nominee": null,
+      "page": 2,
+      "x": 229,
+      "y": 197.3,
+      "fontSize": 7.5,
+      "type": "text",
+      "maxWidth": 98
+    },
+    {
+      "key": "partner_1_name_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 261,
+      "y": 236,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 62
+    },
+    {
+      "key": "partner_2_name_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 374,
+      "y": 236,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 58
+    },
+    {
+      "key": "entity_name_signed_p2",
+      "nominee": null,
+      "page": 2,
+      "x": 111,
+      "y": 324.8,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 200
+    }
+  ]
+}

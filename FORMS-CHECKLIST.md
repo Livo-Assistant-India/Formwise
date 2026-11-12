@@ -127,7 +127,24 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 | Account closure – 360 ONE Portfolio Managers PMS (Word) | `pms-portfolio-managers-closure` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | Power of attorney revocation – HDFC Bank (Word) | `hdfc-poa-revocation` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | Unclaimed deposits (RBI DEAF) claim – HDFC Bank | `hdfc-deaf-claim` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
-| Account closure: still to do – RBI DEAF request letter (non-individual), non-individual dormant re-KYC (8 p), board resolutions ×4, PoA revocation (bank + demat), Notice of Termination – Advisory, Dormant Removal letters ×3 (Word) | | ⬜ | | | | | |
+| Power of attorney revocation – HDFC Bank account and demat (Word) | `hdfc-poa-revocation-bank-demat` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Notice of termination – 360 ONE advisory, company (Word) | `advisory-termination-notice` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Removal of dormant & no-debit – HDFC Bank letter (Word) | `hdfc-dormant-removal` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Board resolution – HDFC Bank account closure, company (Word) | `board-resolution-bank-closure` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Board resolution – demat account closure, company (Word) | `board-resolution-demat-closure` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Partners' resolution – HDFC Bank + demat closure, partnership firm (Word, 2 p) | `partnership-resolution-bank-closure` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Unclaimed deposits (RBI DEAF) request – HDFC Bank, non-individual | `hdfc-deaf-claim-non-individual` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+| Dormancy removal & re-KYC – HDFC Bank, non-individual (pages 1-2 filled) | `hdfc-rekyc-non-individual` | ✅ | ✅ | ✅ | ⬜ | ❓ | ⬜ |
+
+Account closure folder: every file is now covered (23 forms). Skipped as copies: Bank-folder board resolution (same
+wording as the PMS one), HSBC / IndusInd PMS closure Word files (same as `pms-portfolio-managers-closure`), IndusInd
+"Closure Broking PMS" (the 360 ONE broking form with a client filled in), Demat-folder "Demat Closure form", the Bank-folder
+dormant removal letter (carries two real client names; built from the clean AMC PMS copy).
+- Partnership resolution: its template printed a sample firm name; `make_closure_blanks.py` blanks it out of the copy.
+- Non-individual re-KYC: pages 3-8 (extended CKYC, FATCA, authorised signatories, controlling persons) are left to the
+  RM - open question for 360 ONE.
+- Short printed blanks (e.g. company name in the demat board resolution): a value too long even at 6pt is now flagged
+  "needs review" instead of silently running into the printed words (fill-pdf-service.js).
 | The other NFT forms (waiting for 360 ONE's forms and field lists) | | ❓ | | | | | |
 
 Account closure notes (10 Nov): files in `C:\zzz\demo\Account Closure Forms`; the same form often repeats across the

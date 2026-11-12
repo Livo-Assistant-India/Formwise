@@ -1,0 +1,91 @@
+{
+  "_about": "Unclaimed deposits (RBI DEAF) request – HDFC Bank (non-individual). Made by tools/form-building/make_closure_forms.mjs. Every tick box is its own question with no assumed answer.",
+  "id": "hdfc-deaf-claim-non-individual",
+  "title": "Unclaimed deposits (RBI DEAF) request – HDFC Bank (non-individual)",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 2,
+      "x": 413,
+      "y": 77,
+      "w": 134,
+      "h": 49,
+      "signer": "authorised_signatory",
+      "label": "Claimant 1"
+    },
+    {
+      "page": 2,
+      "x": 413,
+      "y": 128,
+      "w": 134,
+      "h": 55,
+      "signer": "authorised_signatory",
+      "label": "Claimant 2"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "kyc_documents_status",
+      "page": 1,
+      "w": 9,
+      "h": 9,
+      "options": [
+        "Are submitting KYC documents",
+        "Have submitted KYC documents"
+      ],
+      "boxesByOption": {
+        "Are submitting KYC documents": [
+          {
+            "x": 213.5,
+            "y": 353.8
+          }
+        ],
+        "Have submitted KYC documents": [
+          {
+            "x": 304.5,
+            "y": 353.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "refund_mode",
+      "page": 1,
+      "w": 6.5,
+      "h": 6.5,
+      "options": [
+        "Transfer to existing HDFC Bank account",
+        "Demand draft / NEFT"
+      ],
+      "boxesByOption": {
+        "Transfer to existing HDFC Bank account": [
+          {
+            "x": 94.6,
+            "y": 736.8
+          }
+        ],
+        "Demand draft / NEFT": [
+          {
+            "x": 94.6,
+            "y": 749.1
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "HDFC Bank Unclaimed Deposits Request Letter - Non-Individual.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 2,
+      "y": 694.1,
+      "why": "Customer acknowledgement slip: filled by the bank official"
+    },
+    {
+      "page": 2,
+      "y": 708.1,
+      "why": "Customer acknowledgement slip: filled by the bank official"
+    }
+  ]
+}

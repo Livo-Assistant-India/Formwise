@@ -1,0 +1,41 @@
+{
+  "_about": "Form-level rules: how the form is recognised, which tab it saves to. One person (the first holder) - their KYC documents fill the name, the Excel fills the rest.",
+  "formId": "advisory-termination-notice",
+  "group": "NFT",
+  "label": "Notice of termination – 360 ONE investment advisory (company)",
+  "shortLabel": "Advisory termination notice",
+  "purpose": "Terminate the investment advisory services agreement",
+  "blankFileName": "360 ONE Advisory Notice of Termination.pdf",
+  "keyFields": [
+    "Company",
+    "Agreement date",
+    "Effective date"
+  ],
+  "sheetTabName": "Advisory termination notice",
+  "detectionPhrases": [
+    "Sub: Notice of Termination",
+    "Investment Advisory Services Agreement"
+  ],
+  "supportedNomineeCount": 1,
+  "personLabel": "Account holder",
+  "identityType": {
+    "scope": "shared",
+    "tickboxField": null,
+    "numberField": null,
+    "optionByIdentityKind": {},
+    "numberFieldByIdentityKind": {}
+  },
+  "reviewSections": [
+    {
+      "key": "notice",
+      "label": "Page 1 · Termination notice (Excel)",
+      "fields": [
+        "form_date",
+        "agreement_date",
+        "entity_name",
+        "termination_effective_date",
+        "entity_name_signed"
+      ]
+    }
+  ]
+}
