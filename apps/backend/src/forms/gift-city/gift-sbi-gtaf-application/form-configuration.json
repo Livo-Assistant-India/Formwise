@@ -75,15 +75,6 @@
       "h": 24,
       "signer": "subscriber",
       "label": "Contribution Agreement - contributor"
-    },
-    {
-      "page": 65,
-      "x": 71.5,
-      "y": 627.9,
-      "w": 133.3,
-      "h": 24,
-      "signer": "joint_holder",
-      "label": "Contribution Agreement - second holder"
     }
   ],
   "tickboxes": [

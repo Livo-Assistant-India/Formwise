@@ -1,0 +1,1337 @@
+{
+  "_about": "360 ONE New Perspective Fund - Application Form & Documentation Set, 82 pages. Made by tools/form-building/make_gift_feeder_subscriptions.mjs; pages 1-21 shared by the GIFT application sets, pages 22-82 measured on this blank. Every tick box is its own question with no assumed answer.",
+  "id": "gift-new-perspective-subscription",
+  "title": "360 ONE New Perspective Fund - Application Form",
+  "labels": [],
+  "signatureBoxes": [
+    {
+      "page": 7,
+      "x": 31.1,
+      "y": 654.2,
+      "w": 165.7,
+      "h": 86.6,
+      "signer": "subscriber",
+      "label": "First applicant's declaration"
+    },
+    {
+      "page": 10,
+      "x": 31.1,
+      "y": 475.8,
+      "w": 165.9,
+      "h": 86.4,
+      "signer": "joint_holder",
+      "label": "Second applicant's declaration"
+    },
+    {
+      "page": 14,
+      "x": 55.5,
+      "y": 725.5,
+      "w": 203,
+      "h": 32.3,
+      "signer": "subscriber",
+      "label": "Investor profile (specimen signature)"
+    },
+    {
+      "page": 21,
+      "x": 444.5,
+      "y": 505.5,
+      "w": 110.5,
+      "h": 56.5,
+      "signer": "subscriber",
+      "label": "Nomination - first applicant"
+    },
+    {
+      "page": 21,
+      "x": 444.5,
+      "y": 565.8,
+      "w": 110.5,
+      "h": 56.7,
+      "signer": "joint_holder",
+      "label": "Nomination - second applicant"
+    },
+    {
+      "page": 23,
+      "x": 85.2,
+      "y": 363.7,
+      "w": 82.8,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Memorandum - important notice"
+    },
+    {
+      "page": 75,
+      "x": 107.4,
+      "y": 486.6,
+      "w": 88.1,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Contribution Agreement - contributor"
+    },
+    {
+      "page": 76,
+      "x": 72,
+      "y": 602.3,
+      "w": 159.6,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Annexure A - contributor"
+    },
+    {
+      "page": 82,
+      "x": 72,
+      "y": 540.7,
+      "w": 104.7,
+      "h": 24,
+      "signer": "subscriber",
+      "label": "Accredited investor declaration"
+    }
+  ],
+  "tickboxes": [
+    {
+      "key": "gender",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Male",
+        "Female",
+        "Others",
+        "Non-individual"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 126,
+            "y": 141.3
+          }
+        ],
+        "Female": [
+          {
+            "x": 155,
+            "y": 141.3
+          }
+        ],
+        "Others": [
+          {
+            "x": 192.2,
+            "y": 141.3
+          }
+        ],
+        "Non-individual": [
+          {
+            "x": 227.3,
+            "y": 141.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "citizenship",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Indian",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Indian": [
+          {
+            "x": 150.4,
+            "y": 186.4
+          }
+        ],
+        "Others": [
+          {
+            "x": 219.6,
+            "y": 186.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "residential_status",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Resident",
+        "Non-resident",
+        "Foreign national",
+        "Person of Indian origin"
+      ],
+      "boxesByOption": {
+        "Resident": [
+          {
+            "x": 150.4,
+            "y": 197.9
+          }
+        ],
+        "Non-resident": [
+          {
+            "x": 199.6,
+            "y": 197.9
+          }
+        ],
+        "Foreign national": [
+          {
+            "x": 263.7,
+            "y": 197.9
+          }
+        ],
+        "Person of Indian origin": [
+          {
+            "x": 342.3,
+            "y": 197.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "minor_status",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Minor through guardian"
+      ],
+      "boxesByOption": {
+        "Minor through guardian": [
+          {
+            "x": 150.4,
+            "y": 211.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "correspondence_same_as_residence",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Same as above"
+      ],
+      "boxesByOption": {
+        "Same as above": [
+          {
+            "x": 229.3,
+            "y": 323.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "occupation",
+      "page": 4,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Professional",
+        "Business",
+        "Private Sector Service",
+        "Public Sector Service",
+        "Government Service",
+        "Self Employed",
+        "Retired",
+        "Housewife",
+        "Student",
+        "Agriculturist",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Professional": [
+          {
+            "x": 35.8,
+            "y": 712.5
+          }
+        ],
+        "Business": [
+          {
+            "x": 114.2,
+            "y": 712.5
+          }
+        ],
+        "Private Sector Service": [
+          {
+            "x": 182.7,
+            "y": 712.5
+          }
+        ],
+        "Public Sector Service": [
+          {
+            "x": 292.1,
+            "y": 712.5
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 398.6,
+            "y": 712.5
+          }
+        ],
+        "Self Employed": [
+          {
+            "x": 502.7,
+            "y": 712.5
+          }
+        ],
+        "Retired": [
+          {
+            "x": 35.8,
+            "y": 727
+          }
+        ],
+        "Housewife": [
+          {
+            "x": 114.2,
+            "y": 727
+          }
+        ],
+        "Student": [
+          {
+            "x": 182.7,
+            "y": 727
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 292.1,
+            "y": 727
+          }
+        ],
+        "Others": [
+          {
+            "x": 398.6,
+            "y": 727
+          }
+        ]
+      }
+    },
+    {
+      "key": "gross_annual_income_range",
+      "page": 5,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Below 1 million",
+        "1 to 5 million",
+        "5 to 10 million",
+        "10 million and above"
+      ],
+      "boxesByOption": {
+        "Below 1 million": [
+          {
+            "x": 149.2,
+            "y": 160.4
+          }
+        ],
+        "1 to 5 million": [
+          {
+            "x": 209.5,
+            "y": 160.4
+          }
+        ],
+        "5 to 10 million": [
+          {
+            "x": 262.2,
+            "y": 160.4
+          }
+        ],
+        "10 million and above": [
+          {
+            "x": 319.2,
+            "y": 160.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "pep_status",
+      "page": 5,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "I am PEP",
+        "I am related to a PEP",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "I am PEP": [
+          {
+            "x": 35.2,
+            "y": 255.3
+          }
+        ],
+        "I am related to a PEP": [
+          {
+            "x": 95.5,
+            "y": 255.3
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 180.5,
+            "y": 255.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "address_type",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Residential",
+        "Business",
+        "Registered office"
+      ],
+      "boxesByOption": {
+        "Residential": [
+          {
+            "x": 111.3,
+            "y": 101.8
+          }
+        ],
+        "Business": [
+          {
+            "x": 163.4,
+            "y": 101.8
+          }
+        ],
+        "Registered office": [
+          {
+            "x": 211.8,
+            "y": 101.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "identity_document_if_no_pan",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Passport",
+        "Election ID card",
+        "Government ID",
+        "UIDAI",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 181.8,
+            "y": 165.5
+          }
+        ],
+        "Election ID card": [
+          {
+            "x": 227.8,
+            "y": 165.5
+          }
+        ],
+        "Government ID": [
+          {
+            "x": 296.7,
+            "y": 165.5
+          }
+        ],
+        "UIDAI": [
+          {
+            "x": 362.2,
+            "y": 165.5
+          }
+        ],
+        "Others": [
+          {
+            "x": 398.7,
+            "y": 165.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "tax_resident_outside_india",
+      "page": 6,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 283.2,
+            "y": 195.3
+          }
+        ],
+        "No": [
+          {
+            "x": 307.6,
+            "y": 195.3
+          }
+        ]
+      }
+    },
+    {
+      "key": "first_second_holder_relationship",
+      "page": 6,
+      "w": 8.6,
+      "h": 8.6,
+      "options": [
+        "Husband - Wife",
+        "Wife - Husband",
+        "Father - Son",
+        "Son - Father",
+        "Father - Daughter",
+        "Daughter - Father",
+        "Mother - Son",
+        "Son - Mother",
+        "Mother - Daughter",
+        "Daughter - Mother"
+      ],
+      "boxesByOption": {
+        "Husband - Wife": [
+          {
+            "x": 195.1,
+            "y": 337.78
+          }
+        ],
+        "Wife - Husband": [
+          {
+            "x": 275,
+            "y": 337.78
+          }
+        ],
+        "Father - Son": [
+          {
+            "x": 354.8,
+            "y": 337.78
+          }
+        ],
+        "Son - Father": [
+          {
+            "x": 434.7,
+            "y": 337.78
+          }
+        ],
+        "Father - Daughter": [
+          {
+            "x": 514.6,
+            "y": 337.78
+          }
+        ],
+        "Daughter - Father": [
+          {
+            "x": 195.1,
+            "y": 369.58
+          }
+        ],
+        "Mother - Son": [
+          {
+            "x": 275,
+            "y": 369.58
+          }
+        ],
+        "Son - Mother": [
+          {
+            "x": 354.8,
+            "y": 369.58
+          }
+        ],
+        "Mother - Daughter": [
+          {
+            "x": 434.7,
+            "y": 369.58
+          }
+        ],
+        "Daughter - Mother": [
+          {
+            "x": 514.6,
+            "y": 369.58
+          }
+        ]
+      }
+    },
+    {
+      "key": "mode_of_holding",
+      "page": 6,
+      "w": 8.6,
+      "h": 8.6,
+      "options": [
+        "Single",
+        "Joint",
+        "Anyone or survivor"
+      ],
+      "boxesByOption": {
+        "Single": [
+          {
+            "x": 207.8,
+            "y": 385.48
+          }
+        ],
+        "Joint": [
+          {
+            "x": 342.1,
+            "y": 385.48
+          }
+        ],
+        "Anyone or survivor": [
+          {
+            "x": 447.8,
+            "y": 385.48
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_gender",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Male",
+        "Female",
+        "Others",
+        "Non-individual"
+      ],
+      "boxesByOption": {
+        "Male": [
+          {
+            "x": 126,
+            "y": 132.6
+          }
+        ],
+        "Female": [
+          {
+            "x": 155,
+            "y": 132.6
+          }
+        ],
+        "Others": [
+          {
+            "x": 192,
+            "y": 132.6
+          }
+        ],
+        "Non-individual": [
+          {
+            "x": 227.2,
+            "y": 132.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_citizenship",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Indian",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Indian": [
+          {
+            "x": 150.2,
+            "y": 177.4
+          }
+        ],
+        "Others": [
+          {
+            "x": 219.2,
+            "y": 177.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_residential_status",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Resident",
+        "Non-resident",
+        "Foreign national",
+        "Person of Indian origin"
+      ],
+      "boxesByOption": {
+        "Resident": [
+          {
+            "x": 150.2,
+            "y": 187.4
+          }
+        ],
+        "Non-resident": [
+          {
+            "x": 199.5,
+            "y": 187.4
+          }
+        ],
+        "Foreign national": [
+          {
+            "x": 263.5,
+            "y": 187.4
+          }
+        ],
+        "Person of Indian origin": [
+          {
+            "x": 342.2,
+            "y": 187.4
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_occupation",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Professional",
+        "Business",
+        "Private Sector Service",
+        "Public Sector Service",
+        "Government Service",
+        "Self Employed",
+        "Retired",
+        "Housewife",
+        "Student",
+        "Agriculturist",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Professional": [
+          {
+            "x": 35.5,
+            "y": 521.2
+          }
+        ],
+        "Business": [
+          {
+            "x": 114,
+            "y": 521.2
+          }
+        ],
+        "Private Sector Service": [
+          {
+            "x": 182.5,
+            "y": 521.2
+          }
+        ],
+        "Public Sector Service": [
+          {
+            "x": 291.8,
+            "y": 521.2
+          }
+        ],
+        "Government Service": [
+          {
+            "x": 398.5,
+            "y": 521.2
+          }
+        ],
+        "Self Employed": [
+          {
+            "x": 502.5,
+            "y": 521.2
+          }
+        ],
+        "Retired": [
+          {
+            "x": 35.5,
+            "y": 535.8
+          }
+        ],
+        "Housewife": [
+          {
+            "x": 114,
+            "y": 535.8
+          }
+        ],
+        "Student": [
+          {
+            "x": 182.5,
+            "y": 535.8
+          }
+        ],
+        "Agriculturist": [
+          {
+            "x": 291.8,
+            "y": 535.8
+          }
+        ],
+        "Others": [
+          {
+            "x": 398.5,
+            "y": 535.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_gross_annual_income_range",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Below 1 million",
+        "1 to 5 million",
+        "5 to 10 million",
+        "10 million and above"
+      ],
+      "boxesByOption": {
+        "Below 1 million": [
+          {
+            "x": 149.2,
+            "y": 655.1
+          }
+        ],
+        "1 to 5 million": [
+          {
+            "x": 209.5,
+            "y": 655.1
+          }
+        ],
+        "5 to 10 million": [
+          {
+            "x": 262,
+            "y": 655.1
+          }
+        ],
+        "10 million and above": [
+          {
+            "x": 319,
+            "y": 655.1
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_pep_status",
+      "page": 8,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "I am PEP",
+        "I am related to a PEP",
+        "Not applicable"
+      ],
+      "boxesByOption": {
+        "I am PEP": [
+          {
+            "x": 35.2,
+            "y": 749.6
+          }
+        ],
+        "I am related to a PEP": [
+          {
+            "x": 95.5,
+            "y": 749.6
+          }
+        ],
+        "Not applicable": [
+          {
+            "x": 180.5,
+            "y": 749.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_address_type",
+      "page": 9,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Residential",
+        "Business",
+        "Registered office"
+      ],
+      "boxesByOption": {
+        "Residential": [
+          {
+            "x": 106.4,
+            "y": 100.8
+          }
+        ],
+        "Business": [
+          {
+            "x": 158.6,
+            "y": 100.8
+          }
+        ],
+        "Registered office": [
+          {
+            "x": 206.9,
+            "y": 100.8
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_identity_document_if_no_pan",
+      "page": 9,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Passport",
+        "Election ID card",
+        "Government ID",
+        "UIDAI",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Passport": [
+          {
+            "x": 177.1,
+            "y": 164
+          }
+        ],
+        "Election ID card": [
+          {
+            "x": 223.2,
+            "y": 164
+          }
+        ],
+        "Government ID": [
+          {
+            "x": 292,
+            "y": 164
+          }
+        ],
+        "UIDAI": [
+          {
+            "x": 357.5,
+            "y": 164
+          }
+        ],
+        "Others": [
+          {
+            "x": 394,
+            "y": 164
+          }
+        ]
+      }
+    },
+    {
+      "key": "joint_holder_tax_resident_outside_india",
+      "page": 9,
+      "w": 8.5,
+      "h": 8.5,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 278.6,
+            "y": 194
+          }
+        ],
+        "No": [
+          {
+            "x": 303,
+            "y": 194
+          }
+        ]
+      }
+    },
+    {
+      "key": "regulatory_action",
+      "page": 14,
+      "w": 8,
+      "h": 8,
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "boxesByOption": {
+        "Yes": [
+          {
+            "x": 443,
+            "y": 660.9
+          }
+        ],
+        "No": [
+          {
+            "x": 495.5,
+            "y": 660.9
+          }
+        ]
+      }
+    },
+    {
+      "key": "wish_to_nominate",
+      "page": 21,
+      "w": 8.7,
+      "h": 8.7,
+      "options": [
+        "Do not wish to nominate",
+        "Wish to nominate"
+      ],
+      "boxesByOption": {
+        "Do not wish to nominate": [
+          {
+            "x": 115.2,
+            "y": 101.96
+          }
+        ],
+        "Wish to nominate": [
+          {
+            "x": 269.5,
+            "y": 101.96
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_investor_category",
+      "page": 79,
+      "w": 6.6,
+      "h": 6.6,
+      "options": [
+        "Individual - income criteria",
+        "Individual - net assets criteria"
+      ],
+      "boxesByOption": {
+        "Individual - income criteria": [
+          {
+            "x": 113.4,
+            "y": 361.4,
+            "page": 79
+          },
+          {
+            "x": 216.1,
+            "y": 361.4,
+            "page": 79
+          }
+        ],
+        "Individual - net assets criteria": [
+          {
+            "x": 113.4,
+            "y": 361.4,
+            "page": 79
+          },
+          {
+            "x": 381.2,
+            "y": 361.4,
+            "page": 79
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_joint_investment",
+      "page": 80,
+      "w": 7,
+      "h": 7,
+      "options": [
+        "Parent(s) and child(ren)",
+        "Spouses"
+      ],
+      "boxesByOption": {
+        "Parent(s) and child(ren)": [
+          {
+            "x": 108.6,
+            "y": 156
+          }
+        ],
+        "Spouses": [
+          {
+            "x": 108.6,
+            "y": 206.7
+          }
+        ]
+      }
+    },
+    {
+      "key": "accredited_documentation",
+      "page": 81,
+      "w": 6.6,
+      "h": 6.6,
+      "options": [
+        "Certificate (last 6 months)",
+        "Additional documentation"
+      ],
+      "boxesByOption": {
+        "Certificate (last 6 months)": [
+          {
+            "x": 131.7,
+            "y": 477.1,
+            "page": 81
+          },
+          {
+            "x": 262.9,
+            "y": 477.1,
+            "page": 81
+          }
+        ],
+        "Additional documentation": [
+          {
+            "x": 131.7,
+            "y": 82.6,
+            "page": 82
+          },
+          {
+            "x": 262.9,
+            "y": 82.6,
+            "page": 82
+          }
+        ]
+      }
+    }
+  ],
+  "blankFileName": "360 ONE New Perspective Fund - Application Form.pdf",
+  "nomineeHeaderRe": null,
+  "tickboxRule": "usual",
+  "ignoredBlanks": [
+    {
+      "page": 5,
+      "y": 745.7,
+      "why": "Remittance purpose for the investor's bank wire (\"Fund, ___ for subscription of ___\"), text for the bank"
+    },
+    {
+      "page": 5,
+      "y": 757.7,
+      "why": "Remittance purpose for the investor's bank wire (\"in Class of Units ___\"), text for the bank"
+    },
+    {
+      "page": 11,
+      "y": 148.2,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 11,
+      "y": 167.9,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 11,
+      "y": 187.6,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 11,
+      "y": 253.8,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 11,
+      "y": 293.1,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 11,
+      "y": 626,
+      "why": "No PAN declaration: only for a non-resident investor without a PAN (the PAN is filled on page 2)"
+    },
+    {
+      "page": 6,
+      "y": 543,
+      "why": "Section 7 FATCA exemption code: for non-individual investors only"
+    },
+    {
+      "page": 25,
+      "y": 115,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 127,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 140,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 152,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 165,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 178,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 190,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 203,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 216,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 228,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 241,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 254,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 266,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 279,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 292,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 304,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 317,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 330,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 342,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 355,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 368,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 380,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 393,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 405,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 25,
+      "y": 418,
+      "why": "Table of contents of the Contribution Agreement (dotted leaders)"
+    },
+    {
+      "page": 22,
+      "y": 750.4,
+      "why": "Copy No: numbered by 360 ONE"
+    },
+    {
+      "page": 75,
+      "y": 183.4,
+      "why": "Signed by the Trustee / FME / witnesses"
+    },
+    {
+      "page": 75,
+      "y": 246.6,
+      "why": "Signed by the Trustee / FME / witnesses"
+    },
+    {
+      "page": 75,
+      "y": 351.5,
+      "why": "Signed by the Trustee / FME / witnesses"
+    },
+    {
+      "page": 75,
+      "y": 414.8,
+      "why": "Signed by the Trustee / FME / witnesses"
+    },
+    {
+      "page": 75,
+      "y": 573.9,
+      "why": "Signed by the Trustee / FME / witnesses"
+    },
+    {
+      "page": 76,
+      "y": 158.1,
+      "why": "\"Mr./Mrs./Messers [______]\": the bracket has no room; the name is written on the line below"
+    },
+    {
+      "page": 76,
+      "y": 170.8,
+      "why": "Address bracket has no room; the address is written on the line below"
+    },
+    {
+      "page": 76,
+      "y": 234,
+      "why": "Amount-in-words bracket has no room; the words are written on the line below"
+    },
+    {
+      "page": 76,
+      "y": 449.1,
+      "why": "Fourth mailing-address line: the Excel gives three"
+    },
+    {
+      "page": 77,
+      "y": 132.9,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 77,
+      "y": 234,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 78,
+      "y": 388.8,
+      "why": "Deed of Adherence: only when units are transferred to a new contributor"
+    },
+    {
+      "page": 82,
+      "y": 501.4,
+      "why": "\"For and on behalf of ___\": for a non-individual investor"
+    }
+  ]
+}

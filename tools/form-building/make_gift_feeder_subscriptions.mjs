@@ -13,9 +13,24 @@ import { APPLICATION_IGNORED_BLANKS, APPLICATION_SECTIONS, APPLICATION_SIGNATURE
 import { GRA_APPLICATION_IGNORED_BLANKS, GRA_APPLICATION_SIGNATURE_BOXES, listGraApplicationFields } from "./gift-gra-application-pages.mjs";
 import { IDF_APPLICATION_IGNORED_BLANKS, IDF_APPLICATION_SIGNATURE_BOXES, listIdfApplicationFields } from "./gift-idf-application-pages.mjs";
 
+/** Moves every spot on one page up or down (New Perspective's page 4 sits 5pt higher than the feeder sets'). */
+function shiftPage(fields, page, dy) {
+  const move = (y) => Math.round((y + dy) * 100) / 100;
+  return fields.map((field) => {
+    if (field.page !== page) return field;
+    if (field.tickbox) {
+      return { ...field, boxesByOption: Object.fromEntries(Object.entries(field.boxesByOption)
+        .map(([option, boxes]) => [option, boxes.map((box) => (box.page && box.page !== page ? box : { ...box, y: move(box.y) }))])) };
+    }
+    return { ...field, y: move(field.y), ...(field.maxY ? { maxY: move(field.maxY) } : {}) };
+  });
+}
+
 /** The application pages (1-21) of each layout: the feeder sets share one, Global Real Assets has its own pages 4-7. */
 const APPLICATION_LAYOUTS = {
   feeder: { listFields: listApplicationFields, signatureBoxes: APPLICATION_SIGNATURE_BOXES, ignoredBlanks: APPLICATION_IGNORED_BLANKS },
+  // New Perspective: the feeder pages with page 4 drawn 5pt higher (checked box by box with scan_boxes.py).
+  newPerspective: { listFields: () => shiftPage(listApplicationFields(), 4, -5), signatureBoxes: APPLICATION_SIGNATURE_BOXES, ignoredBlanks: APPLICATION_IGNORED_BLANKS },
   globalRealAssets: { listFields: listGraApplicationFields, signatureBoxes: GRA_APPLICATION_SIGNATURE_BOXES, ignoredBlanks: GRA_APPLICATION_IGNORED_BLANKS },
   indiaDiversified: { listFields: listIdfApplicationFields, signatureBoxes: IDF_APPLICATION_SIGNATURE_BOXES, ignoredBlanks: IDF_APPLICATION_IGNORED_BLANKS },
 };
@@ -194,6 +209,43 @@ const FUNDS = [
       [76, 417.3, "\"For and on behalf of ___\": for a non-individual investor"],
     ],
   },
+  {
+    // 82 pages. 360 ONE sent it only as a filled sample: the blank is made by make_gift_npf_blank.py (typed values
+    // removed), so it is not copied here. Pages 1-21 are the feeder pages (page 4 drawn 5pt higher).
+    formId: "gift-new-perspective-subscription", fundName: "360 ONE New Perspective Fund", pageCount: 82, applicationLayout: "newPerspective",
+    label: "GIFT – New Perspective Fund – Subscription", shortLabel: "GIFT New Perspective subscription",
+    blankFileName: "360 ONE New Perspective Fund - Application Form.pdf", prebuiltBlank: true,
+    memorandumName: { page: 22, x: 158, y: 748.9, maxWidth: 145 },
+    notice: { page: 23, signatureLine: [85.2, 168.0, 387.7], distributor: [360, 386, 79], name: [165, 457.4, 96], date: [112, 469.4, 96], place: [115, 481.3, 147] },
+    executionDate: { page: 26, day: [107.5, 182, 25], month: [170.5, 182, 27] },
+    contributorSignatureLine: { page: 75, line: [107.4, 195.5, 510.6] },
+    // The name and address brackets are too small: both go on the free line under them; the amount in words likewise.
+    annexureA: { page: 76, name: [100, 183.5, 165], address: [270, 183.5, 250], amount: [417, 219.8, 35], amountWords: [100, 246.5, 420],
+      unitClass: [402, 283.2, 15], mailing: [409.7, 422.3, 434.9], email: [138, 472.9, 166], telephone1: [162, 510.8, 150], telephone2: [162, 536.2, 150],
+      signatureLine: [72, 231.6, 626.3] },
+    annexureBSignatureLines: null, // no Annexure B in this blank
+    accredited: {
+      name: { page: 79, x: 176, y: 118.6, maxWidth: 315 }, incomeYear: { page: 79, x: 254, y: 386.1, maxWidth: 80 },
+      categoryBoxes: { page: 79, y: 361.4, individualX: 113.4, incomeX: 216.1, netAssetsX: 381.2 },
+      // The two joint-investment boxes are images; their squares sit at x 108.6, tops 150.4 and 201.1 (scan_boxes.py).
+      jointBoxes: { page: 80, x: 108.6, parentChildY: 156.0, spousesY: 206.7, size: 7 },
+      certificateBoxes: { page: 81, y: 477.1, natureX: 131.7, documentX: 262.9 },
+      additionalBoxes: { page: 82, y: 82.6, natureX: 131.7, documentX: 262.9 }, additionalText: { page: 82, x: 283, y: 94.6, maxWidth: 200 },
+      final: { page: 82, signatureLine: [72, 176.7, 564.7], nameX: 110, nameY: 589.9, dateX: 102, dateY: 615.2 },
+    },
+    agreementIgnoredBlanks: [
+      ...TABLE_OF_CONTENTS([115,127,140,152,165,178,190,203,216,228,241,254,266,279,292,304,317,330,342,355,368,380,393,405,418]),
+      [22, 750.4, "Copy No: numbered by 360 ONE"],
+      ...[183.4, 246.6, 351.5, 414.8, 573.9].map((y) => [75, y, "Signed by the Trustee / FME / witnesses"]),
+      [76, 158.1, "\"Mr./Mrs./Messers [______]\": the bracket has no room; the name is written on the line below"],
+      [76, 170.8, "Address bracket has no room; the address is written on the line below"],
+      [76, 234.0, "Amount-in-words bracket has no room; the words are written on the line below"],
+      [76, 449.1, "Fourth mailing-address line: the Excel gives three"],
+      ...[132.9, 234.0].map((y) => [77, y, "Deed of Adherence: only when units are transferred to a new contributor"]),
+      [78, 388.8, "Deed of Adherence: only when units are transferred to a new contributor"],
+      [82, 501.4, "\"For and on behalf of ___\": for a non-individual investor"],
+    ],
+  },
 ];
 
 const AGREEMENT_SECTIONS = [["memorandum", "Memorandum acknowledged"], ["agreement", "Contribution Agreement date (Excel)"],
@@ -283,7 +335,7 @@ function writeFund(fund) {
   const folder = path.join(FORMS, fund.formId);
   const writeJson = (fileName, content) => writeFileSync(path.join(folder, fileName), JSON.stringify(content, null, 2) + "\n");
   mkdirSync(folder, { recursive: true });
-  copyFileSync(path.join(GIFT_FILES, fund.sourcePdf), path.join("data/Blank Forms", fund.blankFileName));
+  if (!fund.prebuiltBlank) copyFileSync(path.join(GIFT_FILES, fund.sourcePdf), path.join("data/Blank Forms", fund.blankFileName));
 
   const application = APPLICATION_LAYOUTS[fund.applicationLayout || "feeder"];
   const allFields = [...application.listFields(), ...listAgreementFields(fund)];

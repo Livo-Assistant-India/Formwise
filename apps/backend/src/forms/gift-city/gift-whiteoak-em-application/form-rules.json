@@ -138,7 +138,15 @@
       "label": "Page 7 · Nomination",
       "fields": [
         "subscriber_name_p7",
-        "wish_to_nominate"
+        "wish_to_nominate",
+        "nominee_1_name",
+        "nominee_1_share_pct",
+        "nominee_1_dob",
+        "nominee_1_relationship",
+        "nominee_1_relationship_other",
+        "nominee_1_address",
+        "nominee_1_zip_code",
+        "nominee_1_mobile"
       ]
     },
     {
@@ -187,6 +195,7 @@
         "accredited_joint_investment",
         "accredited_documentation",
         "subscriber_name_p18",
+        "signatory_designation_p18",
         "form_date_p18"
       ]
     },

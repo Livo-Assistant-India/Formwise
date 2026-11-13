@@ -691,6 +691,58 @@
     }
    },
    {
+    "key": "nominee_1_relationship",
+    "page": 7,
+    "w": 9.5,
+    "h": 9.5,
+    "options": [
+     "Spouse",
+     "Father",
+     "Mother",
+     "Daughter",
+     "Son",
+     "Others"
+    ],
+    "boxesByOption": {
+     "Spouse": [
+      {
+       "x": 159.8,
+       "y": 291.4
+      }
+     ],
+     "Father": [
+      {
+       "x": 159.8,
+       "y": 305.5
+      }
+     ],
+     "Mother": [
+      {
+       "x": 159.8,
+       "y": 317.9
+      }
+     ],
+     "Daughter": [
+      {
+       "x": 159.8,
+       "y": 331.4
+      }
+     ],
+     "Son": [
+      {
+       "x": 159.8,
+       "y": 343.9
+      }
+     ],
+     "Others": [
+      {
+       "x": 159.3,
+       "y": 356.2
+      }
+     ]
+    }
+   },
+   {
     "key": "accredited_investor_category",
     "page": 17,
     "w": 7.9,
@@ -793,28 +845,23 @@
    },
    {
     "page": 7,
-    "y": 370,
-    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
-   },
-   {
-    "page": 7,
     "y": 418,
-    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
    },
    {
     "page": 7,
     "y": 440,
-    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
    },
    {
     "page": 7,
     "y": 470,
-    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
    },
    {
     "page": 7,
     "y": 500,
-    "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+    "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
    },
    {
     "page": 20,
@@ -1639,6 +1686,77 @@
     "maxWidth": 390
    },
    {
+    "key": "nominee_1_name",
+    "nominee": null,
+    "page": 7,
+    "x": 157.7,
+    "y": 221.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 123
+   },
+   {
+    "key": "nominee_1_share_pct",
+    "nominee": null,
+    "page": 7,
+    "x": 175.7,
+    "y": 244.2,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 35
+   },
+   {
+    "key": "nominee_1_dob",
+    "nominee": null,
+    "page": 7,
+    "x": 157.8,
+    "y": 276.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 123
+   },
+   {
+    "key": "nominee_1_relationship_other",
+    "nominee": null,
+    "page": 7,
+    "x": 181.1,
+    "y": 368.3,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 95
+   },
+   {
+    "key": "nominee_1_address",
+    "nominee": null,
+    "page": 7,
+    "x": 158,
+    "y": 520,
+    "fontSize": 7,
+    "type": "multiline",
+    "maxWidth": 122,
+    "maxY": 587
+   },
+   {
+    "key": "nominee_1_zip_code",
+    "nominee": null,
+    "page": 7,
+    "x": 207.7,
+    "y": 606,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 72
+   },
+   {
+    "key": "nominee_1_mobile",
+    "nominee": null,
+    "page": 7,
+    "x": 158.2,
+    "y": 640.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 119
+   },
+   {
     "key": "class_of_units",
     "nominee": null,
     "page": 8,
@@ -2010,6 +2128,16 @@
     "maxWidth": 402
    },
    {
+    "key": "signatory_designation_p18",
+    "nominee": null,
+    "page": 18,
+    "x": 154.2,
+    "y": 682.4,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 308
+   },
+   {
     "key": "form_date_p18",
     "nominee": null,
     "page": 18,
@@ -2253,6 +2381,14 @@
   "joint_holder_address_type": "tick",
   "subscriber_name_p7": "copy.subscriber_name",
   "wish_to_nominate": "tick",
+  "nominee_1_name": "typed",
+  "nominee_1_share_pct": "typed",
+  "nominee_1_dob": "typed",
+  "nominee_1_relationship": "tick",
+  "nominee_1_relationship_other": "typed",
+  "nominee_1_address": "typed",
+  "nominee_1_zip_code": "typed",
+  "nominee_1_mobile": "typed",
   "class_of_units": "typed",
   "capital_commitment_usd": "typed",
   "contribution_amount_usd": "typed",
@@ -2283,6 +2419,7 @@
   "accredited_joint_investment": "tick",
   "accredited_documentation": "tick",
   "subscriber_name_p18": "copy.subscriber_name",
+  "signatory_designation_p18": "typed",
   "form_date_p18": "copy.form_date",
   "agreement_execution_day": "typed",
   "subscriber_name_p73": "copy.subscriber_name",
@@ -2441,7 +2578,15 @@
     "label": "Page 7 · Nomination",
     "fields": [
      "subscriber_name_p7",
-     "wish_to_nominate"
+     "wish_to_nominate",
+     "nominee_1_name",
+     "nominee_1_share_pct",
+     "nominee_1_dob",
+     "nominee_1_relationship",
+     "nominee_1_relationship_other",
+     "nominee_1_address",
+     "nominee_1_zip_code",
+     "nominee_1_mobile"
     ]
    },
    {
@@ -2490,6 +2635,7 @@
      "accredited_joint_investment",
      "accredited_documentation",
      "subscriber_name_p18",
+     "signatory_designation_p18",
      "form_date_p18"
     ]
    },
@@ -3096,6 +3242,90 @@
    ]
   },
   {
+   "field": "nominee_1_name",
+   "page": 7,
+   "lines": [
+    [
+     157.7,
+     214.4,
+     98.71,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_share_pct",
+   "page": 7,
+   "lines": [
+    [
+     175.7,
+     239.1,
+     85.37,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_dob",
+   "page": 7,
+   "lines": [
+    [
+     157.8,
+     269.6,
+     92.05,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_relationship_other",
+   "page": 7,
+   "lines": [
+    [
+     181.1,
+     363.2,
+     106.72,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_address",
+   "page": 7,
+   "lines": [
+    [
+     158,
+     514.05,
+     93.77,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_zip_code",
+   "page": 7,
+   "lines": [
+    [
+     207.7,
+     600.9,
+     83.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_mobile",
+   "page": 7,
+   "lines": [
+    [
+     158.2,
+     633.7,
+     102.26,
+     8
+    ]
+   ]
+  },
+  {
    "field": "class_of_units",
    "page": 8,
    "lines": [
@@ -3415,6 +3645,18 @@
      60.5,
      656.7,
      113.94,
+     8
+    ]
+   ]
+  },
+  {
+   "field": "signatory_designation_p18",
+   "page": 18,
+   "lines": [
+    [
+     154.2,
+     675.6,
+     130.53,
      8
     ]
    ]

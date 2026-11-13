@@ -100,6 +100,19 @@
       ]
     },
     {
+      "key": "distributor",
+      "label": "Page 3 · Distributor (Excel)",
+      "fields": [
+        "distributor_name",
+        "distributor_code",
+        "distributor_email",
+        "distributor_contact_number",
+        "rm_name",
+        "rm_email",
+        "rm_contact_number"
+      ]
+    },
+    {
       "key": "investment",
       "label": "Pages 4-5 · Capital commitment and contribution (Excel)",
       "fields": [
@@ -116,6 +129,16 @@
       "key": "nomination",
       "label": "Page 5 · Nomination",
       "fields": [
+        "nominee_1_name_address",
+        "nominee_1_dob",
+        "nominee_1_guardian",
+        "nominee_1_share_pct",
+        "nominee_1_relationship",
+        "nominee_2_name_address",
+        "nominee_2_dob",
+        "nominee_2_guardian",
+        "nominee_2_share_pct",
+        "nominee_2_relationship",
         "wish_to_nominate"
       ]
     },
@@ -208,11 +231,12 @@
     },
     {
       "key": "agreement",
-      "label": "Page 27 · Contribution Agreement date (Excel)",
+      "label": "Pages 27-65 · Contribution Agreement date (Excel)",
       "fields": [
         "agreement_execution_day",
         "agreement_execution_month",
-        "agreement_execution_year"
+        "agreement_execution_year",
+        "subscriber_name_p65"
       ]
     },
     {

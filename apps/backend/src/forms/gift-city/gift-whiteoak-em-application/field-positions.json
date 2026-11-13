@@ -601,6 +601,77 @@
       "maxWidth": 390
     },
     {
+      "key": "nominee_1_name",
+      "nominee": null,
+      "page": 7,
+      "x": 157.7,
+      "y": 221.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 123
+    },
+    {
+      "key": "nominee_1_share_pct",
+      "nominee": null,
+      "page": 7,
+      "x": 175.7,
+      "y": 244.2,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 35
+    },
+    {
+      "key": "nominee_1_dob",
+      "nominee": null,
+      "page": 7,
+      "x": 157.8,
+      "y": 276.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 123
+    },
+    {
+      "key": "nominee_1_relationship_other",
+      "nominee": null,
+      "page": 7,
+      "x": 181.1,
+      "y": 368.3,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 95
+    },
+    {
+      "key": "nominee_1_address",
+      "nominee": null,
+      "page": 7,
+      "x": 158,
+      "y": 520,
+      "fontSize": 7,
+      "type": "multiline",
+      "maxWidth": 122,
+      "maxY": 587
+    },
+    {
+      "key": "nominee_1_zip_code",
+      "nominee": null,
+      "page": 7,
+      "x": 207.7,
+      "y": 606,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 72
+    },
+    {
+      "key": "nominee_1_mobile",
+      "nominee": null,
+      "page": 7,
+      "x": 158.2,
+      "y": 640.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 119
+    },
+    {
       "key": "class_of_units",
       "nominee": null,
       "page": 8,
@@ -970,6 +1041,16 @@
       "fontSize": 8,
       "type": "text",
       "maxWidth": 402
+    },
+    {
+      "key": "signatory_designation_p18",
+      "nominee": null,
+      "page": 18,
+      "x": 154.2,
+      "y": 682.4,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 308
     },
     {
       "key": "form_date_p18",

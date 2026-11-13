@@ -4,6 +4,76 @@
   "title": "SBI Global Thematic Advantage Fund (IFSC) - Application Form",
   "fields": [
     {
+      "key": "distributor_name",
+      "nominee": null,
+      "page": 3,
+      "x": 91,
+      "y": 767,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "distributor_code",
+      "nominee": null,
+      "page": 3,
+      "x": 226,
+      "y": 767,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 73
+    },
+    {
+      "key": "distributor_email",
+      "nominee": null,
+      "page": 3,
+      "x": 304,
+      "y": 767,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "distributor_contact_number",
+      "nominee": null,
+      "page": 3,
+      "x": 437,
+      "y": 767,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "rm_name",
+      "nominee": null,
+      "page": 3,
+      "x": 91,
+      "y": 790,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 130
+    },
+    {
+      "key": "rm_email",
+      "nominee": null,
+      "page": 3,
+      "x": 304,
+      "y": 790,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
+      "key": "rm_contact_number",
+      "nominee": null,
+      "page": 3,
+      "x": 437,
+      "y": 790,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 128
+    },
+    {
       "key": "folio_no",
       "nominee": null,
       "page": 4,
@@ -610,6 +680,110 @@
       "fontSize": 7,
       "type": "text",
       "maxWidth": 400
+    },
+    {
+      "key": "nominee_1_name_address",
+      "nominee": null,
+      "page": 5,
+      "x": 85,
+      "y": 201.8,
+      "fontSize": 6.5,
+      "type": "multiline",
+      "maxWidth": 173,
+      "maxY": 230.8
+    },
+    {
+      "key": "nominee_1_dob",
+      "nominee": null,
+      "page": 5,
+      "x": 263,
+      "y": 215.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 63
+    },
+    {
+      "key": "nominee_1_guardian",
+      "nominee": null,
+      "page": 5,
+      "x": 331,
+      "y": 201.8,
+      "fontSize": 6.5,
+      "type": "multiline",
+      "maxWidth": 85,
+      "maxY": 230.8
+    },
+    {
+      "key": "nominee_1_share_pct",
+      "nominee": null,
+      "page": 5,
+      "x": 421,
+      "y": 215.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 55
+    },
+    {
+      "key": "nominee_1_relationship",
+      "nominee": null,
+      "page": 5,
+      "x": 481,
+      "y": 215.8,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 84
+    },
+    {
+      "key": "nominee_2_name_address",
+      "nominee": null,
+      "page": 5,
+      "x": 85,
+      "y": 242,
+      "fontSize": 6.5,
+      "type": "multiline",
+      "maxWidth": 173,
+      "maxY": 271
+    },
+    {
+      "key": "nominee_2_dob",
+      "nominee": null,
+      "page": 5,
+      "x": 263,
+      "y": 256,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 63
+    },
+    {
+      "key": "nominee_2_guardian",
+      "nominee": null,
+      "page": 5,
+      "x": 331,
+      "y": 242,
+      "fontSize": 6.5,
+      "type": "multiline",
+      "maxWidth": 85,
+      "maxY": 271
+    },
+    {
+      "key": "nominee_2_share_pct",
+      "nominee": null,
+      "page": 5,
+      "x": 421,
+      "y": 256,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 55
+    },
+    {
+      "key": "nominee_2_relationship",
+      "nominee": null,
+      "page": 5,
+      "x": 481,
+      "y": 256,
+      "fontSize": 7,
+      "type": "text",
+      "maxWidth": 84
     },
     {
       "key": "account_number",
@@ -1334,6 +1508,16 @@
       "fontSize": 8,
       "type": "text",
       "maxWidth": 48
+    },
+    {
+      "key": "subscriber_name_p65",
+      "nominee": null,
+      "page": 65,
+      "x": 73,
+      "y": 649.5,
+      "fontSize": 8,
+      "type": "text",
+      "maxWidth": 130
     },
     {
       "key": "subscriber_name_p66",

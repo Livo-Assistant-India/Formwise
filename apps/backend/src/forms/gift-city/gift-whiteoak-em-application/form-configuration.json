@@ -690,6 +690,58 @@
       }
     },
     {
+      "key": "nominee_1_relationship",
+      "page": 7,
+      "w": 9.5,
+      "h": 9.5,
+      "options": [
+        "Spouse",
+        "Father",
+        "Mother",
+        "Daughter",
+        "Son",
+        "Others"
+      ],
+      "boxesByOption": {
+        "Spouse": [
+          {
+            "x": 159.8,
+            "y": 291.4
+          }
+        ],
+        "Father": [
+          {
+            "x": 159.8,
+            "y": 305.5
+          }
+        ],
+        "Mother": [
+          {
+            "x": 159.8,
+            "y": 317.9
+          }
+        ],
+        "Daughter": [
+          {
+            "x": 159.8,
+            "y": 331.4
+          }
+        ],
+        "Son": [
+          {
+            "x": 159.8,
+            "y": 343.9
+          }
+        ],
+        "Others": [
+          {
+            "x": 159.3,
+            "y": 356.2
+          }
+        ]
+      }
+    },
+    {
       "key": "accredited_investor_category",
       "page": 17,
       "w": 7.9,
@@ -795,28 +847,23 @@
     },
     {
       "page": 7,
-      "y": 370,
-      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
-    },
-    {
-      "page": 7,
       "y": 418,
-      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+      "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
     },
     {
       "page": 7,
       "y": 440,
-      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+      "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
     },
     {
       "page": 7,
       "y": 470,
-      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+      "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
     },
     {
       "page": 7,
       "y": 500,
-      "why": "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"
+      "why": "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"
     },
     {
       "page": 20,

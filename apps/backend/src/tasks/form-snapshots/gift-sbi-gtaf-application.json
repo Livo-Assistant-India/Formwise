@@ -76,15 +76,6 @@
     "h": 24,
     "signer": "subscriber",
     "label": "Contribution Agreement - contributor"
-   },
-   {
-    "page": 65,
-    "x": 71.5,
-    "y": 627.9,
-    "w": 133.3,
-    "h": 24,
-    "signer": "joint_holder",
-    "label": "Contribution Agreement - second holder"
    }
   ],
   "tickboxes": [
@@ -774,6 +765,76 @@
   "title": "SBI Global Thematic Advantage Fund (IFSC) - Application Form",
   "fields": [
    {
+    "key": "distributor_name",
+    "nominee": null,
+    "page": 3,
+    "x": 91,
+    "y": 767,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
+    "key": "distributor_code",
+    "nominee": null,
+    "page": 3,
+    "x": 226,
+    "y": 767,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 73
+   },
+   {
+    "key": "distributor_email",
+    "nominee": null,
+    "page": 3,
+    "x": 304,
+    "y": 767,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 128
+   },
+   {
+    "key": "distributor_contact_number",
+    "nominee": null,
+    "page": 3,
+    "x": 437,
+    "y": 767,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 128
+   },
+   {
+    "key": "rm_name",
+    "nominee": null,
+    "page": 3,
+    "x": 91,
+    "y": 790,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
+    "key": "rm_email",
+    "nominee": null,
+    "page": 3,
+    "x": 304,
+    "y": 790,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 128
+   },
+   {
+    "key": "rm_contact_number",
+    "nominee": null,
+    "page": 3,
+    "x": 437,
+    "y": 790,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 128
+   },
+   {
     "key": "folio_no",
     "nominee": null,
     "page": 4,
@@ -1380,6 +1441,110 @@
     "fontSize": 7,
     "type": "text",
     "maxWidth": 400
+   },
+   {
+    "key": "nominee_1_name_address",
+    "nominee": null,
+    "page": 5,
+    "x": 85,
+    "y": 201.8,
+    "fontSize": 6.5,
+    "type": "multiline",
+    "maxWidth": 173,
+    "maxY": 230.8
+   },
+   {
+    "key": "nominee_1_dob",
+    "nominee": null,
+    "page": 5,
+    "x": 263,
+    "y": 215.8,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 63
+   },
+   {
+    "key": "nominee_1_guardian",
+    "nominee": null,
+    "page": 5,
+    "x": 331,
+    "y": 201.8,
+    "fontSize": 6.5,
+    "type": "multiline",
+    "maxWidth": 85,
+    "maxY": 230.8
+   },
+   {
+    "key": "nominee_1_share_pct",
+    "nominee": null,
+    "page": 5,
+    "x": 421,
+    "y": 215.8,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 55
+   },
+   {
+    "key": "nominee_1_relationship",
+    "nominee": null,
+    "page": 5,
+    "x": 481,
+    "y": 215.8,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 84
+   },
+   {
+    "key": "nominee_2_name_address",
+    "nominee": null,
+    "page": 5,
+    "x": 85,
+    "y": 242,
+    "fontSize": 6.5,
+    "type": "multiline",
+    "maxWidth": 173,
+    "maxY": 271
+   },
+   {
+    "key": "nominee_2_dob",
+    "nominee": null,
+    "page": 5,
+    "x": 263,
+    "y": 256,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 63
+   },
+   {
+    "key": "nominee_2_guardian",
+    "nominee": null,
+    "page": 5,
+    "x": 331,
+    "y": 242,
+    "fontSize": 6.5,
+    "type": "multiline",
+    "maxWidth": 85,
+    "maxY": 271
+   },
+   {
+    "key": "nominee_2_share_pct",
+    "nominee": null,
+    "page": 5,
+    "x": 421,
+    "y": 256,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 55
+   },
+   {
+    "key": "nominee_2_relationship",
+    "nominee": null,
+    "page": 5,
+    "x": 481,
+    "y": 256,
+    "fontSize": 7,
+    "type": "text",
+    "maxWidth": 84
    },
    {
     "key": "account_number",
@@ -2106,6 +2271,16 @@
     "maxWidth": 48
    },
    {
+    "key": "subscriber_name_p65",
+    "nominee": null,
+    "page": 65,
+    "x": 73,
+    "y": 649.5,
+    "fontSize": 8,
+    "type": "text",
+    "maxWidth": 130
+   },
+   {
     "key": "subscriber_name_p66",
     "nominee": null,
     "page": 66,
@@ -2198,6 +2373,13 @@
   ]
  },
  "fieldSources": {
+  "distributor_name": "typed",
+  "distributor_code": "typed",
+  "distributor_email": "typed",
+  "distributor_contact_number": "typed",
+  "rm_name": "typed",
+  "rm_email": "typed",
+  "rm_contact_number": "typed",
   "applicant_type": "tick",
   "folio_no": "typed",
   "subscriber_name": "document.name|upper",
@@ -2244,6 +2426,16 @@
   "remitting_bank_line2": "typed",
   "subscription_amount": "typed",
   "subscription_amount_words": "typed",
+  "nominee_1_name_address": "typed",
+  "nominee_1_dob": "typed",
+  "nominee_1_guardian": "typed",
+  "nominee_1_share_pct": "typed",
+  "nominee_1_relationship": "typed",
+  "nominee_2_name_address": "typed",
+  "nominee_2_dob": "typed",
+  "nominee_2_guardian": "typed",
+  "nominee_2_share_pct": "typed",
+  "nominee_2_relationship": "typed",
   "wish_to_nominate": "tick",
   "account_number": "typed",
   "account_type": "typed",
@@ -2315,6 +2507,7 @@
   "agreement_execution_day": "typed",
   "agreement_execution_month": "typed",
   "agreement_execution_year": "typed",
+  "subscriber_name_p65": "copy.subscriber_name",
   "subscriber_name_p66": "copy.subscriber_name",
   "subscriber_address_p66": "document.address|withoutCareOf|upper",
   "capital_commitment_usd_p66": "copy.capital_commitment_usd",
@@ -2426,6 +2619,19 @@
     ]
    },
    {
+    "key": "distributor",
+    "label": "Page 3 · Distributor (Excel)",
+    "fields": [
+     "distributor_name",
+     "distributor_code",
+     "distributor_email",
+     "distributor_contact_number",
+     "rm_name",
+     "rm_email",
+     "rm_contact_number"
+    ]
+   },
+   {
     "key": "investment",
     "label": "Pages 4-5 · Capital commitment and contribution (Excel)",
     "fields": [
@@ -2442,6 +2648,16 @@
     "key": "nomination",
     "label": "Page 5 · Nomination",
     "fields": [
+     "nominee_1_name_address",
+     "nominee_1_dob",
+     "nominee_1_guardian",
+     "nominee_1_share_pct",
+     "nominee_1_relationship",
+     "nominee_2_name_address",
+     "nominee_2_dob",
+     "nominee_2_guardian",
+     "nominee_2_share_pct",
+     "nominee_2_relationship",
      "wish_to_nominate"
     ]
    },
@@ -2534,11 +2750,12 @@
    },
    {
     "key": "agreement",
-    "label": "Page 27 · Contribution Agreement date (Excel)",
+    "label": "Pages 27-65 · Contribution Agreement date (Excel)",
     "fields": [
      "agreement_execution_day",
      "agreement_execution_month",
-     "agreement_execution_year"
+     "agreement_execution_year",
+     "subscriber_name_p65"
     ]
    },
    {
@@ -2583,6 +2800,90 @@
   ]
  },
  "drawnSpots": [
+  {
+   "field": "distributor_name",
+   "page": 3,
+   "lines": [
+    [
+     91,
+     761.05,
+     82.44,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "distributor_code",
+   "page": 3,
+   "lines": [
+    [
+     226,
+     761.9,
+     68.66,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "distributor_email",
+   "page": 3,
+   "lines": [
+    [
+     304,
+     761.05,
+     81.66,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "distributor_contact_number",
+   "page": 3,
+   "lines": [
+    [
+     437,
+     761.05,
+     115.05,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "rm_name",
+   "page": 3,
+   "lines": [
+    [
+     91,
+     784.05,
+     60.08,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "rm_email",
+   "page": 3,
+   "lines": [
+    [
+     304,
+     784.05,
+     59.3,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "rm_contact_number",
+   "page": 3,
+   "lines": [
+    [
+     437,
+     784.05,
+     92.69,
+     7
+    ]
+   ]
+  },
   {
    "field": "folio_no",
    "page": 4,
@@ -3072,6 +3373,138 @@
      105.65,
      117.52,
      7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_name_address",
+   "page": 5,
+   "lines": [
+    [
+     85,
+     195.85,
+     115.16,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_dob",
+   "page": 5,
+   "lines": [
+    [
+     263,
+     210.7,
+     69.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_guardian",
+   "page": 5,
+   "lines": [
+    [
+     331,
+     195.85,
+     28.4,
+     7
+    ],
+    [
+     331,
+     203.55,
+     65.76,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_share_pct",
+   "page": 5,
+   "lines": [
+    [
+     421,
+     210.7,
+     85.37,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_1_relationship",
+   "page": 5,
+   "lines": [
+    [
+     481,
+     210.7,
+     89.71,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_2_name_address",
+   "page": 5,
+   "lines": [
+    [
+     85,
+     236.05,
+     115.16,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_2_dob",
+   "page": 5,
+   "lines": [
+    [
+     263,
+     250.9,
+     69.04,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_2_guardian",
+   "page": 5,
+   "lines": [
+    [
+     331,
+     236.05,
+     28.4,
+     7
+    ],
+    [
+     331,
+     243.75,
+     65.76,
+     7
+    ]
+   ]
+  },
+  {
+   "field": "nominee_2_share_pct",
+   "page": 5,
+   "lines": [
+    [
+     421,
+     250.9,
+     85.37,
+     6
+    ]
+   ]
+  },
+  {
+   "field": "nominee_2_relationship",
+   "page": 5,
+   "lines": [
+    [
+     481,
+     250.9,
+     89.71,
+     6
     ]
    ]
   },
@@ -3846,6 +4279,18 @@
      153.1,
      98.17,
      6
+    ]
+   ]
+  },
+  {
+   "field": "subscriber_name_p65",
+   "page": 65,
+   "lines": [
+    [
+     73,
+     642.7,
+     113.94,
+     8
     ]
    ]
   },

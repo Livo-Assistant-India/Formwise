@@ -114,6 +114,16 @@ function investmentAndDeclarationPages() {
   return [
     inRect("subscriber_name_p7", 7, [142.6, 76.1, 536.7, 103.5], "copy.subscriber_name", { section: "nomination" }),
     tick("wish_to_nominate", 7, 15, { "Wish to nominate": [68.4, 108.0], "Do not wish to nominate": [185.3, 108.0] }, { section: "nomination" }),
+    // Nominee 1 (first column), as 360 ONE's filled sample does: name, share, date of birth, relationship, address, zip code, mobile.
+    inRect("nominee_1_name", 7, [155.7, 196.2, 282.7, 224.7], "typed", { section: "nomination" }),
+    inRect("nominee_1_share_pct", 7, [173.7, 230.7, 212.7, 247.7], "typed", { section: "nomination" }),
+    inRect("nominee_1_dob", 7, [155.8, 252.7, 282.5, 279.9], "typed", { section: "nomination" }),
+    tick("nominee_1_relationship", 7, 9.5, { Spouse: [159.8, 283.8], Father: [159.8, 297.9], Mother: [159.8, 310.3], Daughter: [159.8, 323.8],
+      Son: [159.8, 336.3], Others: [159.3, 348.6] }, { section: "nomination" }),
+    inRect("nominee_1_relationship_other", 7, [179.1, 359.3, 277.7, 371.8], "typed", { section: "nomination" }),
+    multiline("nominee_1_address", 7, 158, 520, 122, 587, "typed", { fontSize: 7, section: "nomination" }),
+    inRect("nominee_1_zip_code", 7, [205.7, 590.6, 281.7, 609.5], "typed", { section: "nomination" }),
+    inRect("nominee_1_mobile", 7, [156.2, 625.5, 278.7, 644.0], "typed", { section: "nomination" }),
     inRect("class_of_units", 8, [372.8, 124.0, 549.7, 143.9], "typed", i),
     inRect("capital_commitment_usd", 8, [74.2, 161.5, 291.1, 183.4], "typed", i),
     inRect("contribution_amount_usd", 8, [373.0, 162.9, 548.4, 184.2], "typed", i),
@@ -155,6 +165,7 @@ function declarationAndAgreementPages() {
     tick("accredited_documentation", 17, 7.9, {
       "Net worth certificate (last 6 months)": [[69.7, 663.5], [315.3, 663.1]], "Income proof (salary slip or other)": [[69.7, 663.5], [311.6, 111.1, 18]] }, a),
     inRect("subscriber_name_p18", 18, [58.5, 650.8, 464.5, 667.0], "copy.subscriber_name", a),
+    inRect("signatory_designation_p18", 18, [152.2, 669.6, 464.5, 685.9], "typed", a),
     inRect("form_date_p18", 18, [53.4, 690.5, 166.7, 704.6], "copy.form_date", a),
     text("agreement_execution_day", 21, 106, 182, 30, "typed", g),
     // Annexure A's yellow brackets are 40pt: name, address and amount in words go on the free line under each.
@@ -192,7 +203,7 @@ const SIGNATURE_BOXES = [
 const IGNORED = [
   [5, 270.0, "Guardian / contact person for an entity: relationship to minor - only for a minor or an entity"],
   [6, 508, "Guardian's citizenship (\"Others, please specify\"): only when the first holder is a minor"],
-  ...[370, 418, 440, 470, 500].map((y) => [7, y, "Nominee details table: only the nominate / do not nominate choice is filled (as on the other GIFT forms) - open question"]),
+  ...[418, 440, 470, 500].map((y) => [7, y, "Nominee identity proof numbers: not given in 360 ONE's filled sample - open question"]),
   ...[107.5, 120.1, 132.8, 145.5, 158.0, 170.8, 183.4, 196.1, 208.7, 221.3, 234.0, 246.6, 259.3, 271.9, 284.7, 297.2, 309.8, 322.6, 335.2,
     347.9, 360.5, 373.1, 385.8, 398.4, 411.1, 423.7].map((y) => [20, y, "Table of contents of the Contribution Agreement (dotted leaders)"]),
   ...[150, 183].map((y) => [18, y, "Body corporate documentation: for a non-individual investor"]),

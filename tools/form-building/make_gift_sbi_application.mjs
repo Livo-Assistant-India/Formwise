@@ -70,6 +70,17 @@ const OCCUPATION_RIGHT = ["Agriculturist", "Retired", "Housewife", "Student", "F
 const ROW_TOPS = [513.3, 524.0, 534.3, 545.0, 555.7];
 
 /** Page 5: contribution, nomination, bank account and the KYC table (first column = first holder, second = second holder). */
+/** Page 3: distributor and RM table (row baselines 767 and 790). */
+function distributorTable() {
+  const d = { fontSize: 7, section: "distributor" };
+  return [
+    text("distributor_name", 3, 91, 767, 130, "typed", d), text("distributor_code", 3, 226, 767, 73, "typed", d),
+    text("distributor_email", 3, 304, 767, 128, "typed", d), text("distributor_contact_number", 3, 437, 767, 128, "typed", d),
+    text("rm_name", 3, 91, 790, 130, "typed", d), text("rm_email", 3, 304, 790, 128, "typed", d),
+    text("rm_contact_number", 3, 437, 790, 128, "typed", d),
+  ];
+}
+
 function contributionAndBankPage() {
   const i = { section: "investment" }, b = { section: "bank" }, k = { section: "kyc" }, j = { section: "second-holder" };
   const kycColumn = (prefix, leftX, rightX, section) => {
@@ -95,6 +106,13 @@ function contributionAndBankPage() {
     comb("remitting_bank_line2", 5, 82.3, 122.7, 31, "typed", { pitch: ADDRESS_PITCH, keepAll: true, ...i }),
     text("subscription_amount", 5, 162, 97.3, 400, "typed", i),
     text("subscription_amount_words", 5, 162, 111.6, 400, "typed", { fontSize: 7, ...i }),
+    // Nominee table (rows 192.8-233.0 and 233.0-273.2): name & address, date of birth, guardian, allocation %, relationship.
+    ...[[1, 192.8], [2, 233.0]].flatMap(([n, top]) => [
+      multiline(`nominee_${n}_name_address`, 5, 85, top + 9, 173, top + 38, "typed", { fontSize: 6.5, section: "nomination" }),
+      text(`nominee_${n}_dob`, 5, 263, top + 23, 63, "typed", { fontSize: 7, section: "nomination" }),
+      multiline(`nominee_${n}_guardian`, 5, 331, top + 9, 85, top + 38, "typed", { fontSize: 6.5, section: "nomination" }),
+      text(`nominee_${n}_share_pct`, 5, 421, top + 23, 55, "typed", { fontSize: 7, section: "nomination" }),
+      text(`nominee_${n}_relationship`, 5, 481, top + 23, 84, "typed", { fontSize: 7, section: "nomination" })]),
     tick("wish_to_nominate", 5, 11.8, { "Wish to nominate": [28.7, 140.3], "Do not wish to nominate": [150.3, 140.3] }, { section: "nomination" }),
     comb("account_number", 5, 377.3, 121.3, 16, "typed", { pitch: 13.9, ...b }),
     comb("account_type", 5, 377.3, 413.3, 11, "typed", { pitch: 13.91, keepAll: true, ...b }),
@@ -167,6 +185,7 @@ function agreementPages() {
     text("agreement_execution_day", 27, 58, 158.2, 150, "typed", a),
     text("agreement_execution_month", 27, 251, 158.2, 114, "typed", a),
     text("agreement_execution_year", 27, 384, 158.2, 48, "typed", a),
+    text("subscriber_name_p65", 65, 73, 649.5, 130, "copy.subscriber_name", a),
     text("subscriber_name_p66", 66, 172, 132, 238, "copy.subscriber_name", { fontSize: 9, ...x }),
     text("subscriber_address_p66", 66, 74, 168, 478, "document.address|withoutCareOf|upper", { fontSize: 7, ...x }),
     text("capital_commitment_usd_p66", 66, 408, 204, 36, "copy.capital_commitment_usd", x),
@@ -191,7 +210,6 @@ const SIGNATURE_BOXES = [
   onLine(24, [72.0, 264.6, 497.6], "subscriber", "FME contribution waiver - first holder"),
   onLine(24, [324.1, 522.2, 497.6], "joint_holder", "FME contribution waiver - second holder"),
   onLine(65, [71.5, 204.8, 572.7], "subscriber", "Contribution Agreement - contributor"),
-  onLine(65, [71.5, 204.8, 651.9], "joint_holder", "Contribution Agreement - second holder"),
 ];
 
 const IGNORED_BLANKS = [
@@ -213,7 +231,7 @@ const IGNORED_BLANKS = [
 ];
 
 const SECTIONS = [["applicant", "First holder (KYC + Excel)"], ["second-holder", "Second holder (Excel)"], ["contact", "Addresses and contact"],
-  ["investment", "Capital commitment and contribution (Excel)"], ["nomination", "Nomination"], ["bank", "Bank account (Excel)"],
+  ["distributor", "Distributor (Excel)"], ["investment", "Capital commitment and contribution (Excel)"], ["nomination", "Nomination"], ["bank", "Bank account (Excel)"],
   ["kyc", "KYC details (Excel)"], ["signed", "Declaration signed"], ["fatca", "FATCA & CRS"], ["schedule", "Schedule I"],
   ["waiver", "FME contribution waiver"], ["agreement", "Contribution Agreement date (Excel)"], ["annexure-a", "Annexure A: key details"]];
 
@@ -221,7 +239,7 @@ const REQUIRED_FIELDS = ["subscriber_name", "dob", "tax_reference_number", "gend
   "class_of_units", "account_number", "bank_name", "swift_code", "pep_status", "wish_to_nominate", "place"];
 
 function main() {
-  const fields = [...generalInformationPage(), ...contributionAndBankPage(), ...declarationAndFatcaPages(), ...agreementPages()];
+  const fields = [...distributorTable(), ...generalInformationPage(), ...contributionAndBankPage(), ...declarationAndFatcaPages(), ...agreementPages()];
   const duplicateKeys = fields.map((field) => field.key).filter((key, index, keys) => keys.indexOf(key) !== index);
   if (duplicateKeys.length) throw new Error(`duplicate keys ${duplicateKeys.join(", ")}`);
   const textFields = fields.filter((field) => !field.tickbox), tickboxes = fields.filter((field) => field.tickbox);

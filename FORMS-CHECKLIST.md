@@ -87,6 +87,7 @@ Forms are in 360 ONE's emails of 04 Nov (Mayur). Redemption and Top-up are ONE c
 | India Diversified (CAT III) – Subscription, 76 pages | `gift-india-diversified-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | SBI Global Thematic Advantage – Application, 68 pages | `gift-sbi-gtaf-application` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 | WhiteOak Global EM ex India – Application, 76 pages | `gift-whiteoak-em-application` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
+| New Perspective Fund – Subscription, 82 pages | `gift-new-perspective-subscription` | ✅ | ✅ | ✅ | ✅ | ❓ | ⬜ |
 
 GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 - No GIFT City field sheet: name from KYC (upper case), dates = today, everything else typed (Excel). Confirm every source.
@@ -98,13 +99,16 @@ GIFT City notes (files in `C:\zzz\demo\GIFT`, 09 Nov):
 - White Oak Top-up: which amendment row does a new top-up go in? Should the revised totals be calculated?
 - SBI: Contribution Agreement date, unit class and total commitment are typed. "Class ___" space is short.
 - Application sets (10 Nov): nominee details tables are not filled (only "wish / do not wish to nominate"), as on the
-  feeder forms. Guardian (minor) and non-individual sections are left blank.
+  feeder forms. Exception (13 Nov, from 360 ONE's filled samples): SBI and WhiteOak now fill nominee 1 (SBI also
+  nominee 2), SBI fills the distributor/RM table (page 3) and the contributor's name on page 65. Guardian (minor) and non-individual sections are left blank.
 - India Diversified: its accredited-investor tables have no tick boxes, so no category is ticked. Annexure A amount
   line has a second blank ("(USD/GBP) ___") left empty.
 - SBI application: the "Please tick" columns for total expense and set-up fee (Annexure A) follow the unit class; left
   blank for now.
 - WhiteOak application: the management fee, placement cost, operating and set-up expense brackets (Annexure A) are
   typed per case; ask if they are fixed per fund. Landline has 8 boxes after a separate STD code.
+- New Perspective (13 Nov, `C:zzzdemoGIFT Fund`): sent only as a filled sample. The blank is rebuilt by
+  `make_gift_npf_blank.py` (typed values removed); the sample itself stays outside the project.
 
 ## NFT (58 service-request types)
 
